@@ -53,6 +53,24 @@ def test_shopify_parses_variants_and_coupon(monkeypatch):
     assert second.in_stock is False
 
 
+def test_shopify_missing_available_means_listed_not_out_of_stock(monkeypatch):
+    # Keychron's real endpoint carries no "available" field: a missing
+    # field must not be reported as out of stock.
+    payload = {"product": {"title": "K8 Pro", "variants": [
+        {"price": "74.99", "compare_at_price": "99.99",
+         "sku": "K8P-G1", "barcode": "4895248806837"},
+    ]}}
+
+    def _stub(request, timeout=15):
+        return _Response(json.dumps(payload))
+
+    monkeypatch.setattr(shopify_module, "urlopen", _stub)
+    offers = ShopifyAdapter("www.keychron.com", "k8-pro", "Keychron").search("")
+    assert len(offers) == 1
+    assert offers[0].identifier == "4895248806837"
+    assert offers[0].in_stock is True
+
+
 def test_shopify_http_error_becomes_adapter_error(monkeypatch):
     import urllib.error
 

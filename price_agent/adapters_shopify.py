@@ -10,6 +10,12 @@ Shopify product JSON does not carry shipping or tax, so those stay
 unknown/zero and the ranking rules flag them; the adapter never invents
 them. A variant's ``barcode`` is the identifier when present, else its
 ``sku`` (often the MPN), else None (title-only -> suspected table).
+
+Availability caveat (verified against Keychron's endpoint 2026-10-31):
+the public product JSON does not always carry an ``available`` field.
+When it is absent, the offer is treated as listed (``in_stock=True``)
+and the caller must flag stock as unverified at the product page --
+the adapter must not report "out of stock" from a missing field.
 """
 
 from __future__ import annotations
@@ -36,6 +42,7 @@ class ShopifyAdapter(MerchantAdapter):
         self.handle = handle
         self.name = merchant
         self.url = f"https://{store}/products/{handle}"
+        self.stock_field_present = True  # set on each search()
 
     def search(self, query: str) -> list[Offer]:
         # Product-specific adapter: the configured product is the query.
@@ -53,8 +60,10 @@ class ShopifyAdapter(MerchantAdapter):
 
         product = payload.get("product") or {}
         title = product.get("title", self.handle)
+        variants = product.get("variants", [])
+        self.stock_field_present = any("available" in v for v in variants)
         offers: list[Offer] = []
-        for variant in product.get("variants", []):
+        for variant in variants:
             try:
                 price = float(variant["price"])
             except (KeyError, TypeError, ValueError):
@@ -70,6 +79,9 @@ class ShopifyAdapter(MerchantAdapter):
             full_title = title if variant_title in ("", "Default Title") else (
                 f"{title} - {variant_title}"
             )
+            # Missing "available" means "not asserted", not "out of stock".
+            available = variant.get("available")
+            in_stock = True if available is None else bool(available)
             offers.append(
                 Offer(
                     merchant=self.name,
@@ -80,7 +92,7 @@ class ShopifyAdapter(MerchantAdapter):
                     tax_estimate=0.0,
                     coupon=coupon,
                     url=self.url,
-                    in_stock=bool(variant.get("available")),
+                    in_stock=in_stock,
                 )
             )
         return offers

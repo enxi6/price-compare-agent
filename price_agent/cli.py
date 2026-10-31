@@ -99,6 +99,8 @@ def compare_shopify(model_key: str, spec: str) -> None:
     ranked = rank_offers(matched)
     print(f"商品：{product.brand} {product.model}（{product.variant}）")
     print(f"店铺：{adapter.url}（公开商品 JSON，只读）")
+    if not adapter.stock_field_present:
+        print("库存说明：该店铺公开商品 JSON 不含库存字段，有货状态仅表示已上架，购买前须在商品页核实库存。")
     print(f"同款标识：{product.identifiers or '未核实（不得凭标题进主排名）'}")
     print(f"\n主排名（标识匹配）：{len(ranked)} 家")
     for i, offer in enumerate(ranked, 1):

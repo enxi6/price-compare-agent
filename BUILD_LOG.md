@@ -88,3 +88,18 @@
 - 测试仍 18 个，全过；eval 现报 20 型号、18 已核实（快照报价仍 12 条、匹配仍 0，
   因新核实型号暂无快照报价——标识齐了，下一步是给它们补报价源）。
 - Keychron 端点浏览器验证结果尚未返回，仍 blocked，不催、不重复派发。
+
+## 005 — 2026-10-31：Keychron 实店端点验证通过，评测集 19/20
+
+- 浏览器只读验证（未加购、未登录、未购买）：Keychron 官网公开商品 JSON
+  （keychron-k8-pro-qmk-via-wireless-mechanical-keyboard）可正常加载、无屏蔽，
+  标题 Keychron K8 Pro QMK/VIA Wireless Mechanical Keyboard，共 31 个变体。
+- 关键纠正：上一条说“Keychron 用 SKU 而非 UPC”是错的——JSON 里每个变体都有 barcode，
+  如 K8P-G1（黑、全组装热插拔、白光、Gateron G Pro 红）barcode 4895248806837，
+  K8P-G2 为 4895248806844。K8 Pro 条目已按 K8P-G1 配置钉死并升为 verified，
+  评测集已核实总数升至 19/20，仅剩 DualSense 白（UPC 冲突）。
+- 真 bug 一个：该端点的变体对象不含 available 字段；旧适配器逻辑会把缺字段
+  当成缺货，导致全部变体沉底。已修复：缺字段 = 库存未断言（视为已上架），
+  并在 CLI 实店路径打印库存须到商品页核实的说明；另加回归测试。
+- 测试从 18 个增至 19 个，全过。
+- 待定：DualSense 白 UPC 冲突的二次确认；本地与远程历史合并方式。

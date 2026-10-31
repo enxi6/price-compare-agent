@@ -156,9 +156,19 @@ EVAL_SET: list[EvalProduct] = [
                 },
                 status="verified"),
     EvalProduct(key="keychron-k8-pro", brand="Keychron",
-                model="K8 Pro QMK", variant="unpinned", category="keyboards",
-                notes="Keychron 直营用 SKU（如 K8P-G1、K8P-Q1）而非 UPC；同款须按具体配置"
-                "钉死 SKU，暂不 verified；K8（非 Pro）的 UPC 不得挪用。"),
+                model="K8 Pro QMK",
+                variant="Black, Fully Assembled (Hot-Swappable), White Backlight, "
+                "Gateron G Pro Red (K8P-G1)",
+                category="keyboards",
+                identifiers={"EAN": "4895248806837", "SKU": "K8P-G1"},
+                identifier_sources={
+                    "EAN": "Keychron official store public product JSON, "
+                    "browser-verified 2026-10-31 (31 variants; K8P-G1 barcode "
+                    "4895248806837, K8P-G2 4895248806844). Earlier assumption "
+                    "that Keychron uses SKUs only was wrong: the JSON carries "
+                    "barcodes per variant."
+                },
+                status="verified"),
     EvalProduct(key="nintendo-switch-lite-turquoise", brand="Nintendo",
                 model="Switch Lite", variant="Turquoise (HDHSBAZAA)",
                 category="consoles",
