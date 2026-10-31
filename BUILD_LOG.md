@@ -103,3 +103,24 @@
   并在 CLI 实店路径打印库存须到商品页核实的说明；另加回归测试。
 - 测试从 18 个增至 19 个，全过。
 - 待定：DualSense 白 UPC 冲突的二次确认；本地与远程历史合并方式。
+
+## 007 — 2026-10-31：Apple 型号组加入评测集（8/8 核实）
+
+- 用户批准后新增 8 个 Apple 型号，全部按基础配置 + 颜色钉死 part number，
+  评测集从 20 扩至 28，已核实从 19 升至 27，仅剩 DualSense 白 pending：
+  - MacBook Air 13 M4 星光色（MW0Y3LL/A）：UPC 195949837197
+    （eBay + Bestpeek 一致，Best Buy 美国确认 MPN）。
+  - MacBook Air 15 M4 天蓝色（MC7A4LL/A）：UPC 195949893162（两条不同 eBay 刊登一致）。
+  - MacBook Pro 14 M4 深空黑（MW2U3LL/A）：UPC 195949507786
+    （两条不同 eBay 刊登 + Back Market 一致；英/澳后缀为地区版）。
+  - Mac mini M4（MU9D3LL/A）：UPC 195949080296（多条不同刊登一致）。
+  - iPad A16 银色（MD3Y4LL/A）：UPC 195950086232（Best Buy 捆绑页 + eBay 一致）。
+  - iPad Air M3 紫色（MCA04LL/A）：UPC 195949997952（两条不同刊登一致）。
+  - iPad Pro M4 深空黑（MVV83LL/A）：UPC 195949222467（多条不同刊登一致）。
+  - AirPods Max USB-C 午夜色（MWW43AM/A）：UPC 195949543890
+    （Best Buy 美国 + 多条 eBay 刊登一致；eBay 目录页给出的另一码已排除）。
+- 本轮教训：Apple 的颜色 = 不同 part number，条目必须钉颜色；Wi-Fi + 蜂窝版、
+  Lightning 版、地区后缀版一律是不同 SKU，已在来源注记中排除。
+- iPhone 仍排除在外（运营商分期/锁网使“最便宜”不可比），Apple 专场页面
+  待 Phase 4 再议；下一步是给 Apple 组补报价源（Apple 官网与 Amazon/Best Buy
+  均非 Shopify，需新适配器）。

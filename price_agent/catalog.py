@@ -247,6 +247,98 @@ EVAL_SET: list[EvalProduct] = [
                     "AU 840244605155 excluded)"
                 },
                 status="verified"),
+    # --- Apple cluster (added 2026-10-31, user-approved) ---
+    # All pinned to base configs; part numbers / UPCs pending verification.
+    # iPhone deliberately excluded: carrier financing and lock status make
+    # "cheapest" non-comparable without contract context.
+    EvalProduct(key="apple-macbook-air-13-m4", brand="Apple",
+                model="MacBook Air 13-inch (M4, 2025)",
+                variant="M4, 16GB/256GB, Starlight (MW0Y3LL/A)",
+                category="laptops",
+                identifiers={"UPC": "195949837197", "MPN": "MW0Y3LL/A"},
+                identifier_sources={
+                    "UPC": "eBay item specifics + Bestpeek agree for MW0Y3LL/A; "
+                    "Best Buy US confirms the MPN (SKU 6565859). Other colors "
+                    "are different part numbers."
+                },
+                status="verified"),
+    EvalProduct(key="apple-macbook-air-15-m4", brand="Apple",
+                model="MacBook Air 15-inch (M4, 2025)",
+                variant="M4, 16GB/256GB, Sky Blue (MC7A4LL/A)",
+                category="laptops",
+                identifiers={"UPC": "195949893162", "MPN": "MC7A4LL/A"},
+                identifier_sources={
+                    "UPC": "Two distinct eBay listings agree for MC7A4LL/A. "
+                    "Other colors are different part numbers."
+                },
+                status="verified"),
+    EvalProduct(key="apple-macbook-pro-14-m4", brand="Apple",
+                model="MacBook Pro 14-inch (M4, 2024)",
+                variant="M4, 16GB/512GB, Space Black (MW2U3LL/A)",
+                category="laptops",
+                identifiers={"UPC": "195949507786", "MPN": "MW2U3LL/A"},
+                identifier_sources={
+                    "UPC": "Two distinct eBay listings + Back Market agree for "
+                    "MW2U3LL/A (UK B/A and AU X/A suffixes are regional; "
+                    "Silver MW2W3LL/A is a different SKU)."
+                },
+                status="verified"),
+    EvalProduct(key="apple-mac-mini-m4", brand="Apple",
+                model="Mac mini (M4, 2024)",
+                variant="M4, 16GB/256GB, Silver (MU9D3LL/A)",
+                category="desktops",
+                identifiers={"UPC": "195949080296", "MPN": "MU9D3LL/A"},
+                identifier_sources={
+                    "UPC": "Many distinct eBay listings agree (GTIN 0195949080296); "
+                    "UK B/A code is regional. One listing pairing MU9E3LL/A "
+                    "with this config and one stray UPC were excluded."
+                },
+                status="verified"),
+    EvalProduct(key="apple-ipad-a16-11", brand="Apple",
+                model="iPad 11-inch (A16, 2025)",
+                variant="A16, 128GB Wi-Fi, Silver (MD3Y4LL/A)",
+                category="tablets",
+                identifiers={"UPC": "195950086232", "MPN": "MD3Y4LL/A"},
+                identifier_sources={
+                    "UPC": "Best Buy bundle listings + eBay agree for MD3Y4LL/A. "
+                    "Wi-Fi + Cellular is a different SKU; one eBay listing "
+                    "pairing this MPN with another UPC was excluded."
+                },
+                status="verified"),
+    EvalProduct(key="apple-ipad-air-m3-11", brand="Apple",
+                model="iPad Air 11-inch (M3, 2025)",
+                variant="M3, 128GB Wi-Fi, Purple (MCA04LL/A)",
+                category="tablets",
+                identifiers={"UPC": "195949997952", "MPN": "MCA04LL/A"},
+                identifier_sources={
+                    "UPC": "Two distinct eBay listings agree for MCA04LL/A. "
+                    "Space Gray/Blue/Starlight are MC9x4LL/A codes; Wi-Fi + "
+                    "Cellular is a different SKU."
+                },
+                status="verified"),
+    EvalProduct(key="apple-ipad-pro-m4-11", brand="Apple",
+                model="iPad Pro 11-inch (M4, 2024)",
+                variant="M4, 256GB Wi-Fi, Space Black (MVV83LL/A)",
+                category="tablets",
+                identifiers={"UPC": "195949222467", "MPN": "MVV83LL/A"},
+                identifier_sources={
+                    "UPC": "Many distinct eBay listings agree for MVV83LL/A. "
+                    "Silver MVV93LL/A is a different SKU; Wi-Fi + Cellular "
+                    "is a different SKU."
+                },
+                status="verified"),
+    EvalProduct(key="apple-airpods-max-usbc", brand="Apple",
+                model="AirPods Max (USB-C, 2024)",
+                variant="USB-C, Midnight (MWW43AM/A)",
+                category="headphones",
+                identifiers={"UPC": "195949543890", "MPN": "MWW43AM/A"},
+                identifier_sources={
+                    "UPC": "Best Buy US + multiple eBay listings agree for "
+                    "MWW43AM/A. One eBay catalog page giving 1959495440206 "
+                    "was excluded as conflicting. Lightning version is a "
+                    "different model."
+                },
+                status="verified"),
 ]
 
 
