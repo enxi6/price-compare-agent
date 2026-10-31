@@ -1,4 +1,4 @@
-"""Phase 1 evaluation set: 20 standardized electronics models, US market.
+"""Phase 1 evaluation set: 28 standardized electronics models, US market.
 
 Identifier policy (DECISIONS 002): an identifier is recorded only when a
 retailer or manufacturer listing states it for the exact pinned variant.
@@ -42,15 +42,16 @@ EVAL_SET: list[EvalProduct] = [
         status="verified",
     ),
     EvalProduct(
-        key="apple-airpods-pro-2-lightning",
+        key="apple-airpods-pro-3",
         brand="Apple",
-        model="AirPods Pro (2nd generation)",
-        variant="Lightning case (MQD83AM/A)",
+        model="AirPods Pro 3",
+        variant="White (MFHP4LL/A)",
         category="earbuds",
-        identifiers={"UPC": "194253397168", "MPN": "MQD83AM/A"},
+        identifiers={"UPC": "195950543698", "MPN": "MFHP4LL/A"},
         identifier_sources={
-            "UPC": "Abt + eBay listings agree for MQD83AM/A (USB-C version "
-            "MTJV3AM/A is a different UPC, 0195949052484)"
+            "UPC": "Best Buy US + eBay GTIN agree for MFHP4LL/A "
+            "(Pro 2 Lightning MQD83AM/A is the previous generation; "
+            "refurbished-only codes excluded)"
         },
         status="verified",
     ),
@@ -106,7 +107,7 @@ EVAL_SET: list[EvalProduct] = [
         },
         status="verified",
     ),
-    # --- Pending: model pinned, identifiers NOT yet verified (never invent) ---
+    # --- Further verified identifiers ---
     EvalProduct(key="sony-wf1000xm5-black", brand="Sony",
                 model="WF-1000XM5", variant="Black (WF1000XM5/B)",
                 category="earbuds",
@@ -125,14 +126,15 @@ EVAL_SET: list[EvalProduct] = [
                     "(India MXP63HN/A and ANC MXP93LL/A are different products)"
                 },
                 status="verified"),
-    EvalProduct(key="apple-watch-se2-40mm", brand="Apple",
-                model="Watch SE 2 (40mm, GPS)", variant="Midnight, GPS (MXE93LL/A)",
+    EvalProduct(key="apple-watch-se3-40mm", brand="Apple",
+                model="Watch SE 3 (40mm, GPS)", variant="Midnight, GPS (MEH94LW/A)",
                 category="wearables",
-                identifiers={"UPC": "195949641756", "MPN": "MXE93LL/A"},
+                identifiers={"UPC": "195950387070", "MPN": "MEH94LW/A"},
                 identifier_sources={
-                    "UPC": "Micro Center spec sheet for MXE93LL/A (single source; "
-                    "band size unconfirmed in source; other colors, bands, "
-                    "cellular and year variants carry different UPCs)"
+                    "UPC": "Multiple eBay listings agree for MEH94LW/A "
+                    "(Best Buy's current GPS 40mm Midnight listings are Navy "
+                    "Blue band variants MJL14LW/A / MJKY4LW/A; band detail "
+                    "to be pinned at snapshot time)"
                 },
                 status="verified"),
     EvalProduct(key="kindle-paperwhite-16gb-2024", brand="Amazon",
@@ -248,51 +250,53 @@ EVAL_SET: list[EvalProduct] = [
                     "AU 840244605155 excluded)"
                 },
                 status="verified"),
-    # --- Apple cluster (added 2026-10-31, user-approved) ---
-    # All pinned to base configs; part numbers / UPCs pending verification.
-    # iPhone deliberately excluded: carrier financing and lock status make
-    # "cheapest" non-comparable without contract context.
-    EvalProduct(key="apple-macbook-air-13-m4", brand="Apple",
-                model="MacBook Air 13-inch (M4, 2025)",
-                variant="M4, 16GB/256GB, Starlight (MW0Y3LL/A)",
+    # --- Apple cluster (added 2026-10-31, refreshed 2026-10-31) ---
+    # All pinned to base configs. Discontinued generations were replaced
+    # with current models per DECISIONS 006 (in-sale new products only),
+    # user-confirmed 2026-10-31. iPhone deliberately excluded: carrier
+    # financing and lock status make "cheapest" non-comparable without
+    # contract context.
+    EvalProduct(key="apple-macbook-air-13-m5", brand="Apple",
+                model="MacBook Air 13-inch (M5, 2026)",
+                variant="M5, 16GB/512GB, Midnight (MDHE4LL/A)",
                 category="laptops",
-                identifiers={"UPC": "195949837197", "MPN": "MW0Y3LL/A"},
+                identifiers={"UPC": "195950690200", "MPN": "MDHE4LL/A"},
                 identifier_sources={
-                    "UPC": "eBay item specifics + Bestpeek agree for MW0Y3LL/A; "
-                    "Best Buy US confirms the MPN (SKU 6565859). Other colors "
-                    "are different part numbers."
+                    "UPC": "Best Buy US (SKU 6397846) + B&H Photo agree for "
+                    "MDHE4LL/A. Other colors are different part numbers; "
+                    "the UK B/A GTIN differs from the US LL/A UPC."
                 },
                 status="verified"),
-    EvalProduct(key="apple-macbook-air-15-m4", brand="Apple",
-                model="MacBook Air 15-inch (M4, 2025)",
-                variant="M4, 16GB/256GB, Sky Blue (MC7A4LL/A)",
+    EvalProduct(key="apple-macbook-air-15-m5", brand="Apple",
+                model="MacBook Air 15-inch (M5, 2026)",
+                variant="M5, 16GB/512GB, Midnight (MDVH4LL/A)",
                 category="laptops",
-                identifiers={"UPC": "195949893162", "MPN": "MC7A4LL/A"},
+                identifiers={"UPC": "195950697087", "MPN": "MDVH4LL/A"},
                 identifier_sources={
-                    "UPC": "Two distinct eBay listings agree for MC7A4LL/A. "
-                    "Other colors are different part numbers."
+                    "UPC": "Best Buy US (SKU 6571043) + eBay listings agree for "
+                    "MDVH4LL/A. Other colors are different part numbers."
                 },
                 status="verified"),
-    EvalProduct(key="apple-macbook-pro-14-m4", brand="Apple",
-                model="MacBook Pro 14-inch (M4, 2024)",
-                variant="M4, 16GB/512GB, Space Black (MW2U3LL/A)",
+    EvalProduct(key="apple-macbook-pro-14-m6", brand="Apple",
+                model="MacBook Pro 14-inch (M6, 2026)",
+                variant="M6, 16GB/1TB, Space Black (MHWT4LL/A)",
                 category="laptops",
-                identifiers={"UPC": "195949507786", "MPN": "MW2U3LL/A"},
-                identifier_sources={
-                    "UPC": "Two distinct eBay listings + Back Market agree for "
-                    "MW2U3LL/A (UK B/A and AU X/A suffixes are regional; "
-                    "Silver MW2W3LL/A is a different SKU)."
-                },
-                status="verified"),
-    EvalProduct(key="apple-mac-mini-m4", brand="Apple",
-                model="Mac mini (M4, 2024)",
-                variant="M4, 16GB/256GB, Silver (MU9D3LL/A)",
+                notes="Current generation announced 2026-10-27; pre-order, "
+                "ships 2026-11-06. Part number MHWT4LL/A confirmed by "
+                "iClarified order number + Best Buy pre-order page "
+                "(SKU 6565882, $1,999). UPC not yet published: stays pending "
+                "(identifiers empty, never matched) until a retailer "
+                "listing states the UPC. User confirmed 2026-10-31 to track "
+                "the M6 base over the in-stock M5 24GB/1TB (MDE34LL/A)."),
+    EvalProduct(key="apple-mac-mini-m6", brand="Apple",
+                model="Mac mini (M6, 2026)",
+                variant="M6, 16GB/256GB, Silver (MHQK4LL/A)",
                 category="desktops",
-                identifiers={"UPC": "195949080296", "MPN": "MU9D3LL/A"},
+                identifiers={"UPC": "195951021089", "MPN": "MHQK4LL/A"},
                 identifier_sources={
-                    "UPC": "Many distinct eBay listings agree (GTIN 0195949080296); "
-                    "UK B/A code is regional. One listing pairing MU9E3LL/A "
-                    "with this config and one stray UPC were excluded."
+                    "UPC": "Adorama spec table for the 16GB/256GB 2.5Gb config "
+                    "(single source); Best Buy US (SKU 6566933) confirms "
+                    "the MPN. M4 mini is discontinued."
                 },
                 status="verified"),
     EvalProduct(key="apple-ipad-a16-11", brand="Apple",
@@ -306,38 +310,39 @@ EVAL_SET: list[EvalProduct] = [
                     "pairing this MPN with another UPC was excluded."
                 },
                 status="verified"),
-    EvalProduct(key="apple-ipad-air-m3-11", brand="Apple",
-                model="iPad Air 11-inch (M3, 2025)",
-                variant="M3, 128GB Wi-Fi, Purple (MCA04LL/A)",
+    EvalProduct(key="apple-ipad-air-m4-11", brand="Apple",
+                model="iPad Air 11-inch (M4, 2026)",
+                variant="M4, 128GB Wi-Fi, Space Gray (MH304LL/A)",
                 category="tablets",
-                identifiers={"UPC": "195949997952", "MPN": "MCA04LL/A"},
+                identifiers={"UPC": "195950823578", "MPN": "MH304LL/A"},
                 identifier_sources={
-                    "UPC": "Two distinct eBay listings agree for MCA04LL/A. "
-                    "Space Gray/Blue/Starlight are MC9x4LL/A codes; Wi-Fi + "
-                    "Cellular is a different SKU."
+                    "UPC": "eBay US + Amazon-derived listings agree for MH304LL/A; "
+                    "Best Buy US (SKU 6586895) confirms the MPN. OnBuy code "
+                    "195950823516 excluded as a suspected non-US variant. "
+                    "Wi-Fi + Cellular is a different SKU."
                 },
                 status="verified"),
-    EvalProduct(key="apple-ipad-pro-m4-11", brand="Apple",
-                model="iPad Pro 11-inch (M4, 2024)",
-                variant="M4, 256GB Wi-Fi, Space Black (MVV83LL/A)",
+    EvalProduct(key="apple-ipad-pro-m5-11", brand="Apple",
+                model="iPad Pro 11-inch (M5, 2025)",
+                variant="M5, 256GB Wi-Fi, Space Black (MDWK4LL/A)",
                 category="tablets",
-                identifiers={"UPC": "195949222467", "MPN": "MVV83LL/A"},
+                identifiers={"UPC": "195950395419", "MPN": "MDWK4LL/A"},
                 identifier_sources={
-                    "UPC": "Many distinct eBay listings agree for MVV83LL/A. "
-                    "Silver MVV93LL/A is a different SKU; Wi-Fi + Cellular "
-                    "is a different SKU."
+                    "UPC": "Micro Center (SKU 941617) + multiple listings agree for "
+                    "MDWK4LL/A. Single-seller eBay code 195950391077 "
+                    "excluded as conflicting. Wi-Fi + Cellular is a "
+                    "different SKU."
                 },
                 status="verified"),
-    EvalProduct(key="apple-airpods-max-usbc", brand="Apple",
-                model="AirPods Max (USB-C, 2024)",
-                variant="USB-C, Midnight (MWW43AM/A)",
+    EvalProduct(key="apple-airpods-max-2", brand="Apple",
+                model="AirPods Max 2 (USB-C, 2026)",
+                variant="USB-C, Midnight (MHWK4AM/A)",
                 category="headphones",
-                identifiers={"UPC": "195949543890", "MPN": "MWW43AM/A"},
+                identifiers={"UPC": "195951039060", "MPN": "MHWK4AM/A"},
                 identifier_sources={
-                    "UPC": "Best Buy US + multiple eBay listings agree for "
-                    "MWW43AM/A. One eBay catalog page giving 1959495440206 "
-                    "was excluded as conflicting. Lightning version is a "
-                    "different model."
+                    "UPC": "Abt + Best Buy US (SKU 6494847) agree for MHWK4AM/A. "
+                    "The 2024 USB-C model MWW43AM/A is the previous "
+                    "generation; Lightning version is a different model."
                 },
                 status="verified"),
 ]

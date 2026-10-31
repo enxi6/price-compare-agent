@@ -42,10 +42,12 @@ def test_snapshot_staleness(tmp_path):
 def test_eval_set_shape():
     assert len(EVAL_SET) == 28
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 27
+    assert len(verified) == 26
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
+    assert {p.key for p in pending} == {
+        "sony-dualsense-white", "apple-macbook-pro-14-m6"}
 
 
 def test_evaluate_counts_fixture_snapshot(tmp_path):

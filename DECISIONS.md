@@ -75,3 +75,18 @@ written as "superseded by" with the original text kept.
   keeps every claim auditable by its audience.
 - Consequence: Existing Chinese text in docs and code is translated
   to English in one pass; new content must be written in English.
+
+## 008 (2026-10-31): Discontinued Apple entries are replaced by current-generation successors, user-confirmed
+
+- Decision: The open item left by decision 006 is closed: discontinued
+  Apple entries are replaced by their current-generation successors
+  (9 replaced, 3 kept; see BUILD_LOG 011 for the full list), rather than
+  tracked as clearance items.
+- Why: The eval set's purpose is comparing what a buyer can buy new
+  today; carrying retired generations would measure clearance pricing,
+  not the mainstream new-unit market the project claims to cover.
+- Nuance, user-confirmed: the MacBook Pro 14 M6 base (MHWT4LL/A) counts
+  as the current model even though it is pre-order until its 2026-11-06
+  release, because the M5 base it replaces is already discontinued; its
+  entry stays pending (no UPC yet) and cannot enter the matched ranking
+  until a retailer listing states the UPC.

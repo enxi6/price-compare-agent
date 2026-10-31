@@ -199,3 +199,47 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   limits, so no Best Buy/B&H scraper adapters are built at this stage — snapshots + browser
   verification are the right shape for this tier. Automatic fetching must go through official
   channels (requiring API access) — a separate decision.
+
+## 011 — 2026-10-31: Apple cluster refreshed — discontinued generations replaced with current models
+
+- User-confirmed replacement list (DECISIONS 006: in-sale new products only;
+  9 replaced, 3 kept; eval set still 28 models, verified identifiers 27 -> 26):
+  - MacBook Air 13 M4 Starlight MW0Y3LL/A -> M5 13 Midnight MDHE4LL/A,
+    UPC 195950690200 (Best Buy US SKU 6397846 + B&H agree).
+  - MacBook Air 15 M4 Sky Blue MC7A4LL/A -> M5 15 Midnight MDVH4LL/A,
+    UPC 195950697087 (Best Buy US SKU 6571043 + eBay listings).
+  - MacBook Pro 14 M4 Space Black MW2U3LL/A -> M6 14 Space Black MHWT4LL/A,
+    16GB/1TB, $1,999, pre-order shipping 2026-11-06; UPC not yet published,
+    so the entry stays pending with empty identifiers (never matched)
+    until a retailer listing states the UPC. User chose the M6 base over
+    the in-stock M5 24GB/1TB (MDE34LL/A, Best Buy $2,049).
+  - Mac mini M4 MU9D3LL/A -> M6 MHQK4LL/A, UPC 195951021089 (Adorama spec
+    table, single source; Best Buy US SKU 6566933 confirms the MPN).
+  - iPad Air M3 Purple MCA04LL/A -> M4 11 Space Gray MH304LL/A,
+    UPC 195950823578 (eBay US + Amazon-derived listings; Best Buy US
+    SKU 6586895 confirms the MPN; OnBuy code 195950823516 excluded as a
+    suspected non-US variant).
+  - iPad Pro M4 Space Black MVV83LL/A -> M5 11 Space Black MDWK4LL/A,
+    UPC 195950395419 (Micro Center SKU 941617 + multiple listings;
+    single-seller eBay code 195950391077 excluded).
+  - AirPods Max USB-C Midnight MWW43AM/A -> AirPods Max 2 Midnight MHWK4AM/A,
+    UPC 195951039060 (Abt + Best Buy US SKU 6494847).
+  - AirPods Pro 2 Lightning MQD83AM/A -> AirPods Pro 3 MFHP4LL/A,
+    UPC 195950543698 (Best Buy US SKU 6376563 + eBay GTIN agree).
+  - Watch SE 2 40mm GPS Midnight MXE93LL/A -> Watch SE 3 GPS 40mm Midnight
+    MEH94LW/A, UPC 195950387070 (multiple eBay listings agree; Best Buy's
+    current GPS 40mm Midnight listings are Navy Blue band variants, band
+    detail to pin at snapshot time).
+  - Kept (still current): iPad A16 Silver MD3Y4LL/A, AirPods 4 MXP63LL/A
+    (Best Buy in stock), Magic Mouse USB-C MXK53AM/A (Best Buy/B&H in stock).
+- Keys renamed to the new generations (e.g. apple-macbook-air-13-m4 ->
+  apple-macbook-air-13-m5) so old snapshot quotes cannot silently attach
+  to new models. The Apple snapshot (data/eval_snapshots_apple.json) still
+  holds quotes for the retired models and needs a fresh collection round
+  for the new ones; it is dated evidence and was not edited here.
+- Test update: test_eval_set_shape now expects 26 verified and pending ==
+  {sony-dualsense-white, apple-macbook-pro-14-m6}.
+- Non-Apple entries were not re-checked for discontinuation in this pass.
+- Also fixed in passing: the catalog module docstring said 20 models (stale
+  since the set grew to 28), and a stale "pending" section header above
+  already-verified entries.
