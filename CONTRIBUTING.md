@@ -1,20 +1,24 @@
-# 贡献指南
+# Contributing Guide
 
-## 先说三条硬线
+## Three hard lines first
 
-1. **排名永不接受付费影响**：任何 PR 如果让排名因子与商家付费挂钩，直接拒绝。
-2. **新商家适配器必须附两样东西**：数据来源合法性说明（官方 API / Feed / 目录，
-   还是公开结构化数据），以及至少 3 个评测用例（同款识别 + 总价构成）。
-3. **价格必须带来源与时间**：没有来源链接和抓取时间的报价不合并。
+1. **Rankings never accept paid influence**: any PR that ties a ranking factor to merchant payment
+   is rejected outright.
+2. **A new merchant adapter must come with two things**: a statement of data-source legitimacy
+   (official API / feed / catalog, or public structured data), and at least 3 eval cases
+   (same-product identification + total-price composition).
+3. **Prices must carry source and time**: a quote without a source link and fetch time is not merged.
 
-## 怎么参与
+## How to participate
 
-- 提 issue：先说商品品类 + 遇到的具体问题（比错了？价格过期？商家屏蔽？），
-  附上商品链接和期望结果。
-- 提 PR：小步快跑，一个 PR 只做一件事；改排名逻辑必须同步跑评测集并贴结果。
-- 讨论取舍：去 `DECISIONS.md` 里追加新条目，写清“决定 / 为什么 / 备选为什么没选”。
+- File an issue: start with the product category + the specific problem (wrong match? stale price?
+  merchant blocking?), attaching the product link and the expected result.
+- Submit a PR: small steps, one thing per PR; a PR that changes ranking logic must also run the
+  eval set and post the results.
+- Discuss trade-offs: append a new entry in `DECISIONS.md`, stating clearly "decision / why /
+  why the alternatives were not chosen".
 
-## 本地开发
+## Local development
 
 ```bash
 cd price-compare-agent
@@ -22,4 +26,4 @@ python3 -m price_agent.cli compare "Sony WH-1000XM5"
 python3 -m unittest discover -s tests -v
 ```
 
-不需要任何 API Key 即可跑通骨架（模拟商家数据）。
+No API key is needed to run the skeleton (mock merchant data).

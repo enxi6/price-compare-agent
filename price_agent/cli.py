@@ -38,18 +38,18 @@ def compare(query: str, adapters=ALL_MOCK_ADAPTERS) -> None:
     matched, suspected = split_by_identifier(offers, MOCK_IDENTIFIER)
     ranked = rank_offers(matched)
 
-    print(f"商品：{query}（模拟商家数据，非真实价格）")
-    print(f"同款标识：{MOCK_IDENTIFIER}，命中 {len(ranked)} 家\n")
-    print("到手总价排名：")
+    print(f"Product: {query} (mock merchant data, not real prices)")
+    print(f"Same-product identifier: {MOCK_IDENTIFIER}, {len(ranked)} matched\n")
+    print("Landed total price ranking:")
     for i, offer in enumerate(ranked, 1):
-        stock = "有货" if offer.in_stock else "缺货"
-        delivery = f"{offer.delivery_days} 天" if offer.delivery_days else "未知"
-        rating = f"{offer.seller_rating:.1f}" if offer.seller_rating else "未知"
-        print(f"{i}. {offer.merchant}｜{stock}｜到货约 {delivery}｜商家评分 {rating}")
+        stock = "In stock" if offer.in_stock else "Out of stock"
+        delivery = f"{offer.delivery_days} days" if offer.delivery_days else "Unknown"
+        rating = f"{offer.seller_rating:.1f}" if offer.seller_rating else "Unknown"
+        print(f"{i}. {offer.merchant} | {stock} | Delivery ~{delivery} | Merchant rating {rating}")
         print(f"   {offer.breakdown()}")
-        print(f"   来源：{offer.url}｜抓取于 {offer.fetched_at}")
+        print(f"   Source: {offer.url} | Fetched at {offer.fetched_at}")
     if suspected:
-        print(f"\n疑似同款（标识对不上，未进排名）：{len(suspected)} 家")
+        print(f"\nSuspected same product (identifier mismatch, not ranked): {len(suspected)}")
 
 
 def compare_model(model_key: str, snapshot_path: str) -> None:
@@ -60,20 +60,20 @@ def compare_model(model_key: str, snapshot_path: str) -> None:
     matched, suspected = match_offers(offers, product)
     ranked = rank_offers(matched)
 
-    print(f"商品：{product.brand} {product.model}（{product.variant}）")
-    print(f"同款标识：{product.identifiers or '未核实（不得凭标题进主排名）'}")
+    print(f"Product: {product.brand} {product.model} ({product.variant})")
+    print(f"Same-product identifier: {product.identifiers or 'Unverified (title matches must not enter the main ranking)'}")
     if age > STALE_AFTER_HOURS:
-        print(f"注意：快照已 {age:.0f} 小时，超过 {STALE_AFTER_HOURS:.0f} 小时，价格需复核，不当现价用。")
-    print(f"快照来源：{snapshot['meta']['source']}，采集于 {snapshot['meta']['collected_at']}")
-    print(f"\n主排名（标识匹配）：{len(ranked)} 家")
+        print(f"Note: snapshot is {age:.0f} hours old, over {STALE_AFTER_HOURS:.0f} hours; prices need re-check, do not use as current prices.")
+    print(f"Snapshot source: {snapshot['meta']['source']}, collected at {snapshot['meta']['collected_at']}")
+    print(f"\nMain ranking (identifier matches): {len(ranked)}")
     for i, offer in enumerate(ranked, 1):
-        print(f"{i}. {offer.merchant}｜{offer.breakdown()}")
-        print(f"   来源：{offer.url}")
-    print(f"\n疑似同款价格一览（标题匹配、未验证标识，不进主排名，仅作线索）：{len(suspected)} 家")
+        print(f"{i}. {offer.merchant} | {offer.breakdown()}")
+        print(f"   Source: {offer.url}")
+    print(f"\nSuspected same-product prices (title matches, unverified identifiers, not ranked, leads only): {len(suspected)}")
     for offer in sorted(suspected, key=lambda o: o.price):
-        print(f"- {offer.merchant}｜商品 ${offer.price:.2f}（运费未知、税费未计）｜{offer.url}")
+        print(f"- {offer.merchant} | Item ${offer.price:.2f} (shipping unknown, tax not included) | {offer.url}")
     if suspected:
-        print("下单前须在商家页核实型号、颜色、库存与结算总价。")
+        print("Before ordering, verify model, color, stock, and checkout total on the merchant page.")
 
 
 def compare_shopify(model_key: str, spec: str) -> None:
@@ -87,42 +87,42 @@ def compare_shopify(model_key: str, spec: str) -> None:
     try:
         store, handle = spec.split("/", 1)
     except ValueError:
-        print("请用 store/handle 格式，例如 www.keychron.com/keychron-k8-pro-...")
+        print("Use the store/handle format, e.g. www.keychron.com/keychron-k8-pro-...")
         return
     adapter = ShopifyAdapter(store, handle, merchant=store)
     try:
         offers = adapter.search("")
     except AdapterError as exc:
-        print(f"店铺接口未返回可用数据，已停住：{exc}")
+        print(f"Store endpoint returned no usable data, stopped: {exc}")
         return
     matched, suspected = match_offers(offers, product)
     ranked = rank_offers(matched)
-    print(f"商品：{product.brand} {product.model}（{product.variant}）")
-    print(f"店铺：{adapter.url}（公开商品 JSON，只读）")
+    print(f"Product: {product.brand} {product.model} ({product.variant})")
+    print(f"Store: {adapter.url} (public product JSON, read-only)")
     if not adapter.stock_field_present:
-        print("库存说明：该店铺公开商品 JSON 不含库存字段，有货状态仅表示已上架，购买前须在商品页核实库存。")
-    print(f"同款标识：{product.identifiers or '未核实（不得凭标题进主排名）'}")
-    print(f"\n主排名（标识匹配）：{len(ranked)} 家")
+        print("Stock note: this store's public product JSON has no stock field; 'in stock' only means listed — verify stock on the product page before purchase.")
+    print(f"Same-product identifier: {product.identifiers or 'Unverified (title matches must not enter the main ranking)'}")
+    print(f"\nMain ranking (identifier matches): {len(ranked)}")
     for i, offer in enumerate(ranked, 1):
-        stock = "有货" if offer.in_stock else "缺货"
-        print(f"{i}. {offer.merchant}｜{stock}｜{offer.title}")
+        stock = "In stock" if offer.in_stock else "Out of stock"
+        print(f"{i}. {offer.merchant} | {stock} | {offer.title}")
         print(f"   {offer.breakdown()}")
-        print(f"   来源：{offer.url}｜抓取于 {offer.fetched_at}")
-    print(f"\n疑似（标识对不上，未进排名）：{len(suspected)} 个变体")
+        print(f"   Source: {offer.url} | Fetched at {offer.fetched_at}")
+    print(f"\nSuspected (identifier mismatch, not ranked): {len(suspected)} variants")
     for offer in suspected:
-        print(f"- {offer.title}｜商品 ${offer.price:.2f}｜标识 {offer.identifier}")
+        print(f"- {offer.title} | Item ${offer.price:.2f} | Identifier {offer.identifier}")
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="price_agent")
     sub = parser.add_subparsers(dest="command", required=True)
-    cmp_parser = sub.add_parser("compare", help="比较一款商品的到手总价")
-    cmp_parser.add_argument("query", nargs="?", help="商品名或型号，例如 Sony WH-1000XM5")
-    cmp_parser.add_argument("--model", help="评测集型号 key，例如 sony-wh1000xm5-black")
+    cmp_parser = sub.add_parser("compare", help="Compare the landed total price of a product")
+    cmp_parser.add_argument("query", nargs="?", help="Product name or model, e.g. Sony WH-1000XM5")
+    cmp_parser.add_argument("--model", help="Eval-set model key, e.g. sony-wh1000xm5-black")
     cmp_parser.add_argument("--snapshot", default=DEFAULT_SNAPSHOT,
-                            help="快照文件路径（默认 data/eval_snapshots.json）")
-    cmp_parser.add_argument("--shopify", help="实店：store/handle，例如 www.keychron.com/keychron-k8-pro-...")
-    eval_parser = sub.add_parser("eval", help="跑一遍 20 型号评测集并汇总覆盖率")
+                            help="Snapshot file path (default data/eval_snapshots.json)")
+    cmp_parser.add_argument("--shopify", help="Live store: store/handle, e.g. www.keychron.com/keychron-k8-pro-...")
+    eval_parser = sub.add_parser("eval", help="Run the full eval set and summarize coverage")
     eval_parser.add_argument("--snapshot", default=DEFAULT_SNAPSHOT)
     args = parser.parse_args(argv)
     if args.command == "compare":
@@ -133,18 +133,18 @@ def main(argv: list[str] | None = None) -> int:
             compare_model(args.model, args.snapshot)
             return 0
         if not args.query:
-            cmp_parser.error("compare 需要 query，或用 --model 指定评测集型号")
+            cmp_parser.error("compare needs a query, or use --model to specify an eval-set model")
         compare(args.query)
         return 0
     if args.command == "eval":
         result = evaluate(args.snapshot)
-        print(f"评测集：{result['models']} 个型号，已核实标识 {result['verified_identifiers']} 个，"
-              f"有快照报价 {result['with_snapshot_offers']} 个")
-        print(f"报价总数 {result['total_offers']}，标识匹配 {result['matched']}，"
-              f"标题匹配（疑似）{result['suspected']}")
+        print(f"Eval set: {result['models']} models, {result['verified_identifiers']} verified identifiers, "
+              f"{result['with_snapshot_offers']} with snapshot quotes")
+        print(f"Total quotes {result['total_offers']}, identifier matches {result['matched']}, "
+              f"title matches (suspected) {result['suspected']}")
         for row in result["rows"]:
-            print(f"- {row['key']}：标识 {row['identifier_status']}，报价 {row['offers']}，"
-                  f"匹配 {row['matched']}，疑似 {row['suspected']}")
+            print(f"- {row['key']}: identifier {row['identifier_status']}, quotes {row['offers']}, "
+                  f"matched {row['matched']}, suspected {row['suspected']}")
         return 0
     return 2
 

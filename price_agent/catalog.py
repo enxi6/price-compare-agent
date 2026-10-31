@@ -181,9 +181,10 @@ EVAL_SET: list[EvalProduct] = [
     EvalProduct(key="sony-dualsense-white", brand="Sony",
                 model="DualSense Wireless Controller", variant="White",
                 category="controllers",
-                notes="UPC 冲突未解决：亚马逊美版 711719574293 vs 新澳 PBTech "
-                "711719575856 vs 其他 711719541080；须以美版厂商/零售商页面二次确认，"
-                "暂不 verified。"),
+                notes="UPC conflict unresolved: Amazon US 711719574293 vs "
+                "NZ/AU PBTech 711719575856 vs other 711719541080; needs a "
+                "second check against a US manufacturer/retailer page; "
+                "left unverified for now."),
     EvalProduct(key="xbox-wireless-controller-black", brand="Microsoft",
                 model="Xbox Wireless Controller",
                 variant="Carbon Black, Series X|S (1914)",

@@ -1,98 +1,114 @@
-# 详细步骤与规划
+# Detailed Steps and Plan
 
-目标：做一个**只为买方服务的比价 agent**，从“能跑通的最小比价”开始，
-一步步做到“敢把钱交给它比、甚至代买”。全程开源，过程公开。
+Goal: build a **price-compare agent that serves the buyer only**, starting from a "minimal
+comparison that runs" and step by step reaching "trusted enough to compare for you, and even
+order for you". Fully open source, with the process public.
 
-灵感锚点：Patrick Collison 2026-10-09 长文——个人 agent 让消费者更理性，
-奖励好产品而不是大广告；agent 的忠诚对象必须是买方。
+Inspiration anchor: Patrick Collison's 2026-10-09 long post — personal agents make consumers
+more rational and reward good products rather than big advertising; the agent's loyalty must
+belong to the buyer.
 
-## Phase 0：立项与开源基建（本周，已启动）
+## Phase 0: Project setup and open-source infrastructure (this week, started)
 
-- [x] 仓库骨架：README / PLAN / ARCHITECTURE / DECISIONS / BUILD_LOG / LICENSE / CONTRIBUTING
-- [x] 比价核心最小实现 + 模拟商家 + 测试（`python3 -m price_agent.cli compare` 可跑）
-- [x] 在 GitHub 建公开库并推送（2026-10-31 已建 https://github.com/enxi6/price-compare-agent；
-  Phase 1 起本地提交与远程上传历史不同步，推送前须先处理历史差异）
-- [x] 定第一个品类：标准化电子产品型号（用户 2026-10-31 说开始、未改默认）
-- [x] 定评测集：20 个具体型号（`price_agent/catalog.py`），6 个标识已核实、14 个待核实
+- [x] Repository skeleton: README / PLAN / ARCHITECTURE / DECISIONS / BUILD_LOG / LICENSE / CONTRIBUTING
+- [x] Minimal compare core + mock merchants + tests (`python3 -m price_agent.cli compare` runs)
+- [x] Public repository created on GitHub and pushed (created 2026-10-31 at https://github.com/enxi6/price-compare-agent;
+  from Phase 1 on, local commits and the remote upload history are out of sync — the history
+  difference must be handled before pushing)
+- [x] First category set: standardized electronics models (user said "start" on 2026-10-31 without changing the default)
+- [x] Eval set set: 20 specific models (`price_agent/catalog.py`), 6 identifiers verified, 14 pending
 
-验收：别人 clone 下来 5 分钟内能跑通 demo；仓库主页能讲清“为谁服务、靠什么排序”。
+Acceptance: someone else can clone and run the demo within 5 minutes; the repository homepage
+explains clearly "whom it serves and what it ranks by".
 
-## Phase 1：同款比价核心（第 1–2 周）
+## Phase 1: Same-product compare core (weeks 1–2)
 
-1. **标识归一**：以 UPC/EAN/MPN/官方 SKU 为主键；标题、图片只作辅助证据。
-   对不上的标题相似商品走“疑似同款”分支，不进主排名。
-   （2026-10-31 进展：匹配模块与 20 型号评测集已落地，6 个标识已核实。）
-2. **到手总价**：`总价 = 商品价 + 运费 + 预估税费 − 优惠`，逐项展示来源与时间；
-   运费按收货地（默认美国）估算，缺运费数据的商家标注“运费未知”，不按 0 算。
-3. **数据源梯队**（按优先级，缺一档才往下一档）：
-   1. 官方 API / 商品 Feed（品牌官网、Shopify 店铺的公开商品接口、eBay API 等）
-   2. 联盟商品目录（例如 Meta Catalog 这类聚合目录）
-   3. 商家结构化数据（商品页的 JSON-LD / Open Graph）
-   4. 浏览器人工复核（只读、限速、遵守 robots 与 ToS；被屏蔽即停）
-   永远不用：伪造身份、绕验证码、撞库式抓取。
-   （2026-10-31 进展：目录快照已接 12 条真实报价；Shopify 适配器代码已实现，
-   真实店铺待核实域名与 handle 后再接。）
-4. **透明账单**：每个报价附商家、链接、抓取时间、价格构成；价格过期（>24h）
-   标注“需复核”，不直接当现价用。
-5. **CLI → 简单 Web 页**：先 CLI，再给一个只读结果页（输入商品 → 排名表），
-   不做账号系统。
+1. **Identifier normalization**: UPC / EAN / MPN / official SKU as the primary key; titles and
+   images are supporting evidence only. Title-similar items that do not match go to the
+   "suspected same product" branch, never into the main ranking.
+   (2026-10-31 progress: matching module and 20-model eval set landed, 6 identifiers verified.)
+2. **Landed total price**: `total = item price + shipping + estimated tax − discount`, showing
+   source and time per component; shipping is estimated by delivery location (default: United
+   States); merchants without shipping data are labeled "shipping unknown", never counted as 0.
+3. **Data-source tiers** (in priority order; move down only when a tier is unavailable):
+   1. Official APIs / product feeds (brand official sites, Shopify stores' public product
+      endpoints, eBay API, etc.)
+   2. Affiliate product catalogs (aggregated catalogs such as Meta Catalog)
+   3. Merchant structured data (product-page JSON-LD / Open Graph)
+   4. Browser manual verification (read-only, rate-limited, respecting robots and ToS;
+      stop if blocked)
+   Never use: fake identities, CAPTCHA bypasses, brute-force scraping.
+   (2026-10-31 progress: catalog snapshot connected with 12 real quotes; Shopify adapter code
+   implemented; real stores to be connected after their domains and handles are verified.)
+4. **Transparent bill**: every quote carries merchant, link, fetch time, and price composition;
+   prices older than 24h are labeled "needs re-check", never presented directly as current prices.
+5. **CLI → simple web page**: CLI first, then a read-only results page (enter product →
+   ranking table). No account system.
 
-验收：20 个评测型号里，同款识别准确率 ≥90%，到手总价与商家结算页误差在
-运费/税费可解释范围内；每个报价都可追溯到来源。
+Acceptance: across the 20 eval models, same-product identification accuracy ≥ 90%, and landed
+total prices fall within an explainable shipping/tax range of merchant checkout pages; every
+quote is traceable to its source.
 
-## Phase 2：质量信号与价格追踪（第 3–4 周）
+## Phase 2: Quality signals and price tracking (weeks 3–4)
 
-1. **质量信号**：在总价之外并列展示商家评分、评价数、退货政策、预计到货；
-   排名仍以总价为主，质量信号作“同价优先选谁”的第二排序键，不搞黑箱综合分。
-2. **价格追踪**：对用户盯着的商品定时复查，降价到目标价时提醒（先只做提醒，
-   不自动买）；提醒记录公开可查。
-3. **优惠券核查**：只用商家公开的优惠码，不碰“内部券”、不编造折扣；
-   券失效要能检测并标注。
-4. **反作弊**：识别并标注“标价低但运费高”“标题党变体”“翻新当全新”等花招；
-   发现一次就记入评测集。
+1. **Quality signals**: alongside total price, show merchant rating, review count, return policy,
+   and estimated delivery; ranking still leads with total price, and quality signals act as the
+   second sort key for "same price, pick whom" — no black-box composite score.
+2. **Price tracking**: re-check products the user watches on a schedule and alert when the price
+   drops to the target (alerts only at first, never auto-buy); alert records are publicly auditable.
+3. **Coupon verification**: only publicly available merchant coupon codes; no "internal coupons",
+   no invented discounts; expired coupons must be detectable and labeled.
+4. **Anti-gaming**: detect and label tricks such as "low sticker price but high shipping",
+   "clickbait variants", and "refurbished sold as new"; each finding goes into the eval set.
 
-验收：追踪提醒准时、误报可解释；质量信号有来源，不是模型编的。
+Acceptance: tracking alerts on time with explainable false positives; quality signals have
+sources, not model-invented.
 
-## Phase 3：受约束的代下单（第 5–8 周，须单独点头才启动）
+## Phase 3: Constrained order placement (weeks 5–8, starts only with separate approval)
 
-这是最敏感的一步，Collison 原文里“agent 的忠诚对象”在这里落地：
+This is the most sensitive step, where "whom the agent is loyal to" from Collison's post lands:
 
-1. **约束先行**：白名单商家、单笔上限、总预算帽、品类限制，写成机器可校验的
-   约束文件；超约束的单支付环节直接拒绝（参考 Stripe 的 SPT 式约束思路：
-   allowed_merchant / amount / budget，超了就拒付）。
-2. **下单前确认**：每次下单前把“买什么、哪家、总价多少、到货哪天”一次性给用户
-   确认，用户点头才执行；默认不做“先买后报”。
-3. **支付隔离**：支付凭证走钱包/受信支付通道，不把卡号交给 agent 代码；
-   先从 paper / 小额真实订单跑通，再谈放量。
-4. **可审计**：每一单留痕：决策依据（为什么选这家）、价格快照、约束检查结果，
-   用户随时可查、可撤销未发货订单。
+1. **Constraints first**: allowlisted merchants, per-order cap, total budget cap, category limits,
+   written as a machine-checkable constraints file; orders exceeding constraints are rejected at
+   the payment step (following Stripe's SPT-style constraint thinking: allowed_merchant /
+   amount / budget — over the limit means declined).
+2. **Confirm before ordering**: before every order, present "what, which merchant, total price,
+   delivery date" to the user at once; execute only on the user's approval; never "buy first,
+   report later" by default.
+3. **Payment isolation**: payment credentials go through a wallet / trusted payment channel, never
+   handed to agent code; start with paper / small real orders before scaling.
+4. **Auditable**: every order leaves a trail: decision basis (why this merchant), price snapshot,
+   constraint-check results. Users can review anytime and cancel unshipped orders.
 
-验收：约束测试全过（含超预算、非白名单、价格变动三种拒绝场景）；连续 10 单
-小额真实订单零“买错、买贵、超预算”事故。
+Acceptance: all constraint tests pass (including three rejection scenarios: over budget,
+non-allowlisted merchant, price change); 10 consecutive small real orders with zero "wrong item,
+overpaid, over budget" incidents.
 
-## Phase 4：品类扩展与公开评测（持续）
+## Phase 4: Category expansion and public eval (ongoing)
 
-1. 每新增一个品类，先补该品类的同款标识规则与评测集，再接商家。
-2. 每月发一次公开评测报告：同款准确率、总价误差、商家覆盖数、被屏蔽的渠道；
-   数字不好看也照实发——开源项目的信用就是这么来的。
-3. 接受外部 PR 的商家适配器，但每个适配器必须附：数据来源合法性说明 +
-   评测用例，缺一不合并。
+1. For each new category, first add that category's same-product identifier rules and eval set,
+   then connect merchants.
+2. Publish a public eval report monthly: same-product accuracy, total-price error, merchant
+   coverage, blocked channels; publish ugly numbers as they are — that is where an open-source
+   project's credibility comes from.
+3. Accept external PRs for merchant adapters, but each adapter must include: a data-source
+   legitimacy statement + eval cases. Missing either means no merge.
 
-## 风险与对策
+## Risks and countermeasures
 
-| 风险 | 对策 |
+| Risk | Countermeasure |
 |---|---|
-| 商家屏蔽 agent（Amazon 等对外来 agent 并不友好） | 先从开放渠道起步；被屏蔽就停，不对抗；把“覆盖不到”写进报告 |
-| 同款识别错（变体、翻新、地区版） | 标识主键 + 疑似分支 + 评测集回归 |
-| 价格过期/运费税费估不准 | 逐项来源 + 时间戳 + “需复核”标注，不把估算当现价 |
-| 忠诚冲突（佣金、广告） | 排名与收入脱钩；佣金如实披露，永不影响排序 |
-| 自动下单失控 | 约束文件 + 事先确认 + 支付隔离 + 可审计，缺一不上线 |
+| Merchants block the agent (Amazon and others are not friendly to outside agents) | Start from open channels; stop when blocked, never fight back; write "not covered" into the report |
+| Same-product misidentification (variants, refurbished, regional versions) | Identifier primary key + suspected branch + eval-set regression |
+| Stale prices / inaccurate shipping and tax estimates | Per-item source + timestamp + "needs re-check" label; never present estimates as current prices |
+| Loyalty conflict (commissions, ads) | Ranking decoupled from revenue; commissions disclosed truthfully, never affecting ranking |
+| Runaway automatic ordering | Constraints file + prior confirmation + payment isolation + auditability; missing any one means no launch |
 
-## 本周待你定的事
+## Decisions pending from you this week
 
-1. GitHub 发布方式（二选一，见回复里的选项）：我用浏览器以你的身份登录建公开库并推送，
-   还是先本地做着、晚点再推？
-2. 第一个品类：默认按“标准化电子产品型号”起步，你如果想换（比如图书、球鞋具体款），
-   一句话告诉我。
-3. 目标市场：默认美国（商家、运费、税费口径都按美国），如需别的市场要先说，
-   因为税费与商家清单全都不一样。
+1. GitHub publishing method (choose one of two, see the options in the reply): I log in via
+   browser as you to create the public repository and push, or keep working locally and push later?
+2. First category: default is "standardized electronics models". If you want to switch (e.g. books,
+   specific sneaker models), one sentence will do.
+3. Target market: default is the United States (merchant, shipping, and tax conventions all US).
+   Say so first if another market is needed, because tax and merchant lists would all differ.

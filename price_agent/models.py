@@ -39,10 +39,10 @@ class Offer:
         return self.shipping is not None
 
     def breakdown(self) -> str:
-        ship = f"${self.shipping:.2f}" if self.shipping_known else "运费未知"
+        ship = f"${self.shipping:.2f}" if self.shipping_known else "shipping unknown"
         return (
-            f"商品 ${self.price:.2f} + 运费 {ship} "
-            f"+ 预估税 ${self.tax_estimate:.2f} - 优惠 ${self.coupon:.2f} "
-            f"= 到手 ${self.total:.2f}"
-            + ("" if self.shipping_known else "（不含未知运费）")
+            f"Item ${self.price:.2f} + shipping {ship} "
+            f"+ est. tax ${self.tax_estimate:.2f} - discount ${self.coupon:.2f} "
+            f"= landed ${self.total:.2f}"
+            + ("" if self.shipping_known else " (unknown shipping not included)")
         )

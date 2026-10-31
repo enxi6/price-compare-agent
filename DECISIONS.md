@@ -1,38 +1,77 @@
-# 决策记录
+# Decision Log
 
-用一句话记每个关键取舍：决定是什么、为什么、备选为什么没选。
-新决策往上追加，旧决策不悄悄改——改了就写“ superseded by” 并保留原文。
+One line per key trade-off: what was decided, why, and why the alternative was not chosen.
+New decisions are appended at the top; old decisions are never quietly changed — a change is
+written as "superseded by" with the original text kept.
 
-## 001（2026-10-31）：只为买方服务，排名与收入脱钩
+## 001 (2026-10-31): Serve the buyer only; ranking is decoupled from revenue
 
-- 决定：排名因子只含买方利益（总价、到货、信誉）；联盟佣金、广告收入如实披露，
-  永不进入排序。
-- 为什么：Collison 原文的核心就是“agent 站哪边”；一旦排名能被出价影响，
-  这个项目就从买方工具变成了又一个广告位。
-- 备选（没选）：综合价值分——不透明，用户无法审计，否决。
+- Decision: Ranking factors contain buyer interests only (total price, delivery, reputation);
+  affiliate commissions and ad revenue are disclosed truthfully and never enter ranking.
+- Why: The core of Collison's post is "which side the agent is on". Once ranking can be
+  influenced by payment, this project turns from a buyer tool into just another ad slot.
+- Alternative (not chosen): A composite value score — opaque, unauditable by users. Rejected.
 
-## 002（2026-10-31）：同款主键用标识，不用标题相似度
+## 002 (2026-10-31): The same-product key is the identifier, not title similarity
 
-- 决定：UPC/EAN/MPN/官方 SKU 一致才算同款；标题像的进“疑似同款”附表。
-- 为什么：标题相似度在变体、翻新、地区版面前一定会错；错一次就可能让人买错东西。
-- 备选（没选）：纯标题/图片匹配——召回高但 precision 不可控，否决。
+- Decision: Only matching UPC / EAN / MPN / official SKU counts as the same product;
+  similar titles go to the "suspected same product" appendix table.
+- Why: Title similarity will inevitably fail on variants, refurbished units, and regional
+  versions; one failure can make someone buy the wrong thing.
+- Alternative (not chosen): Pure title / image matching — high recall but uncontrollable
+  precision. Rejected.
 
-## 003（2026-10-31）：先比价、不代买；代买要另起一轮审批
+## 003 (2026-10-31): Compare first, do not order yet; ordering needs a separate approval round
 
-- 决定：Phase 1–2 只比价和提醒；Phase 3 的代买须单独点头，且约束文件先行。
-- 为什么：花钱是不可逆动作；先把比价做准、把信任攒够，再谈代买。
-- 备选（没选）：一上来就做代买——风险与合规成本都太高，否决。
+- Decision: Phases 1–2 compare prices and send alerts only; Phase 3 ordering requires a
+  separate approval, with the constraints file written first.
+- Why: Spending money is irreversible; get comparison right and earn trust first, then
+  talk about ordering.
+- Alternative (not chosen): Building ordering from day one — too much risk and compliance
+  cost. Rejected.
 
-## 004（2026-10-31）：数据源按“官方 API > 目录 > 结构化数据 > 浏览器复核”梯队
+## 004 (2026-10-31): Data sources follow the tier "official API > catalog > structured data > browser verification"
 
-- 决定：被屏蔽或 ToS 禁止的渠道就停，不绕验证、不伪造身份。
-- 为什么：对抗式抓取会让项目死在法务和封禁上；开源项目更要经得起查。
-- 备选（没选）：全量爬取——短期覆盖高，长期不可持续，否决。
+- Decision: A channel that is blocked or prohibited by ToS stops there — no bypassing
+  verification, no fake identity.
+- Why: Adversarial scraping would kill the project on legal and ban risk; an open-source
+  project must above all withstand scrutiny.
+- Alternative (not chosen): Scraping everything — higher short-term coverage, unsustainable
+  long-term. Rejected.
 
-## 005（2026-10-31）：默认市场美国，第一个品类标准化电子产品型号
+## 005 (2026-10-31): Default market is the United States; first category is standardized electronics models
 
-- 决定：运费、税费、商家清单先按美国口径；品类先做标识最容易对齐的型号商品。
-- 为什么：范围收窄才能把同款准确率做上去；摊子一铺大，第一个版本什么都比不准。
-- 状态：待用户确认——如需换市场或品类，一句话改。
-- 2026-10-31 补充：用户说“开始”且未改默认值，Phase 1 已按本条默认执行
-  （美国市场、标准化电子产品型号）。
+- Decision: Shipping, tax, and merchant lists follow US conventions first; the first category
+  is model-based products whose identifiers are easiest to align.
+- Why: A narrower scope is the only way to get same-product accuracy up; spread too thin and
+  the first version compares nothing accurately.
+- Status: Pending user confirmation — changing market or category takes one sentence.
+- 2026-10-31 note: The user said "start" without changing the defaults, so Phase 1 has
+  proceeded on these defaults (US market, standardized electronics models).
+
+## 006 (2026-10-31): Phase 1 covers currently-selling mainstream new products only; no secondhand tracking for now
+
+- Decision: The Phase 1 eval set is limited to mainstream new products
+  currently on sale. Used, refurbished, and open-box markets are
+  explicitly out of scope for Phase 1; they may be revisited later as
+  a separate decision, not silently added.
+- Why: Secondhand pricing is far more complex (condition grading,
+  seller variance, no stable SKU identity), and mixing it into new-unit
+  rankings would corrupt the "same product" guarantee before it is proven.
+- Consequence: Entries that stop being sold new at major retailers
+  (e.g. MacBook Air 13 M4, confirmed discontinued-new at Best Buy and
+  B&H on 2026-10-31) are flagged for review against this criterion;
+  whether they are replaced by current-generation successors is a
+  separate user decision, not an automatic substitution.
+
+## 007 (2026-10-31): Repository language is English only; market is the United States
+
+- Decision: All repository content (docs, code comments, CLI output,
+  snapshot metadata) is written in English, targeting US consumers.
+  This confirms and closes the open item in decision 005: the market
+  is the United States and the language is English.
+- Why: The product and its future service target US consumers; a
+  single-language public repository avoids mixed-language drift and
+  keeps every claim auditable by its audience.
+- Consequence: Existing Chinese text in docs and code is translated
+  to English in one pass; new content must be written in English.

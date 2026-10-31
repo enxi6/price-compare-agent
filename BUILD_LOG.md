@@ -1,171 +1,201 @@
-# 公开建造日志（Build in Public）
+# Public Build Log (Build in Public)
 
-这个文件就是“开源整个过程”的载体：每一步做了什么、为什么、结果如何，
-照实记，数字不好看也记。
+This file is the vehicle for "open-sourcing the whole process": what was done at each step,
+why, and how it turned out — recorded truthfully, including ugly numbers.
 
-## 001 — 2026-10-31：立项
+## 001 — 2026-10-31: Project kickoff
 
-- 起因：读了 Stripe CEO Patrick Collison 2026-10-09 的长文（个人 agent 为买方
-  比价、奖励好产品），决定动手把“比价”一环做出来。
-- 今天做的事：
-  - 仓库骨架搭好：README / PLAN / ARCHITECTURE / DECISIONS / LICENSE / CONTRIBUTING
-  - 比价核心最小实现 + 模拟商家 + 测试，可跑通 `python3 -m price_agent.cli compare`
-  - 定下五条不可妥协的原则（见 DECISIONS 001–005）
-- 当前状态：骨架可跑，商家是模拟数据；真实商家接入尚未开始。
-- 待定：GitHub 公开库的发布方式、第一个品类、目标市场（默认美国 + 标准化电子产品型号）。
-- 下一步：Phase 1 同款标识归一 + 到手总价 + 透明账单；先定 20 个型号的评测集。
+- Trigger: reading Stripe CEO Patrick Collison's 2026-10-09 long post (personal agents
+  comparing prices for buyers, rewarding good products), and deciding to build the
+  "price comparison" piece hands-on.
+- Done today:
+  - Repository skeleton: README / PLAN / ARCHITECTURE / DECISIONS / LICENSE / CONTRIBUTING
+  - Minimal compare core + mock merchants + tests; `python3 -m price_agent.cli compare` runs
+  - Five non-negotiable principles set (see DECISIONS 001–005)
+- Current status: skeleton runs, merchants are mock data; real merchant integration not started.
+- Pending: how to publish the public GitHub repository, first category, target market
+  (defaults: United States + standardized electronics models).
+- Next: Phase 1 same-product identifier normalization + landed total price + transparent bill;
+  first define a 20-model eval set.
 
-## 002 — 2026-10-31：Phase 1 开工（评测集 + 标识匹配 + 目录快照）
+## 002 — 2026-10-31: Phase 1 kickoff (eval set + identifier matching + catalog snapshot)
 
-- 用户说“开始”，未改默认值：按 DECISIONS 005 执行（美国市场、标准化电子产品型号）。
-- GitHub 公开库已建成：https://github.com/enxi6/price-compare-agent（Public），
-  13 个 Phase 0 文件已通过网页上传上站；注意本地 git 历史与远程上传历史不同步，
-  本次 Phase 1 先只做本地提交，推送前须先处理历史差异（见文末待定）。
-- 今天做的事：
-  - 20 个型号评测集（`price_agent/catalog.py`）：6 个已核实标识（UPC/MPN 以零售商或
-    厂商页面为准，且按颜色/版本钉死变体——XM5 黑与银、AirPods Lightning 与 USB-C、
-    MX Master 3S 各版本 UPC 各不相同，混用即错）；其余 14 个标识留空待核实，绝不编造。
-  - 标识匹配模块（`price_agent/identity.py`）：仅标识匹配进主排名；GTIN-14 与 UPC-12
-    归一化后可匹配；标题相似只进疑似表。
-  - Tier-1 适配器（`price_agent/adapters_shopify.py`）：Shopify 店铺公开商品 JSON 接口，
-    运费/税费不编造（运费未知、税费 0），被屏蔽即抛错停住；测试用桩数据，不联网。
-  - 目录快照（`data/eval_snapshots.json`，Meta Catalog 2026-10-31 采集）：12 条真实报价，
-    覆盖 5 个已核实型号；Buds2 Pro 白色无干净报价，是覆盖缺口不是 0 元。
-    目录源不给 UPC，所以快照报价全部落在疑似表、主排名 0 家——这是规则在起作用，
-    不是 bug；下一步需要返回标识的源（官方 API/Feed）才能把匹配率做上去。
-  - CLI 新增 `compare --model` 与 `eval`：`eval` 现报 20 型号、6 已核实、5 有快照、
-    报价 12、匹配 0、疑似 12。
-  - 测试从 8 个增至 18 个，全过；另修了首个提交误把 `__pycache__` 入库的问题
-    （加 .gitignore 并从索引中移除）。
-  - 抓到的反作弊实例已记入快照 excluded_traps：T-Mobile 的 Bose $37.50 是月付价、
-    Switch 捆绑包、翻新机、颜色错位、变体错位，都是 Phase 2 反作弊的现成用例。
-- 不好看的数字照实记：匹配率 0%、快照覆盖 5/20、标识核实 6/20。
-- 待定：本地提交与远程上传历史的合并方式（推送前定）；Shopify 适配器尚未接真实店铺
-  （需先核实店铺域名与商品 handle，不得猜 URL）；其余 14 个型号标识待核实。
+- User said "start" without changing defaults: proceeding per DECISIONS 005 (US market,
+  standardized electronics models).
+- GitHub public repository created: https://github.com/enxi6/price-compare-agent (Public),
+  13 Phase 0 files uploaded via the web UI; note that local git history and remote upload
+  history are out of sync — Phase 1 uses local commits only, and the history difference must
+  be handled before pushing (see pending items at the end).
+- Done today:
+  - 20-model eval set (`price_agent/catalog.py`): 6 identifiers verified (UPC/MPN per retailer
+    or manufacturer pages, with variants pinned by color/version — XM5 black vs silver, AirPods
+    Lightning vs USB-C, and MX Master 3S versions each have different UPCs; mixing them is an
+    error); the other 14 identifiers left blank pending verification, never invented.
+  - Identifier matching module (`price_agent/identity.py`): only identifier matches enter the
+    main ranking; GTIN-14 and UPC-12 can match after normalization; title similarity goes to
+    the suspected table only.
+  - Tier-1 adapter (`price_agent/adapters_shopify.py`): Shopify store public product JSON
+    endpoint; shipping/tax never invented (shipping unknown, tax 0); raises an error and stops
+    when blocked; tests use stub data, no network.
+  - Catalog snapshot (`data/eval_snapshots.json`, Meta Catalog collected 2026-10-31): 12 real
+    quotes covering 5 verified models; Buds2 Pro white has no clean quote — a coverage gap,
+    not $0. The catalog source provides no UPC, so all snapshot quotes land in the suspected
+    table with 0 in the main ranking — the rule working as designed, not a bug; the next step
+    needs a source that returns identifiers (official API/feed) to raise the match rate.
+  - CLI gains `compare --model` and `eval`: `eval` now reports 20 models, 6 verified,
+    5 with snapshots, 12 quotes, 0 matched, 12 suspected.
+  - Tests grew from 8 to 18, all passing; also fixed the first commit accidentally including
+    `__pycache__` (added .gitignore and removed it from the index).
+  - Caught anti-gaming examples recorded in the snapshot's excluded_traps: T-Mobile's Bose
+    $37.50 is a monthly-installment price, Switch bundles, refurbished units, color mismatches,
+    and variant mismatches — ready-made Phase 2 anti-gaming cases.
+- Ugly numbers recorded truthfully: 0% match rate, snapshot coverage 5/20, identifiers verified 6/20.
+- Pending: how to merge local commits with the remote upload history (decide before pushing);
+  Shopify adapter not yet connected to a real store (store domain and product handle must be
+  verified first; URLs must not be guessed); 14 remaining model identifiers pending verification.
 
-## 003 — 2026-10-31：第一波标识核实（6/7）+ 实店 CLI
+## 003 — 2026-10-31: First identifier-verification wave (6/7) + live-store CLI
 
-- 第一波 7 个型号，核实 6 个，已核实总数从 6 升至 12：
-  - WF-1000XM5 黑（WF1000XM5/B）：UPC 027242925601（Adorama + 亚马逊美 + Abt + eBay 一致；
-    国际版与捆绑包 UPC 不同，已排除）。
-  - AirPods 4 USB-C（MXP63LL/A）：UPC 195949688522（Adorama + B&H + 亚马逊美一致；
-    印度版与 ANC 版是不同产品，已排除）。
-  - Watch SE 2 40mm GPS 午夜（MXE93LL/A）：UPC 195949641756（Micro Center 单一来源，
-    表带尺寸未在来源中确认，已在条目中标注；其他颜色/表带/蜂窝/年份 UPC 各不相同）。
-  - Kindle Paperwhite 16GB 2024 黑（B0CFPL6CFY）：UPC 840268942847（PBTech 新澳单一卖家）。
-  - MX Keys S：纠正——920-011559 是浅灰不是石墨灰（石墨灰是 920-011406），
-    条目已改名并钉为浅灰，UPC 097855187857。
-  - Switch Lite 绿松石（HDHSBAZAA）：UPC 045496882266（eBay + Desertcart + Ubuy 一致；
-    加拿大翻新码已排除）。
-  - 未核实：Keychron K8 Pro——直营店用 SKU（K8P-G1 等）而非 UPC，且 SKU 按配置分；
-    K8（非 Pro）的 UPC 不得挪用，条目保持 pending 并写明原因。
-- CLI 新增 `compare --model … --shopify store/handle`：跑通实店公开商品 JSON → 标识匹配
-  → 排名的完整链路；被屏蔽即停住报错，不绕行。
-- Keychron 实店端点验证已交浏览器只读检查（店铺 www.keychron.com，
-  handle keychron-k8-pro-qmk-via-wireless-mechanical-keyboard，来自搜索结果 URL），
-  结果回来后再写进日志；本提交不含未经验证的实店断言。
-- 测试仍 18 个，全过；eval 现报 20 型号、12 已核实、5 有快照、报价 12、匹配 0、疑似 12。
-- 待定：第二波 7 个型号标识；Keychron 端点验证结果；本地与远程历史合并方式。
+- First wave of 7 models, 6 verified; verified total rises from 6 to 12:
+  - WF-1000XM5 Black (WF1000XM5/B): UPC 027242925601 (Adorama + Amazon US + Abt + eBay agree;
+    international and bundle UPCs differ and were excluded).
+  - AirPods 4 USB-C (MXP63LL/A): UPC 195949688522 (Adorama + B&H + Amazon US agree;
+    India version and ANC version are different products and were excluded).
+  - Watch SE 2 40mm GPS Midnight (MXE93LL/A): UPC 195949641756 (Micro Center, single source;
+    band size unconfirmed in the source and noted on the entry; other colors/bands/cellular/years
+    each have different UPCs).
+  - Kindle Paperwhite 16GB 2024 Black (B0CFPL6CFY): UPC 840268942847 (PBTech NZ/AU, single seller).
+  - MX Keys S: correction — 920-011559 is Pale Grey, not Graphite (Graphite is 920-011406);
+    entry renamed and pinned to Pale Grey, UPC 097855187857.
+  - Switch Lite Turquoise (HDHSBAZAA): UPC 045496882266 (eBay + Desertcart + Ubuy agree;
+    Canada refurbished code excluded).
+  - Not verified: Keychron K8 Pro — the direct store uses SKUs (K8P-G1 etc.) rather than UPC,
+    and SKUs vary by configuration; the K8 (non-Pro) UPC must not be reused; entry stays pending
+    with the reason written down.
+- CLI gains `compare --model … --shopify store/handle`: full chain from live-store public product
+  JSON → identifier matching → ranking works; stops with an error when blocked, no workarounds.
+- Keychron live-store endpoint verification handed to a read-only browser check (store
+  www.keychron.com, handle keychron-k8-pro-qmk-via-wireless-mechanical-keyboard, from a search
+  result URL); results to be logged when they return; this commit contains no unverified
+  live-store claims.
+- Tests still 18, all passing; eval now reports 20 models, 12 verified, 5 with snapshots,
+  12 quotes, 0 matched, 12 suspected.
+- Pending: second wave of 7 model identifiers; Keychron endpoint verification result; local vs
+  remote history merge.
 
-## 004 — 2026-10-31：第二波标识核实（6/7），评测集 18/20
+## 004 — 2026-10-31: Second identifier-verification wave (6/7), eval set 18/20
 
-- 第二波 7 个型号，核实 6 个，已核实总数从 12 升至 18：
-  - Xbox 手柄碳黑 Series X|S（1914）：UPC 196388518159（PayMore + eBay 一致；
-    老款 QAT-00001 码与另一 PayMore 码已排除为不同版本）。
-  - Quest 3S 128GB（SK-1000926-01）：UPC 815820025825（B&H + 亚马逊美 + PayMore 一致；
-    新加坡、新西兰、翻新版 SKU 各不相同）。
-  - Anker 737 120W 美版插头（A2148）：UPC 194644099008（Swiftsly + Ubuy 一致，
-    EAN 0194644099008 为同一码的 GTIN 形式；英版插头是另一参考）。
-  - Magic Mouse USB-C 白（MXK53AM/A）：UPC 195949655883（苹果官网；
-    新西兰码与黑色版已排除）。
-  - G Pro X Superlight 2 黑（910-006630）：EAN 5099206104525（多家欧洲零售商一致；
-    美版 UPC 未单独确认，以 GTIN 族的 EAN 为准；910-006631 仅包装地区不同）。
-  - Pixel Buds Pro 2 瓷白美版（GA05760-US）：UPC 840244604448（B&H + DirectDial 一致；
-    840244604516 组与澳洲码为其他地区版）。
-  - 未核实：DualSense 白——UPC 三方冲突（亚马逊美 711719574293、新澳 PBTech
-    711719575856、其他 711719541080），无干净一致口径，宁可空着等美版厂商页二次确认。
-- 评测集剩余 pending 仅 2 个：Keychron K8 Pro（SKU 制）与 DualSense 白（UPC 冲突）。
-- 测试仍 18 个，全过；eval 现报 20 型号、18 已核实（快照报价仍 12 条、匹配仍 0，
-  因新核实型号暂无快照报价——标识齐了，下一步是给它们补报价源）。
-- Keychron 端点浏览器验证结果尚未返回，仍 blocked，不催、不重复派发。
+- Second wave of 7 models, 6 verified; verified total rises from 12 to 18:
+  - Xbox Wireless Controller Carbon Black Series X|S (1914): UPC 196388518159 (PayMore + eBay
+    agree; the older QAT-00001 code and another PayMore code excluded as different versions).
+  - Quest 3S 128GB (SK-1000926-01): UPC 815820025825 (B&H + Amazon US + PayMore agree;
+    Singapore, New Zealand, and refurbished SKUs each differ).
+  - Anker 737 120W US plug (A2148): UPC 194644099008 (Swiftsly + Ubuy agree;
+    EAN 0194644099008 is the same code in GTIN form; the UK-plug version is a different reference).
+  - Magic Mouse USB-C White (MXK53AM/A): UPC 195949655883 (Apple official;
+    NZ code and Black version excluded).
+  - G Pro X Superlight 2 Black (910-006630): EAN 5099206104525 (multiple EU retailers agree;
+    US UPC not separately confirmed, so the GTIN-family EAN is used; 910-006631 differs only in
+    regional packaging).
+  - Pixel Buds Pro 2 Porcelain US (GA05760-US): UPC 840244604448 (B&H + DirectDial agree;
+    the 840244604516 group and AU code are other regional versions).
+  - Not verified: DualSense White — three-way UPC conflict (Amazon US 711719574293, NZ/AU
+    PBTech 711719575856, other 711719541080); no clean consistent value, so left blank pending
+    a second check against a US manufacturer/retailer page.
+- Eval set remaining pending: only 2 — Keychron K8 Pro (SKU-based) and DualSense White (UPC conflict).
+- Tests still 18, all passing; eval now reports 20 models, 18 verified (snapshot quotes still
+  12, matches still 0, because newly verified models have no snapshot quotes yet — identifiers
+  are ready, the next step is adding quote sources for them).
+- Keychron endpoint browser verification result still not returned; still blocked — no chasing,
+  no duplicate dispatch.
 
-## 005 — 2026-10-31：Keychron 实店端点验证通过，评测集 19/20
+## 005 — 2026-10-31: Keychron live-store endpoint verified, eval set 19/20
 
-- 浏览器只读验证（未加购、未登录、未购买）：Keychron 官网公开商品 JSON
-  （keychron-k8-pro-qmk-via-wireless-mechanical-keyboard）可正常加载、无屏蔽，
-  标题 Keychron K8 Pro QMK/VIA Wireless Mechanical Keyboard，共 31 个变体。
-- 关键纠正：上一条说“Keychron 用 SKU 而非 UPC”是错的——JSON 里每个变体都有 barcode，
-  如 K8P-G1（黑、全组装热插拔、白光、Gateron G Pro 红）barcode 4895248806837，
-  K8P-G2 为 4895248806844。K8 Pro 条目已按 K8P-G1 配置钉死并升为 verified，
-  评测集已核实总数升至 19/20，仅剩 DualSense 白（UPC 冲突）。
-- 真 bug 一个：该端点的变体对象不含 available 字段；旧适配器逻辑会把缺字段
-  当成缺货，导致全部变体沉底。已修复：缺字段 = 库存未断言（视为已上架），
-  并在 CLI 实店路径打印库存须到商品页核实的说明；另加回归测试。
-- 测试从 18 个增至 19 个，全过。
-- 待定：DualSense 白 UPC 冲突的二次确认；本地与远程历史合并方式。
+- Read-only browser verification (nothing added to cart, no sign-in, no purchase): Keychron's
+  official-store public product JSON (keychron-k8-pro-qmk-via-wireless-mechanical-keyboard)
+  loads fine with no blocking; title Keychron K8 Pro QMK/VIA Wireless Mechanical Keyboard,
+  31 variants in total.
+- Key correction: the earlier statement "Keychron uses SKUs, not UPC" was wrong — every variant
+  in the JSON carries a barcode, e.g. K8P-G1 (Black, Fully Assembled Hot-Swappable, White
+  Backlight, Gateron G Pro Red) barcode 4895248806837, K8P-G2 4895248806844. The K8 Pro entry
+  is now pinned to the K8P-G1 configuration and promoted to verified; verified total rises to
+  19/20, leaving only DualSense White (UPC conflict).
+- One real bug: the endpoint's variant objects carry no available field; the old adapter logic
+  treated a missing field as out of stock, sinking all variants to the bottom. Fixed: a missing
+  field = stock not asserted (treated as listed), with the CLI live-store path printing a note
+  that stock must be verified on the product page; regression test added.
+- Tests grew from 18 to 19, all passing.
+- Pending: DualSense White UPC conflict second check; local vs remote history merge.
 
-## 007 — 2026-10-31：Apple 型号组加入评测集（8/8 核实）
+## 007 — 2026-10-31: Apple model cluster joins the eval set (8/8 verified)
 
-- 用户批准后新增 8 个 Apple 型号，全部按基础配置 + 颜色钉死 part number，
-  评测集从 20 扩至 28，已核实从 19 升至 27，仅剩 DualSense 白 pending：
-  - MacBook Air 13 M4 星光色（MW0Y3LL/A）：UPC 195949837197
-    （eBay + Bestpeek 一致，Best Buy 美国确认 MPN）。
-  - MacBook Air 15 M4 天蓝色（MC7A4LL/A）：UPC 195949893162（两条不同 eBay 刊登一致）。
-  - MacBook Pro 14 M4 深空黑（MW2U3LL/A）：UPC 195949507786
-    （两条不同 eBay 刊登 + Back Market 一致；英/澳后缀为地区版）。
-  - Mac mini M4（MU9D3LL/A）：UPC 195949080296（多条不同刊登一致）。
-  - iPad A16 银色（MD3Y4LL/A）：UPC 195950086232（Best Buy 捆绑页 + eBay 一致）。
-  - iPad Air M3 紫色（MCA04LL/A）：UPC 195949997952（两条不同刊登一致）。
-  - iPad Pro M4 深空黑（MVV83LL/A）：UPC 195949222467（多条不同刊登一致）。
-  - AirPods Max USB-C 午夜色（MWW43AM/A）：UPC 195949543890
-    （Best Buy 美国 + 多条 eBay 刊登一致；eBay 目录页给出的另一码已排除）。
-- 本轮教训：Apple 的颜色 = 不同 part number，条目必须钉颜色；Wi-Fi + 蜂窝版、
-  Lightning 版、地区后缀版一律是不同 SKU，已在来源注记中排除。
-- iPhone 仍排除在外（运营商分期/锁网使“最便宜”不可比），Apple 专场页面
-  待 Phase 4 再议；下一步是给 Apple 组补报价源（Apple 官网与 Amazon/Best Buy
-  均非 Shopify，需新适配器）。
+- After user approval, 8 Apple models added, each pinned to a base configuration + color part
+  number; eval set grows from 20 to 28, verified from 19 to 27, leaving only DualSense White pending:
+  - MacBook Air 13 M4 Starlight (MW0Y3LL/A): UPC 195949837197
+    (eBay + Bestpeek agree; Best Buy US confirms the MPN).
+  - MacBook Air 15 M4 Sky Blue (MC7A4LL/A): UPC 195949893162 (two distinct eBay listings agree).
+  - MacBook Pro 14 M4 Space Black (MW2U3LL/A): UPC 195949507786
+    (two distinct eBay listings + Back Market agree; UK/AU suffixes are regional).
+  - Mac mini M4 (MU9D3LL/A): UPC 195949080296 (many distinct listings agree).
+  - iPad A16 Silver (MD3Y4LL/A): UPC 195950086232 (Best Buy bundle pages + eBay agree).
+  - iPad Air M3 Purple (MCA04LL/A): UPC 195949997952 (two distinct listings agree).
+  - iPad Pro M4 Space Black (MVV83LL/A): UPC 195949222467 (many distinct listings agree).
+  - AirPods Max USB-C Midnight (MWW43AM/A): UPC 195949543890
+    (Best Buy US + many eBay listings agree; another code from an eBay catalog page excluded).
+- Lesson of this wave: for Apple, color = a different part number, so entries must pin color;
+  Wi-Fi + Cellular versions, the Lightning version, and regional-suffix versions are all different
+  SKUs and were excluded in the source notes.
+- iPhone still excluded (carrier financing / network lock makes "cheapest" non-comparable);
+  an Apple showcase page is deferred to Phase 4; next step is adding quote sources for the Apple
+  cluster (Apple's own site, Amazon, and Best Buy are not Shopify — new adapters needed).
 
-## 008 — 2026-10-31：Apple 报价源首测——Meta Catalog 不够用
+## 008 — 2026-10-31: Apple quote-source first test — Meta Catalog is not enough
 
-- 对 8 个 Apple part number 跑 Meta Catalog，返回 50 条，curated 后仅 3 条
-  可进快照（data/eval_snapshots_apple.json，eval：28 型号、3 个有报价）：
-  iPad A16 银色 Abt $427、iPad Pro M4 深空黑 Staples $1,023.99、
-  AirPods Max 午夜色 P.C. Richard $449.98。
-- 排除的陷阱与本轮新发现：PayMore 各门店报价成色未断言为全新（疑似
-  二手/翻新）一律排除；开箱、代发货、非美商家排除；M5 代 MacBook 已上市，
-  M4 条目实为上一代，清仓价语境不同；MacBook Air/Pro M4 基础配置与
-  iPad Air M3 紫色 128GB 在本批中 0 条干净全新报价——是覆盖缺口，不是价格信号。
-- 结论：Meta Catalog 不能单独撑起 Apple 全新机报价，真正的适配器工作
-  （Best Buy/B&H/Amazon 官方渠道或浏览器只读复核）仍待做；快照报价一律
-  identifier=None，按规则只能进疑似表。
-- 待定：DualSense 白 UPC 冲突的二次确认；本地与远程历史合并方式。
+- Ran Meta Catalog against the 8 Apple part numbers: 50 results, only 3 survive curation into
+  the snapshot (data/eval_snapshots_apple.json; eval: 28 models, 3 with quotes):
+  iPad A16 Silver Abt $427, iPad Pro M4 Space Black Staples $1,023.99,
+  AirPods Max Midnight P.C. Richard $449.98.
+- Excluded traps and new findings of this wave: PayMore storefront quotes whose condition is not
+  asserted as new (suspected used/refurbished) all excluded; open-box, drop-shippers, and
+  non-US merchants excluded; M5-generation MacBooks are already out, so M4 entries are
+  previous-generation and their clearance-price context differs; MacBook Air/Pro M4 base configs
+  and iPad Air M3 Purple 128GB have 0 clean new-unit quotes in this batch — a coverage gap,
+  not a price signal.
+- Conclusion: Meta Catalog alone cannot carry Apple new-unit pricing; the real adapter work
+  (Best Buy / B&H / Amazon official channels or browser read-only verification) is still pending;
+  snapshot quotes all carry identifier=None and by rule can only enter the suspected table.
+- Pending: DualSense White UPC conflict second check; local vs remote history merge.
 
-## 009 — 2026-10-31：零售商页实测——M4 Air 13 已全新停售
+## 009 — 2026-10-31: Retailer-page check — M4 Air 13 discontinued as new
 
-- 浏览器只读检查（未加购、未登录、未购买；两站均可达、无屏蔽）：
-  MacBook Air 13 M4 星光色（MW0Y3LL/A）在 Best Buy 美国与 B&H 均显示
-  全新不再有售（Best Buy：“no longer available in new condition”；
-  B&H：“No Longer Available”，并提示有二手款，但按全新口径不引用）。
-- 意义：M4 条目在主力零售商的 live 全新报价覆盖会自然衰减，这解释了
-  008 的部分缺口；适配器必须能表达“已停售”状态，而不是无价可报就
-  沉默或拿相似款顶替。B&H 搜索页出现的 M5 款高价一律不得混入本 SKU。
-- 下一步：用一款现款（iPad A16 银色 MD3Y4LL/A）在同两站复测，验证
-  适配器模式在有货 SKU 上是否成立；M4 条目是转为清仓追踪还是补 M5
-  现款，待用户定。
+- Read-only browser check (nothing added to cart, no sign-in, no purchase; both sites reachable,
+  no blocking): MacBook Air 13 M4 Starlight (MW0Y3LL/A) shows as no longer sold new at both
+  Best Buy US and B&H (Best Buy: "no longer available in new condition";
+  B&H: "No Longer Available", noting a used model exists, which is not cited under the
+  new-unit criterion).
+- Significance: M4 entries' live new-unit quote coverage at major retailers will naturally decay,
+  which explains part of the gap in 008; adapters must be able to express the "discontinued"
+  state rather than going silent when no price is available or substituting a similar model.
+  M5 prices appearing on B&H search pages must never be mixed into this SKU.
+- Next: re-test with a current model (iPad A16 Silver MD3Y4LL/A) at the same two stores to verify
+  whether the adapter pattern holds on an in-stock SKU; whether M4 entries become clearance
+  tracking or gain M5 successors is for the user to decide.
 
-## 010 — 2026-10-31：现款复测通过——iPad A16 两站同价 $399
+## 010 — 2026-10-31: Current-model re-test passes — iPad A16 $399 at both stores
 
-- 浏览器只读复测（未加购、未登录、未购买；两站均可达、无屏蔽）：
-  iPad A16 银色 128GB Wi-Fi（MD3Y4LL/A）全新单机在 Best Buy 与 B&H
-  同为 $399（对比价 $449，省 $50），均有货；Best Buy 免邮为浏览器
-  所在地口径（非用户地址），B&H 运费另计、到货总价未验（未进结算）。
-- 排除的混淆项：256GB 款 $499、开箱/翻新区间价、B&H 的 AppleCare+
-  捆绑包 $478，一律未混入单机价。B&H 报价注明 10-31 23:59 ET 结束、
-  限量，属促销价而非日常价。
-- 快照已更新（data/eval_snapshots_apple.json，eval：3 个有报价、共 5 条）：
-  iPad A16 的 compare 输出为 Best Buy $399 = B&H $399 并列、Abt $427；
-  因目录源不给 UPC，快照报价仍只能进疑似表，这是规则在起作用。
-- 结论：零售商页作为浏览器复核报价源（Tier 4）在现款 SKU 上成立；
-  但 HTML 抓取做成自动适配器既脆弱又易触站方限制，本阶段不建
-  Best Buy/B&H 抓取适配器——快照 + 浏览器复核就是该档的形态。
-  自动拉取要走官方渠道（需 API 资格），属另一次决策。
+- Read-only browser re-test (nothing added to cart, no sign-in, no purchase; both sites
+  reachable, no blocking): iPad A16 Silver 128GB Wi-Fi (MD3Y4LL/A) new standalone units are $399
+  at both Best Buy and B&H (comparable value $449, saving $50), both in stock; Best Buy free
+  shipping is the browser-location rate (not the user's address); B&H shipping is charged
+  separately and the delivered total was not verified (no checkout entered).
+- Excluded confounders: the 256GB model at $499, open-box/refurbished price ranges, and B&H's
+  AppleCare+ bundle at $478 — none mixed into the standalone price. The B&H quote is noted as
+  ending 10-31 23:59 ET, limited quantity — a promotional price, not an everyday price.
+- Snapshot updated (data/eval_snapshots_apple.json; eval: 3 with quotes, 5 quotes total):
+  iPad A16 compare output shows Best Buy $399 = B&H $399 tied, Abt $427; because catalog sources
+  provide no UPC, snapshot quotes can still only enter the suspected table — the rule working.
+- Conclusion: retailer pages as browser-verified quote sources (Tier 4) hold on current SKUs;
+  but turning HTML scraping into automatic adapters is fragile and risks tripping retailer
+  limits, so no Best Buy/B&H scraper adapters are built at this stage — snapshots + browser
+  verification are the right shape for this tier. Automatic fetching must go through official
+  channels (requiring API access) — a separate decision.

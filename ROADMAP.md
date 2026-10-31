@@ -1,414 +1,467 @@
-# 长期规划路线图（ROADMAP）
+# Long-Term Roadmap (ROADMAP)
 
-> 定位：本文件是**产品与商业时间线**，回答“网站怎么上、App 怎么上、钱怎么收”。
-> `PLAN.md` 是建造阶段（Phase 0–4），本文件是时间线（近期–中期–远期），两者
-> 按下面的映射表对齐，互不取代。
+> Positioning: this file is the **product and business timeline**, answering "how the website
+> launches, how the app launches, and how money is charged". `PLAN.md` is the build phases
+> (Phase 0–4); this file is the timeline (near-term – mid-term – long-term). They align via
+> the mapping table below and do not replace each other.
 >
-> 不可违背的底线（来自 `DECISIONS.md`，本文件任何一条与之冲突时以底线为准）：
-> 1. 只为买方排序，排名与收入脱钩；
-> 2. 同款以标识（UPC / EAN / MPN / 官方 SKU）对齐，标题相似只进疑似表；
-> 3. 先比价不代买，代买另起审批；
-> 4. 数据源合规：被屏蔽就停，不绕验证、不伪造身份。
+> Non-negotiable bottom lines (from `DECISIONS.md`; if any line in this file conflicts with
+> them, the bottom lines prevail):
+> 1. Rank for the buyer only; ranking is decoupled from revenue;
+> 2. Same products align by identifier (UPC / EAN / MPN / official SKU); title similarity only
+>    enters the suspected table;
+> 3. Compare first, do not order yet; ordering needs a separate approval;
+> 4. Compliant data sourcing: stop when blocked; no bypassing verification, no fake identity.
 >
-> 本文件不含任何收入数字、合作商家、用户私人信息；凡未定的写“待确认”，
-> 不得用占位数字冒充已定。
+> This file contains no revenue figures, partner merchants, or user private information;
+> anything undecided is written as "to be confirmed" — never dress up a placeholder number
+> as decided.
 
-## 0. 现状快照（2026-10-31）
+## 0. Status snapshot (2026-10-31)
 
-| 项 | 状态 |
+| Item | Status |
 |---|---|
-| Phase 0 | 已完成，公开库 https://github.com/enxi6/price-compare-agent |
-| Phase 1 | 进行中：评测集 28 型号、27 已核实标识（仅 DualSense 白因 UPC 冲突 pending）；Shopify 公开 JSON 适配器已验证实店；Meta Catalog 快照 12 条报价（覆盖 5 型号） |
-| Phase 2 | 未开始：质量信号 + 价格追踪提醒 |
-| Phase 3 | 未开始，须用户单独点头：受约束代下单 |
-| Phase 4 | 未开始：品类扩展与月度公开评测 |
-| 已知缺口 | 快照报价无 UPC，全部落在疑似表、主排名为 0；Apple 组（8 型号）有标识、无报价源——Apple 官网、Amazon、Best Buy 均非 Shopify，需新适配器 |
+| Phase 0 | Complete; public repository https://github.com/enxi6/price-compare-agent |
+| Phase 1 | In progress: eval set of 28 models, 27 verified identifiers (only DualSense White pending on a UPC conflict); Shopify public JSON adapter verified against a live store; Meta Catalog snapshot of 12 quotes (covering 5 models) |
+| Phase 2 | Not started: quality signals + price-tracking alerts |
+| Phase 3 | Not started, needs the user's separate approval: constrained order placement |
+| Phase 4 | Not started: category expansion and monthly public eval |
+| Known gaps | Snapshot quotes carry no UPC, so all land in the suspected table and the main ranking is 0; the Apple cluster (8 models) has identifiers but no quote source — Apple's own site, Amazon, and Best Buy are not Shopify and need new adapters |
 
-## 1. 时间线与 PLAN 的映射
+## 1. Timeline and PLAN mapping
 
-| 时间段 | 本文件章节 | 对应 PLAN 阶段 | 核心产出 |
+| Period | This file's section | Corresponding PLAN phase | Core output |
 |---|---|---|---|
-| 近期 1–2 个月 | §3 网站上线 | Phase 1 收尾 + Phase 2 启动 | 可公开访问的比价网站 |
-| 中期 3–6 个月 | §4 App Store 上架 | Phase 2 完成 + Phase 3 准备 | iOS 应用（TestFlight → 正式上架） |
-| 远期 6–12 个月及以上 | §5 收费模式 | Phase 3（须单独点头）+ Phase 4 | 免费增值订阅、可选代下单服务费 |
+| Near-term, 1–2 months | §3 Website launch | Phase 1 wrap-up + Phase 2 start | A publicly accessible price-compare website |
+| Mid-term, 3–6 months | §4 App Store launch | Phase 2 complete + Phase 3 preparation | iOS app (TestFlight → full launch) |
+| Long-term, 6–12 months and beyond | §5 Monetization | Phase 3 (separate approval needed) + Phase 4 | Freemium subscription, optional order-placement service fee |
 
-依赖总链（后一环以前一环的验收为前提，不可跳号）：
+Dependency chain (each later link requires the earlier link's acceptance; no skipping):
 
 ```
-标识体系与快照格式定稿（§2）
-  → 网站静态页 + 只读 API（§3）
-    → 价格追踪与提醒（Phase 2，网站先行验证）
-      → iOS 应用复用同一 API（§4）
-        → 订阅收费（§5 Stage 1）
-          → 代下单服务费（§5 Stage 2，须 Phase 3 验收 + 用户单独点头）
+Identifier system and snapshot format finalized (§2)
+  → Website static pages + read-only API (§3)
+    → Price tracking and alerts (Phase 2, validated on the website first)
+      → iOS app reusing the same API (§4)
+        → Subscription monetization (§5 Stage 1)
+          → Order-placement service fee (§5 Stage 2, needs Phase 3 acceptance + user's separate approval)
 ```
 
-## 2. 现在就必须定下来的架构决策（否则日后大改）
+## 2. Architecture decisions to lock in now (or pay for major rework later)
 
-以下 8 项是本文件最重要的部分。它们现在改动成本是“改几行”，
-等网站和 App 都上线后再改，成本是“数据迁移 + 双端发版 + 用户数据兼容”。
-每一项都给出了“现在定什么”和“不定会付出什么”。
+These 8 items are the most important part of this file. Changing them now costs "a few lines";
+changing them after the website and app are both live costs "data migration + dual-client
+releases + user-data compatibility". Each item states "what to lock in now" and "what it costs
+not to".
 
-### 2.1 标识体系：`identifier` 是全局主键，永不改含义
+### 2.1 Identifier system: `identifier` is the global primary key, never redefined
 
-- 现在定：
-  - 评测集条目（`catalog.py`）就是未来商品数据库的种子：每个条目必须有
-    稳定的 `product_key`（如 `apple-macbook-air-13-m4`），与商家 SKU、变体、
-    颜色、配置解耦；`product_key` 一旦发布永不复用、永不改指。
-  - 标识归一化规则（`identity.py`：去前导零、去标点、大小写统一）是
-    跨 GTIN-14 / UPC-12 / EAN-13 的唯一归一口径，网站与 App 不得各写一套。
-  - 一个条目 = 一个“可比配置”（芯片 + 内存 + 存储 + 颜色 + 网络制式），
-    Apple 组的教训已证明：颜色不同就是不同 part number，配置不同就是不同 SKU。
-- 不定会付出什么：网站上线后改主键 = 全站链接失效 + 价格历史断裂；
-  App 上线后再改 = 强制升级 + 用户追踪清单失效。
+- Lock in now:
+  - Eval-set entries (`catalog.py`) are the seeds of the future product database: every entry
+    must have a stable `product_key` (e.g. `apple-macbook-air-13-m4`), decoupled from merchant
+    SKUs, variants, colors, and configurations; once published, a `product_key` is never reused
+    and never repointed.
+  - The identifier normalization rules (`identity.py`: strip leading zeros, strip punctuation,
+    unify case) are the single normalization standard across GTIN-14 / UPC-12 / EAN-13; the
+    website and app must not each write their own.
+  - One entry = one "comparable configuration" (chip + memory + storage + color + network
+    type). The Apple cluster already proved it: a different color is a different part number,
+    a different configuration is a different SKU.
+- Cost of not locking in: changing the primary key after the website launches = all site links
+  dead + price history broken; changing it after the app launches = forced upgrade + user
+  tracking lists invalidated.
 
-### 2.2 报价快照格式：只追加、带版本、带出处
+### 2.2 Quote snapshot format: append-only, versioned, sourced
 
-- 现在定（在 `Offer` 模型落地前补齐，否则网站第一版就要返工）：
-  - 快照加 `schema_version` 字段（从 1 起），格式演进只加字段、不改旧字段含义；
-    旧快照永不原地修改，价格变化 = 新快照行。
-  - 每个报价必须带：`product_key`、`merchant`、`price`、`shipping`（未知 = null，
-    绝不写 0）、`tax_estimate` 与税率口径、`coupon`、`url`、`fetched_at`、
-    `source_tier`（官方 API / 目录 / 结构化数据 / 浏览器复核）、`condition`
-    （全新 / 翻新 / 二手）、`bundle`（是否捆绑包）、`region`（默认 US）。
-    现有 `Offer` 缺 `source_tier`、`condition`、`bundle`、`region` 四项，
-    网站上线前必须补上——Phase 2 的反作弊（翻新当全新、捆绑包冒充单品）
-    全靠这四个字段。
-  - 价格历史表现在就按“（商品，商家，抓取时间）→ 价格构成”设计，
-    追踪提醒直接读历史表，不允许为追踪另起一套抓取逻辑。
-- 不定会付出什么：没有 `condition` / `bundle`，网站上线后第一批用户投诉
-  “比出来的是翻新机”时，无法在不改库的情况下修复。
+- Lock in now (fill these in before the `Offer` model lands, or website v1 needs rework):
+  - Snapshots gain a `schema_version` field (starting at 1); format evolution only adds fields
+    and never redefines old ones; old snapshots are never edited in place — a price change is a
+    new snapshot row.
+  - Every quote must carry: `product_key`, `merchant`, `price`, `shipping` (unknown = null,
+    never 0), `tax_estimate` with its tax-rate basis, `coupon`, `url`, `fetched_at`,
+    `source_tier` (official API / catalog / structured data / browser verification), `condition`
+    (new / refurbished / used), `bundle` (whether a bundle), `region` (default US).
+    The current `Offer` lacks `source_tier`, `condition`, `bundle`, and `region` — these four
+    must be added before the website launches, because Phase 2 anti-gaming (refurbished sold as
+    new, bundles posing as single items) depends entirely on them.
+  - The price-history table is designed now as "(product, merchant, fetch time) → price
+    composition"; tracking alerts read the history table directly — no second scraping pipeline
+    just for tracking.
+- Cost of not locking in: without `condition` / `bundle`, when the first wave of website users
+  complains "the comparison showed me a refurbished unit", there is no fix without changing the
+  schema.
 
-### 2.3 API 边界：核心引擎是纯库，网站与 App 都是它的调用方
+### 2.3 API boundary: the core engine is a pure library; website and app are its callers
 
-- 现在定：
-  - `price_agent/` 核心（标识 → 适配器 → 总价 → 排名）保持为**无 CLI、
-    无 Web、无 App 依赖的纯库**；网站与 iOS 应用只通过一层薄 API 调用它，
-    不得在客户端各实现一套排名。
-  - API 契约版本化（`/api/v1/compare`、`/api/v1/track` 等），v1 一旦发布，
-    破坏性变更必须升版本，不得静默改字段。
-  - 排名函数必须是确定性的、无副作用的：同一输入在任何客户端算出同一排名。
-    这是“排名与收入脱钩”在代码层面的唯一可验证形态。
-- 不定会付出什么：网站一套排名、App 一套排名，迟早出现“同一商品两端
-  排名不一样”，信任直接破产，且 App Store 审核时无法解释。
+- Lock in now:
+  - The `price_agent/` core (identifier → adapter → total price → ranking) stays a **pure
+    library with no CLI, web, or app dependencies**; the website and iOS app call it only through
+    a thin API layer and must not each implement their own ranking.
+  - API contracts are versioned (`/api/v1/compare`, `/api/v1/track`, etc.); once v1 ships,
+    breaking changes require a version bump — never silently change a field.
+  - The ranking function must be deterministic and side-effect-free: the same input produces the
+    same ranking on every client. This is the only code-level verifiable form of "ranking is
+    decoupled from revenue".
+- Cost of not locking in: one ranking on the website, another in the app, and sooner or later
+  "the same product ranks differently on the two clients" — trust collapses outright, and it is
+  unexplainable during App Store review.
 
-### 2.4 排名与收入的代码隔离：用测试强制执行，而不只靠口头承诺
+### 2.4 Ranking/revenue code isolation: enforced by tests, not by verbal promise
 
-- 现在定：
-  - 联盟佣金、广告、订阅、服务费等一切收入代码，放在独立模块，
-    **禁止被 `ranking.py` import**；加一条自动化测试断言这条依赖禁令，
-    CI 失败即合并不通过。
-  - 佣金披露是展示层职责：报价卡片上标注“此链接可能产生佣金，佣金不影响排序”，
-    披露文案见 §5.4，展示层可改，排名层不可碰。
-- 不定会付出什么：收入逻辑一旦渗进排名，后续任何“我们没有卖排名”的声明
-  都无法自证，开源项目的信用基础就没了。
+- Lock in now:
+  - All revenue code (affiliate commissions, ads, subscriptions, service fees) lives in a
+    separate module that **`ranking.py` is forbidden to import**; an automated test asserts this
+    dependency ban, and a CI failure blocks merging.
+  - Commission disclosure is a presentation-layer duty: quote cards state "this link may earn a
+    commission; the commission does not affect ranking". The disclosure copy is in §5.4; the
+    presentation layer may change it, the ranking layer may not touch it.
+- Cost of not locking in: once revenue logic seeps into ranking, no later claim of "we do not
+  sell rankings" can be substantiated, and an open-source project's credit foundation is gone.
 
-### 2.5 货币与地区：US 口径做成可插拔模块，不写死
+### 2.5 Currency and region: the US convention is a pluggable module, not hardcoded
 
-- 现在定：运费估算、税费估算（州税率口径）各自独立成模块，输入是
-  （商品，商家，收货州），输出是估算值 + 口径说明；美国以外市场 = 新增
-  一套模块与商家清单，不改核心。
-- 不定会付出什么：税率写死在排名代码里，扩市场时等于重写。
+- Lock in now: shipping estimation and tax estimation (state tax-rate conventions) are each
+  standalone modules taking (product, merchant, delivery state) and returning an estimate +
+  basis note; a market beyond the US = a new set of modules and merchant lists, not a core change.
+- Cost of not locking in: tax rates hardcoded into ranking code mean expanding markets is a rewrite.
 
-### 2.6 适配器契约：每个适配器自带合规状态
+### 2.6 Adapter contract: every adapter declares its own compliance status
 
-- 现在定：适配器接口除取价外，必须声明 `tier`（数据源梯队）、
-  `rate_limit`、`blocked` 状态；被屏蔽的适配器 fail closed（抛错、记入
-  覆盖报告），调用方不得静默降级到对抗式抓取。
-- 不定会付出什么：网站上线后某个渠道被封，系统悄悄用违规方式续上，
-  法务风险由整个项目承担。
+- Lock in now: beyond fetching prices, the adapter interface must declare `tier` (data-source
+  tier), `rate_limit`, and `blocked` status; a blocked adapter fails closed (raises an error,
+  recorded in the coverage report), and callers must not silently degrade to adversarial scraping.
+- Cost of not locking in: after the website launches, a blocked channel gets quietly replaced by
+  a rule-breaking method, and the whole project carries the legal risk.
 
-### 2.7 用户与提醒身份：网站先行方案决定 App 的账号迁移成本
+### 2.7 User and alert identity: the website's v1 choice decides the app's account migration cost
 
-- 现在定（网站 v1 就要选，见 §3.4）：
-  - 网站 v1 不做密码账号：降价提醒用邮箱订阅 + 令牌退订（token link），
-    不存密码、不存支付信息。
-  - 用户记录以邮箱为键；App 阶段引入 Apple ID 登录时，同一邮箱合并为
-    同一用户，网站订阅的追踪清单自动带入 App。
-  - 若将来引入账号，App Store 要求应用内提供删号入口——数据模型现在就
-    预留“用户删除 = 追踪清单与提醒一并清除”的语义。
-- 不定会付出什么：网站用一套匿名 ID、App 用另一套账号，追踪清单无法合并，
-  用户在两端各有一份清单，体验与数据双输。
+- Lock in now (choose at website v1, see §3.4):
+  - Website v1 has no password accounts: price-drop alerts use email subscription + token
+    unsubscribe links; no passwords stored, no payment information stored.
+  - User records are keyed by email; when the app phase introduces Apple ID sign-in, the same
+    email merges into the same user, and the website subscription's tracking list carries into
+    the app automatically.
+  - If accounts are introduced later, the App Store requires an in-app account-deletion entry —
+    the data model reserves the semantics "user deletion = tracking list and alerts cleared
+    together" from now.
+- Cost of not locking in: the website uses one anonymous ID scheme and the app another account
+  scheme, tracking lists cannot merge, and users end up with one list on each client — losing on
+  both experience and data.
 
-### 2.8 数据更新与过期语义：过期价格不是价格
+### 2.8 Data freshness and expiry semantics: an expired price is not a price
 
-- 现在定：快照过期阈值（现行 >24h 标“需复核”）写入 API 契约，
-  网站与 App 显示同一文案；刷新失败时保留上一份快照并标“已过期”，
-  永不以估算价、旧价冒充现价。
-- 不定会付出什么：两端过期文案不一，用户会在 App 里看到网站上没有的价格，
-  误以为是实时价而下单。
+- Lock in now: the snapshot expiry threshold (currently: >24h labeled "needs re-check") is
+  written into the API contract, and the website and app show the same copy; on refresh failure,
+  keep the previous snapshot labeled "expired" — never present an estimated or stale price as
+  current.
+- Cost of not locking in: inconsistent expiry copy across clients means users see a price in the
+  app that is not on the website and mistake it for a live price when ordering.
 
 ---
 
-## 3. 近期（1–2 个月）：网站上线
+## 3. Near-term (1–2 months): Website launch
 
-### 3.1 形态取舍：静态展示为主 + 薄 API 为辅，不做全动态大应用
+### 3.1 Shape: static-first + thin API; no full dynamic web app
 
-| 方案 | 做法 | 优点 | 缺点 | 结论 |
+| Option | Approach | Pros | Cons | Verdict |
 |---|---|---|---|---|
-| A. 纯静态站 | 定时把快照渲染成 HTML，部署到静态托管 | 成本最低、可被搜索引擎收录、无用户数据责任、被屏蔽风险最小 | 用户查未收录型号时无结果 | **v1 主形态** |
-| B. 静态站 + 只读 API | A + 一个只读 API：用户输入任意型号时实时跑适配器取价 | 覆盖任意型号，仍无账号、无写操作 | 需一台常驻服务或 Serverless，成本与运维略增 | **v1 同步做，API 只读** |
-| C. 全动态 Web 应用 | 账号、追踪管理、后台全部上网站 | 功能最全 | 成本、合规、运维、安全责任一次性拉满，v1 不需要 | 否决，留给远期 |
+| A. Pure static site | Render snapshots to HTML on a schedule, deploy to static hosting | Lowest cost, search-engine indexable, no user-data liability, lowest blocking risk | No results for models not yet indexed | **v1 main shape** |
+| B. Static site + read-only API | A + one read-only API: any model a user enters is priced live via adapters | Covers any model, still no accounts, no writes | Needs one always-on service or serverless, slightly higher cost and ops | **Build alongside v1, API read-only** |
+| C. Full dynamic web app | Accounts, tracking management, and back office all on the website | Fullest features | Cost, compliance, ops, and security responsibility all maxed at once; v1 does not need it | Rejected, deferred to long-term |
 
-取舍理由：v1 的目标是“让人验证这个比价可信”，不是“做一个完整产品”。
-静态页天然可审计（每个比价页就是一份带时间戳的公开快照），与开源项目的
-信用逻辑一致；账号与写操作全部推迟到有真实需求时再加。
+Reasoning: v1's goal is "let people verify this comparison is trustworthy", not "build a complete
+product". Static pages are naturally auditable (each compare page is a timestamped public
+snapshot), consistent with an open-source project's credibility logic; accounts and write
+operations are all deferred until real demand exists.
 
-### 3.2 页面与功能清单（v1）
+### 3.2 Page and feature list (v1)
 
-| 页面 | 内容 | 验收标准 |
+| Page | Content | Acceptance criteria |
 |---|---|---|
-| 首页 + 搜索 | 输入商品名或 UPC/MPN，跳到比价页；热门型号入口（先从 28 型号评测集起） | 搜索 28 型号全部有结果页；未知型号明确提示“未收录”，不编造结果 |
-| 商品比价页（核心） | 主排名（标识匹配）、到手总价逐项构成、每项来源与抓取时间、过期标注（>24h 显示“需复核”）、疑似同款附表、翻新/捆绑包标注 | 每个报价可追溯到来源链接与时间；运费未知者排在运费已知者之后并标注“不含未知运费” |
-| 方法与原则页 | 排名规则、标识规则、数据源梯队、佣金披露、被屏蔽渠道的处理 | 文案与 `DECISIONS.md` 一致，无一句“综合评分”类黑箱表述 |
-| 覆盖与缺口页 | 各型号商家覆盖数、缺口（如 Buds2 Pro 白色无干净报价）、被屏蔽的渠道 | 缺口照实写，数字与月度评测报告一致 |
-| 价格历史页（Phase 2 联动） | 选定型号的价格走势（读 §2.2 的历史表） | 走势点全部来自真实快照，无插值、无平滑 |
-| 降价提醒订阅 | 邮箱订阅 + 目标价，令牌退订（§2.7） | 订阅成功有确认；退订一键生效；不发订阅之外的营销邮件 |
-| Apple 专场页（可选，Phase 4 前置） | 8 个 Apple 型号的集合页，复用同一比价页模板，不另起一套逻辑 | 与普通比价页同一数据源、同一排名，页面只是筛选视图 |
+| Home + search | Enter a product name or UPC/MPN to reach a compare page; popular-model entries (starting from the 28-model eval set) | All 28 eval models have result pages; unknown models clearly say "not indexed", never invent results |
+| Product compare page (core) | Main ranking (identifier matches), landed-total-price itemization, source and fetch time per item, expiry labels (>24h shows "needs re-check"), suspected-same-product appendix, refurbished/bundle labels | Every quote traceable to a source link and time; unknown-shipping offers rank after known-shipping ones and are labeled "shipping unknown, not included" |
+| Method and principles page | Ranking rules, identifier rules, data-source tiers, commission disclosure, handling of blocked channels | Copy consistent with `DECISIONS.md`; no black-box phrasing like "composite score" anywhere |
+| Coverage and gaps page | Merchant coverage per model, gaps (e.g. Buds2 Pro white has no clean quote), blocked channels | Gaps written truthfully; numbers consistent with the monthly eval report |
+| Price history page (Phase 2 linked) | Price trend for a chosen model (reads the §2.2 history table) | Every trend point comes from a real snapshot; no interpolation, no smoothing |
+| Price-drop alert subscription | Email subscription + target price, token unsubscribe (§2.7) | Subscription confirmed on success; one-click unsubscribe works; no marketing mail beyond subscriptions |
+| Apple showcase page (optional, Phase 4 precursor) | Collection page for the 8 Apple models, reusing the same compare-page template with no separate logic | Same data source and same ranking as ordinary compare pages; the page is only a filtered view |
 
-不做（v1 明确排除）：账号注册与登录、站内支付、用户评论、商家入驻入口、
-任何“猜你喜欢”推荐——推荐算法一旦出现，排名中立性就说不清了。
+Explicitly excluded from v1: account registration and login, on-site payment, user reviews,
+merchant onboarding entries, and any "recommended for you" feature — once a recommendation
+algorithm appears, ranking neutrality becomes indefensible.
 
-### 3.3 数据更新机制
+### 3.3 Data refresh mechanism
 
-- 定时刷新（cron / 定时任务），按数据源梯队定频率：
-  - Tier-1（官方 API / Feed / Shopify 公开 JSON）：每日至少 1 次，热门型号可更高频；
-  - Tier-2（联盟目录）：每日 1 次；
-  - Tier-3/4（结构化数据 / 浏览器只读复核）：每周 1 次或人工触发，限速、遵守 robots 与 ToS。
-  - 具体频率以各渠道的合规上限为准，待确认。
-- 刷新失败策略：保留上一份快照 + 标“已过期”，并记入覆盖报告；连续失败
-  达到阈值（阈值待确认）时该渠道在覆盖页标记为“暂时不可用”，不静默消失。
-- 被屏蔽策略：立即停用该渠道，记入公开报告，不换身份、不绕验证（§2.6）。
-- 静态页生成：每次刷新成功后重新渲染受影响的型号页；渲染失败不发布半成品页。
-- 报价源优先级：Apple 组当前无报价源——网站上线前必须至少接通一档返回标识的
-  源，否则 Apple 专场页只能展示“暂无可验证报价”，不得用疑似表冒充排名。
+- Scheduled refresh (cron / scheduled jobs), with frequency by data-source tier:
+  - Tier-1 (official APIs / feeds / Shopify public JSON): at least once daily, more often for
+    popular models;
+  - Tier-2 (affiliate catalogs): once daily;
+  - Tier-3/4 (structured data / browser read-only verification): once weekly or manually
+    triggered, rate-limited, respecting robots and ToS.
+  - Exact frequencies follow each channel's compliance ceiling; to be confirmed.
+- Refresh failure policy: keep the previous snapshot + label it "expired" and record it in the
+  coverage report; when consecutive failures reach a threshold (threshold to be confirmed), the
+  channel is marked "temporarily unavailable" on the coverage page — never silently disappearing.
+- Blocking policy: immediately disable the channel, record it in the public report, no identity
+  switching, no verification bypass (§2.6).
+- Static page generation: re-render affected model pages after each successful refresh; a failed
+  render never publishes a half-finished page.
+- Quote-source priority: the Apple cluster currently has no quote source — before the website
+  launches, at least one identifier-returning tier must be connected, or the Apple showcase page
+  may only show "no verifiable quotes yet" and must not pass off the suspected table as a ranking.
 
-### 3.4 成本最低的托管方案
+### 3.4 Lowest-cost hosting plan
 
-- 静态站：静态托管免费档（Cloudflare Pages / GitHub Pages / Netlify 三选一，
-  待确认）；域名 1 个，费用以注册商当时标价为准，待确认。
-- 只读 API 与定时刷新：一台最小规格常驻服务，或 Serverless 函数 + 定时触发器；
-  选型原则是“免费档能覆盖就先用免费档”，用量超免费档时再评估，不预先买大实例。
-- 邮件提醒：复用已有邮箱发送渠道（服务商待确认）；提醒邮件量 = 订阅数 × 触发数，
-  免费档额度以服务商当时标价为准，待确认。
-- 不采购项（v1）：数据库付费实例（快照先用版本化 JSON 文件 + 对象存储）、
-  CDN 付费档、监控付费服务（先用免费档与日志）。
-- 成本复核点：网站上线后第一个月末复核实际用量，超免费档再决策，不提前扩容。
+- Static site: static-hosting free tier (one of Cloudflare Pages / GitHub Pages / Netlify,
+  to be confirmed); 1 domain, cost per the registrar's price at the time, to be confirmed.
+- Read-only API and scheduled refresh: one minimal always-on service, or serverless functions +
+  scheduled triggers; selection principle is "use the free tier while it covers usage" and only
+  evaluate scaling after exceeding it — never buy a large instance in advance.
+- Alert email: reuse an existing email-sending channel (provider to be confirmed); email volume
+  = subscriptions × triggers, with free-tier limits per the provider's price at the time, to be
+  confirmed.
+- Not purchased in v1: paid database instances (snapshots start as versioned JSON files + object
+  storage), paid CDN tiers, paid monitoring services (free tiers and logs first).
+- Cost review point: review actual usage at the end of the first month after website launch;
+  decide on scaling only if free tiers are exceeded, never expand early.
 
-### 3.5 近期里程碑
+### 3.5 Near-term milestones
 
-| 里程碑 | 依赖 | 验收标准 |
+| Milestone | Depends on | Acceptance criteria |
 |---|---|---|
-| M1.1 快照格式定稿 | §2.2 | `Offer` 含 §2.2 全部字段；旧快照可按 `schema_version` 识别；测试覆盖 |
-| M1.2 排名与收入隔离测试 | §2.4 | 依赖禁令测试进 CI 并通过；披露文案定稿（见 §5.4） |
-| M1.3 静态站上线 | M1.1、M1.2、至少一档返回标识的报价源 | 28 型号全部有比价页；每个报价有来源与时间；过期标注生效 |
-| M1.4 只读 API + 提醒订阅 | M1.3、§2.7 | 任意型号查询走同一排名引擎；订阅与退订全程可用；刷新失败策略实测通过 |
+| M1.1 Snapshot format finalized | §2.2 | `Offer` contains all §2.2 fields; old snapshots identifiable by `schema_version`; test coverage |
+| M1.2 Ranking/revenue isolation test | §2.4 | Dependency-ban test in CI and passing; disclosure copy finalized (see §5.4) |
+| M1.3 Static site live | M1.1, M1.2, at least one identifier-returning quote source | All 28 models have compare pages; every quote has source and time; expiry labels active |
+| M1.4 Read-only API + alert subscription | M1.3, §2.7 | Any-model queries run through the same ranking engine; subscribe and unsubscribe work end to end; refresh-failure policy tested live |
 
 ---
 
-## 4. 中期（3–6 个月）：App Store 上架
+## 4. Mid-term (3–6 months): App Store launch
 
-### 4.1 应用形态：原生壳 + 复用 API，拒绝纯套壳
+### 4.1 App shape: native shell + shared API; no pure wrapper
 
-- 结论：**SwiftUI 原生应用，调用 §3 的同一只读 API；静态内容页可在原生壳内
-  以 WebView 展示，但应用主体功能必须是原生的。**
-- 否决纯套壳（把网站整个包进 WebView 上架）的理由：苹果对“仅为网站套壳”
-  的应用有最低功能要求，纯套壳被拒风险高；且套壳无法提供真正需要原生的
-  能力（推送、扫码、桌面小组件），等于白上架。
-- 必须原生的功能（上架的正当性就靠它们）：
-  1. **降价推送提醒**：用户追踪的型号降到目标价时推送——这是网站做不到、
-     用户愿意装 App 的核心理由，也是 Phase 2 追踪提醒在移动端的落地点。
-  2. **扫码比价**：店内扫商品条码 → UPC/EAN → 直接出比价结果。标识体系
-     （§2.1）就是为这个功能准备的；没有标识主键，扫码无从做起。
-  3. **追踪清单管理**：查看、添加、删除追踪型号，目标价编辑。
-  4. **桌面小组件（可选，v1.1）**：追踪型号的当前最低价，点进 App 看明细。
-- 网站与 App 的功能分工（避免双端重复建设）：
-  - 排名、标识匹配、价格历史：服务端唯一实现，双端只渲染。
-  - 提醒订阅：网站用邮箱，App 用推送 + 邮箱（同一用户记录，§2.7）。
-  - 支付（远期订阅）：各端走各端合规通道（§4.3），不共用一套支付代码。
+- Conclusion: **a SwiftUI native app calling the same read-only API from §3; static content
+  pages may be shown in a WebView inside the native shell, but the app's main features must be
+  native.**
+- Why pure wrappers are rejected (wrapping the whole website in a WebView for launch): Apple
+  has minimum-functionality requirements for "website-wrapper-only" apps, so a pure wrapper
+  carries high rejection risk; and a wrapper cannot deliver the genuinely native capabilities
+  (push notifications, barcode scanning, home-screen widgets) — launching it would be pointless.
+- Features that must be native (the app's legitimacy rests on them):
+  1. **Price-drop push alerts**: push when a tracked model drops to its target price — something
+     the website cannot do, and the core reason a user would install the app; also the mobile
+     landing point for Phase 2 tracking alerts.
+  2. **Barcode scanning for comparison**: scan a barcode in-store → UPC/EAN → straight to
+     compare results. The identifier system (§2.1) exists for this feature; without an identifier
+     primary key, scanning has nothing to start from.
+  3. **Tracking-list management**: view, add, and delete tracked models; edit target prices.
+  4. **Home-screen widget (optional, v1.1)**: a tracked model's current lowest price; tap into
+     the app for details.
+- Website/app division of labor (avoid building everything twice):
+  - Ranking, identifier matching, price history: implemented once, server-side; both clients
+    only render.
+  - Alert subscriptions: website uses email; app uses push + email (same user record, §2.7).
+  - Payments (long-term subscriptions): each client uses its own compliant channel (§4.3);
+    no shared payment code.
 
-### 4.2 与网站的数据复用架构（现在预留，日后不改）
+### 4.2 Data-reuse architecture with the website (reserved now, unchanged later)
 
 ```
 iOS App (SwiftUI)
-   │  HTTPS, API v1（版本化契约，§2.3）
+   │  HTTPS, API v1 (versioned contract, §2.3)
    ▼
-只读 API（与网站同一服务）
-   │  调用
+Read-only API (same service as the website)
+   │  calls
    ▼
-核心引擎 price_agent（标识 → 适配器 → 总价 → 排名，纯库）
-   │  读
+Core engine price_agent (identifier → adapter → total price → ranking, pure library)
+   │  reads
    ▼
-版本化快照 + 价格历史表（§2.2）
+Versioned snapshots + price history table (§2.2)
 ```
 
-- 关键约束（现在定死）：
-  - App 不得内置自己的排名逻辑、标识归一逻辑或价格估算逻辑；一切排名
-    来自服务端返回结果。客户端只做展示、排序字段切换（总价 / 到货，规则
-    与服务端一致）与过期标注。
-  - API v1 字段一旦发布，App 发版周期内不得破坏性变更；要改就升 v2 并
-    保留 v1 一段时间（并行期待确认）。
-  - 推送触发逻辑在服务端（价格刷新 → 比对目标价 → 推送），不在客户端轮询；
-    客户端轮询既费电又不可靠，且无法保证与网站提醒一致。
+- Hard constraints (locked in now):
+  - The app must not embed its own ranking logic, identifier-normalization logic, or price
+    estimation logic; every ranking comes from server responses. The client only renders,
+    switches sort fields (total price / delivery, with rules consistent with the server),
+    and shows expiry labels.
+  - Once API v1 fields ship, no breaking changes during the app's release cycle; to change,
+    ship v2 and keep v1 for a while (parallel-run length to be confirmed).
+  - Push-trigger logic lives server-side (price refresh → compare against target price → push),
+    not client polling; client polling wastes battery, is unreliable, and cannot stay consistent
+    with website alerts.
 
-### 4.3 上架合规要点（提交前逐项核对，以提交时苹果审核指南为准）
+### 4.3 Launch compliance checklist (verify item by item against Apple's review guidelines at submission time)
 
-| 要点 | 做法 | 备注 |
+| Item | Approach | Notes |
 |---|---|---|
-| 功能披露一致 | 提交的版本说明、截图、预览视频必须与二进制实际功能一致；测试功能、未上线功能不得藏在包里 | 这是最高频的被拒原因之一；发布前做“披露 vs 二进制”逐项核对表 |
-| 无隐藏功能 | 不设任何审核期外才开启的功能开关、远程配置后门 | 远程配置只允许改文案与阈值，不得改功能可见性 |
-| 订阅与内购 | 数字订阅功能必须走 StoreKit 应用内购买；提供恢复购买；订阅条款、价格、续订说明在购买前完整展示；不得在应用内引导用户去外部支付购买数字功能 | 具体规则以提交时指南为准，待确认；网站端支付与 App 端支付分开合规，不混用 |
-| 隐私政策与标签 | 应用内与 App Store Connect 同时提供隐私政策链接；隐私标签如实填写收集项（邮箱用于提醒、推送 token、扫码记录是否上传）；未经用户同意不做跨应用追踪 | 若声明“不收集数据”，则扫码与搜索记录不得上传服务端——现在就要决定，见下 |
-| 数据收集决策（现在定） | 推荐：搜索与扫码记录默认不上传、不建用户画像；仅在用户主动订阅提醒时保存邮箱与追踪清单 | 该决策影响隐私标签写法，提交前改口径 = 重新填标签 + 重新审核，越早定越好 |
-| 账号与删号 | 若引入账号，应用内必须提供删号入口，且删号清除追踪清单与提醒（§2.7） | 网站 v1 的邮箱订阅不算“账号”，但 App 引入登录后此条立即生效 |
-| 商标与来源声明 | 应用描述与应用内注明价格来源为公开渠道与商家页面，联盟佣金披露与网站一致（§5.4） | 不得暗示与 Apple、Amazon、Best Buy 等存在官方合作，除非确有书面合作（待确认，无则不写） |
-| 价格真实性 | 截图与预览中展示的价格必须来自真实快照，不得用编造的“示例低价” | 截图制作时以当日快照为准，并标注抓取时间 |
+| Consistent feature disclosure | Release notes, screenshots, and preview videos for the submitted build must match the binary's actual features; test features and unlaunched features must not be hidden in the bundle | One of the most frequent rejection causes; build a "disclosure vs binary" checklist before release |
+| No hidden features | No feature switches or remote-config backdoors that activate only outside the review period | Remote config may change copy and thresholds only, never feature visibility |
+| Subscriptions and in-app purchase | Digital subscription features must go through StoreKit in-app purchase; offer restore purchases; show subscription terms, price, and renewal terms in full before purchase; never steer users inside the app to external payment for digital features | Exact rules per the guidelines at submission time, to be confirmed; website payments and app payments comply separately, never mixed |
+| Privacy policy and labels | Provide the privacy policy link both in-app and in App Store Connect; fill in privacy labels truthfully (email for alerts, push tokens, whether scan records are uploaded); no cross-app tracking without user consent | If claiming "no data collected", scan and search records must not be uploaded to the server — decide now, see below |
+| Data-collection decision (decide now) | Recommended: search and scan records are not uploaded by default and no user profiles are built; only when a user actively subscribes to alerts are email and tracking lists saved | This decision shapes the privacy-label wording; changing it before submission means refilling labels + re-review — the earlier it is set, the better |
+| Accounts and deletion | If accounts are introduced, in-app account deletion must be provided, and deletion clears tracking lists and alerts (§2.7) | Website v1 email subscription does not count as an "account", but this rule takes effect immediately once the app introduces sign-in |
+| Trademark and source statements | App description and in-app copy state that prices come from public channels and merchant pages, with affiliate commission disclosure consistent with the website (§5.4) | Never imply an official partnership with Apple, Amazon, Best Buy, etc., unless a written partnership exists (to be confirmed; if none, do not write it) |
+| Price authenticity | Prices in screenshots and previews must come from real snapshots — never use invented "sample low prices" | When making screenshots, use that day's snapshots and label the fetch time |
 
-### 4.4 中期里程碑
+### 4.4 Mid-term milestones
 
-| 里程碑 | 依赖 | 验收标准 |
+| Milestone | Depends on | Acceptance criteria |
 |---|---|---|
-| M2.1 API v1 冻结 | §2.3、M1.4 | 契约文档定稿；网站与 API 走同一排名引擎的回归测试通过 |
-| M2.2 TestFlight 内测 | M2.1、推送通道 | 扫码比价、追踪清单、降价推送三项核心功能在 TestFlight 可用；崩溃率与推送到达率有实测记录 |
-| M2.3 隐私与合规自查 | §4.3 清单 | 隐私标签、隐私政策、订阅条款、披露文案逐项核对通过；无隐藏功能 |
-| M2.4 正式上架 | M2.2、M2.3 | 审核一次通过为目标；被拒时按审核意见逐条修复，不绕审核、不改包名重提 |
+| M2.1 API v1 frozen | §2.3, M1.4 | Contract documentation finalized; regression test that website and API use the same ranking engine passes |
+| M2.2 TestFlight internal testing | M2.1, push channel | Barcode comparison, tracking lists, and price-drop push work in TestFlight; crash rate and push delivery rate have measured records |
+| M2.3 Privacy and compliance self-check | §4.3 checklist | Privacy labels, privacy policy, subscription terms, and disclosure copy checked item by item; no hidden features |
+| M2.4 Full launch | M2.2, M2.3 | Target: pass review on the first attempt; on rejection, fix item by item per reviewer feedback — never bypass review or resubmit under a new bundle name |
 
 ---
 
-## 5. 远期（6–12 个月及以上）：收费模式
+## 5. Long-term (6–12 months and beyond): Monetization
 
-演进原则：**每一步只在前一步被验证后才启动；任何一步损害“排名与收入脱钩”，
-立即回滚该步，不恋战。** 每一步的触发条件、定价思路、兼容写法如下；
-所有具体价格档位、阈值数字均为待确认，不得在未验证前写死。
+Evolution principle: **each step starts only after the previous step is verified; any step that
+harms "ranking decoupled from revenue" is rolled back immediately, no clinging.** Trigger
+conditions, pricing thinking, and compatibility notes for each step follow; all specific price
+tiers and threshold numbers are to be confirmed and must not be hardcoded before verification.
 
-### 5.1 Stage 0：免费 + 联盟佣金披露（网站上线即开始）
+### 5.1 Stage 0: Free + affiliate commission disclosure (starts at website launch)
 
-- 模式：用户免费使用全部比价功能；用户经由本站链接到商家成交时，
-  商家联盟计划可能支付佣金（是否产生、比例多少，以各联盟计划当时条款为准，
-  待确认）。
-- 兼容写法（与 DECISIONS 001 的兼容证明）：
-  - 排名输入中没有任何佣金字段（§2.4 的依赖禁令测试为证）；
-  - 每个含联盟链接的报价卡片标注“此链接可能产生佣金，佣金不影响排序”；
-  - 方法页公开说明佣金机制与隔离措施。
-- 触发下一阶段的条件：网站连续一段时间（周期待确认）的真实使用量
-  （比价请求数、提醒订阅数）达到事先写下的阈值，且排名准确率与覆盖率
-  验收持续通过——阈值数字待确认，不拍脑袋。
-- 不启动订阅的信号：若用户反馈集中在“覆盖不够、价格不准”，先修覆盖与
-  准确率，不收费；向不准的排名收费等于加速流失信任。
+- Model: users use all compare features free; when a user completes a purchase via a link from
+  this site, the merchant's affiliate program may pay a commission (whether one arises, and at
+  what rate, per each affiliate program's terms at the time, to be confirmed).
+- Compatibility notes (proof of compatibility with DECISIONS 001):
+  - Ranking inputs contain no commission field (§2.4's dependency-ban test is the evidence);
+  - Every quote card carrying an affiliate link is labeled "this link may earn a commission;
+    the commission does not affect ranking";
+  - The method page publicly explains the commission mechanism and isolation measures.
+- Conditions for the next stage: the website's real usage over a sustained period (period to be
+  confirmed) — compare request counts, alert subscription counts — reaches pre-written thresholds,
+  and ranking accuracy and coverage acceptance keep passing. Threshold numbers to be confirmed,
+  not guessed.
+- Signal not to start subscriptions: if user feedback concentrates on "coverage too thin, prices
+  inaccurate", fix coverage and accuracy first, not monetization; charging for inaccurate
+  rankings only accelerates trust loss.
 
-### 5.2 Stage 1：免费增值订阅（Freemium）
+### 5.2 Stage 1: Freemium subscription
 
-- 分层（功能边界现在定，价格待确认）：
+- Tiers (feature boundaries set now; prices to be confirmed):
 
-| 层 | 包含 | 不包含 |
+| Tier | Includes | Excludes |
 |---|---|---|
-| 免费 | 全量比价、疑似表、基础追踪（追踪型号数有上限，上限待确认）、每日价格刷新 | 即时推送、高频刷新、完整价格历史曲线 |
-| Pro（订阅） | 追踪型号数放开、降价即时推送、高频刷新、完整价格历史与降价统计、Apple 专场与新品类的优先覆盖 | 代下单（那是 Stage 2，另行收费、另行确认） |
+| Free | Full comparison, suspected table, basic tracking (tracked-model count capped, cap to be confirmed), daily price refresh | Instant push, high-frequency refresh, full price history curves |
+| Pro (subscription) | Uncapped tracked models, instant price-drop push, high-frequency refresh, full price history and price-drop statistics, priority coverage of the Apple showcase and new categories | Order placement (that is Stage 2, separately charged and separately confirmed) |
 
-- 定价思路（方法，不写死数字）：
-  - 锚点：一次成功比价为用户省下的金额量级——订阅价应显著低于该量级，
-    让“订一个月、省下一单”在直觉上成立；具体档位待确认。
-  - 结构：月付 + 年付（年付折算后低于月付×12），iOS 端走 StoreKit、
-    网站端走合规支付通道，两端价格口径以各自渠道规则为准，待确认。
-  - 试用：是否提供试用期、试用期长度，待确认；试用结束前必须明确提醒，
-    不做“静默转正”。
-- 兼容写法：免费用户与 Pro 用户看到的**排名完全相同**；Pro 买的是
-  提醒速度、追踪数量与历史数据，不是更好的排名、不是优先展示。
-  任何“付费用户看到不同排名”的设计一律否决。
-- 触发条件：Stage 0 触发条件达成 + 提醒订阅量证明用户确实需要“盯价”
-  （而非一次性比价）；否则订阅无从卖起。
+- Pricing thinking (method, no hardcoded numbers):
+  - Anchor: the order of magnitude a successful comparison saves the user — the subscription
+    price should be well below that, so that "subscribe for a month, save on one order" holds
+    intuitively; specific tiers to be confirmed.
+  - Structure: monthly + annual (annualized below monthly × 12); iOS via StoreKit, website via a
+    compliant payment channel; price conventions per each channel's rules, to be confirmed.
+  - Trial: whether a trial period is offered and its length, to be confirmed; before a trial ends
+    there must be a clear reminder — no "silent conversion".
+- Compatibility notes: free users and Pro users see **exactly the same rankings**; Pro buys
+  alert speed, tracking capacity, and history data — not better rankings, not priority display.
+  Any design where paying users see different rankings is rejected outright.
+- Trigger conditions: Stage 0 trigger conditions met + alert subscription volume proving users
+  genuinely need "price watching" (not one-off comparison); otherwise there is nothing to sell
+  a subscription on.
 
-### 5.3 Stage 2：可选代下单服务费（须 Phase 3 验收 + 用户单独点头）
+### 5.3 Stage 2: Optional order-placement service fee (needs Phase 3 acceptance + user's separate approval)
 
-- 前置条件（缺一不可，全部来自 PLAN Phase 3）：
-  1. 约束文件先行：白名单商家、单笔上限、总预算帽、品类限制，机器可校验；
-  2. 每次下单前用户逐单确认（买什么、哪家、总价、到货日），默认不做先买后报；
-  3. 支付隔离：支付凭证走钱包/受信支付通道，不把卡号交给 agent 代码；
-  4. 验收：约束测试全过（含超预算、非白名单、价格变动三种拒绝场景），
-     且连续 10 单小额真实订单零“买错、买贵、超预算”事故；
-  5. 用户对代下单功能本身单独点头（PLAN 既有约定，本文件重申，不可
-     以“已订阅 Pro”默示为“已同意代下单”）。
-- 收费写法：
-  - 按单收取执行服务费（固定费用或设上限的比例费，具体待确认），
-    在用户逐单确认页**事先明示**服务费金额，确认价 = 商品总价 + 服务费，
-    不存在确认后追加的费用。
-  - 服务费是对“执行下单”这项服务的收费，不是对“排名”的收费；
-    不付服务费的用户仍可看到同一排名、自行去商家下单。
-- 退出条件：任一真实订单出现买错、超预算、约束失效，立即暂停代下单
-  并公开说明原因，修好并重新验收后才恢复；不带病运行。
+- Preconditions (all required, all from PLAN Phase 3):
+  1. Constraints file first: allowlisted merchants, per-order cap, total budget cap, category
+     limits, machine-checkable;
+  2. Per-order user confirmation before every order (what, which merchant, total price, delivery
+     date); never "buy first, report later" by default;
+  3. Payment isolation: payment credentials go through a wallet / trusted payment channel, never
+     handed to agent code;
+  4. Acceptance: all constraint tests pass (including the three rejection scenarios: over budget,
+     non-allowlisted merchant, price change), and 10 consecutive small real orders have zero
+     "wrong item, overpaid, over budget" incidents;
+  5. The user's separate approval of the order-placement feature itself (already agreed in PLAN
+     and restated here — a Pro subscription must never be read as implied consent to ordering).
+- Fee structure:
+  - A per-order execution service fee (flat fee or capped percentage fee, specifics to be
+    confirmed), **disclosed in advance** on the user's per-order confirmation page; confirmed
+    price = item total + service fee, with no fees added after confirmation.
+  - The service fee charges for the "order execution" service, not for "ranking"; users who do
+    not pay the service fee still see the same ranking and can order from merchants themselves.
+- Exit conditions: any real order with a wrong item, over-budget charge, or constraint failure
+  immediately suspends order placement with a public explanation; it resumes only after fixes and
+  re-acceptance. Never run while broken.
 
-### 5.4 披露文案（定稿草案，上线前由用户最后确认）
+### 5.4 Disclosure copy (final-draft wording; user confirms before launch)
 
-> 以下文案为草案，非法律意见；正式上线前建议经法律渠道复核（待确认）。
+> The copy below is a draft, not legal advice; formal legal review through a legal channel is
+> recommended before launch (to be confirmed).
 
-- 联盟佣金（报价卡片）：
-  > “此链接可能产生联盟佣金。佣金由商家支付，不增加你的购买成本，
-  > 也不影响本页的排序——排序只看对你有利的因素。”
-- 订阅（购买前）：
-  > “Pro 订阅提供更快的降价提醒、更多的追踪型号与完整的价格历史。
-  > 免费用户与 Pro 用户看到的排名完全相同。”
-- 代下单（逐单确认页）：
-  > “你正在授权本服务代你下单：[商品]、[商家]、到手总价 [金额]、
-  > 含服务费 [金额]、预计到货 [日期]。确认后执行，未发货订单可撤销。”
+- Affiliate commission (quote cards):
+  > "This link may earn an affiliate commission. The commission is paid by the merchant, does not
+  > increase your purchase cost, and does not affect this page's ranking — ranking considers
+  > only factors in your favor."
+- Subscription (before purchase):
+  > "A Pro subscription provides faster price-drop alerts, more tracked models, and full price
+  > history. Free users and Pro users see exactly the same rankings."
+- Order placement (per-order confirmation page):
+  > "You are authorizing this service to place an order for you: [product], [merchant], landed
+  > total [amount], including service fee [amount], estimated delivery [date]. Orders not yet
+  > shipped can be canceled after confirmation."
 
-### 5.5 不做的模式（明确拒绝，写下来是为了以后不被“就这一次”说服）
+### 5.5 Models explicitly not pursued (written down so a future "just this once" cannot talk us into them)
 
-| 不做的模式 | 拒绝理由 |
+| Model not pursued | Reason for rejection |
 |---|---|
-| 卖排名 / 付费置顶 / 商家付费收录 | 直接违反 DECISIONS 001；一旦收钱改排名，项目从买方工具变广告位 |
-| 暗佣金（收了不披露，或披露藏在小字里） | 披露不彻底 = 没披露；信任损失不可逆 |
-| 包上榜 / 商家付费删差评 / 付费屏蔽竞品 | 同上，且破坏评测集的中立性 |
-| 出售用户数据（搜索记录、追踪清单、邮箱） | 与 §4.3 的数据收集决策冲突；且用户一旦发现即永久流失 |
-| 把价格数据卖给商家用于动态涨价 | 让 agent 的情报反过来对付买方，忠诚对象直接颠倒 |
-| 虚假折扣、内部券、编造优惠码 | PLAN Phase 2 已定：只用公开优惠码，券失效要能检测并标注 |
-| 向商家收“排名优化咨询费” | 与卖排名同构，换个名字也不行 |
+| Selling rankings / paid top placement / paid merchant inclusion | Directly violates DECISIONS 001; once money changes rankings, the project turns from a buyer tool into an ad slot |
+| Hidden commissions (taken but undisclosed, or buried in fine print) | Incomplete disclosure = no disclosure; trust loss is irreversible |
+| Paid inclusion lists / paid removal of bad reviews / paid suppression of competitors | Same as above, and it destroys eval-set neutrality |
+| Selling user data (search records, tracking lists, emails) | Conflicts with the §4.3 data-collection decision; once users find out, they leave permanently |
+| Selling price data to merchants for dynamic price increases | Turns the agent's intelligence against buyers; loyalty flips outright |
+| Fake discounts, internal coupons, invented coupon codes | PLAN Phase 2 already sets: only public coupon codes; expired coupons must be detectable and labeled |
+| Charging merchants a "ranking optimization consulting fee" | Isomorphic to selling rankings; a different name does not change it |
 
-### 5.6 远期里程碑
+### 5.6 Long-term milestones
 
-| 里程碑 | 依赖 | 验收标准 |
+| Milestone | Depends on | Acceptance criteria |
 |---|---|---|
-| M3.1 Stage 0 披露上线 | M1.3 | 全部联盟链接有披露；依赖禁令测试在 CI 中持续通过 |
-| M3.2 Pro 订阅上线 | M3.1、Stage 1 触发条件达成 | 免费与 Pro 排名一致性回归测试通过；订阅、恢复购买、取消、试用提醒全程实测通过 |
-| M3.3 代下单试点 | M3.2、Phase 3 验收、用户单独点头 | 10 单小额真实订单零事故；逐单确认页含服务费明示；任一事故触发暂停机制实测通过 |
-| M3.4 月度公开评测常态化 | Phase 4 | 每月报告含同款准确率、总价误差、商家覆盖数、被屏蔽渠道、收入来源口径（披露口径待确认）；数字不好看也照实发 |
+| M3.1 Stage 0 disclosure live | M1.3 | All affiliate links disclosed; dependency-ban test keeps passing in CI |
+| M3.2 Pro subscription live | M3.1, Stage 1 trigger conditions met | Free-vs-Pro ranking-consistency regression test passes; subscription, restore purchases, cancellation, and trial reminders tested end to end |
+| M3.3 Order-placement pilot | M3.2, Phase 3 acceptance, user's separate approval | 10 small real orders with zero incidents; per-order confirmation page shows the service fee; any incident triggers the suspension mechanism, tested live |
+| M3.4 Monthly public eval normalized | Phase 4 | Monthly reports include same-product accuracy, total-price error, merchant coverage, blocked channels, and revenue-source disclosure (disclosure wording to be confirmed); ugly numbers published as they are |
 
 ---
 
-## 6. 风险总表（跨三段）
+## 6. Risk table (across all three periods)
 
-| 风险 | 应对 | 归属段 |
+| Risk | Response | Period |
 |---|---|---|
-| 主力渠道屏蔽 agent（Amazon 等不友好） | 开放渠道起步；被屏蔽即停并公开；覆盖缺口写进报告 | 近期–远期 |
-| 同款识别错（变体、翻新、地区版） | 标识主键 + 疑似分支 + 评测集回归；§2.2 的 condition/bundle 字段 | 近期 |
-| 价格过期 / 运费税费估不准 | 来源 + 时间戳 + “需复核”标注；估算永不冒充现价 | 近期 |
-| 忠诚冲突（佣金、广告、商家付费） | §2.4 代码隔离 + §5.4 披露 + §5.5 拒绝清单 | 全程 |
-| App 审核被拒 | §4.3 逐项自查；功能披露与二进制一致；不设隐藏开关 | 中期 |
-| 订阅规则变化（苹果、支付渠道） | 以提交时与上线时规则为准；规则变化时先合规再上线，不抢跑 | 中期–远期 |
-| 代下单失控 | 约束文件 + 逐单确认 + 支付隔离 + 可审计 + 事故暂停 | 远期 |
-| 成本失控（托管、推送、邮件超免费档） | 免费档起步、月末复核用量、超档再决策（§3.4） | 近期–远期 |
+| Major channels block the agent (Amazon and others unfriendly) | Start from open channels; stop when blocked and disclose; write coverage gaps into reports | Near-term – long-term |
+| Same-product misidentification (variants, refurbished, regional versions) | Identifier primary key + suspected branch + eval-set regression; §2.2 condition/bundle fields | Near-term |
+| Stale prices / inaccurate shipping and tax estimates | Source + timestamp + "needs re-check" labels; estimates never pose as current prices | Near-term |
+| Loyalty conflict (commissions, ads, paid merchants) | §2.4 code isolation + §5.4 disclosure + §5.5 rejection list | Throughout |
+| App review rejection | §4.3 item-by-item self-check; feature disclosure consistent with the binary; no hidden switches | Mid-term |
+| Subscription rule changes (Apple, payment channels) | Follow the rules at submission and launch time; comply first when rules change, never race ahead | Mid-term – long-term |
+| Runaway order placement | Constraints file + per-order confirmation + payment isolation + auditability + incident suspension | Long-term |
+| Cost overrun (hosting, push, email beyond free tiers) | Start on free tiers, review usage monthly, decide only after exceeding a tier (§3.4) | Near-term – long-term |
 
-## 7. 待确认清单（本文件故意不填的项）
+## 7. Open items (deliberately left unfilled in this file)
 
-- [ ] 域名与静态托管服务商三选一（§3.4）
-- [ ] 各渠道刷新频率与失败阈值（§3.3）
-- [ ] Apple Developer 账号归属与年费承担方（§4）
-- [ ] App 隐私标签口径：搜索/扫码记录是否上传（§4.3，建议默认不上传）
-- [ ] Stage 0 → Stage 1 的使用量阈值与统计周期（§5.1）
-- [ ] Pro 订阅档位、试用期、免费层追踪上限（§5.2）
-- [ ] 代下单服务费结构（固定费或设上限的比例费）（§5.3）
-- [ ] 披露文案的法律复核渠道（§5.4）
-- [ ] 联盟计划的接入方与条款（§5.1）
-- [ ] API v1 与 v2 并行期长度（§4.2）
+- [ ] Domain and static-hosting provider choice, one of three (§3.4)
+- [ ] Per-channel refresh frequencies and failure thresholds (§3.3)
+- [ ] Apple Developer account ownership and annual-fee bearer (§4)
+- [ ] App privacy-label wording: whether search/scan records are uploaded (§4.3; recommended default: not uploaded)
+- [ ] Stage 0 → Stage 1 usage thresholds and measurement period (§5.1)
+- [ ] Pro subscription tiers, trial period, free-tier tracking cap (§5.2)
+- [ ] Order-placement service-fee structure (flat fee or capped percentage fee) (§5.3)
+- [ ] Legal review channel for disclosure copy (§5.4)
+- [ ] Affiliate program partners and terms (§5.1)
+- [ ] API v1/v2 parallel-run length (§4.2)
 
-## 8. 文档关系
+## 8. Document relationships
 
-- `README.md`：愿景与五条原则（不变）。
-- `PLAN.md`：建造阶段与验收（Phase 0–4）。
-- `ARCHITECTURE.md`：模块、数据模型、排名公式——§2 的决策落地后，
-  应回填 `Offer` 新增字段与 API 契约章节。
-- `DECISIONS.md`：本文件若将来导致决策变化（如新增收入模式），须按
-  “新决策往上追加、旧决策不悄悄改”的规则追加记录。
-- `BUILD_LOG.md`：每完成一个里程碑（M1.x / M2.x / M3.x）记一条，
-  数字不好看也照实记。
-- 本文件（`ROADMAP.md`）：产品与商业时间线；时间估算以“月”为单位，
-  不承诺具体日期，里程碑验收通过才进入下一段。
+- `README.md`: vision and five principles (unchanged).
+- `PLAN.md`: build phases and acceptance criteria (Phase 0–4).
+- `ARCHITECTURE.md`: modules, data model, ranking formula — once the §2 decisions land,
+  the `Offer` new-field and API contract sections should be backfilled.
+- `DECISIONS.md`: if this file ever drives a decision change (e.g. a new revenue model), append
+  records per the rule "new decisions appended, old decisions never quietly changed".
+- `BUILD_LOG.md`: one entry per milestone completed (M1.x / M2.x / M3.x), recording ugly
+  numbers truthfully.
+- This file (`ROADMAP.md`): product and business timeline; time estimates in "months",
+  no specific dates promised; a stage begins only after the previous milestone's acceptance passes.

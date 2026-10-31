@@ -27,7 +27,7 @@ MOCK_IDENTIFIER = "DEMO-UPC-0001"
 
 
 class MockMerchantA(MerchantAdapter):
-    name = "Mock 商家 A"
+    name = "Mock Merchant A"
 
     def search(self, query: str) -> list[Offer]:
         return [
@@ -47,7 +47,7 @@ class MockMerchantA(MerchantAdapter):
 
 
 class MockMerchantB(MerchantAdapter):
-    name = "Mock 商家 B"
+    name = "Mock Merchant B"
 
     def search(self, query: str) -> list[Offer]:
         return [
@@ -67,7 +67,7 @@ class MockMerchantB(MerchantAdapter):
 
 
 class MockMerchantC(MerchantAdapter):
-    name = "Mock 商家 C"
+    name = "Mock Merchant C"
 
     def search(self, query: str) -> list[Offer]:
         # Lowest sticker price, but shipping unknown: must NOT win silently.

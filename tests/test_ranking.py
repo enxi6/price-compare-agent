@@ -25,7 +25,7 @@ class TestTotal(unittest.TestCase):
             merchant="T", title="T", identifier="X", price=100.0, shipping=None
         )
         self.assertFalse(offer.shipping_known)
-        self.assertIn("运费未知", offer.breakdown())
+        self.assertIn("shipping unknown", offer.breakdown())
 
 
 class TestRanking(unittest.TestCase):
