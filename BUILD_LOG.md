@@ -124,3 +124,18 @@
 - iPhone 仍排除在外（运营商分期/锁网使“最便宜”不可比），Apple 专场页面
   待 Phase 4 再议；下一步是给 Apple 组补报价源（Apple 官网与 Amazon/Best Buy
   均非 Shopify，需新适配器）。
+
+## 008 — 2026-10-31：Apple 报价源首测——Meta Catalog 不够用
+
+- 对 8 个 Apple part number 跑 Meta Catalog，返回 50 条，curated 后仅 3 条
+  可进快照（data/eval_snapshots_apple.json，eval：28 型号、3 个有报价）：
+  iPad A16 银色 Abt $427、iPad Pro M4 深空黑 Staples $1,023.99、
+  AirPods Max 午夜色 P.C. Richard $449.98。
+- 排除的陷阱与本轮新发现：PayMore 各门店报价成色未断言为全新（疑似
+  二手/翻新）一律排除；开箱、代发货、非美商家排除；M5 代 MacBook 已上市，
+  M4 条目实为上一代，清仓价语境不同；MacBook Air/Pro M4 基础配置与
+  iPad Air M3 紫色 128GB 在本批中 0 条干净全新报价——是覆盖缺口，不是价格信号。
+- 结论：Meta Catalog 不能单独撑起 Apple 全新机报价，真正的适配器工作
+  （Best Buy/B&H/Amazon 官方渠道或浏览器只读复核）仍待做；快照报价一律
+  identifier=None，按规则只能进疑似表。
+- 待定：DualSense 白 UPC 冲突的二次确认；本地与远程历史合并方式。
