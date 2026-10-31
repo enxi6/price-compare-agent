@@ -1,20 +1,32 @@
 """CLI entry point.
 
 Usage:
-    python3 -m price_agent.cli compare "Sony WH-1000XM5"
+    python3 -m price_agent.cli compare "Sony WH-1000XM5"   # mock demo
+    python3 -m price_agent.cli compare --model sony-wh1000xm5-black --snapshot data/eval_snapshots.json
+    python3 -m price_agent.cli eval --snapshot data/eval_snapshots.json
 
-Current version uses mock adapters (see adapters.py) to demonstrate the
-comparison core. Real merchant adapters land in Phase 1 (see PLAN.md).
+Mock mode demonstrates the ranking core. Snapshot mode uses checked-in
+catalog data: offers there are title-matched only (no UPC from the
+source) and stay out of the matched ranking by design.
 """
 
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 
 from .adapters import ALL_MOCK_ADAPTERS, MOCK_IDENTIFIER
+from .catalog import get_product
+from .evaluate import evaluate
+from .identity import match_offers
 from .models import Offer
 from .ranking import rank_offers, split_by_identifier
+from .snapshots import STALE_AFTER_HOURS, SnapshotAdapter, load_snapshot, snapshot_age_hours
+
+DEFAULT_SNAPSHOT = os.path.normpath(
+    os.path.join(os.path.dirname(__file__), "..", "data", "eval_snapshots.json")
+)
 
 
 def compare(query: str, adapters=ALL_MOCK_ADAPTERS) -> None:
@@ -38,14 +50,58 @@ def compare(query: str, adapters=ALL_MOCK_ADAPTERS) -> None:
         print(f"\n疑似同款（标识对不上，未进排名）：{len(suspected)} 家")
 
 
+def compare_model(model_key: str, snapshot_path: str) -> None:
+    product = get_product(model_key)
+    snapshot = load_snapshot(snapshot_path)
+    age = snapshot_age_hours(snapshot)
+    offers = SnapshotAdapter(snapshot_path, model_key).search("")
+    matched, suspected = match_offers(offers, product)
+    ranked = rank_offers(matched)
+
+    print(f"商品：{product.brand} {product.model}（{product.variant}）")
+    print(f"同款标识：{product.identifiers or '未核实（不得凭标题进主排名）'}")
+    if age > STALE_AFTER_HOURS:
+        print(f"注意：快照已 {age:.0f} 小时，超过 {STALE_AFTER_HOURS:.0f} 小时，价格需复核，不当现价用。")
+    print(f"快照来源：{snapshot['meta']['source']}，采集于 {snapshot['meta']['collected_at']}")
+    print(f"\n主排名（标识匹配）：{len(ranked)} 家")
+    for i, offer in enumerate(ranked, 1):
+        print(f"{i}. {offer.merchant}｜{offer.breakdown()}")
+        print(f"   来源：{offer.url}")
+    print(f"\n疑似同款价格一览（标题匹配、未验证标识，不进主排名，仅作线索）：{len(suspected)} 家")
+    for offer in sorted(suspected, key=lambda o: o.price):
+        print(f"- {offer.merchant}｜商品 ${offer.price:.2f}（运费未知、税费未计）｜{offer.url}")
+    if suspected:
+        print("下单前须在商家页核实型号、颜色、库存与结算总价。")
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="price_agent")
     sub = parser.add_subparsers(dest="command", required=True)
     cmp_parser = sub.add_parser("compare", help="比较一款商品的到手总价")
-    cmp_parser.add_argument("query", help="商品名或型号，例如 Sony WH-1000XM5")
+    cmp_parser.add_argument("query", nargs="?", help="商品名或型号，例如 Sony WH-1000XM5")
+    cmp_parser.add_argument("--model", help="评测集型号 key，例如 sony-wh1000xm5-black")
+    cmp_parser.add_argument("--snapshot", default=DEFAULT_SNAPSHOT,
+                            help="快照文件路径（默认 data/eval_snapshots.json）")
+    eval_parser = sub.add_parser("eval", help="跑一遍 20 型号评测集并汇总覆盖率")
+    eval_parser.add_argument("--snapshot", default=DEFAULT_SNAPSHOT)
     args = parser.parse_args(argv)
     if args.command == "compare":
+        if args.model:
+            compare_model(args.model, args.snapshot)
+            return 0
+        if not args.query:
+            cmp_parser.error("compare 需要 query，或用 --model 指定评测集型号")
         compare(args.query)
+        return 0
+    if args.command == "eval":
+        result = evaluate(args.snapshot)
+        print(f"评测集：{result['models']} 个型号，已核实标识 {result['verified_identifiers']} 个，"
+              f"有快照报价 {result['with_snapshot_offers']} 个")
+        print(f"报价总数 {result['total_offers']}，标识匹配 {result['matched']}，"
+              f"标题匹配（疑似）{result['suspected']}")
+        for row in result["rows"]:
+            print(f"- {row['key']}：标识 {row['identifier_status']}，报价 {row['offers']}，"
+                  f"匹配 {row['matched']}，疑似 {row['suspected']}")
         return 0
     return 2
 
