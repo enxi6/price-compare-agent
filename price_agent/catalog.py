@@ -108,29 +108,66 @@ EVAL_SET: list[EvalProduct] = [
     ),
     # --- Pending: model pinned, identifiers NOT yet verified (never invent) ---
     EvalProduct(key="sony-wf1000xm5-black", brand="Sony",
-                model="WF-1000XM5", variant="unpinned", category="earbuds",
-                notes="UPC/MPN pending verification."),
+                model="WF-1000XM5", variant="Black (WF1000XM5/B)",
+                category="earbuds",
+                identifiers={"UPC": "027242925601"},
+                identifier_sources={
+                    "UPC": "Adorama + Amazon US + Abt + eBay agree for WF1000XM5/B "
+                    "(international version and bundles carry different UPCs)"
+                },
+                status="verified"),
     EvalProduct(key="apple-airpods-4-usbc", brand="Apple",
-                model="AirPods 4", variant="unpinned", category="earbuds",
-                notes="UPC/MPN pending verification."),
+                model="AirPods 4", variant="USB-C case (MXP63LL/A)",
+                category="earbuds",
+                identifiers={"UPC": "195949688522", "MPN": "MXP63LL/A"},
+                identifier_sources={
+                    "UPC": "Adorama + B&H Photo + Amazon US agree for MXP63LL/A "
+                    "(India MXP63HN/A and ANC MXP93LL/A are different products)"
+                },
+                status="verified"),
     EvalProduct(key="apple-watch-se2-40mm", brand="Apple",
-                model="Watch SE 2 (40mm, GPS)", variant="unpinned",
+                model="Watch SE 2 (40mm, GPS)", variant="Midnight, GPS (MXE93LL/A)",
                 category="wearables",
-                notes="UPC/MPN pending verification."),
+                identifiers={"UPC": "195949641756", "MPN": "MXE93LL/A"},
+                identifier_sources={
+                    "UPC": "Micro Center spec sheet for MXE93LL/A (single source; "
+                    "band size unconfirmed in source; other colors, bands, "
+                    "cellular and year variants carry different UPCs)"
+                },
+                status="verified"),
     EvalProduct(key="kindle-paperwhite-16gb-2024", brand="Amazon",
-                model="Kindle Paperwhite (16GB, 2024)", variant="unpinned",
+                model="Kindle Paperwhite (16GB, 2024)",
+                variant="Black, 16GB (B0CFPL6CFY)",
                 category="e-readers",
-                notes="UPC/MPN pending verification."),
-    EvalProduct(key="logitech-mx-keys-s-graphite", brand="Logitech",
-                model="MX Keys S", variant="unpinned", category="keyboards",
-                notes="UPC/MPN pending verification."),
+                identifiers={"UPC": "840268942847", "MPN": "B0CFPL6CFY"},
+                identifier_sources={
+                    "UPC": "PBTech NZ/AU listing for B0CFPL6CFY (single seller; "
+                    "color/storage variants differ)"
+                },
+                status="verified"),
+    EvalProduct(key="logitech-mx-keys-s-pale-grey", brand="Logitech",
+                model="MX Keys S", variant="Pale Grey (920-011559)",
+                category="keyboards",
+                identifiers={"UPC": "097855187857", "MPN": "920-011559"},
+                identifier_sources={
+                    "UPC": "Amazon + distributor listings agree for 920-011559. "
+                    "Correction: 920-011559 is Pale Grey, not Graphite "
+                    "(Graphite is 920-011406); the eval entry was renamed."
+                },
+                status="verified"),
     EvalProduct(key="keychron-k8-pro", brand="Keychron",
                 model="K8 Pro QMK", variant="unpinned", category="keyboards",
-                notes="UPC/MPN pending verification."),
+                notes="Keychron 直营用 SKU（如 K8P-G1、K8P-Q1）而非 UPC；同款须按具体配置"
+                "钉死 SKU，暂不 verified；K8（非 Pro）的 UPC 不得挪用。"),
     EvalProduct(key="nintendo-switch-lite-turquoise", brand="Nintendo",
-                model="Switch Lite", variant="Turquoise",
+                model="Switch Lite", variant="Turquoise (HDHSBAZAA)",
                 category="consoles",
-                notes="UPC/MPN pending verification."),
+                identifiers={"UPC": "045496882266", "MPN": "HDHSBAZAA"},
+                identifier_sources={
+                    "UPC": "eBay + Desertcart + Ubuy agree for HDHSBAZAA "
+                    "(Nintendo Canada refurbished SKU 113304 is a different code)"
+                },
+                status="verified"),
     EvalProduct(key="sony-dualsense-white", brand="Sony",
                 model="DualSense Wireless Controller", variant="White",
                 category="controllers",

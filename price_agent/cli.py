@@ -3,6 +3,7 @@
 Usage:
     python3 -m price_agent.cli compare "Sony WH-1000XM5"   # mock demo
     python3 -m price_agent.cli compare --model sony-wh1000xm5-black --snapshot data/eval_snapshots.json
+    python3 -m price_agent.cli compare --model keychron-k8-pro --shopify www.keychron.com/keychron-k8-pro-qmk-via-wireless-mechanical-keyboard
     python3 -m price_agent.cli eval --snapshot data/eval_snapshots.json
 
 Mock mode demonstrates the ranking core. Snapshot mode uses checked-in
@@ -17,6 +18,7 @@ import os
 import sys
 
 from .adapters import ALL_MOCK_ADAPTERS, MOCK_IDENTIFIER
+from .adapters_shopify import AdapterError, ShopifyAdapter
 from .catalog import get_product
 from .evaluate import evaluate
 from .identity import match_offers
@@ -74,6 +76,41 @@ def compare_model(model_key: str, snapshot_path: str) -> None:
         print("下单前须在商家页核实型号、颜色、库存与结算总价。")
 
 
+def compare_shopify(model_key: str, spec: str) -> None:
+    """Compare one eval model against one live Shopify store product.
+
+    spec format: ``store/handle`` (e.g. www.keychron.com/keychron-k8-pro-...).
+    The store's public product JSON is the source; a block or error stops
+    the adapter with a plain message, never a workaround.
+    """
+    product = get_product(model_key)
+    try:
+        store, handle = spec.split("/", 1)
+    except ValueError:
+        print("请用 store/handle 格式，例如 www.keychron.com/keychron-k8-pro-...")
+        return
+    adapter = ShopifyAdapter(store, handle, merchant=store)
+    try:
+        offers = adapter.search("")
+    except AdapterError as exc:
+        print(f"店铺接口未返回可用数据，已停住：{exc}")
+        return
+    matched, suspected = match_offers(offers, product)
+    ranked = rank_offers(matched)
+    print(f"商品：{product.brand} {product.model}（{product.variant}）")
+    print(f"店铺：{adapter.url}（公开商品 JSON，只读）")
+    print(f"同款标识：{product.identifiers or '未核实（不得凭标题进主排名）'}")
+    print(f"\n主排名（标识匹配）：{len(ranked)} 家")
+    for i, offer in enumerate(ranked, 1):
+        stock = "有货" if offer.in_stock else "缺货"
+        print(f"{i}. {offer.merchant}｜{stock}｜{offer.title}")
+        print(f"   {offer.breakdown()}")
+        print(f"   来源：{offer.url}｜抓取于 {offer.fetched_at}")
+    print(f"\n疑似（标识对不上，未进排名）：{len(suspected)} 个变体")
+    for offer in suspected:
+        print(f"- {offer.title}｜商品 ${offer.price:.2f}｜标识 {offer.identifier}")
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="price_agent")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -82,10 +119,14 @@ def main(argv: list[str] | None = None) -> int:
     cmp_parser.add_argument("--model", help="评测集型号 key，例如 sony-wh1000xm5-black")
     cmp_parser.add_argument("--snapshot", default=DEFAULT_SNAPSHOT,
                             help="快照文件路径（默认 data/eval_snapshots.json）")
+    cmp_parser.add_argument("--shopify", help="实店：store/handle，例如 www.keychron.com/keychron-k8-pro-...")
     eval_parser = sub.add_parser("eval", help="跑一遍 20 型号评测集并汇总覆盖率")
     eval_parser.add_argument("--snapshot", default=DEFAULT_SNAPSHOT)
     args = parser.parse_args(argv)
     if args.command == "compare":
+        if args.model and args.shopify:
+            compare_shopify(args.model, args.shopify)
+            return 0
         if args.model:
             compare_model(args.model, args.snapshot)
             return 0

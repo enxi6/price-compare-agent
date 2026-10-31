@@ -42,3 +42,27 @@
 - 不好看的数字照实记：匹配率 0%、快照覆盖 5/20、标识核实 6/20。
 - 待定：本地提交与远程上传历史的合并方式（推送前定）；Shopify 适配器尚未接真实店铺
   （需先核实店铺域名与商品 handle，不得猜 URL）；其余 14 个型号标识待核实。
+
+## 003 — 2026-10-31：第一波标识核实（6/7）+ 实店 CLI
+
+- 第一波 7 个型号，核实 6 个，已核实总数从 6 升至 12：
+  - WF-1000XM5 黑（WF1000XM5/B）：UPC 027242925601（Adorama + 亚马逊美 + Abt + eBay 一致；
+    国际版与捆绑包 UPC 不同，已排除）。
+  - AirPods 4 USB-C（MXP63LL/A）：UPC 195949688522（Adorama + B&H + 亚马逊美一致；
+    印度版与 ANC 版是不同产品，已排除）。
+  - Watch SE 2 40mm GPS 午夜（MXE93LL/A）：UPC 195949641756（Micro Center 单一来源，
+    表带尺寸未在来源中确认，已在条目中标注；其他颜色/表带/蜂窝/年份 UPC 各不相同）。
+  - Kindle Paperwhite 16GB 2024 黑（B0CFPL6CFY）：UPC 840268942847（PBTech 新澳单一卖家）。
+  - MX Keys S：纠正——920-011559 是浅灰不是石墨灰（石墨灰是 920-011406），
+    条目已改名并钉为浅灰，UPC 097855187857。
+  - Switch Lite 绿松石（HDHSBAZAA）：UPC 045496882266（eBay + Desertcart + Ubuy 一致；
+    加拿大翻新码已排除）。
+  - 未核实：Keychron K8 Pro——直营店用 SKU（K8P-G1 等）而非 UPC，且 SKU 按配置分；
+    K8（非 Pro）的 UPC 不得挪用，条目保持 pending 并写明原因。
+- CLI 新增 `compare --model … --shopify store/handle`：跑通实店公开商品 JSON → 标识匹配
+  → 排名的完整链路；被屏蔽即停住报错，不绕行。
+- Keychron 实店端点验证已交浏览器只读检查（店铺 www.keychron.com，
+  handle keychron-k8-pro-qmk-via-wireless-mechanical-keyboard，来自搜索结果 URL），
+  结果回来后再写进日志；本提交不含未经验证的实店断言。
+- 测试仍 18 个，全过；eval 现报 20 型号、12 已核实、5 有快照、报价 12、匹配 0、疑似 12。
+- 待定：第二波 7 个型号标识；Keychron 端点验证结果；本地与远程历史合并方式。
