@@ -243,3 +243,52 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Also fixed in passing: the catalog module docstring said 20 models (stale
   since the set grew to 28), and a stale "pending" section header above
   already-verified entries.
+
+## 012 — 2026-10-31: Fresh quote collection for the new Apple generation
+
+- First quote round for the 9 replacement + 3 kept Apple models (011 swapped the
+  keys; the old Apple snapshot still holds retired-model quotes and was left
+  untouched as dated evidence). New file: data/eval_snapshots_apple_2026-10-31.json.
+- Method, same as 008/010: Meta Catalog first (2 batches, 100 raw listings),
+  then read-only browser verification for the gaps. No cart, no sign-in, no
+  checkout. URLs cleaned of fbclid/utm; shipping unknown, tax not included,
+  stock not asserted by the snapshot.
+- Result: 23 quotes across 11 of 12 Apple models. Per model:
+  - Air 13 M5 Midnight: Abt $1,234, CDW $1,319 (Meta Catalog, authorized retailers).
+  - Air 15 M5 Midnight: Best Buy $1,349 in stock, save $150 off $1,499 (browser).
+  - Pro 14 M6 Space Black: Best Buy $1,999 PRE-ORDER, release 2026-11-06 (browser).
+    The page is the exact config returned by searching Best Buy for MHWT4LL/A;
+    the part number itself was not shown in the visible model field, and the
+    free $100 e-gift card offer was not netted into the price.
+  - Mac mini M6: Abt $899 (Meta Catalog).
+  - iPad Air M4 Space Gray: B&H $699, Abt / RC Willey / Staples $749,
+    Quill $823.99 (page-verified new standalone).
+  - iPad Pro M5 Space Black: BJ's $1,099.99, Walmart $1,150, Staples $1,199,
+    Quill $1,228.49.
+  - AirPods Max 2 Midnight: Best Buy $499, Staples $549.
+  - AirPods Pro 3: Staples $249.
+  - iPad A16 Silver: Best Buy $399, B&H $399 (both promos ending 2026-10-31
+    23:59 ET / "deal ends tomorrow" — valid at collection time, stale after 24h
+    per snapshot rules), Abt $427.
+  - AirPods 4: Abt $109.99, Staples $129.
+  - Magic Mouse USB-C: Staples $79.
+- Coverage gap, kept honest: Watch SE 3 (apple-watch-se3-40mm) has 0 quotes.
+  Apple.com configurator shows $249 for a 40mm GPS Midnight case + S/M Sport
+  Band, but the band is labeled "Navy Blue" there and MEH94LW/A is not displayed
+  on the page, so the quote was NOT attached to the pinned entry. Best Buy's
+  S/M and M/L Navy Blue variants are different part numbers and were not
+  substituted. The pinned band-color mapping needs one part-number-level check.
+- Rejected claims worth recording:
+  - Quill catalog-feed iPad Air $600.99: the product page shows $823.99 new
+    standalone. The feed price was not carried into the snapshot.
+  - DataVision $898 mini / $249 Pro 3: excluded because the listings do not
+    assert new condition (same rule as the PayMore storefronts in 008).
+  - Non-US merchants (ar-lb.com, syscom.com.lb) and title/URL variant
+    mismatches (Clemson "Midnight" title vs "Sky Blue" URL slug; sigmatiendas
+    256GB title vs 512GB MDWM4LL/A URL) excluded.
+- Verification: `eval --snapshot data/eval_snapshots_apple_2026-10-31.json`
+  reports 28 models, 11 with snapshot quotes, 23 total quotes, 0 identifier
+  matches (expected: snapshot offers carry identifier=None, so all 23 land in
+  the suspected table, never the ranking). Tests: 19 passed.
+- Still open: Watch SE 3 band mapping (above); M6 Pro UPC (pending until
+  post-launch retailer pages show it); DualSense White UPC conflict.
