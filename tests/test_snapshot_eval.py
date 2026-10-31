@@ -42,7 +42,7 @@ def test_snapshot_staleness(tmp_path):
 def test_eval_set_shape():
     assert len(EVAL_SET) == 20
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 12
+    assert len(verified) == 18
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)

@@ -171,31 +171,72 @@ EVAL_SET: list[EvalProduct] = [
     EvalProduct(key="sony-dualsense-white", brand="Sony",
                 model="DualSense Wireless Controller", variant="White",
                 category="controllers",
-                notes="UPC/MPN pending verification."),
+                notes="UPC 冲突未解决：亚马逊美版 711719574293 vs 新澳 PBTech "
+                "711719575856 vs 其他 711719541080；须以美版厂商/零售商页面二次确认，"
+                "暂不 verified。"),
     EvalProduct(key="xbox-wireless-controller-black", brand="Microsoft",
-                model="Xbox Wireless Controller", variant="Carbon Black",
+                model="Xbox Wireless Controller",
+                variant="Carbon Black, Series X|S (1914)",
                 category="controllers",
-                notes="UPC/MPN pending verification."),
+                identifiers={"UPC": "196388518159", "MPN": "1914"},
+                identifier_sources={
+                    "UPC": "PayMore + eBay listings agree for 1914 Carbon Black "
+                    "(older QAT-00001 code 0889842611588 and another PayMore "
+                    "code 889842654776 excluded as different revisions)"
+                },
+                status="verified"),
     EvalProduct(key="meta-quest-3s-128gb", brand="Meta",
-                model="Quest 3S (128GB)", variant="unpinned",
+                model="Quest 3S (128GB)", variant="128GB (SK-1000926-01)",
                 category="vr",
-                notes="UPC/MPN pending verification."),
+                identifiers={"UPC": "815820025825", "MPN": "SK-1000926-01"},
+                identifier_sources={
+                    "UPC": "B&H Photo + Amazon US + PayMore agree for SK-1000926-01 "
+                    "(SG SK-1000815-01, NZ SK-1000207-01, renewed SK-1000253-01 "
+                    "and Target refurbished codes are different SKUs)"
+                },
+                status="verified"),
     EvalProduct(key="anker-737-120w", brand="Anker",
-                model="737 GaNPrime Charger (120W)", variant="unpinned",
+                model="737 GaNPrime Charger (120W)",
+                variant="Black, US plug (A2148)",
                 category="chargers",
-                notes="UPC/MPN pending verification."),
+                identifiers={"UPC": "194644099008", "MPN": "A2148111"},
+                identifier_sources={
+                    "UPC": "Swiftsly + Ubuy listings agree for A2148; EAN "
+                    "0194644099008 is the same code in GTIN form (UK-plug "
+                    "versions are separate references)"
+                },
+                status="verified"),
     EvalProduct(key="apple-magic-mouse-usbc", brand="Apple",
-                model="Magic Mouse (USB-C)", variant="unpinned",
+                model="Magic Mouse (USB-C)", variant="White (MXK53AM/A)",
                 category="mice",
-                notes="UPC/MPN pending verification."),
+                identifiers={"UPC": "195949655883", "MPN": "MXK53AM/A"},
+                identifier_sources={
+                    "UPC": "Apple official store page for MXK53AM/A "
+                    "(NZ PBTech code 195949655975 is regional; Black is "
+                    "195949656002)"
+                },
+                status="verified"),
     EvalProduct(key="logitech-g-pro-x-superlight-2-black", brand="Logitech",
-                model="G Pro X Superlight 2", variant="Black",
+                model="G Pro X Superlight 2", variant="Black (910-006630)",
                 category="mice",
-                notes="UPC/MPN pending verification."),
+                identifiers={"EAN": "5099206104525", "MPN": "910-006630"},
+                identifier_sources={
+                    "EAN": "Multiple EU retailer listings agree for 910-006630 "
+                    "(910-006631 is the same mouse in different regional "
+                    "packaging; US UPC not separately confirmed, EAN is the "
+                    "GTIN-family identifier)"
+                },
+                status="verified"),
     EvalProduct(key="google-pixel-buds-pro-2-porcelain", brand="Google",
-                model="Pixel Buds Pro 2", variant="Porcelain",
+                model="Pixel Buds Pro 2", variant="Porcelain, US (GA05760-US)",
                 category="earbuds",
-                notes="UPC/MPN pending verification."),
+                identifiers={"UPC": "840244604448", "MPN": "GA05760-US"},
+                identifier_sources={
+                    "UPC": "B&H Photo + DirectDial agree for GA05760-US "
+                    "(840244604516 group is a different regional version; "
+                    "AU 840244605155 excluded)"
+                },
+                status="verified"),
 ]
 
 
