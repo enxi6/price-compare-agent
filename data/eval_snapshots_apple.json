@@ -1,1 +1,59 @@
-{"meta":{"collected_at":"2026-10-31T22:59:56Z","excluded_traps":["PayMore storefront quotes: condition not asserted as new (likely used/refurb), excluded from price snapshot even when the part number matches","Open-box AirPods Max (Datavision $458) excluded: not new","Drop-shipper and non-US merchants excluded (market mismatch)","M5-generation MacBook Air/Pro listings excluded: different generation from the M4 eval entries","512GB / 24GB configs excluded: different SKU from the base-config eval entries","Mac mini and MacBook Air/Pro M4 base configs: zero clean new-unit quotes in this catalog batch (coverage gap, not a price signal)"],"source":"Meta Catalog search, 8 Apple part-number queries, 2026-10-31"},"models":{"apple-airpods-max-usbc":{"offers":[{"merchant":"P.C. Richard","price":449.98,"title":"Apple - AirPods Max (USB-C) - Midnight, Wireless Headphones","url":"https://www.pcrichard.com/apple-airpods-max-usb-c-midnight/MWW43AM-A.html"}]},"apple-ipad-a16-11":{"offers":[{"merchant":"Abt","price":427,"title":"Apple iPad (11th Generation) 11-Inch 128GB Wi-Fi in Silver - MD3Y4LL/A","url":"https://www.abt.com/Apple-iPad-11th-Generation-11-Inch-128GB-Wi-Fi-in-Silver-MD3Y4LLA/p/219019.html"}]},"apple-ipad-pro-m4-11":{"offers":[{"merchant":"Staples","price":1023.99,"title":"Apple iPad Pro M4 Chip 11\" Tablet, 256GB, Wi-Fi, Space Black (MVV83LL/A)","url":"https://www.staples.com/apple-ipad-pro-m4-chip-11-tablet-256gb-wi-fi-space-black-mvv83ll-a/product_24601324"}]}}}
+{
+  "meta": {
+    "collected_at": "2026-10-31T23:04:49Z",
+    "excluded_traps": [
+      "PayMore storefront quotes: condition not asserted as new (likely used/refurb), excluded from price snapshot even when the part number matches",
+      "Open-box AirPods Max (Datavision $458) excluded: not new",
+      "Drop-shipper and non-US merchants excluded (market mismatch)",
+      "M5-generation MacBook Air/Pro listings excluded: different generation from the M4 eval entries",
+      "512GB / 24GB configs excluded: different SKU from the base-config eval entries",
+      "Mac mini and MacBook Air/Pro M4 base configs: zero clean new-unit quotes in this catalog batch (coverage gap, not a price signal)"
+    ],
+    "source": "Meta Catalog search + browser-verified retailer pages, 2026-10-31",
+    "sources_note": "Abt/Staples/P.C. Richard via Meta Catalog 2026-10-31; Best Buy/B&H iPad quotes browser-verified 2026-10-31 (promo prices, B&H offer noted ending 2026-10-31 23:59 ET; delivered cost/tax not verified, no checkout started)"
+  },
+  "models": {
+    "apple-airpods-max-usbc": {
+      "offers": [
+        {
+          "merchant": "P.C. Richard",
+          "price": 449.98,
+          "title": "Apple - AirPods Max (USB-C) - Midnight, Wireless Headphones",
+          "url": "https://www.pcrichard.com/apple-airpods-max-usb-c-midnight/MWW43AM-A.html"
+        }
+      ]
+    },
+    "apple-ipad-a16-11": {
+      "offers": [
+        {
+          "merchant": "Abt",
+          "price": 427,
+          "title": "Apple iPad (11th Generation) 11-Inch 128GB Wi-Fi in Silver - MD3Y4LL/A",
+          "url": "https://www.abt.com/Apple-iPad-11th-Generation-11-Inch-128GB-Wi-Fi-in-Silver-MD3Y4LLA/p/219019.html"
+        },
+        {
+          "merchant": "Best Buy",
+          "price": 399.0,
+          "title": "Apple 11-inch iPad A16 chip with Wi-Fi 128GB Silver (MD3Y4LL/A), new, sold by Best Buy",
+          "url": "https://www.bestbuy.com/product/apple-11-inch-ipad-a16-chip-with-wi-fi-128gb-silver/JJGCQG39VG"
+        },
+        {
+          "merchant": "B&H Photo",
+          "price": 399.0,
+          "title": "Apple 11\" iPad A16 Chip (128GB, Wi-Fi Only, Silver) (MD3Y4LL/A), new",
+          "url": "https://www.bhphotovideo.com/c/product/1883625-REG/apple_md3y4ll_a_11_ipad_a16_chip.html"
+        }
+      ]
+    },
+    "apple-ipad-pro-m4-11": {
+      "offers": [
+        {
+          "merchant": "Staples",
+          "price": 1023.99,
+          "title": "Apple iPad Pro M4 Chip 11\" Tablet, 256GB, Wi-Fi, Space Black (MVV83LL/A)",
+          "url": "https://www.staples.com/apple-ipad-pro-m4-chip-11-tablet-256gb-wi-fi-space-black-mvv83ll-a/product_24601324"
+        }
+      ]
+    }
+  }
+}
