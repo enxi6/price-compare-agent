@@ -421,3 +421,29 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (eBay + refurbished store); Amazon/Camel code 711719574293 tied to
   model CFI-ZCT1W. Still no tiebreaker; entry stays pending.
 - Tests: 19 passed (re-run after the edits).
+
+## 017 (2026-10-31): Watch SE 3 first new-unit quote — BJ's $239.99, mapping confirmed
+
+- Meta Catalog (Apple-restricted, USD) returned the exact configuration;
+  browser verification 2026-10-31 20:10-20:12 PT (read-only, no
+  sign-in, no cart) confirmed: Apple Watch SE 3 (GPS) 40mm Midnight
+  Aluminum Case with Midnight Sport Band - S/M, $239.99, Condition New,
+  Model Number MEH94LW/A, UPC 195950387070. The price was visible to a
+  non-signed-in visitor and not labeled member-only. This independently
+  confirms the MEH94LW/A mapping that previously rested only on a
+  refurbished listing, and confirms the entry's UPC.
+- Fulfillment is mixed and recorded as such, not simplified: Free
+  Shipping In Stock (3-5 business days); Pickup and Delivery sold out
+  at the displayed club. Snapshot format carries identifier=None, so
+  the quote lands in the suspected table; the MPN/UPC evidence is
+  preserved in the offer title.
+- Excluded in the same round: BrandsMart title-S/M vs URL-M/L
+  mismatch; Apple.com MEHC4LW/A (M/L sibling); Clemson wrong product
+  (44mm loop); an $8.34 garbage row; a $299.99 Navy Blue S/M row whose
+  title omits GPS vs cellular while its price matches the cellular
+  tier (ambiguous, not confirmed).
+- New file data/eval_snapshots_watchse3_2026-10-31.json (1 quote).
+  Combined coverage across all five snapshot files is now 27 of 28
+  models; only Anker 737 still holds 0 quotes (fate pending user
+  decision, BUILD_LOG 016).
+- Tests: 19 passed (re-run after the edit).

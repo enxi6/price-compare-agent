@@ -23,6 +23,11 @@ releases; breaking changes are called out in the release notes.
   auto-swap.
 - DualSense White UPC conflict now counts five codes (added
   711719541226); still unresolved, no code promoted.
+- Watch SE 3 (GPS) 40mm Midnight, S/M: first new-unit quote, BJ's
+  $239.99, browser-verified 2026-10-31. The page states Model
+  MEH94LW/A and UPC 195950387070, independently confirming the
+  entry's part-number mapping. Combined quote coverage is now 27 of
+  28 models; only Anker 737 still has no quote.
 
 ## [0.1.0] - 2026-10-31
 
