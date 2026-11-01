@@ -698,3 +698,18 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   so the live-catalog finding stands; the swap decision is
   unaffected.
 - Tests: 19 passed (re-run after the edit).
+
+## 028 (2026-11-01): Amazon strategy written (DECISIONS 018, AMAZON_STRATEGY.md)
+
+- Trigger: the Kindle Paperwhite case exposed Amazon's AI-access
+  wall as a plan-level constraint, not a one-off failure. Research
+  (2026-11-01) found PA-API 5.0 reportedly deprecated in favor of
+  the Creators API, with a rolling referred-sales gate — meaning a
+  new site cannot get official API access before it has Amazon
+  referral traffic. Licensed providers (Keepa API from ~EUR
+  49/month, Rainforest API from $23/month) are the industry route.
+- Decision recorded: no bypass scraping; Amazon layer in Phase 2;
+  ranking identical across tiers with Pro paying for depth. Pro
+  price, refresh cadence, and provider choice explicitly deferred
+  to Phase 2 evaluation, not launch-day decisions.
+- Tests: 19 passed (re-run after the edit; no code changed).

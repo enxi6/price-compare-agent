@@ -278,3 +278,33 @@ written as "superseded by" with the original text kept.
   Graphite 910-007558, Pale Gray 910-007559, Black 910-007560;
   Logitech US direct URL pins Graphite to 910-007558. 910-007562
   and 910-007565 are different codes and were excluded.
+
+## 018 (2026-11-01): Amazon access strategy — legitimate channels only, Amazon layer in Phase 2, ranking identical across tiers
+
+- Amazon's Conditions of Use wall is treated as a permanent
+  property of the retailer, not a temporary scrape failure. Direct
+  self-operated scraping that defeats the wall (rotating proxies,
+  headless browsers, session spoofing) is REJECTED under the
+  compliance red line (DECISIONS 004).
+- Legitimate routes, in order: (a) Amazon's own affiliate API —
+  PA-API 5.0 reportedly deprecated 2026-04-30 in favor of the
+  Creators API, with access gated by a rolling referred-sales
+  threshold (third-party reports cite 10 qualifying sales in the
+  trailing 30 days; verify against Associates Central before
+  building); (b) licensed data providers — Keepa API (token-metered,
+  from ~EUR 49/month; price history + Buy Box depth) and Rainforest
+  API (credit-based, from $23/month; real-time current prices);
+  (c) user-side reads as a verification fallback, never as the
+  ranking's source of truth. Phase 1 interim pattern: retailer
+  corroboration (Kindle pattern), honestly labeled.
+- Tier principle: the ranking is IDENTICAL across tiers. Amazon
+  rows are NOT Pro-only — a Pro-only Amazon row would make the
+  free ranking misleading by design and break the ranking-parity
+  rule. Pro pays for depth, freshness, and tools (live refresh,
+  full Amazon price history, coupon/deal detection, unlimited
+  alerts), never for a different answer. Full design in
+  AMAZON_STRATEGY.md.
+- Sequencing: Phase 1 stays Amazon-free; Phase 2 (with the website)
+  joins Associates, builds referral traffic toward API eligibility,
+  and trials Keepa vs Rainforest on the catalog. No Amazon spend
+  is approved by this decision.
