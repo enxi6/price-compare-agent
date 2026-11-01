@@ -214,3 +214,24 @@ written as "superseded by" with the original text kept.
   spec and eBay US product identifiers (GTIN 0195951378978, the
   same code). Best Buy US confirms Model MKFW4LL/A, SKU 6376553,
   $129.
+
+## 015 (2026-10-31): Pin one retailer-sold configuration per model; never track brand-direct-only configurations
+
+- Decision: when a model ships in multiple configurations, pin exactly
+  one — the configuration that major US retailers sell. Do not track
+  all configurations, and never pin a configuration that only the
+  brand itself sells.
+- Why: comparison needs at least two independent sellers. A
+  configuration sold only by the brand (for example an Apple
+  configure-to-order config that exists only on apple.com, such as
+  the Mac Studio example) has a single price, so there is nothing to
+  compare — tracking it is price monitoring, not price comparison,
+  and it dilutes the eval set with uncomparable rows.
+- Scope: this governs every new entry and every candidate (if Mac
+  Studio is added later, pin its base retailer-sold config, never a
+  CTO-only config). Audit 2026-10-31: the existing set already
+  complies — all 28 pinned configurations hold retailer quotes and
+  no entry's identifiers rest on apple.com alone — so no existing
+  entry changes. Corollary: if a pinned configuration later becomes
+  brand-direct-only (retailers drop it), that triggers a re-pin or
+  retirement decision, on the same pattern as discontinuation.
