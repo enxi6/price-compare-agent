@@ -125,3 +125,22 @@ written as "superseded by" with the original text kept.
   it remains a valid European reference for the same mouse.
 - Rule applied: an eval set for the US market pins the US identifier;
   a regional identifier is not silently kept once US sources disagree.
+
+## 011 (2026-10-31): Electronics selection references brands' official current-sale catalogs; old-model and secondhand hunting deferred
+
+- Decision: for electronics, the main product selection is built from
+  each brand's official current-sale catalog. Hunting old models and
+  secondhand units is a later-phase goal, not current work.
+- Why: the official catalog is ground truth for what is actually
+  current, and it is the most efficient source — the 737, Buds2 Pro,
+  and M4-Apple rounds all burned effort on models that had already
+  left the official catalog. Old-model and secondhand sourcing needs
+  different machinery (marketplace condition grading, regional
+  variants, refurbished-vs-new disambiguation) and belongs in its own
+  phase, not mixed into the in-sale-new comparison.
+- Scope: this confirms and extends DECISIONS 006 (in-sale new only,
+  no secondhand/refurbished). It also retroactively justifies
+  excluding the 736 Nano II 100W as a 737 successor: it is the 737's
+  own generation (2022), not a current-catalog model. Current
+  entries that remain in a brand's official catalog (e.g. DualSense
+  White, still sold by PlayStation Direct) are unaffected.
