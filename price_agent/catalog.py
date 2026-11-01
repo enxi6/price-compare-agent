@@ -95,15 +95,18 @@ EVAL_SET: list[EvalProduct] = [
         status="verified",
     ),
     EvalProduct(
-        key="samsung-buds2-pro-white",
+        key="samsung-buds4-pro-white",
         brand="Samsung",
-        model="Galaxy Buds2 Pro",
-        variant="White, US version (SM-R510NZWAXAR)",
+        model="Galaxy Buds4 Pro",
+        variant="White, US version (SM-R640NZWAXAR)",
         category="earbuds",
-        identifiers={"UPC": "887276668741", "MPN": "SM-R510NZWAXAR"},
+        identifiers={"UPC": "198957273582", "MPN": "SM-R640NZWAXAR"},
         identifier_sources={
-            "UPC": "Amazon + Best Buy listings agree for SM-R510NZWAXAR "
-            "(Bora Purple is 887276709000)"
+            "UPC": "Best Buy spec + distributor catalog (channelonline, "
+            "GTIN 0198957273582, same code) + T-Mobile URL sku agree "
+            "for SM-R640NZWAXAR (Amazon SM-R640NZWFXAR / 198957273568 "
+            "is a different variant, excluded; MEA and Latino Americana "
+            "suffixes excluded)"
         },
         status="verified",
     ),

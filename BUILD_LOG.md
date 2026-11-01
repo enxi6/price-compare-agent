@@ -357,3 +357,28 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   25 of 28 models (main 4 + Apple 11 + non-Apple 10). Tests: 19 passed.
   One self-inflicted syntax slip (a stray parenthesis in the catalog edit)
   was caught by the test run and fixed before commit.
+
+## 014 — 2026-10-31: Buds2 Pro retired, Buds4 Pro White takes its place (user-confirmed)
+
+- Trigger: BUILD_LOG 013 found the Buds2 Pro US white model discontinued as
+  new. The user chose Buds4 Pro over Buds3 Pro and over dropping the entry
+  (DECISIONS 009).
+- New entry: samsung-buds4-pro-white — Galaxy Buds4 Pro, White, US version
+  SM-R640NZWAXAR (released 2026-03-11, MSRP $249.99). Old key
+  samsung-buds2-pro-white is retired, never reused; no quote carried over.
+  No test referenced the old key, so no test change was needed.
+- Identifier: UPC 198957273582, agreed by three sources — Best Buy spec
+  page, a distributor catalog (GTIN 0198957273582, the same code), and
+  T-Mobile's URL sku. Entry status: verified (26 verified identifiers
+  maintained: one out, one in).
+- Quotes (new file data/eval_snapshots_buds4pro_2026-10-31.json, 3 quotes):
+  Samsung direct $249.99, B&H Photo $249.99, Abt $249.99. Excluded: a
+  DataVision row whose title said White SM-R640NZWAXAR but whose URL slug
+  said Black SM-R640NZKAXAR; an Ayoub $162 row with a truncated model
+  code; the Amazon SM-R640NZWFXAR variant; MEA / Latino Americana
+  suffixes; Buds4 non-Pro rows; open-box rows.
+- Eval on the new file: 1 model with quotes, 3 total quotes, 0 identifier
+  matches (expected, snapshot format). Combined coverage across all four
+  snapshot files is now 26 of 28 models; still missing: Anker 737 (gap,
+  not declared discontinued) and Watch SE 3 (0 new-unit quotes).
+- Tests: 19 passed.

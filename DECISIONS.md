@@ -90,3 +90,18 @@ written as "superseded by" with the original text kept.
   release, because the M5 base it replaces is already discontinued; its
   entry stays pending (no UPC yet) and cannot enter the matched ranking
   until a retailer listing states the UPC.
+
+## 009 (2026-10-31): Discontinued Galaxy Buds2 Pro replaced by Galaxy Buds4 Pro White, user-confirmed
+
+- Decision: The Galaxy Buds2 Pro entry (samsung-buds2-pro-white) is retired
+  and replaced by Galaxy Buds4 Pro White, US version (SM-R640NZWAXAR),
+  under the new key samsung-buds4-pro-white. The old key is retired, never
+  reused, and no Buds2 Pro quote is carried over.
+- Why: The Buds2 Pro US white model is discontinued as new (B&H: "no
+  longer available"; no current US listing found 2026-10-31). The user
+  chose Buds4 Pro over Buds3 Pro and over dropping the entry. Buds4 Pro
+  (released 2026-03-11, MSRP $249.99) is the current generation.
+- Identifier: UPC 198957273582 for SM-R640NZWAXAR, agreed by Best Buy
+  spec, a distributor catalog (GTIN 0198957273582), and T-Mobile's URL
+  sku. The Amazon SM-R640NZWFXAR / 198957273568 listing is a different
+  variant and was excluded, as were MEA and Latino Americana suffixes.
