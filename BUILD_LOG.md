@@ -292,3 +292,68 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   the suspected table, never the ranking). Tests: 19 passed.
 - Still open: Watch SE 3 band mapping (above); M6 Pro UPC (pending until
   post-launch retailer pages show it); DualSense White UPC conflict.
+
+## 013 — 2026-10-31: Non-Apple quote round — Phase 1 coverage now 25 of 28
+
+- Same method as 012 (Meta Catalog 3 batches, 150 raw listings; Keychron
+  official-store adapter; read-only browser verification; no cart, no sign-in).
+  New file: data/eval_snapshots_nonapple_2026-10-31.json (18 quotes, 10 models).
+  The 4 models already quoted in data/eval_snapshots.json (Sony XM5, Bose QC
+  Ultra 2, Switch OLED, MX Master 3S, collected the same day) were not
+  duplicated; all four are manufacturer-current, so the discontinuation check
+  for them is today's own listings.
+- Per model (new-unit, shipping unknown, tax excluded):
+  - WF-1000XM5 Black: Suncoast Audio Direct $299.99.
+  - DualSense White: PlayStation Direct $74, Kohl's / Macy's / GameStop /
+    Best Buy $74.99 (5 quotes).
+  - Xbox Carbon Black 1914: Newegg $49, MaxLevel $49.99.
+  - Quest 3S 128GB: Abt / B&H $349.99 (four US retailers agree on $349.99;
+    bundle, 256GB, Business, and refurbished rows excluded).
+  - Switch Lite Turquoise: Walmart $229, NFM $229.99.
+  - MX Keys S Pale Grey 920-011559: ThinkEdu $138.99 (the $109.99 "for Mac"
+    row is 920-011622, a different SKU, excluded).
+  - G Pro X Superlight 2 Black: Sweetwater / Logitech G direct $159.99
+    (all DEX / SE / 2c variants and open-box excluded).
+  - Kindle Paperwhite 16GB 2024 Black: Best Buy $199.99 — this resolves a
+    feed conflict (the same Best Buy URL appeared at $199.99 and $229.99;
+    the page shows $199.99 new standalone, $229.99 is marketplace range).
+  - Pixel Buds Pro 2 Porcelain: Best Buy $169.00 (Holiday Deal, GA05760-US
+    confirmed; the B&H $229.99 catalog row was the Hazel variant, excluded).
+  - Keychron K8 Pro K8P-G1: official store $49.99 after a $25 discount off
+    $74.99 list. The store CLI identifier-matched this variant (EAN
+    4895248806837) — the only live identifier match so far; the snapshot
+    format carries identifier=None, so it lands in the suspected table here.
+    That is a format limitation, not a data problem.
+- Three models still without quotes, each for a different stated reason:
+  - Buds2 Pro White (SM-R510NZWAXAR): discontinued as new. B&H search says
+    "no longer available", Best Buy shows only Buds3/Buds4 plus a sold-out
+    refurbished Graphite unit, Samsung US has no model page. Per DECISIONS
+    006 there is NO auto-swap: the replacement (Buds3 Pro? drop the entry?)
+    needs a user decision. SM-R510NLVAXAR is a different regional suffix
+    and was not substituted.
+  - Anker 737 120W (A2148): gap, NOT declared discontinued. Not found on
+    Anker US or Best Buy pages; Amazon US refused AI-agent access and was
+    treated as unavailable, not bypassed. Needs one more check before any
+    discontinuation claim.
+  - Watch SE 3 (Apple): still 0 new-unit quotes, but the mapping question
+    moved: a Best Buy refurbished listing displays MEH94LW/A for exactly
+    GPS 40mm Midnight, S/M, Midnight Sport Band. Refurbished is excluded
+    per DECISIONS 006, so this corroborates the mapping in the catalog
+    notes without becoming a quote.
+- Two identifier findings, neither silently resolved:
+  - DualSense UPC conflict is now FOUR codes: the Best Buy spec-comparison
+    table gives 711719023197 for the standard White column (other columns:
+    Chroma Teal 711719022497, GTA VI LE 711719072683, 007 LE 711719027119).
+    Entry stays pending; the tiebreaker (physical box barcode or a Sony
+    spec sheet) is still missing. Catalog notes updated with all four.
+  - G Pro X Superlight 2 SKU question: Logitech's US store URL for the
+    $159.99 Black mouse shows 910-006628, while the eval entry pins
+    910-006630 from EU retailers. Flagged in the snapshot traps, NOT
+    changed in the catalog — the URL slug alone is not conclusive proof
+    the US SKU differs.
+- Verification: eval on the new file reports 10 models with quotes, 18 total
+  quotes, 0 identifier matches (expected: snapshot offers carry no
+  identifier). Combined coverage across the three snapshot files is now
+  25 of 28 models (main 4 + Apple 11 + non-Apple 10). Tests: 19 passed.
+  One self-inflicted syntax slip (a stray parenthesis in the catalog edit)
+  was caught by the test run and fixed before commit.

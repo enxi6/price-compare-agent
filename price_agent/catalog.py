@@ -136,6 +136,11 @@ EVAL_SET: list[EvalProduct] = [
                     "Blue band variants MJL14LW/A / MJKY4LW/A; band detail "
                     "to be pinned at snapshot time)"
                 },
+                notes="MEH94LW/A mapping corroborated 2026-10-31 by a Best Buy "
+                    "refurbished listing (GPS 40mm Midnight, S/M, Midnight Sport "
+                    "Band, model MEH94LW/A shown); no new-unit page displaying "
+                    "MEH94LW/A found that day, so new-unit quotes are still 0 "
+                    "(refurbished excluded per DECISIONS 006).",
                 status="verified"),
     EvalProduct(key="kindle-paperwhite-16gb-2024", brand="Amazon",
                 model="Kindle Paperwhite (16GB, 2024)",
@@ -186,7 +191,12 @@ EVAL_SET: list[EvalProduct] = [
                 notes="UPC conflict unresolved: Amazon US 711719574293 vs "
                 "NZ/AU PBTech 711719575856 vs other 711719541080; needs a "
                 "second check against a US manufacturer/retailer page; "
-                "left unverified for now."),
+                "left unverified for now. Update 2026-10-31: Best Buy "
+                "spec-comparison table gives a FOURTH code, 711719023197, "
+                "for the standard White column (other columns: Chroma Teal "
+                "711719022497, GTA VI LE 711719072683, 007 LE 711719027119); "
+                "still pending, no code promoted without a tiebreaker "
+                "(physical box barcode or Sony spec sheet)."),
     EvalProduct(key="xbox-wireless-controller-black", brand="Microsoft",
                 model="Xbox Wireless Controller",
                 variant="Carbon Black, Series X|S (1914)",
