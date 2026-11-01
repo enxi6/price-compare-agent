@@ -713,3 +713,41 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   price, refresh cadence, and provider choice explicitly deferred
   to Phase 2 evaluation, not launch-day decisions.
 - Tests: 19 passed (re-run after the edit; no code changed).
+
+## 029 (2026-11-01): K8 Pro replaced by K8 Ultra 8K (DECISIONS 019) — entry swap done, quote verification running
+
+- Old entry keychron-k8-pro deleted from the catalog (retired
+  keys are removed, never reused); new entry keychron-k8-ultra-8k
+  added with SKU K8U-J1 (see DECISIONS 019). The dated snapshot
+  files mentioning the K8 Pro are left untouched (append-only
+  record).
+- The K8 Ultra 8K quote ($119.99, Keychron direct, Meta Catalog)
+  is held for browser verification of the Keychron official page
+  before it enters a snapshot file; the per-variant barcode check
+  via the public product JSON is running in the same verification.
+  This entry records the swap, and the snapshot + commit follow
+  the verification result.
+- Consequence stated plainly: the K8 Pro $49.99 quote was the only
+  quote entering the main ranking. Until an identifier-matched
+  Ultra 8K quote lands, the main ranking holds no verified quote
+  again — that is the rule working, not a regression.
+
+## 030 (2026-11-01): K8 Ultra 8K quote verified — Keychron direct $119.99 in US warehouse, swap complete
+
+- Browser verification 2026-11-01 08:25-08:26 PT (read-only, no
+  sign-in, no cart): Keychron US page confirms K8 Ultra 8K (not
+  Pro/HE/Q-series); only Type Fully Assembled, only Color Black;
+  three switch variants all $119.99, all stocked in the US
+  warehouse: Red K8U-J1 (page default), Brown K8U-J3, Banana
+  K8U-J4. The Red pinning matches the page default.
+- New file data/eval_snapshots_k8ultra_2026-11-01.json (1 quote:
+  Keychron direct $119.99, Red K8U-J1, free US shipping, 2-5
+  days). Combined coverage stays 28 of 28 models. The main
+  ranking holds no identifier-matched quote for this entry yet
+  (the old K8 Pro $49.99 quote is not carried over) — stated
+  plainly, not hidden.
+- Open follow-up: no UPC/EAN/barcode on the visible page. The
+  per-variant barcode check via Keychron's public product JSON
+  (the K8 Pro precedent) is running as a follow-up; if barcodes
+  surface, the entry gains an EAN in a follow-up commit.
+- Tests: 19 passed (re-run after the edit).

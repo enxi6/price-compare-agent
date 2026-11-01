@@ -308,3 +308,27 @@ written as "superseded by" with the original text kept.
   joins Associates, builds referral traffic toward API eligibility,
   and trials Keepa vs Rainforest on the catalog. No Amazon spend
   is approved by this decision.
+
+## 019 (2026-11-01): K8 Pro replaced by K8 Ultra 8K (Black, Apex Red), user-confirmed
+
+- Decision: the K8 Pro entry (keychron-k8-pro) is retired and
+  replaced by the K8 Ultra 8K under the new key
+  keychron-k8-ultra-8k. The old key is retired, never reused, and
+  the old $49.99 quote is NOT carried over (different product).
+- Why: the 2026-10-31 small-brands sweep (BUILD_LOG 025) found the
+  K8 Pro listed on keychron.com but sold out (0 stock), with the
+  page pointing to K8 HE and K8 Ultra 8K as successors. The user
+  chose the Ultra 8K over the K8 HE and over keeping the sold-out
+  entry.
+- Why Ultra 8K over K8 HE: the Ultra 8K is the direct 8K-polling
+  successor line named on the K8 Pro page, at the same $119.99
+  price point as the K8 HE's successor positioning; the user
+  chose it. (No technical claim is made for one over the other
+  beyond the page's successor pointer and the user's choice.)
+- Identifier: SKU K8U-J1 from Keychron's official product page
+  (page's default variant). The entry pins the Apex Red variant,
+  mirroring the old entry's Red pinning; Brown and Banana share
+  the $119.99 price on the same page. Per-variant barcodes are
+  pending verification via Keychron's public product JSON (the
+  K8 Pro precedent); old-K8 barcodes (753610396260, 617748997846)
+  belong to the original K8 and were excluded.

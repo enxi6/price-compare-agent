@@ -189,25 +189,31 @@ EVAL_SET: list[EvalProduct] = [
                     "(Graphite is 920-011406); the eval entry was renamed."
                 },
                 status="verified"),
-    EvalProduct(key="keychron-k8-pro", brand="Keychron",
-                model="K8 Pro QMK",
-                variant="Black, Fully Assembled (Hot-Swappable), White Backlight, "
-                "Gateron G Pro Red (K8P-G1)",
+    EvalProduct(key="keychron-k8-ultra-8k", brand="Keychron",
+                model="K8 Ultra 8K",
+                variant="Fully Assembled, Black, Apex Red (K8U-J1)",
                 category="keyboards",
-                identifiers={"EAN": "4895248806837", "SKU": "K8P-G1"},
+                identifiers={"SKU": "K8U-J1"},
                 identifier_sources={
-                    "EAN": "Keychron official store public product JSON, "
-                    "browser-verified 2026-10-31 (31 variants; K8P-G1 barcode "
-                    "4895248806837, K8P-G2 4895248806844). Earlier assumption "
-                    "that Keychron uses SKUs only was wrong: the JSON carries "
-                    "barcodes per variant."
+                    "SKU": "Keychron official product page, "
+                    "browser-verified 2026-11-01: Red K8U-J1 "
+                    "(page default), Brown K8U-J3, Banana K8U-J4, "
+                    "all $119.99, all stocked in the US warehouse. "
+                    "No UPC/EAN/barcode on the visible page; "
+                    "per-variant barcodes via the public product "
+                    "JSON still being checked (K8 Pro precedent). "
+                    "Old-K8 barcodes (753610396260, 617748997846) "
+                    "belong to the original K8, not the Ultra 8K, "
+                    "and were excluded."
                 },
-                notes="Update 2026-10-31: small-brands sweep (BUILD_LOG "
-                "025) finds K8P-G1 still listed on keychron.com but "
-                "Sold out (0 in stock; sale $74.99, reg $99.99). Page "
-                "points to successors K8 HE & K8 Ultra 8K. Listed-but- "
-                "sold-out is not the same as discontinued; handling "
-                "(keep / replace with successor) pending user decision.",
+                notes="Replaces keychron-k8-pro (retired 2026-11-01, "
+                "user-confirmed, DECISIONS 019): the K8 Pro is "
+                "listed on keychron.com but sold out (BUILD_LOG "
+                "025); the page points to K8 HE & K8 Ultra 8K as "
+                "successors. The old key is retired, never "
+                "reused; the old $49.99 quote is NOT carried over "
+                "(different product). Brown and Banana switches "
+                "share the $119.99 price on the same page.",
                 status="verified"),
     EvalProduct(key="nintendo-switch-lite-turquoise", brand="Nintendo",
                 model="Switch Lite", variant="Turquoise (HDHSBAZAA)",

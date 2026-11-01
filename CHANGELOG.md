@@ -44,6 +44,12 @@ releases; breaking changes are called out in the release notes.
   old key logitech-mx-master-3s-graphite is retired, never
   reused. First quote: Logitech direct $119.99, browser-verified
   in stock (retailer Graphite rows pending).
+- K8 Pro retired and replaced by K8 Ultra 8K (Black, Apex Red,
+  SKU K8U-J1), user-confirmed after the Keychron sweep found the
+  K8 Pro listed but sold out. The old key keychron-k8-pro is
+  retired, never reused, and its $49.99 quote is not carried
+  over. First quote: Keychron direct $119.99, browser-verified
+  stocked in the US warehouse (per-variant barcodes pending).
 
 ## [0.1.0] - 2026-10-31
 
