@@ -567,3 +567,26 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   $149, PULSE Explore $149, PULSE headset $99 (pre-order).
   Refurbished lines and third-party controllers on PlayStation
   Direct are excluded from candidacy by scope (DECISIONS 006).
+
+## 023 (2026-10-31): Nintendo official-catalog sweep, fourth brand (DECISIONS 013)
+
+- Read-only sweep of nintendo.com US, 2026-10-31 23:19-23:21 PT
+  (no sign-in, no cart). Consoles + controllers families only;
+  games, amiibo, cases, docks, chargers, cameras, and other
+  accessories were out of scope.
+- Result: both entries CURRENT.
+  - Switch OLED White: $399.99, Add to cart shown, not sold out.
+  - Switch Lite Turquoise: $229.99, Add to cart shown, not sold
+    out.
+- Candidate lines observed (NOT approved additions): Switch 2
+  system $499.99; Switch 2 bundles $549.99 (Mario Kart World),
+  $529.99 (Sports Resort), $519.99 (Zelda 40th, sold out); OLED
+  Neon set $399.99; Switch Neon $339.99; Lite Yellow/Blue $229.99
+  (Gray/Coral sold out); Switch 2 Pro Controller $89.99, Switch
+  Pro Controller $79.99, Joy-Con 2 pairs $99.99, Joy-Con pairs
+  $89.99, single Joy-Con $44.99-$54.99, retro controllers
+  $34.99-$69.99; third-party controllers $22.99-$69.99.
+  Refurbished variants are excluded from candidacy by scope
+  (DECISIONS 006); controller grips/straps/wheels are accessories,
+  not controllers. OLED Mario Red Edition $349.99 (sold out) was
+  found via the product selector, not the main grid.
