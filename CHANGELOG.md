@@ -49,7 +49,8 @@ releases; breaking changes are called out in the release notes.
   K8 Pro listed but sold out. The old key keychron-k8-pro is
   retired, never reused, and its $49.99 quote is not carried
   over. First quote: Keychron direct $119.99, browser-verified
-  stocked in the US warehouse (per-variant barcodes pending).
+  stocked in the US warehouse. Per-variant barcodes later found
+  in Keychron's public product JSON (Red 4894979057969).
 
 ## [0.1.0] - 2026-10-31
 

@@ -751,3 +751,17 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (the K8 Pro precedent) is running as a follow-up; if barcodes
   surface, the entry gains an EAN in a follow-up commit.
 - Tests: 19 passed (re-run after the edit).
+
+## 031 (2026-11-01): K8 Ultra 8K per-variant barcodes found in Keychron's public product JSON
+
+- Follow-up to BUILD_LOG 030: the visible page showed no barcode,
+  but the public product JSON (same product, id 8205260095577)
+  carries a barcode per variant, all available, all $119.99:
+  Red K8U-J1 4894979057969, Brown K8U-J3 4894979057976,
+  Banana K8U-J4 4894979057983.
+- Entry updated: identifiers now EAN 4894979057969 + SKU K8U-J1.
+  Field note, stated plainly: the JSON field is named 'barcode'
+  only (no separate GTIN/UPC/EAN field); recorded as EAN
+  following the K8 Pro precedent (13-digit barcodes). No barcode
+  type beyond the field name is asserted by the JSON itself.
+- Tests: 19 passed (re-run after the edit).

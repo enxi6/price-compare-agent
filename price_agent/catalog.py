@@ -193,15 +193,19 @@ EVAL_SET: list[EvalProduct] = [
                 model="K8 Ultra 8K",
                 variant="Fully Assembled, Black, Apex Red (K8U-J1)",
                 category="keyboards",
-                identifiers={"SKU": "K8U-J1"},
+                identifiers={"EAN": "4894979057969", "SKU": "K8U-J1"},
                 identifier_sources={
+                    "EAN": "Keychron official store public product "
+                    "JSON, browser-verified 2026-11-01 (Red K8U-J1 "
+                    "barcode 4894979057969; Brown K8U-J3 "
+                    "4894979057976; Banana K8U-J4 4894979057983). "
+                    "JSON field is named 'barcode' (no separate "
+                    "GTIN/UPC/EAN field); recorded as EAN following "
+                    "the K8 Pro precedent (13-digit barcodes).",
                     "SKU": "Keychron official product page, "
                     "browser-verified 2026-11-01: Red K8U-J1 "
                     "(page default), Brown K8U-J3, Banana K8U-J4, "
                     "all $119.99, all stocked in the US warehouse. "
-                    "No UPC/EAN/barcode on the visible page; "
-                    "per-variant barcodes via the public product "
-                    "JSON still being checked (K8 Pro precedent). "
                     "Old-K8 barcodes (753610396260, 617748997846) "
                     "belong to the original K8, not the Ultra 8K, "
                     "and were excluded."
