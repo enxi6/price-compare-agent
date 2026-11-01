@@ -477,3 +477,45 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   snapshot files is now 28 of 28 models. The Anker 737 gap is closed
   by replacement, not by a new 737 offer.
 - Tests: 19 passed (re-run after the edit).
+
+## 020 (2026-10-31): Apple official-catalog sweep, first brand (DECISIONS 013)
+
+- Read-only sweep of apple.com US regular store, 2026-10-31
+  21:40-21:49 PT (no sign-in, no cart). One early click landed on
+  the education store and was corrected; all prices below are
+  regular-store prices. Pickup/delivery wording was for the
+  browser's approximated location and is not recorded as a
+  universal fact.
+- Result: 10 of 12 entries CURRENT, 1 LISTED-PRE-ORDER, 1
+  DISCONTINUED.
+  - Current (Apple direct price, regular store): Air 13 M5 $1,299;
+    Air 15 M5 $1,499; mini M6 $899; iPad A16 $449; iPad Air M4
+    $749; iPad Pro M5 11 $1,199 (the entry pins 256GB Wi-Fi Space
+    Black, exactly the configuration verified); Max 2 $549;
+    Pro 3 $249; Watch SE 3 $249 (verification used Black Sport
+    Band S/M; band is not part of the entry); Magic Mouse $79.
+  - Listed, pre-order only: Pro 14 M6 $1,999, "Available starting
+    11.6"; delivers/pickup from Nov 6. No UPC on the page, so the
+    entry stays pending and the 2026-11-07 re-check stands.
+  - Discontinued: AirPods 4 (MXP63LL/A). Its buy page redirects
+    to the AirPods 5 page and its product page states it is no
+    longer available on apple.com; the catalog lists only
+    AirPods 5, Pro 3, Max 2. Replacement (AirPods 5) needs user
+    confirmation per DECISIONS 013; no catalog change made yet.
+- Method caveat, stated plainly: Apple buy pages for entries 1-11
+  did NOT display part numbers, so this sweep confirms line /
+  configuration currency, not MPN mappings. The one exception is
+  Magic Mouse: its accessory page shows "UPC or EAN No.:
+  195949655883", independently confirming that entry's
+  identifier.
+- Candidate lines observed (NOT approved additions): MacBook Neo
+  from $699; Pro 14/16 PROLED XDR from $2,899 (pre-order 11.6);
+  iMac from $1,499 (pre-order 11.6); Mac Studio from $2,499;
+  Studio Display $1,599 / XDR $3,299; iPad Pro 13 from $1,499;
+  iPad Air 13 from $949; iPad mini (new, A20 Pro) from $699
+  (pre-order); Watch Series 12 from $399; Watch Ultra 4 from
+  $799; AirPods 5 $129 (wireless charging case $149); Magic
+  Trackpad $129 and Magic Keyboards $99-$199; Apple adapters
+  and cables $19-$159; third-party accessories incl. Logitech
+  MX Master 4 $119.95. iPhones were excluded from the sweep by
+  scope (DECISIONS 006/013).
