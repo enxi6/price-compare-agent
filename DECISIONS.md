@@ -235,3 +235,22 @@ written as "superseded by" with the original text kept.
   entry changes. Corollary: if a pinned configuration later becomes
   brand-direct-only (retailers drop it), that triggers a re-pin or
   retirement decision, on the same pattern as discontinuation.
+
+## 016 (2026-10-31): Close existing categories first; new categories are a later phase
+
+- Decision: new product categories (TVs, home theater, cameras,
+  lenses, and the like) are deferred to the category-expansion
+  phase. Current work closes out the categories already in the
+  eval set: same-family candidates for brands already present,
+  decided batch by batch.
+- Why: opening new categories mid-Phase-1 would keep Phase 1 from
+  ever closing, and each new category carries its own
+  configuration traps (camera body-only vs kit, TV size variants)
+  that deserve their own pinning rules, not a sweep-by-sweep
+  add-on. TVs and cameras are good comparison categories in
+  principle (strong US retailer coverage), which is why they are
+  deferred, not rejected.
+- Scope: this explicitly leaves Sony's TV, home-theater, camera,
+  and lens families out of the Sony sweep's candidacy (BUILD_LOG
+  022 covered audio + PlayStation only). It does not remove any
+  existing entry or candidate.
