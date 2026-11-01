@@ -66,6 +66,13 @@ EVAL_SET: list[EvalProduct] = [
             "UPC": "Amazon listing for 910-006557 (For Mac / Business / "
             "Bluetooth editions carry different UPCs)"
         },
+        notes="Update 2026-10-31: Logitech official-catalog sweep "
+        "(BUILD_LOG 024) finds no plain consumer MX Master 3S in "
+        "the 65-product Mice catalog; the line's current flagship "
+        "is MX Master 4. Related variants still sold (different "
+        "products, not equivalents): MX Master 3S Bluetooth "
+        "Edition 910-007499 ($79.99) and MX Master 3S for Business "
+        "($109.99). Replacement decision pending user.",
         status="verified",
     ),
     EvalProduct(
