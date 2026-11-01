@@ -144,3 +144,52 @@ written as "superseded by" with the original text kept.
   own generation (2022), not a current-catalog model. Current
   entries that remain in a brand's official catalog (e.g. DualSense
   White, still sold by PlayStation Direct) are unaffected.
+
+## 012 (2026-10-31): Anker 737 replaced by Anker Prime Charger 100W, user-confirmed
+
+- Decision: the Anker 737 entry (anker-737-120w) is retired and replaced
+  by the Anker Prime Charger 100W, 3-port (A2688), under the new key
+  anker-prime-100w. The old key is retired, never reused, and no 737
+  quote is carried over (there was none to carry: the entry held
+  0 qualifying quotes).
+- Why: the 737 has no qualifying US new-unit offer as of 2026-10-31
+  (BUILD_LOG 016: Ayoub Lebanon/A2148311 and Newegg marketplace
+  TECHVAULT rows both excluded on browser verification; ShopAbunda
+  out of stock). The user chose replacement over keeping the gap or
+  dropping the entry, then chose the Prime 100W over the 140W 4-port.
+- Why Prime 100W: it is the like-for-like current-catalog successor —
+  same 3-port travel-charger role (2 USB-C + 1 USB-A), GaN, foldable
+  plug — from Anker's current official catalog, consistent with
+  DECISIONS 011. The 140W 4-port (A2697) was the step-up alternative;
+  its UPC was not yet pinned to a single code (two codes on the main
+  ASIN), and the 736 Nano II 100W (A2145) was rejected as the 737's
+  own generation, not a current model.
+- Identifier: UPC 194644040635 for A2688, agreed by Ubuy, Desertcart
+  (multiple regions), and CamelCamelCamel (ASIN B0CZ6LXL8R, Model
+  A2688); Anker US official spec confirms Model A2688, 100W,
+  2 USB-C + 1 USB-A. A2688341 (UPC 194644041021) is a different
+  variant and was excluded; B&H US listing code A2688J41.
+
+## 013 (2026-10-31): Complete the eval set brand by brand from official catalogs, Apple first
+
+- Decision: the eval set is completed one brand at a time, each brand
+  checked against its own official current-sale catalog, starting
+  with Apple. Proceed gradually; do not try to sweep every brand at
+  once.
+- Why Apple first: it is the largest cluster in the set (12 of 28
+  models) and the fastest-churning (M-series generations), so a
+  catalog check there pays the most. Apple's US catalog is also the
+  cleanest single source (one store, explicit part numbers, no
+  marketplace noise), making it the most efficient first sweep. It
+  also folds in the pending MacBook Pro 14 M6 UPC check (launch
+  2026-11-06, re-check already scheduled 2026-11-07).
+- Method per brand: (1) verify existing entries are still current
+  (currency, identifiers, quotes); (2) list current-catalog lines
+  NOT in the eval set as candidates — additions need user approval,
+  never auto-add, so the set does not balloon; (3) retire entries
+  that left the official catalog only with user confirmation (the
+  DECISIONS 006 / 009 / 012 pattern); (4) record everything in
+  DECISIONS, BUILD_LOG, and CHANGELOG.
+- Guardrails: iPhones stay excluded (DECISIONS 006) unless the user
+  revisits that scope; no old-model or secondhand hunting inside
+  this sweep (DECISIONS 011 — that is a later phase).
