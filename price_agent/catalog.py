@@ -199,7 +199,11 @@ EVAL_SET: list[EvalProduct] = [
                 "for the standard White column (other columns: Chroma Teal "
                 "711719022497, GTA VI LE 711719072683, 007 LE 711719027119); "
                 "still pending, no code promoted without a tiebreaker "
-                "(physical box barcode or Sony spec sheet)."),
+                "(physical box barcode or Sony spec sheet). Second update "
+                "2026-10-31: a FIFTH code, 711719541226, appears on eBay "
+                "and a refurbished-goods store; Amazon/Camel code "
+                "711719574293 is tied to model CFI-ZCT1W. Still no "
+                "tiebreaker; entry stays pending."),
     EvalProduct(key="xbox-wireless-controller-black", brand="Microsoft",
                 model="Xbox Wireless Controller",
                 variant="Carbon Black, Series X|S (1914)",
@@ -231,6 +235,16 @@ EVAL_SET: list[EvalProduct] = [
                     "0194644099008 is the same code in GTIN form (UK-plug "
                     "versions are separate references)"
                 },
+                notes="2026-10-31 re-check: NO qualifying US new-unit offer "
+                "found. Ayoub Computers $99 is fulfilled from Lebanon, "
+                "prices exclude 11% VAT, MPN A2148311 (not the pinned "
+                "A2148111), plug type unstated — excluded. Newegg $158.58 "
+                "is third-party marketplace seller TECHVAULT shipping from "
+                "China, no condition label, no MPN/UPC, brand-path "
+                "mismatch — excluded. ShopAbunda lists the charger but "
+                "out of stock; Bluum (distributor) lists A2148111 with no "
+                "price/stock asserted. Entry keeps 0 quotes; fate (keep as "
+                "gap / replace / drop) pending user decision.",
                 status="verified"),
     EvalProduct(key="apple-magic-mouse-usbc", brand="Apple",
                 model="Magic Mouse (USB-C)", variant="White (MXK53AM/A)",

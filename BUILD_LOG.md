@@ -397,3 +397,27 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (append-only record); its trap note describing the old flag is now
   historical.
 - Tests: 19 passed (re-run after the edit).
+
+## 016 (2026-10-31): Anker 737 re-check — still no qualifying US offer (DECISIONS pending)
+
+- Meta Catalog (40 results, USD, Anker-restricted) returned two 737 rows
+  worth checking: Ayoub Computers $99 and Newegg $158.58. Both failed
+  browser verification 2026-10-31 20:09-20:11 PT (read-only, no cart):
+  Ayoub is fulfilled from Lebanon with prices excluding 11% VAT, MPN
+  A2148311 (not the pinned A2148111), plug type unstated — not a US
+  offer. Newegg is third-party marketplace seller TECHVAULT shipping
+  from China, no condition label, no MPN/UPC, title omits brand and
+  color, brand-path mismatch, wrong category — excluded on five
+  independent grounds.
+- Supporting traces, none qualifying: ShopAbunda lists the charger but
+  out of stock; Bluum (distributor) lists A2148111 with no price or
+  stock asserted; Anker AU single unit sold out. The charger is alive
+  internationally (EG/PK/BD/KE/MY/PT/AU listings) but no US new-unit
+  offer qualifies as of 2026-10-31.
+- Entry keeps 0 quotes. No auto-replacement per DECISIONS 006: the
+  entry's fate (keep as documented gap / replace with a current Anker
+  model / drop) is a user decision, requested 2026-10-31.
+- DualSense note updated in the same round: fifth UPC code 711719541226
+  (eBay + refurbished store); Amazon/Camel code 711719574293 tied to
+  model CFI-ZCT1W. Still no tiebreaker; entry stays pending.
+- Tests: 19 passed (re-run after the edits).

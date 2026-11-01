@@ -16,6 +16,13 @@ releases; breaking changes are called out in the release notes.
   (910-006628 / UPC 097855177797), agreed by Abt (US), DirectDial,
   Best Buy Canada, and the Logitech G US store URL. The two $159.99
   quotes already collected stand.
+- Anker 737 (A2148111) re-check: no qualifying US new-unit offer found
+  as of 2026-10-31 (Ayoub Lebanon/A2148311 and Newegg marketplace
+  TECHVAULT rows both excluded on browser verification). Entry keeps
+  0 quotes; replacement or removal awaits a user decision, no
+  auto-swap.
+- DualSense White UPC conflict now counts five codes (added
+  711719541226); still unresolved, no code promoted.
 
 ## [0.1.0] - 2026-10-31
 
