@@ -38,6 +38,12 @@ releases; breaking changes are called out in the release notes.
   apple.com sweep found AirPods 4 no longer available. The old
   key apple-airpods-4-usbc is retired, never reused. First
   quotes, all $129 (Staples, Abt, Best Buy).
+- MX Master 3S retired and replaced by MX Master 4 Graphite
+  (910-007558, UPC 097855207623), user-confirmed after the
+  Logitech sweep found no plain consumer 3S in the catalog. The
+  old key logitech-mx-master-3s-graphite is retired, never
+  reused. First quote: Logitech direct $119.99, browser-verified
+  in stock (retailer Graphite rows pending).
 
 ## [0.1.0] - 2026-10-31
 

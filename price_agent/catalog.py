@@ -56,23 +56,26 @@ EVAL_SET: list[EvalProduct] = [
         status="verified",
     ),
     EvalProduct(
-        key="logitech-mx-master-3s-graphite",
+        key="logitech-mx-master-4-graphite",
         brand="Logitech",
-        model="MX Master 3S",
-        variant="Graphite, standard edition (910-006557)",
+        model="MX Master 4",
+        variant="Graphite, standard edition (910-007558)",
         category="mice",
-        identifiers={"UPC": "097855174789", "MPN": "910-006557"},
+        identifiers={"UPC": "097855207623", "MPN": "910-007558"},
         identifier_sources={
-            "UPC": "Amazon listing for 910-006557 (For Mac / Business / "
-            "Bluetooth editions carry different UPCs)"
+            "UPC": "CamelCamelCamel (ASIN B0FC5SJNQX, Model 910-007558) "
+            "+ WantItAll spec (ItemPartNumber 910-007558, Graphite) "
+            "agree. Part map: Graphite 910-007558, Pale Gray "
+            "910-007559, Black 910-007560 (Avadirect + MCS spec "
+            "tables). Logitech US direct URL pins Graphite to "
+            "910-007558. 910-007562 and 910-007565 are different "
+            "codes and were excluded."
         },
-        notes="Update 2026-10-31: Logitech official-catalog sweep "
-        "(BUILD_LOG 024) finds no plain consumer MX Master 3S in "
-        "the 65-product Mice catalog; the line's current flagship "
-        "is MX Master 4. Related variants still sold (different "
-        "products, not equivalents): MX Master 3S Bluetooth "
-        "Edition 910-007499 ($79.99) and MX Master 3S for Business "
-        "($109.99). Replacement decision pending user.",
+        notes="Replaces logitech-mx-master-3s-graphite (retired "
+        "2026-11-01, user-confirmed, DECISIONS 017): the 3S "
+        "standard edition is no longer listed in Logitech's "
+        "consumer catalog (BUILD_LOG 024). The old key is "
+        "retired, never reused.",
         status="verified",
     ),
     EvalProduct(

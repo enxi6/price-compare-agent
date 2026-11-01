@@ -254,3 +254,27 @@ written as "superseded by" with the original text kept.
   and lens families out of the Sony sweep's candidacy (BUILD_LOG
   022 covered audio + PlayStation only). It does not remove any
   existing entry or candidate.
+
+## 017 (2026-11-01): MX Master 3S replaced by MX Master 4 (Graphite), user-confirmed
+
+- Decision: the MX Master 3S entry (logitech-mx-master-3s-graphite)
+  is retired and replaced by the MX Master 4, Graphite standard
+  edition, under the new key logitech-mx-master-4-graphite. The old
+  key is retired, never reused, and no 3S quote is carried over.
+- Why: the 2026-10-31 Logitech sweep (BUILD_LOG 024) found no plain
+  consumer MX Master 3S in the 65-product Mice catalog; the line's
+  current flagship is MX Master 4. The user chose replacement with
+  Master 4 over the 3S Bluetooth Edition, keeping the gap, or
+  dropping the entry.
+- Why Master 4 over the 3S Bluetooth Edition: the Bluetooth Edition
+  (910-007499) is a variant of the previous generation, not the
+  current-catalog flagship; picking it would keep an old-generation
+  model as the entry, against the current-catalog principle
+  (DECISIONS 008 / 011 / 012 / 014). The for Business variant is a
+  business-channel listing, outside the mainstream consumer scope.
+- Identifier: UPC 097855207623 for 910-007558, agreed by
+  CamelCamelCamel (ASIN B0FC5SJNQX, Model 910-007558) and WantItAll
+  spec (ItemPartNumber 910-007558, Graphite). Part map confirmed:
+  Graphite 910-007558, Pale Gray 910-007559, Black 910-007560;
+  Logitech US direct URL pins Graphite to 910-007558. 910-007562
+  and 910-007565 are different codes and were excluded.

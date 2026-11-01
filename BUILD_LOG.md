@@ -662,3 +662,39 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   $54.99 (Keychron's All Keyboards collection showed 339 items,
   so the keyboard candidate list is representative, not
   exhaustive). Refurbished lines excluded by scope.
+
+## 026 (2026-11-01): MX Master 3S replaced by MX Master 4 Graphite (DECISIONS 017) — entry swap done, quote verification running
+
+- Old entry logitech-mx-master-3s-graphite deleted from the catalog
+  (retired keys are removed, never reused); new entry
+  logitech-mx-master-4-graphite added with UPC 097855207623 / MPN
+  910-007558 (see DECISIONS 017 for the full identifier case).
+  The dated snapshot files mentioning the 3S are left untouched
+  (append-only record).
+- The MX Master 4 quote ($119.99, Logitech direct + retailers,
+  Meta Catalog) is held for browser verification of the Logitech
+  US Graphite page before it enters a snapshot file; this entry
+  records the swap, and the snapshot + commit follow the
+  verification result.
+
+## 027 (2026-11-01): MX Master 4 Graphite quote verified — Logitech direct $119.99 in stock, swap complete
+
+- Browser verification 2026-11-01 08:11-08:12 PT (read-only, no
+  sign-in, no cart): Logitech US Graphite page confirms standard
+  consumer MX Master 4 (not for Mac/Business/Special Edition),
+  Graphite swatch selected, $119.99, In stock. Ready to ship;
+  Specs confirm Graphite 910-007558 (Pale Gray 910-007559, Black
+  910-007560). No UPC on the page (UPC comes from the
+  Camel/WantItAll agreement).
+- New file data/eval_snapshots_mxmaster4_2026-11-01.json (1 quote:
+  Logitech direct $119.99). Two Meta Catalog rounds found no US
+  retailer Graphite row — Pale Gray rows are a different variant,
+  Ayoub 910-007562 is non-US + a different code, RC Willey states
+  no color — so retailer Graphite coverage is an open follow-up,
+  not a gap in the entry. Combined coverage stays 28 of 28 models.
+- Nuance recorded: the Meta Catalog feed still shows a 910-006557
+  product page ($99.99), but the live 65-product Mice catalog walk
+  (BUILD_LOG 024) found no plain 3S listing. Feed rows can lag,
+  so the live-catalog finding stands; the swap decision is
+  unaffected.
+- Tests: 19 passed (re-run after the edit).
