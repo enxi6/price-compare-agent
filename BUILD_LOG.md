@@ -590,3 +590,36 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (DECISIONS 006); controller grips/straps/wheels are accessories,
   not controllers. OLED Mario Red Edition $349.99 (sold out) was
   found via the product selector, not the main grid.
+
+## 024 (2026-10-31): Logitech official-catalog sweep, third brand (DECISIONS 013)
+
+- Read-only sweep of logitech.com + logitechg.com US, 2026-10-31
+  23:19-23:23 PT (no sign-in, no cart). Catalogs walked in full:
+  Mice 65 products, Keyboards 49, G Mice 23, G Keyboards 19.
+  Many prices are LogiWork Deal Days special pricing through Nov 1
+  11:59pm PDT (regular price in parentheses where shown).
+  Webcams, headsets, and other families were out of scope.
+- Result: 2 current, 1 not current as pinned.
+  - MX Master 3S standard edition 910-006557: NOT CURRENT as a
+    plain consumer model — absent from the 65-product Mice
+    catalog; the line's current flagship is MX Master 4.
+    Related variants still sold (different products, not
+    equivalents): MX Master 3S Bluetooth Edition 910-007499
+    ($79.99, reg $99.99, in stock) and MX Master 3S for Business
+    ($109.99). Replacement decision pending user; no catalog
+    change made yet.
+  - MX Keys S pale grey 920-011559: CURRENT, $119.99 special
+    (reg $129.99), in stock. Official spelling is "Pale Gray"
+    vs the entry's "Pale Grey" — cosmetic, model matches.
+  - Superlight 2 black 910-006628: CURRENT, $159.99, in stock.
+    Specs confirm Black 910-006628 (White 910-006636, Magenta
+    910-006795). UPC not displayed on the official page —
+    unchanged (retailer agreement).
+- Candidate lines observed (NOT approved additions): MX Master 4
+  $119.99 (+ for Mac, Special Edition), MX Anywhere 3S $69.99,
+  Lift $69.99, MX Vertical $99.99, G502 X PLUS $149.99,
+  Superlight 2 DEX $159.99, Superstrike $179.99, MX Keys Mini
+  $89.99, MX Mechanical $149.99, ERGO K860 $119.99, Wave Keys
+  $69.99, POP Keys $99.99, G915 X $129.99, PRO X TKL $219.99, and
+  dozens more across the four catalogs. MX Keys S Combo is a
+  bundle, not a standalone line.
