@@ -765,3 +765,16 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   following the K8 Pro precedent (13-digit barcodes). No barcode
   type beyond the field name is asserted by the JSON itself.
 - Tests: 19 passed (re-run after the edit).
+
+## 032 (2026-11-01): Selection methodology decided (DECISIONS 020) — deal sites rejected as selector
+
+- Trigger: user proposed referencing deal sites (DealMoon) for
+  non-Apple selection, inviting a professional override.
+- Verdict: proposal partially overturned. DealMoon is not adopted
+  as the selection source (audience skew, deal-ephemerality,
+  commercial bias — see DECISIONS 020). Brand official catalogs
+  stay the backbone; demand prioritization is added as a layer
+  (bestseller lists + review volume first, deal sites only as a
+  secondary gap-check/alert signal). The user's core point —
+  selection needs a demand filter — is kept in this form.
+- Tests: 19 passed (re-run after the edit; no code changed).

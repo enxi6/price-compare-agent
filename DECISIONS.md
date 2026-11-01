@@ -332,3 +332,49 @@ written as "superseded by" with the original text kept.
   pending verification via Keychron's public product JSON (the
   K8 Pro precedent); old-K8 barcodes (753610396260, 617748997846)
   belong to the original K8 and were excluded.
+
+## 020 (2026-11-01): Selection methodology — deal sites are NOT the selection source; brand catalogs stay the backbone, demand signals prioritize
+
+- Decision: deal-aggregation sites (DealMoon and equivalents) are
+  NOT adopted as the selection source for non-Apple brands. The
+  selection backbone stays the brand official catalog
+  (DECISIONS 011): it is the only stable, verifiable,
+  non-commercial source of "what is currently sold".
+- Why DealMoon fails as a selector, in three parts:
+  (a) Audience skew: DealMoon is a Chinese-language deals site
+  for Chinese consumers in North America. Its attention map
+  reflects that audience (deal-sensitive categories, diaspora
+  shopping patterns), not the US mainstream market this project
+  serves in English. Seeding selection from it would import a
+  catalog whose demand story does not match the stated market.
+  (b) Deal-ephemerality: deal sites show temporary price drops,
+  coupons, and promos, not the stable catalog. A product appears
+  because it is discounted today and vanishes tomorrow; products
+  that rarely discount would never appear even if they are top
+  sellers. Selection built on deal posts inherits churn and
+  promo-bias.
+  (c) Commercial bias: deal posts partly reflect affiliate and
+  merchant relationships. Importing selection from a
+  commission-driven source conflicts with the buyer-side,
+  commission-blind principle (DECISIONS 001).
+- The real bottleneck is not discovery but prioritization: brand
+  catalogs already give the full list (65 mice, 339 keyboards);
+  the question is which items to track first. That is solved by
+  demand signals, in priority order:
+  (1) Retailer bestseller lists (public best-seller pages) and
+  review volume on retailer pages — the closest public proxy for
+  installed base and mainstream demand.
+  (2) Search demand (trends, keyword volume) for category
+  prioritization.
+  (3) Deal sites as a SECONDARY signal only: repeated appearance
+  over time (not single posts) marks a product as a gap-check
+  candidate (user-approved per DECISIONS 013) and, in Phase 2,
+  as an alert-priority input. For US-mainstream deal-heat,
+  Slickdeals is a better proxy than DealMoon; DealMoon becomes
+  relevant only if the project ever targets Chinese-American
+  shoppers or a Chinese-language version — a segment decision,
+  not a Phase 1 selection rule.
+- The user's underlying point is kept: selection does need a
+  demand filter ("pre-screened for attention and traffic"), and
+  that filter is adopted — but as prioritization over the brand
+  catalog, not as replacement of it.
