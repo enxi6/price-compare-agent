@@ -778,3 +778,24 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   secondary gap-check/alert signal). The user's core point —
   selection needs a demand filter — is kept in this form.
 - Tests: 19 passed (re-run after the edit; no code changed).
+
+## 033 (2026-11-01): MX Master 4 retailer Graphite hunt — Best Buy checked, no standard Graphite listing
+
+- Third Meta Catalog round + Best Buy direct check (read-only,
+  2026-11-01 08:54-08:57 PT, no cart, no sign-in): Best Buy does
+  NOT list the standard consumer MX Master 4 Graphite 910-007558
+  in this check — full search for "Logitech MX Master 4 Graphite"
+  (22 results) plus an exact part-number search returned only
+  adjacent variants, none substituted:
+  Pale Gray 910-007559 (SKU 6640819, $119.99), Black 910-007560
+  (SKU 12565546, $126.81, marketplace $126.81-$152.00), Adobe
+  Edition Black 910-007561 (SKU 6640829, $119.99), for Mac, for
+  Business. The Adobe Edition code 910-007561 is newly recorded
+  here and excluded as a special edition (different product).
+- Conclusion, stated plainly: retailer Graphite coverage remains
+  OPEN. The entry keeps its single verified quote (Logitech
+  direct $119.99). This check narrows the hunt (Best Buy ruled
+  out for now) but does not prove no US retailer carries
+  Graphite; the next branches are other major retailers, when
+  the catalog refreshes.
+- Tests: 19 passed (re-run after the edit; no code changed).
