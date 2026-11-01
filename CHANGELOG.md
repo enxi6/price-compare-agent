@@ -33,6 +33,11 @@ releases; breaking changes are called out in the release notes.
   anker-737-120w is retired, never reused. First quotes, both
   $69.99 (Anker direct, browser-verified in stock; B&H). All 28
   models now hold quotes.
+- AirPods 4 retired and replaced by AirPods 5 with the USB-C case
+  (MKFW4LL/A, UPC 195951378978), user-confirmed after the
+  apple.com sweep found AirPods 4 no longer available. The old
+  key apple-airpods-4-usbc is retired, never reused. First
+  quotes, all $129 (Staples, Abt, Best Buy).
 
 ## [0.1.0] - 2026-10-31
 

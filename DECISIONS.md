@@ -193,3 +193,24 @@ written as "superseded by" with the original text kept.
 - Guardrails: iPhones stay excluded (DECISIONS 006) unless the user
   revisits that scope; no old-model or secondhand hunting inside
   this sweep (DECISIONS 011 — that is a later phase).
+
+## 014 (2026-10-31): AirPods 4 replaced by AirPods 5 (USB-C case), user-confirmed
+
+- Decision: the AirPods 4 entry (apple-airpods-4-usbc) is retired and
+  replaced by AirPods 5 with the USB-C charging case, under the new
+  key apple-airpods-5-usbc. The old key is retired, never reused,
+  and no AirPods 4 quote is carried over.
+- Why: the 2026-10-31 apple.com sweep (BUILD_LOG 020) found AirPods
+  4 no longer available on apple.com — its buy page redirects to
+  AirPods 5 and its product page states it is no longer available.
+  The user chose replacement over keeping the gap or dropping the
+  entry.
+- Why the USB-C case, not the wireless case: the old entry was the
+  base USB-C-case model, and the $129 USB-C-case AirPods 5 is its
+  like-for-like successor. The wireless charging case (MKFT4LL/A,
+  $149) is the step-up variant and was excluded, as was the AU
+  variant MKFT4X/A.
+- Identifier: UPC 195951378978 for MKFW4LL/A, agreed by B&H Photo
+  spec and eBay US product identifiers (GTIN 0195951378978, the
+  same code). Best Buy US confirms Model MKFW4LL/A, SKU 6376553,
+  $129.

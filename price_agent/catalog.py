@@ -120,14 +120,22 @@ EVAL_SET: list[EvalProduct] = [
                     "(international version and bundles carry different UPCs)"
                 },
                 status="verified"),
-    EvalProduct(key="apple-airpods-4-usbc", brand="Apple",
-                model="AirPods 4", variant="USB-C case (MXP63LL/A)",
+    EvalProduct(key="apple-airpods-5-usbc", brand="Apple",
+                model="AirPods 5", variant="USB-C case (MKFW4LL/A)",
                 category="earbuds",
-                identifiers={"UPC": "195949688522", "MPN": "MXP63LL/A"},
+                identifiers={"UPC": "195951378978", "MPN": "MKFW4LL/A"},
                 identifier_sources={
-                    "UPC": "Adorama + B&H Photo + Amazon US agree for MXP63LL/A "
-                    "(India MXP63HN/A and ANC MXP93LL/A are different products)"
+                    "UPC": "B&H Photo spec (195951378978) + eBay US "
+                    "product identifiers (GTIN 0195951378978, the same "
+                    "code) agree for MKFW4LL/A. Best Buy US confirms "
+                    "Model MKFW4LL/A, SKU 6376553, $129. Wireless "
+                    "charging case MKFT4LL/A ($149) and AU MKFT4X/A "
+                    "are different variants."
                 },
+                notes="Replaces apple-airpods-4-usbc (retired 2026-10-31, "
+                "user-confirmed, DECISIONS 014): AirPods 4 is no longer "
+                "available on apple.com (BUILD_LOG 020). The old key "
+                "is retired, never reused.",
                 status="verified"),
     EvalProduct(key="apple-watch-se3-40mm", brand="Apple",
                 model="Watch SE 3 (40mm, GPS)", variant="Midnight, GPS (MEH94LW/A)",

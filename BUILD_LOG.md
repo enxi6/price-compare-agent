@@ -519,3 +519,18 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   and cables $19-$159; third-party accessories incl. Logitech
   MX Master 4 $119.95. iPhones were excluded from the sweep by
   scope (DECISIONS 006/013).
+
+## 021 (2026-10-31): AirPods 4 replaced by AirPods 5 USB-C case (DECISIONS 014)
+
+- Old entry apple-airpods-4-usbc deleted from the catalog (retired
+  keys are removed, never reused); new entry apple-airpods-5-usbc
+  added with UPC 195951378978 / MPN MKFW4LL/A (see DECISIONS 014
+  for the identifier case). The dated Apple snapshot file
+  mentioning AirPods 4 is left untouched (append-only record).
+- New file data/eval_snapshots_airpods5_2026-10-31.json (3 quotes,
+  all $129: Staples + Abt via Meta Catalog, Best Buy via search
+  snippet — catalog-grade, page not browser-verified; Apple direct
+  $129 from the apple.com sweep corroborates but is not a row,
+  since no verified product URL for the USB-C case was found).
+  Combined coverage stays 28 of 28 models.
+- Tests: 19 passed (re-run after the edit).
