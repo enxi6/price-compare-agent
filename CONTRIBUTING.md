@@ -27,3 +27,22 @@ python3 -m unittest discover -s tests -v
 ```
 
 No API key is needed to run the skeleton (mock merchant data).
+
+## Releasing
+
+Every feature update leaves a record on GitHub. The process is:
+
+- **Commit messages follow Conventional Commits**: `feat:`, `fix:`, `docs:`,
+  `chore:`, `refactor:`, `test:` (e.g. `feat: add price-drop alerts`).
+  The type drives the changelog section and the release notes.
+- **CHANGELOG.md is updated in the same change**: every user-visible
+  change gets an entry under `[Unreleased]` first. A change without a
+  changelog entry is incomplete, including corrections — a corrected
+  claim is recorded as a new entry, never by silently rewriting history.
+- **Cutting a release**: move the `[Unreleased]` entries into a new
+  versioned section with the release date, commit, tag `vX.Y.Z`
+  (Semantic Versioning; `0.x` while pre-stable), push the tag, and
+  create a GitHub Release from the tag with that changelog section as
+  the notes. The release notes list known gaps alongside the wins.
+- **No force-pushes to the main branch.** History is corrected by new
+  commits and new releases, not by rewriting published commits.
