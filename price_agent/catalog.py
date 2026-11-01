@@ -225,26 +225,23 @@ EVAL_SET: list[EvalProduct] = [
                     "and Target refurbished codes are different SKUs)"
                 },
                 status="verified"),
-    EvalProduct(key="anker-737-120w", brand="Anker",
-                model="737 GaNPrime Charger (120W)",
-                variant="Black, US plug (A2148)",
+    EvalProduct(key="anker-prime-100w", brand="Anker",
+                model="Prime Charger (100W)",
+                variant="100W, 3-port (A2688)",
                 category="chargers",
-                identifiers={"UPC": "194644099008", "MPN": "A2148111"},
+                identifiers={"UPC": "194644040635", "MPN": "A2688"},
                 identifier_sources={
-                    "UPC": "Swiftsly + Ubuy listings agree for A2148; EAN "
-                    "0194644099008 is the same code in GTIN form (UK-plug "
-                    "versions are separate references)"
+                    "UPC": "Ubuy + Desertcart (multiple regions) + "
+                    "CamelCamelCamel agree for A2688 (ASIN B0CZ6LXL8R); "
+                    "Anker US official spec confirms Model A2688, 100W, "
+                    "2 USB-C + 1 USB-A. A2688341 (UPC 194644041021) is a "
+                    "different variant and was excluded; B&H US listing "
+                    "code A2688J41."
                 },
-                notes="2026-10-31 re-check: NO qualifying US new-unit offer "
-                "found. Ayoub Computers $99 is fulfilled from Lebanon, "
-                "prices exclude 11% VAT, MPN A2148311 (not the pinned "
-                "A2148111), plug type unstated — excluded. Newegg $158.58 "
-                "is third-party marketplace seller TECHVAULT shipping from "
-                "China, no condition label, no MPN/UPC, brand-path "
-                "mismatch — excluded. ShopAbunda lists the charger but "
-                "out of stock; Bluum (distributor) lists A2148111 with no "
-                "price/stock asserted. Entry keeps 0 quotes; fate (keep as "
-                "gap / replace / drop) pending user decision.",
+                notes="Replaces anker-737-120w (retired 2026-10-31, "
+                "user-confirmed, DECISIONS 012): the 737 has no "
+                "qualifying US new-unit offer (BUILD_LOG 016). The old "
+                "key is retired, never reused.",
                 status="verified"),
     EvalProduct(key="apple-magic-mouse-usbc", brand="Apple",
                 model="Magic Mouse (USB-C)", variant="White (MXK53AM/A)",

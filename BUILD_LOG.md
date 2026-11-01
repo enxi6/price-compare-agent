@@ -447,3 +447,33 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   models; only Anker 737 still holds 0 quotes (fate pending user
   decision, BUILD_LOG 016).
 - Tests: 19 passed (re-run after the edit).
+
+## 018 (2026-10-31): Anker 737 replaced by Prime 100W (DECISIONS 012) — entry swap done, quote verification running
+
+- Old entry anker-737-120w deleted from the catalog (Buds2 Pro
+  precedent: retired keys are removed, never reused); new entry
+  anker-prime-100w added with UPC 194644040635 / MPN A2688 (see
+  DECISIONS 012 for the full identifier case). The dated snapshot
+  files mentioning the 737 are left untouched (append-only record).
+- The Prime 100W quote ($69.99, Anker direct + B&H, Meta Catalog)
+  is held for browser verification of the Anker US page before it
+  enters a snapshot file; this entry records the swap, and the
+  snapshot + commit follow the verification result.
+
+## 019 (2026-10-31): Prime 100W quote verified — Anker direct $69.99 in stock, swap complete
+
+- Browser verification 2026-10-31 21:39-21:40 PT (read-only, no
+  sign-in, no cart): Anker US page confirms Prime Charger 100W,
+  3 ports (2 USB-C + 1 USB-A), GaN, Model A2688, $69.99, In Stock,
+  delivery 3-7 business days. The page shows a $10 auto-applied-code
+  promotion; the recorded price is the shown $69.99 with no further
+  discount applied. No official color name appears on the page, so
+  the variant carries no color; the page shows no UPC (the UPC comes
+  from the multi-source agreement) and does not explicitly label
+  condition (regular direct listing, separate from the Certified
+  Refurbished promotion).
+- New file data/eval_snapshots_ankerprime_2026-10-31.json (2 quotes:
+  Anker direct $69.99, B&H $69.99). Combined coverage across all six
+  snapshot files is now 28 of 28 models. The Anker 737 gap is closed
+  by replacement, not by a new 737 offer.
+- Tests: 19 passed (re-run after the edit).

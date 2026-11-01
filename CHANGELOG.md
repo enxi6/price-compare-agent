@@ -28,6 +28,11 @@ releases; breaking changes are called out in the release notes.
   MEH94LW/A and UPC 195950387070, independently confirming the
   entry's part-number mapping. Combined quote coverage is now 27 of
   28 models; only Anker 737 still has no quote.
+- Anker 737 retired and replaced by the Anker Prime Charger 100W
+  (A2688, UPC 194644040635), user-confirmed. The old key
+  anker-737-120w is retired, never reused. First quotes, both
+  $69.99 (Anker direct, browser-verified in stock; B&H). All 28
+  models now hold quotes.
 
 ## [0.1.0] - 2026-10-31
 
