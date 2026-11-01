@@ -105,3 +105,23 @@ written as "superseded by" with the original text kept.
   spec, a distributor catalog (GTIN 0198957273582), and T-Mobile's URL
   sku. The Amazon SM-R640NZWFXAR / 198957273568 listing is a different
   variant and was excluded, as were MEA and Latino Americana suffixes.
+
+## 010 (2026-10-31): Superlight 2 US identifier corrected from 910-006630 to 910-006628
+
+- Correction, not a new model: the eval entry for the G Pro X Superlight 2
+  Black changes MPN from 910-006630 to 910-006628 and identifier from EAN
+  5099206104525 to UPC 097855177797. The key
+  (logitech-g-pro-x-superlight-2-black) does not change, and the two
+  $159.99 quotes already collected (Logitech G direct, Sweetwater) stand:
+  the Logitech G direct URL already showed 910-006628, so the correction
+  makes the entry agree with its own quote instead of contradicting it.
+- Why: the 910-006630 pinning came from European retailer listings. Four
+  further sources agree 910-006628 is the North American black unit: Abt
+  (US) lists Model 910-006628 with UPC 097855177797 and Color Black;
+  DirectDial agrees on MFG part and UPC (0097855177797, the same code in
+  GTIN-13 form); Best Buy Canada lists Model 910-006628, Black; the
+  Logitech G US store URL carries 910-006628. The old 910-006630 / EAN
+  5099206104525 reference is recorded here as superseded, not erased:
+  it remains a valid European reference for the same mouse.
+- Rule applied: an eval set for the US market pins the US identifier;
+  a regional identifier is not silently kept once US sources disagree.

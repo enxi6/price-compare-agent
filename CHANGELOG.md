@@ -9,8 +9,13 @@ releases; breaking changes are called out in the release notes.
 
 ## [Unreleased]
 
-No changes yet. User-visible changes accumulate here first, then move into a
-versioned section when a release is cut (see "Releasing" in CONTRIBUTING.md).
+### Fixed
+
+- Corrected the G Pro X Superlight 2 Black eval identifier from the
+  European reference (910-006630 / EAN 5099206104525) to the US reference
+  (910-006628 / UPC 097855177797), agreed by Abt (US), DirectDial,
+  Best Buy Canada, and the Logitech G US store URL. The two $159.99
+  quotes already collected stand.
 
 ## [0.1.0] - 2026-10-31
 

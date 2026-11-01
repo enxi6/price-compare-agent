@@ -382,3 +382,18 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   snapshot files is now 26 of 28 models; still missing: Anker 737 (gap,
   not declared discontinued) and Watch SE 3 (0 new-unit quotes).
 - Tests: 19 passed.
+
+## 015 (2026-10-31): Superlight 2 US identifier corrected (DECISIONS 010)
+
+- The eval entry pinned the European reference (910-006630 / EAN
+  5099206104525). Re-checking against US sources: Abt (US) Model
+  910-006628 + UPC 097855177797 + Black, DirectDial MFG part + UPC
+  agreement, Best Buy Canada Model 910-006628 Black, Logitech G US store
+  URL 910-006628. Entry corrected to MPN 910-006628 / UPC 097855177797;
+  key unchanged; the two $159.99 quotes stand, and the Logitech G quote
+  now identifier-matches its own entry instead of contradicting it.
+- The superseded European reference stays recorded in DECISIONS 010, not
+  deleted. The dated 2026-10-31 non-Apple snapshot file is left untouched
+  (append-only record); its trap note describing the old flag is now
+  historical.
+- Tests: 19 passed (re-run after the edit).

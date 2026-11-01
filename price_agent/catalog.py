@@ -243,14 +243,16 @@ EVAL_SET: list[EvalProduct] = [
                 },
                 status="verified"),
     EvalProduct(key="logitech-g-pro-x-superlight-2-black", brand="Logitech",
-                model="G Pro X Superlight 2", variant="Black (910-006630)",
+                model="G Pro X Superlight 2", variant="Black (910-006628)",
                 category="mice",
-                identifiers={"EAN": "5099206104525", "MPN": "910-006630"},
+                identifiers={"UPC": "097855177797", "MPN": "910-006628"},
                 identifier_sources={
-                    "EAN": "Multiple EU retailer listings agree for 910-006630 "
-                    "(910-006631 is the same mouse in different regional "
-                    "packaging; US UPC not separately confirmed, EAN is the "
-                    "GTIN-family identifier)"
+                    "UPC": "Abt (US) lists Model 910-006628, UPC 097855177797, "
+                    "Color Black; DirectDial agrees (MFG part 910-006628, "
+                    "UPC 0097855177797, same code in GTIN-13 form). "
+                    "Supersedes the 910-006630 / EAN 5099206104525 pinning, "
+                    "which was the European reference (see DECISIONS 010); "
+                    "Logitech G US store URL also shows 910-006628"
                 },
                 status="verified"),
     EvalProduct(key="google-pixel-buds-pro-2-porcelain", brand="Google",
