@@ -534,3 +534,36 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   since no verified product URL for the USB-C case was found).
   Combined coverage stays 28 of 28 models.
 - Tests: 19 passed (re-run after the edit).
+
+## 022 (2026-10-31): Sony official-catalog sweep, second brand (DECISIONS 013)
+
+- Read-only sweep of Sony Electronics US + PlayStation US, 2026-10-31
+  22:51-22:55 PT (no sign-in, no cart). Sources reached through the
+  sites' own navigation after first guessed URLs 404'd.
+- Result: all 3 entries CURRENT.
+  - WH-1000XM5 Black: current, Sony direct sale $228.00 (was
+    $399.99). Direct-delivery shown out of stock at check time
+    (email-me-when-available) — listing current, not Sony-direct
+    availability; eval quotes come from retailers and are
+    unaffected.
+  - WF-1000XM5 Black: current, Sony direct sale $249.99 (was
+    $329.99). Same direct-delivery out-of-stock note.
+  - DualSense White: current, PlayStation Direct $74.00.
+- DualSense identifier: still unresolved on official evidence. No
+  official Sony/PlayStation page states a UPC, and none of the five
+  conflicting codes appears on official pages. New partial evidence:
+  PlayStation Support lists CFI-ZCT1W as a DualSense model code
+  (manuals page + serial-number article), but neither page ties it
+  to White or states a UPC — recorded in the entry notes as a
+  general model-code confirmation, not a white-specific identifier
+  and not a UPC resolution. Entry stays pending.
+- Candidate lines observed (NOT approved additions): WH-1000XM6
+  $459.99, WF-1000XM6 $329.99, WH-1000XM4C $299.99, ULT WEAR
+  $249.99, LinkBuds Clip/Fit/Open $229.99, WH-CH720N $89.99,
+  WF-C710N $129.99, WF-C510 $69.99, INZONE line, MDR pro line
+  (MDR-7506 $114.99, MDR-M1 $269.99, MDR-MV1 $339.99); DualSense
+  Edge $199, Access controller $89, PlayStation Portal $249,
+  PS5 Pro $899, PS5 1TB $649, PS5 Digital 825GB $599, PULSE Elite
+  $149, PULSE Explore $149, PULSE headset $99 (pre-order).
+  Refurbished lines and third-party controllers on PlayStation
+  Direct are excluded from candidacy by scope (DECISIONS 006).

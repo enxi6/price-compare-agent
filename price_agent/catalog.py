@@ -211,7 +211,17 @@ EVAL_SET: list[EvalProduct] = [
                 "2026-10-31: a FIFTH code, 711719541226, appears on eBay "
                 "and a refurbished-goods store; Amazon/Camel code "
                 "711719574293 is tied to model CFI-ZCT1W. Still no "
-                "tiebreaker; entry stays pending."),
+                "tiebreaker; entry stays pending. Third update "
+                "2026-10-31: Sony official-catalog sweep (BUILD_LOG "
+                "022) confirms the model is current (PlayStation "
+                "Direct $74.00) but no official Sony/PlayStation page "
+                "states a UPC, and none of the five codes appears on "
+                "official pages. PlayStation Support does list "
+                "CFI-ZCT1W as a DualSense model code (manuals page + "
+                "serial-number article), but neither page ties it to "
+                "White or states a UPC — model code confirmed in "
+                "general, not white-specific; UPC conflict stays "
+                "unresolved; entry stays pending."),
     EvalProduct(key="xbox-wireless-controller-black", brand="Microsoft",
                 model="Xbox Wireless Controller",
                 variant="Carbon Black, Series X|S (1914)",
