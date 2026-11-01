@@ -623,3 +623,42 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   $69.99, POP Keys $99.99, G915 X $129.99, PRO X TKL $219.99, and
   dozens more across the four catalogs. MX Keys S Combo is a
   bundle, not a standalone line.
+
+## 025 (2026-10-31): Small-brands official-catalog sweep, fifth part (DECISIONS 013)
+
+- Read-only sweep of Samsung, Bose, Google, Amazon, Meta, Xbox,
+  Keychron US pages, 2026-10-31 23:19-23:24 PT (no sign-in, no
+  cart). Same-family candidates only; no new categories.
+- Result: 5 current, 1 listed-but-sold-out, 1 unverified-blocked.
+  - Samsung Buds4 Pro White: CURRENT, from $249.99, White shown.
+    Model number not displayed on the overview page — name +
+    color match, not an MPN mapping.
+  - Bose QC Ultra Earbuds 2nd gen Black: CURRENT, $229 (was
+    $299).
+  - Pixel Buds Pro 2 Porcelain: CURRENT, $169 (was $229). Model
+    number not displayed — name + color match.
+  - Quest 3S 128GB: CURRENT, $349.99 (256GB is a storage variant
+    of the same line).
+  - Xbox Wireless Controller Carbon Black 1914: CURRENT, $49.49
+    (was $64.99). Model number not displayed — name + color
+    match.
+  - Keychron K8 Pro K8P-G1: LISTED BUT SOLD OUT on keychron.com
+    (0 in stock; sale $74.99, reg $99.99). Page points to
+    successors K8 HE & K8 Ultra 8K. Sold-out is not
+    discontinuation; handling pending user decision. Entry
+    unchanged.
+  - Kindle Paperwhite 16GB (2024) Black: NOT VERIFIED — amazon.com
+    refused AI-agent access (Conditions of Use wall). Entry
+    unchanged; neither confirmed nor removed. Needs live-browser
+    takeover or a retailer currency check.
+- Candidate lines observed (NOT approved additions): Galaxy Buds4
+  $179.99, Buds3 FE $149.99; Bose Ultra Open 2nd gen $299, Sport
+  Open $199, QC Earbuds $129, NC Wired $99; Pixel Buds 2a $129;
+  Quest 3 $599.99 (512GB shown); Elite Series 2 $167.99, Elite
+  Core $111.74-$139.99, Nano $49.99, Adaptive Controller $99.99,
+  Adaptive Joystick $29.99, special editions $49.06-$98.97 (some
+  sold out); Keychron K8 HE $139.99, K8 Ultra 8K $119.99, K8
+  $59.99+, Q6/Q1/Q11 lines $229.99-$254.99, B40 $49.99, B39
+  $54.99 (Keychron's All Keyboards collection showed 339 items,
+  so the keyboard candidate list is representative, not
+  exhaustive). Refurbished lines excluded by scope.

@@ -169,6 +169,12 @@ EVAL_SET: list[EvalProduct] = [
                     "UPC": "PBTech NZ/AU listing for B0CFPL6CFY (single seller; "
                     "color/storage variants differ)"
                 },
+                notes="Update 2026-10-31: amazon.com refused AI-agent "
+                "access (Conditions of Use wall) during the small- "
+                "brands sweep (BUILD_LOG 025); official currency "
+                "unverified. Entry unchanged — neither confirmed nor "
+                "removed on this basis; needs live-browser takeover or "
+                "a retailer currency check.",
                 status="verified"),
     EvalProduct(key="logitech-mx-keys-s-pale-grey", brand="Logitech",
                 model="MX Keys S", variant="Pale Grey (920-011559)",
@@ -193,6 +199,12 @@ EVAL_SET: list[EvalProduct] = [
                     "that Keychron uses SKUs only was wrong: the JSON carries "
                     "barcodes per variant."
                 },
+                notes="Update 2026-10-31: small-brands sweep (BUILD_LOG "
+                "025) finds K8P-G1 still listed on keychron.com but "
+                "Sold out (0 in stock; sale $74.99, reg $99.99). Page "
+                "points to successors K8 HE & K8 Ultra 8K. Listed-but- "
+                "sold-out is not the same as discontinued; handling "
+                "(keep / replace with successor) pending user decision.",
                 status="verified"),
     EvalProduct(key="nintendo-switch-lite-turquoise", brand="Nintendo",
                 model="Switch Lite", variant="Turquoise (HDHSBAZAA)",
