@@ -2745,3 +2745,107 @@ written as "superseded by" with the original text kept.
   sale prices after Early Black Friday ends Nov 8; Tab Plus
   Gen 2 $469.99; Idea Tab Pro Gen 2 bundle contents; five
   pending Lenovo UPCs).
+
+## 052 (2026-11-06): Expansion batch 30 — 170 → 175 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 Samsung models from the Samsung US store sweep
+  (BUILD_LOG 069), no per-batch user approval needed (DECISIONS
+  027): Galaxy Watch9 40mm Bluetooth, Graphite (SM-L340NZKAXAA,
+  UPC pending), Galaxy Watch8 Classic 46mm Wi-Fi/Bluetooth, Black
+  (SM-L500NZKAXAA, UPC 198957093562 — verified), Galaxy Watch
+  Ultra2 47mm LTE, Titanium Silver (SM-L715UZSAXAA, UPC
+  198957393730 — verified), Galaxy Tab S11 11-inch 128GB Wi-Fi,
+  Gray (SM-X730NZAAXAR, UPC pending), Galaxy Tab S10 FE 10.9-inch
+  128GB Wi-Fi, Gray (SM-X520NZAAXAR, UPC 887276992266 — verified).
+  One variant pinned per model (DECISIONS 015); 3 of 5 identifiers
+  verified, 2 stay pending. Verified-identifier count rises
+  81 → 84. Samsung is already in the set (3 Buds entries) and
+  grows 3 → 8 entries; no new brand enters the set. No new
+  category enters the set ("wearables" 10 → 13 entries,
+  "tablets" 15 → 17 entries). No phones and no TVs were added —
+  both would open new categories, out of scope for this batch
+  (DECISIONS 016).
+- Why these 5: they are the current Samsung US catalog lines in
+  the three in-scope categories with clean brand-direct pins —
+  the Watch9 (Aug 2026 flagship, $379.99) and Ultra2 (Jul 2026
+  rugged flagship, $699.99) are the two newest Samsung watches,
+  the Watch8 Classic ($499.99) is the still-current Classic (no
+  Watch9 Classic exists), and the Tab S11 ($999.99) and Tab S10
+  FE ($549.99) are the current flagship and FE tablets. All five
+  are in stock new at Samsung US on 2026-11-06 (buy-page JSON-LD
+  InStock reads) with Best Buy agreeing on every price.
+- What was corrected along the way: the $299.99 / $349.99 Watch9
+  figures in older coverage are Watch8 prices, not Watch9 (the
+  Watch9 launched Aug 7, 2026 at $379.99, $30 above the Watch8);
+  the Tab S11 $799.99 launch price rose to $899.99 (Apr 2026)
+  and $999.99 now, and the $659 sale price is an Amazon-only
+  deal (excluded, no Amazon touch); the Tab S10 FE $499.99 MSRP
+  (Samsung's May 2026 list) is stale vs the current $549.99 at
+  Samsung US and Best Buy; the Watch8 Classic $419.99 reported
+  Sep 24 looks like an ended sale vs the fresh $499.99 page read;
+  the feed's Best Buy Watch9 $409.26 and Ultra2 $737.52 rows both
+  conflict with fresh Best Buy page reads ($379.99 / $699.99)
+  and were excluded as stale; the feed's Tab S11 Silver sale
+  $899.99 is a feed-only figure vs the $999.99 page read. Three
+  part-number traps were caught and excluded, not priced: the
+  Tab S11 bundle UPCs 810210911580 / 810210913805 belong to the
+  Canada part SM-X730NZAAXAC with an SD card; the Tab S11
+  Enterprise 128GB (SM-X730NZAAN20, UPC 198957257360) and 256GB
+  Gray (SM-X730NZAEXAR, UPC 198957230189) are different parts
+  from the pinned consumer 128GB Gray; the Target Tab S10 FE
+  $449.99 / $394.99 row is a "Global Model" (non-US, DECISIONS
+  021).
+- Variant pinning, recorded explicitly: Watch9 pins Graphite
+  40mm Bluetooth (SM-L340NZKAXAA) — the entry Bluetooth config;
+  44mm (SM-L350NZKAXAA, $409.99) and LTE (SM-L345UZKAXAA,
+  $429.99) are different SKUs, as is Cream (SM-L340NZEAXAA).
+  Watch8 Classic pins Black 46mm Wi-Fi/Bluetooth
+  (SM-L500NZKAXAA) — the only size (46mm), Bluetooth tier; LTE
+  (SM-L505UZKAXAA, $549.99) and White (SM-L500NZWAXAA) are
+  different SKUs. Watch Ultra2 pins Titanium Silver 47mm LTE
+  (SM-L715UZSAXAA) — LTE is the only connectivity tier for the
+  Ultra2; Titanium Gray (SM-L715UZKAXAA) is a different color.
+  Tab S11 pins Gray 128GB Wi-Fi (SM-X730NZAAXAR) — the entry
+  storage tier; 256GB ($1,099.99) and 512GB ($1,299.99) are
+  different SKUs, as is Silver (SM-X730NZSAXAR). Tab S10 FE pins
+  Gray 128GB Wi-Fi (SM-X520NZAAXAR) — the entry tier; 5G
+  (SM-X528UZAA, $685.99) and 256GB (SM-X520NZAEXAR, $589.99
+  MSRP) are different SKUs, as is the FE+ 13.1-inch
+  (SM-X620NZAAXAR).
+- What does NOT change: the existing 170 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6
+  Pro untouched, batches 1–29 entries untouched). No other
+  snapshot file is rewritten. No Amazon touch in the snapshot:
+  no Amazon quotes, no Amazon-sourced prices or identifiers
+  (the $659 Amazon-only Tab S11 deal was read only to confirm
+  it is Amazon-only, and was not used). The daily refresh cron
+  still says "57 models" in its body and needs a count update
+  to 175 on the next edit (parent owns the cron; not touched
+  here).
+- Revisit: re-check the two pending UPCs (Watch9 SM-L340NZKAXAA
+  — candidate 198957310546 needs a second independent source;
+  Tab S11 SM-X730NZAAXAR — no UPC surfaced at all); re-check
+  the Watch8 Classic $499.99 price (vs the Sep 24 $419.99
+  report) and the Tab S10 FE $549.99 price (vs the $499.99 MSRP
+  list) next refresh; the remaining Samsung candidates stay
+  list-only for later batches (Galaxy Tab S11 Ultra 256GB Gray
+  SM-X930NZAAXAR, UPC 198957230080, $1,199.99; Galaxy Tab A11+
+  128GB Gray SM-X230NZAIXAR, UPC 198957270390, $249.99 MSRP;
+  Galaxy Tab S10 FE+ 13.1-inch Gray SM-X620NZAAXAR, UPC
+  887276992563, $649.99 MSRP; Galaxy Watch8 40mm — superseded
+  by the Watch9; Galaxy Buds3 Pro — out of the Samsung US
+  catalog; Galaxy Buds Core — not sold in the US); the batch 29
+  revisits carry over unchanged (four Lenovo sale prices after
+  the Early Black Friday event ends Nov 8; four pending
+  Lenovo/ASUS UPCs) and the batch 28 revisits carry over
+  unchanged (fēnix 9 UPC; Venu 4 Dell $499.99 sale after Black
+  Friday Nov 27; vívoactive 6 stock; Forerunner 970 UPC
+  tiebreak; Edge 1060 UPC; remaining Garmin candidates
+  list-only) and the batch 27 revisits carry over unchanged
+  (Series X stock; Wireless Headset $110.99; Surface Laptop
+  $1,299.99 sale after Black Friday; three pending Microsoft
+  identifiers; remaining Microsoft candidates list-only) and
+  the batch 26 revisits carry over unchanged (five Lenovo sale
+  prices after Early Black Friday ends Nov 8; Tab Plus Gen 2
+  $469.99; Idea Tab Pro Gen 2 bundle contents; five pending
+  Lenovo UPCs).

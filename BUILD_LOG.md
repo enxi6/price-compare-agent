@@ -5073,3 +5073,157 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   keys: lenovo-yoga-tab-gen-2-cosmic-blue,
   lenovo-idea-tab-luna-grey, lenovo-idea-tab-plus-cloud-grey,
   asus-rog-swift-oled-pg27ucdm-black).
+
+## 069 — 2026-11-06: Expansion batch 30 — 170 → 175 models (DECISIONS 052)
+
+- Membership check (against the 170-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): Galaxy Watch9 — NO MATCH (the
+  set has no Samsung watch at all; the only Samsung entries are
+  the three Buds lines); Galaxy Watch8 Classic — NO MATCH (no
+  Classic watch in the set); Galaxy Watch Ultra2 — NO MATCH (no
+  Ultra watch in the set); Galaxy Tab S11 — NO MATCH (no Samsung
+  tablet in the set; the set's tablets are Lenovo and Apple
+  only); Galaxy Tab S10 FE — NO MATCH (no FE tablet in the set).
+  UPC cross-check: 198957093562 (Watch8 Classic), 198957393730
+  (Ultra2) and 887276992266 (Tab S10 FE) match nothing in the
+  set; 198957310546 (Watch9 candidate) and any Tab S11 code are
+  not recorded. No candidate was dropped by the membership
+  check. The five are the Samsung US current-catalog lines in
+  the three in-scope categories (earbuds were swept first and
+  produced no addable model — see skipped list below); the
+  Samsung US buy pages all return price data on fresh reads.
+- Samsung Galaxy Watch9 40mm Bluetooth, Graphite
+  (SM-L340NZKAXAA) — identifiers PENDING: the candidate UPC
+  198957310546 appears only in Samsung's own Wearables MSRP
+  Price List (July 2026: SM-L340NZKAXAA, Galaxy Watch9 40mm BT
+  - Graphite, New, $379.99, UPC 198957310546) — no second
+  independent source was found (the Best Buy page text states
+  no UPC; web search returns nothing else for the code), so
+  identifiers stay empty per the strict two-source rule — same
+  call as batch 2's Watch Ultra 4. Not copied: 198957310546
+  (single-source candidate). MPN confirmed by the Samsung US
+  buy-page URL (galaxy-watch9-40mm-graphite-bluetooth-sku-
+  sm-l340nzkaxaa) + Best Buy US (Model SM-L340NZKAXAA, SKU
+  6684173) + Abt (SM-L340NZKAXAA, $379.99). Quotes (3): Samsung
+  $379.99 (US buy page JSON-LD read fresh 2026-11-06 21:35 UTC,
+  InStock; feed brand_direct row agrees; 40mm, Snapdragon Wear
+  Elite, 390mAh, Sport Band S/M, Wear OS 7, 3,000-nit display);
+  Best Buy $379.99 (page read fresh 2026-11-06 21:35 UTC,
+  InStock, Sold by Best Buy); Abt $379.99 (search-index read).
+  Excluded: the feed's Best Buy $409.26 row (stale vs the fresh
+  $379.99 page read) and the $299.99 / $349.99 figures in older
+  coverage (Watch8 prices, not Watch9 — the Watch9 launched
+  Aug 7, 2026 at $379.99). Not the 44mm Graphite SM-L350NZKAXAA
+  ($409.99), the 40mm LTE SM-L345UZKAXAA ($429.99) or the Cream
+  SM-L340NZEAXAA (UPC 198957310430).
+- Samsung Galaxy Watch8 Classic 46mm Wi-Fi/Bluetooth, Black
+  (SM-L500NZKAXAA) — identifiers VERIFIED: UPC 198957093562 +
+  MPN SM-L500NZKAXAA (Samsung Wearables MSRP Price Lists, Sep
+  2025, Dec 2025, Mar 2026 and Jun 2026 editions all agree for
+  SM-L500NZKAXAA, Galaxy Watch8 Classic BT - Black, $499.99,
+  UPC 198957093562, + eBay product identifiers, GTIN
+  0198957093562, the same code, agree). Quotes (2): Samsung
+  $499.99 (US buy page JSON-LD read fresh 2026-11-06 21:35 UTC,
+  InStock; feed brand_direct row agrees; 46mm, rotating bezel,
+  Exynos W1000, 445mAh, 64GB, stainless steel); Best Buy
+  $499.99 (search-index page read, new-unit page SKU 13170487,
+  Model SM-L500NZKAXAA). Note: memeburn reported $419.99 at
+  Samsung on Sep 24, 2026 — the fresh page read today says
+  $499.99, so $419.99 looks like an ended sale; re-check next
+  refresh. Not the LTE SM-L505UZKAXAA ($549.99, UPC
+  198957093579) or the White SM-L500NZWAXAA (UPC 198957106224).
+  There is no Watch9 Classic (Samsung confirmed no Classic in
+  the 2026 lineup), so the Watch8 Classic stays the current
+  Classic.
+- Samsung Galaxy Watch Ultra2 47mm LTE, Titanium Silver
+  (SM-L715UZSAXAA) — identifiers VERIFIED: UPC 198957393730 +
+  MPN SM-L715UZSAXAA (Samsung Wearables MSRP Price List, July
+  2026: SM-L715UZSAXAA, Galaxy Watch Ultra 2 - Titanium Silver,
+  New, $699.99, UPC 198957393730, + the T-Mobile for Business
+  product URL carries the same code as its sku,
+  product_default_group...198957393730 — the same URL-sku
+  pattern as the Buds4 Pro precedent, DECISIONS 009). Quotes
+  (3): Samsung $699.99 (US buy page JSON-LD read fresh
+  2026-11-06 21:35 UTC, InStock; feed brand_direct row agrees;
+  47mm titanium, 800mAh, 5,000-nit display, Snapdragon Wear
+  Elite, Marine Band, IP69K / 10 ATM); Best Buy $699.99
+  (search-index page read, SKU 6684221, Model SM-L715UZSAXAA);
+  Abt $699.99 (search-index read). Excluded: the feed's Best
+  Buy $737.52 row (conflicts with the fresh $699.99 page read —
+  stale). Not the Titanium Gray SM-L715UZKAXAA (UPC
+  198957393792, $699.99) or the original Galaxy Watch Ultra
+  SM-L705 (2024, $649.99 list, now $449.99 sale — previous
+  generation).
+- Samsung Galaxy Tab S11 11-inch 128GB Wi-Fi, Gray
+  (SM-X730NZAAXAR) — identifiers PENDING: no UPC surfaced for
+  SM-X730NZAAXAR in any source read, so identifiers stay empty
+  per the strict two-source rule. Not copied: nothing — no
+  candidate code surfaced for this part. (Samsung's April 2026
+  tablet MSRP PDF lists the Enterprise 128GB SM-X730NZAAN20,
+  UPC 198957257360, and the 256GB Gray SM-X730NZAEXAR, UPC
+  198957230189, but not the consumer 128GB Gray; the
+  810210911580 / 810210913805 UPCs belong to Best Buy bundle
+  listings for the Canada part SM-X730NZAAXAC with an SD card.)
+  Quotes (4): Samsung $999.99 (US buy page JSON-LD read fresh
+  2026-11-06 21:35 UTC, InStock — the page read was the Silver
+  variant at $999.99; Gray matches at Best Buy and NFM;
+  11-inch Dynamic AMOLED 2X 120Hz, Dimensity 9400+, 12GB/128GB,
+  S Pen included, IP68); Best Buy $999.99 (page read fresh
+  2026-11-06 21:35 UTC, InStock, Sold by Best Buy, SKU 6641206,
+  Model SM-X730NZAAXAR); NFM $999.99 (feed authorized_retailer
+  row — suspected; not page-verified); Macy's $899.99 (feed
+  authorized_retailer row — suspected; not page-verified).
+  Correction vs earlier reports: the $799.99 launch price rose
+  to $899.99 (Apr 2026) and $999.99 now; the $659 sale price is
+  an Amazon-only deal (excluded, no Amazon touch). Not the
+  256GB ($1,099.99) or 512GB ($1,299.99) or the Tab S11 Ultra
+  ($1,199.99+).
+- Samsung Galaxy Tab S10 FE 10.9-inch 128GB Wi-Fi, Gray
+  (SM-X520NZAAXAR) — identifiers VERIFIED: UPC 887276992266 +
+  MPN SM-X520NZAAXAR (Samsung Galaxy Tablet MSRP Price Lists,
+  Mar, Jun, Sep, Dec 2025 and Mar, Apr 2026 editions all agree:
+  SM-X520NZAAXAR, Galaxy Tab S10 FE 8+128GB (Wi-Fi) Gray,
+  $499.99, UPC 887276992266, + manuals.plus mirror of Samsung's
+  June 2025 list, same code. Note for a later session: the
+  mirror traces to the same Samsung document, so the
+  verification rests primarily on Samsung's own repeated
+  publication across six editions over 14 months, with zero
+  conflicting codes found anywhere.) Quotes (3): Samsung
+  $549.99 (US buy page JSON-LD, search-index read 2026-11-06,
+  InStock; 10.9-inch WUXGA+ 90Hz, Exynos 1580, 8GB/128GB, S Pen
+  included, IP68); Best Buy $549.99 (page read fresh 2026-11-06
+  21:36 UTC, InStock, Sold by Best Buy, SKU 6618942); BJ's
+  $529.99 (feed authorized_retailer row — suspected; not
+  page-verified). Note: Samsung's MSRP list still shows $499.99
+  (May 2026) but the current Samsung US and Best Buy price is
+  $549.99 — the list price rose; re-check next refresh.
+  Excluded: Target's $449.99 / $394.99 'Global Model' row
+  (non-US, DECISIONS 021). Not the 5G SM-X528UZAA ($685.99) or
+  the 256GB SM-X520NZAEXAR ($589.99 MSRP) or the Tab S10 FE+
+  13.1-inch (SM-X620NZAAXAR, $649.99 MSRP).
+- Skipped this batch, list-only: Galaxy Buds3 Pro, Silver
+  (SM-R630NZAAXAR) — no longer in the Samsung US current
+  catalog (the samsung.com/us product page redirects; last-gen,
+  superseded by the Buds4 Pro already in the set); still sold
+  new at Best Buy ($144.95 sale vs $249.99 list) and AT&T
+  ($249.99), but fails the DECISIONS 011 current-catalog test;
+  Galaxy Buds Core (SM-R410) — no Samsung US listing and no US
+  retailer row (LatAm shop.samsung.com SM-R410NZKA and MEA
+  Ayoub SM-R410NZKAMEA only); not sold in the US; Galaxy Watch8
+  40mm (superseded by the Watch9, excluded per the batch 28
+  Fenix 8 precedent); Galaxy Tab S11 Ultra 256GB Gray
+  (SM-X930NZAAXAR, UPC 198957230080, $1,199.99 — held for a
+  later batch); Galaxy Tab A11+ 128GB Gray (SM-X230NZAIXAR, UPC
+  198957270390, $249.99 MSRP — held for a later batch); Galaxy
+  Tab S10 FE+ 13.1-inch Gray (SM-X620NZAAXAR, UPC 887276992563,
+  $649.99 MSRP — held for a later batch). No phones and no TVs
+  were considered (new categories, DECISIONS 016).
+- Eval on the new snapshot: 175 models, 84 verified identifiers,
+  5 with quotes, 15 total quotes, 0 identifier-matched, 15
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 170 → 175, verified 81 → 84, for the
+  continuous expansion; the pending set gains the 2 new pending
+  keys: samsung-galaxy-watch9-40mm-graphite,
+  samsung-galaxy-tab-s11-128gb-gray).

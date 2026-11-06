@@ -4640,6 +4640,172 @@ EVAL_SET: list[EvalProduct] = [
         "PG27UCDM is the third ASUS monitor in the set and its "
         "27-inch 4K Tandem QD-OLED flagship.",
     ),
+    EvalProduct(
+        key="samsung-galaxy-watch9-40mm-graphite",
+        brand="Samsung",
+        model="Galaxy Watch9",
+        variant="Graphite, 40mm, Bluetooth (SM-L340NZKAXAA)",
+        category="wearables",
+        identifiers={},
+        status="pending",
+        notes="Samsung $379.99 (US buy page JSON-LD read fresh "
+        "2026-11-06 21:35 UTC, InStock; feed brand_direct row "
+        "agrees at $379.99; 40mm, Snapdragon Wear Elite, 390mAh, "
+        "Sport Band S/M, Wear OS 7, 3,000-nit display); Best Buy "
+        "$379.99 (page read fresh 2026-11-06 21:35 UTC, InStock, "
+        "Sold by Best Buy, SKU 6684173, Model SM-L340NZKAXAA); "
+        "Abt $379.99 (search-index read, SM-L340NZKAXAA). "
+        "Identifiers PENDING: the candidate UPC 198957310546 "
+        "appears only in Samsung's own Wearables MSRP Price "
+        "List (July 2026) — no second independent source was "
+        "found (the Best Buy page text states no UPC; web "
+        "search returns nothing else for the code), so "
+        "identifiers stay empty per the strict two-source rule "
+        "(same call as batch 2's Watch Ultra 4). Not copied: "
+        "198957310546 (single-source candidate). Not the 44mm "
+        "Graphite SM-L350NZKAXAA ($409.99), the 40mm LTE "
+        "SM-L345UZKAXAA ($429.99), or the Cream SM-L340NZEAXAA "
+        "(UPC 198957310430, different color). The $299.99 / "
+        "$349.99 figures in older coverage are Watch8 prices, "
+        "not Watch9 (Watch9 launched Aug 7, 2026 at $379.99). "
+        "Re-check the UPC next refresh. Distinct from the set's "
+        "Apple, Google and Garmin watches — the Galaxy Watch9 "
+        "is the first Samsung wearable in the set and its "
+        "current mainstream smartwatch.",
+    ),
+    EvalProduct(
+        key="samsung-galaxy-watch8-classic-46mm-black",
+        brand="Samsung",
+        model="Galaxy Watch8 Classic",
+        variant="Black, 46mm, Wi-Fi/Bluetooth (SM-L500NZKAXAA)",
+        category="wearables",
+        identifiers={"UPC": "198957093562", "MPN": "SM-L500NZKAXAA"},
+        identifier_sources={
+            "UPC": "Samsung Wearables MSRP Price Lists (Sep 2025, "
+            "Dec 2025, Mar 2026 and Jun 2026 editions all agree "
+            "for SM-L500NZKAXAA, Galaxy Watch8 Classic BT - "
+            "Black, $499.99, UPC 198957093562) + eBay product "
+            "identifiers (GTIN 0198957093562, the same code) "
+            "agree"
+        },
+        notes="Samsung $499.99 (US buy page JSON-LD read fresh "
+        "2026-11-06 21:35 UTC, InStock; feed brand_direct row "
+        "agrees at $499.99; 46mm, rotating bezel, Exynos W1000, "
+        "445mAh, 64GB, stainless steel); Best Buy $499.99 "
+        "(search-index page read, new-unit page SKU 13170487, "
+        "Model SM-L500NZKAXAA). Note: memeburn reported $419.99 "
+        "at Samsung on Sep 24, 2026 — the fresh page read today "
+        "says $499.99, so $419.99 looks like an ended sale; "
+        "re-check next refresh. Not the LTE SM-L505UZKAXAA "
+        "($549.99, UPC 198957093579) or the White SM-L500NZWAXAA "
+        "(UPC 198957106224). There is no Watch9 Classic "
+        "(Samsung confirmed no Classic in the 2026 lineup), so "
+        "the Watch8 Classic stays the current Classic. Distinct "
+        "from the set's Galaxy Watch9 — the Watch8 Classic is "
+        "the first Samsung Classic watch in the set and its "
+        "rotating-bezel flagship.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="samsung-galaxy-watch-ultra2-47mm-titanium-silver",
+        brand="Samsung",
+        model="Galaxy Watch Ultra2",
+        variant="Titanium Silver, 47mm, LTE (SM-L715UZSAXAA)",
+        category="wearables",
+        identifiers={"UPC": "198957393730", "MPN": "SM-L715UZSAXAA"},
+        identifier_sources={
+            "UPC": "Samsung Wearables MSRP Price List (July 2026) "
+            "states UPC 198957393730 for SM-L715UZSAXAA, Galaxy "
+            "Watch Ultra 2 - Titanium Silver, $699.99 + "
+            "T-Mobile for Business product URL carries the same "
+            "code as its sku (product_default_group...198957393730)"
+            " — the same URL-sku pattern as the Buds4 Pro "
+            "precedent (DECISIONS 009)"
+        },
+        notes="Samsung $699.99 (US buy page JSON-LD read fresh "
+        "2026-11-06 21:35 UTC, InStock; feed brand_direct row "
+        "agrees at $699.99; 47mm titanium, 800mAh, 5,000-nit "
+        "display, Snapdragon Wear Elite, Marine Band, IP69K / "
+        "10 ATM); Best Buy $699.99 (search-index page read, "
+        "SKU 6684221, Model SM-L715UZSAXAA — the feed's $737.52 "
+        "row conflicts and was excluded as stale); Abt $699.99 "
+        "(search-index read, SM-L715UZSAXAA). Not the Titanium "
+        "Gray SM-L715UZKAXAA (UPC 198957393792, $699.99) or the "
+        "original Galaxy Watch Ultra SM-L705 (2024, $649.99 list, "
+        "now $449.99 sale — previous generation). Distinct from "
+        "the set's Galaxy Watch9 and Watch8 Classic — the Watch "
+        "Ultra2 is the first Samsung Ultra watch in the set and "
+        "its rugged flagship.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="samsung-galaxy-tab-s11-128gb-gray",
+        brand="Samsung",
+        model="Galaxy Tab S11",
+        variant="Gray, 11-inch, 128GB, Wi-Fi (SM-X730NZAAXAR)",
+        category="tablets",
+        identifiers={},
+        status="pending",
+        notes="Samsung $999.99 (US buy page JSON-LD read fresh "
+        "2026-11-06 21:35 UTC, InStock — the page read was the "
+        "Silver variant at $999.99; Gray matches at Best Buy and "
+        "NFM; 11-inch Dynamic AMOLED 2X 120Hz, Dimensity 9400+, "
+        "12GB/128GB, S Pen included, IP68); Best Buy $999.99 "
+        "(page read fresh 2026-11-06 21:35 UTC, InStock, Sold by "
+        "Best Buy, SKU 6641206, Model SM-X730NZAAXAR); NFM "
+        "$999.99 (feed authorized_retailer row); Macy's $899.99 "
+        "(feed authorized_retailer row — suspected; not "
+        "page-verified). Identifiers PENDING: no UPC surfaced "
+        "for SM-X730NZAAXAR in any source read — Samsung's April "
+        "2026 tablet MSRP PDF lists the Enterprise 128GB "
+        "(SM-X730NZAAN20, UPC 198957257360) and the 256GB Gray "
+        "(SM-X730NZAEXAR, UPC 198957230189) but not the consumer "
+        "128GB Gray — so identifiers stay empty per the strict "
+        "two-source rule. Not copied: 198957230189 (256GB) or "
+        "198957257360 (Enterprise); the 810210911580 / "
+        "810210913805 UPCs belong to Best Buy bundle listings for "
+        "the Canada part SM-X730NZAAXAC with an SD card, a "
+        "different part. The $799.99 launch price rose to "
+        "$899.99 (Apr 2026) and $999.99 now; the $659 sale price "
+        "is an Amazon-only deal (excluded, no Amazon touch). Not "
+        "the 256GB ($1,099.99) or 512GB ($1,299.99) or the Tab "
+        "S11 Ultra ($1,199.99+). Re-check the UPC next refresh. "
+        "Distinct from the set's Lenovo tablets — the Galaxy Tab "
+        "S11 is the first Samsung tablet in the set and its "
+        "flagship 11-inch tablet.",
+    ),
+    EvalProduct(
+        key="samsung-galaxy-tab-s10-fe-128gb-gray",
+        brand="Samsung",
+        model="Galaxy Tab S10 FE",
+        variant="Gray, 10.9-inch, 128GB, Wi-Fi (SM-X520NZAAXAR)",
+        category="tablets",
+        identifiers={"UPC": "887276992266", "MPN": "SM-X520NZAAXAR"},
+        identifier_sources={
+            "UPC": "Samsung Galaxy Tablet MSRP Price Lists (Mar, "
+            "Jun, Sep, Dec 2025 and Mar, Apr 2026 editions all "
+            "agree: SM-X520NZAAXAR, Galaxy Tab S10 FE 8+128GB "
+            "(Wi-Fi) Gray, UPC 887276992266) + manuals.plus "
+            "mirror of Samsung's June 2025 list (same code)"
+        },
+        notes="Samsung $549.99 (US buy page JSON-LD, search-index "
+        "read 2026-11-06, InStock; 10.9-inch WUXGA+ 90Hz, Exynos "
+        "1580, 8GB/128GB, S Pen included, IP68); Best Buy "
+        "$549.99 (page read fresh 2026-11-06 21:36 UTC, InStock, "
+        "Sold by Best Buy, SKU 6618942, Model SM-X520NZAAXAR); "
+        "BJ's $529.99 (feed authorized_retailer row). Note: "
+        "Samsung's MSRP list still shows $499.99 (May 2026) but "
+        "the current Samsung US and Best Buy price is $549.99 — "
+        "the list price rose; re-check next refresh. Excluded: "
+        "Target's $449.99 / $394.99 'Global Model' row (non-US, "
+        "DECISIONS 021) and the 5G SM-X528UZAA ($685.99) and "
+        "256GB SM-X520NZAEXAR ($589.99 MSRP) — different "
+        "configs. Not the Tab S10 FE+ 13.1-inch (SM-X620NZAAXAR, "
+        "$649.99 MSRP). Distinct from the set's Galaxy Tab S11 — "
+        "the Tab S10 FE is the second Samsung tablet in the set "
+        "and its mid-range FE tablet.",
+        status="verified",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:

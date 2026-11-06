@@ -135,6 +135,35 @@ releases; breaking changes are called out in the release notes.
   $148.99–$309 conflict), Alienware AW720M (2022 mouse, Dell
   US price unconfirmed, no UPC), ASUS ROG Delta original (no
   current ASUS row) — all stay list-only for later batches.
+- Expansion batch 30 (DECISIONS 052, continuous expansion per
+  DECISIONS 027): eval set 170 → 175 models, verified identifiers
+  81 → 84 (3 of 5 new identifiers verified). New: Samsung Galaxy
+  Watch9 40mm Bluetooth, Graphite (SM-L340NZKAXAA, UPC pending —
+  candidate 198957310546 is Samsung-MSRP-list-only, no second
+  source; $379.99 at Samsung direct, Best Buy and Abt — the
+  first Samsung wearable in the set and its current mainstream
+  smartwatch), Samsung Galaxy Watch8 Classic 46mm Wi-Fi/Bluetooth,
+  Black (SM-L500NZKAXAA, UPC 198957093562 — Samsung Wearables
+  MSRP lists ×4 editions + eBay GTIN agree; $499.99 at Samsung
+  direct and Best Buy — the still-current Classic, no Watch9
+  Classic exists), Samsung Galaxy Watch Ultra2 47mm LTE, Titanium
+  Silver (SM-L715UZSAXAA, UPC 198957393730 — Samsung Wearables
+  MSRP list + T-Mobile URL sku agree; $699.99 at Samsung direct,
+  Best Buy and Abt — the rugged flagship), Samsung Galaxy Tab S11
+  11-inch 128GB Wi-Fi, Gray (SM-X730NZAAXAR, UPC pending — no
+  code surfaced for the exact pinned US part; $999.99 at Samsung
+  direct and Best Buy, $899.99 at Macy's — the first Samsung
+  tablet in the set and its flagship 11-inch tablet), Samsung
+  Galaxy Tab S10 FE 10.9-inch 128GB Wi-Fi, Gray (SM-X520NZAAXAR,
+  UPC 887276992266 — Samsung tablet MSRP lists ×6 editions +
+  manuals.plus mirror agree; $549.99 at Samsung direct and Best
+  Buy, $529.99 at BJ's — the mid-range FE tablet). Samsung grows
+  3 → 8 entries; no phones and no TVs added (new categories, out
+  of scope). Not added: Galaxy Buds3 Pro (out of the Samsung US
+  catalog, superseded by the Buds4 Pro), Galaxy Buds Core (not
+  sold in the US — LatAm/MEA stock only), Galaxy Watch8 40mm
+  (superseded by the Watch9), Tab S11 Ultra / Tab A11+ / Tab S10
+  FE+ (held for later batches) — all stay list-only.
 - Expansion batch 25 (DECISIONS 047, continuous expansion per
   DECISIONS 027): eval set 145 → 150 models, verified identifiers
   stay 74 (0 of 5 new identifiers verified — all pending). New:
