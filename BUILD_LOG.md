@@ -3868,3 +3868,151 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   expansion; the pending set gains the 4 new pending keys:
   hp-omen-27s-black, hyperx-cloud-iii-black-red,
   hp-omen-27q-g2-black, hyperx-alloy-rise-75-black).
+
+## 061 — 2026-11-06: Expansion batch 22 — 130 → 135 models (DECISIONS 044)
+
+- HP official US store verification (hp.com/us-en + hyperx.com US,
+  read-only, 2026-11-06 ~19:49–19:51 UTC / 11:49–11:51 PT): all
+  five HP US product pages return full JSON-LD offers, InStock, at
+  the sweep prices — OMEN 27k $370.32 (780G8AA#ABA), OMEN OLED 27q
+  $399.99 (CH0R2AA#ABA), Cloud III S Wireless Black-Red $179.99
+  (Product # A59Z0AA), Pulsefire Haste 2 Pro $119.99 (Product #
+  A1KY5AA, Slate grey), QuadCast 2 S $149.99 (Product # 9A273AA,
+  Black). The QuadCast 2 S $149.99 was confirmed on the fresh page
+  read: a 5-day-old search-index read showing $159.99 was stale
+  and was not used. HP laptops and desktops are configurable: no
+  laptop or desktop was added (DECISIONS 015). Feed shelf observed
+  across the 5 Meta Catalog runs (100 rows): 27k HP brand_direct
+  absent / Newegg $609.99; OLED 27q HyperX $399.99 brand_direct
+  (hyperx.com) / HP $399.99 sale brand_direct (hp.com) / Best Buy
+  $379.99 (SKU 6669985) / mydex.shop $822.69 (other); Cloud III S
+  Wireless HP $179.99 brand_direct for every colorway (Black-Red,
+  Black, White, Lavender, Black/Blue, White/Pink) / Target $129.99
+  (color unstated) / Best Buy $179.99 Black/Sci-Fi Blue Special
+  Edition (SKU 6687475, different colorway) / Newegg $170.99
+  Black-Red / Ayoub $145 Black/Red A59Z0AA / buyitsolutions
+  $165.23 Black/Red / Newegg $197.99 / $250.69 / $216; Haste 2 Pro
+  HyperX $119.99 brand_direct (hyperx.com, Slate Gray) / HP
+  $119.99 brand_direct (hp.com) / Best Buy $99.99 (SKU 6626287) /
+  Newegg $201.98; QuadCast 2 S HyperX $149.99 brand_direct
+  (hyperx.com) / Newegg $223.99 (Barrow) / $329.98 / Mister Spex
+  $180 drop_shipper.
+- Membership check (against the 130-model set, by name, MPN and
+  UPC): grep of price_agent/catalog.py finds zero matches for
+  omen-27k, omen-oled-27q, cloud-iii-s, pulsefire-haste-2-pro,
+  quadcast-2-s, 780G8AA, CH0R2AA or 9A273AA. OMEN 27k
+  (780G8AA#ABA): no match — distinct from the OMEN 27s (FHD 240
+  Hz), the OMEN 27q G2 (QHD 180 Hz) and the OMEN 27q (older 165
+  Hz, not in the set). OMEN OLED 27q (CH0R2AA#ABA): no match —
+  the set had no OLED monitor at all. Cloud III S Wireless
+  (A59Z0AA / UPC 198415435569): no match — distinct from the
+  Cloud III wired (727A9AA, already in the set) and from the
+  Cloud III Wireless (older model, not in the set). Pulsefire
+  Haste 2 Pro (A1KY5AA): no match — the set had no HyperX mouse
+  at all. QuadCast 2 S (9A273AA): no match — the set had no
+  microphone at all (new category, decided in DECISIONS 044).
+- Per-model record (all 5 added; identifiers, quotes, pending):
+- HP OMEN 27k UHD 144Hz Gaming Monitor, Black (780G8AA#ABA) —
+  identifiers PENDING: MPN confirmed (HP US page), but the HP
+  datasheet (1WorldSync) lists UPC codes only for #ABB
+  (197029615961) and #ABU (197029615992) — the (ABA) slot is
+  absent, so no US UPC surfaced; identifiers stay empty per the
+  DualSense precedent. Not copied: 197029615961 (ABB) and
+  197029615992 (ABU); the OMEN 27qs G2 280 Hz (AW3V0AA#ABA,
+  different, faster panel) and the OMEN 27q G2 (already in the
+  set). Quotes (1): HP direct $370.32 (InStock, page JSON-LD
+  read; 4K UHD 3840x2160 IPS 144 Hz 1ms GtG, G-SYNC compatible,
+  DisplayHDR 400, KVM switch). Excluded: the Newegg $609.99 row
+  (65% above the HP direct price, unconfirmed outlier,
+  Distritech precedent).
+- HyperX OMEN OLED 27q QHD 240Hz Gaming Monitor, Black
+  (CH0R2AA#ABA) — identifiers PENDING: MPN confirmed (HP US page
+  + Best Buy agree), but the UPC is conflicted — the HP datasheet
+  (1WorldSync) states P/N CH0R2AA, UPC 199642944442, while Amazon
+  states UPC 199642944428 for CH0R2AA#ABA, and no second
+  non-Amazon source states either code, so identifiers stay empty
+  per the DualSense precedent; neither code was recorded. Not
+  copied: 199642944442 / 199642944428; the OMEN OLED 34
+  (different, 34-inch) and the OMEN 27q G3 (different, IPS 240
+  Hz). Quotes (3): HP direct $399.99 (sale vs $499.99 list,
+  InStock, page JSON-LD read; QD-OLED 240 Hz 0.03ms GtG, G-SYNC,
+  HyperX OLED Core Protect); HyperX direct $399.99 (feed
+  brand_direct row — suspected; not page-verified); Best Buy
+  $379.99 (Model CH0R2AA, SKU 6669985, feed authorized_retailer
+  row — suspected; not page-verified). Excluded: the mydex.shop
+  $822.69 row (seller_type other, DECISIONS 021).
+- HyperX Cloud III S Wireless Gaming Headset, Black-Red (A59Z0AA)
+  — identifiers VERIFIED: UPC 198415435569, agreed by the PBTech
+  retailer listing (Manufacturer Part No A59Z0AA, UPC
+  198415435569, Black-Red) and the trippodo spec database (EAN13
+  0198415435569, the same code in GTIN-13 form, for A59Z0AA
+  Black-Red); the HP datasheet for this model states the MPN
+  A59Z0AA but no UPC, so it was not counted as a second source.
+  Amazon was not used as corroboration. Not copied: A59YZAA
+  (Black), AX6G1AA (White), DF7E9AA (Black/Blue), White/Pink —
+  different colorways at the same $179.99; the Cloud III Wireless
+  (different, older model, $99.99 sale) and the Cloud III wired
+  (already in the set). Quotes (4): HP direct $179.99 (InStock,
+  page JSON-LD read; wireless 2.4 GHz + Bluetooth 5.3 + Instant
+  Pair, 53 mm angled drivers, up to 120-hour battery, DTS
+  Headphone:X); Best Buy $129.99 (Model A59Z0AA, SKU 6618287,
+  Red/Black, Best Buy page text read via search index 2026-11-06
+  — sale price); Target $129.99 (feed row — suspected; color
+  unstated, not page-verified); Newegg $170.99 Black-Red (feed
+  row — suspected; not page-verified). Excluded: the Ayoub $145
+  row (overseas seller, DECISIONS 021), the buyitsolutions
+  $165.23 row (unconfirmed reseller), the Newegg $197.99 /
+  $250.69 / $216 rows (above list, unconfirmed), the Best Buy
+  $179.99 Black/Sci-Fi Blue Special Edition row (different
+  colorway) and all HyperX bundle rows.
+- HyperX Pulsefire Haste 2 Pro 4K Wireless Gaming Mouse, Slate
+  Grey (A1KY5AA) — identifiers PENDING: MPN confirmed (HP US page
+  + HyperX feed agree), but the UPC is single-source only —
+  Currys Business UK lists EAN 198122802432 for A1KY5AA, and no
+  second independent source states it (no UPC surfaced in the HP
+  datasheet copies read), so identifiers stay empty per the strict
+  two-source rule. Not copied: 198122802432 (single-source); the
+  Pulsefire Haste 2 S Navy/Silver (different, S model), the
+  Pulsefire Haste 2 Wireless Black (6N0B0AA, different, $89.99)
+  and the Pulsefire Saga Pro (different mouse). Quotes (3): HP
+  direct $119.99 (InStock, page JSON-LD read; true 4 kHz wireless
+  polling, 61 g, HyperX 26K sensor, up to 90-hour battery,
+  Instant Pair); HyperX direct $119.99 (feed brand_direct row —
+  suspected; not page-verified); Best Buy $99.99 (Slate Grey, SKU
+  6626287, feed row — suspected; not page-verified). Excluded: the
+  Newegg $201.98 row (above list, unconfirmed) and all HyperX
+  bundle rows.
+- HyperX QuadCast 2 S USB Microphone, Black (9A273AA) —
+  identifiers PENDING: MPN confirmed (HP US page), but the UPC is
+  single-non-Amazon-source only — the HP user manual (via
+  manuals.plus) states UPC 197961186741 for 9A273AA, and every
+  other source stating it is Amazon (.com/.ca/.in/.ie), which
+  never corroborates, so identifiers stay empty per the strict
+  two-source rule. Not copied: 197961186741 (manual-only); the
+  QuadCast 2 Black (872V1AA, different, $149.99, red-only
+  lighting, 24-bit/96 kHz) and QuadCast 2 Frost ($129.99) —
+  different mics; the QuadCast S (4P5P7AA, older model). Quotes
+  (2): HP direct $149.99 (sale vs $199.99 list, InStock, page
+  JSON-LD read; 32-bit/192 kHz, 100+ aRGB LEDs, tap-to-mute,
+  multifunction knob); HyperX direct $149.99 (feed brand_direct
+  row — suspected; not page-verified). Excluded: the Newegg
+  $223.99 / $329.98 rows (above list, unconfirmed; the $223.99
+  row carries third-party brand Barrow) and the Mister Spex $180
+  drop_shipper row (DECISIONS 021), plus all HyperX bundle rows.
+- Not added from the sweep (held for later batches, all current
+  US models, no defect): Series 3 Pro 327pf $194.00; E24mv G4
+  $210.40; E27k G5 $504.00; CloudX Flight 2 $139.99; CloudX
+  $59.99; Pulsefire Haste 2 Wireless $89.99. Not added (no clean
+  pin): all OMEN / Victus / HP laptops and OMEN 35L desktops —
+  configurable with no retailer-pinned base configuration
+  (DECISIONS 015); all HyperX bundles — bundles, not standalone
+  lines.
+- Eval on the new snapshot: 135 models, 73 verified identifiers,
+  5 with quotes, 13 total quotes, 0 identifier-matched, 13
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 130 → 135 / 72 → 73 for the continuous
+  expansion; the pending set gains the 4 new pending keys:
+  hp-omen-27k-black, hyperx-omen-oled-27q-black,
+  hyperx-pulsefire-haste-2-pro-slate-grey,
+  hyperx-quadcast-2-s-black).

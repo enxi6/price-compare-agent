@@ -1922,3 +1922,90 @@ written as "superseded by" with the original text kept.
   Black Friday street price should be re-checked after Nov 8
   (batch 9 revisit, still open); the Sony direct CH720N $89.99 is
   a sale price and should be re-checked after the sale ends.
+
+## 044 (2026-11-06): Expansion batch 22 — 130 → 135 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 HP/HyperX models from the HP official US store
+  sweep (BUILD_LOG 059), no per-batch user approval needed (DECISIONS
+  027): HP OMEN 27k UHD 144Hz Gaming Monitor, Black (780G8AA#ABA,
+  UPC pending), HyperX OMEN OLED 27q QHD 240Hz Gaming Monitor,
+  Black (CH0R2AA#ABA, UPC pending), HyperX Cloud III S Wireless
+  Gaming Headset, Black-Red (A59Z0AA, UPC 198415435569 verified),
+  HyperX Pulsefire Haste 2 Pro 4K Wireless Gaming Mouse, Slate
+  Grey (A1KY5AA, UPC pending), HyperX QuadCast 2 S USB Microphone,
+  Black (9A273AA, UPC pending). One variant pinned per model
+  (DECISIONS 015); 1 of 5 identifiers verified, 4 stay pending on
+  a conflicting code, a single-source code, or a missing (ABA)
+  slot (Corsair batch 19 precedent: 0 of 5 verified is not a
+  reason to hold the batch). Verified-identifier count rises
+  72 → 73. No model was split out of this batch. One new category
+  enters the set: microphones (QuadCast 2 S is the first
+  microphone) — recorded here explicitly, not silently, per the HP
+  printer precedent in BUILD_LOG 059 (a new category needs a
+  category decision first); no new brand enters the set (HP and
+  HyperX joined in batch 21).
+- Why these 5: they are the remaining best-evidenced HP sweep
+  candidates — one per product family where the official US catalog
+  has a current fixed-configuration in-stock model: mainstream 4K
+  144 Hz gaming monitor, mainstream QD-OLED gaming monitor,
+  flagship wireless gaming headset, flagship 4 kHz wireless gaming
+  mouse, flagship USB streaming microphone. No laptop or desktop
+  pick: HP/OMEN laptops and desktops are configurable with no
+  retailer-pinned base configuration (DECISIONS 015) — the sweep
+  excluded them rather than forcing one. All five are in stock new
+  in the US on 2026-11-06 (hp.com/us-en product pages, JSON-LD
+  reads, plus Meta Catalog feed rows).
+- What was corrected along the way: the QuadCast 2 S HP direct
+  price is $149.99 sale (vs $199.99 list), confirmed on a fresh
+  hp.com/us-en page read — a 5-day-old search-index read showing
+  $159.99 was stale and was not used. HP monitor UPCs are regional
+  by suffix and were NOT carried across suffixes: the OMEN 27k US
+  (ABA) slot is absent from the HP datasheet (only (ABB)
+  197029615961 and (ABU) 197029615992 are listed), exactly like
+  the OMEN 27q G2 in batch 21. The OMEN OLED 27q UPC is a genuine
+  conflict, not a verification: the HP datasheet (1WorldSync)
+  states P/N CH0R2AA, UPC 199642944442, while Amazon states UPC
+  199642944428 for CH0R2AA#ABA — neither code was recorded, per
+  the DualSense precedent. The Cloud III S Wireless Black-Red UPC
+  198415435569 is verified by two independent non-Amazon sources
+  (PBTech retailer listing + trippodo spec database, EAN13
+  0198415435569, the same code in GTIN-13 form); the HP datasheet
+  for it states the MPN A59Z0AA but no UPC, so the datasheet was
+  not counted as a second source. The Haste 2 Pro UPC
+  198122802432 (Currys Business UK, single source) and the
+  QuadCast 2 S UPC 197961186741 (HP user manual only; every other
+  source stating it is Amazon) were NOT recorded, per the strict
+  two-source rule — Amazon never corroborates. The Newegg $609.99
+  OMEN 27k feed row (65% above the HP direct price) was excluded
+  as an unconfirmed outlier (Distritech precedent, batch 21).
+- Variant pinning, recorded explicitly: OMEN 27k pins Black
+  (780G8AA#ABA) — the only colorway; OMEN OLED 27q pins Black
+  (CH0R2AA#ABA) — the only colorway; Cloud III S Wireless pins
+  Black-Red (A59Z0AA) — Black (A59YZAA), White (AX6G1AA),
+  Black/Blue (DF7E9AA) and White/Pink are different colorways at
+  the same $179.99; Pulsefire Haste 2 Pro pins Slate Grey
+  (A1KY5AA) — the only colorway listed on the HyperX US store
+  (the Haste 2 S Navy/Silver is a different, S model);
+  QuadCast 2 S pins Black (9A273AA) — the only colorway (the
+  QuadCast 2 Frost is a different mic).
+- What does NOT change: the existing 130 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–21 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 135 on
+  the next edit (parent owns the cron; not touched here).
+- Revisit: both sale prices should be re-checked after the Early
+  Black Friday event ends Nov 8 (OMEN OLED 27q $399.99, QuadCast
+  2 S $149.99); the OMEN 27k US UPC (no (ABA) code in the HP
+  datasheet), the OMEN OLED 27q UPC (conflict 199642944442 vs
+  199642944428, needs a tiebreaker such as a physical box barcode
+  or a second non-Amazon US source), the Haste 2 Pro UPC
+  198122802432 (Currys UK only) and the QuadCast 2 S UPC
+  197961186741 (HP manual only) stay pending until a second
+  non-Amazon source confirms each; the remaining HP candidates
+  (Series 3 Pro 327pf $194.00, E24mv G4 $210.40, E27k G5 $504.00,
+  CloudX Flight 2 $139.99, CloudX $59.99, Pulsefire Haste 2
+  Wireless $89.99) stay list-only for later batches; the batch 21
+  revisits carry over unchanged (OMEN 27s UPC 197029615442,
+  Cloud III UPC 197029008237, OMEN 27q G2 US UPC, Alloy Rise 75
+  UPC 197192334096, ULT WEAR $148.00, Sony direct CH720N $89.99).

@@ -11,6 +11,37 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 22 (DECISIONS 044, continuous expansion per
+  DECISIONS 027): eval set 130 → 135 models, verified identifiers
+  72 → 73 (1 of 5 new identifiers verified). New: HP OMEN 27k UHD
+  144Hz Gaming Monitor, Black (780G8AA#ABA, UPC pending — the HP
+  datasheet lists no (ABA) UPC, only (ABB) 197029615961 and (ABU)
+  197029615992; $370.32 at HP direct — HP's mainstream 4K 144 Hz
+  gaming monitor, the first HP 4K monitor in the set), HyperX OMEN
+  OLED 27q QHD 240Hz Gaming Monitor, Black (CH0R2AA#ABA, UPC
+  pending — HP datasheet code 199642944442 conflicts with
+  Amazon's 199642944428, neither recorded; $399.99 sale at HP
+  direct, $379.99 at Best Buy — HyperX's mainstream QD-OLED
+  monitor, the first OLED monitor in the set), HyperX Cloud III S
+  Wireless Gaming Headset, Black-Red (A59Z0AA, UPC 198415435569
+  verified — PBTech retailer listing + trippodo spec database
+  agree; $179.99 at HP direct, $129.99 at Best Buy and Target —
+  HyperX's flagship wireless headset, the first HyperX wireless
+  headset in the set), HyperX Pulsefire Haste 2 Pro 4K Wireless
+  Gaming Mouse, Slate Grey (A1KY5AA, UPC pending — code
+  198122802432 is Currys UK only; $119.99 at HP direct, $99.99 at
+  Best Buy — HyperX's first true-4kHz mouse, the first HyperX
+  mouse in the set), HyperX QuadCast 2 S USB Microphone, Black
+  (9A273AA, UPC pending — code 197961186741 is HP-manual-only,
+  all other sources are Amazon; $149.99 sale at HP direct —
+  HyperX's flagship USB streaming mic, the first microphone in
+  the set — new category "microphones", decided explicitly in
+  DECISIONS 044). Not added: all OMEN / Victus / HP laptops and
+  OMEN 35L desktops (configurable, no retailer-pinned base
+  configuration — DECISIONS 015) and all HyperX bundles (bundles,
+  not standalone lines); the remaining HP candidates stay
+  list-only for later batches.
+
 - Expansion batch 21 (DECISIONS 043, continuous expansion per
   DECISIONS 027): eval set 125 → 130 models, verified identifiers
   71 → 72 (1 of 5 new identifiers verified). New: HP OMEN 27s FHD

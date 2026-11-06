@@ -3262,6 +3262,173 @@ EVAL_SET: list[EvalProduct] = [
         "Re-check the $84.99 sale price after the Early Black "
         "Friday event ends Nov 8.",
     ),
+    # --- Expansion batch 22 (2026-11-06, continuous expansion per DECISIONS 027) ---
+    # 130 -> 135 models. DECISIONS 044, BUILD_LOG 061.
+    EvalProduct(
+        key="hp-omen-27k-black",
+        brand="HP",
+        model="OMEN 27k 27-inch UHD 144Hz Gaming Monitor",
+        variant="Black (780G8AA#ABA)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="HP direct $370.32 (InStock, hp.com/us-en page JSON-LD "
+        "read 2026-11-06, Product # 780G8AA#ABA, 27-inch 4K UHD "
+        "3840x2160 IPS 144 Hz 1ms GtG, G-SYNC compatible, "
+        "DisplayHDR 400, built-in KVM switch). Identifiers "
+        "PENDING: MPN 780G8AA#ABA confirmed (HP US page), but the "
+        "HP datasheet (1WorldSync) lists UPC codes only for #ABB "
+        "(197029615961) and #ABU (197029615992) — the (ABA) slot "
+        "is absent, so no US UPC surfaced; identifiers stay empty "
+        "per the DualSense precedent; re-check next refresh. Not "
+        "copied: 197029615961 (the ABB regional code) and "
+        "197029615992 (the ABU regional code); the OMEN 27qs G2 "
+        "280 Hz (AW3V0AA#ABA, different, faster panel) and the "
+        "OMEN 27q G2 (already in the set) — different monitors. "
+        "Excluded: the Newegg $609.99 feed row (65% above the HP "
+        "direct price, unconfirmed outlier, Distritech "
+        "precedent). Distinct from the set's Dell/Alienware/HP "
+        "monitors — the OMEN 27k (2023, HP's mainstream 4K 144 Hz "
+        "gaming monitor) is the first HP 4K monitor in the set.",
+    ),
+    EvalProduct(
+        key="hyperx-omen-oled-27q-black",
+        brand="HyperX",
+        model="OMEN OLED 27q 27-inch QHD 240Hz Gaming Monitor",
+        variant="Black (CH0R2AA#ABA)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="HP direct $399.99 (sale vs $499.99 list, InStock, "
+        "hp.com/us-en page JSON-LD read 2026-11-06, Product # "
+        "CH0R2AA#ABA, 27-inch QHD 2560x1440 QD-OLED 240 Hz "
+        "0.03ms GtG, G-SYNC, HyperX OLED Core Protect, factory "
+        "color calibration); HyperX direct $399.99 (feed "
+        "brand_direct row — suspected; not page-verified); Best "
+        "Buy $379.99 (Model CH0R2AA, SKU 6669985, feed "
+        "authorized_retailer row — suspected; not page-verified). "
+        "Identifiers PENDING: MPN CH0R2AA#ABA confirmed (HP US "
+        "page + Best Buy agree), but the UPC is conflicted — the "
+        "HP datasheet (1WorldSync) states P/N CH0R2AA, UPC "
+        "199642944442, while Amazon states UPC 199642944428 for "
+        "CH0R2AA#ABA, and no second non-Amazon source states "
+        "either code, so identifiers stay empty per the DualSense "
+        "precedent; neither code was recorded; re-check next "
+        "refresh. Not copied: the OMEN OLED 34 (different, "
+        "34-inch WQHD 360 Hz) and the OMEN 27q G3 (different, IPS "
+        "240 Hz) — different monitors. Excluded: the mydex.shop "
+        "$822.69 row (seller_type other, DECISIONS 021). "
+        "Distinct from the set's Dell/Alienware/HP monitors — the "
+        "OMEN OLED 27q (HyperX's mainstream QD-OLED gaming "
+        "monitor) is the first OLED monitor in the set. Re-check "
+        "the $399.99 sale price after the Early Black Friday "
+        "event ends Nov 8.",
+    ),
+    EvalProduct(
+        key="hyperx-cloud-iii-s-wireless-black-red",
+        brand="HyperX",
+        model="Cloud III S Wireless Gaming Headset",
+        variant="Black-Red (A59Z0AA)",
+        category="headphones",
+        identifiers={"UPC": "198415435569", "MPN": "A59Z0AA"},
+        identifier_sources={
+            "UPC": "PBTech retailer listing (Manufacturer Part No "
+            "A59Z0AA, UPC 198415435569, Black-Red) + trippodo spec "
+            "database (EAN13 0198415435569, the same code in "
+            "GTIN-13 form, for A59Z0AA Black-Red) agree"
+        },
+        status="verified",
+        notes="HP direct $179.99 (InStock, hp.com/us-en page JSON-LD "
+        "read 2026-11-06, Product # A59Z0AA, Black-Red, wireless "
+        "2.4 GHz + Bluetooth 5.3 + Instant Pair, 53 mm angled "
+        "drivers, up to 120-hour battery, DTS Headphone:X); Best "
+        "Buy $129.99 (Model A59Z0AA, SKU 6618287, Red/Black, Best "
+        "Buy page text read via search index 2026-11-06 — sale "
+        "price, below the $179.99 HP list); Target $129.99 (feed "
+        "authorized_retailer row — suspected; color unstated, not "
+        "page-verified); Newegg $170.99 Black-Red (feed row — "
+        "suspected; not page-verified). Not copied: A59YZAA "
+        "(Black), AX6G1AA (White), DF7E9AA (Black/Blue) and "
+        "White/Pink — different colorways at the same $179.99; "
+        "the Cloud III Wireless (different, older model, $99.99 "
+        "sale) and the Cloud III wired (already in the set). "
+        "Excluded: the Ayoub $145 row (overseas seller, "
+        "DECISIONS 021), the buyitsolutions $165.23 row "
+        "(unconfirmed reseller), the Newegg $197.99 / $250.69 / "
+        "$216 rows (above list, unconfirmed), the Best Buy "
+        "$179.99 Black/Sci-Fi Blue Special Edition row (different "
+        "colorway) and all HyperX bundle rows. Distinct from the "
+        "set's Sony, Bose, JBL, Razer, Corsair and HyperX "
+        "headsets — the Cloud III S Wireless (2025, HyperX's "
+        "flagship wireless headset) is the first HyperX wireless "
+        "headset in the set.",
+    ),
+    EvalProduct(
+        key="hyperx-pulsefire-haste-2-pro-slate-grey",
+        brand="HyperX",
+        model="Pulsefire Haste 2 Pro 4K Wireless Gaming Mouse",
+        variant="Slate Grey (A1KY5AA)",
+        category="mice",
+        identifiers={},
+        status="pending",
+        notes="HP direct $119.99 (InStock, hp.com/us-en page JSON-LD "
+        "read 2026-11-06, Product # A1KY5AA, Slate grey, true "
+        "4 kHz wireless polling, 61 g, HyperX 26K sensor up to "
+        "26000 DPI, up to 90-hour battery, Instant Pair); HyperX "
+        "direct $119.99 (feed brand_direct row — suspected; not "
+        "page-verified); Best Buy $99.99 (Slate Grey, SKU 6626287, "
+        "feed authorized_retailer row — suspected; not "
+        "page-verified). Identifiers PENDING: MPN A1KY5AA "
+        "confirmed (HP US page + HyperX feed agree), but the UPC "
+        "is single-source only — Currys Business UK lists EAN "
+        "198122802432 for A1KY5AA, and no second independent "
+        "source states it (no UPC surfaced in the HP datasheet "
+        "copies read), so identifiers stay empty per the strict "
+        "two-source rule; re-check next refresh. Not copied: "
+        "198122802432 (single-source); the Pulsefire Haste 2 S "
+        "Navy/Silver (different, S model), the Pulsefire Haste 2 "
+        "Wireless Black (6N0B0AA, different, $89.99) and the "
+        "Pulsefire Saga Pro (different mouse) — different mice. "
+        "Excluded: the Newegg $201.98 row (above list, "
+        "unconfirmed) and all HyperX bundle rows. Distinct from "
+        "the set's Logitech, Razer, Corsair, Alienware and HP "
+        "mice — the Haste 2 Pro (HyperX's first true-4kHz mouse) "
+        "is the first HyperX mouse in the set.",
+    ),
+    EvalProduct(
+        key="hyperx-quadcast-2-s-black",
+        brand="HyperX",
+        model="QuadCast 2 S USB Microphone",
+        variant="Black (9A273AA)",
+        category="microphones",
+        identifiers={},
+        status="pending",
+        notes="HP direct $149.99 (sale vs $199.99 list, InStock, "
+        "hp.com/us-en page JSON-LD read 2026-11-06, Product # "
+        "9A273AA, Black, 32-bit/192 kHz, 100+ aRGB LEDs, "
+        "tap-to-mute sensor, multifunction knob, four polar "
+        "patterns); HyperX direct $149.99 (feed brand_direct row "
+        "— suspected; not page-verified). Identifiers PENDING: "
+        "MPN 9A273AA confirmed (HP US page), but the UPC is "
+        "single-non-Amazon-source only — the HP user manual (via "
+        "manuals.plus) states UPC 197961186741 for 9A273AA, and "
+        "every other source stating it is Amazon (.com/.ca/.in/"
+        ".ie), which never corroborates, so identifiers stay "
+        "empty per the strict two-source rule; re-check next "
+        "refresh. Not copied: 197961186741 (manual-only); the "
+        "QuadCast 2 Black (872V1AA, different, $149.99, red-only "
+        "lighting, 24-bit/96 kHz) and QuadCast 2 Frost ($129.99) "
+        "— different mics; the QuadCast S (4P5P7AA, older model). "
+        "Excluded: the Newegg $223.99 / $329.98 rows (above list, "
+        "unconfirmed; the $223.99 row carries third-party brand "
+        "Barrow) and the Mister Spex $180 drop_shipper row "
+        "(DECISIONS 021), plus all HyperX bundle rows. First "
+        "microphone in the set — the new category 'microphones' "
+        "enters the set with this batch (category decision in "
+        "DECISIONS 044; cf. the HP printer precedent in "
+        "BUILD_LOG 059). Re-check the $149.99 sale price after "
+        "the Early Black Friday event ends Nov 8.",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:
