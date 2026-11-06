@@ -5888,3 +5888,158 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   counts updated 190 → 195, verified 94 → 97, for the
   continuous expansion; the pending set gains the 2 new pending
   keys: jbl-charge-6-black, keychron-q1-max-carbon-black).
+
+## 074 — 2026-11-06: Expansion batch 35 — 195 → 200 models (DECISIONS 057) — FINAL batch of the 175 → 200 leg
+
+- Membership check (against the 195-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): JBL Xtreme 4 — NO MATCH (no
+  Xtreme 4 in the set; JBLXTREME4BLKAM and 050036398190 match
+  nothing — the set's only Xtreme mention is the Flip 7 entry
+  noting the Xtreme line); Razer Basilisk V3 Pro 35K — NO MATCH
+  (no Basilisk in the set; RZ01-05240100-R3U1 matches nothing —
+  the set's only Basilisk mention is a note inside the Viper V4
+  Pro entry); Garmin Forerunner 265 — NO MATCH (the set has the
+  Forerunner 570 and the fēnix 9, different models; 010-02810-00
+  matches nothing); Corsair K70 CORE RGB — NO MATCH (the set has
+  the K65 Plus Wireless, a different model; CH-910971E-NA matches
+  nothing); ASUS ROG Keris II Ace — NO MATCH (the set has the
+  Gladius IV Ace and the Harpe Mini Core, different models;
+  90MP03N0-BMAA00 matches nothing). Anker Soundcore Boom 2 Plus —
+  NO MATCH but skipped (see skipped list); Microsoft Bluetooth
+  Ergonomic Mouse — NO MATCH but skipped; Dell UltraSharp 34
+  Curved Thunderbolt Hub Monitor U3425WE — NO MATCH but skipped.
+  No candidate was dropped by the membership check.
+- JBL Xtreme 4, Black (JBLXTREME4BLKAM) — identifiers VERIFIED:
+  UPC 050036398190 + MPN JBLXTREME4BLKAM (Amazon US, ASIN
+  B0CTP191Z3, Model JBLXTREME4BLKAM, UPC 050036398190, GTIN
+  11200130008129, + Ubuy, Model JBLXTREME4BLKAM, UPC 050036398190,
+  GTIN 11200130008129, imported from US, agree; Best Buy US
+  confirms the MPN, Model JBLXTREME4BLKAM, SKU 6582050). The
+  manuals.plus code 094148673325 for JBLXTREME4BLKAM is a
+  single-source conflict and was rejected, same pattern as the
+  XM6 094148746326 rejection in batch 1; the Camo UPC
+  050036398213 (Amazon US + Target US agree) is a different color
+  and was not carried over. Quotes (3): JBL direct $379.95 list /
+  $309.95 sale (feed brand_direct row); Target $379.99 (page read
+  fresh 2026-11-06 22:12 UTC, OutOfStock, TCIN 90786749); Rock &
+  Soul $379.99 (feed authorized_retailer row). Portable Bluetooth
+  speaker, 100W RMS, up to 24 hours playtime + 6 hours Playtime
+  Boost, IP67 waterproof/dustproof, Auracast multi-speaker,
+  built-in powerbank, replaceable battery, USB-C, launched Feb
+  2024. Excluded: the feed's Best Buy $299.99 row — page read
+  fresh 2026-11-06 22:13 UTC shows SKU 12829838 sold & shipped
+  by Simple Cell, Inc, a marketplace seller (DECISIONS 021); the
+  Macy's $398.95 / $325.45 row (speaker + hard-shell case
+  bundle); the $29,998 feed row (bad data). Not the Xtreme 3 or
+  the Xtreme 5 — different models.
+- Razer Basilisk V3 Pro 35K, Black (RZ01-05240100-R3U1) —
+  identifiers PENDING: MPN RZ01-05240100-R3U1 is corroborated
+  (Razer US direct URL + Amazon US ASIN B0DG837JYP + Best Buy US
+  Model RZ01-05240100-R3U1 + manuals.plus agree) but no US UPC
+  was found for the R3U1 Black — the EAN 8886419334606 (startech24
+  datasheet) and the White R3G1 GTIN 8886419334644 (Scan UK) are
+  EU/regional codes and were not used. MPN is not recorded either
+  (0 MPN-only entries in the set). Quotes (4): Razer direct
+  $159.99 (feed brand_direct row); Macy's $159.99 list / $99.99
+  sale (feed authorized_retailer row); CDW $167.99 (feed
+  authorized_retailer row); ShopMyExchange $127.00 (feed
+  authorized_retailer row). Ergonomic wireless gaming mouse, Focus
+  Pro 35K Optical Sensor Gen-2 (35,000 DPI), HyperScroll Tilt
+  Wheel, 13-zone Chroma RGB with full underglow, HyperSpeed
+  Wireless + Bluetooth + USB-C, up to 140 hours battery, launched
+  Oct 2024. Not the White (RZ01-05240200-R3U1) or the Phantom
+  Green/White editions or the Xbox 25 Anniversary Edition
+  ($179.99) or the original 30K Basilisk V3 Pro (RZ01-04620100-
+  R3U1, $99 sale) — different SKUs/models. Distinct from the
+  set's Viper V4 Pro and DeathAdder V4 Pro — the Basilisk is
+  Razer's ergonomic flagship line.
+- Garmin Forerunner 265, Black — Black Bezel and Case with
+  Black/Powder Gray Silicone Band, 46mm (010-02810-00) —
+  identifiers PENDING: MPN 010-02810-00 is corroborated (Abt US
+  Model 010-02810-00 + Best Buy US Model 010-02810-00, SKU
+  6544440 + BikeTiresDirect Mfg PartNum 010-02810-00 agree) but
+  no UPC was found for the -00 suffix — the only UPC circulating,
+  753759313715 (EAN 0753759313715), belongs to the -10 suffix
+  (DID.ie + dbykstore) and was not carried over; 753759313661 is
+  the Whitestone -01 and 753759313678 is the Aqua -02 (Abt US
+  spec tables). MPN is not recorded either (0 MPN-only entries in
+  the set). Quotes (5): Abt $449.99 (page read fresh 2026-11-06
+  22:12 UTC, JSON-LD InStock); Kohl's $449.99 (feed
+  authorized_retailer row); BikeTiresDirect $449.99 (feed
+  authorized_retailer row); BuyDig $449.99 (feed
+  authorized_retailer row, SKU GRFR265BKPG); Sportsman's $449.99
+  (feed authorized_retailer row). 46mm AMOLED GPS running
+  smartwatch, 1.3-inch touchscreen, up to 13 days smartwatch mode
+  / 20 hours GPS, 30+ sports apps, Garmin Pay, 5 ATM, launched
+  Mar 2023. Excluded: the Best Buy $459.99 Aqua/Black row
+  (different color variant). Not the Whitestone (010-02810-01) or
+  the Aqua (010-02810-02) or the 42mm Forerunner 265S or the
+  Forerunner 570 (already in the set) — different SKUs/models.
+- Corsair K70 CORE RGB, Black, no palm rest (CH-910971E-NA) —
+  identifiers PENDING: MPN CH-910971E-NA is corroborated (Corsair
+  US direct page SKU CH-910971E-NA + Amazon US Model CH-910971E-NA
+  + pricehistory.app Model CH-910971E-NA agree) but no UPC was
+  found for the no-palm-rest Black — the palm-rest variant's UPC
+  840006665762 (Amazon US, CH-910981E-NA) and the TKL's UPC
+  840006678786 (Amazon IN, CH-911911E-NA) are different SKUs and
+  were not used. MPN is not recorded either (0 MPN-only entries
+  in the set). Quotes (1): Corsair direct $99.99 list / $79.99
+  sale (feed brand_direct row + Corsair US page read via search
+  index fresh 2026-11-06, InStock; the $79.99 is a current sale —
+  umatechnology.org confirms both Black and Steel Gray at $79.99
+  vs $99.99 list). Only one clean quote this round: the feed's
+  Newegg $99.99 / $79.99 row is the Steel Gray (CH-910991E-NA,
+  confirmed by page read fresh 2026-11-06 22:12 UTC) and was
+  excluded as the wrong color; no Best Buy row surfaced for the
+  Black. Full-size wired mechanical keyboard, pre-lubed MLX Red
+  linear switches, SOCD, ABS double-shot keycaps, sound
+  dampening, media control dial, 1000 Hz polling, 104 keys,
+  QWERTY NA. Not the Steel Gray (CH-910991E-NA) or the
+  with-palm-rest Black (CH-910981E-NA, $109.99) or the K70 CORE
+  TKL (CH-911911E-NA) or the K70 CORE SE — different SKUs/models.
+- ASUS ROG Keris II Ace, Black (90MP03N0-BMAA00) — identifiers
+  PENDING: MPN 90MP03N0-BMAA00 is corroborated (ASUS eShop US +
+  shop.asus.com CA, Product Name P714 ROG KERIS II WL ACE/BLK,
+  Part Number 90MP03N0-BMAA00, agree) but no US UPC was found —
+  the EAN 4711387394571 (Icecat + Direct Computers UK) belongs to
+  the EU part 90MP03N0-BMUA00 and was not used. The White is
+  90MP03N0-BMAA10 (P714 ROG KERIS II WL ACE/WHT), a different
+  SKU. MPN is not recorded either (0 MPN-only entries in the set).
+  Quotes (2): ASUS eShop US $109.99 (feed brand_direct row,
+  BMAA00 — a sale vs the $159.99 list; MicroCenter lists $159.99
+  list / $118.99 sale); MicroCenter $159.99 list / $118.99 sale
+  (feed authorized_retailer row, poor quality). This is the retry
+  of the batch 34 hold: the hold reason is gone — the feed now
+  carries a clean ASUS-direct Black row at $109.99, same pattern
+  as the batch 33 PA279CRV and batch 34 Q1 Max retries.
+  Ultralight 54 g ergonomic wireless gaming mouse, 42,000-dpi ROG
+  AimPoint Pro sensor, ROG Optical Micro Switches, SpeedNova
+  wireless, Polling Rate Booster up to 4,000 Hz wireless / 8,000
+  Hz wired. Not the Moonlight White (90MP03N0-BMAA10) or the
+  Keris II Origin or the Keris Wireless AimPoint — different
+  SKUs/models. Distinct from the set's ROG Gladius IV Ace and
+  Harpe Mini Core — the Keris II Ace is the ultralight ergonomic
+  line.
+- Skipped this batch, list-only: Anker Soundcore Boom 2 Plus
+  Black — the feed's soundcore-direct row is a German-language
+  page at $499.98 (bundle/wrong listing) and the only clean US
+  rows are Best Buy $249.99 / $169.99 (color not pinned on the
+  page) and Walmart $174.99; the Black MPN A3134 was not pinned
+  to a clean single-color US row this round, stays list-only;
+  Microsoft Bluetooth Ergonomic Mouse — carried over from
+  batches 33–34, feed still messy after Microsoft's accessories
+  exit, no clean Black US row; Dell UltraSharp 34 Curved
+  Thunderbolt Hub Monitor U3425WE — carried over from batch 33,
+  feed still bundle-only; Garmin dash cams — blocked by
+  DECISIONS 016 until the category-expansion phase. No phones
+  and no TVs were considered (new categories, DECISIONS 016).
+- Eval on the new snapshot: 200 models, 98 verified identifiers,
+  5 with quotes, 15 total quotes, 0 identifier-matched, 15
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 195 → 200, verified 97 → 98, for the
+  continuous expansion; the pending set gains the 4 new pending
+  keys: razer-basilisk-v3-pro-35k-black,
+  garmin-forerunner-265-black, corsair-k70-core-rgb-black,
+  asus-rog-keris-ii-ace-black).

@@ -3285,3 +3285,130 @@ written as "superseded by" with the original text kept.
   batch 26 revisits carry over unchanged (five Lenovo sale prices
   after Early Black Friday ends Nov 8; Tab Plus Gen 2 $469.99;
   Idea Tab Pro Gen 2 bundle contents; five pending Lenovo UPCs).
+
+## 057 (2026-11-06): Expansion batch 35 — 195 → 200 models (continuous expansion, DECISIONS 027) — FINAL batch of the 175 → 200 leg
+
+- Decision: add 5 models (BUILD_LOG 074), no per-batch user approval
+  needed (DECISIONS 027): JBL Xtreme 4, Black (JBLXTREME4BLKAM,
+  UPC 050036398190 — verified), Razer Basilisk V3 Pro 35K, Black
+  (RZ01-05240100-R3U1, identifiers pending — no US UPC found),
+  Garmin Forerunner 265, Black — Black Bezel and Case with
+  Black/Powder Gray Silicone Band, 46mm (010-02810-00, identifiers
+  pending — no UPC found for the -00 suffix), Corsair K70 CORE RGB,
+  Black, no palm rest (CH-910971E-NA, identifiers pending — no UPC
+  found) and ASUS ROG Keris II Ace, Black (90MP03N0-BMAA00,
+  identifiers pending — no US UPC found). One variant pinned per
+  model (DECISIONS 015); 1 of 5 identifiers verified, 4 stay
+  pending — the weakest verification round of the run, and the
+  reason is recorded honestly per model in BUILD_LOG 074 rather
+  than filled with single-source or cross-variant codes. Verified-
+  identifier count rises 97 → 98. The eval set reaches exactly
+  200 models — the target set by DECISIONS 027 — and expansion
+  stops here: no more than 5 were added, and no sixth model was
+  forced in. JBL grows 6 → 7 entries, Razer 6 → 7, Garmin 9 → 10,
+  Corsair 5 → 6, ASUS 12 → 13; no new brand enters the set.
+  Category counts: "speakers" 7 → 8, "mice" 18 → 20, "wearables"
+  13 → 14, "keyboards" 24 → 25. No new category is opened — no
+  phones, no TVs, no cameras were added (DECISIONS 016).
+- Why these 5: the Xtreme 4 is JBL's mainstream large portable
+  speaker ($379.95 list, $309.95 sale) beside the set's Flip 7 and
+  Charge 6; the Basilisk V3 Pro 35K is Razer's ergonomic flagship
+  mouse ($159.99) beside the set's Viper V4 Pro and DeathAdder V4
+  Pro; the Forerunner 265 is Garmin's mainstream 46mm AMOLED
+  running watch ($449.99) beside the set's Venu 3/4, Forerunner
+  570 and fēnix 9; the K70 CORE RGB is Corsair's mainstream
+  full-size wired keyboard ($99.99 list, $79.99 sale) beside the
+  set's K65 Plus Wireless; the Keris II Ace is the retry of the
+  batch 34 hold — the hold reason is gone, the feed now carries a
+  clean ASUS-direct Black row at $109.99, and it is the ultralight
+  54 g ergonomic mouse beside the set's ROG Gladius IV Ace and
+  Harpe Mini Core.
+- What was corrected along the way: the feed's Best Buy Xtreme 4
+  $299.99 row is sold & shipped by Simple Cell, Inc — a
+  marketplace seller — excluded (DECISIONS 021), not treated as
+  the Best Buy price (page read fresh 2026-11-06 22:13 UTC, SKU
+  12829838). The feed's Newegg K70 CORE $99.99 / $79.99 row is
+  the Steel Gray (CH-910991E-NA, confirmed by page read fresh
+  2026-11-06 22:12 UTC) — excluded as the wrong color, leaving
+  the K70 CORE entry with a single clean quote (Corsair direct).
+  The feed's $159.99 shop.asus.com Keris II Ace row is the White
+  (90MP03N0-BMAA10); the Black is 90MP03N0-BMAA00 at $109.99 on
+  the ASUS eShop US (sale vs the $159.99 list) — pinned correctly
+  before adding. The Forerunner 265 Black is 010-02810-00, not
+  010-02810-10 — the -10 is a different regional suffix (UPC
+  753759313715) and its UPC was not carried over. The Xtreme 4
+  Black UPC is 050036398190 (Amazon US + Ubuy agree, GTIN
+  11200130008129 on both); the manuals.plus code 094148673325
+  is a single-source conflict and was rejected, same pattern as
+  the XM6 094148746326 rejection in batch 1.
+- Variant pinning, recorded explicitly: Xtreme 4 pins Black
+  (JBLXTREME4BLKAM); the Camo (JBLXTREME4CAMOAM, UPC
+  050036398213), Blue and Squad codes are different SKUs.
+  Basilisk V3 Pro 35K pins Black (RZ01-05240100-R3U1); the White
+  (RZ01-05240200-R3U1), the Phantom Green/White editions and the
+  Xbox 25 Anniversary Edition are different SKUs, and the
+  original 30K Basilisk V3 Pro (RZ01-04620100-R3U1) is a
+  different model. Forerunner 265 pins Black Bezel and Case with
+  Black/Powder Gray Silicone Band, 46mm (010-02810-00); the
+  Whitestone (010-02810-01) and the Aqua (010-02810-02) are
+  different SKUs, and the 42mm Forerunner 265S is a different
+  model. K70 CORE RGB pins Black, no palm rest (CH-910971E-NA);
+  the Steel Gray (CH-910991E-NA), the with-palm-rest Black
+  (CH-910981E-NA) and the K70 CORE TKL (CH-911911E-NA) are
+  different SKUs. Keris II Ace pins Black (90MP03N0-BMAA00,
+  P714 ROG KERIS II WL ACE/BLK); the Moonlight White
+  (90MP03N0-BMAA10) is a different SKU.
+- What does NOT change: the existing 195 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6
+  Pro untouched, batches 1–34 entries untouched). No other
+  snapshot file is rewritten. No Amazon touch in the snapshot:
+  no Amazon quotes, no Amazon-sourced prices; Amazon US listings
+  agreeing on the Xtreme 4 UPC 050036398190 were read and are
+  cited as one of the two agreeing identifier sources (with the
+  Ubuy cross-check and the matching GTIN-14), but no Amazon
+  price is carried as a quote. The daily refresh cron still says
+  "57 models" in its body and needs a count update to 200 on the
+  next edit (parent owns the cron; not touched here).
+- Revisit: the eval set is now at its 200-model target
+  (DECISIONS 027) — further expansion needs a new user decision,
+  not a continuation of this run. Open items carried forward:
+  re-check the Xtreme 4 $309.95 sale, the Charge 6 $149.95 sale
+  and the Venu 3 Dell $299.99 sale after the Early Black Friday
+  event ends Nov 8; re-check the pending Basilisk V3 Pro 35K
+  Black UPC (no US code surfaced; EU EAN 8886419334606 belongs
+  to the R3G1 part), the pending Forerunner 265 -00 UPC, the
+  pending K70 CORE RGB Black UPC and the pending Keris II Ace
+  BMAA00 UPC; find a second US retailer quote for the exact
+  K70 CORE RGB Black CH-910971E-NA (this entry carries a single
+  quote); the batch 34 revisits carry over unchanged (re-check
+  the pending Charge 6 UPC and the pending Q1 Max barcode; re-
+  check the Boom 2 MPN suffix split and the B&H Temporarily Out
+  of Stock; the batch 33 revisits carry over unchanged (re-check
+  the QuietComfort $169.00 sale and the SoundLink Max $329.00
+  sale after the Black Friday event ends Nov 8; re-check the
+  Cloud III $69.99 Holiday Deal after the Early Black Friday
+  event ends Nov 8; re-check the pending K2 Max barcode and find
+  a second US retailer quote for the exact K2M-C4 variant; re-
+  check the pending Cloud III UPC); the batch 32 revisits carry
+  over unchanged (pending K2 HE EAN conflict; pending U2725QE
+  UPC; SoundLink Plus $179.00 sale/rebate price after the rebate
+  ends Nov 8; U2725QE Dell direct $849.99 vs the $649.99 street;
+  Garmin direct Instinct 3 stock; remaining Garmin candidates
+  list-only; Garmin dash cams blocked by DECISIONS 016; the
+  batch 31 revisits carry over unchanged (pending Tab S11 Ultra
+  UPC; three risen tablet prices; Garmin direct stock; two
+  pending batch 30 UPCs) and the batch 30 revisits carry over
+  unchanged (Watch8 Classic $499.99 price vs the Sep 24 $419.99
+  report; Tab S10 FE $549.99 price vs the $499.99 MSRP list) and
+  the batch 29 revisits carry over unchanged (four Lenovo sale
+  prices after the Early Black Friday event ends Nov 8; four
+  pending Lenovo/ASUS UPCs) and the batch 28 revisits carry over
+  unchanged (fēnix 9 UPC; Venu 4 Dell $499.99 sale after Black
+  Friday Nov 27; vívoactive 6 stock; Forerunner 970 UPC tiebreak;
+  Edge 1060 UPC) and the batch 27 revisits carry over unchanged
+  (Series X stock; Wireless Headset $110.99; Surface Laptop
+  $1,299.99 sale after Black Friday; three pending Microsoft
+  identifiers; remaining Microsoft candidates list-only) and the
+  batch 26 revisits carry over unchanged (five Lenovo sale prices
+  after Early Black Friday ends Nov 8; Tab Plus Gen 2 $469.99;
+  Idea Tab Pro Gen 2 bundle contents; five pending Lenovo UPCs).

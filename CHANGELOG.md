@@ -193,6 +193,48 @@ releases; breaking changes are called out in the release notes.
   out / not sold in the US), Galaxy Watch8 40mm (superseded),
   Garmin Instinct 3 (held for a later batch) — all stay
   list-only.
+- Expansion batch 35 (DECISIONS 057, continuous expansion per
+  DECISIONS 027) — FINAL batch of the 175 → 200 leg: eval set
+  195 → 200 models, verified identifiers 97 → 98 (1 of 5 new
+  identifiers verified). New: JBL Xtreme 4, Black
+  (JBLXTREME4BLKAM, UPC 050036398190 — Amazon US + Ubuy agree,
+  GTIN 11200130008129 on both, Best Buy US confirms the MPN;
+  $379.95 list / $309.95 sale at JBL direct, $379.99 at Target
+  and Rock & Soul — JBL's mainstream large portable speaker
+  beside the set's Flip 7 and Charge 6; the feed's Best Buy
+  $299.99 row was sold by Simple Cell, Inc, a marketplace seller,
+  and was excluded), Razer Basilisk V3 Pro 35K, Black
+  (RZ01-05240100-R3U1, identifiers pending — no US UPC found,
+  EU EAN 8886419334606 not used; $159.99 at Razer direct,
+  $159.99 / $99.99 sale at Macy's, $167.99 at CDW, $127.00 at
+  ShopMyExchange — Razer's ergonomic flagship mouse beside the
+  set's Viper V4 Pro and DeathAdder V4 Pro), Garmin Forerunner
+  265, Black — Black Bezel and Case with Black/Powder Gray
+  Silicone Band, 46mm (010-02810-00, identifiers pending — no UPC
+  found for the -00 suffix, 753759313715 belongs to the -10
+  suffix; $449.99 at Abt, Kohl's, BikeTiresDirect, BuyDig and
+  Sportsman's — Garmin's mainstream 46mm AMOLED running watch
+  beside the set's Venu 3/4, Forerunner 570 and fēnix 9), Corsair
+  K70 CORE RGB, Black, no palm rest (CH-910971E-NA, identifiers
+  pending — no UPC found, the palm-rest variant's 840006665762
+  not used; $99.99 list / $79.99 sale at Corsair direct, the only
+  clean quote — the feed's Newegg $99.99 / $79.99 row is the
+  Steel Gray and was excluded as the wrong color — Corsair's
+  mainstream full-size wired keyboard beside the set's K65 Plus
+  Wireless), ASUS ROG Keris II Ace, Black (90MP03N0-BMAA00,
+  identifiers pending — no US UPC found, EU BMUA00 EAN
+  4711387394571 not used; $109.99 sale at ASUS eShop US,
+  $159.99 list / $118.99 sale at MicroCenter — the retry of the
+  batch 34 hold, whose reason is gone now that a clean
+  ASUS-direct Black row exists; the ultralight 54 g ergonomic
+  mouse beside the set's ROG Gladius IV Ace and Harpe Mini Core).
+  JBL grows 6 → 7 entries, Razer 6 → 7, Garmin 9 → 10, Corsair
+  5 → 6, ASUS 12 → 13. The eval set reaches exactly 200 models —
+  the target set by DECISIONS 027 — and expansion stops here.
+  Not added: Anker Soundcore Boom 2 Plus Black (no clean
+  single-color US row pinned), Microsoft Bluetooth Ergonomic
+  Mouse and Dell UltraSharp U3425WE (carried over, still messy /
+  bundle-only) — all stay list-only.
 - Expansion batch 34 (DECISIONS 056, continuous expansion per
   DECISIONS 027): eval set 190 → 195 models, verified identifiers
   94 → 97 (3 of 5 new identifiers verified). New: JBL Charge 6,

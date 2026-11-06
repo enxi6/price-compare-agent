@@ -1,0 +1,119 @@
+{
+ "meta": {
+  "collected_at": "2026-11-06T22:14:00Z",
+  "source": "Meta Catalog (2026-11-06) + brand-direct / retailer pages (page text / search-index reads, read-only)",
+  "sources_note": "Expansion batch 35 (DECISIONS 057, continuous expansion per DECISIONS 027, no per-batch approval) — the FINAL batch of the 175 to 200 leg: JBL Xtreme 4 Black, Razer Basilisk V3 Pro 35K Black, Garmin Forerunner 265 Black, Corsair K70 CORE RGB Black, ASUS ROG Keris II Ace Black, 15 quotes, 1 identifier verified (Xtreme 4 UPC 050036398190 / MPN JBLXTREME4BLKAM), 4 stay pending (Basilisk V3 Pro 35K Black RZ01-05240100-R3U1 — no US UPC found, EU EAN 8886419334606 not used; Forerunner 265 Black 010-02810-00 — no UPC for the -00 suffix, 753759313715 belongs to the -10 suffix; K70 CORE RGB Black CH-910971E-NA — no UPC, palm-rest variant's 840006665762 not used; Keris II Ace Black 90MP03N0-BMAA00 — no US UPC, EU BMUA00 EAN 4711387394571 not used). Eval set is now 200 models. DECISIONS 021 applied to every quote: no marketplace/third-party rows, no non-US rows, no Amazon."
+ },
+ "models": {
+  "asus-rog-keris-ii-ace-black": {
+   "offers": [
+    {
+     "merchant": "ASUS",
+     "price": 109.99,
+     "title": "ROG Keris II Ace (feed brand_direct row, ASUS eShop US: $109.99 sale vs the $159.99 list; Part Number 90MP03N0-BMAA00, P714 ROG KERIS II WL ACE/BLK; 54 g, 42,000-dpi ROG AimPoint Pro sensor, SpeedNova wireless)",
+     "url": "https://eshop.asus.com/us/90mp03n0-bmaa00-rog-keris-ii-ace.html"
+    },
+    {
+     "merchant": "Micro Center",
+     "price": 159.99,
+     "title": "P714 ROG Keris II Ace Wireless Gaming Mouse - Black (feed authorized_retailer row: $159.99 list / $118.99 sale; poor quality row)",
+     "url": "https://www.microcenter.com/quickView/678861/asus-p714-rog-keris-ii-ace-wireless-gaming-mouse-black"
+    }
+   ]
+  },
+  "corsair-k70-core-rgb-black": {
+   "offers": [
+    {
+     "merchant": "Corsair",
+     "price": 99.99,
+     "title": "K70 CORE RGB Mechanical Gaming Keyboard — Black (feed brand_direct row + Corsair US page read via search index fresh 2026-11-06: $99.99 list / $79.99 sale, InStock; SKU CH-910971E-NA; MLX Red linear switches, media control dial, 1000 Hz polling, 104 keys QWERTY NA)",
+     "url": "https://www.corsair.com/us/en/p/keyboards/ch-910971e-na/k70-core-rgb-mechanical-gaming-keyboard-black-ch-910971e-na"
+    }
+   ]
+  },
+  "garmin-forerunner-265-black": {
+   "offers": [
+    {
+     "merchant": "Abt",
+     "price": 449.99,
+     "title": "Garmin Forerunner 265 Smartwatch, 46mm 010-02810-00 (abt.com page read fresh 2026-11-06 22:12 UTC: $449.99, JSON-LD InStock; Black/Powder Gray Silicone Band, Black Case With Black Bezel; 46mm AMOLED, up to 13 days smartwatch mode, launched Mar 2023)",
+     "url": "https://www.abt.com/Garmin-Forerunner-265-Black-Powder-Gray-Silicone-Band-Smartwatch-46mm-0100281000/p/189634.html"
+    },
+    {
+     "merchant": "Kohl's",
+     "price": 449.99,
+     "title": "Garmin Forerunner 265 Running Smartwatch, Black (feed authorized_retailer row)",
+     "url": "https://www.kohls.com/product/prd-6373858/garmin-forerunner-265-running-smartwatch.jsp"
+    },
+    {
+     "merchant": "BikeTiresDirect",
+     "price": 449.99,
+     "title": "Garmin Forerunner 265 Black - Powder Grey Band (feed authorized_retailer row; Mfg PartNum 010-02810-00)",
+     "url": "https://www.biketiresdirect.com/product/garmin-forerunner-265"
+    },
+    {
+     "merchant": "BuyDig",
+     "price": 449.99,
+     "title": "Garmin Forerunner 265 GPS Smartwatch - 46mm, Black/Powder Gray (feed authorized_retailer row; SKU GRFR265BKPG)",
+     "url": "https://www.buydig.com/shop/product.aspx?sku=GRFR265BKPG"
+    },
+    {
+     "merchant": "Sportsman's",
+     "price": 449.99,
+     "title": "Garmin Forerunner 265 GPS Smartwatch - Black Bezel with Black/Power Gray (feed authorized_retailer row)",
+     "url": "https://www.sportsmans.com/camping-gear-supplies/electronics/gps-watches/garmin-forerunner-265-gps-smartwatch-black-bezel-with-blackpower-gray/p/1907967"
+    }
+   ]
+  },
+  "jbl-xtreme-4-black": {
+   "offers": [
+    {
+     "merchant": "JBL",
+     "price": 379.95,
+     "title": "JBL Xtreme 4 Bluetooth Speakers - Black (feed brand_direct row: $379.95 list / $309.95 sale; MPN JBLXTREME4BLKAM, UPC 050036398190; 100W RMS, 24h + 6h Playtime Boost, IP67, Auracast, launched Feb 2024)",
+     "url": "https://www.jbl.com/JBLXTREME4BLKAM.html"
+    },
+    {
+     "merchant": "Target",
+     "price": 379.99,
+     "title": "JBL Xtreme 4 Portable Waterproof Speaker - Black (target.com page read fresh 2026-11-06 22:12 UTC: $379.99, OutOfStock; TCIN 90786749)",
+     "url": "https://www.target.com/p/jbl-xtreme-4-portable-bluetooth-waterproof-speaker-black/-/A-90786749"
+    },
+    {
+     "merchant": "Rock & Soul",
+     "price": 379.99,
+     "title": "JBL Xtreme 4 - Portable Bluetooth Speaker, Powerful Sound and Deep Bass (feed authorized_retailer row)",
+     "url": "https://rockandsoul.com/products/jbl-xtreme-4-portable-bluetooth-speaker-powerful-sound-and-deep-bass-black"
+    }
+   ]
+  },
+  "razer-basilisk-v3-pro-35k-black": {
+   "offers": [
+    {
+     "merchant": "Razer",
+     "price": 159.99,
+     "title": "Razer Basilisk V3 Pro 35K - Black (feed brand_direct row; MPN RZ01-05240100-R3U1; Focus Pro 35K sensor, HyperScroll Tilt Wheel, up to 140 hours battery, launched Oct 2024)",
+     "url": "https://www.razer.com/gaming-mice/razer-basilisk-v3-pro-35k/RZ01-05240100-R3U1"
+    },
+    {
+     "merchant": "Macy's",
+     "price": 159.99,
+     "title": "Basilisk V3 Pro Black Wireless Gaming Mouse (feed authorized_retailer row: $159.99 list / $99.99 sale)",
+     "url": "https://www.macys.com/shop/product/razer-basilisk-v3-pro-black-wireless-gaming-mouse"
+    },
+    {
+     "merchant": "CDW",
+     "price": 167.99,
+     "title": "Razer Basilisk V3 Pro - Mouse - Bluetooth, Usb, 2.4 Ghz - Black (feed authorized_retailer row)",
+     "url": "https://www.cdw.com/product/razer-basilisk-v3-pro-mouse-bluetooth-usb-2.4-ghz-black/7616913"
+    },
+    {
+     "merchant": "ShopMyExchange",
+     "price": 127.0,
+     "title": "Razer Basilisk V3 Pro Ergonomic Wireless Gaming Mouse (feed authorized_retailer row)",
+     "url": "https://www.shopmyexchange.com/razer-basilisk-v3-pro-ergonomic-wireless-gaming-mouse-4086761/4086761"
+    }
+   ]
+  }
+ }
+}
