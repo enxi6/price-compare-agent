@@ -1,4 +1,4 @@
-"""Phase 1 evaluation set: 62 standardized electronics models, US market.
+"""Phase 1 evaluation set: 67 standardized electronics models, US market.
 
 Identifier policy (DECISIONS 002): an identifier is recorded only when a
 retailer or manufacturer listing states it for the exact pinned variant.
@@ -1237,6 +1237,168 @@ EVAL_SET: list[EvalProduct] = [
         "set's Xbox Wireless Controller Carbon Black (1914, UPC "
         "196388518159) and from the Elite Series 2 Core "
         "($134.99–$149.99, different line).",
+        status="verified",
+    ),
+    # --- Expansion batch 8 (2026-11-06, DECISIONS 030) ---
+    EvalProduct(
+        key="apple-imac-m6-24-10core-blue",
+        brand="Apple",
+        model="iMac 24-inch (M6, 2026)",
+        variant="M6 10-core CPU/GPU, 16GB/256GB, Blue (MH094LL/A)",
+        category="desktops",
+        identifiers={"UPC": "195950838091", "MPN": "MH094LL/A"},
+        identifier_sources={
+            "UPC": "B&H Photo US spec page for the exact MPN "
+            "(apple_mh094ll_a, 10-core/16GB/256GB/Blue, UPC "
+            "195950838091). Single source so far — launch day; no "
+            "second US source publishes this UPC yet (EveryMac "
+            "still lists M6 iMac identifiers as Pending), so "
+            "re-confirm on the next refresh. MPN MH094LL/A "
+            "corroborated by Apple US buy page + Best Buy US Model "
+            "MH094LL/A (SKU 6566940) + EveryMac + MacSolutions "
+            "Plus. The neighbouring UPC 195950844627 is the Blue "
+            "12-core 512GB (MH1J4LL/A) and was excluded."
+        },
+        notes="Apple direct $1,499.00 (US buy page MH094LL/A, "
+        "JSON-LD price; stock not stated in the page-text crawl); "
+        "Best Buy $1,499.00 (page-verified JSON-LD InStock, sold "
+        "by Best Buy, SKU 6566940); B&H $1,499.00 (New Release, "
+        "In Stock, JSON-LD InStock). Correction vs the 2026-10-31 "
+        "candidate note: the new iMac is M6, not M5 — it skips M5 "
+        "entirely (announced 2026-10-27, availability 2026-11-06, "
+        "today). The Meta Catalog feed returned no M6 rows at all "
+        "(all M4/M3/M1), so all three quotes are page-verified. "
+        "12-core tiers ($1,699 MH114LL/A, $1,899 512GB, nano-"
+        "texture $1,899 MH2U4LL/A) and the other six colors are "
+        "different SKUs. Distinct from the set's Mac mini M6 "
+        "(MHQK4LL/A) and the MacBook lines.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-wh1000xm4c-black",
+        brand="Sony",
+        model="WH-1000XM4C (M4 2nd Gen)",
+        variant="Black (WH1000XM4C/B)",
+        category="headphones",
+        notes="MPN WH1000XM4C/B confirmed (Best Buy US Model + "
+        "Sony US store + Adorama + Canada Computers + Abt "
+        "WH1000XM4CB agree), but no UPC was found for the Black "
+        "variant in any US source, so identifiers stay empty per "
+        "the DualSense Edge / DEX / Neo precedent. The only XM4C "
+        "barcode found, 4548736181861, is the Platinum Silver "
+        "EAN (Harvey Norman AU, WH1000XM4CS) and must NOT be "
+        "copied to Black — different color, different barcode. "
+        "The original XM4 Black UPC 027242919419 (Abt) belongs "
+        "to WH1000XM4/B, not the XM4C, and was excluded. Best "
+        "Buy $299.99 (WH1000XM4C/B, SKU 6689199, sold by Best "
+        "Buy); Target $299.99 (JSON-LD InStock, A-1012764580); "
+        "Sweetwater $298.00 (feed row, WH1000XM4CB). Sony direct "
+        "lists the model at $299.99 (store JSON-LD, same price "
+        "all colors; Sony Sept 7 2026 announcement); Abt $298.00 "
+        "and Nordstrom/Crutchfield $298.00 also confirmed. The "
+        "XM4C is a 2026 hardware refresh of the 2020 XM4 "
+        "(retuned sound, 10-band EQ, Bluetooth 6.0, replaceable "
+        "battery; announced Sept 7 2026), not a new flagship — "
+        "distinct from the set's WH-1000XM5 Black "
+        "(027242923232) and WH-1000XM6 Black (027242930698). "
+        "Lavender (WH1000XM4C/V) is a Sony-exclusive colorway.",
+    ),
+    EvalProduct(
+        key="sony-pulse-elite-midnight-black",
+        brand="Sony",
+        model="PULSE Elite Wireless Headset",
+        variant="Midnight Black (retail MPN 1000044173)",
+        category="headphones",
+        notes="MPN 1000044173 confirmed (Best Buy US Model + P.C. "
+        "Richard MODEL + ShopCGX + Big Apple Buddy agree), but "
+        "the UPC was not verified from a non-Amazon US source, "
+        "so identifiers stay empty per the DualSense Edge / DEX "
+        "/ Neo precedent. The only UPC seen for this variant, "
+        "711719588009, appears on a single Amazon listing (with "
+        "hardware model CFI-ZWH2) and no second source "
+        "corroborates it, so it was not recorded. The EU retail "
+        "code 1000044483 (barcode 711719590392, Salling Group "
+        "datasheet) is a different retail code and was not "
+        "copied. CFI-ZWH1 is the PULSE 3D headset, a different "
+        "model — not the Elite. PlayStation Direct $149.00 "
+        "(price-only; the Direct crawl mixes Currently "
+        "Unavailable / Low stock / Coming Soon flags across "
+        "variants); Best Buy $149.99 (page-verified JSON-LD "
+        "InStock, sold by Best Buy, SKU 6614841); P.C. Richard "
+        "$149.99 (JSON-LD InStock, ships by Mon, Nov 9). Newegg "
+        "$149.99 and Walmart $149.00 also confirmed (feed rows). "
+        "Midnight Black released 2025-02-20; the original White "
+        "Elite (Feb 2024) is a different colorway. Distinct from "
+        "the set's PlayStation Portal (1000041319) and DualSense "
+        "lines.",
+    ),
+    EvalProduct(
+        key="logitech-ergo-k860-graphite",
+        brand="Logitech",
+        model="ERGO K860",
+        variant="Graphite, standard edition (920-009166)",
+        category="keyboards",
+        identifiers={"UPC": "097855151667", "MPN": "920-009166"},
+        identifier_sources={
+            "UPC": "Adorama US spec page (MFR 920-009166, UPC "
+            "Code 097855151667) + B&H kit pages (K860 section "
+            "UPC 097855151667, distinct from the Lift mouse's "
+            "097855170927) + eBay US item specifics (UPC "
+            "097855151667, MPN 920-009166) agree."
+        },
+        notes="Best Buy $149.99 (page-verified JSON-LD InStock, "
+        "sold by Best Buy, SKU 6395346, Model 920-009166); Dell "
+        "$149.99 (page text, Manufacturer part 920-009166); "
+        "Newegg $149.99 (feed row, 920-009166). Correction vs "
+        "the 2026-10-31 candidate price: $119.99 was an "
+        "Amazon-only sale price (TechTimes 2026-10-19, 20% off "
+        "the $149.99 MSRP) and no Amazon price is used; the "
+        "current first-party list is $149.99. The feed's Dell "
+        "$129.99 row is stale (page text now $149.99) and the "
+        "feed's B&H $159.99 row is the K860 for Business "
+        "(920-010175, Logi Bolt), not this variant. The Business "
+        "variant (920-010175, Logi Bolt receiver) and regional "
+        "MPNs 920-009167/920-010107/920-010348 are different "
+        "SKUs; the standard 920-009166 ships with the Unifying "
+        "receiver. Distinct from the set's MX Keys S Pale Grey "
+        "(920-011559) and MX Keys Mini Black (920-010475).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="keychron-k8-he-special-black",
+        brand="Keychron",
+        model="K8 HE",
+        variant="Special Edition, Black, Gateron Double-Rail Magnetic Nebula Switch (K8H-F1)",
+        category="keyboards",
+        identifiers={"EAN": "4894979028990", "SKU": "K8H-F1"},
+        identifier_sources={
+            "EAN": "Keychron official store public product JSON, "
+            "browser-verified 2026-11-06 (Special Edition / "
+            "Black / Gateron Double-Rail Magnetic Nebula Switch, "
+            "SKU K8H-F1, price $139.99, available: true, barcode "
+            "4894979028990). JSON field is named 'barcode' (no "
+            "separate GTIN/UPC/EAN field); recorded as EAN "
+            "following the K8 Ultra 8K precedent (13-digit "
+            "barcodes). Special Edition White K8H-Q1 is "
+            "4894979029003; Standard Black K8H-J1 is "
+            "4894979028952."
+        },
+        notes="Keychron direct $139.99 (official store JSON, "
+        "available: true; the K8 HE is sold only through "
+        "Keychron's own store per Notebookcheck). Correction vs "
+        "the 2026-10-31 candidate note: $139.99 is the Special "
+        "Edition (OSA double-shot PBT, wood trim); the Standard "
+        "Version is $129.99 (K8H-J1) and is currently "
+        "unavailable at Keychron. The feed's keychron.com "
+        "$139.99 row is the Japan JIS Layout product, a "
+        "different layout, and was not used; the quote is the US "
+        "ANSI product. Newegg rows $221.48-$273.99 are "
+        "third-party inflated prices, excluded. The All-Wood "
+        "Special Edition ($199.99) and Lime-switch variants "
+        "(unavailable, no barcode) are different variants. "
+        "Distinct from the set's K8 Ultra 8K (K8U-J1, EAN "
+        "4894979057969) — the K8 Pro page points to the K8 HE "
+        "and K8 Ultra 8K as successors.",
         status="verified",
     ),
 ]

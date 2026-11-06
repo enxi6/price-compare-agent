@@ -863,3 +863,57 @@ written as "superseded by" with the original text kept.
   text); the Elite Series 2's Amazon "discontinued by manufacturer"
   flag is contradicted by live Microsoft/Target/Best Buy listings
   and is recorded, not acted on.
+
+## 030 (2026-11-06): Expansion batch 8 — 62 → 67 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models from the remaining brand-sweep candidates
+  (BUILD_LOG 020/022/023/024/025), no per-batch user approval needed
+  (DECISIONS 027): iMac 24-inch M6 10-core Blue (MH094LL/A, UPC
+  195950838091), Sony WH-1000XM4C Black (WH1000XM4C/B, UPC pending),
+  Sony PULSE Elite Midnight Black (retail MPN 1000044173, UPC
+  pending), Logitech ERGO K860 Graphite (920-009166, UPC
+  097855151667), Keychron K8 HE Special Edition Black (K8H-F1, EAN
+  4894979028990). One variant pinned per model (DECISIONS 015); 3 of
+  5 identifiers verified, XM4C and PULSE Elite stay pending (UPC not
+  verified from a non-Amazon US source for either — DualSense Edge /
+  DEX / Neo precedent, not a reason to hold the batch).
+- Why these 5: they are the next un-added mainstream lines from the
+  five brand sweeps, each distinct from the set (first iMac in the
+  set; XM4C is the 2026 M4 refresh, not the XM5/XM6 flagships;
+  PULSE Elite is the first PlayStation headset; K860 is the first
+  split ergonomic keyboard; K8 HE is the Hall Effect line vs the K8
+  Ultra 8K). All five are in stock new in the US on 2026-11-06
+  (brand-direct pages or InStock JSON-LD), except the two
+  price-only direct rows noted below.
+- What was corrected along the way: the new iMac is M6, not M5 — it
+  skips M5 entirely (announced 2026-10-27, on sale 2026-11-06);
+  the K860 candidate price $119.99 was an Amazon-only sale price,
+  the current first-party list is $149.99 and no Amazon price is
+  used; the K8 HE candidate price $139.99 is the Special Edition
+  (the Standard is $129.99 and currently out of stock at Keychron),
+  and the feed's $139.99 keychron.com row is the Japan JIS Layout
+  product, a different layout; the feed's B&H $159.99 K860 row is
+  the K860 for Business (920-010175), not the standard 920-009166;
+  the feed's Dell K860 $129.99 row is stale (page text $149.99);
+  the Meta Catalog feed returned no M6 iMac rows at all, so the
+  iMac quotes are page-verified. The PULSE Elite is NOT CFI-ZWH1
+  (that is the PULSE 3D headset); its US retail MPN is 1000044173.
+- What does NOT change: the existing 62 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro untouched,
+  batches 1–7 entries untouched). No other snapshot file is rewritten.
+  No Amazon touch. The daily refresh cron still says "57 models" in
+  its body and needs a count update to 67 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: XM4C Black UPC stays pending until a US retailer spec page
+  or box barcode settles it (the only XM4C barcode found,
+  4548736181861, is the Silver EAN and must not be copied to Black;
+  the original XM4 Black UPC 027242919419 belongs to WH1000XM4/B,
+  not the XM4C); PULSE Elite Midnight Black UPC stays pending (the
+  only UPC seen, 711719588009, appears on a single Amazon listing
+  and has no second source); iMac Blue UPC 195950838091 currently
+  rests on B&H alone (launch day) and should be re-confirmed on the
+  next refresh; the Apple direct iMac $1,499.00 and PlayStation
+  Direct PULSE Elite $149.00 prices are price-only (stock not
+  confirmed in the page text); the K8 HE has a single quote
+  (Keychron direct — the line is sold only through Keychron's own
+  store).

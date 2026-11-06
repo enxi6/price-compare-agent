@@ -11,6 +11,25 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 8 (DECISIONS 030, continuous expansion per
+  DECISIONS 027): eval set 62 → 67 models, 55 → 58 verified
+  identifiers. New: iMac 24-inch M6 10-core Blue (MH094LL/A, UPC
+  195950838091 — the new iMac is M6, not M5, and skips M5 entirely;
+  on sale 2026-11-06), Sony WH-1000XM4C Black (WH1000XM4C/B, UPC
+  pending — the 2026 M4 refresh, not the XM5/XM6 flagships),
+  Sony PULSE Elite Midnight Black (retail MPN 1000044173, UPC
+  pending — not CFI-ZWH1, which is the PULSE 3D headset),
+  Logitech ERGO K860 Graphite (920-009166, UPC 097855151667;
+  current first-party list $149.99, not the Oct 31 Amazon-only
+  sale price $119.99), Keychron K8 HE Special Edition Black
+  (K8H-F1, EAN 4894979028990 — $139.99 is the Special Edition;
+  the $129.99 Standard is currently out of stock at Keychron).
+  New snapshot `data/eval_snapshots_batch8_2026-11-06.json` holds
+  13 quotes across the 5 models (iMac: 3, XM4C: 3, PULSE Elite: 3,
+  K860: 3, K8 HE: 1 — the K8 HE is sold only through Keychron's
+  own store). DECISIONS 021 applied to every quote: no
+  marketplace/third-party rows, no non-US rows, no Amazon.
+
 - Expansion batch 7 (DECISIONS 029, continuous expansion per
   DECISIONS 027): eval set 57 → 62 models, 51 → 55 verified
   identifiers. New: MacBook Neo 13-inch 256GB Blush (MHFH4LL/A,

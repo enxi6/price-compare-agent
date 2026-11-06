@@ -1543,3 +1543,132 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (snapshot offers carry no identifier — the rule working, not a
   bug). Tests: 19 passed (test_snapshot_eval counts updated 57 →
   62 / 51 → 55 for the approved expansion).
+
+## 046 — 2026-11-06: Expansion batch 8 — 62 → 67 models (DECISIONS 030)
+
+- Membership check (against the 62-model set, by name, MPN and UPC —
+  no matches, all 5 are new lines):
+  - iMac M6 10-core Blue (MH094LL/A, UPC 195950838091) vs
+    apple-mac-mini-m6 (MHQK4LL/A, UPC 195951021089),
+    apple-macbook-pro-14-m6 (MHWT4LL/A), apple-macbook-air-13-m5,
+    apple-macbook-air-15-m5, apple-macbook-neo-13-256gb-blush
+    (MHFH4LL/A): no iMac in the set at all; distinct desktop line,
+    different MPN and UPC — not a duplicate. The M4 iMac rows in
+    the feed (MWV13LL/A etc., $1,699) are the outgoing model and
+    were not added.
+  - WH-1000XM4C Black (WH1000XM4C/B) vs sony-wh1000xm5-black
+    (WH1000XM5/B, UPC 027242923232) and sony-wh1000xm6-black
+    (WH1000XM6/B, UPC 027242930698): distinct 2026 M4-refresh line,
+    different model number — not a duplicate. The original XM4
+    (WH1000XM4/B, UPC 027242919419) is a different model and was
+    not added.
+  - PULSE Elite Midnight Black (1000044173) vs
+    sony-playstation-portal (1000041319, UPC 711719579779),
+    sony-dualsense-white, sony-dualsense-edge-black-white: no
+    PULSE headset in the set; distinct headset line, different MPN
+    — not a duplicate. The PULSE 3D (CFI-ZWH1) and PULSE Explore
+    earbuds (CFI-ZWE1) are different models and were not added.
+  - ERGO K860 Graphite (920-009166, UPC 097855151667) vs
+    logitech-mx-keys-s-pale-grey (920-011559), logitech-mx-keys-mini-
+    black (920-010475), logitech-mx-mechanical-tactile-quiet-
+    graphite (920-010547): distinct split ergonomic line, different
+    MPN and UPC — not a duplicate. The K860 for Business
+    (920-010175, Logi Bolt) is a different SKU and was not added.
+  - K8 HE Special Edition Black (K8H-F1, EAN 4894979028990) vs
+    keychron-k8-ultra-8k (K8U-J1, EAN 4894979057969): distinct Hall
+    Effect line, different SKU and EAN — not a duplicate. The K8
+    HE Standard Version (K8H-J1), All-Wood Special Edition
+    ($199.99) and Lime-switch variants are different variants and
+    were not added.
+- Apple iMac 24-inch M6, 10-core CPU/GPU, 16GB/256GB, Blue
+  (MH094LL/A) — identifiers VERIFIED: UPC 195950838091 (B&H Photo
+  US spec page for the exact MPN — single source so far, launch
+  day; EveryMac still lists M6 iMac identifiers as Pending, so
+  re-confirm on the next refresh), MPN MH094LL/A (Apple US buy
+  page + Best Buy Model + EveryMac + MacSolutions Plus agree).
+  Correction: the new iMac is M6, not M5 — it skips M5 entirely
+  (announced 2026-10-27, pre-orders Oct 28, availability Nov 6,
+  today). Quotes (3): Apple direct $1,499.00 (US buy page
+  MH094LL/A, JSON-LD price; stock not stated in the page-text
+  crawl), Best Buy $1,499.00 (page-verified JSON-LD InStock, sold
+  by Best Buy, SKU 6566940), B&H $1,499.00 (New Release, In Stock,
+  JSON-LD InStock). The Meta Catalog feed returned no M6 rows at
+  all (all M4/M3/M1), so all three quotes are page-verified.
+  Excluded: M4 iMac rows ($1,499–$2,099, incl. Apple direct M4
+  colors $1,699), 12-core tiers ($1,699–$2,099), nano-texture
+  ($1,899, MH2U4LL/A), M1 marketplace/rental rows.
+- Sony WH-1000XM4C, Black (WH1000XM4C/B) — identifiers PENDING:
+  MPN WH1000XM4C/B confirmed (Best Buy Model + Sony US store +
+  Adorama + Canada Computers + Abt WH1000XM4CB agree) but no UPC
+  found for Black in any US source. The only XM4C barcode found,
+  4548736181861, is the Platinum Silver EAN (Harvey Norman AU,
+  WH1000XM4CS) and was not copied across colors; the original XM4
+  Black UPC 027242919419 (Abt) belongs to WH1000XM4/B and was
+  excluded. Quotes (3): Best Buy $299.99 (WH1000XM4C/B, SKU
+  6689199, sold by Best Buy), Target $299.99 (JSON-LD InStock,
+  A-1012764580), Sweetwater $298.00 (feed row, WH1000XM4CB). Sony
+  direct lists the model at $299.99 (store JSON-LD, same price all
+  colors; Sony Sept 7 2026 announcement) and Abt/Nordstrom/
+  Crutchfield $298.00 also confirmed. The XM4C is a 2026 hardware
+  refresh of the 2020 XM4 (retuned sound, 10-band EQ, Bluetooth
+  6.0, replaceable battery), announced Sept 7 2026. Excluded:
+  original XM4 rows ($312.99–$349.99), XM4C Silver/Lavender
+  colorways, FocusCamera/BuyDig accessory bundles.
+- Sony PULSE Elite Wireless Headset, Midnight Black (retail MPN
+  1000044173) — identifiers PENDING: MPN 1000044173 confirmed
+  (Best Buy Model + P.C. Richard MODEL + ShopCGX + Big Apple Buddy
+  agree) but the UPC was not verified from a non-Amazon US source.
+  The only UPC seen, 711719588009, appears on a single Amazon
+  listing (hardware model CFI-ZWH2) with no second source, so it
+  was not recorded. The EU retail code 1000044483 (barcode
+  711719590392) is a different retail code and was not copied.
+  CFI-ZWH1 is the PULSE 3D headset, not the Elite. Quotes (3):
+  PlayStation Direct $149.00 (price-only; crawl mixes Currently
+  Unavailable / Low stock / Coming Soon flags), Best Buy $149.99
+  (page-verified JSON-LD InStock, sold by Best Buy, SKU 6614841),
+  P.C. Richard $149.99 (JSON-LD InStock, ships by Mon, Nov 9).
+  Newegg $149.99 and Walmart $149.00 also confirmed (feed rows).
+  Midnight Black released 2025-02-20; the White Elite is a
+  different colorway. Excluded: PULSE 3D ($99.99), PULSE Explore
+  earbuds ($149.99–$199.99), White Elite ($149), skins-voucher
+  bundle ($229.99), earpads accessory ($19.99).
+- Logitech ERGO K860, Graphite, standard edition (920-009166) —
+  identifiers VERIFIED: UPC 097855151667 (Adorama US spec page,
+  MFR 920-009166 + B&H kit pages, K860 section + eBay US item
+  specifics agree), MPN 920-009166 (Dell manufacturer part + Best
+  Buy Model + Adorama MFR + CompSource + DirectDial agree).
+  Correction vs the 2026-10-31 candidate price: $119.99 was an
+  Amazon-only sale price (TechTimes 2026-10-19, 20% off the
+  $149.99 MSRP) and no Amazon price is used; the current
+  first-party list is $149.99. The feed's Dell $129.99 row is stale
+  (Dell page text now $149.99) and the feed's B&H $159.99 row is
+  the K860 for Business (920-010175, Logi Bolt). Quotes (3): Best
+  Buy $149.99 (page-verified JSON-LD InStock, sold by Best Buy,
+  SKU 6395346), Dell $149.99 (page text, MPN 920-009166), Newegg
+  $149.99 (feed row, 920-009166). Logitech US direct lists the
+  Business variant, not the standard consumer page, so no
+  Logitech-direct quote this batch. Excluded: K860 for Business
+  (920-010175, $139.99–$193.99), regional MPNs 920-009167/
+  920-010107/920-010348, K860+mouse kits ($224.98) and Mk860
+  bundle ($338.99), Woot $109.99 (deal-site row, not used).
+- Keychron K8 HE, Special Edition, Black, Gateron Double-Rail
+  Magnetic Nebula Switch (K8H-F1) — identifiers VERIFIED: EAN
+  4894979028990, SKU K8H-F1 (Keychron official store public
+  product JSON, browser-verified 2026-11-06; Special Edition
+  White K8H-Q1 is 4894979029003, Standard Black K8H-J1 is
+  4894979028952). Correction vs the 2026-10-31 candidate note:
+  $139.99 is the Special Edition (OSA double-shot PBT, wood
+  trim); the Standard Version is $129.99 (K8H-J1) and is currently
+  unavailable at Keychron. The feed's keychron.com $139.99 row is
+  the Japan JIS Layout product, a different layout, and was not
+  used. Quotes (1): Keychron direct $139.99 (official store JSON,
+  available: true; the K8 HE is sold only through Keychron's own
+  store). Excluded: Newegg rows $221.48–$273.99 (third-party
+  inflated), All-Wood Special Edition ($199.99), Lime-switch
+  variants (unavailable, no barcode), K8/K8 Pro/K8 Max/K8 Ultra
+  8K and Q1/Q5/Q6/J2/K10 HE rows.
+- Eval on the new snapshot: 67 models, 58 verified identifiers, 5
+  with quotes, 13 total quotes, 0 identifier-matched, 13 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 62 →
+  67 / 55 → 58 for the approved expansion).
