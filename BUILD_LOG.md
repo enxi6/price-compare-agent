@@ -4189,3 +4189,121 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   asus-rog-swift-oled-pg27ucwm-black, asus-rog-delta-ii-black,
   asus-rog-gladius-iv-ace-black, asus-rog-azoth-96-he-black,
   asus-rog-cetra-open-wireless-black).
+
+## 063 — 2026-11-06: Expansion batch 24 — 140 → 145 models (DECISIONS 046)
+
+- Membership check (against the 140-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): S2725QS — NO MATCH (the set has
+  dell-32-plus-4k-monitor-s3225qs, a different 32-inch monitor);
+  U3225QE — NO MATCH (the set has no UltraSharp); AW3225DM — NO
+  MATCH (the set has alienware-27-qd-oled-aw2726dm, a different
+  27-inch QD-OLED monitor, and no 32-inch AW3225DM); AW920K — NO
+  MATCH (the set has alienware-pro-wireless-gaming-keyboard-dark-
+  side-of-the-moon, a different keyboard; AW920K is named there
+  only as a not-copied different model); WB726 — NO MATCH (the set
+  has no webcam). None of the 5 duplicates an existing model on
+  name, MPN or UPC. Dell/Alienware keys already in the set:
+  dell-32-plus-4k-monitor-s3225qs, alienware-27-qd-oled-aw2726dm,
+  alienware-pro-wireless-gaming-mouse-dark-side-of-the-moon,
+  alienware-pro-wireless-gaming-keyboard-dark-side-of-the-moon,
+  alienware-pro-wireless-gaming-headset-dark-side-of-the-moon.
+- Dell 27 Plus 4K Monitor S2725QS, Ash White (T4CNF) —
+  identifiers PENDING: MPN confirmed (Dell US + CA pages agree;
+  AU 8PRJ8 / IE-UK V424D / SG-MY 2M7P9 are regional and were not
+  used), but the only UPC surfaced, 884116485117, is stated on
+  Amazon only (with a second code, 738060953201, on the same
+  listing), and the Icecat EAN 5397184962350 is a single-source EU
+  datasheet, so identifiers stay empty per the strict two-source
+  rule. Not copied: 884116485117 / 738060953201 (Amazon-only);
+  5397184962350 (Icecat-only EAN); 8PRJ8 / V424D / 2M7P9
+  (regional MPNs). Quotes (3): Dell $299.99 (feed brand_direct row
+  — suspected; Dell US page text carries no price); Newegg $299.99
+  (feed authorized_retailer row — suspected; page read fresh
+  2026-11-06 confirms the exact model, no price in text);
+  ThinkEdu $284.99 (feed authorized_retailer row — suspected).
+  Excluded: the Nexoltic $385.18 row (unconfirmed reseller), the
+  K-Rauta rows (Estonia, non-US), and every $279.99 figure traced
+  this round (Amazon prices — BetterBuyBase, Gadget Review — the
+  sweep's ~$279.99 is superseded for Dell direct). Dell US page
+  read fresh 2026-11-06 20:00 UTC: MPN T4CNF, Ash White, 27-inch
+  4K IPS 120 Hz, FreeSync Premium, 99% sRGB, dual 5 W speakers,
+  4.7 stars (616 reviews).
+- Dell UltraSharp 32 4K Thunderbolt Hub Monitor U3225QE, Silver
+  (3PVPJ) — identifiers VERIFIED: UPC 884116484561 (B&H Photo
+  spec page, MFR # U3225QE + CompTechDirect Icecat-derived listing,
+  EAN/UPC code 5397184923399 0884116484561, MFG # DELL-U3225QE
+  agree); MPN 3PVPJ (Dell US page, read fresh 2026-11-06 20:01
+  UTC). Not copied: the UK MPN FPG3K (regional). Quotes (5): Dell
+  $1,029.99 (feed brand_direct row — suspected; Dell US page text
+  carries no price); Target $799.99 (InStock, search-index JSON-LD
+  read 2026-11-06, listing A-1004931139); Adorama $799.00
+  (InStock, search-index JSON-LD read 2026-11-06); CDW $949.99
+  (feed authorized_retailer row — suspected); Newegg $1,099.99
+  (feed authorized_retailer row — suspected; the list price).
+  Excluded: the Target 2-pack bundle $1,699 (different product),
+  the second Target feed row $1,028.97 (listing A-1006296976,
+  conflicts with the $799.99 Target listing), the BuyItSolutions
+  $1,034.83 row (unconfirmed reseller), the K-Rauta rows (non-US).
+  The sweep's $1,099.99 is the list price, not the current Dell
+  price. Dell US page: 31.5-inch 4K IPS Black 120 Hz, Thunderbolt
+  4 hub, 140 W PD, 2.5GbE, KVM, Delta E <1.5.
+- Alienware 32 Curved Gaming Monitor AW3225DM, Dark Blue (VX89X)
+  — identifiers PENDING: MPN confirmed (Dell US + CA pages agree),
+  but no US UPC surfaced — the only code found is EAN
+  5397184962725 on a single Icecat datasheet (mirrored by
+  startech24, e-misija and manua.ls, all the same source family),
+  so identifiers stay empty per the strict two-source rule. Not
+  copied: 5397184962725 (Icecat-only EAN). Quotes (3): Dell
+  $249.99 (sale vs $299.99 list; Windows Central 2026-10-26 +
+  topsave.org 2026-10-23 + BUILD_LOG 058 Dell US sweep
+  2026-11-06); Best Buy $319.99 (InStock, page read fresh
+  2026-11-06, Model AW3225DM, SKU 6619487, Sold by Best Buy, 4.8
+  stars, 954 reviews); Newegg $370.30 (feed authorized_retailer
+  row — suspected; above list). Excluded: the Sigmatiendas $507.99
+  sale row (overseas). Dell US page read fresh 2026-11-06 20:01
+  UTC: MPN VX89X, Dark Blue (Best Buy calls the same colorway
+  Interstellar Indigo), 31.5-inch QHD VA 180 Hz 1500R curved,
+  FreeSync Premium, DisplayHDR 400, 4.4/5 (139 ratings).
+- Alienware Tri-Mode Wireless Gaming Keyboard AW920K, Dark Side of
+  the Moon (6R87M) — identifiers PENDING: no Dark Side UPC
+  surfaced — the only UPC found, 884116448686, is stated on a
+  single Icecat datasheet for AW920K-W-WW (the Lunar Light / White
+  colorway) and was not carried across colorways, so identifiers
+  stay empty per the strict two-source rule. Not copied:
+  884116448686 (Lunar Light only, Icecat-only); EAN 5397184790397
+  (same Icecat datasheet, Lunar Light). Quotes (1): Dell $159.99
+  (feed brand_direct row for the 6R87M Dark Side slug — suspected;
+  Dell US page text carries no price). Excluded: the Fnac $218.02
+  row (overseas marketplace) and the second Dell feed row $149.99
+  sale vs $159.99 list on the generic 520-bbcg accessories path
+  (colorway unstated — not attributed to the pinned variant).
+  Dell US page (6R87M slug) read fresh 2026-11-06 20:01 UTC:
+  Dark Side of the Moon confirmed by the slug and /dsotm/ image
+  paths, CHERRY MX Red, tri-mode, magnetic snap-on charging,
+  4.3/5 (326 ratings, 230 reviews).
+- Dell Pro 7 Webcam 4K WB726, Black (G4MYM) — identifiers
+  PENDING: MPN confirmed (Dell US page), but no US UPC surfaced —
+  the only code found is EAN 5397321028925 on Icecat datasheets
+  for WB726-EMEA (the EMEA part, mirrored by several EU resellers,
+  one source family), so identifiers stay empty per the strict
+  two-source rule. Not copied: 5397321028925 (Icecat-only EAN,
+  EMEA part). Quotes (1): Dell $199.99 (Dell US webcams category
+  pages, Offer ID V813W, Add to Cart, crawled 2026-11-06; product
+  page search-index read agrees at $199.99, Manufacturer part
+  V813W). Excluded: the silarius $209.99 sale row (mislabeled
+  brand_direct in the feed — unconfirmed reseller, not Dell) and
+  the shop.app $174 marketplace row (DECISIONS 021). The $189.99
+  figure in Lifewire's September 10 report is stale. Single
+  colorway (Black). New category "webcams" (precedent:
+  "microphones", DECISIONS 044).
+- Eval on the new snapshot: 145 models, 74 verified identifiers,
+  5 with quotes, 13 total quotes, 0 identifier-matched, 13
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 140 → 145, verified 73 → 74, for the continuous
+  expansion; the pending set gains the 4 new pending keys:
+  dell-27-plus-4k-monitor-s2725qs,
+  alienware-32-curved-gaming-monitor-aw3225dm,
+  alienware-tri-mode-wireless-gaming-keyboard-aw920k-dark-side-of-the-moon,
+  dell-pro-7-webcam-4k-wb726).

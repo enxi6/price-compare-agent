@@ -3596,6 +3596,208 @@ EVAL_SET: list[EvalProduct] = [
         "other earbuds — the Cetra Open Wireless is the first "
         "ASUS earbuds entry in the set.",
     ),
+    EvalProduct(
+        key="dell-27-plus-4k-monitor-s2725qs",
+        brand="Dell",
+        model="27 Plus 4K Monitor S2725QS",
+        variant="Ash White (T4CNF)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="Dell direct $299.99 (Meta Catalog feed brand_direct "
+        "row 2026-11-06 — suspected; not page-verified, Dell US "
+        "page text carries no price); Newegg $299.99 (feed "
+        "authorized_retailer row — suspected; page read fresh "
+        "2026-11-06 confirms the exact model but carries no "
+        "price); ThinkEdu $284.99 (feed authorized_retailer row "
+        "— suspected; not page-verified). Dell US page confirms "
+        "Manufacturer Part Number T4CNF, Ash White, 27-inch 4K "
+        "UHD IPS 120 Hz, FreeSync Premium, 99% sRGB, dual 5 W "
+        "speakers (page read fresh 2026-11-06). Identifiers "
+        "PENDING: MPN T4CNF confirmed (Dell US + CA pages agree; "
+        "the AU MPN 8PRJ8, IE/UK MPN V424D and SG/MY MPN 2M7P9 "
+        "are regional and were not used), but the only UPC "
+        "surfaced, 884116485117, is stated on Amazon only "
+        "(alongside a second code, 738060953201), and Amazon "
+        "never corroborates; the Icecat EAN 5397184962350 is a "
+        "single-source EU datasheet, so identifiers stay empty "
+        "per the DualSense precedent; re-check next refresh. Not "
+        "copied: 884116485117 (Amazon-only); 738060953201 "
+        "(Amazon-only, second code on the same listing); "
+        "5397184962350 (Icecat-only EAN); 8PRJ8 / V424D / 2M7P9 "
+        "(regional MPNs). Not the S2725QC (USB-C sibling, "
+        "$349.99) or the S2721QS (older 60 Hz model, $299.99). "
+        "The sweep's ~$279.99 is superseded for Dell direct — "
+        "the $279.99 figures traced this round are Amazon prices "
+        "(BetterBuyBase, Gadget Review), excluded per the "
+        "no-Amazon rule; the Dell feed row and Newegg both say "
+        "$299.99. Distinct from everything in the set — the "
+        "S2725QS (2025, Dell's mainstream 27-inch 4K 120 Hz "
+        "monitor) is the second Dell monitor in the set. "
+        "Re-check the $299.99 price after the Early Black Friday "
+        "event ends Nov 8.",
+    ),
+    EvalProduct(
+        key="dell-ultrasharp-32-4k-thunderbolt-hub-monitor-u3225qe",
+        brand="Dell",
+        model="UltraSharp 32 4K Thunderbolt Hub Monitor U3225QE",
+        variant="Silver (3PVPJ)",
+        category="monitors",
+        identifiers={"UPC": "884116484561", "MPN": "3PVPJ"},
+        identifier_sources={
+            "UPC": "B&H Photo spec page (UPC 884116484561, MFR # "
+            "U3225QE) + CompTechDirect Icecat-derived listing "
+            "(EAN/UPC code 5397184923399 0884116484561, MFG # "
+            "DELL-U3225QE) agree; Amazon also states the code "
+            "but is never a corroborating source"
+        },
+        status="verified",
+        notes="Dell direct $1,029.99 (Meta Catalog feed "
+        "brand_direct row 2026-11-06 — suspected; not "
+        "page-verified, Dell US page text carries no price); "
+        "Target $799.99 (InStock, search-index JSON-LD read "
+        "2026-11-06, listing A-1004931139); Adorama $799.00 "
+        "(InStock, search-index JSON-LD read 2026-11-06); CDW "
+        "$949.99 (feed authorized_retailer row — suspected; not "
+        "page-verified); Newegg $1,099.99 (feed "
+        "authorized_retailer row — suspected; the list price). "
+        "Dell US page confirms Manufacturer Part Number 3PVPJ, "
+        "Silver, 31.5-inch 4K UHD IPS Black 120 Hz, Thunderbolt "
+        "4 hub, 140 W PD, 2.5GbE, KVM (page read fresh "
+        "2026-11-06). The sweep's $1,099.99 is the list price, "
+        "not the current Dell price — the feed brand_direct row "
+        "says $1,029.99 and Target/Adorama are at ~$799. Not "
+        "copied: the UK MPN FPG3K (regional, Dell UK page) and "
+        "the EAN 5397184923399 on its own (the GTIN-12 form "
+        "0884116484561 is the recorded UPC). Not the U3223QE "
+        "(previous generation, $1,116.99) or the U3226Q QD-OLED "
+        "($2,599.99) or the P3225QE (100 Hz, standard IPS, "
+        "$559-$643.99). Excluded: the Target 2-pack bundle "
+        "$1,699 (different product), the second Target feed row "
+        "$1,028.97 (listing A-1006296976, conflicts with the "
+        "$799.99 Target listing — not used), the BuyItSolutions "
+        "$1,034.83 row (unconfirmed reseller), the K-Rauta rows "
+        "(Estonia, non-US). Distinct from everything in the "
+        "set — the U3225QE (Feb 2025, the world's first enhanced "
+        "IPS Black monitor, Dell's flagship 32-inch 4K hub "
+        "monitor) is the first UltraSharp in the set. Re-check "
+        "the $1,029.99 Dell price and the ~$799 street price "
+        "after the Early Black Friday event ends Nov 8.",
+    ),
+    EvalProduct(
+        key="alienware-32-curved-gaming-monitor-aw3225dm",
+        brand="Alienware",
+        model="32 Curved Gaming Monitor AW3225DM",
+        variant="Dark Blue (VX89X)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="Dell direct $249.99 (sale vs $299.99 list; Windows "
+        "Central 2026-10-26 'Alienware 32 (AW3225DM) for $249.99 "
+        "(was $299.99)' at Dell + topsave.org 2026-10-23 'Dell "
+        "has the Alienware 32 Curved Gaming Monitor (AW3225DM) "
+        "for $249.99, sold by Dell' + the BUILD_LOG 058 Dell US "
+        "sweep 2026-11-06); Best Buy $319.99 (InStock, page read "
+        "fresh 2026-11-06, Model AW3225DM, SKU 6619487, Sold by "
+        "Best Buy, 4.8 stars, 954 reviews); Newegg $370.30 "
+        "(feed authorized_retailer row — suspected; above list, "
+        "not page-verified). Dell US page confirms Manufacturer "
+        "Part Number VX89X, Dark Blue, 31.5-inch QHD VA 180 Hz "
+        "1500R curved, FreeSync Premium, DisplayHDR 400 (page "
+        "read fresh 2026-11-06); Best Buy calls the same "
+        "colorway Interstellar Indigo. Identifiers PENDING: MPN "
+        "VX89X confirmed (Dell US + CA pages agree), but no US "
+        "UPC surfaced — the only code found is EAN 5397184962725 "
+        "on a single Icecat datasheet (mirrored by startech24, "
+        "e-misija and manua.ls, all the same source family), so "
+        "identifiers stay empty per the DualSense precedent; "
+        "re-check next refresh. Not copied: 5397184962725 "
+        "(Icecat-only EAN). Not the AW3225QF (4K QD-OLED, "
+        "$999.99), the AW2725DM (27-inch, $269.99) or the "
+        "AW2726DM (27-inch QD-OLED, $319.99-$349.99, already in "
+        "the set). Excluded: the Sigmatiendas $507.99 sale row "
+        "(overseas). Distinct from everything in the set — the "
+        "AW3225DM (2025, Alienware's budget 32-inch curved QHD "
+        "gaming monitor) is the second Alienware monitor in the "
+        "set. Re-check the $249.99 sale price after the Early "
+        "Black Friday event ends Nov 8.",
+    ),
+    EvalProduct(
+        key="alienware-tri-mode-wireless-gaming-keyboard-aw920k-dark-side-of-the-moon",
+        brand="Alienware",
+        model="Tri-Mode Wireless Gaming Keyboard AW920K",
+        variant="Dark Side of the Moon (6R87M)",
+        category="keyboards",
+        identifiers={},
+        status="pending",
+        notes="Dell direct $159.99 (Meta Catalog feed brand_direct "
+        "row 2026-11-06 for the 6R87M Dark Side of the Moon slug "
+        "— suspected; not page-verified, Dell US page text "
+        "carries no price). Dell US page (6R87M slug, read fresh "
+        "2026-11-06) confirms the Dark Side of the Moon "
+        "colorway (slug + /dsotm/ image paths), CHERRY MX Red "
+        "switches, tri-mode 2.4 GHz / BT 5.1 / USB-C, magnetic "
+        "snap-on charging, 4.3/5 (326 ratings, 230 reviews). "
+        "Identifiers PENDING: no Dark Side UPC surfaced — the "
+        "only UPC found, 884116448686, is stated on a single "
+        "Icecat datasheet for AW920K-W-WW (the Lunar Light / "
+        "White colorway) and was not carried across colorways; "
+        "identifiers stay empty per the DualSense precedent; "
+        "re-check next refresh. Not copied: 884116448686 "
+        "(Lunar Light only, Icecat-only); EAN 5397184790397 "
+        "(same Icecat datasheet, Lunar Light). Not the AW920K "
+        "Lunar Light (different colorway, same $159.99) or the "
+        "Alienware Pro Wireless Keyboard (different keyboard, "
+        "$174.99, already in the set) or the AW510K ($129.99) "
+        "and AW420K ($99.99). Excluded: the Fnac $218.02 row "
+        "(overseas marketplace) and the second Dell feed row "
+        "$149.99 sale vs $159.99 list on the generic 520-bbcg "
+        "accessories path (colorway unstated — not attributed "
+        "to the pinned variant). Distinct from the set's "
+        "Logitech, Keychron, Razer, Corsair, HP and ASUS boards "
+        "— the AW920K (Dec 2023, Alienware's first tri-mode "
+        "wireless keyboard) is the second Alienware keyboard in "
+        "the set. Re-check the $159.99 price after the Early "
+        "Black Friday event ends Nov 8.",
+    ),
+    EvalProduct(
+        key="dell-pro-7-webcam-4k-wb726",
+        brand="Dell",
+        model="Pro 7 Webcam 4K WB726",
+        variant="Black (G4MYM)",
+        category="webcams",
+        identifiers={},
+        status="pending",
+        notes="Dell direct $199.99 (Dell US webcams category "
+        "pages, Offer ID V813W, Add to Cart, crawled 3 hours to "
+        "3 days ago 2026-11-06; the Dell US product page "
+        "search-index read agrees at $199.99, Manufacturer part "
+        "V813W, Dell part v813w). Dell US page confirms "
+        "Manufacturer Part Number G4MYM, 4K UHD 3840x2160 at "
+        "60 fps, Sony STARVIS CMOS sensor, 90-degree field of "
+        "view, Windows Hello, gesture control, presence sensing "
+        "(page read via search index 2026-11-06). Single "
+        "colorway (Black). Identifiers PENDING: MPN G4MYM "
+        "confirmed (Dell US page), but no US UPC surfaced — the "
+        "only code found is EAN 5397321028925 on Icecat "
+        "datasheets for WB726-EMEA (the EMEA part, mirrored by "
+        "several EU resellers, one source family), so "
+        "identifiers stay empty per the DualSense precedent; "
+        "re-check next refresh. Not copied: 5397321028925 "
+        "(Icecat-only EAN, EMEA part). Not the Pro 5 Webcam 2K "
+        "WB526 ($119.99, different webcam) or the WB7022 (older "
+        "model). Excluded: the silarius $209.99 sale row "
+        "(mislabeled brand_direct in the feed — unconfirmed "
+        "reseller, not Dell) and the shop.app $174 marketplace "
+        "row (DECISIONS 021). The $189.99 figure in Lifewire's "
+        "September 10 report is stale — Dell's current listing "
+        "is $199.99. Distinct from everything in the set — the "
+        "WB726 (June 2026, Dell's flagship AI webcam) is the "
+        "first webcam in the set and opens the new 'webcams' "
+        "category (precedent: 'microphones' opened the same "
+        "way). Re-check the $199.99 price after the Early Black "
+        "Friday event ends Nov 8.",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:

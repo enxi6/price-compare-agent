@@ -2107,3 +2107,100 @@ written as "superseded by" with the original text kept.
   197029615442, Cloud III UPC 197029008237, OMEN 27q G2 US UPC,
   Alloy Rise 75 UPC 197192334096, ULT WEAR $148.00, Sony direct
   CH720N $89.99).
+
+## 046 (2026-11-06): Expansion batch 24 — 140 → 145 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 Dell/Alienware models from the Dell held list
+  (BUILD_LOG 058/059), no per-batch user approval needed (DECISIONS
+  027): Dell 27 Plus 4K Monitor S2725QS, Ash White (T4CNF, UPC
+  pending), Dell UltraSharp 32 4K Thunderbolt Hub Monitor U3225QE,
+  Silver (3PVPJ, UPC 884116484561 verified), Alienware 32 Curved
+  Gaming Monitor AW3225DM, Dark Blue (VX89X, UPC pending),
+  Alienware Tri-Mode Wireless Gaming Keyboard AW920K, Dark Side of
+  the Moon (6R87M, UPC pending), Dell Pro 7 Webcam 4K WB726, Black
+  (G4MYM, UPC pending). One variant pinned per model (DECISIONS
+  015); 1 of 5 identifiers verified, the other 4 stay pending on
+  single-source, Amazon-only, or non-US-part codes. Verified-
+  identifier count 73 → 74. No model was split out of this batch.
+  One new category enters the set: "webcams" (WB726 — the first
+  webcam of any kind; precedent: "microphones" opened the same way
+  in DECISIONS 044). Dell is already in the set (S3225QS, batch
+  20); Alienware is already in the set (AW2726DM, Pro Mouse,
+  Pro Keyboard, Pro Headset, batch 20); the U3225QE is the first
+  UltraSharp in the set.
+- Why these 5: they are the best-evidenced Dell held candidates —
+  the Dell official US store sweep (BUILD_LOG 058) priced all five
+  and the US product pages confirm identity and MPN for each: the
+  mainstream 27-inch 4K 120 Hz monitor, the flagship 32-inch 4K
+  IPS Black Thunderbolt hub monitor, the budget 32-inch curved QHD
+  gaming monitor, Alienware's first tri-mode wireless keyboard,
+  and Dell's flagship AI webcam. No laptop or desktop pick: Dell
+  laptops and desktops are configurable with no retailer-pinned
+  base configuration (DECISIONS 015) — the sweep excluded them
+  rather than forcing one. All five are in stock new in the US on
+  2026-11-06 (Dell US pages / Best Buy / Target / Adorama reads);
+  no stock caveat applies to this batch.
+- What was corrected along the way: the S2725QS sweep price
+  ~$279.99 is superseded for Dell direct — the $279.99 figures
+  traced this round are Amazon prices (BetterBuyBase, Gadget
+  Review), excluded per the no-Amazon rule; the Dell feed
+  brand_direct row and Newegg both say $299.99, which is the
+  recorded Dell price. The U3225QE sweep price $1,099.99 is the
+  list price, not the current Dell price — the feed brand_direct
+  row says $1,029.99 and Target/Adorama are at ~$799. The AW920K
+  pins Dark Side of the Moon (6R87M slug, whose URL and /dsotm/
+  image paths name the colorway); the Lunar Light colorway is the
+  same $159.99 and is a different colorway, not a different model.
+  The WB726 $189.99 figure in Lifewire's September 10 report is
+  stale — Dell's current listing is $199.99 (category pages,
+  Add to Cart, crawled 2026-11-06). Dell identifiers are regional
+  by 5-character part code and were NOT carried across regions:
+  the S2725QS US/CA MPN is T4CNF while AU is 8PRJ8, IE/UK is
+  V424D and SG/MY is 2M7P9; the U3225QE US MPN is 3PVPJ while UK
+  is FPG3K. The U3225QE UPC 884116484561 is verified — B&H Photo
+  (UPC 884116484561, MFR # U3225QE) and CompTechDirect (EAN/UPC
+  code 5397184923399 0884116484561, MFG # DELL-U3225QE) agree.
+  The four pending UPCs were NOT recorded: S2725QS 884116485117
+  (Amazon-only, alongside a second code 738060953201 on the same
+  listing); AW3225DM EAN 5397184962725 (single Icecat datasheet,
+  mirrored by startech24/e-misija/manua.ls — one source family);
+  AW920K 884116448686 (single Icecat datasheet for AW920K-W-WW,
+  the Lunar Light colorway — not carried across colorways);
+  WB726 EAN 5397321028925 (Icecat datasheets for WB726-EMEA, the
+  EMEA part — not the US part).
+- What does NOT change: the existing 140 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–23 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 145 on
+  the next edit (parent owns the cron; not touched here). NOTE:
+  the cron's PM refresh (collected 2026-11-06 20:02 UTC, 100
+  models) rewrote data/eval_snapshots_2026-11-06.json in the
+  working tree during this batch; that file is the cron's work and
+  is NOT committed with this batch.
+- Revisit: re-check the five sale prices after the Early Black
+  Friday event ends Nov 8 (S2725QS $299.99, U3225QE $1,029.99
+  Dell / ~$799 street, AW3225DM $249.99 sale, AW920K $159.99,
+  WB726 $199.99); the four pending UPCs stay pending until a
+  second non-Amazon US source confirms each (S2725QS
+  884116485117 — Amazon-only; AW3225DM — no US UPC surfaced, only
+  the Icecat EAN 5397184962725; AW920K Dark Side — no UPC
+  surfaced, Lunar Light code 884116448686 not carried across;
+  WB726 — no US UPC surfaced, only the Icecat EAN 5397321028925
+  for the EMEA part); the second Target U3225QE feed row
+  $1,028.97 (listing A-1006296976) conflicts with the $799.99
+  Target listing and needs a sold-by check next refresh; the
+  remaining Dell held candidates (S2725DSM $189.99, S2725HSM
+  $159.99, S2425HSM $129.99, SE2426H $89.99, S3225QC $620.41,
+  AW3226DM $299.99, AW2726DL $229.99, AW2525HM $249.99, AW2725DM
+  $269.99, AW2725QF $499.99, AW3426DWM $399.99, AW3425DWM $349.99,
+  AW3926QW $1,099.99, AW2725Q $799.99, AW720M $79.99, AW620M
+  $86.99 sale, AW510K $129.99, AW420K $99.99, AW725H $149.99,
+  AW920H $109.99, AW520H $79.99, AW320M $69.99, Dell Pro
+  Thunderbolt 5 Smart Dock SD25TB5, Dell Premier Wireless ANC
+  Headset WL7022 $299.99, Dell Pro Plus Wireless Speakerphone
+  SL525) stay list-only for later batches; the batch 23 revisits
+  carry over unchanged (PG27UCWM stock + UPC 199291335226,
+  Delta II US UPC, Gladius IV Ace UPC, Azoth 96 HE UPC
+  199291008571, Cetra Open Wireless UPC conflict 199291232747 vs
+  199291232754, remaining ASUS candidates).

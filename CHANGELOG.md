@@ -11,6 +11,34 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 24 (DECISIONS 046, continuous expansion per
+  DECISIONS 027): eval set 140 → 145 models, verified identifiers
+  73 → 74 (1 of 5 new identifiers verified). New: Dell 27 Plus 4K
+  Monitor S2725QS, Ash White (T4CNF, UPC pending — code
+  884116485117 is Amazon-only; $299.99 at Dell direct, $299.99 at
+  Newegg, $284.99 at ThinkEdu — Dell's mainstream 27-inch 4K 120
+  Hz monitor, the second Dell monitor in the set), Dell UltraSharp
+  32 4K Thunderbolt Hub Monitor U3225QE, Silver (3PVPJ, UPC
+  884116484561 verified — B&H Photo + CompTechDirect agree;
+  $1,029.99 at Dell direct, $799.99 at Target, $799.00 at Adorama,
+  $949.99 at CDW — Dell's flagship 32-inch 4K IPS Black hub
+  monitor, the first UltraSharp in the set), Alienware 32 Curved
+  Gaming Monitor AW3225DM, Dark Blue (VX89X, UPC pending — only
+  the Icecat EAN 5397184962725; $249.99 sale at Dell direct,
+  $319.99 at Best Buy — Alienware's budget 32-inch curved QHD
+  gaming monitor, the second Alienware monitor in the set),
+  Alienware Tri-Mode Wireless Gaming Keyboard AW920K, Dark Side of
+  the Moon (6R87M, UPC pending — the only code found, 884116448686,
+  is Icecat-only for the Lunar Light colorway; $159.99 at Dell
+  direct — Alienware's first tri-mode wireless keyboard, the second
+  Alienware keyboard in the set), Dell Pro 7 Webcam 4K WB726, Black
+  (G4MYM, UPC pending — only the Icecat EAN 5397321028925 for the
+  EMEA part; $199.99 at Dell direct — Dell's flagship AI webcam,
+  the first webcam in the set — new category "webcams"). Not added:
+  all Dell laptops and desktops (configurable, no retailer-pinned
+  base configuration — DECISIONS 015); the remaining Dell held
+  candidates stay list-only for later batches.
+
 - Expansion batch 23 (DECISIONS 045, continuous expansion per
   DECISIONS 027): eval set 135 → 140 models, verified identifiers
   stay 73 (0 of 5 new identifiers verified — all pending). New:
