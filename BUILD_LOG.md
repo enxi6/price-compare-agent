@@ -2126,3 +2126,146 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (snapshot offers carry no identifier — the rule working, not a
   bug). Tests: 19 passed (test_snapshot_eval counts updated 77 →
   82 / 62 → 66 for the continuous expansion).
+
+## 050 — 2026-11-06: Expansion batch 12 — 82 → 87 models (DECISIONS 034)
+
+- Membership check (against the 82-model set, by name, MPN and UPC —
+  run programmatically against price_agent/catalog.py, no matches,
+  all 5 are new lines):
+  - Magic Keyboard Touch ID + Numeric Keypad White (MJM64LL/A, UPC
+    195951258324) vs apple-magic-mouse-usbc (MXK53AM/A, UPC
+    195949655883) and apple-magic-trackpad-usbc (MXK93AM/A, UPC
+    195949654305): the set has no keyboard from Apple at all; the
+    Keyboard is the distinct typing line, different MPN and UPC —
+    not a duplicate. The Black Keys MJM74LL/A ($199) is a different
+    colorway and was not added; the older MXK73LL/A is a superseded
+    part number for the same White variant, not a separate model.
+  - WF-C710N Black (WFC710N/B, UPC 027242931770) vs
+    sony-wf1000xm5-black (UPC 027242923232) and sony-wf1000xm6-black
+    (UPC 027242933460): the C710N is Sony's everyday mid-range
+    noise-cancelling earbud line, different MPN and UPC — not a
+    duplicate. White (UPC 027242931794), Glass Blue (027242931817)
+    and Pink are different colorways and were not added.
+  - LinkBuds Open Black (WFL910/B, UPC 027242928695) vs
+    sony-linkbuds-fit-black (WFLS910N/B, UPC 027242929289): the Open
+    is the distinct open-ring open-ear line, different MPN and UPC
+    — not a duplicate. The LinkBuds Clip (WFLC900, 2026 clip-on
+    line) is a different model and was not added. White (UPC
+    027242928701) is a different colorway and was not added.
+  - PRO X TKL LIGHTSPEED Tactile Black (920-012127, UPC
+    097855188984) vs logitech-g915-x-lightspeed-tactile-black
+    (920-012670, UPC 097855195005), logitech-g-pro-x-superlight-2-
+    black (910-006628) and -dex-black: the PRO X TKL is Logitech
+    G's standard tenkeyless wireless gaming keyboard, different MPN
+    and UPC from the low-profile G915 X and the Superlight mice —
+    not a duplicate. White 920-012143 and Magenta 920-012154 are
+    different colorways, Linear Black 920-012122 a different switch,
+    the PRO X TKL RAPID (920-013131) a different wired Hall-Effect
+    model, the PRO X 60 a different 60% model — none added.
+  - Keychron Q1 Knob Navy Blue Red (Q1-O1Z, EAN 4895248817345) vs
+    keychron-k8-hot-swappable-red (K8-G1, UPC 617748997921),
+    keychron-k8-he-special-black (K8H-F1) and keychron-k8-ultra-8k
+    (K8U-J1): the Q1 is the original 75% full-aluminum Q-series
+    line, different SKU and barcode from every K8 line — not a
+    duplicate. The Q1 Pro / Max / HE / Ultra 8K are different models
+    and were not added.
+- Apple Magic Keyboard with Touch ID and Numeric Keypad, US English,
+  White Keys (MJM64LL/A) — identifiers PENDING: MPN MJM64LL/A
+  confirmed (Apple US store page + Best Buy US Model MJM64LL/A, SKU
+  6556937 agree), but UPC 195951258324 is stated on the Apple US
+  store page only — no second source surfaced (Adorama lists the
+  older MXK73LL/A, Best Buy shows no UPC), so identifiers stay empty
+  per the Adaptive Controller / DualSense precedent. Quotes (3):
+  Apple direct $179.00 (JSON-LD InStock, page-verified), Best Buy
+  $179.99 (Model MJM64LL/A, SKU 6556937, Sold by Best Buy), NFM
+  $180.00 (feed row — suspected). Correction vs the 2026-10-31
+  candidate range $99-$199: $99 is the plain Magic Keyboard and
+  $129 the Numeric-Keypad-only Lightning model — different models;
+  the pinned Touch ID + Numeric Keypad USB-C White is $179. The
+  2026 MJM64LL/A supersedes MXK73LL/A (Adorama $179.00, on backorder
+  to 01/2027). Excluded: Black Keys MJM74LL/A $199 (different
+  colorway), plain Magic Keyboard $99 and iPad Magic Keyboards
+  $269/$319 (different models), Sweetwater $199 Black Keys (different
+  colorway).
+- Sony WF-C710N, Black (WFC710N/B) — identifiers VERIFIED: UPC
+  027242931770 (Amazon US product info, Model WFC710N/B, UPC
+  027242931770, ASIN B0DWHPBK42 + Snapklik, Model WFC710N/B, UPC
+  027242931770 + Beach Camera Meta Catalog feed row, brand field
+  027242931770, agree), MPN WFC710N/B (Sony + Best Buy agree).
+  Quotes (5): Best Buy $98.00 (Model WFC710N/B, SKU 6620461, Sold by
+  Best Buy, JSON-LD InStock, page-verified), Dell $129.99 (feed row,
+  Black), Beach Camera $98.00, Crutchfield $98.00, Abt $98.00 (feed
+  rows, Black). Correction vs the 2026-10-31 candidate price: $129.99
+  is the list price (Sony US store); the current street/sale price
+  is $98. Sony direct Black price was not freshly confirmed (the
+  Sony Black page crawl is stale at the $119.99 launch price; the
+  White page shows a $99.99 sale) and is not quoted. Excluded:
+  Target $78.99 Pink, Best Buy White $128 / Glass Blue $129.99
+  (different colorways), bundle rows, iCuracao / Ayoub / TechStop
+  (non-US), Snapklik $124.98/$129.98 (aggregator, seller unclear),
+  Macy's $98.00 (shipped/sold by Focus Camera via Macy's storefront).
+- Sony LinkBuds Open, Black (WFL910/B) — identifiers VERIFIED: UPC
+  027242928695 (Amazon US product info, Model WFL910B.UC, UPC
+  027242928695, ASIN B0DGVH7FJV + Simcoe Audio Video, authorized
+  Sony dealer, Barcode 027242928695, Black + Ubuy, UPC
+  027242928695, Model WFL910B.UC, agree), MPN WFL910/B (Sony + Best
+  Buy + Crutchfield agree). Note: an early guess of 027242928694 for
+  the Black UPC was wrong — the verified code ends 8695; the guess
+  was never recorded. Quotes (4): Sony direct $229.99 (JSON-LD,
+  'Only 3 left', page-verified), Dell $229.99 (feed row, Black),
+  Best Buy $228.00 (feed row, Black), BuyDig $228.00 (Part #
+  WFL910/B, In Stock, page-verified). Correction vs the 2026-10-31
+  candidate price: $229.99 is confirmed current at Sony direct and
+  Dell. Excluded: bkstr $199.99 (below-list edu-store price, variant
+  unconfirmed), FlexShopper $199.99 (marketplace), Macy's $228
+  bundle, Beach Camera $239.99 (above list, warranty bundle),
+  andreselectronicexperts $29,999 (garbage), LinkBuds Clip rows
+  (different model), White rows (different colorway), StackSocial
+  open-box $89.99 (not new).
+- Logitech PRO X TKL LIGHTSPEED, GX Brown Tactile, Black
+  (920-012127) — identifiers PENDING: MPN 920-012127 confirmed
+  (Best Buy US Model 920-012127, SKU 10111534 + BuyDig Part #
+  920-012127 + manuals.plus spec table + Amazon US ASIN B0BQBSH6NQ
+  agree), but UPC 097855188984 appears in eBay product identifiers
+  only — no second source surfaced, so identifiers stay empty per
+  the Adaptive Controller / DualSense precedent. Quotes (3): Lenovo
+  US $219.99 (Black, page-verified 'Available Soon' — price-only,
+  stock not confirmed), Focus Camera $219.99 (920-012127, feed row),
+  CDW $219.99 (feed row). Correction vs the 2026-10-31 candidate
+  price: $219.99 is confirmed as the current list (launch SRP was
+  $199); the Logitech G direct US price was not confirmed in page
+  text. Excluded: Newegg $299.99 (above list), Compsource Black
+  920-012118 $257.17 (above list, OutOfStock, different/older Black
+  listing), Woot Magenta open-box $109.99 (deal/clearance, different
+  colorway), Target $202.99 (sold by antonline — marketplace),
+  Rakuten Magenta $219.99 and Best Buy White $151.99 / Magenta
+  $189.99 sale rows (different colorways), shopabunda Linear $164.99
+  (different switch, fulfilled by Amazon), PRO X TKL RAPID and PRO
+  X 60 rows (different models).
+- Keychron Q1 Version 2, Fully Assembled Knob, Navy Blue - B,
+  Gateron G Pro Red (Q1-O1Z) — identifiers PENDING: SKU Q1-O1Z and
+  EAN 4895248817345 come from the Keychron official store public
+  product JSON only (product id 7043863576665, variant 39974600015961,
+  available:true, $89.99, compare $189.99) — no second source
+  surfaced, so identifiers stay empty per the Adaptive Controller /
+  DualSense precedent. Quotes (1): Keychron direct $89.99 (sale, was
+  $189.99, JSON available:true, page-verified 2026-11-06). Variant
+  pinning: the page-default in-stock variant — Fully Assembled Knob
+  / Navy Blue - B / Gateron G Pro Red; the Carbon Black knob Red
+  Q1-M1Z (EAN 4895248817284) and all Carbon Black / Silver Grey knob
+  variants are out of stock in this read, while Navy Blue - B
+  Red/Blue/Brown and the Barebone Knob Carbon Black / Navy Blue are
+  in stock. Correction vs the 2026-10-31 candidate range
+  $229.99-$254.99: that was the Q-line range (the Q1 Max is $229.99),
+  not the base Q1 — the base Q1 V2 fully assembled knob lists
+  $189.99 and is currently $89.99 on sale. Excluded: Woot $79.99
+  (deal/clearance, Blue switch — different switch), Q1 Pro/Max/HE/
+  Ultra 8K rows (different models), Q1 plates and keycap sets
+  (accessories), Q1 barebone rows ($59.99-$85.99, different
+  configurations). Like the K8, the base Q1 is sold through
+  Keychron's own store only, so it holds a single quote.
+- Eval on the new snapshot: 87 models, 68 verified identifiers, 5
+  with quotes, 16 total quotes, 0 identifier-matched, 16 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 82 →
+  87 / 66 → 68 for the continuous expansion).

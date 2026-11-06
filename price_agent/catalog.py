@@ -1,4 +1,4 @@
-"""Phase 1 evaluation set: 82 standardized electronics models, US market.
+"""Phase 1 evaluation set: 87 standardized electronics models, US market.
 
 Identifier policy (DECISIONS 002): an identifier is recorded only when a
 retailer or manufacturer listing states it for the exact pinned variant.
@@ -1980,6 +1980,141 @@ EVAL_SET: list[EvalProduct] = [
         "the base K8 is sold through Keychron's own store "
         "only, so it holds a single quote.",
         status="verified",
+    ),
+    EvalProduct(
+        key="apple-magic-keyboard-touch-id-numeric-keypad-white",
+        brand="Apple",
+        model="Magic Keyboard with Touch ID and Numeric Keypad (USB-C)",
+        variant="US English, White Keys (MJM64LL/A)",
+        category="keyboards",
+        notes="Apple direct $179.00 (US store page JSON-LD, InStock, "
+        "page-verified 2026-11-06); Best Buy $179.99 (Model MJM64LL/A, "
+        "SKU 6556937, Sold by Best Buy); NFM $180.00 (feed row, White). "
+        "MPN MJM64LL/A confirmed (Apple US store page + Best Buy US "
+        "listing agree). UPC 195951258324 is stated on the Apple US store "
+        "page only — no second source surfaced (Adorama lists the older "
+        "MXK73LL/A, Best Buy shows no UPC), so identifiers stay empty per "
+        "the Adaptive Controller / DualSense precedent; re-check next "
+        "refresh. Correction vs the 2026-10-31 candidate range $99-$199: "
+        "$99 is the plain Magic Keyboard (different model) and $129 the "
+        "Numeric-Keypad-only Lightning model; the Touch ID + Numeric "
+        "Keypad USB-C White is $179 (Black Keys MJM74LL/A is $199, a "
+        "different colorway). The 2026 MJM64LL/A supersedes the older "
+        "MXK73LL/A (Adorama, $179.00, on backorder to 01/2027). Distinct "
+        "from the set's Magic Mouse USB-C White (MXK53AM/A) and Magic "
+        "Trackpad USB-C White (MXK93AM/A) — the Keyboard is the distinct "
+        "typing line, not a mouse or trackpad.",
+    ),
+    EvalProduct(
+        key="sony-wf-c710n-black",
+        brand="Sony",
+        model="WF-C710N",
+        variant="Black (WFC710N/B)",
+        category="earbuds",
+        identifiers={"UPC": "027242931770", "MPN": "WFC710N/B"},
+        identifier_sources={
+            "UPC": "Amazon US product info (Model WFC710N/B, UPC "
+            "027242931770, ASIN B0DWHPBK42) + Snapklik (Model WFC710N/B, "
+            "UPC 027242931770) + Beach Camera Meta Catalog feed row "
+            "(brand field 027242931770) agree. The White UPC is "
+            "027242931794 and the Glass Blue UPC is 027242931817 — "
+            "different colorways, both excluded."
+        },
+        notes="Best Buy $98.00 (Model WFC710N/B, SKU 6620461, Sold by Best "
+        "Buy, JSON-LD InStock, page-verified 2026-11-06); Dell $129.99 "
+        "(feed row, Black); Beach Camera $98.00, Crutchfield $98.00, Abt "
+        "$98.00 (feed rows, Black). Correction vs the 2026-10-31 "
+        "candidate price: $129.99 is the list price (Sony US store), "
+        "while the current street/sale price is $98 at Best Buy, Abt, "
+        "Crutchfield and Beach Camera. Sony direct Black price was not "
+        "freshly confirmed (the Sony Black page crawl is stale at the "
+        "$119.99 launch price; the White page shows a $99.99 sale) — "
+        "re-check next refresh. Distinct from the set's WF-1000XM5/XM6 "
+        "Black — the C710N (2025) is Sony's everyday mid-range "
+        "noise-cancelling line. White, Glass Blue and Pink are different "
+        "colorways.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-linkbuds-open-black",
+        brand="Sony",
+        model="LinkBuds Open",
+        variant="Black (WFL910/B)",
+        category="earbuds",
+        identifiers={"UPC": "027242928695", "MPN": "WFL910/B"},
+        identifier_sources={
+            "UPC": "Amazon US product info (Model WFL910B.UC, UPC "
+            "027242928695, ASIN B0DGVH7FJV) + Simcoe Audio Video "
+            "(authorized Sony dealer, Barcode 027242928695, Black) + "
+            "Ubuy (UPC 027242928695, Model WFL910B.UC) agree. The White "
+            "UPC is 027242928701 (B&H + Abt agree) — a different "
+            "colorway, excluded."
+        },
+        notes="Sony direct $229.99 (electronics.sony.com WFL910/B page, "
+        "JSON-LD $229.99, 'Only 3 left', page-verified 2026-11-06); Dell "
+        "$229.99 (feed row, Black); Best Buy $228.00 (feed row, Black); "
+        "BuyDig $228.00 (Part # WFL910/B, In Stock, page-verified). "
+        "Correction vs the 2026-10-31 candidate price: $229.99 is "
+        "confirmed current at Sony direct and Dell. Distinct from the "
+        "set's LinkBuds Fit Black (WFLS910N/B) — the Open (WF-L910, "
+        "2024, open-ring driver) is the distinct open-ear line, not the "
+        "noise-cancelling Fit; the LinkBuds Clip (WFLC900, 2026 clip-on "
+        "line) is a different model and its rows were excluded. Sony "
+        "direct stock is low ('Only 3 left') — re-check next refresh.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="logitech-pro-x-tkl-lightspeed-tactile-black",
+        brand="Logitech",
+        model="PRO X TKL LIGHTSPEED",
+        variant="GX Brown Tactile, Black (920-012127)",
+        category="keyboards",
+        notes="Lenovo US $219.99 (Black, page-verified 'Available Soon' — "
+        "price-only, stock not confirmed); Focus Camera $219.99 "
+        "(920-012127, feed row); CDW $219.99 (feed row). MPN 920-012127 "
+        "confirmed (Best Buy US Model 920-012127, SKU 10111534 + BuyDig "
+        "Part # 920-012127 + manuals.plus spec table + Amazon US ASIN "
+        "B0BQBSH6NQ agree). UPC 097855188984 appears in eBay product "
+        "identifiers only — no second source surfaced, so identifiers "
+        "stay empty per the Adaptive Controller / DualSense precedent; "
+        "re-check next refresh. Correction vs the 2026-10-31 candidate "
+        "price: $219.99 is confirmed as the current list (the launch SRP "
+        "was $199); the Logitech G direct US price was not confirmed in "
+        "page text — re-check. White 920-012143 ($151.99 sale) and "
+        "Magenta 920-012154 ($189.99 sale) are different colorways; "
+        "Linear Black 920-012122 is a different switch; the PRO X TKL "
+        "RAPID (920-013131, wired Hall-Effect) and the PRO X 60 (60%) "
+        "are different models. Distinct from the set's G915 X "
+        "LIGHTSPEED Tactile Black (920-012670, low-profile) and the PRO "
+        "X Superlight 2 mice — the PRO X TKL is Logitech G's standard "
+        "tenkeyless wireless gaming keyboard.",
+    ),
+    EvalProduct(
+        key="keychron-q1-knob-navy-blue-red",
+        brand="Keychron",
+        model="Q1 (Version 2)",
+        variant="Fully Assembled Knob, Navy Blue - B, Gateron G Pro Red (Q1-O1Z)",
+        category="keyboards",
+        notes="Keychron direct $89.99 (sale, was $189.99; official store "
+        "public product JSON, variant Q1-O1Z available:true, "
+        "page-verified 2026-11-06). SKU Q1-O1Z and EAN 4895248817345 "
+        "come from the Keychron JSON only — no second source surfaced, "
+        "so identifiers stay empty per the Adaptive Controller / "
+        "DualSense precedent; re-check next refresh. Correction vs the "
+        "2026-10-31 candidate range $229.99-$254.99: that was the Q-line "
+        "range (the Q1 Max is $229.99), not the base Q1 — the base Q1 V2 "
+        "fully assembled knob lists $189.99 and is currently $89.99 on "
+        "sale at Keychron direct. Variant pinning: the page-default "
+        "in-stock variant — Fully Assembled Knob / Navy Blue - B / "
+        "Gateron G Pro Red; the Carbon Black knob Red Q1-M1Z (EAN "
+        "4895248817284) and all Carbon Black / Silver Grey knob variants "
+        "are out of stock in this read, while Navy Blue - B Red/Blue/"
+        "Brown and the Barebone Knob Carbon Black / Navy Blue are in "
+        "stock. The Q1 Pro / Max / HE / Ultra 8K are different models. "
+        "Distinct from the set's K8 lines (K8-G1, K8 HE, K8 Ultra 8K) — "
+        "the Q1 is the original 75% full-aluminum Q-series line. Like "
+        "the K8, the base Q1 is sold through Keychron's own store only, "
+        "so it holds a single quote.",
     ),
 ]
 

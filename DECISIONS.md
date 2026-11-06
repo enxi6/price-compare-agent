@@ -1054,6 +1054,84 @@ written as "superseded by" with the original text kept.
   not in stock; the ULT WEAR $148.00 Black Friday street price
   should be re-checked after Nov 8 (batch 9 revisit, still open).
 
+## 034 (2026-11-06): Expansion batch 12 — 82 → 87 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models from the remaining brand-sweep candidates
+  (BUILD_LOG 020/022/024/025), no per-batch user approval needed
+  (DECISIONS 027): Apple Magic Keyboard with Touch ID and Numeric
+  Keypad USB-C, US English, White Keys (MJM64LL/A, UPC pending),
+  Sony WF-C710N Black (WFC710N/B, UPC 027242931770), Sony LinkBuds
+  Open Black (WFL910/B, UPC 027242928695), Logitech PRO X TKL
+  LIGHTSPEED GX Brown Tactile Black (920-012127, UPC pending),
+  Keychron Q1 Version 2 Fully Assembled Knob, Navy Blue - B, Gateron
+  G Pro Red (Q1-O1Z, EAN pending). One variant pinned per model
+  (DECISIONS 015); 2 of 5 identifiers verified, 3 stay pending on
+  single-source-only UPC/EAN codes (Apple page only, eBay only,
+  Keychron JSON only — Adaptive Controller / DualSense precedent,
+  not a reason to hold the batch).
+- Why these 5: they are the next un-added mainstream lines from the
+  five brand sweeps, each distinct from the set (first Magic Keyboard
+  in the set, and the distinct typing line vs the Magic Mouse and
+  Magic Trackpad; C710N is Sony's everyday mid-range
+  noise-cancelling earbud line, not a 1000X flagship; LinkBuds Open
+  is Sony's open-ring open-ear line, not the noise-cancelling
+  LinkBuds Fit; PRO X TKL is Logitech G's standard tenkeyless
+  wireless gaming keyboard, not the low-profile G915 X; base Q1 is
+  the original 75% full-aluminum Q-series line vs the K8 lines and
+  the Q1 Pro/Max/HE/Ultra 8K successors). All five are in stock new
+  in the US on 2026-11-06 (brand-direct pages or InStock JSON-LD),
+  except the Lenovo PRO X TKL price-only row and the Sony direct
+  WF-C710N Black price, which was not freshly confirmed at all (see
+  below).
+- What was corrected along the way: the Magic Keyboard candidate
+  range $99–$199 spans three different models — $99 is the plain
+  Magic Keyboard, $129 the Numeric-Keypad-only Lightning model; the
+  pinned Touch ID + Numeric Keypad USB-C White is $179 ($199 Black
+  Keys MJM74LL/A, a different colorway), and the 2026 MJM64LL/A
+  supersedes the older MXK73LL/A (Adorama, on backorder to 01/2027);
+  the WF-C710N candidate price $129.99 is the list price (Sony US
+  store) while the current street/sale price is $98 at Best Buy,
+  Abt, Crutchfield and Beach Camera; the LinkBuds Open candidate
+  price $229.99 is confirmed current at Sony direct and Dell; the
+  PRO X TKL candidate price $219.99 is confirmed as the current list
+  (launch SRP was $199) while the Logitech G direct US price was not
+  confirmed in page text; the Keychron Q1 candidate range
+  $229.99–$254.99 was the Q-line range (the Q1 Max is $229.99), not
+  the base Q1 — the base Q1 V2 fully assembled knob lists $189.99
+  and is currently $89.99 on sale at Keychron direct.
+- Variant pinning, recorded explicitly: Magic Keyboard pins the
+  Touch ID + Numeric Keypad USB-C, US English, White Keys
+  (MJM64LL/A) — the full-size keyboard line, not the plain or
+  numeric-only models; PRO X TKL pins LIGHTSPEED, GX Brown Tactile,
+  Black (920-012127) — the standard US variant, per Best Buy Model
+  920-012127 / SKU 10111534 (White 920-012143 and Magenta 920-012154
+  are different colorways, Linear Black 920-012122 a different
+  switch); Q1 pins the page-default in-stock variant, Fully
+  Assembled Knob / Navy Blue - B / Gateron G Pro Red (Q1-O1Z) — the
+  Carbon Black knob Red Q1-M1Z and all Carbon Black / Silver Grey
+  knob variants are out of stock in this read, while Navy Blue - B
+  Red/Blue/Brown and the Barebone Knob variants are in stock.
+- What does NOT change: the existing 82 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro untouched,
+  batches 1–11 entries untouched). No other snapshot file is rewritten.
+  No Amazon touch. The daily refresh cron still says "57 models" in
+  its body and needs a count update to 87 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: Magic Keyboard UPC 195951258324 (Apple page only), PRO X
+  TKL UPC 097855188984 (eBay product identifiers only) and Q1-O1Z
+  EAN 4895248817345 (Keychron JSON only) stay pending until a second
+  source confirms each; Sony direct WF-C710N Black price was not
+  freshly confirmed (stale page at the $119.99 launch price; White
+  page shows a $99.99 sale) — re-check next refresh; LinkBuds Open
+  Sony direct stock is low ("Only 3 left") — re-check next refresh;
+  Lenovo US PRO X TKL Black $219.99 is price-only ("Available Soon")
+  — re-check stock next refresh; the Keychron Q1 $89.99 is a sale
+  price (was $189.99) — re-check after the sale ends; the ULT WEAR
+  $148.00 Black Friday street price should be re-checked after
+  Nov 8 (batch 9 revisit, still open); the Sony direct CH720N
+  $89.99 is a sale price and should be re-checked after the sale
+  ends.
+
 ## 033 (2026-11-06): Expansion batch 11 — 77 → 82 models (continuous expansion, DECISIONS 027)
 
 - Decision: add 5 models from the remaining brand-sweep candidates

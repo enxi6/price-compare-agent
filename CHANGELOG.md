@@ -11,6 +11,32 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 12 (DECISIONS 034, continuous expansion per
+  DECISIONS 027): eval set 82 → 87 models, 66 → 68 verified
+  identifiers. New: Apple Magic Keyboard with Touch ID and Numeric
+  Keypad USB-C, US English, White Keys (MJM64LL/A, UPC pending —
+  195951258324 stated on the Apple US store page only; $179 at
+  Apple direct, $179.99 at Best Buy — the $99–$199 candidate range
+  spanned three different models, and the 2026 MJM64LL/A supersedes
+  the older MXK73LL/A), Sony WF-C710N Black (WFC710N/B, UPC
+  027242931770; $129.99 is the list price while the current
+  street/sale price is $98 at Best Buy, Abt, Crutchfield and Beach
+  Camera), Sony LinkBuds Open Black (WFL910/B, UPC 027242928695;
+  $229.99 confirmed current at Sony direct and Dell — Sony direct
+  stock is low, "Only 3 left"), Logitech PRO X TKL LIGHTSPEED GX
+  Brown Tactile Black (920-012127, UPC pending — 097855188984 in
+  eBay product identifiers only; $219.99 is the current list, launch
+  SRP was $199; Logitech G direct US price not confirmed in page
+  text), Keychron Q1 Version 2 Fully Assembled Knob, Navy Blue - B,
+  Gateron G Pro Red (Q1-O1Z, EAN pending — 4895248817345 in the
+  Keychron product JSON only; $89.99 sale, was $189.99 — the
+  $229.99–$254.99 candidate range was the Q-line range, the Q1 Max
+  is $229.99). New snapshot
+  `data/eval_snapshots_batch12_2026-11-06.json` holds 16 quotes
+  across the 5 models (Magic Keyboard: 3, WF-C710N: 5, LinkBuds
+  Open: 4, PRO X TKL: 3, Q1: 1). DECISIONS 021 applied to every
+  quote: no marketplace/third-party rows, no non-US rows, no Amazon.
+
 - Expansion batch 11 (DECISIONS 033, continuous expansion per
   DECISIONS 027): eval set 77 → 82 models, 62 → 66 verified
   identifiers. New: Apple Magic Trackpad USB-C White (MXK93AM/A,
