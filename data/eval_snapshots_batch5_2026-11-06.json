@@ -1,0 +1,119 @@
+{
+ "meta": {
+  "collected_at": "2026-11-06T17:55:00Z",
+  "source": "Meta Catalog (2026-11-06) + brand-direct pages (page text / search-index reads, read-only)",
+  "sources_note": "Expansion batch 5 (DECISIONS 026, user-approved 2026-11-06): 5 new models, 15 quotes. Meta Catalog CLI run 2026-11-06 (20 rows per model; raw files data/meta_catalog_raw_{ipadair13,dualsenseedge,joyconpair,mxvertical,qcearbuds}_2026-11-06.json, gitignored). Brand-direct prices verified read-only 2026-11-06 ~17:40-17:52 UTC (09:40-09:52 PT): no sign-in, no cart, no purchase. Apple direct iPad Air 13 $949.00 (apple.com US buy page JSON-LD, price-only); Nintendo direct Joy-Con Neon Red/Neon Blue $89.99 (JSON-LD InStock, SKU 104882, UPC 00045496590130); Logitech direct MX Vertical $99.99 sale (was $119.99, In stock, JSON-LD); Bose direct QC Earbuds $119.00 sale (was $179.00, ends 2026-11-08). PlayStation Direct US Edge page not reached; the feed's direct.playstation.com $30 row is not a real price. Excluded as captured: marketplace/third-party rows (DECISIONS 021) - Newegg Joy-Con $89.99 (seller not confirmed), Best Buy Joy-Con $115.61 (above MSRP), Ayoub rows, refurbished rows, jawa.gg marketplace row; non-US rows - PBTech NZ Edge UPC 711719586555, regional Apple part numbers (MH5N4TY/A, MH5N4QA/A, MH5N4X/A, MH5N4KN/A), 2020 QC Earbuds 831262-0010."
+ },
+ "models": {
+  "apple-ipad-air-m4-13": {
+   "offers": [
+    {
+     "merchant": "Apple direct",
+     "price": 949.0,
+     "title": "13-inch iPad Air Wi-Fi 128GB - Space Gray (MH5N4LL/A, apple.com US buy page JSON-LD, price-only)",
+     "url": "https://www.apple.com/shop/buy-ipad/ipad-air/13-inch-display-128gb-space-gray-wifi"
+    },
+    {
+     "merchant": "Best Buy",
+     "price": 949.0,
+     "title": "Apple - 13-inch iPad Air M4 chip Wi-Fi 128GB - Space Gray (Model MH5N4LL/A, SKU 6586913, sold by Best Buy, InStock)",
+     "url": "https://www.bestbuy.com/product/6586913/6586913"
+    }
+   ]
+  },
+  "sony-dualsense-edge-black-white": {
+   "offers": [
+    {
+     "merchant": "Kohl's",
+     "price": 199.99,
+     "title": "Sony PlayStation 5 DualSense Edge Wireless Controller - Black & White",
+     "url": "https://www.kohls.com/product/prd-7200319/sony-playstation-5-dualsense-edge-wireless-controller-black-white.jsp"
+    },
+    {
+     "merchant": "P.C. Richard",
+     "price": 199.99,
+     "title": "DualSense Edge Wireless Controller for PS5 - Black & White (Model 1000035016)",
+     "url": "https://www.pcrichard.com/dualsense-edge-wireless-controller-for-ps5-black-and-white/1000035016.html"
+    },
+    {
+     "merchant": "R.C. Willey",
+     "price": 199.99,
+     "title": "Sony DualSense Edge Wireless Controller PS5 - Black and White",
+     "url": "https://www.rcwilley.com/Electronics/Gaming/Controllers/PS5-DUALSENSE-EDGE/112990215/Sony-DualSense-Edge-Wireless-Controller-PS5---Black-and-White-View"
+    },
+    {
+     "merchant": "Abt",
+     "price": 199.99,
+     "title": "Sony PlayStation 5 PS5 DualSense Edge White Wireless Controller - 1000035016",
+     "url": "https://www.abt.com/Sony-PlayStation-5-PS5-DualSense-Edge-White-Wireless-Controller-1000035016/p/190839.html"
+    }
+   ]
+  },
+  "nintendo-joy-con-pair-neon-red-neon-blue": {
+   "offers": [
+    {
+     "merchant": "Nintendo direct",
+     "price": 89.99,
+     "title": "Joy-Con (L)/(R) Neon Red/Neon Blue (SKU 104882, UPC 00045496590130, JSON-LD InStock)",
+     "url": "https://www.nintendo.com/us/store/products/joy-con-set-l-r-neon-red-neon-blue/"
+    },
+    {
+     "merchant": "NFM",
+     "price": 89.99,
+     "title": "Nintendo Joy-Con Neon Red (Left) and Neon Blue (Right) - Nintendo Switch",
+     "url": "https://www.nfm.com/nintendo-joy-con-neon-red-left-and-neon-blue-right---nintendo-switch-48535645/48535645.html"
+    }
+   ]
+  },
+  "logitech-mx-vertical-graphite": {
+   "offers": [
+    {
+     "merchant": "Logitech direct",
+     "price": 99.99,
+     "title": "Logitech MX Vertical Ergonomic Wireless Mouse in Graphite (sale, was $119.99, In stock, JSON-LD)",
+     "url": "https://www.logitech.com/en-us/shop/p/mx-vertical-ergonomic-mouse.910-005447"
+    },
+    {
+     "merchant": "Staples",
+     "price": 99.99,
+     "title": "Logitech MX Vertical Wireless Ergonomic Optical Mouse, Graphite (910-005447) (sale, was $119.99)",
+     "url": "https://www.staples.com/logitech-mx-advanced-ergonomic-vertical-wireless-usb-mouse-graphite-910-005447/product_24342520"
+    },
+    {
+     "merchant": "Dell",
+     "price": 99.99,
+     "title": "Logitech mx vertical mouse - graphite (sale, was $119.99)",
+     "url": "https://www.dell.com/en-us/shop/mice-mini-mice/apd/aa303022/pc-accessories"
+    }
+   ]
+  },
+  "bose-qc-earbuds-black": {
+   "offers": [
+    {
+     "merchant": "Bose direct",
+     "price": 119.0,
+     "title": "Bose QuietComfort Earbuds (sale, was $179.00, ends 2026-11-08)",
+     "url": "https://www.bose.com/p/earbuds/bose-quietcomfort-headphones/QCEARB24-HEADPHONEIN.html"
+    },
+    {
+     "merchant": "P.C. Richard",
+     "price": 129.0,
+     "title": "Bose - QuietComfort True Wireless Noise Cancelling In-Ear Earbuds - Black (MPN 888507-0100) (sale, was $179.00)",
+     "url": "https://www.pcrichard.com/bose-quietcomfort-true-wireless-noise-cancelling-in-ear-earbuds-black/QCEARBUDSBLK.html"
+    },
+    {
+     "merchant": "Macy's",
+     "price": 179.0,
+     "title": "QuietComfort Wireless Noise-Canceling Earbuds",
+     "url": "https://www.macys.com/shop/product/bose-quietcomfort-wireless-noise-canceling-earbuds?ID=27330285"
+    },
+    {
+     "merchant": "CDW",
+     "price": 179.0,
+     "title": "Bose Quietcomfort Earbuds - True Wireless Earphones With Mic - Black",
+     "url": "https://www.cdw.com/product/bose-quietcomfort-earbuds-true-wireless-earphones-with-mic-black/8082502"
+    }
+   ]
+  }
+ }
+}

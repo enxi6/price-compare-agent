@@ -90,6 +90,30 @@ releases; breaking changes are called out in the release notes.
   UPC second-source strength (PayMore + eBay; Best Buy states no
   UPC).
 
+- Expansion batch 5 (DECISIONS 026, user 2026-11-06): eval set
+  47 → 52 models — Apple iPad Air 13-inch (M4) 128GB Wi-Fi Space
+  Gray (MH5N4LL/A, UPC 195950797817), Sony DualSense Edge Black &
+  White (CFI-ZCP1, UPC pending — three conflicting codes, no two
+  independent US sources agree), Nintendo Joy-Con (L)/(R) Neon
+  Red/Neon Blue pair (HACAJAEAA, UPC 045496590130), Logitech MX
+  Vertical Graphite (910-005447, UPC 097855144461), Bose
+  QuietComfort Earbuds (2024) Black (888507-0100, UPC
+  017817853460). Membership check re-run against the 47-model set
+  (BUILD_LOG 042): no candidate matched an existing model by name,
+  MPN, or UPC, so all five were added — no split, no drop. New
+  snapshot `data/eval_snapshots_batch5_2026-11-06.json` holds 15
+  quotes across the 5 models (iPad Air 13: 2, DualSense Edge: 4,
+  Joy-Con pair: 2, MX Vertical: 3, QC Earbuds: 4), all DECISIONS
+  021-clean. Existing 47 entries untouched; no Amazon touch. Eval:
+  52 models, 47 verified identifiers, 15 quotes, 0
+  identifier-matched, 15 suspected. Two direct prices are
+  price-only (stock not confirmed): Apple direct iPad Air 13
+  $949.00, Bose direct QC Earbuds $119.00 sale (was $179.00, ends
+  2026-11-08). Open items: DualSense Edge UPC (711719444190 vs
+  711719585552 vs 711719586555); Bose candidate price $129
+  corrected (list $179.00); MX Vertical $99.99 is the sale price,
+  list $119.99.
+
 ### Changed
 
 - Daily price refresh 2026-11-06 (first daily run): all 28 models

@@ -1,4 +1,4 @@
-"""Phase 1 evaluation set: 47 standardized electronics models, US market.
+"""Phase 1 evaluation set: 52 standardized electronics models, US market.
 
 Identifier policy (DECISIONS 002): an identifier is recorded only when a
 retailer or manufacturer listing states it for the exact pinned variant.
@@ -857,6 +857,124 @@ EVAL_SET: list[EvalProduct] = [
         "$129, price-only); T-Mobile $129.99. The Best Buy $119.99 "
         "row (SKU 12951378) is sold by TheRightOne, a marketplace "
         "seller — excluded per DECISIONS 021.",
+        status="verified",
+    ),
+    # --- Expansion batch 5 (2026-11-06, user-approved, DECISIONS 026) ---
+    # 47 -> 52 models.
+    EvalProduct(
+        key="apple-ipad-air-m4-13",
+        brand="Apple",
+        model="iPad Air 13-inch (M4, 2026)",
+        variant="M4, 128GB Wi-Fi, Space Gray (MH5N4LL/A)",
+        category="tablets",
+        identifiers={"UPC": "195950797817", "MPN": "MH5N4LL/A"},
+        identifier_sources={
+            "UPC": "Abt US (Model MH5N4LL/A, UPC 195950797817) + "
+            "iGiftcardz (MPN MH5N4LL/A, UPC 195950797817, EAN "
+            "0195950797817) agree. Regional part numbers MH5N4TY/A "
+            "(CY), MH5N4QA/A (ZA), MH5N4X/A (AU), MH5N4KN/A (IE) are "
+            "different SKUs; US is MH5N4LL/A. Best Buy US (SKU "
+            "6586913) confirms the MPN. Wi-Fi + Cellular (MH9D4LL/A) "
+            "is a different SKU."
+        },
+        notes="Apple direct $949.00 (apple.com US buy page JSON-LD, "
+        "price-only); Best Buy $949.00 (sold by Best Buy, InStock, "
+        "SKU 6586913).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-dualsense-edge-black-white",
+        brand="Sony",
+        model="DualSense Edge Wireless Controller",
+        variant="Black & White (CFI-ZCP1)",
+        category="controllers",
+        notes="MPN CFI-ZCP1 confirmed (PlayStation official page, "
+        "PBTech, Desertcart, eBay) but the UPC is unresolved: "
+        "711719444190 (Desertcart GTIN 00711719444190 + Albagame "
+        "barcode + itworkup EAN + startech24 datasheet) vs "
+        "711719585552 (eBay product catalog, ePID 10058650690, "
+        "Glacier White) vs 711719586555 (PBTech NZ, regional) — no "
+        "two independent US sources agree, so identifiers stay "
+        "empty per the DualSense White precedent. Midnight Black "
+        "(MPN 1000046706, UPC 711719596554) is a different colorway "
+        "whose support is Amazon-derived only, not pinned. Kohl's "
+        "$199.99 (Black & White); P.C. Richard $199.99 (Black & "
+        "White, Model 1000035016); R.C. Willey $199.99 (Black and "
+        "White); Abt $199.99 (Model 1000035016). PlayStation Direct "
+        "US page not reached; the feed's direct.playstation.com "
+        "$30 row is not a real price and was excluded.",
+        status="pending",
+    ),
+    EvalProduct(
+        key="nintendo-joy-con-pair-neon-red-neon-blue",
+        brand="Nintendo",
+        model="Joy-Con (L)/(R)",
+        variant="Neon Red/Neon Blue (HACAJAEAA)",
+        category="controllers",
+        identifiers={"UPC": "045496590130", "MPN": "HACAJAEAA"},
+        identifier_sources={
+            "UPC": "Nintendo US official store page (SKU 104882, UPC "
+            "00045496590130) + eBay product catalog (MPN HACAJAEAA, "
+            "UPC 0045496590130) + PayMore US spec table (MPN HAC-015, "
+            "UPC 045496590130) agree. HAC-015 / HAC-016 are the "
+            "individual left/right controller model numbers; the "
+            "retail pair MPN is HACAJAEAA. One PayMore storefront "
+            "lists an outlier UPC 190403045002, not used."
+        },
+        notes="Nintendo direct $89.99 (nintendo.com US store, "
+        "JSON-LD InStock, SKU 104882); NFM $89.99. Best Buy $115.61 "
+        "excluded (above MSRP); Newegg $89.99 excluded (seller not "
+        "confirmed as merchant itself); Ayoub $79 excluded "
+        "(overseas seller, DECISIONS 021).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="logitech-mx-vertical-graphite",
+        brand="Logitech",
+        model="MX Vertical Ergonomic Wireless Mouse",
+        variant="Graphite (910-005447)",
+        category="mice",
+        identifiers={"UPC": "097855144461", "MPN": "910-005447"},
+        identifier_sources={
+            "UPC": "Govets (Part # 910-005447, UPC 097855144461) + "
+            "Compsource (MPN 910-005447, UPC 097855144461) + "
+            "Desertcart (GTIN 00097855144461, Mfr Part 910-005447) + "
+            "CamelCamelCamel (UPC 097855144461, Model 910-005447, "
+            "list $119.99) agree. The 910-005449 row in the feed is "
+            "a different regional SKU."
+        },
+        notes="Logitech direct $99.99 (sale, was $119.99, In stock, "
+        "JSON-LD); Staples $99.99 (sale, was $119.99, Graphite "
+        "910-005447); Dell $99.99 (sale, was $119.99). Candidate "
+        "price $99.99 is the current sale price, not the list "
+        "($119.99). The feed's B&H $74.99 sale figure was not "
+        "page-verified and was not carried; a second conflicting "
+        "Dell feed row ($99.99 / sale $89.99) was excluded.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="bose-qc-earbuds-black",
+        brand="Bose",
+        model="QuietComfort Earbuds (2024)",
+        variant="Black (888507-0100)",
+        category="earbuds",
+        identifiers={"UPC": "017817853460", "MPN": "888507-0100"},
+        identifier_sources={
+            "UPC": "Abt US (Model 888507-0100, UPC 017817853460) + "
+            "Adorama spec table (Black Earbuds: 017817853460) + "
+            "Ubuy (GTIN 00017817853460, Mfr Part 888507-0100) + "
+            "Desertcart (GTIN 00017817853460, ASIN B0D8BZDPXB) + "
+            "eBay (MPN 888507-0100, UPC 017817853460) agree. The "
+            "2020 QC Earbuds (831262-0010, UPC 017817804516) is a "
+            "different model. White Smoke is 888507-0200, a "
+            "different SKU."
+        },
+        notes="Bose direct $119.00 (sale, was $179.00, ends "
+        "2026-11-08); P.C. Richard $129.00 (sale, was $179.00); "
+        "Macy's $179.00; CDW $179.00 (Black). Candidate price $129 "
+        "was wrong as a list price: list is $179.00, $129 is "
+        "P.C. Richard's sale price and $119 is Bose direct's "
+        "current sale price.",
         status="verified",
     ),
 ]

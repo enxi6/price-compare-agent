@@ -1255,3 +1255,92 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (snapshot offers carry no identifier — the rule working, not a
   bug). Tests: 19 passed (test_snapshot_eval counts updated 42 →
   47 / 38 → 43 for the approved expansion).
+
+## 042 (2026-11-06): Expansion batch 5 — 5 models added, 47 → 52 (user-approved)
+
+- Membership check (skill): read the 47-model key list from
+  `price_agent/catalog.py` before adding anything. No candidate
+  matched an existing model by name, MPN, or UPC: no `ipad-air-13`,
+  `dualsense-edge`, `joy-con-pair`, `mx-vertical`, or `qc-earbuds`
+  key existed; the set's iPad Air is the 11-inch M4 only, the only
+  DualSense is the standard White, the only Joy-Con is the Switch 2
+  pair, the only Logitech vertical mice are Lift, and the only Bose
+  earbuds entry is QC Ultra 2 Black. All five were added; none was
+  dropped. (Batch 3's AirPods 5 precedent was checked against and
+  did not recur.)
+- Apple iPad Air 13-inch (M4), 128GB Wi-Fi, Space Gray (MH5N4LL/A)
+  — identifiers VERIFIED: UPC 195950797817 (Abt US Model MH5N4LL/A
+  + iGiftcardz MPN MH5N4LL/A, EAN 0195950797817 agree), MPN
+  MH5N4LL/A (Staples US + Quill + Best Buy US SKU 6586913 agree).
+  Regional part numbers MH5N4TY/A (CY), MH5N4QA/A (ZA), MH5N4X/A
+  (AU), MH5N4KN/A (IE) excluded as different SKUs. Quotes (2, both
+  $949.00): Apple direct $949.00 (apple.com US buy page JSON-LD,
+  price-only), Best Buy $949.00 (sold by Best Buy, InStock, SKU
+  6586913). Excluded: Wi-Fi + Cellular 128GB $1,099 (MH9D4LL/A,
+  different SKU); 256GB/512GB/1TB rows; Magic Keyboard $319 rows;
+  T-Mobile/AT&T $30.56 installment rows; HSN $1,629.99 bundle.
+- Sony DualSense Edge, Black & White (CFI-ZCP1) — identifiers
+  PENDING: MPN CFI-ZCP1 confirmed (PlayStation official page +
+  PBTech + Desertcart + eBay), but the UPC is unresolved:
+  711719444190 (Desertcart GTIN 00711719444190 + Albagame barcode
+  711719444190 + itworkup EAN + startech24 datasheet EAN
+  0711719444190) vs 711719585552 (eBay product catalog ePID
+  10058650690, Glacier White, repeated across eBay listings) vs
+  711719586555 (PBTech NZ, regional) — no two independent US sources
+  agree, so identifiers stay empty per the DualSense White
+  precedent. Midnight Black (MPN 1000046706, UPC 711719596554) is a
+  different colorway with Amazon-derived-only support (Desertcart +
+  Ubuy, ASIN B0DSQQ1P8D), not pinned. Quotes (4, all $199.99):
+  Kohl's $199.99 (Black & White), P.C. Richard $199.99 (Black &
+  White, Model 1000035016), R.C. Willey $199.99 (Black and White),
+  Abt $199.99 (Model 1000035016). Excluded: direct.playstation.com
+  $30 row (not a real price); Macy's $224.95 (above MSRP); Ayoub
+  $187/$199 rows (overseas seller); standard DualSense color rows
+  ($74.99-$87.25, different model); Target $199.99 MSRP seen but
+  not carried.
+- Nintendo Joy-Con (L)/(R) Neon Red/Neon Blue pair (HACAJAEAA) —
+  identifiers VERIFIED: UPC 045496590130 (Nintendo US official
+  store page, SKU 104882, UPC 00045496590130 + eBay product catalog
+  MPN HACAJAEAA, UPC 0045496590130 + PayMore US spec table MPN
+  HAC-015, UPC 045496590130 agree), MPN HACAJAEAA (eBay + PicClick).
+  HAC-015/HAC-016 are the individual left/right controller model
+  numbers; the retail pair MPN is HACAJAEAA. Quotes (2, both
+  $89.99): Nintendo direct $89.99 (JSON-LD InStock, SKU 104882),
+  NFM $89.99. Excluded: Best Buy $115.61 (above MSRP); Newegg
+  $89.99 (seller not confirmed as merchant itself); Ayoub $79
+  (overseas seller); singles $34.99/$44.99; refurbished rows;
+  other color pairs (Neon Purple/Neon Orange, Pastel Purple/Green,
+  Neon Pink/Neon Green); one PayMore storefront's outlier UPC
+  190403045002, not used.
+- Logitech MX Vertical, Graphite (910-005447) — identifiers
+  VERIFIED: UPC 097855144461 (Govets Part # 910-005447 + Compsource
+  MPN 910-005447 + Desertcart GTIN 00097855144461 + CamelCamelCamel
+  UPC 097855144461, Model 910-005447, list $119.99 agree), MPN
+  910-005447. Quotes (3, all $99.99 sale): Logitech direct $99.99
+  (sale, was $119.99, In stock, JSON-LD), Staples $99.99 (sale, was
+  $119.99, Graphite 910-005447), Dell $99.99 (sale, was $119.99).
+  Candidate price $99.99 is the current sale price; list is
+  $119.99. Excluded: B&H feed sale figure $74.99 (not
+  page-verified, not carried; list $119.99); second conflicting Dell
+  feed row ($99.99 / sale $89.99); Lift rows ($59.99-$79.99,
+  different model); 910-005449 row (different regional SKU);
+  drop-shipper rows.
+- Bose QuietComfort Earbuds (2024), Black (888507-0100) —
+  identifiers VERIFIED: UPC 017817853460 (Abt US Model 888507-0100
+  + Adorama spec table Black Earbuds 017817853460 + Ubuy GTIN
+  00017817853460 + Desertcart GTIN 00017817853460, ASIN B0D8BZDPXB
+  + eBay MPN 888507-0100 agree), MPN 888507-0100 (P.C. Richard +
+  Abt + Adorama MFR). Quotes (4): Bose direct $119.00 (sale, was
+  $179.00, ends 2026-11-08), P.C. Richard $129.00 (sale, was
+  $179.00), Macy's $179.00, CDW $179.00 (Black). Candidate price
+  $129 was wrong as a list price: list is $179.00; $129 is
+  P.C. Richard's sale price and $119 is Bose direct's current sale
+  price. Excluded: 2020 QC Earbuds 831262-0010 (UPC 017817804516,
+  different model); QC Earbuds II $279 row (different model);
+  refurbished $149 row; White Smoke 888507-0200 (different SKU);
+  Ayoub $224 (overseas seller).
+- Eval on the new snapshot: 52 models, 47 verified identifiers, 5
+  with quotes, 15 total quotes, 0 identifier-matched, 15 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 47 →
+  52 / 43 → 47 for the approved expansion).

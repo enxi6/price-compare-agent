@@ -670,3 +670,71 @@ written as "superseded by" with the original text kept.
   US source once the part-number conflict settles; PS5 Digital UPC
   rests on PayMore + eBay (Best Buy's page states no UPC) — a US
   retailer spec page would strengthen it.
+
+## 026 (2026-11-06): Expansion batch 5 — eval set 47 → 52, one model per brand
+
+- Decision (user, 2026-11-06, "按这 5 款加"): add the fifth expansion
+  batch, each brand's current mainstream/new product, drawn from the
+  brand-catalog candidate lists (BUILD_LOG 020/022/023/024/025). Four
+  were verified and added, one added with identifiers pending, 47 →
+  52, verified identifiers 43 → 47. (a) Apple iPad Air 13-inch (M4),
+  128GB Wi-Fi, Space Gray — `apple-ipad-air-m4-13`, MPN MH5N4LL/A,
+  UPC 195950797817 (Abt US + iGiftcardz agree; Best Buy US SKU
+  6586913 confirms the MPN). $949. (b) Sony DualSense Edge, Black &
+  White — `sony-dualsense-edge-black-white`, MPN CFI-ZCP1 confirmed,
+  UPC PENDING (see below). $199.99. (c) Nintendo Joy-Con (L)/(R)
+  Neon Red/Neon Blue pair — `nintendo-joy-con-pair-neon-red-neon-blue`,
+  MPN HACAJAEAA, UPC 045496590130 (Nintendo US official store page,
+  SKU 104882, UPC 00045496590130 + eBay + PayMore agree). $89.99.
+  (d) Logitech MX Vertical, Graphite — `logitech-mx-vertical-graphite`,
+  MPN 910-005447, UPC 097855144461 (Govets + Compsource + Desertcart
+  GTIN + CamelCamelCamel agree). $99.99 sale (was $119.99). (e) Bose
+  QuietComfort Earbuds (2024), Black — `bose-qc-earbuds-black`, MPN
+  888507-0100, UPC 017817853460 (Abt US + Adorama spec table + Ubuy
+  GTIN + Desertcart + eBay agree). $119.00 sale (was $179.00).
+- Membership check (skill, re-done by the batch worker, BUILD_LOG 042):
+  the 47-model key list was read before adding anything; none of the
+  five candidates matched an existing model by name, MPN, or UPC
+  (no ipad-air-13, dualsense-edge, joy-con-pair, mx-vertical, or
+  qc-earbuds key existed; the set's only iPad Air is the 11-inch M4,
+  the only DualSense is the standard White, the only Joy-Con is the
+  Switch 2 pair, the only Logitech vertical mice are Lift, and the
+  only Bose earbuds entry is QC Ultra 2). No candidate was dropped.
+- DualSense Edge UPC is the batch's open item: MPN CFI-ZCP1 is
+  confirmed, but three UPCs circulate for the Black & White version —
+  711719444190 (Desertcart GTIN 00711719444190 + Albagame barcode +
+  itworkup EAN + startech24 datasheet), 711719585552 (eBay product
+  catalog, ePID 10058650690, Glacier White), 711719586555 (PBTech NZ,
+  regional) — and no two independent US sources agree, so identifiers
+  stay empty per the DualSense White precedent (DECISIONS 002). The
+  Midnight Black variant (MPN 1000046706, UPC 711719596554) is
+  consistent across Desertcart/Ubuy but both are Amazon-derived, so
+  it was not pinned as a substitute. The Edge UPC needs a US retailer
+  spec page or a physical box barcode.
+- Variant corrections vs the 2026-10-31 candidate prices: Bose QC
+  Earbuds $129 → list $179.00 (Bose direct sale $119.00 to
+  2026-11-08, P.C. Richard sale $129.00); MX Vertical $99.99 is the
+  current sale price, list $119.99 (Logitech direct, Staples, Dell
+  all $99.99 sale / $119.99 list). iPad Air 13 $949, DualSense Edge
+  $199.99, Joy-Con pair $89.99 confirmed as listed.
+- What changes in practice: new snapshot
+  `data/eval_snapshots_batch5_2026-11-06.json` holds 15 quotes
+  across the 5 models (iPad Air 13: 2, DualSense Edge: 4, Joy-Con
+  pair: 2, MX Vertical: 3, QC Earbuds: 4). DECISIONS 021 applied to
+  every quote: no marketplace/third-party rows, no non-US rows, no
+  Amazon. Three direct prices are price-only (stock not confirmed in
+  the page text): Apple direct iPad Air 13 $949.00, Bose direct QC
+  Earbuds $119.00 (sale). PlayStation Direct US Edge page not
+  reached; the feed's direct.playstation.com $30 row is not a real
+  price and was excluded.
+- What does NOT change: the existing 47 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense identifiers untouched,
+  MacBook Pro 14 M6 untouched, batches 1–4 entries untouched). No
+  other snapshot file is rewritten. No Amazon touch. The daily refresh
+  cron still says "47 models" in its body and needs a count update to
+  52 on the next edit (parent owns the cron; not touched here).
+- Revisit: the user has authorized continuous expansion to 200 models
+  without per-batch approval (2026-11-06, recorded in MEMORY.md), so
+  further batches proceed under the same skill + DECISIONS 021 rules
+  from 52 models up; DualSense Edge UPC stays pending until a US
+  retailer spec page or box barcode settles it.
