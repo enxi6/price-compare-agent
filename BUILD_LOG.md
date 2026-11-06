@@ -5548,3 +5548,172 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   continuous expansion; the pending set gains the 2 new pending
   keys: keychron-k2-he-special-black,
   dell-ultrasharp-27-4k-thunderbolt-hub-monitor-u2725qe).
+
+## 072 — 2026-11-06: Expansion batch 33 — 185 → 190 models (DECISIONS 055)
+
+- Membership check (against the 185-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): Bose SoundLink Max — NO MATCH
+  (no SoundLink Max in the set; 883848-0100 and 017817848817
+  match nothing); Bose QuietComfort Headphones — NO MATCH (no
+  plain QuietComfort Headphones in the set — the set has the
+  QuietComfort Ultra Headphones 2nd Gen, a different model;
+  884367-0100 and 017817848961 match nothing; 880066-0100 is the
+  QC Ultra 1st Gen, checked and not used); Keychron K2 Max — NO
+  MATCH (no K2 Max in the set; K2M-C4, K2M-A1, K2M-J3 and
+  4895248880271 match nothing); ASUS ProArt PA279CRV — NO MATCH
+  (no PA279CRV in the set; PA279CRV and 195553951531 match
+  nothing); HyperX Cloud III Black — NO MATCH (the set has the
+  Cloud III Black-Red 727A9AA and the Cloud III S Wireless
+  Black-Red, both different SKUs; 727A8AA and 197029008220 match
+  nothing); Microsoft Bluetooth Ergonomic Mouse — NO MATCH but
+  skipped (see skipped list); Dell UltraSharp U3425WE — NO MATCH
+  but held (see skipped list). No candidate was dropped by the
+  membership check.
+- Bose SoundLink Max, Black (883848-0100) — identifiers VERIFIED:
+  UPC 017817848817 + MPN 883848-0100 (Adorama spec table, MFR
+  883848-0100, Black Speaker UPC 017817848817, Blue Dusk
+  017817848824, + Layup, Model 883848-0100, UPC 017817848817,
+  agree; Amazon US and eBay listings agreeing on the same code
+  were read but not cited and not used). Quotes (3): Bose direct
+  $399.00 list / $329.00 sale (feed brand_direct rows —
+  suspected; the bose.com page text shows no price, same as
+  batch 32's Flex); Adorama $399.00 (page read fresh 2026-11-06
+  21:58 UTC, SKU BO8838480100, MFR 883848-0100, 4.7/5 from 912
+  reviews); Abt $399.00 (search-index read, JSON-LD InStock,
+  Model 883848-0100). Portable Bluetooth speaker, IP67, Bluetooth
+  5.3, up to 20 hours battery, USB-C power-bank output, removable
+  rope handle, launched May 2024. Excluded: the refurbished $319
+  row; the Blue Dusk rows; the $402.99 bundle rows (speaker + aux
+  cable + charger); the speaker-with-case UPCs 192223266810/803
+  (different SKUs). Not the Blue Dusk (017817848824) — different
+  SKU.
+- Bose QuietComfort Headphones (2023), Black (884367-0100) —
+  identifiers VERIFIED: UPC 017817848961 + MPN 884367-0100
+  (Best Buy US specs, Model 884367-0100, UPC 017817848961, +
+  Reverb bundle row, MPN 884367-0100-1K, UPC 17817848961 — the
+  same code without its leading zero, + BuyAdvanced GTIN
+  00017817848961 agree; VIP Outlet's SKU VIP017817848961MN
+  embeds the same code; an Amazon US listing agreeing on the
+  same code was read but not cited and not used). MPN
+  corroborated by Crutchfield (MFR # 884367-0100) + The Good
+  Guys (Model 884367-0100). Quotes (2): Bose direct $359.00 list
+  / $169.00 sale (feed brand_direct rows — suspected; the
+  bose.com page read fresh 2026-11-06 21:59 UTC confirms the
+  model — successor to the QuietComfort 45 — but shows no price;
+  DealNews 2026-11-04, verified 2026-11-05, reports $169 matched
+  at Target and Bose direct); Crutchfield $359.00 (search-index
+  read, In stock, Item # 018QCHPBK, MFR # 884367-0100).
+  Excluded: the Best Buy $225.00 JSON-LD row (page read fresh
+  2026-11-06 21:58 UTC) — sold & shipped by GD Electronics, a
+  marketplace seller (DECISIONS 021). The $169.00 is a Black
+  Friday sale — re-check after the sale ends Nov 8. Over-ear
+  wireless noise-cancelling headphones, up to 24 hours battery,
+  Quiet/Aware modes, launched Sep 2023. Correction: 880066-0100
+  is the QuietComfort Ultra (1st Gen), not the plain
+  QuietComfort Headphones — the plain 2023 model is 884367-0100
+  (corrected before pinning). Not the QuietComfort Headphones
+  (2nd Gen, launched 2025) or the QuietComfort SC (884367-0900,
+  soft case, Costco/Best Buy only) or the QuietComfort Ultra
+  (880066-0100) — different models. Not the manuals.plus
+  732262048246 (a -cr suffixed listing, different SKU).
+- Keychron K2 Max, Black / RGB Backlight Aluminum Frame /
+  Keychron Super Banana (K2M-C4) — identifiers PENDING: the
+  Keychron official store public product JSON (read fresh
+  2026-11-06 22:00 UTC) gives variant 41767535870041 (Black /
+  RGB Backlight Aluminum Frame / Keychron Super Banana, SKU
+  K2M-C4, $114.99, available: true) barcode 4895248880271, but
+  no second independent source states that barcode — the B&H
+  search surfaced no US row for K2M-C4, and the datagate.ee row
+  is K2M-J3 (a different RGB/Black variant) — so identifiers
+  stay empty per the strict two-source rule, same call as batch
+  32's K2 HE. Not copied: 4895248880271 (single-source
+  candidate). MPN K2M-C4 is Keychron-store-only, so it is not
+  recorded either (0 MPN-only entries in the set). Quotes (1):
+  Keychron direct $114.99 (official store JSON, available:
+  true; 75% ANSI, QMK, 2.4 GHz / Bluetooth 5.1 / USB-C, 1000 Hz
+  polling, hot-swappable, 4000 mAh, up to 190 hours, double-shot
+  PBT keycaps). No second US retailer row surfaced for the exact
+  K2M-C4 variant — Zenox HK (929 HKD) and PCCaseGear AU are
+  non-US, and the feed's $124.99 ISO Layout Collection row is a
+  different layout — so this entry carries a single quote;
+  re-check for a second retailer quote next refresh. Not the
+  K2M-A1 (White Backlight Banana, Amazon B0DXBM2TQM) or the
+  K2M-J3 (RGB/Black) or the K2 Pro or the K2 Version 3 ($109.99
+  ISO) — different variants/models.
+- ASUS ProArt Display PA279CRV (PA279CRV, 90LM08E0-B01KB2) —
+  identifiers VERIFIED: UPC 195553951531 + MPN PA279CRV (B&H
+  Photo, PA279CRV, UPC 195553951531, $429.00 InStock, page read
+  fresh 2026-11-06 21:57 UTC, + EPA ENERGY STAR registry,
+  PA279CRV family, UPC Codes 195553951531, + EPEAT registry,
+  PA279CRV, UPCs including 195553951531, agree. EPEAT lists
+  several UPCs for the family — 195553951500, ...517, ...531,
+  197105747869, 199291205994 — the B&H listing ties ...531 to
+  the standalone US monitor, so ...531 is the recorded code;
+  the others are not copied). Quotes (3): ASUS eShop $429.00
+  (feed brand_direct row, shop.asus.com/us/90lm08e0-b01kb2);
+  B&H $429.00 (page read fresh 2026-11-06 21:57 UTC, JSON-LD
+  InStock); ASUS US product page $429.00 (feed brand_direct row
+  — suspected; not page-read this round). This is the retry of
+  the batch 32 hold: the hold reason is gone — the feed now
+  carries ASUS-direct rows at $429.00 and B&H confirms the same
+  price in stock, so the street rows are no longer thin.
+  27-inch 4K UHD IPS, 99% DCI-P3 / 99% Adobe RGB, Delta E <2
+  Calman Verified, USB-C 96W PD, DisplayHDR 400, daisy-chain
+  DisplayPort out, launched 2023. Excluded: the PA279CRV-P
+  $469.00 B&H row (different variant); the PA279CV $399.00 rows
+  (the older model); the $499/$498.99 retailer rows; the $569
+  (was $652.99) row; the $687.20 non-US row; the $785
+  marketplace row.
+- HyperX Cloud III Gaming Headset, Black (727A8AA) —
+  identifiers PENDING: MPN 727A8AA is corroborated (HP US
+  product page, Product # 727A8AA + Best Buy, Model 727A8AA, SKU
+  6542541 + HyperX ROW atom feed, SKU 727A8AA, Black), but the
+  only UPC found, 197029008220, is stated on Amazon-lineage
+  listings only (Amazon US, UPC 197029008220, GTIN
+  00197029008220; BuyAdvanced repeats the same Amazon-derived
+  code) — and the set's Black-Red Cloud III (727A9AA) was left
+  pending on exactly the same call, so identifiers stay empty
+  per the strict two-source rule; re-check next refresh. Not
+  copied: 197029008220 (single-lineage candidate). MPN 727A8AA
+  is not recorded either (0 MPN-only entries in the set).
+  Quotes (3): HP direct $99.99 (search-index read, $99.99 USD,
+  Product # 727A8AA); Best Buy $69.99 Holiday Deal (page read
+  fresh 2026-11-06 21:58 UTC, JSON-LD InStock, Sold by Best Buy,
+  Comp. Value $99.99); CompSource $120.22 (search-index read,
+  JSON-LD InStock, authorized HP dealer). The $69.99 is a
+  Holiday Deal — re-check after the Early Black Friday event
+  ends Nov 8. Wired gaming headset, 53mm angled drivers, DTS
+  Headphone:X, 10mm detachable mic, USB-C/USB-A/3.5mm, launched
+  2023. Not the Black-Red (727A9AA, already in the set as
+  hyperx-cloud-iii-black-red) or the Cloud III Wireless (77Z45AA,
+  $149.99 list / $99.99 sale at HP) or the Cloud III S Wireless
+  ($179.99) — different SKUs/models.
+- Skipped this batch, list-only: Microsoft Bluetooth Ergonomic
+  Mouse — feed is messy after Microsoft's accessories exit:
+  the Microsoft brand_direct row is Peach $107.98 (an odd,
+  likely stale price), the clean rows are Incase ("Designed by
+  Microsoft") $77.66/$78.58, and no clean Black US Microsoft
+  row surfaced, so no variant could be pinned with confidence;
+  the Microsoft Bluetooth Mouse Black $34.70 row is a different
+  model with a single thin row — both stay list-only for a later
+  batch; Dell UltraSharp 34 Curved Thunderbolt Hub Monitor
+  U3425WE — feed has only bundle rows ($1,895.99 2-pack,
+  $945 with cables), no clean standalone Dell-direct row, held
+  for a later batch; Keychron K3 Max — no clean feed row
+  surfaced (the K3 Max search returned the K3 Ultra 8K $109.99
+  White instead), stays list-only; Keychron Q1 Max — no clean
+  brand_direct row in the dedicated search ($317.29
+  authorized_retailer row only), stays list-only; ASUS ProArt
+  PA279CRV-P — $469.00, a different variant, not pinned; Garmin
+  dash cams — blocked by DECISIONS 016 until the
+  category-expansion phase. No phones and no TVs were
+  considered (new categories, DECISIONS 016).
+- Eval on the new snapshot: 190 models, 94 verified identifiers,
+  5 with quotes, 12 total quotes, 0 identifier-matched, 12
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 185 → 190, verified 91 → 94, for the
+  continuous expansion; the pending set gains the 2 new pending
+  keys: keychron-k2-max-black-rgb-aluminum-banana,
+  hyperx-cloud-iii-black).

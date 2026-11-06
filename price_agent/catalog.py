@@ -5126,6 +5126,191 @@ EVAL_SET: list[EvalProduct] = [
         "Thunderbolt-hub pro line.",
         status="pending",
     ),
+    EvalProduct(
+        key="bose-soundlink-max-black",
+        brand="Bose",
+        model="SoundLink Max",
+        variant="Black (883848-0100)",
+        category="speakers",
+        identifiers={"UPC": "017817848817", "MPN": "883848-0100"},
+        identifier_sources={
+            "UPC": "Adorama spec table (MFR 883848-0100, Black "
+            "Speaker UPC 017817848817, Blue Dusk 017817848824, "
+            "speaker-with-case codes 192223266810/803 are different "
+            "SKUs) + Layup (Model 883848-0100, UPC 017817848817) "
+            "agree. Amazon US and eBay listings agreeing on the "
+            "same code were read but not cited and not used "
+            "(no-Amazon rule)."
+        },
+        notes="Bose direct $399.00 list / $329.00 sale (feed "
+        "brand_direct rows — suspected; the bose.com page text "
+        "shows no price, same as batch 32's Flex); Adorama "
+        "$399.00 (page read fresh 2026-11-06 21:58 UTC, SKU "
+        "BO8838480100, MFR 883848-0100, 4.7/5 from 912 reviews); "
+        "Abt $399.00 (search-index read, JSON-LD InStock, Model "
+        "883848-0100). Portable Bluetooth speaker, IP67, Bluetooth "
+        "5.3, up to 20 hours battery, USB-C power-bank output, "
+        "removable rope handle, launched May 2024. Not the Blue "
+        "Dusk (017817848824) — different SKU. Distinct from the "
+        "set's SoundLink Flex (2nd Gen) and SoundLink Plus — the "
+        "Max is the largest portable in the line (bigger stereo "
+        "drivers, 20-hour battery).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="bose-quietcomfort-headphones-black",
+        brand="Bose",
+        model="QuietComfort Headphones",
+        variant="Black (884367-0100)",
+        category="headphones",
+        identifiers={"UPC": "017817848961", "MPN": "884367-0100"},
+        identifier_sources={
+            "UPC": "Best Buy US specs (Model 884367-0100, UPC "
+            "017817848961) + Reverb bundle row (MPN 884367-0100-1K, "
+            "UPC 17817848961 — the same code without its leading "
+            "zero) + BuyAdvanced GTIN 00017817848961 agree; VIP "
+            "Outlet's SKU VIP017817848961MN embeds the same code. "
+            "An Amazon US listing agreeing on the same code was "
+            "read but not cited and not used (no-Amazon rule). "
+            "Not the manuals.plus 732262048246 (a -cr suffixed "
+            "listing, different SKU)."
+        },
+        notes="Bose direct $359.00 list / $169.00 sale (feed "
+        "brand_direct rows — suspected; the bose.com page read "
+        "fresh 2026-11-06 21:59 UTC confirms the model — successor "
+        "to the QuietComfort 45 — but shows no price; DealNews "
+        "2026-11-04, verified 2026-11-05, reports $169 matched at "
+        "Target and Bose direct); Crutchfield $359.00 "
+        "(search-index read, In stock, Item # 018QCHPBK, MFR # "
+        "884367-0100). Excluded: the Best Buy $225.00 JSON-LD row "
+        "(page read fresh 2026-11-06 21:58 UTC) — sold & shipped "
+        "by GD Electronics, a marketplace seller (DECISIONS 021). "
+        "The $169.00 is a Black Friday sale — re-check after the "
+        "sale ends Nov 8. Over-ear wireless noise-cancelling "
+        "headphones, up to 24 hours battery, Quiet/Aware modes, "
+        "launched Sep 2023. Not the QuietComfort Headphones (2nd "
+        "Gen, launched 2025, $359.00) or the QuietComfort SC "
+        "(884367-0900, soft case, Costco/Best Buy only) or the "
+        "QuietComfort Ultra (880066-0100) — different models. "
+        "Distinct from the set's QuietComfort Ultra Headphones "
+        "(2nd Gen) — these are the standard QC line, Bose's "
+        "mainstream over-ear.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="keychron-k2-max-black-rgb-aluminum-banana",
+        brand="Keychron",
+        model="K2 Max",
+        variant="Black, RGB Backlight Aluminum Frame (Hot-Swappable), "
+        "Keychron Super Banana (K2M-C4)",
+        category="keyboards",
+        identifiers={},
+        identifier_sources={},
+        notes="Identifiers PENDING: the Keychron official store "
+        "public product JSON (read fresh 2026-11-06 22:00 UTC) "
+        "gives variant 41767535870041 (Black / RGB Backlight "
+        "Aluminum Frame / Keychron Super Banana, SKU K2M-C4, "
+        "$114.99, available: true) barcode 4895248880271, but no "
+        "second independent source states that barcode — the "
+        "B&H search surfaced no US row for K2M-C4, and the "
+        "datagate.ee row is K2M-J3 (a different RGB/Black "
+        "variant) — so identifiers stay empty per the strict "
+        "two-source rule, same call as batch 32's K2 HE. Not "
+        "copied: 4895248880271 (single-source candidate). MPN "
+        "K2M-C4 is Keychron-store-only, so it is not recorded "
+        "either (0 MPN-only entries in the set). Quotes (1): "
+        "Keychron direct $114.99 (official store JSON, "
+        "available: true; 75% ANSI, QMK, 2.4 GHz / Bluetooth 5.1 "
+        "/ USB-C, 1000 Hz polling, hot-swappable, 4000 mAh, up to "
+        "190 hours, double-shot PBT keycaps). No second US "
+        "retailer row surfaced for the exact K2M-C4 variant — "
+        "Zenox HK (929 HKD) and PCCaseGear AU are non-US, and "
+        "the feed's $124.99 ISO Layout Collection row is a "
+        "different layout — so this entry carries a single quote; "
+        "re-check for a second retailer quote next refresh. Not "
+        "the K2M-A1 (White Backlight Banana, Amazon B0DXBM2TQM) "
+        "or the K2M-J3 (RGB/Black) or the K2 Pro or the K2 "
+        "Version 3 ($109.99 ISO) — different variants/models. "
+        "Distinct from the set's K2 HE Special (K2H-F1) — the K2 "
+        "Max is the QMK wireless 75% board with MX-style "
+        "switches, not Hall Effect; and from the set's K8 lines "
+        "and Q1 — the K2 Max is the 75% QMK Max board.",
+        status="pending",
+    ),
+    EvalProduct(
+        key="asus-proart-display-pa279crv",
+        brand="ASUS",
+        model="ProArt Display PA279CRV",
+        variant="Black (PA279CRV, 90LM08E0-B01KB2)",
+        category="monitors",
+        identifiers={"UPC": "195553951531", "MPN": "PA279CRV"},
+        identifier_sources={
+            "UPC": "B&H Photo (PA279CRV, UPC 195553951531, $429.00 "
+            "InStock, page read fresh 2026-11-06 21:57 UTC) + EPA "
+            "ENERGY STAR registry (PA279CRV family, UPC Codes "
+            "195553951531) + EPEAT registry (PA279CRV, UPCs "
+            "including 195553951531) agree. EPEAT lists several "
+            "UPCs for the family (195553951500, ...517, ...531, "
+            "197105747869, 199291205994) — the B&H listing ties "
+            "...531 to the standalone US monitor, so ...531 is "
+            "the recorded code; the others are not copied."
+        },
+        notes="ASUS eShop $429.00 (feed brand_direct row, "
+        "shop.asus.com/us/90lm08e0-b01kb2); B&H $429.00 (page "
+        "read fresh 2026-11-06 21:57 UTC, JSON-LD InStock); ASUS "
+        "US product page $429.00 (feed brand_direct row — "
+        "suspected; not page-read this round). This is the retry "
+        "of the batch 32 hold: the hold reason is gone — the feed "
+        "now carries ASUS-direct rows at $429.00 and B&H confirms "
+        "the same price in stock, so the street rows are no "
+        "longer thin. 27-inch 4K UHD IPS, 99% DCI-P3 / 99% Adobe "
+        "RGB, Delta E <2 Calman Verified, USB-C 96W PD, "
+        "DisplayHDR 400, daisy-chain DisplayPort out, launched "
+        "2023. Not the PA279CRV-P ($469.00 at B&H, different "
+        "variant with a different stand) or the PA279CV ($399.00, "
+        "the older model) — different models. Distinct from the "
+        "set's ROG Swift monitors — the PA279CRV is ASUS's ProArt "
+        "creator line, the first ProArt monitor in the set.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="hyperx-cloud-iii-black",
+        brand="HyperX",
+        model="Cloud III Gaming Headset",
+        variant="Black (727A8AA)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={},
+        notes="Identifiers PENDING: MPN 727A8AA is corroborated "
+        "(HP US product page, Product # 727A8AA + Best Buy, Model "
+        "727A8AA, SKU 6542541 + HyperX ROW atom feed, SKU "
+        "727A8AA, Black), but the only UPC found, 197029008220, "
+        "is stated on Amazon-lineage listings only (Amazon US, "
+        "UPC 197029008220, GTIN 00197029008220; BuyAdvanced "
+        "repeats the same Amazon-derived code) — and the set's "
+        "Black-Red Cloud III (727A9AA) was left pending on "
+        "exactly the same call, so identifiers stay empty per "
+        "the strict two-source rule; re-check next refresh. Not "
+        "copied: 197029008220 (single-lineage candidate). MPN "
+        "727A8AA is not recorded either (0 MPN-only entries in "
+        "the set). Quotes (3): HP direct $99.99 (search-index "
+        "read, $99.99 USD, Product # 727A8AA); Best Buy $69.99 "
+        "Holiday Deal (page read fresh 2026-11-06 21:58 UTC, "
+        "JSON-LD InStock, Sold by Best Buy, Comp. Value $99.99); "
+        "CompSource $120.22 (search-index read, JSON-LD InStock, "
+        "authorized HP dealer). The $69.99 is a Holiday Deal — "
+        "re-check after the Early Black Friday event ends Nov 8. "
+        "Wired gaming headset, 53mm angled drivers, DTS "
+        "Headphone:X, 10mm detachable mic, USB-C/USB-A/3.5mm, "
+        "launched 2023. Not the Black-Red (727A9AA, UPC "
+        "197029008237 — already in the set as "
+        "hyperx-cloud-iii-black-red) or the Cloud III Wireless "
+        "(77Z45AA, $149.99 list / $99.99 sale at HP) or the Cloud "
+        "III S Wireless ($179.99) — different SKUs/models. "
+        "Distinct from the set's Black-Red Cloud III — this is "
+        "the all-Black colorway at the same $99.99 list.",
+        status="pending",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:

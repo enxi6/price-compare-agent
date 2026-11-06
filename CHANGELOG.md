@@ -193,6 +193,39 @@ releases; breaking changes are called out in the release notes.
   out / not sold in the US), Galaxy Watch8 40mm (superseded),
   Garmin Instinct 3 (held for a later batch) — all stay
   list-only.
+- Expansion batch 33 (DECISIONS 055, continuous expansion per
+  DECISIONS 027): eval set 185 → 190 models, verified identifiers
+  91 → 94 (3 of 5 new identifiers verified). New: Bose SoundLink
+  Max, Black (883848-0100, UPC 017817848817 — Adorama spec table
+  + Layup agree; $399.00 at Bose direct on sale $329.00, Adorama
+  and Abt — the largest Bose portable speaker in the set), Bose
+  QuietComfort Headphones (2023), Black (884367-0100, UPC
+  017817848961 — Best Buy specs + Reverb + BuyAdvanced GTIN
+  agree; $359.00 list, $169.00 Black Friday sale at Bose direct,
+  $359.00 at Crutchfield — the standard QC line beside the set's
+  QC Ultra 2nd Gen; the Best Buy $225.00 marketplace row was
+  excluded), Keychron K2 Max, Black / RGB Backlight Aluminum
+  Frame / Keychron Super Banana (K2M-C4, identifiers pending —
+  barcode 4895248880271 is Keychron-store-only, no second source;
+  $114.99 at Keychron direct, available — the 75% QMK wireless
+  board; single quote this round, no second US retailer row for
+  the exact variant), ASUS ProArt Display PA279CRV (UPC
+  195553951531 / MPN PA279CRV — B&H + EPA ENERGY STAR + EPEAT
+  agree; $429.00 at ASUS eShop, B&H and ASUS direct — the retry
+  of the batch 32 hold, whose reason is gone now that
+  ASUS-direct rows exist; the first ProArt monitor in the set),
+  HyperX Cloud III Gaming Headset, Black (727A8AA, identifiers
+  pending — candidate UPC 197029008220 is Amazon-lineage only,
+  same call as the set's Black-Red Cloud III; $99.99 at HP
+  direct, $69.99 Holiday Deal at Best Buy — the all-Black
+  colorway of the set's Black-Red Cloud III). Bose grows 6 → 8
+  entries, Keychron 7 → 8, ASUS 11 → 12, HyperX 6 → 7. Not
+  added: Microsoft Bluetooth Ergonomic Mouse (feed messy after
+  Microsoft's accessories exit — Incase rows, a Peach $107.98
+  Microsoft row, no clean Black US row to pin), Dell UltraSharp
+  34 Curved U3425WE (bundle rows only, no clean standalone
+  Dell-direct row), Keychron K3 Max and Q1 Max (no clean feed
+  rows) — all stay list-only.
 - Expansion batch 32 (DECISIONS 054, continuous expansion per
   DECISIONS 027): eval set 180 → 185 models, verified identifiers
   88 → 91 (3 of 5 new identifiers verified). New: Garmin Instinct

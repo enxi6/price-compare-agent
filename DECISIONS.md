@@ -3062,3 +3062,108 @@ written as "superseded by" with the original text kept.
   over unchanged (five Lenovo sale prices after Early Black
   Friday ends Nov 8; Tab Plus Gen 2 $469.99; Idea Tab Pro Gen 2
   bundle contents; five pending Lenovo UPCs).
+
+## 055 (2026-11-06): Expansion batch 33 — 185 → 190 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models (BUILD_LOG 072), no per-batch user approval
+  needed (DECISIONS 027): Bose SoundLink Max, Black (883848-0100,
+  UPC 017817848817 — verified), Bose QuietComfort Headphones
+  (2023), Black (884367-0100, UPC 017817848961 — verified),
+  Keychron K2 Max, Black / RGB Backlight Aluminum Frame /
+  Keychron Super Banana (K2M-C4, identifiers pending — barcode
+  single-source), ASUS ProArt Display PA279CRV (UPC 195553951531
+  / MPN PA279CRV — verified) and HyperX Cloud III Gaming
+  Headset, Black (727A8AA, identifiers pending — UPC
+  Amazon-lineage only). One variant pinned per model
+  (DECISIONS 015); 3 of 5 identifiers verified, 2 stay pending.
+  Verified-identifier count rises 91 → 94. Bose grows 6 → 8
+  entries, Keychron 7 → 8, ASUS 11 → 12, HyperX 6 → 7; no new
+  brand enters the set. Category counts: "speakers" 4 → 5,
+  "headphones" 25 → 27, "keyboards" 22 → 23, "monitors" 16 → 17.
+  No new category is opened — no phones, no TVs, no cameras
+  were added (DECISIONS 016).
+- Why these 5: the SoundLink Max is Bose's largest portable
+  speaker ($399.00 list, $329.00 on sale at Bose direct) and the
+  third Bose speaker in the set; the QuietComfort Headphones
+  (2023) are Bose's mainstream over-ear ($359.00 list, $169.00
+  Black Friday sale) and the standard QC line beside the set's
+  QC Ultra 2nd Gen; the K2 Max is Keychron's 75% QMK wireless
+  board ($114.99 at Keychron direct, available) and the Max
+  sibling of the set's K2 HE; the PA279CRV is the retry of the
+  batch 32 hold — the hold reason is gone, the feed now carries
+  ASUS-direct rows at $429.00 and B&H confirms the same price in
+  stock, and it is the first ProArt monitor in the set; the
+  Cloud III Black is the all-Black colorway of the set's
+  Black-Red Cloud III at the same $99.99 list ($69.99 Holiday
+  Deal at Best Buy).
+- What was corrected along the way: 880066-0100 is the
+  QuietComfort Ultra (1st Gen), not the plain QuietComfort
+  Headphones — the plain 2023 model is 884367-0100 (corrected
+  before pinning). The Best Buy QuietComfort $225.00 JSON-LD row
+  is sold & shipped by GD Electronics, a marketplace seller —
+  excluded (DECISIONS 021), not treated as the Best Buy price.
+  The Cloud III Wireless ($149.99 list / $99.99 sale at HP) is a
+  different model from the wired Cloud III ($99.99) and its price
+  was not used. The PA279CRV-P ($469.00 at B&H) is a different
+  variant and the PA279CV ($399.00) is the older model — neither
+  was used. The K2 Max pin is variant 41767535870041 (Black /
+  RGB Backlight Aluminum Frame / Keychron Super Banana, K2M-C4),
+  not the K2M-A1 White Backlight Banana or the K2M-J3 RGB/Black
+  — different SKUs.
+- Variant pinning, recorded explicitly: SoundLink Max pins Black
+  (883848-0100); Blue Dusk (017817848824) and the speaker-with-case
+  codes (192223266810/803) are different SKUs. QuietComfort
+  Headphones pins the 2023 model, Black (884367-0100); the 2nd
+  Gen (launched 2025), the QuietComfort SC (884367-0900, soft
+  case) and the QuietComfort Ultra (880066-0100) are different
+  models. K2 Max pins Black / RGB Backlight Aluminum Frame /
+  Keychron Super Banana (K2M-C4, $114.99); the White Backlight
+  Banana (K2M-A1), the K2M-J3 and the ISO Layout Collection
+  ($124.99) are different SKUs/layouts. PA279CRV pins the
+  standalone monitor (90LM08E0-B01KB2) — a single SKU with no
+  color or size variants. Cloud III pins Black (727A8AA); the
+  Black-Red (727A9AA, already in the set) is a different SKU.
+- What does NOT change: the existing 185 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6
+  Pro untouched, batches 1–32 entries untouched). No other
+  snapshot file is rewritten. No Amazon touch in the snapshot:
+  no Amazon quotes, no Amazon-sourced prices or identifiers
+  (Amazon US listings agreeing on the SoundLink Max UPC
+  017817848817, the QuietComfort UPC 017817848961 and the Cloud
+  III UPC 197029008220 were read but not cited and not used).
+  The daily refresh cron still says "57 models" in its body and
+  needs a count update to 190 on the next edit (parent owns the
+  cron; not touched here).
+- Revisit: re-check the QuietComfort $169.00 sale and the
+  SoundLink Max $329.00 sale after the Black Friday event ends
+  Nov 8; re-check the Cloud III $69.99 Holiday Deal after the
+  Early Black Friday event ends Nov 8; re-check the pending K2
+  Max barcode (candidate 4895248880271 is Keychron-store-only,
+  needs a second independent source) and find a second US
+  retailer quote for the exact K2M-C4 variant (this entry
+  carries a single quote); re-check the pending Cloud III UPC
+  (candidate 197029008220 is Amazon-lineage only, needs a second
+  independent source — same call as the set's Black-Red Cloud
+  III); the batch 32 revisits carry over unchanged (pending K2
+  HE EAN conflict; pending U2725QE UPC; SoundLink Plus $179.00
+  sale/rebate price after the rebate ends Nov 8; U2725QE Dell
+  direct $849.99 vs the $649.99 street; Garmin direct Instinct 3
+  stock; remaining Garmin candidates list-only; Garmin dash cams
+  blocked by DECISIONS 016; the batch 31 revisits carry over
+  unchanged (pending Tab S11 Ultra UPC; three risen tablet
+  prices; Garmin direct stock; two pending batch 30 UPCs) and
+  the batch 30 revisits carry over unchanged (Watch8 Classic
+  $499.99 price vs the Sep 24 $419.99 report; Tab S10 FE $549.99
+  price vs the $499.99 MSRP list) and the batch 29 revisits carry
+  over unchanged (four Lenovo sale prices after the Early Black
+  Friday event ends Nov 8; four pending Lenovo/ASUS UPCs) and
+  the batch 28 revisits carry over unchanged (fēnix 9 UPC; Venu
+  4 Dell $499.99 sale after Black Friday Nov 27; vívoactive 6
+  stock; Forerunner 970 UPC tiebreak; Edge 1060 UPC) and the
+  batch 27 revisits carry over unchanged (Series X stock;
+  Wireless Headset $110.99; Surface Laptop $1,299.99 sale after
+  Black Friday; three pending Microsoft identifiers; remaining
+  Microsoft candidates list-only) and the batch 26 revisits carry
+  over unchanged (five Lenovo sale prices after Early Black
+  Friday ends Nov 8; Tab Plus Gen 2 $469.99; Idea Tab Pro Gen 2
+  bundle contents; five pending Lenovo UPCs).

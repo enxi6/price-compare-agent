@@ -1,0 +1,101 @@
+{
+ "meta": {
+  "collected_at": "2026-11-06T22:00:15Z",
+  "source": "Meta Catalog (2026-11-06) + brand-direct / retailer pages (page text / search-index reads, read-only)",
+  "sources_note": "Expansion batch 33 (DECISIONS 055, continuous expansion per DECISIONS 027, no per-batch approval): Bose SoundLink Max Black, Bose QuietComfort Headphones (2023) Black, Keychron K2 Max Black / RGB Backlight Aluminum Frame / Keychron Super Banana, ASUS ProArt Display PA279CRV, HyperX Cloud III Black, 12 quotes, 3 identifiers verified (SoundLink Max UPC 017817848817 / MPN 883848-0100; QuietComfort Headphones UPC 017817848961 / MPN 884367-0100; PA279CRV UPC 195553951531 / MPN PA279CRV), 2 stay pending (K2 Max Black RGB Aluminum Banana K2M-C4 — barcode 4895248880271 is Keychron-store-only, no second source; Cloud III Black 727A8AA — candidate UPC 197029008220 is Amazon-lineage only, same call as the set's Black-Red Cloud III). Adorama page read fresh 2026-11-06 21:58 UTC: SoundLink Max Black $399.00 (MFR 883848-0100). B&H page read fresh 2026-11-06 21:57 UTC: PA279CRV $429.00 JSON-LD InStock (UPC 195553951531). Best Buy pages read fresh 2026-11-06 21:58 UTC: QuietComfort Headphones Black Model 884367-0100, JSON-LD $225.00 InStock but sold & shipped by GD Electronics (marketplace — excluded, DECISIONS 021); Cloud III Black $69.99 Holiday Deal JSON-LD InStock, Sold by Best Buy (Model 727A8AA, Comp. Value $99.99). Bose direct QC Headphones page read fresh 2026-11-06 21:59 UTC: model confirmed, no price in text (same as batch 32 Flex). Keychron official store public product JSON read fresh 2026-11-06 22:00 UTC: K2 Max variant 41767535870041 (Black / RGB Backlight Aluminum Frame / Keychron Super Banana, SKU K2M-C4, barcode 4895248880271) $114.99, available: true. HP US search-index read: Cloud III Black $99.99 USD (Product # 727A8AA). Crutchfield search-index read: QuietComfort Headphones Black $359.00 InStock (MFR # 884367-0100). Abt search-index read: SoundLink Max Black $399.00 JSON-LD InStock (Model 883848-0100). CompSource search-index read: Cloud III Black $120.22 JSON-LD InStock. Meta Catalog CLI run 2026-11-06 (20 rows per model; raw files data/meta_catalog_raw_{soundlink-max,bose-qc-headphones,keychron-k3-max,ms-bt-ergonomic-mouse,asus-pa279crv,dell-u3425we,keychron-q1-max,hyperx-cloud-iii-wireless}_2026-11-06.json). No Amazon touch in the snapshot: no Amazon quotes, no Amazon-sourced prices or identifiers (Amazon US listings agreeing on the SoundLink Max UPC 017817848817, the QC Headphones UPC 017817848961 and the Cloud III UPC 197029008220 were read but not cited and not used)."
+ },
+ "models": {
+  "bose-soundlink-max-black": {
+   "offers": [
+    {
+     "merchant": "Bose",
+     "price": 399.0,
+     "title": "Bose SoundLink Max Portable Speaker, Black (feed brand_direct rows: $399.00 list / $329.00 sale — suspected; the bose.com page text shows no price, same as batch 32 Flex; MPN 883848-0100; IP67, Bluetooth 5.3, up to 20 hours battery, USB-C power-bank output, launched May 2024)",
+     "url": "https://www.bose.com/p/speakers/bose-soundlink-max-portable-speaker/SLMAX-SPEAKERWIRELESS.html"
+    },
+    {
+     "merchant": "Adorama",
+     "price": 399.0,
+     "title": "Bose SoundLink Max Bluetooth Black Speaker (Adorama page read fresh 2026-11-06 21:58 UTC, $399.00, SKU BO8838480100, MFR 883848-0100, 4.7/5 from 912 reviews)",
+     "url": "https://www.adorama.com/bose-soundlink-max-waterproof-bluetooth-speaker/p/bo8838480100"
+    },
+    {
+     "merchant": "Abt",
+     "price": 399.0,
+     "title": "Bose SoundLink Max Bluetooth Boombox Portable Speaker in Black - 883848-0100 (Abt search-index read, $399.00 USD, JSON-LD InStock)",
+     "url": "https://www.abt.com/Bose-SoundLink-Max-Bluetooth-Boombox-Portable-Speaker-in-Black-8838480100/p/206990.html"
+    }
+   ]
+  },
+  "bose-quietcomfort-headphones-black": {
+   "offers": [
+    {
+     "merchant": "Bose",
+     "price": 359.0,
+     "title": "Bose QuietComfort Headphones, Black (feed brand_direct rows: $359.00 list / $169.00 sale — suspected; the bose.com page read fresh 2026-11-06 21:59 UTC shows no price; DealNews 2026-11-04, verified 2026-11-05: $169 matched at Target and Bose direct; MPN 884367-0100; 2023 model, up to 24 hours battery, Quiet/Aware modes)",
+     "url": "https://www.bose.com/p/headphones/quietcomfort-acoustic-noise-cancelling-headphones/QC-HEADPHONEARN.html"
+    },
+    {
+     "merchant": "Crutchfield",
+     "price": 359.0,
+     "title": "Bose QuietComfort Headphones Over-ear wireless noise-cancelling headphones (Black) (Crutchfield search-index read, $359.00, In stock, Item # 018QCHPBK, MFR # 884367-0100)",
+     "url": "https://www.crutchfield.com/p_018QCHPBK/Bose-QuietComfort-Headphones-Black.html"
+    }
+   ]
+  },
+  "keychron-k2-max-black-rgb-aluminum-banana": {
+   "offers": [
+    {
+     "merchant": "Keychron",
+     "price": 114.99,
+     "title": "Keychron K2 Max QMK Wireless Mechanical Keyboard, Black / RGB Backlight Aluminum Frame / Keychron Super Banana (Keychron official store public product JSON read fresh 2026-11-06 22:00 UTC: variant 41767535870041, SKU K2M-C4, $114.99, available: true; 75% ANSI, QMK, 2.4 GHz / Bluetooth 5.1 / USB-C, 1000 Hz polling, hot-swappable, 4000 mAh, up to 190 hours)",
+     "url": "https://www.keychron.com/products/keychron-k2-max-qmk-wireless-mechanical-keyboard?variant=41767535870041"
+    }
+   ]
+  },
+  "asus-proart-display-pa279crv": {
+   "offers": [
+    {
+     "merchant": "ASUS",
+     "price": 429.0,
+     "title": "ProArt Display PA279CRV (ASUS eShop feed brand_direct row, $429.00; shop.asus.com/us/90lm08e0-b01kb2; 27-inch 4K UHD IPS, 99% DCI-P3, Delta E <2 Calman Verified, USB-C 96W, DisplayHDR 400)",
+     "url": "https://shop.asus.com/us/90lm08e0-b01kb2-proart-display-pa279crv.html"
+    },
+    {
+     "merchant": "B&H Photo",
+     "price": 429.0,
+     "title": "ASUS ProArt PA279CRV 27\" 4K HDR Monitor (B&H page read fresh 2026-11-06 21:57 UTC, $429.00, JSON-LD InStock, UPC 195553951531)",
+     "url": "https://www.bhphotovideo.com/c/product/1762484-REG/asus_pa279crv_27_4k_hdr_uhd.html"
+    },
+    {
+     "merchant": "ASUS",
+     "price": 429.0,
+     "title": "ProArt Display PA279CRV (ASUS US product page feed brand_direct row, $429.00 — suspected; not page-read this round)",
+     "url": "https://www.asus.com/us/displays-desktops/monitors/proart/proart-display-pa279crv/"
+    }
+   ]
+  },
+  "hyperx-cloud-iii-black": {
+   "offers": [
+    {
+     "merchant": "HP",
+     "price": 99.99,
+     "title": "HyperX Cloud III - Gaming Headset (Black) (HP US search-index read, $99.99 USD, Product # 727A8AA; wired, 53mm angled drivers, DTS Headphone:X, 10mm mic, USB-C/USB-A/3.5mm)",
+     "url": "https://www.hp.com/us-en/shop/pdp/hyperx-cloud-iii-gaming-headset-(black)"
+    },
+    {
+     "merchant": "Best Buy",
+     "price": 69.99,
+     "title": "HyperX - Cloud III Wired Gaming Headset for PC, PS5, PS4, Xbox Series X|S, Xbox One, Nintendo Switch, and Mobile - Black (Best Buy page read fresh 2026-11-06 21:58 UTC, $69.99 Holiday Deal, JSON-LD InStock, Sold by Best Buy, Model 727A8AA, SKU 6542541, Comp. Value $99.99)",
+     "url": "https://www.bestbuy.com/product/hyperx-cloud-iii-wired-gaming-headset-for-pc-ps5-ps4-xbox-series-xs-xbox-one-nintendo-switch-and-mobile-black/JJGG7K862Z"
+    },
+    {
+     "merchant": "CompSource",
+     "price": 120.22,
+     "title": "HyperX Cloud III - Gaming Headset (Black) - Stereo (CompSource search-index read, $120.22 USD, JSON-LD InStock, 727A8AA; authorized HP dealer)",
+     "url": "https://www.compsource.com/buy/727A8AA/Hp-195/HyperX-HyperX-Cloud-III--Gaming-Headset-Black--Stereo--Miniphone-35mm-USB-20--Wired--64/"
+    }
+   ]
+  }
+ }
+}
