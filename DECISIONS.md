@@ -812,3 +812,54 @@ written as "superseded by" with the original text kept.
 - Revisit: DEX Black UPC stays pending until a US retailer spec page
   or box barcode settles it; the Switch HADSKABAA vs HADSKABAH
   spelling variant is recorded in the entry notes.
+
+## 029 (2026-11-06): Expansion batch 7 — 57 → 62 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models from the remaining brand-sweep candidates
+  (BUILD_LOG 020/022/023/024/025), no per-batch user approval needed
+  (DECISIONS 027): MacBook Neo 13-inch 256GB Blush (MHFH4LL/A, UPC
+  pending), PlayStation 5 Slim Console 1TB disc (CFI-2100 model
+  group, retail MPN 1000049888, UPC 711719021452), Nintendo Switch
+  Pro Controller Black (HAC-013; retail MPN HACAFSSKA, UPC
+  045496590161), Logitech MX Mechanical full-size Tactile Quiet
+  Graphite (920-010547, UPC 097855174659), Xbox Elite Wireless
+  Controller Series 2 Black (FST-00001, UPC 889842196344). One
+  variant pinned per model (DECISIONS 015); 4 of 5 identifiers
+  verified, MacBook Neo stays pending (UPC not found for the Blush
+  variant in any US source — DualSense Edge / DEX precedent, not a
+  reason to hold the batch).
+- Why these 5: they are the next un-added mainstream lines from the
+  five brand sweeps, each distinct from the set (Neo vs MacBook Pro
+  14 M6 / MacBook Air M5; disc 1TB vs the digital 825GB and the Pro;
+  original Pro Controller vs the Switch 2 Pro Controller; MX
+  Mechanical vs MX Keys Mini / MX Keys S; Elite Series 2 vs the
+  standard Xbox Wireless Controller). All five are in stock new in
+  the US on 2026-11-06 (brand-direct pages or InStock JSON-LD).
+- What was corrected along the way: the PS5 disc model is NOT
+  CFI-2016 — that is the EU disc code (15 = US, 16 = EU); the
+  current US disc console is the CFI-2100 model group (CFI-2115 per
+  JNLGame), retail MPN 1000049888, and the older CFI-2015 disc (UPC
+  711719573364) is superseded. The MX Mechanical candidate price
+  $149.99 was the Oct 31 LogiWork Deal Days sale price; the current
+  full-size list is $179.99 (Logitech direct, Best Buy, Target all
+  $179.99; Dell $169.99) and the $149.99 rows today are the Mini, a
+  different model. The MX Mechanical MPN mapping is 920-010547 =
+  Tactile Quiet, 920-010548 = Linear (not the other way round). The
+  MacBook Neo 256GB price is $699, not EveryMac's $599 figure
+  (stale/wrong against live Apple + Best Buy $699). The only Neo UPC
+  found, 195950852745, is Indigo MHFF4LL/A's, not Blush MHFH4LL/A's,
+  and was not copied across colors.
+- What does NOT change: the existing 57 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro untouched,
+  batches 1–6 entries untouched). No other snapshot file is rewritten.
+  No Amazon touch. The daily refresh cron still says "57 models" in
+  its body and needs a count update to 62 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: MacBook Neo Blush UPC stays pending until a US retailer
+  spec page or box barcode settles it (the Indigo UPC 195950852745
+  is recorded in the entry notes as a pointer, not a pin); the
+  PlayStation Direct PS5 $649.00 and Microsoft direct Elite Series 2
+  $167.99 prices are price-only (stock not confirmed in the page
+  text); the Elite Series 2's Amazon "discontinued by manufacturer"
+  flag is contradicted by live Microsoft/Target/Best Buy listings
+  and is recorded, not acted on.

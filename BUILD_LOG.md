@@ -1440,3 +1440,106 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (snapshot offers carry no identifier — the rule working, not a
   bug). Tests: 19 passed (test_snapshot_eval counts updated 52 →
   57 / 47 → 51 for the approved expansion).
+
+## 045 — 2026-11-06: Expansion batch 7 — 57 → 62 models (DECISIONS 029)
+
+- Membership check (against the 57-model set, by name, MPN and UPC —
+  no matches, all 5 are new lines):
+  - MacBook Neo (MHFH4LL/A) vs apple-macbook-pro-14-m6 (MHWT4LL/A),
+    apple-macbook-air-13-m5, apple-macbook-air-15-m5,
+    apple-mac-mini-m6: distinct entry-laptop line, different MPN —
+    not a duplicate.
+  - PS5 1TB disc (1000049888, UPC 711719021452) vs
+    sony-ps5-digital-825gb (1000049898, UPC 711719021483) and
+    sony-ps5-pro (CFI-7021): distinct disc console, different MPN
+    and UPC — not a duplicate.
+  - Switch Pro Controller (HACAFSSKA, UPC 045496590161) vs
+    nintendo-switch-2-pro-controller (BEE-008, UPC 045496885861):
+    distinct original line, different MPN and UPC — not a
+    duplicate.
+  - MX Mechanical Tactile Quiet Graphite (920-010547, UPC
+    097855174659) vs logitech-mx-keys-mini-black (920-010475) and
+    logitech-mx-keys-s-pale-grey (920-011559): distinct mechanical
+    line, different MPN and UPC — not a duplicate. The MX
+    Mechanical Mini (Dell $149.99 rows) is a different model and
+    was not added.
+  - Xbox Elite Series 2 Black (FST-00001, UPC 889842196344) vs
+    xbox-wireless-controller-black (1914, UPC 196388518159):
+    distinct pro line, different MPN and UPC — not a duplicate.
+    The Elite Series 2 Core (4IK-00001/4IK-00002, $134.99–$149.99)
+    is a different line and was not added.
+- Apple MacBook Neo 13-inch, A18 Pro, 8GB/256GB, Blush (MHFH4LL/A) —
+  identifiers PENDING (identifiers empty, DualSense Edge / DEX
+  precedent): MPN MHFH4LL/A confirmed (Apple US buy page title
+  "Buy MacBook Neo, Blush, 256GB" + Best Buy US Model MHFH4LL/A,
+  SKU 6615878) but no US source states a UPC for the Blush
+  variant. The only Neo UPC found, 195950852745, is Indigo
+  MHFF4LL/A's (B&H standalone page + Canex CA + eBay agree) and
+  was not copied across colors; Courts Barbados lists it against
+  MHFH4LL/A but its fields are garbled (GTIN 472384200015) and it
+  mislabels the color. EveryMac's $599 256GB figure is stale/wrong
+  against live $699. Quotes (2): Apple direct $699.00 (Meta
+  Catalog brand_direct row), Best Buy $699.00 (page-verified
+  JSON-LD InStock). Excluded: NFM $854 (Silver 256GB + 3-year
+  AppleCare+ bundle), 512GB tiers $799 (MHFC4LL/A, MHFJ4LL/A,
+  MHFE4LL/A, MHFG4LL/A), education-store rows ($738–$850).
+- Sony PlayStation 5 Slim Console 1TB, disc, White (CFI-2100 model
+  group; retail MPN 1000049888) — identifiers VERIFIED: UPC
+  711719021452 (Amazon B0FRGTYSL5, Model Number CFI-2100, MPN
+  1000049888 + two eBay US listings agree), MPN 1000049888 (Best
+  Buy Model + Amazon MPN agree). Correction: the US disc model is
+  NOT CFI-2016 (EU disc code; 15 = US, 16 = EU — eBay US lists the
+  CFI-2000-group disc as CFI-2015, UPC 711719573364; PCShop.ge
+  lists the CFI-2100-group disc as CFI-2116); the current US disc
+  is the CFI-2100 group (CFI-2115 per JNLGame). Quotes (3):
+  PlayStation Direct $649.00 (price-only; crawl mixed Currently
+  Unavailable / Coming Soon / Low stock flags), Best Buy $649.99
+  (page-verified, sold by Best Buy, SKU 6646419), Sam's Club
+  $649.00 (standalone feed row). Excluded: Staples $722.99 (old
+  CFI-2000 model 1000039671), marketplace rows $789–$1,246.99,
+  game bundles ($1,040.99/$799.99/$699.99), rental rows
+  ($26.99/$29.99/$100).
+- Nintendo Switch Pro Controller, Black (HAC-013; retail MPN
+  HACAFSSKA) — identifiers VERIFIED: UPC 045496590161 (Amazon
+  B01NAWKYZ0, GTIN 00045496590161 + Abt page title + Newegg URL
+  slug + Poggers item UPC agree), MPN HACAFSSKA (Amazon model
+  number + MPN; HAC-013 is the hardware model per Nintendo Support
+  US + Wikipedia). Quotes (3): Dell $79.99, NFM $79.99, Target
+  $79.98 (product-page JSON-LD InStock, A-52180631; Target search
+  listings show $79.99). Nintendo direct store page not re-reached
+  (2026-10-31 sweep had $79.99 on nintendo.com); Abt lists it as
+  no longer available. Excluded: Zelda/Smash/Splatoon special
+  editions ($54.99–$140.99), third-party pads, Switch 2 Pro
+  Controller rows. Wikipedia notes EU discontinuation February
+  2027; the US listing is current as of 2026-11-06.
+- Logitech MX Mechanical, full-size, Tactile Quiet, Graphite
+  (920-010547) — identifiers VERIFIED: UPC 097855174659 (Amazon
+  B09LK1P1RD, GTIN 00097855174659 + eBay UPC 0097855174659 agree),
+  MPN 920-010547 (Amazon + eBay + Best Buy SKU 6502579 + Target +
+  Staples agree). MPN mapping corrected: 920-010547 is Tactile
+  Quiet; 920-010548 is Linear (Best Buy + BuyDig agree; its UPC
+  097855174666 excluded). Quotes (3): Logitech direct $179.99
+  (page-verified JSON-LD InStock, "In stock. Ready to ship"),
+  Dell $169.99, Best Buy $179.99 (page-verified JSON-LD InStock,
+  sold by Best Buy). Target $179.99 (JSON-LD InStock) also
+  confirmed. Candidate price $149.99 corrected: it was the Oct 31
+  LogiWork Deal Days sale price; current full-size list is
+  $179.99 and the $149.99 rows today are the Mini (different
+  model, excluded).
+- Microsoft Xbox Elite Wireless Controller Series 2, Black
+  (FST-00001) — identifiers VERIFIED: UPC 889842196344 (Amazon
+  B07SFKTLZM first-listed + eBay agree for FST-00001 Black), MPN
+  FST-00001 (Amazon item model number + eBay MPN + Microsoft Store
+  product ID 8RSN7J6375GG cross-ref). Amazon's other two codes
+  (889842613926, 750466003847) are unattributed variants, excluded;
+  Core codes 4IK-00001/4IK-00002 are a different line. Quotes (3):
+  Microsoft direct $167.99 (page-verified JSON-LD; stock not
+  confirmed in page text), Target $167.99, Best Buy $159.99 sale
+  (list $179.99). CDW $183.99 not used. Amazon flags the ASIN
+  "discontinued by manufacturer" but Microsoft/Target/Best Buy all
+  list it new on 2026-11-06, so it stays in as a current US line.
+- Eval on the new snapshot: 62 models, 55 verified identifiers, 5
+  with quotes, 14 total quotes, 0 identifier-matched, 14 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 57 →
+  62 / 51 → 55 for the approved expansion).

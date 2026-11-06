@@ -1,4 +1,4 @@
-"""Phase 1 evaluation set: 57 standardized electronics models, US market.
+"""Phase 1 evaluation set: 62 standardized electronics models, US market.
 
 Identifier policy (DECISIONS 002): an identifier is recorded only when a
 retailer or manufacturer listing states it for the exact pinned variant.
@@ -1090,6 +1090,153 @@ EVAL_SET: list[EvalProduct] = [
         "Headphones 2nd Gen (890101-0100); 1st-gen Ultra Open "
         "Earbuds are a different model. White Smoke is 897806-0020, "
         "a different SKU.",
+        status="verified",
+    ),
+    # --- Expansion batch 7 (2026-11-06, DECISIONS 029) ---
+    EvalProduct(
+        key="apple-macbook-neo-13-256gb-blush",
+        brand="Apple",
+        model="MacBook Neo 13-inch (A18 Pro, 2026)",
+        variant="A18 Pro, 8GB/256GB, Blush (MHFH4LL/A)",
+        category="laptops",
+        notes="MPN MHFH4LL/A confirmed (Apple US buy page title 'Buy "
+        "MacBook Neo, Blush, 256GB' + Best Buy US Model MHFH4LL/A, "
+        "SKU 6615878), but the UPC was not found in any US source "
+        "for this exact variant, so identifiers stay empty per the "
+        "DualSense Edge / DEX precedent. The only Neo UPC found, "
+        "195950852745, is Indigo MHFF4LL/A's (B&H standalone page + "
+        "Canex CA + eBay agree) and must NOT be copied to Blush — "
+        "different color, different UPC. Courts Barbados lists "
+        "195950852745 against MHFH4LL/A but its fields are garbled "
+        "(GTIN 472384200015) and it mislabels the color, so it was "
+        "not used. EveryMac's $599 256GB figure is stale/wrong "
+        "against live $699 (Apple feed + Best Buy + AppleInsider "
+        "MSRP $699). Apple direct $699.00 (Meta Catalog brand_direct "
+        "row); Best Buy $699.00 (page-verified JSON-LD InStock). "
+        "NFM $854 is a Silver 256GB + 3-year AppleCare+ bundle, "
+        "excluded. 512GB tiers (MHFC4LL/A, MHFJ4LL/A, MHFE4LL/A, "
+        "MHFG4LL/A, $799) and Silver/Citrus/Indigo 256GB are "
+        "different SKUs. Distinct from MacBook Pro 14 M6 "
+        "(MHWT4LL/A) and MacBook Air 13/15 M5.",
+    ),
+    EvalProduct(
+        key="sony-ps5-1tb",
+        brand="Sony",
+        model="PlayStation 5 Slim Console (1TB, disc)",
+        variant="1TB, White, disc (CFI-2100 model group; retail MPN 1000049888)",
+        category="consoles",
+        identifiers={"UPC": "711719021452", "MPN": "1000049888"},
+        identifier_sources={
+            "UPC": "Amazon B0FRGTYSL5 (Model Number CFI-2100, MPN "
+            "1000049888, UPC 711719021452) + two eBay US listings "
+            "agree on UPC 711719021452. The eBay listings typo the "
+            "MPN as 1000049988; the MPN itself rests on Amazon + "
+            "Best Buy Model 1000049888."
+        },
+        notes="PlayStation Direct $649.00 (price-only; the Direct "
+        "crawl mixes 'Currently Unavailable / Coming Soon / Low "
+        "stock' flags across variants); Best Buy $649.99 "
+        "(page-verified, sold by Best Buy, SKU 6646419); Sam's Club "
+        "$649.00 (Meta Catalog standalone row). Correction vs the "
+        "2026-10-31 candidate note: the US disc model is NOT "
+        "CFI-2016 — that is the EU disc code (15 = US, 16 = EU; "
+        "eBay US lists the CFI-2000-group disc as CFI-2015, UPC "
+        "711719573364, and PCShop.ge lists the CFI-2100-group disc "
+        "as CFI-2116). The current US disc console is the CFI-2100 "
+        "model group (CFI-2115 per JNLGame), retail MPN 1000049888; "
+        "the older CFI-2015 disc (UPC 711719573364) is superseded. "
+        "Excluded: Staples $722.99 (old CFI-2000 model 1000039671), "
+        "marketplace rows $789–$1,246.99, game bundles (Ghost of "
+        "Yotei $1,040.99, NBA 2K25 $799.99, BJ's bundle $699.99), "
+        "rental rows ($26.99/$29.99/$100). Distinct from the set's "
+        "PS5 Digital 825GB (1000049898, UPC 711719021483) and PS5 "
+        "Pro (CFI-7021).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="nintendo-switch-pro-controller",
+        brand="Nintendo",
+        model="Switch Pro Controller",
+        variant="Black, standard edition (HAC-013; retail MPN HACAFSSKA)",
+        category="controllers",
+        identifiers={"UPC": "045496590161", "MPN": "HACAFSSKA"},
+        identifier_sources={
+            "UPC": "Amazon B01NAWKYZ0 (GTIN 00045496590161, MPN "
+            "HACAFSSKA) + Abt page title 'Nintendo Switch Pro "
+            "Controller - 045496590161' + Newegg URL slug "
+            "nintendo-045496590161-controller + Poggers item UPC "
+            "agree. MPN HACAFSSKA from Amazon (model number + MPN); "
+            "HAC-013 is the hardware model per Nintendo Support US "
+            "and Wikipedia."
+        },
+        notes="Dell $79.99; NFM $79.99; Target $79.98 (product-page "
+        "JSON-LD InStock, A-52180631; Target search listings show "
+        "$79.99). Nintendo direct store page not re-reached in this "
+        "batch (the 2026-10-31 sweep had it at $79.99 on "
+        "nintendo.com); Abt lists it as no longer available, so no "
+        "Abt quote. Excluded: Zelda/Mario/Smash special editions "
+        "($54.99–$140.99), third-party controllers, Switch 2 Pro "
+        "Controller rows ($89.99/$94.99). Distinct from the set's "
+        "Switch 2 Pro Controller (BEE-008, UPC 045496885861). "
+        "Wikipedia notes EU discontinuation February 2027; the US "
+        "listing is current as of 2026-11-06.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="logitech-mx-mechanical-tactile-quiet-graphite",
+        brand="Logitech",
+        model="MX Mechanical",
+        variant="Full-size, Tactile Quiet switches, Graphite (920-010547)",
+        category="keyboards",
+        identifiers={"UPC": "097855174659", "MPN": "920-010547"},
+        identifier_sources={
+            "UPC": "Amazon B09LK1P1RD (GTIN 00097855174659, MPN "
+            "920-010547, Tactile Quiet, Graphite) + eBay (UPC "
+            "0097855174659, MPN 920-010547) agree. The Linear "
+            "variant 920-010548 carries a different UPC "
+            "(097855174666, TargetPC URL slug) and was excluded."
+        },
+        notes="Logitech direct $179.99 (page-verified JSON-LD "
+        "InStock, 'In stock. Ready to ship'); Dell $169.99; Best "
+        "Buy $179.99 (page-verified JSON-LD InStock, sold by Best "
+        "Buy, SKU 6502579). Target $179.99 (JSON-LD InStock) also "
+        "confirmed. Correction vs the 2026-10-31 candidate price: "
+        "$149.99 was the Oct 31 LogiWork Deal Days sale price; the "
+        "current full-size list is $179.99 and Dell is $169.99 — "
+        "the $149.99 rows today are the MX Mechanical MINI "
+        "(Clicky/Tactile/Linear, Dell), a different model, "
+        "excluded. MPN mapping corrected: 920-010547 is Tactile "
+        "Quiet (Amazon + eBay + Best Buy + Staples + Target "
+        "agree); 920-010548 is Linear (Best Buy + BuyDig agree). "
+        "Distinct from the set's MX Keys Mini Black (920-010475) "
+        "and MX Keys S Pale Grey (920-011559).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="xbox-elite-series-2-black",
+        brand="Microsoft",
+        model="Xbox Elite Wireless Controller Series 2",
+        variant="Black (FST-00001)",
+        category="controllers",
+        identifiers={"UPC": "889842196344", "MPN": "FST-00001"},
+        identifier_sources={
+            "UPC": "Amazon B07SFKTLZM (first of three listed UPCs, "
+            "item model number FST-00001) + eBay (UPC 889842196344, "
+            "MPN FST-00001, Black) agree. Amazon's other two codes "
+            "(889842613926, 750466003847) are unattributed variants "
+            "and were excluded; the Core model (4IK-00001/4IK-00002) "
+            "is a different line."
+        },
+        notes="Microsoft direct $167.99 (page-verified JSON-LD; "
+        "stock not confirmed in the page text); Target $167.99; "
+        "Best Buy $159.99 sale (list $179.99). CDW $183.99 not "
+        "used. Amazon lists the ASIN as 'Is Discontinued By "
+        "Manufacturer' but Microsoft Store, Target and Best Buy "
+        "all list it new at $159.99–$179.99 on 2026-11-06, so it "
+        "stays in the set as a current US line. Distinct from the "
+        "set's Xbox Wireless Controller Carbon Black (1914, UPC "
+        "196388518159) and from the Elite Series 2 Core "
+        "($134.99–$149.99, different line).",
         status="verified",
     ),
 ]

@@ -11,6 +11,24 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 7 (DECISIONS 029, continuous expansion per
+  DECISIONS 027): eval set 57 → 62 models, 51 → 55 verified
+  identifiers. New: MacBook Neo 13-inch 256GB Blush (MHFH4LL/A,
+  UPC pending — the only Neo UPC found, 195950852745, is Indigo
+  MHFF4LL/A's and was not copied across colors), PlayStation 5
+  Slim Console 1TB disc (CFI-2100 model group, retail MPN
+  1000049888, UPC 711719021452 — not CFI-2016, which is the EU
+  disc code), Nintendo Switch Pro Controller Black (HAC-013;
+  retail MPN HACAFSSKA, UPC 045496590161), Logitech MX Mechanical
+  full-size Tactile Quiet Graphite (920-010547, UPC 097855174659;
+  current list $179.99, not the Oct 31 sale price $149.99),
+  Xbox Elite Wireless Controller Series 2 Black (FST-00001, UPC
+  889842196344). New snapshot
+  `data/eval_snapshots_batch7_2026-11-06.json` holds 14 quotes
+  across the 5 models (Neo: 2, PS5 1TB: 3, Pro Controller: 3, MX
+  Mechanical: 3, Elite Series 2: 3). DECISIONS 021 applied to every
+  quote: no marketplace/third-party rows, no non-US rows, no Amazon.
+
 - Expansion batch 6 (DECISIONS 028, continuous expansion per
   DECISIONS 027): eval set 52 → 57 models, 47 → 51 verified
   identifiers. New: iPad Pro 13-inch M5 256GB Wi-Fi Space Black
