@@ -3725,3 +3725,146 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   then Dell held monitors/accessories, with Lenovo tablets held
   until the US store can be read. No catalog, DECISIONS,
   CHANGELOG, test or snapshot file was touched.
+
+## 060 — 2026-11-06: Expansion batch 21 — 125 → 130 models (DECISIONS 043)
+
+- HP official US store verification (hp.com/us-en + hyperx.com US,
+  read-only, 2026-11-06 ~19:43–19:50 UTC / 11:43–11:50 PT): all
+  five HP US product pages return full JSON-LD offers, InStock, at
+  the sweep prices — OMEN 27s $389.99 (780G5AA#ABA), Cloud III
+  Black-Red $99.99 (Product # 727A9AA), HP 920 $68.99
+  (6H1A4AA#ABA), OMEN 27q G2 $203.99 (AV4H6AA#ABA), Alloy Rise 75
+  $84.99 (hyperx.com, single variant Black / US Layout / HyperX
+  Red - Linear, wired, Available). HP laptops and desktops are
+  configurable: no laptop or desktop was added (DECISIONS 015).
+  Feed shelf observed across the 5 Meta Catalog runs (100 rows):
+  27s HP $389.99 brand_direct (hp.com + hyperx.com rows) /
+  Distritech $217.49 / Newegg $309; Cloud III HP $99.99
+  brand_direct for every colorway (Black-Red, Black, White,
+  White/Pink, Black/Blue) / Best Buy Black-Blue $99.99 / Staples
+  Black/Red 727A9AA $104.59 / thinkedu Black 727A8AA $99.99 /
+  Newegg $159.69 (color unstated); HP 920 HP $114.99 list / $68.99
+  sale brand_direct / Best Buy $68.99 sale (SKU 12714516) / HP 925
+  $114 list / $68 sale (different, business model) / tecisoft
+  $298.65 / tech-ment $167.99; 27q G2 HP $339.99 list / $203.99
+  sale brand_direct / Newegg $218.99 (AV4H6AA) / Micro Center
+  $169.99 marketplace / Newegg $553.98; Alloy Rise 75 HyperX
+  $84.99 brand_direct / Target $84.99 sale / Best Buy $84.99 sale
+  (SKU 11006248) / Newegg $169.99 list / Newegg $281.98 (second,
+  unconfirmed listing).
+- Membership check (against the 125-model set, by name, MPN and
+  UPC): grep finds zero 'HP', 'HyperX' or 'OMEN' brand entries in
+  price_agent/catalog.py — the only 'HP' strings are merchant
+  mentions in other entries' notes, and the '920' hits are
+  Logitech part numbers (920-011559, 920-010475), so no name, MPN
+  or UPC overlap for any of the 5 picked models. OMEN 27s
+  (780G5AA#ABA): no match — the set had no HP monitor at all.
+  Cloud III (727A9AA): no match — distinct from the set's Sony,
+  Bose, JBL, Razer and Corsair headsets. HP 920 (6H1A4AA#ABA / UPC
+  197029640277): no match — the set's mice are Logitech, Razer,
+  Corsair and Alienware. OMEN 27q G2 (AV4H6AA#ABA): no match —
+  distinct from the 27s (different resolution/refresh) and from
+  the OMEN 27q (780H4AA, older 165 Hz model, not in the set).
+  Alloy Rise 75 (7G7A4AA#ABA): no match — distinct from the set's
+  Logitech, Keychron, Razer, Corsair and Alienware boards.
+- Per-model record (all 5 added; identifiers, quotes, pending):
+- HP OMEN 27s FHD 240Hz Gaming Monitor, Black (780G5AA#ABA) —
+  identifiers PENDING: MPN confirmed (HP US page), but the US UPC
+  is single-source only — the HP datasheet (1WorldSync syndication
+  + the same document mirrored on Etilize) lists UPC/EAN (ABA)
+  197029615442 for P/N 780G5AA#ABA, and no second independent
+  non-Amazon source states it (B&H lists the 780G5AA#ABA page with
+  no UPC and marks it Discontinued at $349.99; Amazon also states
+  197029615442 but Amazon never corroborates), so identifiers stay
+  empty per the strict two-source rule. Not copied: 197029615466
+  (the ABB regional code); the OMEN 27 (165 Hz, Z4D33AA) and OMEN
+  27q/27qs lines (different models). Quotes (2): HP direct $389.99
+  (InStock, page JSON-LD read); Newegg $309 (feed
+  authorized_retailer row — suspected; color unstated, not
+  page-verified). Excluded: the Distritech $217.49 row (44% below
+  the HP list, not page-verified, unconfirmed outlier); the OMEN
+  27q G2 $553.98 row in the same feed run (different model).
+- HyperX Cloud III Gaming Headset, Black-Red (727A9AA) —
+  identifiers PENDING: MPN confirmed (HP US page + Staples feed
+  row agree), but the only UPC found, 197029008237, is stated on
+  Amazon listings only (Amazon.com/.ca/.in, ASIN B0C3BV19Q3) — and
+  those same listings also carry a second, conflicting code
+  740617255522 — so identifiers stay empty per the DualSense
+  precedent. Correction vs sweep 059: the Black-Red MPN is 727A9AA
+  on the HP US product page, not 4P5M0AA (bundle/upsell code);
+  4P5M0AA was not recorded. Not copied: 727A8AA (Black), BS7C1AA
+  (White), DF7F0AA (Black/Lavender) — different colorways at the
+  same $99.99; the Cloud III Wireless / Cloud III S Wireless
+  (different, wireless models). Quotes (3): HP direct $99.99
+  (InStock, page JSON-LD read); Staples $104.59 (Black/Red 727A9AA,
+  feed row — suspected; not page-verified); Newegg $159.69 (feed
+  row — suspected; color unstated, above list, not
+  page-verified). Excluded: the Best Buy Black-Blue $99.99 row (a
+  different colorway); the Cloud III bundle rows ($179.99/$199.99,
+  bundles, not standalone).
+- HP 920 Ergonomic Vertical Mouse, Black (6H1A4AA#ABA) —
+  identifiers VERIFIED: UPC 197029640277, agreed by the HP
+  datasheet for the 920 Ergonomic Wireless Mouse (Product number
+  6H1A4AA; UPC number (ABA) 197029640277) and the eBay US product
+  catalog (item 156358903729, MPN 6H1A4AA#ABA, UPC 197029640277);
+  Amazon was not used as corroboration (S3225QS precedent:
+  datasheet + eBay). Not copied: 196548939633 (the ABB/EMEA code);
+  the HP 925 Ergonomic Vertical Mouse (different, business model)
+  and the HP 710 Rechargeable Silent Mouse ($79.99) — different
+  mice. Quotes (2): HP direct $68.99 (sale vs $114.99 list,
+  InStock, page JSON-LD read; wireless 2.4 GHz + Bluetooth 5.3,
+  detachable wrist rest, 6 buttons, up to 4000 dpi); Best Buy
+  $68.99 (sale vs $114.99 list, SKU 12714516, feed row —
+  suspected; the feed title says 'Wired' but the HP US page specs
+  the mouse as wireless, so the title is a feed mislabel, not a
+  second variant; not page-verified). Excluded: the tecisoft
+  $298.65 and tech-ment $167.99 rows (unconfirmed resellers, above
+  list); the HP 925 rows (different model).
+- HP OMEN 27q G2 QHD 180Hz Gaming Monitor, Black (AV4H6AA#ABA) —
+  identifiers PENDING: MPN confirmed (HP US page + Harvey Norman
+  UK + DirectDial agree), but no US UPC surfaced — the HP
+  datasheet lists UPC codes for #A2N (198701661184), #ABB
+  (198701661221), #ABT, #ABU, #ABV, #ACQ, #UUG and #UUZ, and the
+  (ABA) slot is absent, so identifiers stay empty per the
+  DualSense precedent. Not copied: 198701661221 (the ABB regional
+  code); the OMEN 27qs G2 280 Hz (AW3V0AA#ABA, different, faster
+  panel) and the OMEN 27q (780H4AA, older 165 Hz model) —
+  different monitors. Quotes (2): HP direct $203.99 (sale vs
+  $339.99 list, InStock, page JSON-LD read); Newegg $218.99
+  (AV4H6AA in the title, feed row — suspected; not
+  page-verified). Excluded: the Micro Center $169.99 shop.app row
+  (new_item_marketplace, DECISIONS 021); the Newegg $553.98 row
+  (same model name at 2.7x the direct price, unconfirmed listing).
+- HyperX Alloy Rise 75 Mechanical Gaming Keyboard, Black, US
+  Layout, HyperX Red - Linear, wired (7G7A4AA#ABA) — identifiers
+  PENDING: MPN confirmed (HP US page + HyperX feed spec row
+  agree), but the US UPC is single-source only — the HP leaflet
+  (mirrored on expert.de) lists HP GTIN (ABA) 197192334096, and no
+  second independent non-Amazon source states it, so identifiers
+  stay empty per the strict two-source rule. Not copied: the Alloy
+  Rise 75 Wireless (different, wireless model, up to 1500-hour
+  battery) and the Alloy Rise Top Plates (accessory, $49.99) —
+  different products. Quotes (4): HyperX direct $84.99 (InStock,
+  hyperx.com US store page read — the only variant listed); Best
+  Buy $84.99 (sale vs $169.99 list, SKU 11006248, feed row —
+  suspected; not page-verified); Target $84.99 (sale vs $169.99
+  list, feed row — suspected; not page-verified); Newegg $169.99
+  (feed row — the list price; not page-verified). Excluded: the
+  Newegg $281.98 row (second, unconfirmed listing).
+- Not added from the sweep (held for later batches, all current
+  US models, no defect): OMEN 27k $370.32; OMEN OLED 27q $399.99;
+  Series 3 Pro 327pf $194.00; E24mv G4 $210.40; E27k G5 $504.00;
+  Cloud III S Wireless $179.99; CloudX Flight 2 $139.99; CloudX
+  $59.99; Pulsefire Haste 2 Pro $119.99; Pulsefire Haste 2 Wireless
+  $89.99; QuadCast 2 S $149.99. Not added (no clean pin): all OMEN
+  / Victus / HP laptops and OMEN 35L desktops — configurable with
+  no retailer-pinned base configuration (DECISIONS 015); all
+  HyperX bundles — bundles, not standalone lines.
+- Eval on the new snapshot: 130 models, 72 verified identifiers,
+  5 with quotes, 13 total quotes, 0 identifier-matched, 13
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 125 → 130 / 71 → 72 for the continuous
+  expansion; the pending set gains the 4 new pending keys:
+  hp-omen-27s-black, hyperx-cloud-iii-black-red,
+  hp-omen-27q-g2-black, hyperx-alloy-rise-75-black).

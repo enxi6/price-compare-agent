@@ -11,6 +11,36 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 21 (DECISIONS 043, continuous expansion per
+  DECISIONS 027): eval set 125 → 130 models, verified identifiers
+  71 → 72 (1 of 5 new identifiers verified). New: HP OMEN 27s FHD
+  240Hz Gaming Monitor, Black (780G5AA#ABA, UPC pending — the US
+  (ABA) code 197029615442 is HP-datasheet-only; $389.99 at HP
+  direct, $309 at Newegg — HP's mainstream 240 Hz FHD gaming
+  monitor, the first HP monitor in the set), HyperX Cloud III
+  Gaming Headset, Black-Red (727A9AA, UPC pending — the only UPC
+  found, 197029008237, is Amazon-only; $99.99 at HP direct,
+  $104.59 at Staples — HyperX's mainstream wired headset, the
+  first HyperX headset in the set; the sweep's 4P5M0AA MPN was a
+  bundle/upsell code and was not used), HP 920 Ergonomic Vertical
+  Mouse, Black (6H1A4AA#ABA, UPC 197029640277 verified — HP
+  datasheet + eBay US product catalog agree; $68.99 sale at HP
+  direct, $68.99 at Best Buy — HP's ergonomic vertical mouse, the
+  first HP mouse in the set), HP OMEN 27q G2 QHD 180Hz Gaming
+  Monitor, Black (AV4H6AA#ABA, UPC pending — the HP datasheet
+  lists no (ABA) UPC; $203.99 sale at HP direct, $218.99 at
+  Newegg — HP's mainstream 180 Hz QHD gaming monitor, the first
+  HP QHD monitor in the set), HyperX Alloy Rise 75 Mechanical
+  Gaming Keyboard, Black, US Layout, HyperX Red - Linear, wired
+  (7G7A4AA#ABA, UPC pending — the US (ABA) code 197192334096 is
+  HP-leaflet-only; $84.99 sale at HyperX direct, $84.99 at Best
+  Buy and Target — HyperX's flagship customizable 75% board, the
+  first HyperX keyboard in the set). Not added: all OMEN / Victus
+  / HP laptops and OMEN 35L desktops (configurable, no
+  retailer-pinned base configuration — DECISIONS 015) and all
+  HyperX bundles (bundles, not standalone lines); the remaining HP
+  candidates stay list-only for later batches.
+
 - Expansion batch 20 (DECISIONS 042, continuous expansion per
   DECISIONS 027): eval set 120 → 125 models (the 125-model
   milestone), verified identifiers 69 → 71 (2 of 5 new identifiers

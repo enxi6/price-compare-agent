@@ -3097,8 +3097,172 @@ EVAL_SET: list[EvalProduct] = [
         "detachable boom mic) is Alienware's flagship pro headset "
         "and the first Alienware headset in the set.",
     ),
+    EvalProduct(
+        key="hp-omen-27s-black",
+        brand="HP",
+        model="OMEN 27s 27-inch FHD 240Hz Gaming Monitor",
+        variant="Black (780G5AA#ABA)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="HP direct $389.99 (InStock, hp.com/us-en page JSON-LD "
+        "read 2026-11-06, Product # 780G5AA#ABA, 27-inch FHD "
+        "1920x1080 IPS 240 Hz 1ms GtG, G-SYNC compatible, "
+        "DisplayHDR 400); Newegg $309 (feed authorized_retailer "
+        "row — suspected; color unstated, not page-verified). "
+        "Identifiers PENDING: MPN 780G5AA#ABA confirmed (HP US "
+        "page), but the US UPC is single-source only — the HP "
+        "datasheet (1WorldSync syndication + the same document "
+        "mirrored on Etilize) lists UPC/EAN (ABA) 197029615442 "
+        "for P/N 780G5AA#ABA, and no second independent non-Amazon "
+        "source states it (B&H lists the 780G5AA#ABA page with no "
+        "UPC and marks it Discontinued at $349.99; Amazon also "
+        "states 197029615442 but Amazon never corroborates), so "
+        "identifiers stay empty per the strict two-source rule; "
+        "re-check next refresh. Not copied: 197029615466 — that "
+        "is the (ABB) regional code, not the US (ABA) code; the "
+        "OMEN 27 (165 Hz, Z4D33AA) and OMEN 27q/27qs lines — "
+        "different models. Distinct from the set's Dell/Alienware "
+        "monitors — the OMEN 27s (2023, HP's mainstream 240 Hz "
+        "FHD gaming monitor) is the first HP monitor in the set.",
+    ),
+    EvalProduct(
+        key="hyperx-cloud-iii-black-red",
+        brand="HyperX",
+        model="Cloud III Gaming Headset",
+        variant="Black-Red (727A9AA)",
+        category="headphones",
+        identifiers={},
+        status="pending",
+        notes="HP direct $99.99 (InStock, hp.com/us-en page JSON-LD "
+        "read 2026-11-06, Product # 727A9AA, Black/Red, wired "
+        "53 mm angled drivers, 10 mm mic, USB-C/USB-A/3.5 mm); "
+        "Staples $104.59 (Black/Red 727A9AA, feed "
+        "authorized_retailer row — suspected; not page-verified); "
+        "Newegg $159.69 (feed row — suspected; color unstated, "
+        "above list, not page-verified). Correction vs sweep 059: "
+        "the Black-Red MPN is 727A9AA on the HP US product page — "
+        "the sweep's 4P5M0AA came from a bundle listing and an "
+        "OMEN desktop accessory upsell and is NOT the standalone "
+        "headset's code, so 4P5M0AA was not recorded; 727A8AA is "
+        "the Black colorway and BS7C1AA is White, both different "
+        "colorways at the same $99.99. Identifiers PENDING: MPN "
+        "727A9AA confirmed (HP US page + Staples feed row agree), "
+        "but the only UPC found, 197029008237, is stated on "
+        "Amazon listings only (Amazon.com/.ca/.in, ASIN "
+        "B0C3BV19Q3) — and those same listings also carry a "
+        "second, conflicting code 740617255522 — so identifiers "
+        "stay empty per the DualSense precedent; re-check next "
+        "refresh. Not copied: the Cloud III Wireless / Cloud III "
+        "S Wireless (different, wireless models); the Cloud II "
+        "(older model). Distinct from the set's Sony, Bose, JBL, "
+        "Razer and Corsair headsets — the Cloud III (2023, "
+        "HyperX's mainstream wired headset) is the first HyperX "
+        "headset in the set.",
+    ),
+    EvalProduct(
+        key="hp-920-ergonomic-vertical-mouse-black",
+        brand="HP",
+        model="920 Ergonomic Vertical Mouse",
+        variant="Black (6H1A4AA#ABA)",
+        category="mice",
+        identifiers={"UPC": "197029640277", "MPN": "6H1A4AA#ABA"},
+        identifier_sources={
+            "UPC": "HP datasheet for the 920 Ergonomic Wireless "
+            "Mouse (Product number 6H1A4AA; UPC number (ABA) "
+            "197029640277) + eBay US product catalog (item "
+            "156358903729, MPN 6H1A4AA#ABA, UPC 197029640277) "
+            "agree"
+        },
+        status="verified",
+        notes="HP direct $68.99 (sale vs $114.99 list, InStock, "
+        "hp.com/us-en page JSON-LD read 2026-11-06, Product # "
+        "6H1A4AA#ABA, Black, wireless 2.4 GHz + Bluetooth 5.3, "
+        "detachable wrist rest, 6 buttons, up to 4000 dpi); Best "
+        "Buy $68.99 (sale vs $114.99 list, SKU 12714516, feed "
+        "authorized_retailer row — suspected; the feed title "
+        "says 'Wired' but the HP US page specs the mouse as "
+        "wireless, so the title is a feed mislabel, not a second "
+        "variant; not page-verified). Not copied: 196548939633 "
+        "— that is the (ABB) EMEA code, not the US (ABA) code "
+        "(the HP datasheet lists (ABA) 197029640277, (ABB) "
+        "196548939633, (ABL) 196548939640, (UUF) 196548939657); "
+        "the HP 925 Ergonomic Vertical Mouse (different, business "
+        "model, $114 list / $68 sale in the same feed run) and "
+        "the HP 710 Rechargeable Silent Mouse ($79.99) — different "
+        "mice. Distinct from the set's Logitech, Razer, Corsair "
+        "and Alienware mice — the 920 (2023, Red Dot winner, HP's "
+        "ergonomic vertical mouse) is the first HP mouse in the "
+        "set. Re-check the $68.99 sale price after the Early "
+        "Black Friday event ends Nov 8.",
+    ),
+    EvalProduct(
+        key="hp-omen-27q-g2-black",
+        brand="HP",
+        model="OMEN 27q G2 27-inch QHD 180Hz Gaming Monitor",
+        variant="Black (AV4H6AA#ABA)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="HP direct $203.99 (sale vs $339.99 list, InStock, "
+        "hp.com/us-en page JSON-LD read 2026-11-06, Product # "
+        "AV4H6AA#ABA, 27-inch QHD 2560x1440 IPS 180 Hz 1ms GtG, "
+        "AMD FreeSync, HDR 400); Newegg $218.99 (AV4H6AA in the "
+        "title, feed authorized_retailer row — suspected; not "
+        "page-verified). Identifiers PENDING: MPN AV4H6AA#ABA "
+        "confirmed (HP US page + Harvey Norman UK + DirectDial "
+        "agree), but no US UPC surfaced — the HP datasheet lists "
+        "UPC codes for #A2N (198701661184), #ABB (198701661221), "
+        "#ABT, #ABU, #ABV, #ACQ, #UUG and #UUZ, and the (ABA) "
+        "slot is absent, so identifiers stay empty per the "
+        "DualSense precedent; re-check next refresh. Not copied: "
+        "198701661221 — that is the (ABB) regional code, not the "
+        "US (ABA) code; the OMEN 27qs G2 280 Hz (AW3V0AA#ABA, "
+        "different, faster panel) and the OMEN 27q (780H4AA, "
+        "older 165 Hz model) — different monitors. Excluded: the "
+        "Micro Center $169.99 shop.app row (new_item_marketplace, "
+        "DECISIONS 021) and the Newegg $553.98 row (same model "
+        "name at 2.7x the direct price, unconfirmed listing). "
+        "Distinct from the set's Dell/Alienware/HP monitors — the "
+        "27q G2 (HP's mainstream 180 Hz QHD gaming monitor) is "
+        "the first HP QHD monitor in the set. Re-check the "
+        "$203.99 sale price after the Early Black Friday event "
+        "ends Nov 8.",
+    ),
+    EvalProduct(
+        key="hyperx-alloy-rise-75-black",
+        brand="HyperX",
+        model="Alloy Rise 75 Mechanical Gaming Keyboard",
+        variant="Black, US Layout, HyperX Red - Linear, wired (7G7A4AA#ABA)",
+        category="keyboards",
+        identifiers={},
+        status="pending",
+        notes="HyperX direct $84.99 (InStock, hyperx.com US store "
+        "page read 2026-11-06 — the only variant listed: Black / "
+        "US Layout / HyperX Red - Linear, wired, 8k polling, "
+        "hot-swappable, gasket mounted); Best Buy $84.99 (sale "
+        "vs $169.99 list, SKU 11006248, Black wired linear, feed "
+        "authorized_retailer row — suspected; not page-verified); "
+        "Target $84.99 (sale vs $169.99 list, feed row — "
+        "suspected; not page-verified); Newegg $169.99 (feed row "
+        "— the list price; not page-verified). Identifiers "
+        "PENDING: MPN 7G7A4AA#ABA confirmed (HP US page + "
+        "HyperX feed spec row agree), but the US UPC is "
+        "single-source only — the HP leaflet (mirrored on "
+        "expert.de) lists HP GTIN (ABA) 197192334096, and no "
+        "second independent non-Amazon source states it, so "
+        "identifiers stay empty per the strict two-source rule; "
+        "re-check next refresh. Not copied: the Alloy Rise 75 "
+        "Wireless (different, wireless model, up to 1500-hour "
+        "battery) and the Alloy Rise Top Plates (accessory, "
+        "$49.99) — different products. Distinct from the set's "
+        "Logitech, Keychron, Razer, Corsair and Alienware boards "
+        "— the Alloy Rise 75 (2024, HyperX's flagship customizable "
+        "75% board) is the first HyperX keyboard in the set. "
+        "Re-check the $84.99 sale price after the Early Black "
+        "Friday event ends Nov 8.",
+    ),
 ]
-
 
 def get_product(key: str) -> EvalProduct:
     for product in EVAL_SET:

@@ -1844,3 +1844,81 @@ written as "superseded by" with the original text kept.
   Nov 8 (batch 9 revisit, still open); the Sony direct CH720N
   $89.99 is a sale price and should be re-checked after the sale
   ends.
+
+## 043 (2026-11-06): Expansion batch 21 — 125 → 130 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 HP/HyperX models from the HP official US store
+  sweep (BUILD_LOG 059), no per-batch user approval needed (DECISIONS
+  027): HP OMEN 27s FHD 240Hz Gaming Monitor, Black (780G5AA#ABA,
+  UPC pending), HyperX Cloud III Gaming Headset, Black-Red (727A9AA,
+  UPC pending), HP 920 Ergonomic Vertical Mouse, Black (6H1A4AA#ABA,
+  UPC 197029640277 verified), HP OMEN 27q G2 QHD 180Hz Gaming
+  Monitor, Black (AV4H6AA#ABA, UPC pending), HyperX Alloy Rise 75
+  Mechanical Gaming Keyboard, Black, US Layout, HyperX Red - Linear,
+  wired (7G7A4AA#ABA, UPC pending). One variant pinned per model
+  (DECISIONS 015); 1 of 5 identifiers verified, 4 stay pending on
+  single-source-only or no-source codes (Corsair batch 19 precedent:
+  0 of 5 verified is not a reason to hold the batch). Verified-
+  identifier count rises 71 → 72. No model was split out of this
+  batch. Two new brands enter the set: HP and HyperX; no new
+  category enters the set (monitors, headphones, mice, keyboards
+  already exist).
+- Why these 5: they are the first HP-brand sweep (the set had no HP
+  or HyperX entry at all), one per product family where the official
+  US catalog has a current fixed-configuration in-stock model —
+  mainstream 240 Hz FHD gaming monitor, mainstream wired gaming
+  headset, ergonomic vertical mouse, mainstream 180 Hz QHD gaming
+  monitor, flagship customizable 75% keyboard. No laptop or desktop
+  pick: HP/OMEN laptops and desktops are configurable with no
+  retailer-pinned base configuration (DECISIONS 015) — the sweep
+  excluded them rather than forcing one. All five are in stock new
+  in the US on 2026-11-06 (hp.com/us-en and hyperx.com US product
+  pages, JSON-LD reads, plus Meta Catalog feed rows).
+- What was corrected along the way: the Cloud III Black-Red MPN is
+  727A9AA on the HP US product page — the sweep's 4P5M0AA came from
+  a bundle listing and an OMEN desktop accessory upsell and is NOT
+  the standalone headset's code, so 4P5M0AA was not recorded;
+  727A8AA is the Black colorway and BS7C1AA is White, both
+  different colorways at the same $99.99. HP monitor/mouse UPCs are
+  regional by suffix and were NOT carried across suffixes: the
+  OMEN 27s US (ABA) code is 197029615442, not 197029615466 (that is
+  the ABB code); the HP 920 US (ABA) code is 197029640277, not
+  196548939633 (that is the ABB/EMEA code); the OMEN 27q G2
+  (ABB) code 198701661221 is not the US code — the HP datasheet
+  lists no (ABA) UPC for the 27q G2 at all. The Best Buy feed title
+  for the HP 920 says "Wired" but the HP US page specs the mouse as
+  wireless (2.4 GHz + Bluetooth 5.3), so the title is a feed
+  mislabel, not a second variant. The Distritech $217.49 OMEN 27s
+  feed row (44% below the $389.99 HP list, not page-verified) was
+  excluded from the snapshot as an unconfirmed outlier.
+- Variant pinning, recorded explicitly: OMEN 27s pins Black
+  (780G5AA#ABA) — the only colorway; Cloud III pins Black-Red
+  (727A9AA) — Black (727A8AA), White (BS7C1AA) and Black/Lavender
+  (DF7F0AA) are different colorways at the same $99.99; HP 920 pins
+  Black (6H1A4AA#ABA) — the only colorway; OMEN 27q G2 pins Black
+  (AV4H6AA#ABA) — the only colorway; Alloy Rise 75 pins Black, US
+  Layout, HyperX Red - Linear, wired (7G7A4AA#ABA) — the only
+  variant listed on the HyperX US store (the Wireless version is a
+  different model).
+- What does NOT change: the existing 125 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–20 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 130 on
+  the next edit (parent owns the cron; not touched here).
+- Revisit: all three sale prices should be re-checked after the
+  Early Black Friday event ends Nov 8 (HP 920 $68.99, OMEN 27q G2
+  $203.99, Alloy Rise 75 $84.99); the OMEN 27s UPC 197029615442,
+  the Cloud III UPC 197029008237 (Amazon-only today, plus a
+  conflicting second code 740617255522 on the same listings), the
+  OMEN 27q G2 US UPC (no code surfaced at all) and the Alloy Rise
+  75 UPC 197192334096 (HP leaflet only) stay pending until a second
+  non-Amazon US source confirms each; the remaining HP candidates
+  (OMEN 27k $370.32, OMEN OLED 27q $399.99, Series 3 Pro 327pf
+  $194.00, E24mv G4 $210.40, E27k G5 $504.00, Cloud III S Wireless
+  $179.99, CloudX Flight 2 $139.99, CloudX $59.99, Pulsefire Haste
+  2 Pro $119.99, Pulsefire Haste 2 Wireless $89.99, QuadCast 2 S
+  $149.99) stay list-only for later batches; the ULT WEAR $148.00
+  Black Friday street price should be re-checked after Nov 8
+  (batch 9 revisit, still open); the Sony direct CH720N $89.99 is
+  a sale price and should be re-checked after the sale ends.
