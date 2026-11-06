@@ -1053,3 +1053,71 @@ written as "superseded by" with the original text kept.
   text); the B&H LinkBuds Fit $198.00 is Special Order (2-4 weeks),
   not in stock; the ULT WEAR $148.00 Black Friday street price
   should be re-checked after Nov 8 (batch 9 revisit, still open).
+
+## 033 (2026-11-06): Expansion batch 11 — 77 → 82 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models from the remaining brand-sweep candidates
+  (BUILD_LOG 020/022/023/024/025), no per-batch user approval needed
+  (DECISIONS 027): Apple Magic Trackpad USB-C White (MXK93AM/A, UPC
+  195949654305), Sony WH-CH720N Black (WHCH720N/B, UPC 027242925397),
+  Logitech G915 X LIGHTSPEED full-size Tactile Black (920-012670, UPC
+  097855195005), Microsoft Xbox Adaptive Controller White (JMU-00003,
+  UPC pending), Keychron K8 hot-swappable Red (K8-G1, UPC
+  617748997921). One variant pinned per model (DECISIONS 015); 4 of
+  5 identifiers verified, Adaptive Controller stays pending (UPC
+  conflict, no US retailer spec page — DualSense Edge / DEX / Neo /
+  PULSE Elite precedent, not a reason to hold the batch).
+- Why these 5: they are the next un-added mainstream lines from the
+  five brand sweeps, each distinct from the set (first trackpad in
+  the set, and the distinct glass-trackpad line vs the Magic Mouse;
+  CH720N is Sony's lightweight mid-range noise-cancelling line, not
+  a 1000X flagship; G915 X is Logitech G's low-profile wireless
+  gaming keyboard, not an MX keyboard; Adaptive Controller is the
+  first Xbox accessibility controller; base K8 is the original
+  tenkeyless line vs the K8 HE and K8 Ultra 8K successors). All five
+  are in stock new in the US on 2026-11-06 (brand-direct pages or
+  InStock JSON-LD), except the two price-only direct rows noted
+  below and the K8-G1 stock flip (see below).
+- What was corrected along the way: the Trackpad candidate price
+  $129 is the White price — the Black trackpad (MXKA3AM/A) is $149
+  and is a different colorway; the CH720N candidate price $89.99 is
+  the current Sony direct sale price (was $179.99) while retailer
+  street price is $178–$180, and the launch MSRP was $149.99
+  (Sony's own page now lists MSRP $179.99); the G915 X candidate
+  price $129.99 was an Amazon Clicky-switch deal price, not the
+  standard US Tactile price — the LIGHTSPEED full-size Tactile
+  Black is $259.99 (Logitech G, Best Buy, Quill; B&H $219.99
+  sale); the Adaptive Controller's current retail MPN is JMU-00003
+  (Best Buy SKU 6455394, InStock) — the older JMU-00001 listing
+  (SKU 6381218) is no longer available new; the K8 candidate price
+  $59.99+ is the base price (K8-A1, soldered, $59.99) while the
+  pinned hot-swappable Red K8-G1 is $69.99.
+- Variant pinning, recorded explicitly: G915 X pins full-size
+  LIGHTSPEED, GL Tactile (Brown), Black — logitechg.com defaults
+  to the full-size LIGHTSPEED line at $259.99 with per-switch URLs
+  (.920-012670 Tactile, .920-012696 Linear, .920-012704 Clicky);
+  TKL ($229.99) and the wired Linear (920-012950, $199.99) are
+  different configurations. K8 pins White Backlight, Keychron
+  Super Switch (Hot-Swappable), Red (K8-G1) — mirroring the K8 Pro
+  precedent (hot-swappable, White Backlight, Red); the
+  page-default K8-A1 (Gateron G Pro Mechanical, Red, $59.99) is
+  the soldered version, not hot-swappable, and was not pinned.
+- What does NOT change: the existing 77 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro untouched,
+  batches 1–10 entries untouched). No other snapshot file is rewritten.
+  No Amazon touch. The daily refresh cron still says "57 models" in
+  its body and needs a count update to 82 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: Adaptive Controller White UPC stays pending until a US
+  retailer spec page or box barcode settles it (889842295368 vs
+  889842439038, both tied to JMU-00003 in eBay listings); K8-G1
+  stock flips between reads (out of stock in the 2026-11-06 product
+  JSON, Available 2 days earlier) and should be re-checked on the
+  next refresh; the Microsoft direct Adaptive $99.99 and Keychron
+  direct K8-G1 $69.99 prices are price-only (stock not confirmed in
+  the page text); the B&H CH720N $178.00 price rests on a page
+  crawled 2026-09-12 and should be re-confirmed; the ULT WEAR
+  $148.00 Black Friday street price should be re-checked after
+  Nov 8 (batch 9 revisit, still open); the Sony direct CH720N
+  $89.99 is a sale price and should be re-checked after the sale
+  ends.

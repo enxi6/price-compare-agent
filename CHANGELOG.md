@@ -11,6 +11,27 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 11 (DECISIONS 033, continuous expansion per
+  DECISIONS 027): eval set 77 → 82 models, 62 → 66 verified
+  identifiers. New: Apple Magic Trackpad USB-C White (MXK93AM/A,
+  UPC 195949654305; $129 is the White price — the Black trackpad
+  is $149 and is a different colorway), Sony WH-CH720N Black
+  (WHCH720N/B, UPC 027242925397; $89.99 is the current Sony direct
+  sale price while retailer street price is $178–$180), Logitech
+  G915 X LIGHTSPEED full-size Tactile Black (920-012670, UPC
+  097855195005; the $129.99 candidate price was an Amazon
+  Clicky-switch deal — the standard US Tactile is $259.99, B&H
+  $219.99 sale), Microsoft Xbox Adaptive Controller White
+  (JMU-00003, UPC pending — 889842295368 vs 889842439038 conflict,
+  no US retailer spec page; JMU-00001 is the older listing, no
+  longer available new), Keychron K8 hot-swappable Red (K8-G1, UPC
+  617748997921; the base K8 starts at $59.99 soldered, the pinned
+  hot-swappable Red is $69.99 — K8-G1 stock flips between reads).
+  New snapshot `data/eval_snapshots_batch11_2026-11-06.json` holds
+  12 quotes across the 5 models (Trackpad: 3, CH720N: 3, G915 X:
+  3, Adaptive: 2, K8: 1). DECISIONS 021 applied to every quote:
+  no marketplace/third-party rows, no non-US rows, no Amazon.
+
 - Expansion batch 10 (DECISIONS 032, continuous expansion per
   DECISIONS 027): eval set 72 → 77 models, 60 → 62 verified
   identifiers. New: Apple Studio Display (2026) Standard glass,

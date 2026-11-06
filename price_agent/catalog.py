@@ -1,4 +1,4 @@
-"""Phase 1 evaluation set: 67 standardized electronics models, US market.
+"""Phase 1 evaluation set: 82 standardized electronics models, US market.
 
 Identifier policy (DECISIONS 002): an identifier is recorded only when a
 retailer or manufacturer listing states it for the exact pinned variant.
@@ -1756,6 +1756,230 @@ EVAL_SET: list[EvalProduct] = [
         "Red and Blue, Green and Blue, Astral Purple, Gray, "
         "Dark Green, all $149.99 at Best Buy) are different "
         "models and were excluded.",
+    ),
+    # --- Expansion batch 11 (2026-11-06, continuous expansion per DECISIONS 027) ---
+    # 77 -> 82 models. DECISIONS 033, BUILD_LOG 049.
+    EvalProduct(
+        key="apple-magic-trackpad-usbc",
+        brand="Apple",
+        model="Magic Trackpad (USB-C)",
+        variant="White Multi-Touch Surface (MXK93AM/A)",
+        category="mice",
+        identifiers={"UPC": "195949654305", "MPN": "MXK93AM/A"},
+        identifier_sources={
+            "UPC": "Apple US official store page for MXK93AM/A "
+            "(Part Number UPC or EAN No.: 195949654305) + "
+            "Adorama US spec (SKU ACMXK93AMA, MFR MXK93AM/A, "
+            "UPC 195949654305) + eBay US product identifiers "
+            "(GTIN 0195949654305, MPN MXK93AMA) agree. The "
+            "Black variant MXKA3AM/A is a different color and "
+            "a different price ($149) and was excluded."
+        },
+        notes="Apple direct $129.00 (US store page JSON-LD, "
+        "InStock, page-verified 2026-11-06); CDW $129.00 "
+        "(feed row, White/Silver, authorized retailer); "
+        "Target $129.99 (feed row, White Multi-Touch "
+        "Surface, authorized retailer); P.C. Richard "
+        "$129.00 (feed row, MXK93AM/A) also seen. "
+        "Correction vs the 2026-10-31 candidate price: "
+        "$129 is the White price; the Black trackpad "
+        "(MXKA3AM/A) is $149 at Apple direct, Staples and "
+        "P.C. Richard ($149.99 at Best Buy) and is a "
+        "different colorway, not a price move. Distinct "
+        "from the set's Magic Mouse USB-C White (MXK53AM/A, "
+        "UPC 195949655883) — the Trackpad is the distinct "
+        "glass-trackpad line, not a mouse.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-wh-ch720n-black",
+        brand="Sony",
+        model="WH-CH720N",
+        variant="Black (WHCH720N/B)",
+        category="headphones",
+        identifiers={"UPC": "027242925397", "MPN": "WHCH720N/B"},
+        identifier_sources={
+            "UPC": "B&H Photo US spec page for WHCH720N/B "
+            "(BH #SOWHCH720NB, UPC 027242925397) + eBay US "
+            "product identifiers (MPN WH-CH720N/B, UPC "
+            "027242925397) + Ubuy (Model WHCH720N/B, UPC "
+            "027242925397) + Amazon.ca (Model WHCH720N/B, "
+            "UPC 027242925397, ASIN B0BS1QCFHX) agree. The "
+            "Blue WHCH720N/L UPC 027242925502 and the EU "
+            "WHCH720NB.CE7 EAN 4548736142428 are different "
+            "variants and were excluded."
+        },
+        notes="Sony direct $89.99 (electronics.sony.com "
+        "WHCH720N/B page, JSON-LD $89.99, Save $90.00 off "
+        "$179.99; free shipping, est. delivery Nov 3-4, "
+        "page-verified 2026-11-06); BJ's $179.99 (feed row, "
+        "authorized retailer); P.C. Richard $179.95 (feed "
+        "row, WHCH720N-B, authorized retailer); B&H $178.00 "
+        "(page-verified In Stock, JSON-LD InStock — page "
+        "crawled 2026-09-12, so the price is dated). "
+        "Correction vs the 2026-10-31 candidate price: "
+        "$89.99 is the current Sony direct sale price, not "
+        "a stale figure — the launch MSRP was $149.99 "
+        "(Sony press release 2023-02-21), while Sony's own "
+        "page now lists MSRP $179.99 and a $90 saving. "
+        "Street price at retailers is $178–$180. Distinct "
+        "from the set's WH-1000XM5/XM6 Black, WH-1000XM4C "
+        "Black and ULT WEAR Black — the CH720N is Sony's "
+        "lightweight mid-range noise-cancelling line "
+        "(2023, Integrated Processor V1, 35-hour battery). "
+        "Blue, White and Pink are different colorways.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="logitech-g915-x-lightspeed-tactile-black",
+        brand="Logitech",
+        model="G915 X LIGHTSPEED",
+        variant="Full-size, GL Tactile (Brown), Black (920-012670)",
+        category="keyboards",
+        identifiers={"UPC": "097855195005", "MPN": "920-012670"},
+        identifier_sources={
+            "UPC": "B&H Photo US spec page for 920-012670 "
+            "(UPC 097855195005) + Abt US (Model 920-012670, "
+            "UPC 097855195005, Tactile Wireless in Black) + "
+            "Amazon US (Model 920-012670, UPC 097855195005, "
+            "ASIN B0DB1WNZJY) + Desertcart (Mfr Part "
+            "920-012670, UPC 097855195005) agree. The "
+            "Linear 920-012696 UPC is 097855195166 and the "
+            "Clicky 920-012704 UPC is 097855195029 — "
+            "different switches, different codes, both "
+            "excluded."
+        },
+        notes="Logitech G direct $259.99 (logitechg.com "
+        ".920-012670 page, JSON-LD InStock, page-verified "
+        "2026-11-06; Color Black); Best Buy $259.99 (Model "
+        "920-012670, SKU 6595193, Sold by Best Buy, JSON-LD "
+        "InStock, page-verified 2026-11-06); B&H $219.99 "
+        "(sale, was $259.99, In Stock, search-index); "
+        "Quill $259.99 (Model 920-012670) also seen. "
+        "Correction vs the 2026-10-31 candidate price: "
+        "$129.99 was an Amazon Clicky-switch deal price "
+        "(Grail Alerts 2026-11-01; pricehistory.app Clicky "
+        "920-012704 at $129.99), not the standard US "
+        "Tactile price — the LIGHTSPEED full-size Tactile "
+        "is $259.99 at Logitech G, Best Buy and Quill. "
+        "Variant pinning: full-size LIGHTSPEED, GL Tactile "
+        "(Brown), Black is the standard US variant — the "
+        "logitechg.com page defaults to the full-size "
+        "LIGHTSPEED line at $259.99 with per-switch URLs "
+        "(.920-012670 Tactile, .920-012696 Linear, "
+        ".920-012704 Clicky); TKL ($229.99, Tactile Black "
+        "920-012726) and the wired Linear (920-012950, "
+        "$199.99 / $169.99 at Staples) are different "
+        "configurations. The feed's Best Buy $259.99 "
+        "Tactile row is the White variant (SKU 6595195, "
+        "920-012685) and was not used for the Black price. "
+        "Distinct from the set's MX Mechanical, MX Keys "
+        "Mini/S, ERGO K860, Wave Keys and POP Keys — the "
+        "G915 X is Logitech G's low-profile wireless "
+        "gaming keyboard line.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="xbox-adaptive-controller",
+        brand="Microsoft",
+        model="Xbox Adaptive Controller",
+        variant="White (JMU-00003)",
+        category="controllers",
+        notes="Retail MPN JMU-00003 confirmed (Best Buy US "
+        "current listing, Model JMU-00003, SKU 6455394, "
+        "Sold by Best Buy, $99.99, JSON-LD InStock, "
+        "page-verified via search index 2026-11-06; "
+        "Microsoft Store product page also $99.99, "
+        "xbox.com JSON-LD InStock). The older Best Buy "
+        "listing JMU-00001 (SKU 6381218) is no longer "
+        "available in new condition and was not used. UPC "
+        "is unresolved: 889842295368 (eBay product "
+        "identifiers, GTIN 0889842295368, MPN JMU-00003) "
+        "vs 889842439038 (PriceCharting, model 1836; also "
+        "an eBay listing ties this code to JMU-00003) — "
+        "two codes circulate for the same MPN and no US "
+        "retailer spec page states a UPC, so identifiers "
+        "stay empty per the DualSense Edge / DEX / Neo / "
+        "PULSE Elite precedent. Microsoft direct $99.99 "
+        "(microsoft.com / xbox.com JSON-LD; stock not "
+        "confirmed in the microsoft.com page text — "
+        "price-only); Best Buy $99.99 (Model JMU-00003, "
+        "SKU 6455394, JSON-LD InStock). Correction vs the "
+        "2026-10-31 candidate price: $99.99 is confirmed "
+        "current at both Microsoft Store and Best Buy. "
+        "Excluded: CDW $128.99 and BuyDig $124.99 (above "
+        "list), FlexShopper $123.99 (marketplace, "
+        "DECISIONS 021), the Adaptive Joystick ($29.99, a "
+        "companion accessory, not the controller) and the "
+        "Adaptive Dual Button ($59.99, a different "
+        "accessory). Distinct from the set's Xbox Wireless "
+        "Controller Carbon Black (1914), Elite Series 2 "
+        "Black (FST-00001) and Elite Series 2 Core White "
+        "(4IK-00001) — the Adaptive Controller (2018, "
+        "still Microsoft's current accessibility "
+        "controller, sold new at Microsoft Store and Best "
+        "Buy) is the large-button hub for external "
+        "switches, buttons, mounts and joysticks.",
+    ),
+    EvalProduct(
+        key="keychron-k8-hot-swappable-red",
+        brand="Keychron",
+        model="K8",
+        variant="White Backlight, Keychron Super Switch (Hot-Swappable), Red (K8-G1)",
+        category="keyboards",
+        identifiers={"UPC": "617748997921", "SKU": "K8-G1"},
+        identifier_sources={
+            "UPC": "Keychron official store public product "
+            "JSON (product id 4669741170777, variant "
+            "32018252791897, SKU K8-G1, barcode "
+            "617748997921, $69.99) + Desertcart spec table "
+            "(Mfr Part Number K8 G1, UPC 617748997921, "
+            "ASIN B0875W65Z2) agree. The JSON field is "
+            "named 'barcode' (no separate GTIN/UPC/EAN "
+            "field); the 12-digit code is the UPC-A form, "
+            "recorded as UPC (the K8 Pro / K8 Ultra 8K "
+            "precedent recorded 13-digit barcodes as EAN). "
+            "The old-K8 barcode 753610396260 does not "
+            "appear in the current JSON and was not used; "
+            "617748997846 is K8-A2 (Blue, Gateron G Pro), "
+            "a different variant."
+        },
+        notes="Keychron direct $69.99 (keychron.com K8 page, "
+        "variant K8-G1, price-only: K8-G1 shows out of "
+        "stock in the 2026-11-06 JSON read but was "
+        "Available in the search-index crawl 2 days "
+        "earlier, and the Blue/Brown hot-swappable "
+        "siblings K8-G2/K8-G3 are in stock — inventory "
+        "churn, not discontinuation). Variant pinning: "
+        "the base K8 line has 36 variants (White/RGB "
+        "backlight, plastic/aluminum frame, Gateron G Pro "
+        "/ Keychron Super / Gateron Optical / Keychron "
+        "Optical, Red/Blue/Brown); the pinned variant "
+        "mirrors the K8 Pro precedent (hot-swappable, "
+        "White Backlight, Red) — K8-G1 is the "
+        "hot-swappable Red, $69.99, page SKU K8-G1. The "
+        "page-default K8-A1 (White Backlight, Gateron G "
+        "Pro Mechanical, Red, $59.99) is the soldered "
+        "version, not hot-swappable, and is also out of "
+        "stock in this read, so it was not pinned. The "
+        "RGB hot-swappable Red K8-H1 ($79.99, in stock) "
+        "and the aluminum-frame variants ($79.99–$89.99) "
+        "are different configurations. Correction vs the "
+        "2026-10-31 candidate price: the base K8 starts "
+        "at $59.99 (K8-A1) and the hot-swappable Red is "
+        "$69.99. Excluded: Newegg K8 rows ($127.99 "
+        "Version 2 QMK, $126.55 White Backlight — "
+        "third-party/unclear variant, DECISIONS 021), "
+        "Newegg K8 HE $221.48 and K8 Pro $217.91 "
+        "(different models), Woot $39.99 (deal/clearance, "
+        "variant ambiguous, 90-day warranty). Distinct "
+        "from the set's K8 HE Special Black (K8H-F1) and "
+        "K8 Ultra 8K (K8U-J1) — the base K8 (K8-G1) is "
+        "the original tenkeyless line, not the Hall "
+        "Effect or 8K-polling successor. Like the K8 HE, "
+        "the base K8 is sold through Keychron's own store "
+        "only, so it holds a single quote.",
+        status="verified",
     ),
 ]
 
