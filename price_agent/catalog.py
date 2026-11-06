@@ -521,6 +521,118 @@ EVAL_SET: list[EvalProduct] = [
         "(SM-R540NZWAXAR); Buds4 Pro is a different model.",
         status="verified",
     ),
+    # --- Expansion batch 2 (added 2026-11-06, user-approved) ---
+    # 33 -> 38 models. DECISIONS 023, BUILD_LOG 039.
+    EvalProduct(
+        key="sony-wf1000xm6-black",
+        brand="Sony",
+        model="WF-1000XM6",
+        variant="Black (WF1000XM6/B)",
+        category="earbuds",
+        identifiers={"UPC": "027242933460", "MPN": "WF1000XM6/B"},
+        identifier_sources={
+            "UPC": "Abt (US) product page (Model WF1000XM6/B, UPC "
+            "027242933460) + B&H Photo spec page (UPC 027242933460, "
+            "Black) + eBay product identifiers (GTIN 0027242933460) "
+            "agree for WF1000XM6/B. Amazon bundle UPC 196641206649 "
+            "and renewed UPC 728434235248 are different products "
+            "and were not used."
+        },
+        notes="Bare unit only: Moon Audio / DataVision care-program "
+        "bundles and the Target earbud-tips bundle at $298-$328.48 "
+        "are excluded, as are the Platinum Silver rows. Sony direct "
+        "lists $298.00 (was $329.99); the Sony page itself 403'd on "
+        "direct fetch, so stock is not confirmed — price-only, "
+        "flagged in the snapshot notes (see BUILD_LOG 039).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="apple-watch-ultra-4-49mm-gps-cellular-natural",
+        brand="Apple",
+        model="Watch Ultra 4 (GPS + Cellular, 49mm)",
+        variant="GPS + Cellular, 49mm, Natural Titanium, Sand Trail Loop M/L (MJAQ4LS/A)",
+        category="wearables",
+        notes="GPS + Cellular only — there is no GPS-only Ultra 4 "
+        "tier (Apple buy page, EveryMac). Order number MJAQ4LS/A "
+        "confirmed by Apple's own buy-page URL parameter "
+        "(product=mjaq4ls/a) + Best Buy US (Model MJAQ4LS/A, SKU "
+        "6597850). US UPC not yet verified: Adorama's spec table "
+        "lists 195951394480 for Natural M/L Sand Trail Loop, but "
+        "no second independent US source states it, so identifiers "
+        "stay empty per the MacBook Pro 14 M6 precedent. Black "
+        "Titanium, Desert Alpine Loop (MJAE4LS/A), Milanese Loop "
+        "and Ocean Band are different SKUs. Apple direct $799.00, "
+        "Best Buy $799.00 (2026-11-06).",
+    ),
+    EvalProduct(
+        key="nintendo-switch-2-pro-controller",
+        brand="Nintendo",
+        model="Switch 2 Pro Controller",
+        variant="Black, standard edition (BEE-008)",
+        category="controllers",
+        identifiers={"UPC": "045496885861", "MPN": "BEE-008"},
+        identifier_sources={
+            "UPC": "Nintendo US store page itself (SKU 123674, UPC "
+            "00045496885861) + Dell (manufacturer part "
+            "045496885861, $89.99) + eBay product identifiers (GTIN "
+            "0045496885861) + PayMore + Ubuy agree. MPN BEE-008 "
+            "confirmed by Nintendo Support (US). The single eBay "
+            "code 0219341384384 is uncorroborated and was not used; "
+            "4902370552843 is the Japan JAN, not the US UPC."
+        },
+        notes="Standard black controller only: the Zelda 40th "
+        "Anniversary edition ($99.99) and Resident Evil Requiem "
+        "edition ($119) are different SKUs. Nintendo US direct "
+        "$89.99, in stock 2026-11-06.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="logitech-mx-keys-mini-black",
+        brand="Logitech",
+        model="MX Keys Mini",
+        variant="Black, standard edition (920-010475)",
+        category="keyboards",
+        identifiers={"UPC": "097855169617", "MPN": "920-010475"},
+        identifier_sources={
+            "UPC": "Logitech's own spec sheet (Part # 920-010475, "
+            "Bar code 097855169617, hosted by P.C. Richard) + "
+            "manuals.plus (UPC 097855169617) + Adorama (UPC "
+            "097855169617) + DirectDial agree. Best Buy Q&A "
+            "(answered by Logitech) confirms 920-010475 is Black "
+            "and 920-010388 is Graphite — different SKUs."
+        },
+        notes="Black is sold as 'Graphite' in some Logitech "
+        "materials; the Graphite part 920-010388 is a different "
+        "SKU and was excluded, as were for-Mac (920-010389 / "
+        "920-012644) and for-Business (920-010594). Pale Grey "
+        "(920-010473) and Rose (920-010474) are different colors. "
+        "Logitech direct $89.99 (was $99.99), in stock "
+        "2026-11-06.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="samsung-buds3-fe-black",
+        brand="Samsung",
+        model="Galaxy Buds3 FE",
+        variant="Black (SM-R420NZKAXAR)",
+        category="earbuds",
+        identifiers={"UPC": "0198957213090", "MPN": "SM-R420NZKAXAR"},
+        identifier_sources={
+            "UPC": "ChannelOnline (multiple storefronts: Part # "
+            "SM-R420NZKAXAR, UPC 0198957213090, Black) + eBay "
+            "product identifiers (GTIN 0198957213090) + SHI (Mfr "
+            "Part # SM-R420NZKAXAR, Black, MSRP $149.99) agree. "
+            "Regional codes SM-R420NZKAASA (AU), SM-R420NZKAXSE, "
+            "SM-R420ZNAXNU and SM-R420NZAFXAR are different "
+            "variants and were excluded."
+        },
+        notes="Samsung US direct $149.99, in stock 2026-11-06. "
+        "Gray is a different SKU (SM-R420NZAAXAR); the older "
+        "Galaxy Buds FE is a different model. Macy's $149.99 row "
+        "is shipped and sold by DataVision (marketplace) and is "
+        "excluded per DECISIONS 021.",
+        status="verified",
+    ),
 ]
 
 

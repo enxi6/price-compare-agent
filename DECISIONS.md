@@ -478,3 +478,71 @@ written as "superseded by" with the original text kept.
 - Revisit: batch 2 candidates stay list-only until the user approves
   the next batch; the daily refresh cron still says "28 models" in
   its body and needs a count update to 33 on the next edit.
+
+## 023 (2026-11-06): Expansion batch 2 — eval set 33 → 38, one model per brand
+
+- Decision (user, 2026-11-06, "按这 5 款加"): add the second expansion
+  batch, five models, each brand's current mainstream/new product,
+  drawn from the brand-catalog candidate lists (BUILD_LOG 020/022/
+  023/024/025). No other model is added; the remaining candidates stay
+  list-only for later batches, each needing its own user approval
+  (DECISIONS 013/021).
+  (a) Sony WF-1000XM6, Black — `sony-wf1000xm6-black`, pinned
+  variant Black (WF1000XM6/B). Bare unit only; care-program and
+  accessory bundles excluded; Platinum Silver is a different SKU.
+  (b) Apple Watch Ultra 4, GPS + Cellular 49mm — `apple-watch-ultra-
+  4-49mm-gps-cellular-natural`, pinned variant GPS + Cellular 49mm
+  Natural Titanium, Sand Trail Loop M/L (MJAQ4LS/A). There is no
+  GPS-only Ultra 4 tier; Black Titanium, Desert Alpine Loop
+  (MJAE4LS/A), Milanese Loop and Ocean Band are different SKUs.
+  (c) Nintendo Switch 2 Pro Controller — `nintendo-switch-2-pro-
+  controller`, pinned variant Black, standard edition (BEE-008).
+  The Zelda 40th Anniversary and Resident Evil Requiem editions
+  are different SKUs.
+  (d) Logitech MX Keys Mini, Black — `logitech-mx-keys-mini-black`,
+  pinned variant Black, standard edition (920-010475). Graphite
+  (920-010388) is a different SKU; for-Mac and for-Business are
+  different products; Pale Grey and Rose are different colors.
+  (e) Samsung Galaxy Buds3 FE, Black — `samsung-buds3-fe-black`,
+  pinned variant Black (SM-R420NZKAXAR). Gray (SM-R420NZAAXAR)
+  is a different SKU; the older Galaxy Buds FE is a different
+  model.
+- Identifier outcome: 4 of 5 verified (WF-1000XM6, Switch 2 Pro
+  Controller, MX Keys Mini, Buds3 FE), 1 pending (Watch Ultra 4 —
+  the only US UPC found, 195951394480 for Natural M/L Sand Trail
+  Loop, appears in a single source (Adorama's spec table); MPN
+  MJAQ4LS/A is confirmed but identifiers stay empty per the
+  MacBook Pro 14 M6 precedent, DECISIONS 008/BUILD_LOG 035). Eval
+  set is now 38 models, 34 verified identifiers, 4 pending
+  (DualSense White, MacBook Pro 14 M6, Watch Series 12, Watch
+  Ultra 4). `tests/test_snapshot_eval.py` counts updated 33 → 38
+  / 30 → 34 to match; this is a coverage change, not a loosened
+  assertion.
+- Regional-code traps avoided, same discipline as the Kindle pin:
+  Switch 2 Pro Controller US UPC is 045496885861 (Nintendo's own
+  US store page); the Japan JAN 4902370552843 and the single
+  uncorroborated eBay code 0219341384384 were NOT used. Buds3 FE
+  US Black is SM-R420NZKAXAR / UPC 0198957213090; the AU
+  SM-R420NZKAASA and other regional suffixes (NZKAXSE, ZNAXNU,
+  NZAFXAR) were NOT used. MX Keys Mini US Black is 920-010475 /
+  UPC 097855169617; Graphite 920-010388 is a different SKU, not a
+  different name for the same board.
+- What changes in practice: new snapshot
+  `data/eval_snapshots_batch2_2026-11-06.json` holds 19 quotes
+  across the 5 models (WF-1000XM6: 4, Ultra 4: 2, Pro Controller:
+  5, MX Keys Mini: 3, Buds3 FE: 5). DECISIONS 021 applied to every
+  quote: no marketplace/third-party rows, no non-US rows, no
+  Amazon. Two direct prices are price-only (stock not confirmed
+  in the page text): Sony direct WF-1000XM6 $298.00 (Sony page
+  403'd on direct fetch; price from Sony's own page via search
+  index) and Apple direct Ultra 4 $799.00.
+- What does NOT change: the existing 33 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense identifiers
+  untouched, MacBook Pro 14 M6 untouched, batch 1 entries
+  untouched). No other snapshot file is rewritten. No Amazon
+  touch. The daily refresh cron still says "33 models" in its
+  body and needs a count update to 38 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: batch 3 candidates stay list-only until the user approves
+  the next batch; Watch Ultra 4 UPC needs a second independent US
+  source (a US retailer spec page or a physical box barcode).

@@ -31,6 +31,23 @@ releases; breaking changes are called out in the release notes.
   entries untouched; no Amazon touch. Eval: 33 models, 30 verified
   identifiers, 16 quotes, 0 identifier-matched, 16 suspected.
 
+- Expansion batch 2 (DECISIONS 023, user 2026-11-06): eval set
+  33 → 38 models — Sony WF-1000XM6 Black (WF1000XM6/B, UPC
+  027242933460), Apple Watch Ultra 4 GPS + Cellular 49mm Natural
+  Titanium Sand Trail Loop M/L (MJAQ4LS/A, UPC pending — single
+  source only, M6 precedent), Nintendo Switch 2 Pro Controller
+  Black (BEE-008, UPC 045496885861), Logitech MX Keys Mini Black
+  (920-010475, UPC 097855169617), Samsung Galaxy Buds3 FE Black
+  (SM-R420NZKAXAR, UPC 0198957213090). New snapshot
+  `data/eval_snapshots_batch2_2026-11-06.json` holds 19 quotes
+  across the 5 models (WF-1000XM6: 4, Ultra 4: 2, Pro Controller:
+  5, MX Keys Mini: 3, Buds3 FE: 5), all DECISIONS 021-clean.
+  Existing 33 entries untouched; no Amazon touch. Eval: 38 models,
+  34 verified identifiers, 19 quotes, 0 identifier-matched, 19
+  suspected. Two direct prices are price-only (stock not confirmed
+  in page text): Sony direct WF-1000XM6 $298.00 and Apple direct
+  Ultra 4 $799.00.
+
 ### Changed
 
 - Daily price refresh 2026-11-06 (first daily run): all 28 models

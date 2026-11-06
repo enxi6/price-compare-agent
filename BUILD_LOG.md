@@ -1019,3 +1019,84 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (snapshot offers carry no identifier — the rule working, not a
   bug). Tests: 19 passed (test_snapshot_eval counts updated 28 →
   33 / 26 → 30 for the approved expansion).
+
+## 039 (2026-11-06): Expansion batch 2 — 5 models added, 33 → 38 (user-approved)
+
+- WF-1000XM6 Black (WF1000XM6/B): identifiers VERIFIED — UPC
+  027242933460 (Abt US product page + B&H Photo spec page + eBay
+  product identifiers agree) and MPN WF1000XM6/B. Amazon bundle
+  UPC 196641206649 and renewed UPC 728434235248 are different
+  products, not used. Quotes (4, all $298.00 sale): Sony direct
+  $298.00 (was $329.99 — price from Sony's own page via search
+  index; the Sony page itself returned 403 on direct fetch, so
+  stock is NOT confirmed, price-only), B&H $298.00 (was $328),
+  Walts $298.00 (was $328), P.C. Richard $298.00 (was $329.95).
+  Excluded: Nordstrom $328 (color unconfirmed in the feed row),
+  Platinum Silver rows ($298), Best Buy / Moon Audio / DataVision
+  care-program and accessory bundles ($298-$328.48), Target
+  earbud-tips bundle $328.48.
+- Watch Ultra 4 GPS + Cellular 49mm Natural Titanium, Sand Trail
+  Loop M/L (MJAQ4LS/A): identifiers PENDING (M6 precedent) — MPN
+  MJAQ4LS/A confirmed by Apple's own buy-page URL parameter +
+  Best Buy US (Model MJAQ4LS/A, SKU 6597850) + EveryMac (Apple
+  Order No MJAE4LS/A* for the Desert Alpine Loop variant, Model
+  No A3579). GPS + Cellular only — no GPS-only tier exists
+  (Apple buy page, EveryMac). The only US UPC found,
+  195951394480 (Natural M/L Sand Trail Loop), appears in a single
+  source (Adorama's spec table) and was NOT used; UK EAN
+  195951218090 (Black Burgundy Trail Loop S/M, Very UK) is
+  regional. Quotes (2, both $799.00): Apple direct $799.00
+  (page-verified JSON-LD for the exact variant; stock not
+  confirmed in page text), Best Buy $799.00 (unlocked, sold by
+  Best Buy). Excluded: T-Mobile $799.99 Black Titanium Ocean Band
+  (different variant), Best Buy AT&T $799.99 (carrier-activated),
+  Abt MJA94LS/A Milanese Loop $870 (different variant), Costco
+  Black Titanium (different variant), Adorama S/M $939
+  (different size, above MSRP, backordered to 01/2027). Still
+  pending: US UPC — needs a second independent US source.
+- Switch 2 Pro Controller Black (BEE-008): identifiers VERIFIED —
+  UPC 045496885861 (Nintendo US store page itself, SKU 123674,
+  UPC 00045496885861, + Dell manufacturer part + eBay GTIN
+  0045496885861 + PayMore + Ubuy) and MPN BEE-008 (Nintendo
+  Support US: "All official Nintendo Switch 2 Pro Controllers
+  have the model number BEE-008"). Retail SKU BEE-A-FSSKA.
+  Conflicting codes excluded: 0219341384384 (single eBay listing,
+  uncorroborated) and 4902370552843 (Japan JAN). Quotes (5):
+  Nintendo direct $89.99 (page-verified, InStock), GameStop
+  $89.99, R.C. Willey $89.99, Dell $89.99 (manufacturer part
+  045496885861), JustPressPlay $79.99. Excluded: Macy's $99.99
+  and JNL Game $99.99 (above MSRP; seller not confirmed as the
+  merchant itself), Newegg $138.99 (marketplace-style row), Zelda
+  40th Anniversary $99.99 and Resident Evil Requiem $119
+  (different editions), Japan import $123.31 (non-US).
+- MX Keys Mini Black (920-010475): identifiers VERIFIED — UPC
+  097855169617 + MPN 920-010475 (Logitech's own spec sheet, P.C.
+  Richard-hosted PDF, + manuals.plus + Adorama + DirectDial
+  agree). Best Buy Q&A (answered by Logitech) confirms
+  920-010475 is Black and 920-010388 is Graphite — different
+  SKUs, not one board under two names. Quotes (3, all $89.99):
+  Logitech direct $89.99 (was $99.99, page-verified, In stock),
+  Staples $89.99 (Model # 920-010475), Lenovo $89.99 (sale, was
+  $99.99). Excluded: for-Mac (920-010389 / 920-012644) and
+  for-Business (920-010594) rows, Pale Grey (920-010473) and Rose
+  (920-010474) rows, Newegg marketplace rows.
+- Galaxy Buds3 FE Black (SM-R420NZKAXAR): identifiers VERIFIED —
+  UPC 0198957213090 (ChannelOnline multiple storefronts + eBay
+  GTIN agree) and MPN SM-R420NZKAXAR (Samsung US buy-page URL +
+  SHI Mfr Part # + Newegg Part Number). Regional codes excluded:
+  SM-R420NZKAASA (AU), SM-R420NZKAXSE, SM-R420ZNAXNU,
+  SM-R420NZAFXAR. Quotes (5, all $149.99): Samsung direct
+  $149.99 (page-verified JSON-LD, InStock), T-Mobile $149.99,
+  Newegg $149.99 (sold by Newegg, shipped by Newegg), CDW
+  $149.99, ShopMyExchange $149.99 (sale, was $249). Excluded:
+  Target international version $99.99 sale (non-US), Target
+  $117.97 (seller not confirmed), Macy's $149.99 shipped and sold
+  by DataVision (marketplace, DECISIONS 021), Ayoub
+  SM-R420NZAFXAR $120 (regional suffix), Samsung Latin $114 and
+  Newegg LatAm $136.99 (non-US), refurbished rows (DECISIONS
+  006). Gray SM-R420NZAAXAR is a different SKU.
+- Eval on the new snapshot: 38 models, 34 verified identifiers, 5
+  with quotes, 19 total quotes, 0 identifier-matched, 19 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 33 →
+  38 / 30 → 34 for the approved expansion).
