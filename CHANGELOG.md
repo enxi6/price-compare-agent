@@ -11,6 +11,34 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 16 (DECISIONS 038, continuous expansion per
+  DECISIONS 027): eval set 100 → 105 models, verified identifiers
+  stay 68 (all 5 new identifiers pending on single-source-only or
+  no-source codes). New: Anker MagGo 2 Pro Magnetic Power Bank
+  (10K, Qi2 25W, Active Cooling), Phantom Gray (A110R, UPC pending
+  — no UPC surfaced anywhere; $109.99 at Anker direct and Newegg
+  — Anker's flagship magnetic power bank, the first magnetic power
+  bank in the set), Anker Prime Power Bank (26K, 300W), Black
+  (A110A, UPC pending — no US UPC on any retailer spec page;
+  $199.99 sale at Anker direct, $229.99 at Best Buy — Anker's
+  flagship laptop power bank, the first high-capacity power bank in
+  the set), Anker Desktop USB-C Hub, 10-in-1 Dual 4K (A210C, UPC
+  pending — 194644340506 only on pickoryx, which mirrors the Amazon
+  ASIN listing; $79.99 sale at Anker direct — the first USB-C hub in
+  the set), Anker Prime Wireless Car Charger (MagGo, AirCool, Pad)
+  (A2933, UPC pending — no UPC surfaced anywhere; $89.99 at Anker
+  direct and Target — the first car-mount charger in the set; the
+  anker.com feed row saying $135 is stale, the live page says
+  $89.99), Anker Nano Charger (70W, 3 Ports), Black Stone (B121A,
+  UPC pending — 194644241247 for Black on Amazon listings only;
+  $39.99 at Anker direct, Newegg and Impulse Cameras — Anker's
+  compact 3-port 70W GaN charger; the Anker page says B121A while
+  Notebookcheck/Amazon say A121A, the Anker page takes precedence).
+  Not added: the Nano Charger (45W, Smart Display, A121D) — two
+  different US pages ($34.99 PreOrder vs $39.99 InStock) with no
+  color-to-variant mapping stated, so no color can be pinned cleanly;
+  the Nano 70W replaces it as this batch's charger pick.
+
 - Expansion batch 15 (DECISIONS 037, continuous expansion per
   DECISIONS 027): eval set 96 → 100 models, verified identifiers
   stay 68 (all 4 new identifiers pending on single-source-only or

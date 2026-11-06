@@ -2706,3 +2706,178 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   bug). Tests: 19 passed (test_snapshot_eval counts updated 96 →
   100 / verified stays 68 for the continuous expansion; the pending
   set gains the 4 new keys).
+
+## 054 — 2026-11-06: Expansion batch 16 — 100 → 105 models (DECISIONS 038)
+
+- Anker US homepage sweep (anker.com, read-only, 2026-11-06
+  ~19:06 UTC): 24 shelf listings, 23 distinct models. Full
+  candidate list (list-only): MagGo 2 Pro Magnetic Power Bank
+  (10K, Qi2 25W, Active Cooling) $109.99; Laptop Charger Pro
+  $49.99 (was $59.99); Nano Charger (45W, Smart Display, 180°
+  Foldable) $29.99 (was $34.99) and a second listing $25.99 (was
+  $39.99); Desktop USB-C Hub $79.99 (was $99.99); Universal
+  Charger (4-in-1, 100W, Smart Display) $79.99; Nano Docking
+  Station (13-in-1, Triple Display) $119.99 (was $149.99); Prime
+  Power Bank (26K, 300W) $199.99 (was $229.99); Prime Charger
+  (160W, 3 Ports, Smart Display) $115.99 (was $149.99); Prime
+  DL7400 Docking Station (14-in-1, Triple Display, DisplayLink)
+  $299.99; Prime Power Bank (20K, 220W) $129.99 (was $179.99);
+  Charger (100W, 3 Ports, Smart Display) $59.99 (was $69.99);
+  Prime Wireless Charging Station (3-in-1, MagGo, AirCool, Dock
+  Stand) Sold Out; Prime Wireless Car Charger (MagGo, AirCool,
+  Pad) $89.99; Nano Power Strip (10-in-1, 70W, Clamp) $69.99;
+  Nano Power Bank (5K, MagGo, Slim) $54.99; Nano Charger (45W)
+  with USB-C to USB-C Cable $25.99; Nano Charging Station
+  (7-in-1, 100W) $79.99; Nano Power Bank (10K, 45W, Built-In
+  Retractable USB-C Cable) $59.99; Nano Charger (70W, 3 Ports)
+  $39.99; Nano Travel Adapter (5-in-1, 20W, 1-Pack) $25.99;
+  Laptop Power Bank (25K, 165W, Built-In and Retractable Cables)
+  $119.99; Charger (140W, 4-Port, PD 3.1) with USB-C Cable
+  $79.99 (was $89.99); Prime Charger (250W, 6 Ports, GaNPrime)
+  $149.99. Soundcore earbuds/speakers are not listed on anker.com
+  (separate soundcore.com store) — no Soundcore model picked, per
+  the "only what the official US catalog actually lists as
+  current" rule; a soundcore.com sweep is a candidate for a later
+  batch.
+- Membership check (against the 100-model set by name, MPN and
+  UPC, 2026-11-06): the only existing Anker entry is
+  anker-prime-100w (Prime Charger 100W, A2688, UPC 194644040635).
+  All 5 candidates are distinct — no name, MPN or UPC match:
+  MagGo 2 Pro A110R (no other magnetic power bank in the set);
+  Prime Power Bank 26K A110A (no other high-capacity power bank
+  in the set); Desktop USB-C Hub A210C (no hub/dock in the set);
+  Prime Wireless Car Charger A2933 (no car charger in the set);
+  Nano Charger 70W B121A (no 70W charger in the set; distinct
+  from the A2688 100W Prime charger). The homepage "Anker Charger
+  (100W, 3 Ports, Smart Display)" $59.99 was NOT added: it may be
+  a newer non-Prime 100W charger and its model number was not
+  established, so it stays out rather than risk a duplicate of
+  the A2688 entry — needs a model-number check before any add.
+  The Prime Wireless Charging Station (3-in-1, Dock Stand) was
+  NOT added: Sold Out on the Anker homepage.
+- Anker MagGo 2 Pro Magnetic Power Bank (10K, Qi2 25W, Active
+  Cooling), Phantom Gray (A110R) — identifiers PENDING: MPN
+  A110R confirmed (Anker US official page + reviews agree), but
+  no UPC for A110R surfaced anywhere, so identifiers stay empty
+  per the Adaptive Controller / DualSense / PULSE Elite
+  precedent; re-check next refresh. Quotes (2): Anker direct
+  $109.99 (JSON-LD InStock, page-verified); Newegg $109.99 (feed
+  row — suspected, no identifier in the feed row). Colors:
+  Starlight Silver, Polar Night Blue, Phantom Gray, Burgundy Red
+  (Android Headlines + Anker page); Phantom Gray pinned — the page
+  does not state which Shopify variant is Phantom Gray, so the
+  color-to-variant mapping is recorded as unverified; price is
+  color-independent ($109.99 for all colors in the feed).
+  Excluded: Member Exclusive page (same model/price, duplicate);
+  Starlight Silver feed row (different color); bundle kits
+  $144.98/$149.98/$229.98 (bundles); MagGo Power Bank (10K)
+  $135, MagGo Wireless Charging Station rows, 622/623 chargers
+  (different models); refurbished 621 $42.99 (refurbished).
+- Anker Prime Power Bank (26K, 300W), Black (A110A) —
+  identifiers PENDING: MPN A110A confirmed (Anker US + Best Buy
+  US agree), colour Black confirmed (Heavins IE lists A110AH11
+  Black — but its EAN 0194644239299 is the EU/IE regional code
+  for the H11 variant and was not copied, per the MDR-MV1 EAN
+  precedent), but no US UPC for A110A surfaced on any US retailer
+  spec page, so identifiers stay empty per the Adaptive
+  Controller / DualSense precedent; re-check next refresh. Quotes
+  (2): Anker direct $199.99 (sale — $30 off the $229.99 list;
+  homepage shelf + "$30 OFF" banner, page-verified; JSON-LD and
+  the feed both show $229.99); Best Buy $229.99 (Model A110A,
+  SKU 11919239, page-verified; feed row — suspected, no
+  identifier in the feed row). Excluded: with Charging Base
+  $329.99 (bundle, different SKU B110A); CDW $229.99 feed row
+  (title does not name the 26K model); Prime 20K 220W /
+  27,650mAh 250W / 12,000mAh 130W / 9.6K 65W Fusion rows
+  (different models); no Amazon rows used.
+- Anker Desktop USB-C Hub, 10-in-1 Dual 4K (A210C) —
+  identifiers PENDING: MPN A210C confirmed (Anker US official
+  page), but the only UPC stating a code, 194644340506, comes
+  from pickoryx, which mirrors the Amazon ASIN listing
+  (B0H36FV12Q) — Amazon is not used for identifier
+  corroboration, so identifiers stay empty per the MDR-M1 /
+  Adaptive Controller precedent; re-check next refresh. Quotes
+  (1): Anker direct $79.99 (sale — $20 off the $99.99 list;
+  homepage shelf + Anker blog "$20 OFF, $79.99, Code:
+  WSPDV2ONVYED"; JSON-LD and the feed both show $99.99; JSON-LD
+  InStock, page-verified; the only seller — Anker's own store
+  only, so it holds a single quote, like the B39). Excluded:
+  VALORANT Limited Edition $109.99 (same A210C base, different
+  edition/price — not pinned); Anker 575 Docking Station $199.99,
+  13-port hub $149.99, 332/364/565 and other hubs (different
+  models); Walmart/Target/Newegg generic hub rows (different
+  models). No color claimed — the Anker page names no colorway
+  (an Amazon-derived listing calls it Iron Gray, not
+  corroborated).
+- Anker Prime Wireless Car Charger (MagGo, AirCool, Pad)
+  (A2933) — identifiers PENDING: MPN A2933 confirmed (Anker US
+  + manuals.plus agree), colour Matte Black per a Bangladesh
+  listing only (not a US source), but no UPC for A2933 surfaced
+  anywhere, so identifiers stay empty per the Adaptive
+  Controller / DualSense precedent; re-check next refresh. Quotes
+  (2): Anker direct $89.99 (JSON-LD InStock, page-verified);
+  Target $89.99 (feed row — suspected, no identifier in the feed
+  row; title matches the A2933 spec — Qi2 25W + AirCool +
+  included 60W adapter). Excluded: anker.com feed row $135
+  (stale/conflicting — live page JSON-LD and the us.anker.com
+  feed row both say $89.99); Target $69.99 "Anker Prime MagGo
+  Wireless Car Charger with AirCool" (title does not establish
+  Qi2 25W/A2933 — likely the older 15W MagGo car charger);
+  K-Rauta $78.90 (Estonia, non-US); Nano Wireless Car Charger
+  bundle $77.98 and Prime Wireless Charging Station rows
+  (different products).
+- Anker Nano Charger (70W, 3 Ports), Black Stone (B121A) —
+  identifiers PENDING: MPN B121A confirmed (Anker US official
+  page states Model Number B121A; Notebookcheck and Amazon
+  listings call the same charger A121A — the Anker page takes
+  precedence and A121A was not recorded as a separate
+  identifier); UPC 194644241247 for Black is stated on Amazon
+  listings only and Amazon is not used for identifier
+  corroboration, so identifiers stay empty per the Adaptive
+  Controller / DualSense precedent; re-check next refresh. Quotes
+  (3): Anker direct $39.99 (JSON-LD InStock, page-verified);
+  Newegg $39.99 (feed row — suspected, no identifier in the feed
+  row, no color stated); Impulse Cameras $39.99 (feed row —
+  suspected, no identifier in the feed row; names the pinned
+  Black Stone colorway). Excluded: Best Buy White $34.99
+  (different colorway — white is cheaper than black at Best Buy);
+  Walmart $39.99 feed row (marketplace ambiguity); corexlb $45
+  (not_a_seller); Nano 70W + Nano Power Bank bundle $99.98
+  (bundle); Nano Power Strip $69.99, Zolo 70W, Nano Neo
+  (different products). Note: the bundle slug
+  "bundle-b121a111-a1638011" hints the black variant MPN may be
+  B121A111 (mirroring A121D121 = White, confirmed by Best Buy
+  Canada) — unverified, not recorded; check next refresh.
+- Anker Nano Charger (45W, Smart Display, 180° Foldable)
+  (A121D) — NOT ADDED (batch split, Pro Display XDR / INZONE H7
+  precedent): two different US product pages ($34.99 PreOrder on
+  the dual-foldable page, variant 46557402398870, vs $39.99
+  InStock on the foldable-plug-compact page, variant
+  46070529196182) and the page text never states which Shopify
+  variant is which color (colors: Aurora White, Misty Blue, Black
+  Stone, Orange per the Bangladesh listing; 4–5 colors per the US
+  pages), so no color can be pinned cleanly. The Nano 70W
+  replaces it as this batch's charger pick. Revisit only if Anker
+  consolidates the two US pages or a US retailer spec page
+  settles the color-to-variant mapping. (The $25.99 homepage
+  listing is the sale price of the $39.99 InStock page; the
+  $29.99 homepage listing is the sale price of the $34.99
+  PreOrder page — sale prices, not different models.)
+- Not added from the sweep (held for later batches, all current
+  US models, no defect): Laptop Charger Pro $49.99; Universal
+  Charger (4-in-1, 100W) $79.99; Nano Docking Station (13-in-1)
+  $119.99; Prime Charger (160W) $115.99; Prime DL7400 Docking
+  Station $299.99; Prime Power Bank (20K, 220W) $129.99; Nano
+  Power Strip $69.99; Nano Power Bank (5K, MagGo, Slim) $54.99;
+  Nano Charger (45W) with cable $25.99 (bundle with cable;
+  A121D-adjacent, same pinning problem); Nano Charging Station
+  (7-in-1, 100W) $79.99; Nano Power Bank (10K, 45W, retractable
+  cable) $59.99; Nano Travel Adapter (5-in-1, 20W) $25.99; Laptop
+  Power Bank (25K, 165W) $119.99; Charger (140W, 4-Port, PD 3.1)
+  $79.99; Prime Charger (250W, 6 Ports) $149.99.
+- Eval on the new snapshot: 105 models, 68 verified identifiers,
+  5 with quotes, 10 total quotes, 0 identifier-matched, 10
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 100 → 105 / verified stays 68 for the
+  continuous expansion; the pending set gains the 5 new keys).

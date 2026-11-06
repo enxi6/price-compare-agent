@@ -1432,3 +1432,89 @@ written as "superseded by" with the original text kept.
   Nov 8 (batch 9 revisit, still open); the Sony direct CH720N
   $89.99 is a sale price and should be re-checked after the sale
   ends.
+
+## 038 (2026-11-06): Expansion batch 16 — 100 → 105 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 Anker models from the anker.com US homepage sweep
+  (BUILD_LOG 054), no per-batch user approval needed (DECISIONS
+  027): Anker MagGo 2 Pro Magnetic Power Bank (10K, Qi2 25W, Active
+  Cooling), Phantom Gray (A110R, UPC pending), Anker Prime Power
+  Bank (26K, 300W), Black (A110A, UPC pending), Anker Desktop USB-C
+  Hub, 10-in-1 Dual 4K (A210C, UPC pending), Anker Prime Wireless
+  Car Charger (MagGo, AirCool, Pad), (A2933, UPC pending), Anker
+  Nano Charger (70W, 3 Ports), Black Stone (B121A, UPC pending).
+  One variant pinned per model (DECISIONS 015); 0 of 5 identifiers
+  verified — all 5 stay pending on single-source-only or no-source
+  codes (Adaptive Controller / DualSense / PULSE Elite precedent,
+  not a reason to hold the batch). Verified-identifier count stays
+  68. The Anker Nano Charger (45W, Smart Display, 180° Foldable,
+  A121D) was NOT added: two different US product pages ($34.99
+  PreOrder on the dual-foldable page vs $39.99 InStock on the
+  foldable-plug-compact page) and the page text never states which
+  Shopify variant is which color, so no color can be pinned cleanly
+  — the Nano 70W replaces it as this batch's charger pick (batch 14
+  Pro Display XDR / batch 15 INZONE H7 precedent: split the batch
+  rather than forcing a model in).
+- Why these 5: they are the first Anker-brand sweep (the set's only
+  prior Anker entry is the Prime Charger 100W, A2688), one per
+  product family where the official US catalog has a current model
+  — flagship magnetic power bank, flagship laptop power bank, USB-C
+  hub/dock, car charger, compact wall charger. Soundcore
+  earbuds/speakers were not picked: they are not listed on anker.com
+  (separate soundcore.com store), and the task rule is "only what
+  the official US catalog actually lists as current". All five are
+  in stock new in the US on 2026-11-06 (Anker direct JSON-LD
+  InStock, page-verified).
+- What was corrected along the way: the A110A direct price is
+  $199.99 on sale, not $229.99 — $229.99 is the list price (product
+  JSON-LD and the Meta feed both show it; the homepage shelf and
+  the "$30 OFF" banner show $199.99); the A210C direct price is
+  $79.99 on sale, not $99.99 — $99.99 is the list price (JSON-LD
+  and the feed both show it; the homepage shelf and the Anker blog
+  "$20 OFF, $79.99, Code: WSPDV2ONVYED" show $79.99); the anker.com
+  feed row for the A2933 car charger says $135, but the live page
+  JSON-LD and the us.anker.com feed row both say $89.99 — the $135
+  row is stale and was excluded; the A121D two-page / PreOrder
+  problem above; the B121A model number is B121A on Anker's own
+  page while Notebookcheck and Amazon listings call the same
+  charger A121A — the Anker page takes precedence and A121A was not
+  recorded as a separate identifier.
+- Variant pinning, recorded explicitly: MagGo 2 Pro pins Phantom
+  Gray (A110R) — one of four colors (Starlight Silver, Polar Night
+  Blue, Phantom Gray, Burgundy Red), price color-independent at
+  $109.99, but the page does not state which Shopify variant is
+  Phantom Gray, so the color-to-variant mapping is recorded as
+  unverified; Prime 26K pins Black (A110A) — Heavins IE lists
+  A110AH11 Black, but its EAN 0194644239299 is the EU/IE regional
+  code and was not copied (MDR-MV1 EAN precedent); Desktop Hub pins
+  10-in-1, Dual 4K (A210C) with no color claimed — the Anker page
+  names no colorway and the Amazon-derived "Iron Gray" was not
+  corroborated; the VALORANT Limited Edition ($109.99, same A210C
+  base) is a different edition and was not pinned; Car Charger pins
+  MagGo, AirCool, Pad (A2933), the only configuration sold; Nano
+  70W pins Black Stone (B121A) — one of four colors (green, pink,
+  black, white) on the Anker page, with "Black Stone" named by
+  Impulse Cameras; Best Buy White is $34.99, cheaper than Black at
+  $39.99, and was not pinned.
+- What does NOT change: the existing 100 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–15 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 105 on
+  the next edit (parent owns the cron; not touched here).
+- Revisit: all five identifier sets stay pending until a second
+  non-Amazon US source confirms each (A110R: no UPC anywhere;
+  A110A: no US UPC on any retailer spec page; A210C: UPC
+  194644340506 only on pickoryx, which mirrors the Amazon ASIN
+  listing; A2933: no UPC anywhere; B121A: UPC 194644241247 for
+  Black on Amazon listings only); the A121D stays out until Anker
+  consolidates its two US pages or a retailer spec page settles
+  the color-to-variant mapping (bundle slug 'bundle-b121a111-
+  a1638011' hints the B121A black variant MPN may be B121A111,
+  mirroring A121D121 = White confirmed by Best Buy Canada —
+  unverified, check next refresh); the Anker direct A110A $199.99
+  and A210C $79.99 are sale prices and should be re-checked after
+  the sale ends; the ULT WEAR $148.00 Black Friday street price
+  should be re-checked after Nov 8 (batch 9 revisit, still open);
+  the Sony direct CH720N $89.99 is a sale price and should be
+  re-checked after the sale ends.
