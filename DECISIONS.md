@@ -1518,3 +1518,83 @@ written as "superseded by" with the original text kept.
   should be re-checked after Nov 8 (batch 9 revisit, still open);
   the Sony direct CH720N $89.99 is a sale price and should be
   re-checked after the sale ends.
+
+## 039 (2026-11-06): Expansion batch 17 — 105 → 110 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 JBL models from the jbl.com US storefront sweep
+  (BUILD_LOG 055), no per-batch user approval needed (DECISIONS
+  027): JBL Flip 7, Black (JBLFLIP7BLKAM, UPC 050036407342
+  VERIFIED), JBL Tour One M3 Smart Tx, Black (JBLTOM3AVIBLKAM,
+  UPC pending), JBL Tour Pro 3, Black (JBLTOURPRO3BLKAM, UPC
+  pending), JBL Bar 1300XMK2, Black (JBLBAR1300XM2BLKAM, UPC
+  pending), JBL PartyBox Stage 320, Black (JBLPBSTAGE320AM, UPC
+  pending). One variant pinned per model (DECISIONS 015); 1 of 5
+  identifiers verified — the other 4 stay pending on
+  single-source-only or no-source codes (Adaptive Controller /
+  DualSense / PULSE Elite precedent, not a reason to hold the
+  batch). Verified-identifier count rises 68 → 69. The PartyBox
+  330 (new 2026 successor to the Stage 320) was NOT added: its US
+  price is conflicting ($499.95 on the JBL US page per one source
+  vs $630 per another), so no price can be pinned cleanly —
+  revisit next sweep (batch 14 Pro Display XDR / batch 15 INZONE
+  H7 precedent: split the batch rather than forcing a model in).
+- Why these 5: they are the first JBL-brand sweep (the set had no
+  JBL entry at all), one per product family where the official US
+  catalog has a current model — flagship portable speaker,
+  flagship over-ear ANC headphones, flagship true-wireless
+  earbuds, flagship soundbar, wheeled party speaker. They are also
+  the set's first speakers, first soundbar and first party
+  speaker (new categories "speakers" and "soundbars"; category
+  strings are free-form, no validation to update). All five are
+  in stock new in the US on 2026-11-06 (JBL direct JSON-LD
+  InStock / feed brand_direct rows, page-verified).
+- What was corrected along the way: the Tour One M3 Smart Tx
+  $199.95 sale (audiowords, checked 2026-11-01; Slickdeals/Best
+  Buy ~8 days ago) has ended — the Best Buy page now shows
+  $449.95 and the JBL feed row shows $449.95, so $449.95 is the
+  current price at JBL direct, Abt, Best Buy, PC Richard and
+  Sweetwater; the Meta feed's Abt $229.95 Tour Pro 3 Black row
+  conflicts with the live Abt page ($329.95) and was excluded as
+  stale (A2933 $135 precedent); the Flip 7 $149.95 is the April
+  2025 launch price, $129.95 is the current JBL direct sale price;
+  the US soundbar is the Bar 1300XMK2 (12-inch sub, 1570W max) —
+  the non-US Bar 1300MK2 (dual 8-inch sub, 2470W) is a different
+  regional variant and was not added, even though Best Buy lists
+  the US bar under the BAR1300MK2 name with model
+  JBLBAR1300XM2BLKAM; the non-Tx Tour One M3 (JBLTOURONEM3BLKAM,
+  headphones-only) is a different product from the US Smart Tx
+  bundle and was not added.
+- Variant pinning, recorded explicitly: Flip 7 pins Black
+  (JBLFLIP7BLKAM) — one of several colorways (Black, Blue, White,
+  Red, Purple, Squad, Camo), price color-independent at $129.95;
+  the JBL US page crawl shows Item# JBLFLIP7TBLUAM (an
+  unexplained page artifact — the global.jbl.com Black page shows
+  JBLFLIP7BLKAM and Best Buy's Blue model is JBLFLIP7BLUAM, so
+  the Black AM code stands); Tour One M3 pins Smart Tx, Black
+  (JBLTOM3AVIBLKAM) — the US sells the Smart Tx bundle (the
+  headphones-only JBLTOURONEM3BLKAM is sold outside the US);
+  Tour Pro 3 pins Black (JBLTOURPRO3BLKAM); Bar 1300XMK2 pins
+  Black (JBLBAR1300XM2BLKAM), the only colorway sold; PartyBox
+  Stage 320 pins Black (JBLPBSTAGE320AM) — the JBL US page
+  Item# is JBLPBSTAGE320AM and Sharaf DG lists PARTYBOXSTAGE320AM
+  as Black; the White code is JBLPBSTAGE320SWAM and was not
+  pinned.
+- What does NOT change: the existing 105 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–16 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 110 on
+  the next edit (parent owns the cron; not touched here).
+- Revisit: the four pending identifier sets stay pending until a
+  second non-Amazon US source confirms each (Tour One M3: UPC
+  050036414029 on snapklik + tanotis aggregators only; Tour Pro 3:
+  UPC 050036402392 on Amazon listings only; Bar 1300XMK2: UPC
+  050036414869 on Amazon + an eBay refurbished listing + Target
+  Plus partner data only; PartyBox Stage 320: no UPC surfaced
+  anywhere); the PartyBox 330 stays out until its US price is
+  settled; the Flip 7 $129.95 and Tour One M3 $449.95 are
+  current-price observations that should be re-checked after the
+  sale ends; the ULT WEAR $148.00 Black Friday street price
+  should be re-checked after Nov 8 (batch 9 revisit, still open);
+  the Sony direct CH720N $89.99 is a sale price and should be
+  re-checked after the sale ends.

@@ -11,6 +11,34 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 17 (DECISIONS 039, continuous expansion per
+  DECISIONS 027): eval set 105 → 110 models, verified identifiers
+  68 → 69 (the Flip 7 Black is verified; the other 4 new
+  identifiers stay pending on single-source-only or no-source
+  codes). New: JBL Flip 7, Black (JBLFLIP7BLKAM, UPC 050036407342
+  verified — JBL/Harman Salsify syndication catalog + eBay
+  listing agree; $129.95 sale at JBL direct, $129.99 at Target —
+  the first JBL entry and the first portable Bluetooth speaker in
+  the set), JBL Tour One M3 Smart Tx, Black (JBLTOM3AVIBLKAM, UPC
+  pending — 050036414029 on snapklik + tanotis aggregators only;
+  $449.95 at JBL direct, Abt and Best Buy — the $199.95 sale has
+  ended; JBL's flagship over-ear ANC headphones, the first JBL
+  headphones in the set), JBL Tour Pro 3, Black
+  (JBLTOURPRO3BLKAM, UPC pending — 050036402392 on Amazon
+  listings only; $329.95 at JBL direct, Crutchfield and Abt —
+  JBL's flagship true-wireless earbuds, the first JBL earbuds in
+  the set), JBL Bar 1300XMK2, Black (JBLBAR1300XM2BLKAM, UPC
+  pending — 050036414869 on Amazon + an eBay refurbished listing
+  + Target Plus partner data only; $1,699.95 at JBL direct, Best
+  Buy and Abt, $1,199.95 sale at Macy's — the first soundbar in
+  the set; the US XMK2 with a 12-inch sub is a different regional
+  variant from the non-US 1300MK2), JBL PartyBox Stage 320,
+  Black (JBLPBSTAGE320AM, UPC pending — no UPC surfaced
+  anywhere; $569.95 at JBL direct, $629.95/$629.99 at Best Buy
+  and Target — the first party speaker in the set). Not added:
+  the PartyBox 330 (new 2026 successor — US price conflicting,
+  $499.95 vs $630, revisit next sweep).
+
 - Expansion batch 16 (DECISIONS 038, continuous expansion per
   DECISIONS 027): eval set 100 → 105 models, verified identifiers
   stay 68 (all 5 new identifiers pending on single-source-only or

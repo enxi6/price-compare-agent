@@ -2357,6 +2357,222 @@ EVAL_SET: list[EvalProduct] = [
         category="chargers",
         notes="Anker direct $39.99 (JSON-LD InStock, page-verified 2026-11-06); Newegg $39.99 (feed row — suspected, no identifier in the feed row, no color stated); Impulse Cameras $39.99 (feed row — suspected, no identifier in the feed row; names the pinned Black Stone colorway). Identifiers PENDING: MPN B121A confirmed (Anker US official page states Model Number B121A; Notebookcheck and Amazon listings call the same charger A121A — the Anker page takes precedence and A121A was not recorded as a separate identifier); UPC 194644241247 for Black is stated on Amazon listings only and Amazon is not used for identifier corroboration, so identifiers stay empty per the Adaptive Controller / DualSense precedent; re-check next refresh. Excluded: Best Buy White $34.99 (different colorway — white is cheaper than black at Best Buy, $34.99 vs $39.99); Walmart $39.99 feed row (marketplace ambiguity — seller not confirmed first-party); corexlb $45 (not_a_seller); Nano 70W + Nano Power Bank bundle $99.98 (bundle); Nano Power Strip $69.99, Zolo 70W, Nano Neo (different products). Distinct from the set's Prime Charger 100W (A2688) — the Nano 70W (B121A) is Anker's compact 3-port 70W GaN charger with cable included, four colors (green, pink, black, white per the Anker page); Black Stone pinned. Note: the bundle slug 'bundle-b121a111-a1638011' hints the black variant MPN may be B121A111 (mirroring A121D121 = White, confirmed by Best Buy Canada) — unverified, not recorded; check next refresh.",
     ),
+    EvalProduct(
+        key="jbl-flip-7-black",
+        brand="JBL",
+        model="Flip 7",
+        variant="Black (JBLFLIP7BLKAM)",
+        category="speakers",
+        identifiers={"UPC": "050036407342", "MPN": "JBLFLIP7BLKAM"},
+        identifier_sources={
+            "UPC": "JBL/Harman Salsify syndication catalog + eBay listing "
+            "187108565342 agree for JBLFLIP7BLKAM (manuals.plus/B&H data "
+            "dump agrees; Amazon listings agree but Amazon is not used "
+            "for identifier corroboration)",
+            "MPN": "JBL/Harman Salsify syndication catalog + global.jbl.com "
+            "Black page + Best Buy US Model (Blue sibling JBLFLIP7BLUAM) "
+            "agree on the AM code",
+        },
+        status="verified",
+        notes="JBL direct $129.95 (sale — $20 off the $149.95 list; "
+        "product-page JSON-LD InStock, page-verified 2026-11-06; the "
+        "Meta feed's jbl.com Black row also shows $129.95 against a "
+        "$149.95 list); Target Black $129.99 (JSON-LD InStock, "
+        "page-verified); Best Buy Blue $129.95 (comp. value $149.95 — "
+        "a different colorway, not the Black price). The April 2025 "
+        "launch price was $149.95 — the current JBL direct price is "
+        "$129.95 on sale. Identifiers VERIFIED: UPC 050036407342 + "
+        "MPN JBLFLIP7BLKAM (JBL/Harman Salsify syndication catalog + "
+        "eBay listing 187108565342 agree for JBLFLIP7BLKAM; the "
+        "manuals.plus/B&H data dump agrees; Amazon listings agree "
+        "but Amazon is not used for identifier corroboration). Not "
+        "copied: UPC 050036407250 on an eBay listing for MPN "
+        "JBLFLIP7BLK (no AM suffix — a different variant); the JBL US "
+        "page crawl shows Item# JBLFLIP7TBLUAM (an unexplained page "
+        "artifact — the global.jbl.com Black page shows JBLFLIP7BLKAM, "
+        "and Best Buy's Blue model is JBLFLIP7BLUAM, so the Black AM "
+        "code stands). Excluded: Target feed row $114.99 (Red, "
+        "A-1012443440 — a different colorway); Crutchfield $109.95 "
+        "(stale crawl, 360 days old); Dell Camo/Purple/Red/Blue "
+        "$149.95 feed rows (different colorways at list price); a "
+        "Samsung-sold $114.99 feed row (not first-party JBL); "
+        "crestline $851.76 (promotional-products bulk listing). "
+        "Distinct from everything in the set — the first JBL entry "
+        "and the first portable Bluetooth speaker in the set (35W, "
+        "IP68 waterproof/dustproof/drop-proof, Bluetooth 5.4, "
+        "Auracast, USB-C lossless, up to 16 hours with Playtime "
+        "Boost, PushLock accessories, launched April 2025); the Flip "
+        "6 is the previous generation and was not added. Multiple "
+        "colorways sold (Black, Blue, White, Red, Purple, Squad, "
+        "Camo); only Black is pinned.",
+    ),
+    EvalProduct(
+        key="jbl-tour-one-m3-smart-tx-black",
+        brand="JBL",
+        model="Tour One M3 Smart Tx",
+        variant="Smart Tx, Black (JBLTOM3AVIBLKAM)",
+        category="headphones",
+        notes="JBL direct $449.95 (Meta feed jbl.com Black row, "
+        "brand_direct; the JBL US store lists the Smart Tx version at "
+        "$449.95); Best Buy $449.95 (Model JBLTOM3AVIBLKAM, SKU "
+        "6623867, page-verified 2026-11-06); Abt $449.95 (JSON-LD "
+        "InStock, page-verified); PC Richard $449.95 (MPN "
+        "JBLTOM3AVIBLKAM, JSON-LD InStock, page-verified); Sweetwater "
+        "Blue $449.95 (a different colorway). Some April 2025 launch "
+        "coverage quoted $399 — the current US list price is $449.95 "
+        "at JBL direct, Abt, Best Buy, PC Richard and Sweetwater. "
+        "The $199.95 sale: audiowords (checked 2026-11-01) says the "
+        "Smart Tx was selling for $199.95 at JBL, and Slickdeals/Best "
+        "Buy listed it at $199.95 about 8 days ago — but the Best Buy "
+        "page now shows $449.95 and the JBL feed row shows $449.95, "
+        "so the sale has ended; re-check next refresh (the Newegg "
+        "Mocha feed row still shows $199.95 — a different colorway, "
+        "suspected). Identifiers PENDING: MPN JBLTOM3AVIBLKAM "
+        "confirmed (Abt + Best Buy US Model + PC Richard MPN + "
+        "Crutchfield MFR# agree), but UPC 050036414029 is stated on "
+        "snapklik + tanotis aggregator pages only — no US retailer "
+        "spec page states it, so identifiers stay empty per the "
+        "Adaptive Controller / DualSense / PULSE Elite precedent; "
+        "re-check next refresh. Not copied: the Blue UPC 050036414098 "
+        "and Latte UPC 050036414067 (Abt — different colorways); the "
+        "global EAN 1200130025112 (regional code, per the MDR-MV1 EAN "
+        "precedent). Excluded: Best Buy Mocha/Blue $472.45 feed rows "
+        "(with case bundle — 'Smart Tx Wireless Headphones with "
+        "Case'); the non-Tx Tour One M3 (JBLTOURONEM3BLKAM, "
+        "headphones-only, no Smart Tx transmitter — a different "
+        "product, sold outside the US; the US sells the Smart Tx "
+        "bundle); the Tour One M2 (previous generation). Distinct "
+        "from the set's Sony WH-1000XM5/XM6 and Bose QuietComfort "
+        "Ultra — the Tour One M3 Smart Tx (2025, 40mm mica-dome "
+        "drivers, True Adaptive ANC 2.0, LDAC, Auracast, USB-C "
+        "lossless DAC, Spatial 360 with head tracking, up to 70 "
+        "hours, Smart Tx touchscreen transmitter) is JBL's flagship "
+        "over-ear ANC line; the first JBL headphones in the set. "
+        "Black, Blue and Mocha (US: Latte) colorways sold; only "
+        "Black is pinned.",
+    ),
+    EvalProduct(
+        key="jbl-tour-pro-3-black",
+        brand="JBL",
+        model="Tour Pro 3",
+        variant="Black (JBLTOURPRO3BLKAM)",
+        category="earbuds",
+        notes="JBL direct $329.95 (jbl.com category pages list the Tour "
+        "Pro 3 at $329.95; the Meta feed's jbl.com Latte row is "
+        "$329.95 brand_direct — price is color-independent: B&H "
+        "Latte, Crutchfield Black, Abt Black and Audio Advice Black "
+        "are all $329.95); B&H Latte $329.95 (In Stock, page-verified "
+        "2026-11-06); Crutchfield Black $329.95 (JSON-LD InStock, "
+        "page-verified; MFR# JBLTOURPRO3BLKAM); Abt Black $329.95 "
+        "(JSON-LD InStock, page-verified); Audio Advice Black $329.95 "
+        "(Available, page-verified). Identifiers PENDING: MPN "
+        "JBLTOURPRO3BLKAM confirmed (Crutchfield MFR# + Abt + B&H "
+        "Latte sibling JBLTOURPRO3LTTAM agree; JBL UK lists the "
+        "non-AM JBLTOURPRO3BLK with EAN 1200130013836), but UPC "
+        "050036402392 for Black is stated on Amazon listings only — "
+        "Amazon is not used for identifier corroboration, so "
+        "identifiers stay empty per the Adaptive Controller / "
+        "DualSense precedent; re-check next refresh. Not copied: the "
+        "Latte UPC 050036402415 (B&H — a different colorway). "
+        "Excluded: the Meta feed's Abt $229.95 Black row — the live "
+        "Abt page shows $329.95, so the $229.95 row is stale and was "
+        "excluded (A2933 $135 precedent); Crutchfield's $229.95 "
+        "'Save $100, ends 9/13' sale (ended); Best Buy $346.45 bundle "
+        "rows (with gSport/weather-resistant case); the Charge 6 + "
+        "Tour Pro 3 kit $476.91 (bundle); Greentoe $229.95/$329.95 "
+        "(make-an-offer marketplace-style rows); icuracao $209.99 "
+        "(non-US). Distinct from the set's Sony WF-1000XM5/XM6, "
+        "AirPods Pro 3 and Galaxy Buds4 Pro — the Tour Pro 3 (2024, "
+        "hybrid dual drivers, True Adaptive ANC 2.0, Spatial 360 "
+        "with head tracking, Smart Charging Case with a 1.57-inch "
+        "touchscreen that doubles as a Bluetooth audio transmitter, "
+        "up to 44 hours total, wireless charging) is JBL's flagship "
+        "true-wireless line; the first JBL earbuds in the set. Black "
+        "and Latte colorways sold; only Black is pinned.",
+    ),
+    EvalProduct(
+        key="jbl-bar-1300xmk2-black",
+        brand="JBL",
+        model="Bar 1300XMK2",
+        variant="Black (JBLBAR1300XM2BLKAM)",
+        category="soundbars",
+        notes="JBL direct $1,699.95 (Meta feed jbl.com Black row, "
+        "brand_direct; Harman press release June 9, 2025 lists "
+        "$1,699.95); Best Buy $1,699.95 (Model JBLBAR1300XM2BLKAM, "
+        "SKU 6643311, sold by Best Buy, page-verified 2026-11-06); "
+        "Abt $1,699.95 (page-verified); Crutchfield $1,699.95, B&H "
+        "$1,699.95 and Sweetwater $1,699.95 (feed rows — suspected, "
+        "no identifier in the feed rows); Macy's $1,199.95 (feed row "
+        "— suspected; the sale price vs $1,699.95 elsewhere, not "
+        "page-verified). The US model is the Bar 1300XMK2 (12-inch "
+        "subwoofer, 1570W max); the non-US Bar 1300MK2 (dual 8-inch "
+        "subwoofer, 2470W) is a different regional variant and was "
+        "not added — Best Buy lists the US bar as BAR1300MK2 with "
+        "model JBLBAR1300XM2BLKAM. Identifiers PENDING: MPN "
+        "JBLBAR1300XM2BLKAM confirmed (global.jbl.com Item# + Best "
+        "Buy US Model + Abt + shopabunda agree), but UPC 050036414869 "
+        "is stated on Amazon listings + an eBay refurbished listing "
+        "+ Target Plus partner data only — no US retailer spec page "
+        "states it, so identifiers stay empty per the Adaptive "
+        "Controller / DualSense precedent; re-check next refresh. "
+        "Not copied: the global EAN 1200130026843 (regional code, "
+        "per the MDR-MV1 EAN precedent). Excluded: Best Buy $1,742.45 "
+        "(with AudioQuest HDMI cable bundle); Newegg $1,499.90 (with "
+        "2-year protection plan) and $1,514.99 (with Austere HDMI "
+        "cable bundle); the jbl.com $1,690.94 bundle (bar + Austere "
+        "HDMI cable); Belk $2,040 (outlier, $340 above list); "
+        "Dolby.com $1,019.99 (the old Bar 1300X, 650W, 2022 — a "
+        "different model); the Bar 1000MK2 $1,199 / 700MK2 $899 / "
+        "500MK2 $649 / 300MK2 $449 (lower MK2 siblings, not added). "
+        "Distinct from everything in the set — the first soundbar in "
+        "the set (11.1.4 channels, detachable battery-powered "
+        "wireless surround speakers that double as portable Bluetooth "
+        "speakers, 12-inch wireless subwoofer, Dolby Atmos + DTS:X, "
+        "MultiBeam 3.0, HDMI eARC with 4K Dolby Vision passthrough, "
+        "AirPlay 2, launched October 2025). Black is the only "
+        "colorway sold.",
+    ),
+    EvalProduct(
+        key="jbl-partybox-stage-320-black",
+        brand="JBL",
+        model="PartyBox Stage 320",
+        variant="Black (JBLPBSTAGE320AM)",
+        category="speakers",
+        notes="JBL direct $569.95 (product-page JSON-LD InStock, "
+        "page-verified 2026-11-06; the page default Item# is "
+        "JBLPBSTAGE320AM; the Meta feed's jbl.com White row is also "
+        "$569.95, so direct pricing looks color-independent); Best "
+        "Buy Black $629.95 (feed row — suspected, no identifier in "
+        "the feed row); Target Black $629.99 (JSON-LD InStock, "
+        "page-verified); Music & Arts $629.95 (feed row — suspected). "
+        "The 2024 launch MSRP was $599.95/$599.99 (SoundGuys) — the "
+        "current JBL direct price is $569.95 while Best Buy/Target "
+        "hold $629.95/$629.99. Identifiers PENDING: MPN "
+        "JBLPBSTAGE320AM confirmed as the US Black code (JBL US page "
+        "Item# + Sharaf DG lists PARTYBOXSTAGE320AM as Black; the "
+        "White code is JBLPBSTAGE320SWAM per shopabunda), but no UPC "
+        "for the Black surfaced on any US manufacturer or retailer "
+        "spec page, so identifiers stay empty per the Adaptive "
+        "Controller / DualSense precedent; re-check next refresh. "
+        "Excluded: RC Willey Black $499.95 (feed row — suspected; "
+        "the low outlier vs $569.95–$629.99 elsewhere, not "
+        "page-verified); the 'Stage 320 and The Works' bundle "
+        "$739.90 (with Battery 400 + wireless mics, OutOfStock); "
+        "Woot Grade A Refurbished $399.95 (refurbished, not new); "
+        "B&H mic/PartyLight kits $729.90/$799.90 (bundles, "
+        "discontinued); the PartyBox 330 (new 2026 successor — US "
+        "price conflicting, $499.95 on the JBL US page per one source "
+        "vs $630 per another, so it was not pinned this batch; "
+        "revisit next sweep); the PartyBox 310 (previous generation, "
+        "replaced by the 320). Distinct from the set's Flip 7 (added "
+        "in this same batch) — the Stage 320 is JBL's wheeled party "
+        "speaker line (240W, two 6.5-inch woofers + two 25mm "
+        "tweeters, adaptive lightshow, IPX4, telescopic handle + "
+        "wheels, replaceable BATTERY400, up to 18 hours, mic/guitar "
+        "inputs, Auracast, launched 2024); the first party speaker "
+        "in the set. Black and White colorways sold; only Black is "
+        "pinned.",
+    ),
 ]
 
 

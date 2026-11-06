@@ -2881,3 +2881,134 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   working, not a bug). Tests: 19 passed (test_snapshot_eval
   counts updated 100 → 105 / verified stays 68 for the
   continuous expansion; the pending set gains the 5 new keys).
+
+## 055 — 2026-11-06: Expansion batch 17 — 105 → 110 models (DECISIONS 039)
+
+- JBL US storefront sweep (jbl.com, read-only, 2026-11-06
+  ~18:10–19:13 UTC / 10:10–11:13 PT): the homepage text fetch
+  returned only a locale prompt ("Want the local experience?"),
+  so the sweep is recorded from search-index reads of the US
+  storefront and category pages. Homepage shelf observed: JBL
+  PartyBox 130 (30% off), Flip 7 (over 10% off), Tune 730BT
+  (over 30% off), EON700 Series (save $50–$100), Charge 5
+  ($139.95, was $179.95), Live 780NC, Flip Essential 2 ($59.99,
+  was $129.95), Sense Lite, PartyBox Club 120, Clip 5. Category
+  pages observed: Tour Pro 3 $329.95 (noise-cancelling earbuds,
+  12 results), Tour One M3 Smart Tx $449.95 (US over-ear
+  catalog). Full candidate list (list-only): Flip 7 $129.95;
+  Charge 5 $139.95 (previous generation, still listed); Charge 6
+  (2025, not individually priced this sweep); Clip 5; Go 4;
+  Xtreme 4 / Boombox 4; Flip Essential 2 $59.99; PartyBox Club
+  120; PartyBox Stage 320 $569.95; PartyBox 330 (new Sept 2026,
+  US price conflicting — see below); PartyBox Encore 2;
+  PartyBox 130; Tour One M3 Smart Tx $449.95; Live 780NC
+  $139.95 (comp. value $249.95); Tune 730BT; Tour Pro 3
+  $329.95; Live Beam 3; Tune Beam 2; Wave Buds 2; Sense Lite;
+  Bar 1300XMK2 $1,699.95; Bar 1000MK2 $1,199; Bar 700MK2 $899;
+  Bar 500MK2 $649; Bar 300MK2 $449; Cinema SB510MK2 / SB550MK2
+  (PH launch, US availability unconfirmed); JBL Cove M1/P1/X1
+  (PH launch, US availability unconfirmed); Quantum 120 / 520
+  (PH launch, US availability unconfirmed); EON700 Series (pro
+  PA, out of Phase 1 consumer scope).
+- Membership check (against the 105-model set, by name, MPN and
+  UPC): the set had no JBL entry at all — no name, MPN or UPC
+  overlap for any of the 5 picked models. Flip 7
+  (JBLFLIP7BLKAM / 050036407342): no match — the set's only
+  portable speakers are none (first in the set). Tour One M3
+  Smart Tx (JBLTOM3AVIBLKAM): no match — distinct from the set's
+  Sony WH-1000XM5/XM6 and Bose QuietComfort Ultra (different
+  brand, model and MPN). Tour Pro 3 (JBLTOURPRO3BLKAM): no match
+  — distinct from the set's Sony WF-1000XM5/XM6, AirPods Pro 3
+  and Galaxy Buds4 Pro. Bar 1300XMK2 (JBLBAR1300XM2BLKAM): no
+  match — the set had no soundbar. PartyBox Stage 320
+  (JBLPBSTAGE320AM): no match — the set had no party speaker.
+  The non-Tx Tour One M3 (JBLTOURONEM3BLKAM) and the non-US Bar
+  1300MK2 (dual 8-inch sub) were checked as separate models and
+  deliberately not added (see DECISIONS 039).
+- Per-model record (all 5 added; identifiers, quotes, pending):
+- JBL Flip 7, Black (JBLFLIP7BLKAM) — VERIFIED: UPC 050036407342
+  + MPN JBLFLIP7BLKAM (JBL/Harman Salsify syndication catalog +
+  eBay listing 187108565342 agree; manuals.plus/B&H data dump
+  agrees; Amazon listings agree but Amazon is not used for
+  corroboration). Not copied: UPC 050036407250 (eBay, MPN
+  JBLFLIP7BLK without AM — a different variant). Quotes (2): JBL
+  direct $129.95 (sale, JSON-LD InStock, page-verified; feed
+  Black row $129.95 vs $149.95 list); Target Black $129.99
+  (JSON-LD InStock, page-verified). Excluded: Target feed row
+  $114.99 (Red — a different colorway); Crutchfield $109.95
+  (stale crawl, 360 days); Dell colorway rows at list price; a
+  Samsung-sold $114.99 feed row; crestline $851.76 (bulk).
+- JBL Tour One M3 Smart Tx, Black (JBLTOM3AVIBLKAM) —
+  identifiers PENDING: MPN confirmed (Abt + Best Buy US Model +
+  PC Richard MPN + Crutchfield MFR# agree), but UPC 050036414029
+  is stated on snapklik + tanotis aggregators only — no US
+  retailer spec page states it. Not copied: Blue UPC 050036414098
+  and Latte UPC 050036414067 (Abt, different colorways); global
+  EAN 1200130025112 (regional code). Quotes (3): JBL direct
+  $449.95 (feed Black row); Abt $449.95 (JSON-LD InStock,
+  page-verified); Best Buy $449.95 (Model JBLTOM3AVIBLKAM, SKU
+  6623867, page-verified). The $199.95 sale (audiowords Nov 1 +
+  Slickdeals/Best Buy ~8 days ago) has ended — Best Buy page now
+  $449.95. Excluded: Best Buy Mocha/Blue $472.45 feed rows (with
+  case bundle); Newegg Mocha $199.95 feed row (different
+  colorway, suspected).
+- JBL Tour Pro 3, Black (JBLTOURPRO3BLKAM) — identifiers
+  PENDING: MPN confirmed (Crutchfield MFR# + Abt + B&H Latte
+  sibling agree), but UPC 050036402392 is stated on Amazon
+  listings only. Not copied: Latte UPC 050036402415 (B&H,
+  different colorway). Quotes (3): JBL direct $329.95 (category
+  pages; feed Latte row $329.95 brand_direct); Crutchfield Black
+  $329.95 (JSON-LD InStock, page-verified); Abt Black $329.95
+  (JSON-LD InStock, page-verified). Excluded: the feed's Abt
+  $229.95 Black row (stale — live Abt page is $329.95);
+  Crutchfield $229.95 sale (ended 9/13); Best Buy $346.45 bundle
+  rows; Charge 6 + Tour Pro 3 kit $476.91; Greentoe
+  marketplace-style rows; icuracao $209.99 (non-US).
+- JBL Bar 1300XMK2, Black (JBLBAR1300XM2BLKAM) — identifiers
+  PENDING: MPN confirmed (global.jbl.com Item# + Best Buy US
+  Model + Abt + shopabunda agree), but UPC 050036414869 is
+  stated on Amazon + an eBay refurbished listing + Target Plus
+  partner data only. Not copied: global EAN 1200130026843
+  (regional code). Quotes (4): JBL direct $1,699.95 (feed Black
+  row; Harman press release lists $1,699.95); Best Buy $1,699.95
+  (Model JBLBAR1300XM2BLKAM, SKU 6643311, sold by Best Buy,
+  page-verified); Abt $1,699.95 (page-verified); Macy's $1,199.95
+  (feed row — suspected, not page-verified). Excluded: Best Buy
+  $1,742.45 and Newegg $1,499.90/$1,514.99 and jbl.com $1,690.94
+  (bundles with cable/protection plan); Belk $2,040 (outlier);
+  Dolby.com $1,019.99 (the old Bar 1300X, 650W — a different
+  model).
+- JBL PartyBox Stage 320, Black (JBLPBSTAGE320AM) — identifiers
+  PENDING: MPN confirmed as the US Black code (JBL US page
+  Item# + Sharaf DG lists PARTYBOXSTAGE320AM as Black; White is
+  JBLPBSTAGE320SWAM), but no UPC surfaced anywhere. Quotes (4):
+  JBL direct $569.95 (product-page JSON-LD InStock,
+  page-verified; feed White row also $569.95); Best Buy Black
+  $629.95 (feed row — suspected); Target Black $629.99 (JSON-LD
+  InStock, page-verified); RC Willey Black $499.95 (feed row —
+  suspected low outlier, not page-verified). Excluded: 'The
+  Works' bundle $739.90 (OutOfStock); Woot refurbished $399.95;
+  B&H mic/PartyLight kits $729.90/$799.90 (bundles,
+  discontinued).
+- PartyBox 330 — NOT ADDED (batch split, Pro Display XDR /
+  INZONE H7 precedent): the new 2026 successor to the Stage 320
+  (280W, 18 hours, launched Sept 2026 in PH) has a conflicting
+  US price — $499.95 on the JBL US page per one source vs $630
+  per another — so no price can be pinned cleanly. Revisit next
+  sweep once the US price settles.
+- Not added from the sweep (held for later batches, all current
+  US models, no defect): Charge 5 $139.95; Charge 6; Clip 5; Go
+  4; Xtreme 4 / Boombox 4; Flip Essential 2 $59.99; PartyBox
+  Club 120; PartyBox Encore 2; PartyBox 130; Live 780NC $139.95;
+  Tune 730BT; Live Beam 3; Tune Beam 2; Wave Buds 2; Sense Lite;
+  Bar 1000MK2 $1,199; Bar 700MK2 $899; Bar 500MK2 $649; Bar
+  300MK2 $449. Not added (US availability unconfirmed): Cinema
+  SB510MK2 / SB550MK2; JBL Cove M1/P1/X1; Quantum 120 / 520.
+  Not added (out of scope): EON700 Series (pro PA).
+- Eval on the new snapshot: 110 models, 69 verified identifiers,
+  5 with quotes, 16 total quotes, 0 identifier-matched, 16
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 105 → 110 / verified 68 → 69 for the
+  continuous expansion; the pending set gains the 4 new pending
+  keys — the Flip 7 is verified).
