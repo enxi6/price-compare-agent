@@ -1361,3 +1361,82 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Coordination: one batch at a time in the repo — never two writers
   on catalog.py/DECISIONS.md/BUILD_LOG.md at once; commits serialized.
   Progress reports at 75, 100, 125, 150, 175, 200 models.
+
+## 044 — 2026-11-06: Expansion batch 6 — 52 → 57 models (DECISIONS 028)
+
+- Membership check (against the 52-model set, by name, MPN and UPC —
+  no matches, all 5 are new lines):
+  - iPad Pro 13 M5 (MDYJ4LL/A, UPC 195950398090) vs
+    apple-ipad-pro-m5-11 (MDWK4LL/A, UPC 195950395419): distinct
+    size, MPN and UPC — not a duplicate.
+  - PlayStation Portal (MPN 1000041319, UPC 711719579779): no Portal
+    in the set; closest are DualSense controllers (different product
+    class, different codes) — not a duplicate.
+  - Switch Neon (HADSKABAA, UPC 045496883775) vs
+    nintendo-switch-oled-neon (HEGSKABAA, UPC 045496883409),
+    nintendo-switch-oled-white (UPC 045496883386) and the Joy-Con
+    pair (HACAJAEAA, UPC 045496590130): distinct non-OLED console
+    line — not a duplicate.
+  - G Pro X Superlight 2 DEX Black (910-007328) vs
+    logitech-g-pro-x-superlight-2-black (910-006628, UPC
+    097855177797): distinct ergonomic asymmetric variant, different
+    MPN — not a duplicate.
+  - Bose Ultra Open Earbuds 2nd Gen Black (897806-0010, UPC
+    017817862714) vs bose-qc-earbuds-black (888507-0100, UPC
+    017817853460) and bose-qc-ultra-2-black (890101-0100, UPC
+    017817859585): distinct open-ear line — not a duplicate.
+- Apple iPad Pro 13-inch M5, 256GB Wi-Fi, Space Black (MDYJ4LL/A) —
+  identifiers VERIFIED: UPC 195950398090 (Adorama US spec table,
+  Space Black 256GB Wi-Fi Standard Glass + eBay US, MPN MDYJ4LL/A,
+  agree), MPN MDYJ4LL/A (Apple direct URL + Best Buy US SKU 6586881
+  + Abt + Adorama agree). Excluded: Amazon renewed UPC 728434107965
+  (conflicting, renewed-only). Quotes (3): Apple direct $1,499.00
+  (page-verified JSON-LD), Staples $1,499.00, Abt $1,424.00 (Comp.
+  Value $1,499). Candidate price $1,499 confirmed as the 256GB list
+  price; PhoneArena's $1,299 MSRP figure is wrong/stale.
+- Sony PlayStation Portal Remote Player, White (1000041319) —
+  identifiers VERIFIED: UPC 711719579779 (eBay US, White, MPN
+  1000041319 + Snapklik, Model 1000041319 + Canex CA SKU agree),
+  MPN 1000041319 (R.C. Willey + Abt Midnight Black is 1000044180, a
+  different colorway). Excluded: regional barcode 711719580782
+  (LDLC/Gamesmen AU); Ayoub $240 row (CFI-Y1018, overseas seller).
+  Quotes (3): PlayStation Direct $249.00 (price-only; crawl mixed
+  Currently Unavailable / Low stock flags), NFM $249.99 (JSON-LD
+  InStock), R.C. Willey $249.99 (Model 1000041319). Manual model is
+  CFI-Y1001; retail MPN is 1000041319.
+- Nintendo Switch, Neon Blue/Neon Red set (HADSKABAA; SKU 117972) —
+  identifiers VERIFIED: UPC 045496883775 (Nintendo US official store
+  page itself, SKU 117972, GTIN 00045496883775 + Amazon B0BFJWCYTL,
+  Model HADSKABAH, agree), MPN HADSKABAA (Amazon B07VGRJDFY +
+  BuyDig agree; Best Buy/Amazon B0BFJWCYTL spell it HADSKABAH —
+  recorded in the entry notes). The older HADSKABAA UPC 045496882174
+  (ASIN B07VGRJDFY, 2019 red-box) conflicts with Nintendo's current
+  page and was not pinned; HACSKABAA is the 2017 original revision,
+  a different SKU. Quotes (3): Nintendo direct $339.99 (JSON-LD
+  InStock), NFM $339.99, Best Buy $334.00 (Model HADSKABAH, SKU
+  10951790, search-index read, below MSRP).
+- Logitech G Pro X Superlight 2 DEX, Black (910-007328) —
+  identifiers PENDING (identifiers empty, DualSense Edge precedent):
+  MPN 910-007328 confirmed (Logitech G US store URL + Best Buy SKU
+  12726725 + Quill) but no US retailer spec page states the UPC
+  after repeated searches. B&H White 910-007363 is UPC 097855200471
+  and Magenta 910-007371 is UPC 097855200457; the B&H Black page
+  (LOPROXS2DBLK) exists but its UPC is not surfaced in the search
+  index. Regional part numbers 910-007358/910-007359 and the DEX SE
+  (910-007831, $129.99) are different models, excluded. Quotes (3):
+  Logitech G direct $159.99 (In stock. Ready to ship, JSON-LD
+  InStock), Best Buy $159.99, CDW $159.99.
+- Bose Ultra Open Earbuds (2nd Gen), Black (897806-0010) —
+  identifiers VERIFIED: UPC 017817862714 (B&H Photo US spec page,
+  Black, 897806-0010 + Snapklik, Model 897806-0010 + Harvey Norman
+  AU agree), MPN 897806-0010 (Abt US + B&H + Bose URL agree).
+  Announced 2026-09-17, US launch 2026-10-01, $299. Quotes (3):
+  Bose direct $299.00 (price-only on page text; $299 confirmed by
+  Bose press release 2026-09-17), Abt $299.00 (JSON-LD InStock),
+  B&H $299.00 (In Stock). 1st-gen Ultra Open rows ($349/$299) are a
+  different model, excluded.
+- Eval on the new snapshot: 57 models, 51 verified identifiers, 5
+  with quotes, 15 total quotes, 0 identifier-matched, 15 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 52 →
+  57 / 47 → 51 for the approved expansion).

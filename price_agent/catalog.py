@@ -1,4 +1,4 @@
-"""Phase 1 evaluation set: 52 standardized electronics models, US market.
+"""Phase 1 evaluation set: 57 standardized electronics models, US market.
 
 Identifier policy (DECISIONS 002): an identifier is recorded only when a
 retailer or manufacturer listing states it for the exact pinned variant.
@@ -975,6 +975,121 @@ EVAL_SET: list[EvalProduct] = [
         "was wrong as a list price: list is $179.00, $129 is "
         "P.C. Richard's sale price and $119 is Bose direct's "
         "current sale price.",
+        status="verified",
+    ),
+    # --- Expansion batch 6 (2026-11-06, continuous expansion per DECISIONS 027) ---
+    # 52 -> 57 models. DECISIONS 028, BUILD_LOG 044.
+    EvalProduct(
+        key="apple-ipad-pro-m5-13",
+        brand="Apple",
+        model="iPad Pro 13-inch (M5, 2025)",
+        variant="M5, 256GB Wi-Fi, Space Black (MDYJ4LL/A)",
+        category="tablets",
+        identifiers={"UPC": "195950398090", "MPN": "MDYJ4LL/A"},
+        identifier_sources={
+            "UPC": "Adorama US spec table (Space Black 256GB Wi-Fi "
+            "Standard Glass: 195950398090) + eBay US (MPN MDYJ4LL/A, "
+            "UPC 195950398090) agree. The Amazon renewed listing's "
+            "728434107965 is a conflicting renewed-only code and was "
+            "excluded."
+        },
+        notes="Apple direct $1,499.00 (apple.com US buy page JSON-LD, "
+        "page-verified 2026-11-06); Staples $1,499.00; Abt $1,424.00 "
+        "(Comp. Value $1,499). Candidate price $1,499 confirmed as "
+        "the 256GB list price — PhoneArena's $1,299 MSRP figure is "
+        "wrong/stale. Distinct from the 11-inch (MDWK4LL/A, UPC "
+        "195950395419). Wi-Fi + Cellular (ME7W4LL/A, $1,699) and "
+        "nano-texture glass tiers are different SKUs.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-playstation-portal",
+        brand="Sony",
+        model="PlayStation Portal Remote Player",
+        variant="White (1000041319)",
+        category="consoles",
+        identifiers={"UPC": "711719579779", "MPN": "1000041319"},
+        identifier_sources={
+            "UPC": "eBay US (White, MPN 1000041319, UPC 0711719579779) "
+            "+ Snapklik (Model 1000041319, UPC 711719579779) + Canex "
+            "CA (SKU 711719579779) agree. The 711719580782 barcode "
+            "(LDLC, Gamesmen AU) is a regional code and was excluded."
+        },
+        notes="PlayStation Direct $249.00 (price shown; crawl mixed "
+        "'Currently Unavailable / Low stock' flags across variants, "
+        "stock not confirmed there); NFM $249.99 (JSON-LD InStock); "
+        "R.C. Willey $249.99 (Model 1000041319). Instruction-manual "
+        "model CFI-Y1001; retail MPN is 1000041319. Midnight Black "
+        "(1000044180) is a different colorway, not pinned. The "
+        "$240 Ayoub row (CFI-Y1018) is an overseas seller, excluded.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="nintendo-switch-neon",
+        brand="Nintendo",
+        model="Switch (original, HAC-001(-01))",
+        variant="Neon Blue/Neon Red set (HADSKABAA; SKU 117972)",
+        category="consoles",
+        identifiers={"UPC": "045496883775", "MPN": "HADSKABAA"},
+        identifier_sources={
+            "UPC": "Nintendo US official store page itself (SKU 117972, "
+            "UPC 00045496883775, $339.99 InStock) + Amazon B0BFJWCYTL "
+            "(Model HADSKABAH, UPC 045496883775) agree. The older "
+            "HADSKABAA UPC 045496882174 (ASIN B07VGRJDFY, 2019 "
+            "red-box listing) conflicts with Nintendo's current page "
+            "and was not pinned."
+        },
+        notes="Nintendo direct $339.99 (JSON-LD InStock); NFM $339.99; "
+        "Best Buy $334.00 (Model HADSKABAH, SKU 10951790, "
+        "search-index read, below MSRP). HACSKABAA is the 2017 "
+        "original revision, a different SKU. Best Buy/Amazon spell "
+        "the current model HADSKABAH; HADSKABAA is the retail part "
+        "number used by BuyDig/Amazon B07VGRJDFY. Distinct from "
+        "Switch OLED Neon (HEGSKABAA, UPC 045496883409) and from the "
+        "Joy-Con pair alone (HACAJAEAA, UPC 045496590130).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="logitech-g-pro-x-superlight-2-dex-black",
+        brand="Logitech",
+        model="G Pro X Superlight 2 DEX",
+        variant="Black (910-007328)",
+        category="mice",
+        notes="MPN 910-007328 confirmed (Logitech G US store URL + "
+        "Best Buy SKU 12726725 + Quill), but the UPC was not found "
+        "in any US retailer spec page after repeated searches, so "
+        "identifiers stay empty per the DualSense Edge precedent. "
+        "B&H lists White 910-007363 (UPC 097855200471) and Magenta "
+        "910-007371 (UPC 097855200457); the B&H Black page "
+        "(LOPROXS2DBLK) exists but its UPC is not surfaced in the "
+        "search index. Regional part numbers 910-007358/910-007359 "
+        "excluded; DEX SE (910-007831, $129.99) is a different "
+        "model. Logitech G direct $159.99 (In stock. Ready to ship, "
+        "JSON-LD InStock); Best Buy $159.99; CDW $159.99. Distinct "
+        "ergonomic asymmetric variant of the standard Superlight 2 "
+        "Black (910-006628, UPC 097855177797).",
+    ),
+    EvalProduct(
+        key="bose-ultra-open-earbuds-2nd-gen-black",
+        brand="Bose",
+        model="Ultra Open Earbuds (2nd Gen)",
+        variant="Black (897806-0010)",
+        category="earbuds",
+        identifiers={"UPC": "017817862714", "MPN": "897806-0010"},
+        identifier_sources={
+            "UPC": "B&H Photo US spec page (Black, 897806-0010, UPC "
+            "017817862714) + Snapklik (Model 897806-0010, UPC "
+            "017817862714) + Harvey Norman AU (897806-0010, "
+            "017817862714) agree."
+        },
+        notes="Bose direct $299.00 (price-only on page text; $299 "
+        "confirmed by Bose press release 2026-09-17, available "
+        "2026-10-01); Abt $299.00 (JSON-LD InStock); B&H $299.00 "
+        "(In Stock). Announced 2026-09-17, launched 2026-10-01. "
+        "Distinct from QC Earbuds (888507-0100) and QC Ultra "
+        "Headphones 2nd Gen (890101-0100); 1st-gen Ultra Open "
+        "Earbuds are a different model. White Smoke is 897806-0020, "
+        "a different SKU.",
         status="verified",
     ),
 ]

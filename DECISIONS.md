@@ -778,3 +778,37 @@ written as "superseded by" with the original text kept.
   stop and report rather than force-pushing.
 - The daily refresh cron is parent-owned; the coordinator does not
   touch it (the parent updates its model count).
+
+## 028 (2026-11-06): Expansion batch 6 — 52 → 57 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models from the remaining brand-sweep candidates
+  (BUILD_LOG 020/022/023/024/025), no per-batch user approval needed
+  (DECISIONS 027): iPad Pro 13-inch M5 (256GB Wi-Fi, Space Black,
+  MDYJ4LL/A), PlayStation Portal Remote Player (White, 1000041319),
+  Nintendo Switch Neon Blue/Neon Red set (HADSKABAA, SKU 117972),
+  Logitech G Pro X Superlight 2 DEX (Black, 910-007328 — identifiers
+  pending), Bose Ultra Open Earbuds 2nd Gen (Black, 897806-0010).
+  One variant pinned per model (DECISIONS 015); 4 of 5 identifiers
+  verified, DEX stays pending (UPC not found in any US retailer spec
+  page — DualSense Edge precedent, not a reason to hold the batch).
+- Why these 5: they are the next un-added mainstream lines from the
+  five brand sweeps, each distinct from the set (13-inch vs the
+  11-inch Pro; Portal vs DualSense controllers; non-OLED Switch vs
+  the two OLED sets; DEX ergonomic vs the symmetrical Superlight 2;
+  Ultra Open vs QC Earbuds / QC Ultra 2). All five are in stock new
+  in the US on 2026-11-06 (brand-direct pages or InStock JSON-LD).
+- What was corrected along the way: the candidate price $1,499 for
+  the iPad Pro 13 is the 256GB list price (Apple direct page-verified;
+  PhoneArena's $1,299 MSRP figure is wrong/stale); the Switch Neon's
+  current UPC is 045496883775 per Nintendo's own store page, not the
+  older 045496882174 from the 2019 red-box listing; the Portal's US
+  UPC is 711719579779, not the regional 711719580782.
+- What does NOT change: the existing 52 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro untouched,
+  batches 1–5 entries untouched). No other snapshot file is rewritten.
+  No Amazon touch. The daily refresh cron still says "52 models" in
+  its body and needs a count update to 57 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: DEX Black UPC stays pending until a US retailer spec page
+  or box barcode settles it; the Switch HADSKABAA vs HADSKABAH
+  spelling variant is recorded in the entry notes.

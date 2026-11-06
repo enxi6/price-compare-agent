@@ -11,6 +11,19 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 6 (DECISIONS 028, continuous expansion per
+  DECISIONS 027): eval set 52 → 57 models, 47 → 51 verified
+  identifiers. New: iPad Pro 13-inch M5 256GB Wi-Fi Space Black
+  (MDYJ4LL/A, UPC 195950398090), PlayStation Portal Remote Player
+  White (1000041319, UPC 711719579779), Nintendo Switch Neon
+  Blue/Neon Red set (HADSKABAA, UPC 045496883775), Logitech G Pro X
+  Superlight 2 DEX Black (910-007328, identifiers pending — UPC not
+  found in any US retailer spec page), Bose Ultra Open Earbuds 2nd
+  Gen Black (897806-0010, UPC 017817862714). New snapshot
+  `data/eval_snapshots_batch6_2026-11-06.json` holds 15 quotes
+  across the 5 models (3 each). DECISIONS 021 applied to every
+  quote: no marketplace/third-party rows, no non-US rows, no Amazon.
+
 - Continuous expansion authorized (DECISIONS 027, user 2026-11-06):
   eval set expands 52 → 200 models without per-batch approval;
   batches of 5 remain the documentation unit only. Same flow as
