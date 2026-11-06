@@ -2009,3 +2009,101 @@ written as "superseded by" with the original text kept.
   revisits carry over unchanged (OMEN 27s UPC 197029615442,
   Cloud III UPC 197029008237, OMEN 27q G2 US UPC, Alloy Rise 75
   UPC 197192334096, ULT WEAR $148.00, Sony direct CH720N $89.99).
+
+## 045 (2026-11-06): Expansion batch 23 — 135 → 140 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 ASUS/ROG models from the ASUS official US store
+  sweep (BUILD_LOG 059), no per-batch user approval needed (DECISIONS
+  027): ASUS ROG Swift OLED PG27UCWM 27-inch 4K 240Hz Gaming Monitor,
+  Black (UPC pending), ASUS ROG Delta II Wireless Gaming Headset,
+  Black (90YH03W0-BHAA03, UPC pending), ASUS ROG Gladius IV Ace
+  Wireless Gaming Mouse, Black (P729 ROG GLADIUS IV ACE/BLK, UPC
+  pending), ASUS ROG Azoth 96 HE Wireless Gaming Keyboard, Black
+  (90MP040H-BKAA20, UPC pending), ASUS ROG Cetra Open Wireless
+  Gaming Earbuds, Black (90YH0450-BTAA00, UPC pending). One variant
+  pinned per model (DECISIONS 015); 0 of 5 identifiers verified,
+  all 5 stay pending on single-source, Amazon-only, or conflicting
+  codes (Corsair batch 19 precedent: 0 of 5 verified is not a
+  reason to hold the batch). Verified-identifier count stays 73.
+  No model was split out of this batch. No new category enters the
+  set (monitors, headphones, mice, keyboards, earbuds all exist);
+  one new brand enters the set: ASUS — the first ASUS entries of
+  any kind, one per product family.
+- Why these 5: they are the best-evidenced ASUS sweep candidates —
+  one per product family where the official US store has a current
+  fixed-configuration model: flagship Tandem RGB OLED monitor,
+  flagship tri-mode wireless headset, flagship 8K esports mouse,
+  flagship Hall-effect keyboard, flagship open-ear gaming earbuds.
+  No laptop or desktop pick: ASUS laptops and desktops are
+  configurable with no retailer-pinned base configuration
+  (DECISIONS 015) — the sweep excluded them rather than forcing
+  one. Four of the five are in stock new in the US on 2026-11-06
+  (ASUS eShop USA / Best Buy page reads); the PG27UCWM is the
+  exception — listed at $1,199.00 at ROG US (Temporarily out of
+  stock) and B&H (Coming Soon) — added per the PS5 Pro precedent
+  (batch 3: price-verified, stock not confirmed), with the stock
+  caveat recorded in the catalog notes and the revisit below.
+- What was corrected along the way: the Delta II ASUS direct price
+  is $185.99, confirmed on a fresh eShop page read — the Meta
+  Catalog feed row at $177.99 is stale and was not used (same
+  staleness pattern as batch 22's QuadCast $159.99 read). The
+  Azoth 96 HE ASUS direct price is $359.99, confirmed on a fresh
+  eShop read with the feed and Newegg agreeing — the sweep's
+  $308.99 is superseded (the $305.99 sale row on a rog.asus.com
+  helpdesk page is stale/unclear and was not used). ASUS
+  identifiers are regional by part-number suffix and were NOT
+  carried across suffixes: the Delta II EAN 4711387604847 is for
+  90YH03W0-BHUA00 (UK Black), not the US 90YH03W0-BHAA03; the
+  Azoth 96 HE EAN 4711636009126 is for 90MP040H-BKDA20 (QWERTZ
+  EU) and 4711636009201 for 90MP040H-BKUA20 (UK), not the US
+  90MP040H-BKAA20. The Cetra Open Wireless UPC is a genuine
+  conflict, not a verification: PBTech and the LittleBit datasheet
+  agree on UPC 199291232747 for 90YH0450-BTUA00 (non-US part),
+  while Amazon states UPC 199291232754 for the same US model name
+  — neither code was recorded, per the DualSense precedent. The
+  PG27UCWM UPC 199291335226 is B&H-only (Scan UK lists a different
+  regional GTIN, 4711636505857, not a corroboration) and was NOT
+  recorded, per the strict two-source rule. The Azoth 96 HE UPC
+  199291008571 is Amazon-only (and its listing says ABS keycaps
+  vs the eShop's PBT) and was NOT recorded — Amazon never
+  corroborates.
+- Variant pinning, recorded explicitly: PG27UCWM pins Black —
+  the only colorway (Newegg spec: "Black cabinet"); the PG32UCWM
+  32-inch ($1,399) and PG27UCDM ($1,099, QD-OLED) are different
+  monitors. Delta II pins Black (90YH03W0-BHAA03) — Moonlight
+  White (90YH03W0-BHAA10) is a different colorway, and the Delta
+  II KJP (90YH04C0-BHAA10, $269.99) is a different, limited-edition
+  headset. Gladius IV Ace pins Black (P729 ROG GLADIUS IV
+  ACE/BLK) — the only colorway (the Harpe II Ace is a different
+  mouse). Azoth 96 HE pins Black (90MP040H-BKAA20) — the Azoth 96
+  HE Lite (90MP048H-BKAA00, also $359.99) is a different keyboard.
+  Cetra Open Wireless pins Black (90YH0450-BTAA00) — the only
+  colorway (the Cetra True Wireless SpeedNova is different
+  earbuds).
+- What does NOT change: the existing 135 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–22 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 140 on
+  the next edit (parent owns the cron; not touched here).
+- Revisit: re-check PG27UCWM stock (ROG US / B&H) and the Delta II
+  $185.99 sale price after the Early Black Friday event ends Nov 8;
+  the five pending UPCs stay pending until a second non-Amazon US
+  source confirms each (PG27UCWM 199291335226 — B&H only; Delta II
+  US UPC — none surfaced; Gladius IV Ace UPC — none surfaced, no
+  90MP part number either; Azoth 96 HE 199291008571 — Amazon-only;
+  Cetra Open Wireless — conflict 199291232747 vs 199291232754,
+  needs a tiebreaker such as a physical box barcode or a second
+  non-Amazon US source); the remaining ASUS candidates (PG32UCWM
+  $1,399, PG27AQDPR $899 sale, PG32UCDM Gen3 $1,299, PG27UCDM
+  $1,099, XG32UQDS $749, PG34WCDN $1,299, Delta $149.99, Pelta Core
+  $119.99, Kithara $259.99 sale, Spatha X 65K $179.99, Harpe Mini
+  Core $69.99, Azoth 96 HE Lite $359.99, Strix Morph 96 $115.99
+  sale, Strix Scope II 96 RX $132.99 sale, Falchion Ace 75 HE from
+  $177.99) stay list-only for later batches; the batch 22 revisits
+  carry over unchanged (OMEN OLED 27q UPC conflict, OMEN 27k US
+  UPC, Haste 2 Pro UPC 198122802432, QuadCast 2 S UPC
+  197961186741, remaining HP candidates, OMEN 27s UPC
+  197029615442, Cloud III UPC 197029008237, OMEN 27q G2 US UPC,
+  Alloy Rise 75 UPC 197192334096, ULT WEAR $148.00, Sony direct
+  CH720N $89.99).

@@ -3429,6 +3429,173 @@ EVAL_SET: list[EvalProduct] = [
         "BUILD_LOG 059). Re-check the $149.99 sale price after "
         "the Early Black Friday event ends Nov 8.",
     ),
+    EvalProduct(
+        key="asus-rog-swift-oled-pg27ucwm-black",
+        brand="ASUS",
+        model="ROG Swift OLED PG27UCWM 27-inch 4K 240Hz Gaming Monitor",
+        variant="Black (single colorway)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="ROG US $1,199.00 (ROG US monitors category page read "
+        "2026-11-06, Temporarily out of stock — price verified, "
+        "stock out at direct; 26.5-inch Tandem RGB OLED, dual mode "
+        "4K@240Hz / FHD@480Hz, TrueBlack Glossy, DP 2.1a, USB-C "
+        "90W); B&H $1,199.00 (page read fresh 2026-11-06, 'New Item "
+        "- Coming Soon', OutOfStock); Newegg $1,199.99 (feed "
+        "authorized_retailer row — suspected; stock not confirmed "
+        "on the page read). Identifiers PENDING: the UPC "
+        "199291335226 is B&H-only — no second independent source "
+        "states it (Scan UK lists GTIN 4711636505857 for the EU "
+        "listing, a different regional code, not a corroboration), "
+        "and no ASUS part number (90LM…) surfaced for the US "
+        "listing, so identifiers stay empty per the strict "
+        "two-source rule; re-check next refresh. Not copied: "
+        "199291335226 (single-source); 4711636505857 (EU GTIN); "
+        "the PG32UCWM 32-inch ($1,399) and PG27UCDM ($1,099, "
+        "QD-OLED) — different monitors shown on the same B&H/ROG "
+        "pages. Excluded: the rog.asus.com/ca-en $1,699 row (CAD, "
+        "non-US, DECISIONS 021). Stock caveat: temporarily out of "
+        "stock at ROG US and coming soon at B&H — added per the "
+        "PS5 Pro precedent (batch 3: price-verified, stock not "
+        "confirmed); re-check stock next refresh. Distinct from "
+        "the set's Dell/Alienware/HP monitors — the PG27UCWM "
+        "(ASUS's flagship Tandem RGB OLED monitor) is the first "
+        "ASUS monitor in the set and the first ASUS brand entry of "
+        "any kind.",
+    ),
+    EvalProduct(
+        key="asus-rog-delta-ii-black",
+        brand="ASUS",
+        model="ROG Delta II Wireless Gaming Headset",
+        variant="Black (90YH03W0-BHAA03)",
+        category="headphones",
+        identifiers={},
+        status="pending",
+        notes="ASUS eShop USA $185.99 (page read fresh 2026-11-06, "
+        "InStock, Product Name A701 ROG DELTA II/BLK, Part Number "
+        "90YH03W0-BHAA03, Color Black, tri-mode BT/2.4GHz/3.5mm, "
+        "50 mm titanium-plated drivers, up to 110-hour battery, "
+        "318 g); Target $199.99 Black (feed authorized_retailer "
+        "row — suspected; not page-verified); ASUS shop $229.99 "
+        "list (feed row for the same part, seller_type unstated "
+        "— suspected; list price). Identifiers PENDING: MPN "
+        "90YH03W0-BHAA03 confirmed (ASUS eShop USA page), but no "
+        "US UPC surfaced — the EAN 4711387604847 stated by "
+        "Overclockers UK and itworkup.co.za is for 90YH03W0-BHUA00 "
+        "(the UK Black part number), not the US BHAA03, so it was "
+        "not carried across regions per the strict two-source "
+        "rule; re-check next refresh. Not copied: 4711387604847 "
+        "(UK part); 90YH03W0-BHAA10 (Moonlight White, CA $339.99 "
+        "CAD — different colorway); 90YH04C0-BHAA10 (Delta II KJP "
+        "limited edition, $269.99 — different headset). Excluded: "
+        "the eShop feed row at $177.99 (stale — the fresh page "
+        "read shows $185.99; same staleness pattern as batch 22's "
+        "QuadCast $159.99 read) and the pricehistory.app $177.99 "
+        "figure (Amazon-derived; Amazon never corroborates). "
+        "Distinct from the set's Sony, Bose, JBL, Razer, Corsair, "
+        "HyperX and Alienware headsets — the Delta II is the first "
+        "ASUS headset in the set.",
+    ),
+    EvalProduct(
+        key="asus-rog-gladius-iv-ace-black",
+        brand="ASUS",
+        model="ROG Gladius IV Ace Wireless Gaming Mouse",
+        variant="Black (P729 ROG GLADIUS IV ACE/BLK)",
+        category="mice",
+        identifiers={},
+        status="pending",
+        notes="Best Buy $169.99 (page read fresh 2026-11-06, "
+        "InStock, Model P729 ROG GLADIUS IV ACE/BLK, SKU 6690126, "
+        "Sold by Best Buy, 56 g, AimPoint Pro 65K sensor, "
+        "SpeedNova 8K Gen II, customizable weight); ASUS $169.99 "
+        "(ROG US product page JSON-LD read 2026-11-06 — price "
+        "verified, Availability OutOfStock at direct). "
+        "Identifiers PENDING: no MPN in 90MP… form and no UPC "
+        "surfaced for this model in any source read (launched "
+        "2026-10-30; B&H carries no listing yet), so identifiers "
+        "stay empty per the strict two-source rule; re-check next "
+        "refresh. Not copied: nothing — no candidate code "
+        "surfaced. Not the Gladius III (different mouse) or the "
+        "Harpe II Ace ($150.99, different mouse). Excluded: the "
+        "AliExpress $271.08 row (overseas marketplace, DECISIONS "
+        "021). Distinct from the set's Logitech, Razer, Corsair, "
+        "Alienware, HP and HyperX mice — the Gladius IV Ace is the "
+        "first ASUS mouse in the set.",
+    ),
+    EvalProduct(
+        key="asus-rog-azoth-96-he-black",
+        brand="ASUS",
+        model="ROG Azoth 96 HE Wireless Gaming Keyboard",
+        variant="Black (90MP040H-BKAA20)",
+        category="keyboards",
+        identifiers={},
+        status="pending",
+        notes="ASUS eShop USA $359.99 (InStock, Open Graph read "
+        "2026-11-06, Product Name M901 ROG AZOTH 96 HE/BLK/HFXV2/"
+        "CA/PBT, Part Number 90MP040H-BKAA20, HFX V2 magnetic "
+        "switches, SpeedNova 8K, OLED touchscreen); Newegg "
+        "$359.99 (feed authorized_retailer row — suspected; not "
+        "page-verified); Target $339.99 sale (feed "
+        "authorized_retailer row — suspected; Target's $399.99 "
+        "reg conflicts with the ASUS $359.99 list). Identifiers "
+        "PENDING: MPN 90MP040H-BKAA20 confirmed (ASUS eShop USA "
+        "page), but the only UPC surfaced, 199291008571, is "
+        "stated on Amazon only (for M901 ROG AZOTH 96 "
+        "HE/BLK/HFXV2/CA/ABS — note ABS keycaps vs the eShop's "
+        "PBT), and Amazon never corroborates, so identifiers stay "
+        "empty per the strict two-source rule; re-check next "
+        "refresh. Not copied: 199291008571 (Amazon-only); "
+        "4711636009126 (EAN for 90MP040H-BKDA20, the QWERTZ EU "
+        "part) and 4711636009201 (barcode for 90MP040H-BKUA20, "
+        "the UK part) — different regional parts. Not the Azoth "
+        "96 HE Lite (90MP048H-BKAA00, different keyboard, also "
+        "$359.99) or the Azoth Extreme ($499.99). Correction vs "
+        "sweep 059: the sweep's $308.99 is superseded — the fresh "
+        "eShop read, the feed and Newegg all agree on $359.99 "
+        "(the $305.99 sale row on a rog.asus.com helpdesk page is "
+        "stale/unclear and was not used). Distinct from the set's "
+        "Logitech, Razer, Corsair, Alienware, HP, HyperX and "
+        "Keychron keyboards — the Azoth 96 HE is the first ASUS "
+        "keyboard in the set.",
+    ),
+    EvalProduct(
+        key="asus-rog-cetra-open-wireless-black",
+        brand="ASUS",
+        model="ROG Cetra Open Wireless Gaming Earbuds",
+        variant="Black (90YH0450-BTAA00)",
+        category="earbuds",
+        identifiers={},
+        status="pending",
+        notes="ASUS eShop USA $229.99 (page read via search index "
+        "2026-11-06, Product Name O701 ROG CETRA OPEN "
+        "WIRELESS/BLK, Part Number 90YH0450-BTAA00, dual-mode BT "
+        "+ SpeedNova 2.4 GHz, 14.2 mm DLC drivers, open-ear, "
+        "16-hour battery + 48-hour case); Best Buy $229.99 (feed "
+        "authorized_retailer row + page text read via search "
+        "index 2026-11-06, Model O701 ROG CETRA OPEN WRLS/BLK, "
+        "SKU 6668329, Sold by Best Buy — suspected; not freshly "
+        "page-verified). Identifiers PENDING: the UPC is a "
+        "genuine conflict, not a verification — PBTech (NZ "
+        "retailer) and the LittleBit datasheet agree on UPC "
+        "199291232747 for 90YH0450-BTUA00 (the non-US part), "
+        "while Amazon states UPC 199291232754 for the same US "
+        "model name (O701 ROG CETRA OPEN WIRELESS/BLK); neither "
+        "code was recorded, per the DualSense precedent and the "
+        "strict two-source rule (no US source ties a UPC to the "
+        "US part BTAA00); re-check next refresh. Not copied: "
+        "199291232747 (non-US part) or 199291232754 (Amazon-only, "
+        "conflicting); 90YH0450-BTUA00 (non-US part). Not the "
+        "Cetra True Wireless SpeedNova (different earbuds, "
+        "$199.99). Excluded: the Walmart $229.99 feed row "
+        "(sold-by unconfirmed — marketplace risk, DECISIONS 021), "
+        "the Newegg WUQ $390.99 row (third-party brand, above "
+        "list), the 961souq $325/$399 rows (overseas), the "
+        "rog.asus.com/ca-en $339.99 CAD row (non-US). Distinct "
+        "from the set's Sony, Bose, JBL, Google, Samsung and "
+        "other earbuds — the Cetra Open Wireless is the first "
+        "ASUS earbuds entry in the set.",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:

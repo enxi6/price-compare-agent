@@ -4016,3 +4016,176 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   hp-omen-27k-black, hyperx-omen-oled-27q-black,
   hyperx-pulsefire-haste-2-pro-slate-grey,
   hyperx-quadcast-2-s-black).
+
+## 062 — 2026-11-06: Expansion batch 23 — 135 → 140 models (DECISIONS 045)
+
+- ASUS official US store verification (asus.com/us + rog.asus.com
+  US store, eshop.asus.com/us, read-only, 2026-11-06 ~19:54–20:00
+  UTC / 11:54–12:00 PT): PG27UCWM $1,199.00 (ROG US monitors
+  category page, Temporarily out of stock); Delta II Black $185.99
+  InStock (ASUS eShop USA page read fresh, Product Name A701 ROG
+  DELTA II/BLK, Part Number 90YH03W0-BHAA03, Color Black);
+  Gladius IV Ace $169.99 (ROG US product page JSON-LD, OutOfStock
+  at direct; Best Buy page read fresh, InStock, Model P729 ROG
+  GLADIUS IV ACE/BLK, SKU 6690126, Sold by Best Buy); Azoth 96 HE
+  $359.99 InStock (ASUS eShop USA Open Graph read, Product Name
+  M901 ROG AZOTH 96 HE/BLK/HFXV2/CA/PBT, Part Number
+  90MP040H-BKAA20); Cetra Open Wireless $229.99 (ASUS eShop USA
+  page read via search index, Product Name O701 ROG CETRA OPEN
+  WIRELESS/BLK, Part Number 90YH0450-BTAA00). ASUS laptops and
+  desktops are configurable: no laptop or desktop was added
+  (DECISIONS 015). Feed shelf observed across the 5 Meta Catalog
+  runs (100 rows): PG27UCWM ROG $1,699 brand_direct (ca-en, CAD,
+  non-US) / Newegg $1,199.99 authorized_retailer; Delta II ASUS
+  $229.99 brand_direct (shop.asus.com/us, BHAA10 White) / ASUS
+  $229.99 seller_type unstated (shop.asus.com/us, BHAA03 list) /
+  ROG $177.99 brand_direct (eshop.asus.com/us, BHAA03 — stale) /
+  Delta II KJP $269.99 brand_direct / Target $199.99 sale
+  authorized_retailer / andromedainsights.com $219.99 brand_direct
+  (unconfirmed reseller); Gladius IV Ace Best Buy $169.99
+  authorized_retailer / AliExpress $271.08 (overseas marketplace);
+  Azoth 96 HE ROG $359.99 brand_direct (rog.asus.com spec page) /
+  ROG $359.99 brand_direct (eshop.asus.com/us) / ASUS $359.99
+  brand_direct (shop.asus.com/us) / Target $339.99 sale ($399.99
+  reg) authorized_retailer / Newegg $359.99 authorized_retailer /
+  ROG $305.99 sale brand_direct (rog.asus.com helpdesk page —
+  stale/unclear) / Azoth 96 HE Lite $359.99 brand_direct
+  (different model); Cetra Open Wireless ASUS $229.99 brand_direct
+  (shop.asus.com/us) / Best Buy $229.99 authorized_retailer /
+  Walmart $229.99 authorized_retailer (sold-by unconfirmed) /
+  Newegg WUQ $390.99 authorized_retailer / 961souq $325 sale ($399
+  list) authorized_retailer (overseas) / ROG $339.99 brand_direct
+  (ca-en, CAD, non-US).
+- Membership check (against the 135-model set, by name, MPN and
+  UPC): grep of price_agent/catalog.py finds zero matches for
+  asus, rog-swift-oled-pg27ucwm, rog-delta-ii, rog-gladius-iv-ace,
+  rog-azoth-96-he, rog-cetra-open-wireless, 90YH03W0, 90MP040H,
+  90YH0450, 199291335226, 199291008571, 199291232747 or
+  199291232754 — the set had no ASUS brand entry at all (the only
+  prior 'ASUS' strings are none; the sweep 059 check at 125 models
+  found the same). PG27UCWM: no match — distinct from the
+  PG27UCDM (QD-OLED, $1,099) and PG32UCWM (32-inch, $1,399).
+  Delta II (90YH03W0-BHAA03): no match — the set had no ASUS
+  headset at all. Gladius IV Ace (P729 ROG GLADIUS IV ACE/BLK):
+  no match — the set had no ASUS mouse at all. Azoth 96 HE
+  (90MP040H-BKAA20): no match — the set had no ASUS keyboard at
+  all. Cetra Open Wireless (90YH0450-BTAA00): no match — the set
+  had no ASUS earbuds at all.
+- Per-model record (all 5 added; identifiers, quotes, pending):
+- ASUS ROG Swift OLED PG27UCWM 27-inch 4K 240Hz Gaming Monitor,
+  Black (single colorway) — identifiers PENDING: UPC 199291335226
+  is B&H-only (page read fresh 2026-11-06 states it); Scan UK
+  lists GTIN 4711636505857 for the EU listing, a different
+  regional code, not a corroboration; no ASUS part number (90LM…)
+  surfaced for the US listing, so identifiers stay empty per the
+  strict two-source rule. Not copied: 199291335226
+  (single-source); 4711636505857 (EU GTIN); the PG32UCWM 32-inch
+  ($1,399) and PG27UCDM ($1,099, QD-OLED) — different monitors.
+  Quotes (3): ASUS $1,199.00 (ROG US category page read,
+  Temporarily out of stock — price verified; 26.5-inch Tandem RGB
+  OLED, dual mode 4K@240Hz / FHD@480Hz, TrueBlack Glossy, DP
+  2.1a, USB-C 90W); B&H $1,199.00 (page read fresh, "New Item -
+  Coming Soon", OutOfStock); Newegg $1,199.99 (feed
+  authorized_retailer row — suspected; stock not confirmed on the
+  page read). Excluded: the rog.asus.com/ca-en $1,699 row (CAD,
+  non-US, DECISIONS 021). Stock caveat: temporarily out of stock
+  at ROG US and coming soon at B&H — added per the PS5 Pro
+  precedent (batch 3); re-check stock next refresh.
+- ASUS ROG Delta II Wireless Gaming Headset, Black
+  (90YH03W0-BHAA03) — identifiers PENDING: MPN confirmed (ASUS
+  eShop USA page), but no US UPC surfaced — the EAN 4711387604847
+  stated by Overclockers UK and itworkup.co.za is for
+  90YH03W0-BHUA00 (the UK Black part number), not the US BHAA03,
+  so it was not carried across regions per the strict two-source
+  rule. Not copied: 4711387604847 (UK part); 90YH03W0-BHAA10
+  (Moonlight White, CA $339.99 CAD — different colorway);
+  90YH04C0-BHAA10 (Delta II KJP limited edition, $269.99 —
+  different headset). Quotes (3): ASUS eShop $185.99 (InStock,
+  page read fresh; tri-mode BT/2.4GHz/3.5mm, 50 mm
+  titanium-plated drivers, up to 110-hour battery, 318 g); Target
+  $199.99 Black (feed authorized_retailer row — suspected; not
+  page-verified); ASUS shop $229.99 list (feed row for the same
+  part, seller_type unstated — suspected; list price). Excluded:
+  the eShop feed row at $177.99 (stale — the fresh page read shows
+  $185.99) and the pricehistory.app $177.99 figure
+  (Amazon-derived; Amazon never corroborates), plus the
+  andromedainsights.com $219.99 row (unconfirmed reseller).
+- ASUS ROG Gladius IV Ace Wireless Gaming Mouse, Black (P729 ROG
+  GLADIUS IV ACE/BLK) — identifiers PENDING: no MPN in 90MP…
+  form and no UPC surfaced for this model in any source read
+  (launched 2026-10-30; B&H carries no listing yet), so
+  identifiers stay empty per the strict two-source rule. Not
+  copied: nothing — no candidate code surfaced. Not the Gladius
+  III (different mouse) or the Harpe II Ace ($150.99, different
+  mouse). Quotes (2): Best Buy $169.99 (InStock, page read fresh,
+  Model P729 ROG GLADIUS IV ACE/BLK, SKU 6690126, Sold by Best
+  Buy; 56 g, AimPoint Pro 65K sensor, SpeedNova 8K Gen II,
+  customizable weight); ASUS $169.99 (ROG US product page JSON-LD
+  read — price verified, Availability OutOfStock at direct).
+  Excluded: the AliExpress $271.08 row (overseas marketplace,
+  DECISIONS 021).
+- ASUS ROG Azoth 96 HE Wireless Gaming Keyboard, Black
+  (90MP040H-BKAA20) — identifiers PENDING: MPN confirmed (ASUS
+  eShop USA page), but the only UPC surfaced, 199291008571, is
+  stated on Amazon only (for M901 ROG AZOTH 96 HE/BLK/HFXV2/
+  CA/ABS — note ABS keycaps vs the eShop's PBT), and Amazon never
+  corroborates, so identifiers stay empty per the strict
+  two-source rule. Not copied: 199291008571 (Amazon-only);
+  4711636009126 (EAN for 90MP040H-BKDA20, the QWERTZ EU part) and
+  4711636009201 (barcode for 90MP040H-BKUA20, the UK part) —
+  different regional parts. Not the Azoth 96 HE Lite
+  (90MP048H-BKAA00, different keyboard, also $359.99) or the
+  Azoth Extreme ($499.99). Quotes (3): ASUS eShop $359.99
+  (InStock, Open Graph read; HFX V2 magnetic switches, SpeedNova
+  8K, OLED touchscreen); Newegg $359.99 (feed authorized_retailer
+  row — suspected; not page-verified); Target $339.99 sale (feed
+  authorized_retailer row — suspected; Target's $399.99 reg
+  conflicts with the ASUS $359.99 list). Excluded: the $305.99
+  sale row on a rog.asus.com helpdesk page (stale/unclear). The
+  sweep's $308.99 is superseded — the fresh eShop read, the feed
+  and Newegg all agree on $359.99.
+- ASUS ROG Cetra Open Wireless Gaming Earbuds, Black
+  (90YH0450-BTAA00) — identifiers PENDING: the UPC is a genuine
+  conflict, not a verification — PBTech (NZ retailer) and the
+  LittleBit datasheet agree on UPC 199291232747 for
+  90YH0450-BTUA00 (the non-US part), while Amazon states UPC
+  199291232754 for the same US model name (O701 ROG CETRA OPEN
+  WIRELESS/BLK); neither code was recorded, per the DualSense
+  precedent and the strict two-source rule (no US source ties a
+  UPC to the US part BTAA00). Not copied: 199291232747 (non-US
+  part) or 199291232754 (Amazon-only, conflicting);
+  90YH0450-BTUA00 (non-US part). Not the Cetra True Wireless
+  SpeedNova (different earbuds, $199.99). Quotes (2): ASUS eShop
+  $229.99 (page read via search index; dual-mode BT + SpeedNova
+  2.4 GHz, 14.2 mm DLC drivers, open-ear, 16-hour battery +
+  48-hour case); Best Buy $229.99 (feed authorized_retailer row +
+  page text read via search index, Model O701 ROG CETRA OPEN
+  WRLS/BLK, SKU 6668329, Sold by Best Buy — suspected; not freshly
+  page-verified). Excluded: the Walmart $229.99 feed row (sold-by
+  unconfirmed — marketplace risk, DECISIONS 021), the Newegg WUQ
+  $390.99 row (third-party brand, above list), the 961souq
+  $325/$399 rows (overseas), the rog.asus.com/ca-en $339.99 CAD
+  row (non-US).
+- Not added from the sweep (held for later batches, all current
+  US models, no defect): PG32UCWM $1,399; PG27AQDPR $899 sale;
+  PG32UCDM Gen3 $1,299; PG27UCDM $1,099; XG32UQDS $749; PG34WCDN
+  $1,299; Delta $149.99; Pelta Core $119.99; Kithara $259.99 sale;
+  Spatha X 65K $179.99; Harpe Mini Core $69.99; Azoth 96 HE Lite
+  $359.99; Strix Morph 96 $115.99 sale; Strix Scope II 96 RX
+  $132.99 sale; Falchion Ace 75 HE from $177.99. Not added (no
+  clean pin): all ASUS laptops and desktops — configurable with no
+  retailer-pinned base configuration (DECISIONS 015); Azoth
+  Extreme Edition 20 keyboard ($599.99) and Harpe II Extreme
+  Edition 20 mouse ($259.99) — limited 20th-anniversary editions,
+  not mainstream lines; Gjallar soundbar, mouse pads, Zenfone
+  phones, routers — no set category / out of scope (BUILD_LOG
+  059).
+- Eval on the new snapshot: 140 models, 73 verified identifiers,
+  5 with quotes, 13 total quotes, 0 identifier-matched, 13
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 135 → 140, verified stays 73, for the continuous
+  expansion; the pending set gains the 5 new pending keys:
+  asus-rog-swift-oled-pg27ucwm-black, asus-rog-delta-ii-black,
+  asus-rog-gladius-iv-ace-black, asus-rog-azoth-96-he-black,
+  asus-rog-cetra-open-wireless-black).

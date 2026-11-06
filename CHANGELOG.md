@@ -11,6 +11,36 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 23 (DECISIONS 045, continuous expansion per
+  DECISIONS 027): eval set 135 → 140 models, verified identifiers
+  stay 73 (0 of 5 new identifiers verified — all pending). New:
+  ASUS ROG Swift OLED PG27UCWM 27-inch 4K 240Hz Gaming Monitor,
+  Black (UPC pending — code 199291335226 is B&H-only; $1,199.00 at
+  ROG US and B&H, temporarily out of stock / coming soon — ASUS's
+  flagship Tandem RGB OLED monitor, the first ASUS monitor in the
+  set), ASUS ROG Delta II Wireless Gaming Headset, Black
+  (90YH03W0-BHAA03, UPC pending — the UK EAN 4711387604847 was not
+  carried across regions; $185.99 InStock at ASUS eShop USA,
+  $199.99 at Target — ASUS's flagship tri-mode headset, the first
+  ASUS headset in the set), ASUS ROG Gladius IV Ace Wireless
+  Gaming Mouse, Black (P729 ROG GLADIUS IV ACE/BLK, UPC pending —
+  no MPN/UPC surfaced; $169.99 InStock at Best Buy — ASUS's
+  flagship 8K esports mouse, the first ASUS mouse in the set),
+  ASUS ROG Azoth 96 HE Wireless Gaming Keyboard, Black
+  (90MP040H-BKAA20, UPC pending — code 199291008571 is
+  Amazon-only; $359.99 InStock at ASUS eShop USA, $339.99 sale at
+  Target — ASUS's flagship Hall-effect keyboard, the first ASUS
+  keyboard in the set), ASUS ROG Cetra Open Wireless Gaming
+  Earbuds, Black (90YH0450-BTAA00, UPC pending — PBTech/LittleBit
+  code 199291232747 conflicts with Amazon's 199291232754, neither
+  recorded; $229.99 at ASUS eShop USA and Best Buy — ASUS's
+  flagship open-ear gaming earbuds, the first ASUS earbuds in the
+  set). ASUS is a new brand in the set; no new category enters.
+  Not added: all ASUS laptops and desktops (configurable, no
+  retailer-pinned base configuration — DECISIONS 015), limited
+  20th-anniversary editions, and the remaining ASUS candidates,
+  which stay list-only for later batches.
+
 - Expansion batch 22 (DECISIONS 044, continuous expansion per
   DECISIONS 027): eval set 130 → 135 models, verified identifiers
   72 → 73 (1 of 5 new identifiers verified). New: HP OMEN 27k UHD
