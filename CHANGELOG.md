@@ -11,6 +11,13 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Continuous expansion authorized (DECISIONS 027, user 2026-11-06):
+  eval set expands 52 → 200 models without per-batch approval;
+  batches of 5 remain the documentation unit only. Same flow as
+  batches 1–5 (expansion skill + DECISIONS 021), first exhausting
+  the remaining candidates from the five brand sweeps, then new
+  mainstream US electronics brands one at a time.
+
 - Selection and quote-eligibility rules (DECISIONS 021, user
   2026-11-06): no third-party/marketplace sellers for now, no
   non-US-market goods, selection stays each brand's mainstream or
