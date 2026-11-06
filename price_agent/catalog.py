@@ -1,4 +1,4 @@
-"""Phase 1 evaluation set: 42 standardized electronics models, US market.
+"""Phase 1 evaluation set: 47 standardized electronics models, US market.
 
 Identifier policy (DECISIONS 002): an identifier is recorded only when a
 retailer or manufacturer listing states it for the exact pinned variant.
@@ -726,6 +726,137 @@ EVAL_SET: list[EvalProduct] = [
         "256GB) is a different model and is already in the set "
         "(meta-quest-3s-128gb). Meta direct $599.99, in stock "
         "2026-11-06; NFM, Abt and Newegg also $599.99.",
+        status="verified",
+    ),
+    # --- Expansion batch 4 (2026-11-06, user-approved, DECISIONS 025) ---
+    EvalProduct(
+        key="apple-ipad-mini-a20-128gb-wifi-starlight",
+        brand="Apple",
+        model="iPad mini (A20 Pro)",
+        variant="Wi-Fi 128GB, Standard Glass, Starlight (MJ6J4LL/A)",
+        category="tablets",
+        identifiers={"UPC": "195951205595", "MPN": "MJ6J4LL/A"},
+        identifier_sources={
+            "UPC": "B&H Photo spec page (MJ6J4LL/A, UPC 195951205595, "
+            "128GB Wi-Fi Only Starlight) + Adorama spec table "
+            "(Starlight 128GB Wi-Fi Standard Glass: 195951205595) "
+            "agree. MPN MJ6J4LL/A confirmed by Best Buy US (SKU "
+            "6638325), CDW (CDW# 9296012), EveryMac (Model A3595) "
+            "and B&H."
+        },
+        notes="Wi-Fi 128GB standard-glass Starlight only: Midnight "
+        "is MJ6F4LL/A, 256GB is MJ6R4LL/A, nano-texture glass is a "
+        "different option (256GB/512GB only). Released 2026-11-06. "
+        "The Meta Catalog feed's Apple brand_direct rows were the "
+        "outgoing A17 Pro model (Space Gray/Purple/Blue, $599-$849) "
+        "and were excluded; the $999/$1,249 NFM rows are the 512GB "
+        "A20 Pro variant. Apple direct $699.00 (apple.com US buy "
+        "page JSON-LD, price-only); Best Buy $699.00 (sold by Best "
+        "Buy, InStock); B&H $699.00 (In Stock, New Release).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-ps5-digital-825gb",
+        brand="Sony",
+        model="PlayStation 5 Slim Digital Edition (825GB)",
+        variant="825GB, White, all-digital (CFI-2015)",
+        category="consoles",
+        identifiers={"UPC": "711719541035", "MPN": "CFI-2015"},
+        identifier_sources={
+            "UPC": "PayMore US spec table (Slim Digital Edition "
+            "825GB, MPN CFI-2015, UPC 711719541035) + eBay product "
+            "catalog (GTIN 0711719541035, 825GB, CFI-2015) agree. "
+            "Best Buy's page (Model 1000049898, SKU 6646420) states "
+            "no UPC. The 1TB CFI-2015 revision carries a different "
+            "UPC (711719548539) and was excluded; CFI-1015B is the "
+            "launch (non-Slim) digital model."
+        },
+        notes="Slim Digital 825GB bare console only: bundles "
+        "(Fortnite, Marvel's Wolverine) and the 1TB revision are "
+        "different SKUs. Best Buy $599.99 (sold by Best Buy, Add to "
+        "cart, JSON-LD InStock on the page read 2026-11-06; one "
+        "earlier crawl showed Unavailable for shipping, so stock "
+        "signals were mixed); Sam's Club $599.00 (feed, "
+        "authorized_retailer). Candidate price $599 corrected to "
+        "$599.99.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="nintendo-joy-con-2-pair-light-blue-light-red",
+        brand="Nintendo",
+        model="Joy-Con 2 (L)/(R)",
+        variant="Light Blue / Light Red pair (BEEAJAAAA)",
+        category="controllers",
+        identifiers={"UPC": "045496885892", "MPN": "BEEAJAAAA"},
+        identifier_sources={
+            "UPC": "Nintendo US official store page (SKU 123677, "
+            "UPC 00045496885892) + Snapklik (Model BEEAJAAAA, Part "
+            "number 123677, UPC 045496885892) agree. PBTech NZ UPC "
+            "045496321413 is regional and was excluded."
+        },
+        notes="Light Blue/Light Red pair only: Light Purple/Light "
+        "Green and Blue/Light Yellow are different SKUs; single "
+        "Joy-Con 2 (L) or (R) are $54.99 singles. Nintendo direct "
+        "$99.99 (JSON-LD InStock, page read 2026-11-06); Electronic "
+        "Express $94.99.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="logitech-g502-x-plus-black",
+        brand="Logitech",
+        model="G502 X PLUS",
+        variant="Black, HERO 25K (910-006160)",
+        category="mice",
+        identifiers={"UPC": "097855166951", "MPN": "910-006160"},
+        identifier_sources={
+            "UPC": "ErgoDirect (Part 910-006160, UPC 097855166951) "
+            "+ Desertcart (Mfr Part 910-006160, UPC 097855166951, "
+            "ASIN B092CB69Q4) + Amazon US (Model 910-006160, UPC "
+            "097855166951) + DirectDial (MFG 910-006160, UPC "
+            "0097855166951) + eBay agree. White is 910-006169 / "
+            "910-006172, a different SKU."
+        },
+        notes="Original HERO 25K Black only. Logitech refreshed the "
+        "line in fall 2026 with a HERO 44K sensor and new colorways "
+        "(Black/Purple, White/Mint, Dark Lilac); the 44K part "
+        "numbers conflict across retailers (910-007808 on "
+        "Logitech's US page and Best Buy's Dark Lilac listing vs "
+        "910-007812 on PBTech NZ / Scorptec AU for Black/Purple) "
+        "and no UPC was found for any 44K part number — the 44K "
+        "UPC is an open item for a later refresh and the 25K UPC "
+        "was NOT carried over to it. Logitech direct $159.99 list "
+        "(current PDP defaults to the 44K Black/Purple at the same "
+        "price, In stock); Best Buy $159.99 (HERO 25K Black); "
+        "Adorama $159.99 (InStock); Staples $188.99 (Black "
+        "910-006160). Candidate price $149.99 was stale; current "
+        "street price is $159.99.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="google-pixel-buds-2a-hazel",
+        brand="Google",
+        model="Pixel Buds 2a",
+        variant="Hazel (GA06155-US)",
+        category="earbuds",
+        identifiers={"UPC": "840353930506", "MPN": "GA06155-US"},
+        identifier_sources={
+            "UPC": "eBay product catalog (MPN GA06155US, GTIN "
+            "0840353930506, Hazel) + Poshmark US seller listing "
+            "(Google Model # GA06155-US, UPC 840353930506) + "
+            "Snapklik / ImportItAll / WantItAll (UPC 840353930506, "
+            "Hazel) agree. OnBuy UK lists a conflicting 840353930520 "
+            "for Hazel — single UK source, not used (likely a "
+            "different regional variant; JP is 840353933019, EU is "
+            "840353930537). MPN GA06155-US confirmed by Best Buy US "
+            "(SKU 6642707) + B&H (BH # GOPBUD2AHAZ, MFR # GA06155-US)."
+        },
+        notes="Hazel only: Iris, Fog and Berry are different colors "
+        "(Google support compare page). Best Buy $129.00 (sold by "
+        "Best Buy, InStock); B&H $129.00 (In Stock); Google Store "
+        "$129 (Google support compare page lists Pixel Buds 2a From "
+        "$129, price-only); T-Mobile $129.99. The Best Buy $119.99 "
+        "row (SKU 12951378) is sold by TheRightOne, a marketplace "
+        "seller — excluded per DECISIONS 021.",
         status="verified",
     ),
 ]

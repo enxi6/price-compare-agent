@@ -66,6 +66,30 @@ releases; breaking changes are called out in the release notes.
   PlayStation Direct PS5 Pro $899.00 — the console is broadly out
   of stock in the US since mid-September 2026.
 
+- Expansion batch 4 (DECISIONS 025, user 2026-11-06): eval set
+  42 → 47 models — Apple iPad mini (A20 Pro) Wi-Fi 128GB Standard
+  Glass Starlight (MJ6J4LL/A, UPC 195951205595; released
+  2026-11-06), Sony PlayStation 5 Slim Digital Edition 825GB White
+  (CFI-2015, UPC 711719541035), Nintendo Joy-Con 2 (L)/(R) Light
+  Blue / Light Red pair (BEEAJAAAA, UPC 045496885892), Logitech
+  G502 X PLUS Black HERO 25K (910-006160, UPC 097855166951),
+  Google Pixel Buds 2a Hazel (GA06155-US, UPC 840353930506).
+  Membership check re-run against the 42-model set (BUILD_LOG 041):
+  no candidate matched an existing model by name, MPN, or UPC, so
+  all five were added — no split, no drop. New snapshot
+  `data/eval_snapshots_batch4_2026-11-06.json` holds 15 quotes
+  across the 5 models (iPad mini A20: 3, PS5 Digital: 2, Joy-Con 2:
+  2, G502 X PLUS: 4, Pixel Buds 2a: 4), all DECISIONS 021-clean.
+  Existing 42 entries untouched; no Amazon touch. Eval: 47 models,
+  43 verified identifiers, 15 quotes, 0 identifier-matched, 15
+  suspected. Three direct prices are price-only (stock not
+  confirmed): Apple direct iPad mini $699.00, Logitech direct G502
+  X PLUS $159.99 (current PDP defaults to the HERO 44K refresh),
+  Google Store Pixel Buds 2a $129. Open items: G502 X PLUS HERO
+  44K UPC (part numbers conflict across retailers), PS5 Digital
+  UPC second-source strength (PayMore + eBay; Best Buy states no
+  UPC).
+
 ### Changed
 
 - Daily price refresh 2026-11-06 (first daily run): all 28 models

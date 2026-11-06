@@ -605,3 +605,68 @@ written as "superseded by" with the original text kept.
 - Revisit: batch 3 candidates stay list-only until the user approves
   the next batch; Watch Ultra 4 UPC needs a second independent US
   source (a US retailer spec page or a physical box barcode).
+
+## 025 (2026-11-06): Expansion batch 4 — eval set 42 → 47, one model per brand
+
+- Decision (user, 2026-11-06, "按这 5 款加"): add the fourth expansion
+  batch, each brand's current mainstream/new product, drawn from the
+  brand-catalog candidate lists (BUILD_LOG 020/022/023/024/025). All
+  five were verified and added, 42 → 47, verified identifiers 38 → 43.
+  (a) Apple iPad mini (A20 Pro), Wi-Fi 128GB Standard Glass, Starlight
+  — `apple-ipad-mini-a20-128gb-wifi-starlight`, MPN MJ6J4LL/A, UPC
+  195951205595 (B&H spec page + Adorama spec table agree). Released
+  2026-11-06, $699. (b) Sony PlayStation 5 Slim Digital Edition 825GB,
+  White — `sony-ps5-digital-825gb`, MPN CFI-2015, UPC 711719541035
+  (PayMore US spec table + eBay GTIN agree). $599.99. (c) Nintendo
+  Joy-Con 2 (L)/(R) Light Blue / Light Red pair —
+  `nintendo-joy-con-2-pair-light-blue-light-red`, MPN BEEAJAAAA, UPC
+  045496885892 (Nintendo US official page + Snapklik agree). $99.99.
+  (d) Logitech G502 X PLUS Black, HERO 25K —
+  `logitech-g502-x-plus-black`, MPN 910-006160, UPC 097855166951
+  (ErgoDirect + Desertcart + Amazon US + DirectDial + eBay agree).
+  $159.99. (e) Google Pixel Buds 2a, Hazel —
+  `google-pixel-buds-2a-hazel`, MPN GA06155-US, UPC 840353930506
+  (eBay product catalog + Poshmark US seller + Snapklik/ImportItAll/
+  WantItAll agree; OnBuy UK's conflicting 840353930520 not used).
+  $129.
+- Membership check (skill, re-done by the batch worker, BUILD_LOG 041):
+  the 42-model key list was read before adding anything; none of the
+  five candidates matched an existing model by name, MPN, or UPC
+  (no ipad-mini, ps5-digital, joy-con-2, g502, or pixel-buds-2a key
+  existed; the set's only Pixel Buds entry is Pixel Buds Pro 2
+  Porcelain, a different model). No candidate was dropped.
+- Variant corrections vs the 2026-10-31 candidate prices: PS5 Digital
+  $599 → $599.99 (Best Buy); G502 X PLUS $149.99 → $159.99 (Logitech
+  direct list, Best Buy, Adorama all $159.99 — the $149.99 was stale).
+  iPad mini A20 Pro launched 2026-11-06 at $699 (Wi-Fi 128GB) as the
+  candidate list anticipated. The G502 X PLUS HERO 44K refresh (fall
+  2026, new colorways Black/Purple, White/Mint, Dark Lilac) was NOT
+  pinned: its part numbers conflict across retailers (910-007808 on
+  Logitech's US page and Best Buy's Dark Lilac listing vs 910-007812
+  on PBTech NZ / Scorptec AU for Black/Purple) and no UPC was found
+  for any 44K part number — the 44K UPC is an open item, and the
+  HERO 25K UPC 097855166951 was NOT carried over to it. The pinned
+  HERO 25K Black is still in stock at Logitech direct (list),
+  Best Buy, Adorama, and Staples.
+- What changes in practice: new snapshot
+  `data/eval_snapshots_batch4_2026-11-06.json` holds 15 quotes
+  across the 5 models (iPad mini A20: 3, PS5 Digital: 2, Joy-Con 2: 2,
+  G502 X PLUS: 4, Pixel Buds 2a: 4). DECISIONS 021 applied to every
+  quote: no marketplace/third-party rows, no non-US rows, no Amazon.
+  Three direct prices are price-only (stock not confirmed in the page
+  text): Apple direct iPad mini $699.00, Logitech direct G502 X PLUS
+  $159.99 (current PDP defaults to the 44K variant), Google Store
+  Pixel Buds 2a $129. Best Buy PS5 Digital stock signals were mixed
+  across crawls (Add to cart + JSON-LD InStock on the direct page
+  read, one earlier crawl Unavailable for shipping).
+- What does NOT change: the existing 42 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense identifiers untouched,
+  MacBook Pro 14 M6 untouched, batches 1–3 entries untouched). No
+  other snapshot file is rewritten. No Amazon touch. The daily refresh
+  cron still says "42 models" in its body and needs a count update to
+  47 on the next edit (parent owns the cron; not touched here).
+- Revisit: batch 5 candidates stay list-only until the user approves
+  the next batch; G502 X PLUS HERO 44K UPC needs a second independent
+  US source once the part-number conflict settles; PS5 Digital UPC
+  rests on PayMore + eBay (Best Buy's page states no UPC) — a US
+  retailer spec page would strengthen it.

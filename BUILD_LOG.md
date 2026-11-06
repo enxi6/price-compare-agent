@@ -1175,3 +1175,83 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (snapshot offers carry no identifier — the rule working, not a
   bug). Tests: 19 passed (test_snapshot_eval counts updated 33 →
   38 / 30 → 34 for the approved expansion).
+
+## 041 (2026-11-06): Expansion batch 4 — 5 models added, 42 → 47 (user-approved)
+
+- Membership check (skill): read the 42-model key list from
+  `price_agent/catalog.py` before adding anything. No candidate
+  matched an existing model by name, MPN, or UPC: no `ipad-mini`,
+  `ps5-digital`, `joy-con-2`, `g502`, or `pixel-buds-2a` key existed;
+  the set's iPads are A16/Air M4/Pro M5 (no mini), the only PS5 is
+  PS5 Pro, the only Joy-Con is the Switch 2 Pro Controller, the
+  only Logitech gaming mice are Superlight 2 and Lift, and the only
+  Pixel Buds entry is Pixel Buds Pro 2 Porcelain. All five were
+  added; none was dropped. (Batch 3's AirPods 5 precedent was
+  checked against and did not recur.)
+- Apple iPad mini (A20 Pro), Wi-Fi 128GB Standard Glass, Starlight
+  (MJ6J4LL/A, Model A3595) — identifiers VERIFIED: UPC 195951205595
+  (B&H spec page + Adorama spec table agree), MPN MJ6J4LL/A (Best
+  Buy US SKU 6638325 + CDW CDW# 9296012 + EveryMac + B&H). Released
+  2026-11-06, 8.5-inch OLED, A20 Pro, Wi-Fi 7. Quotes (3, all
+  $699.00): Apple direct $699.00 (apple.com US buy page JSON-LD,
+  price-only), Best Buy $699.00 (sold by Best Buy, InStock), B&H
+  $699.00 (In Stock, New Release). CDW $699.00 also seen. Excluded:
+  feed Apple brand_direct rows ($599-$849, Space Gray/Purple/Blue)
+  are the outgoing A17 Pro model; NFM $999/$1,249 rows are the
+  512GB A20 Pro variant; Midnight (MJ6F4LL/A) and 256GB (MJ6R4LL/A)
+  are different SKUs.
+- Sony PlayStation 5 Slim Digital Edition 825GB, White (CFI-2015)
+  — identifiers VERIFIED: UPC 711719541035 (PayMore US spec table
+  + eBay GTIN agree), MPN CFI-2015 (PayMore + eBay + pawn listings).
+  Best Buy Model 1000049898, SKU 6646420. Quotes (2): Best Buy
+  $599.99 (sold by Best Buy, Add to cart, JSON-LD InStock on the
+  page read 2026-11-06; one earlier crawl showed Unavailable for
+  shipping — mixed signals, flagged), Sam's Club $599.00 (feed,
+  authorized_retailer). Excluded: 1TB CFI-2015 revision UPC
+  711719548539 (different revision); CFI-1015B launch digital
+  $409.99 (marketplace, different model); $519.97 row (seller
+  unconfirmed); $716.99-$1,107.99 import/reseller rows; bundles
+  (Fortnite $709-$793, Marvel's Wolverine $925.99-$980). Candidate
+  price $599 corrected to $599.99.
+- Nintendo Joy-Con 2 (L)/(R) Light Blue / Light Red pair
+  (BEEAJAAAA) — identifiers VERIFIED: UPC 045496885892 (Nintendo
+  US official page, SKU 123677, UPC 00045496885892 + Snapklik Model
+  BEEAJAAAA, UPC 045496885892 agree), MPN BEEAJAAAA. Quotes (2):
+  Nintendo direct $99.99 (JSON-LD InStock, page read 2026-11-06),
+  Electronic Express $94.99 (feed, authorized_retailer). Excluded:
+  PBTech NZ UPC 045496321413 (regional); Newegg $99 row (seller
+  not confirmed as merchant itself); Light Purple/Light Green and
+  Blue/Light Yellow pairs (different SKUs); single Joy-Con 2 (L)/(R)
+  $54.99 singles.
+- Logitech G502 X PLUS Black, HERO 25K (910-006160) — identifiers
+  VERIFIED: UPC 097855166951 (ErgoDirect + Desertcart + Amazon US
+  + DirectDial + eBay agree), MPN 910-006160. Quotes (4):
+  Logitech direct $159.99 list (current PDP defaults to the HERO
+  44K Black/Purple 910-007808 at the same price, In stock),
+  Best Buy $159.99 (HERO 25K Black), Adorama $159.99 (InStock),
+  Staples $188.99 (Black 910-006160). Excluded: G502 X wired
+  $75.99/$99.99 rows (different model); White $159.99-$326.66 rows
+  (910-006169/910-006172, different SKU); Millennium Falcon edition
+  $242; $160.99 marketplace row; $123.79 row (seller not
+  confirmed). HERO 44K refresh: part numbers conflict (910-007808
+  vs 910-007812 for Black/Purple/Dark Lilac) and no UPC was found
+  for any 44K part number — open item, 25K UPC not carried over.
+  Candidate price $149.99 was stale; street price is $159.99.
+- Google Pixel Buds 2a, Hazel (GA06155-US) — identifiers VERIFIED:
+  UPC 840353930506 (eBay product catalog MPN GA06155US, GTIN
+  0840353930506 + Poshmark US seller GA06155-US, UPC 840353930506
+  + Snapklik/ImportItAll/WantItAll agree), MPN GA06155-US (Best
+  Buy US SKU 6642707 + B&H BH # GOPBUD2AHAZ agree). Quotes (4):
+  Google Store $129.00 (Google support compare page lists From
+  $129, price-only), Best Buy $129.00 (sold by Best Buy, InStock),
+  B&H $129.00 (In Stock), T-Mobile $129.99 (feed, brand_direct).
+  Excluded: OnBuy UK conflicting UPC 840353930520 (single UK
+  source, not used; JP 840353933019, EU 840353930537 are regional);
+  Best Buy $119.99 row (SKU 12951378, sold by TheRightOne,
+  marketplace, DECISIONS 021); AT&T $129.99 seen in feed
+  (brand_direct, not carried); Iris/Fog/Berry (different colors).
+- Eval on the new snapshot: 47 models, 43 verified identifiers, 5
+  with quotes, 15 total quotes, 0 identifier-matched, 15 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 42 →
+  47 / 38 → 43 for the approved expansion).
