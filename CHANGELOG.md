@@ -9,6 +9,36 @@ releases; breaking changes are called out in the release notes.
 
 ## [Unreleased]
 
+### Changed
+
+- Daily price refresh 2026-11-06 (first daily run): all 28 models
+  re-queried through Meta Catalog (549 raw listings, 28 files
+  `data/meta_catalog_raw_*_2026-11-06.json`, gitignored); new
+  snapshot `data/eval_snapshots_2026-11-06.json` holds 56 quotes
+  across 23 of 28 models (prior round: 59 quotes). No
+  same-merchant price changed at all — every move is merchant
+  churn (quotes appearing/disappearing) or a new merchant at a
+  different price. Notable: WF-1000XM5 Black street price down
+  (Suncoast $299.99 gone; Best Buy $248 sale, P.C. Richard $248
+  sale, FocusCamera $199.99 new — the FocusCamera row is a >$5
+  move and is flagged for a merchant-page recheck); MX Keys S
+  down (ThinkEdu Pale Grey $138.99 gone from the feed; Staples
+  $129.99, Lenovo $129.99, Newegg $117 sale new); Kindle now
+  has 5 quotes with a new low of $196.99 (NFM); iPad Air M4
+  B&H $699 deal and AirPods Max 2 Best Buy $499 deal are gone
+  from the feed. Five models hold zero qualifying rows this
+  round — a catalog-feed gap, not a delisting: Watch SE 3,
+  MacBook Air 13 M5, MacBook Air 15 M5, iPad A16, iPad Pro M5
+  11. MacBook Pro 14 M6 is in stock on launch day (Apple and
+  Best Buy $1,999, launch-day browser check — the catalog round
+  itself returned no base row); its UPC is still unpublished
+  and the 2026-11-07 10:00 PT UPC check stands. MX Master 4
+  Graphite still has no US retailer row (B&H also checked:
+  no listing). Kindle entry unchanged (still B0CFPL6CFY),
+  DualSense identifiers unchanged, no new models, no Amazon
+  touch. Eval: 56 quotes, 0 identifier-matched, 56 suspected
+  (catalog gives no UPC — the rule working, not a bug).
+
 ### Fixed
 
 - Corrected the G Pro X Superlight 2 Black eval identifier from the

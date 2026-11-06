@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "collected_at": "2026-11-06T15:01:24Z",
+    "source": "Meta Catalog search (28 models, 549 raw listings, 2026-11-06) + launch-day browser check for MacBook Pro 14 M6 only (see sources_note)",
+    "sources_note": "Meta Catalog raw files data/meta_catalog_raw_*_2026-11-06.json (gitignored). URLs cleaned of fbclid/utm/tracking params (variant-defining params kept). Stock not asserted by snapshot; delivered cost/tax not verified, no checkout started. Sale prices recorded at the sale price where the feed shows one (list price noted in the title). MacBook Pro 14 M6: the catalog round returned no qualifying row on launch day, so its 2 quotes (Apple $1,999, Best Buy $1,999, both in stock) come from the parent agent's launch-day browser check 2026-11-06, not the feed; the catalog.py pre-order note still says pre-order and is left untouched per the refresh limits (parent to update).",
+    "excluded_traps": [
+      "Sale prices are recorded at the sale price (list noted in title): WF-1000XM5 Best Buy $248 (list $328), P.C. Richard $248 (list $329.95); Pixel Buds Pro 2 Best Buy $169 (list $229); MX Keys S Newegg $117 (list $140.49); Xbox ThinkEdu $61.99 (list $64.99), iBUYPOWER $49.99 (list $64.99); Superlight 2 Lenovo $159.99 (list $179.99).",
+      "Five models have ZERO qualifying rows in this round — read as a catalog-feed gap, not a delisting: Watch SE 3 (only carrier monthly/installment rows, a 44mm BJ's row, and wrong-color rows); MacBook Air 13 M5 (Apple rows carry other part numbers MDHG4LL/A/MDH74LL/A, campus-bookstore rows are education pricing); MacBook Air 15 M5 (only a Silver Best Buy row, wrong color); iPad A16 (only carrier $16.67/mo rows and accessories — the 10-31 $399 promos expired 10-31 23:59 ET); iPad Pro M5 11 (only 1TB/2TB/13-inch/cellular rows; the Staples $1,399 row is cellular ME2N4LL/A).",
+      "MacBook Pro 14 M6: catalog round returned no $1,999 base row (Apple $2,499 row is a higher config); quotes are from the launch-day browser check — see sources_note. M6 Pro UPC still unpublished; the 2026-11-07 10:00 PT UPC check cron stands.",
+      "MX Master 4 Graphite: still no US retailer Graphite row — Best Buy and Newegg rows this round are Pale Gray; Lenovo 'for Business, Brown Box - Graphite' excluded as a business edition; B&H checked separately (launch-day check) and does not list standard Graphite either. Only Logitech direct $119.99 stands.",
+      "Kindle: entry UNCHANGED (still pinned B0CFPL6CFY, user undecided). RC Willey $199.99 excluded although the price matches — its URL carries B0CFPJYX7P (the US code from the pending decision) and is left out to keep the pinning clean. Target Graphite $199.99 excluded (2026-release naming, different model year); Kohl's $149.99 excluded (base Kindle, not Paperwhite); Staples $199.99 included (description confirms Paperwhite 16GB Black). New low: NFM $196.99.",
+      "DualSense White: only Kohl's $74.99 qualifies this round. Best Buy, GameStop, Macy's, and PlayStation Direct rows from 10-31 are absent from the feed; Macy's $76.99 and shopcgx $64.99 rows state no color and are excluded; PlayStation Direct row this round is Starlight Blue.",
+      "WF-1000XM5 Black: street price down vs the single 10-31 Suncoast $299.99 quote — Best Buy $248 (sale), P.C. Richard $248 (sale, WF1000XM5-B in URL), FocusCamera $199.99. FocusCamera $199.99 is a >$5 move vs the prior quote and is flagged for a merchant-page recheck (no browser recheck in this run). B&H row is Silver (URL wf1000xm5_s), excluded.",
+      "MX Keys S: ThinkEdu's feed row is now Graphite 920-011406 ($138.99) — the prior Pale Grey 920-011559 ThinkEdu quote is gone from the feed. B&H 'for Mac (Pale Gray)' excluded (920-011622, different SKU). Staples $129.99 (920-011559 in title) and Lenovo Pale Grey $129.99 are new; Newegg Pale Grey $117 is a sale price.",
+      "Mac mini M6: B&H $899 (URL mhqk4ll_a, description 16GB/256GB) replaces Abt $899 at the same price. Clemson Tiger Tech Shop $799 excluded as education pricing (campus store).",
+      "AirPods Max 2: Best Buy $499 deal gone from the feed; Staples row this round is Blue (MHWM4AM/A, wrong color); B&H row is Starlight (MHWL4AM/A). Apple direct Midnight $549 and Sam's Club Midnight $549 are new.",
+      "iPad Air M4: Apple direct Space Gray $749 is new; B&H $699 deal gone from the feed; Quill rows this round are 256GB/wrong configs.",
+      "AirPods Pro 3: Apple $249, T-Mobile $249.99, AT&T $249.99 are new; Staples $249 from 10-31 is absent from the feed. Campus-store APU $249 excluded (education store).",
+      "Switch OLED White: Nintendo direct $399.99 and Target $399.99; Macy's $374.99 sale row states no color and is excluded; shopcgx $399.99 excluded (unverified seller).",
+      "Bose QC Ultra 2 Black: Bose direct $449, Macy's $459, and Target $462.47 rows state no color in the feed and are excluded; only Crutchfield Black $449 and T-Mobile Black $449.99 qualify. Prior NFM/Lenovo $369 quotes are absent from the feed.",
+      "WH-1000XM5 Black: Dell $399.99 and Macy's Black $398 qualify. Sony direct $349.99 excluded — feed color field reads 'midnight black' but the URL is a generic Sony article page, not a buyable product page.",
+      "Xbox Carbon Black: Best Buy Carbon Black $89.25 excluded as anomalous vs the $64.99 standard (Robot White $64.99 is the wrong color); BeachCamera 'with USB-C Cable' $64.99 excluded as a cable bundle; Target 2-pack excluded as a bundle.",
+      "Quest 3S: Best Buy $422.82 (Batman bundle) and Macy's $389.99 (Walking Dead bundle) excluded as bundles; CDW Business $407.99 excluded as a business edition. T-Mobile $349.99, QVC $349.00, NFM $349.99, Newegg $349.99 qualify at the same level as 10-31.",
+      "Non-US / wrong-variant rows excluded throughout (same rule as prior rounds): Ayoub (Lebanon) Anker A2688341 and Buds4 Pro SM-R640NZWA, iCuracao, syscom/ar-lb Lebanon rows, MEA/Latino suffixes, bundles, open-box/renewed/refurbished, no-seller marketplace rows, and accessories/cases/skins."
+    ]
+  },
+  "models": {
+    "sony-wh1000xm5-black": {
+      "offers": [
+        {
+          "merchant": "Dell",
+          "price": 399.99,
+          "title": "Sony wh-1000xm5 premium wireless noise canceling headphones - black",
+          "url": "https://www.dell.com/en-us/shop/headphones/apd/ac097778/audio"
+        },
+        {
+          "merchant": "Macy's",
+          "price": 398.0,
+          "title": "Sony Wh-1000XM5 Wireless Noise-Cancelling Headphones with Dsee Extreme and Auto Nc Optimizer - Black",
+          "url": "https://www.macys.com/shop/product/sony-wh-1000xm5-wireless-noise-cancelling-headphones-with-dsee-extreme-auto-nc-optimizer"
+        }
+      ]
+    },
+    "apple-airpods-pro-3": {
+      "offers": [
+        {
+          "merchant": "Apple",
+          "price": 249.0,
+          "title": "AirPods Pro 3",
+          "url": "https://www.apple.com/us/shop/go/product/MFHP4LL/A"
+        },
+        {
+          "merchant": "T-Mobile",
+          "price": 249.99,
+          "title": "Apple AirPods Pro 3",
+          "url": "https://www.t-mobile.com/accessory/apple-airpods-pro-3"
+        },
+        {
+          "merchant": "AT&T",
+          "price": 249.99,
+          "title": "Apple Airpods Pro 3 - White",
+          "url": "https://www.att.com/buy/accessories/Headphones/apple-airpods-pro-3.html"
+        }
+      ]
+    },
+    "logitech-mx-master-4-graphite": {
+      "offers": [
+        {
+          "merchant": "Logitech direct",
+          "price": 119.99,
+          "title": "Logitech MX Master 4 Wireless Mouse in Graphite",
+          "url": "https://www.logitech.com/en-us/shop/p/mx-master-4.910-007558"
+        }
+      ]
+    },
+    "nintendo-switch-oled-white": {
+      "offers": [
+        {
+          "merchant": "Nintendo",
+          "price": 399.99,
+          "title": "Nintendo Switch™ - OLED Model White set",
+          "url": "https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-white-set/"
+        },
+        {
+          "merchant": "Target",
+          "price": 399.99,
+          "title": "Nintendo Switch - OLED Model with White Joy-Con",
+          "url": "https://www.target.com/p/nintendo-switch-oled-model-with-white-joy-con/-/A-83887639"
+        }
+      ]
+    },
+    "bose-qc-ultra-2-black": {
+      "offers": [
+        {
+          "merchant": "Crutchfield",
+          "price": 449.0,
+          "title": "Bose QuietComfort Ultra Headphones (2nd Gen) Over-ear wireless noise-cancelling headphones - Black",
+          "url": "https://www.crutchfield.com/I-rFBFc1LZY/p_018QCULT2B/Bose-QuietComfort-Ultra-Headphones-2nd-Gen-Black.html"
+        },
+        {
+          "merchant": "T-Mobile",
+          "price": 449.99,
+          "title": "Bose QuietComfort Ultra Headphones (2nd Gen) - Black|T-Mobile",
+          "url": "https://www.t-mobile.com/accessory/bose-quietcomfort-ultra-headphones-(2nd-gen)?sku=610214688279"
+        }
+      ]
+    },
+    "samsung-buds4-pro-white": {
+      "offers": [
+        {
+          "merchant": "AT&T",
+          "price": 249.99,
+          "title": "Samsung Galaxy Buds4 Pro Wireless Earbuds - White",
+          "url": "https://www.att.com/buy/accessories/Headphones/samsung-galaxy-buds4-pro-wireless-earbuds-white.html"
+        },
+        {
+          "merchant": "T-Mobile",
+          "price": 249.99,
+          "title": "Samsung Galaxy Buds4 Pro - White",
+          "url": "https://www.t-mobile.com/business/accessory/samsung-galaxy-buds4-pro-white?sku=198957273582"
+        },
+        {
+          "merchant": "NFM",
+          "price": 249.99,
+          "title": "Samsung Galaxy Buds4 Pro in White",
+          "url": "https://www.nfm.com/samsung-galaxy-buds4-pro-in-white-69857084/69857084.html"
+        },
+        {
+          "merchant": "B&H Photo",
+          "price": 249.99,
+          "title": "Samsung Galaxy Buds4 Pro Noise-Canceling Earbuds (White)",
+          "url": "https://www.bhphotovideo.com/c/product/1969809-REG/samsung_smr640nzwaxartv_samsung_galaxy_buds4_pro.html"
+        }
+      ]
+    },
+    "sony-wf1000xm5-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 248.0,
+          "title": "Sony - WF-1000XM5 True Wireless Noise Cancelling Earbuds - Black (sale, list $328)",
+          "url": "https://www.bestbuy.com/product/sony-wf-1000xm5-true-wireless-noise-cancelling-earbuds-black/J7XSRH53VJ/sku/12245998"
+        },
+        {
+          "merchant": "FocusCamera",
+          "price": 199.99,
+          "title": "Sony WF-1000XM5 Truly Wireless Noise Canceling Earbuds (Black)",
+          "url": "https://focuscamera.com/products/sony-wf1000xm5s-audio-electronics-headphones-earbuds?variant=42152080605232"
+        },
+        {
+          "merchant": "P.C. Richard",
+          "price": 248.0,
+          "title": "WF1000XM5 True Wireless Noise Cancelling Earbuds (sale, list $329.95)",
+          "url": "https://www.pcrichard.com/sony-wf1000xm5-true-wireless-noise-cancelling-earbuds-black/WF1000XM5-B.html"
+        }
+      ]
+    },
+    "apple-airpods-5-usbc": {
+      "offers": [
+        {
+          "merchant": "Apple",
+          "price": 129.0,
+          "title": "AirPods 5",
+          "url": "https://www.apple.com/us/shop/go/product/MKFW4LL/A"
+        },
+        {
+          "merchant": "Staples",
+          "price": 129.0,
+          "title": "Apple AirPods 5 Wireless Active Noise Cancellation Earbuds with USB-C Charging Case, Bluetooth, White (MKFW4LL/A)",
+          "url": "https://www.staples.com/apple-airpods-5-wireless-active-noise-cancellation-earbuds-with-usb-c-charging-case-bluetooth-white-mkfw4ll-a/product_24780862"
+        },
+        {
+          "merchant": "T-Mobile",
+          "price": 129.99,
+          "title": "Apple AirPods 5",
+          "url": "https://www.t-mobile.com/accessory/apple-airpods-5?sku=195951378978"
+        },
+        {
+          "merchant": "BJ's",
+          "price": 129.99,
+          "title": "Apple AirPod 5 with Active Noise Cancellation, White",
+          "url": "https://www.bjs.com/product/apple-airpod-5-with-active-noise-cancellation/3000000000006463257/"
+        }
+      ]
+    },
+    "apple-watch-se3-40mm": {
+      "offers": []
+    },
+    "kindle-paperwhite-16gb-2024": {
+      "offers": [
+        {
+          "merchant": "Electronic Express",
+          "price": 199.99,
+          "title": "7\" Kindle Paperwhite with Glare-Free Display - 16GB - Black",
+          "url": "https://www.electronicexpress.com/catalog/566356/amazon-kndlprwhtblk-7inch-kindle-paperwhite-with-glare-free-display-16gb-black"
+        },
+        {
+          "merchant": "Abt",
+          "price": 199.99,
+          "title": "Amazon Kindle Paperwhite 16GB in Black (12th Generation)",
+          "url": "https://www.abt.com/Amazon-Kindle-Paperwhite-16GB-in-Black-12th-Generation-B0CFPJYX7P/p/214754.html"
+        },
+        {
+          "merchant": "Best Buy",
+          "price": 199.99,
+          "title": "Amazon - Kindle Paperwhite (16 GB) - 2024 - Black",
+          "url": "https://www.bestbuy.com/product/amazon-kindle-paperwhite-16-gb-2024-black/J39HW6QL86/sku/6602737"
+        },
+        {
+          "merchant": "NFM",
+          "price": 196.99,
+          "title": "Amazon Kindle Paperwhite E-reader 7\" 16GB in Black | Wi-Fi",
+          "url": "https://www.nfm.com/amazon-kindle-paperwhite-e-reader-7-16gb-in-black--wi-fi-67502252/67502252.html"
+        },
+        {
+          "merchant": "Staples",
+          "price": 199.99,
+          "title": "Amazon Kindle Paper 7\" Tablet, WiFi, 16GB, Fire OS, Black (53-034930)",
+          "url": "https://www.staples.com/amazon-kindle-paper-7-tablet-wifi-fire-os-black-53-034930/product_24617486"
+        }
+      ]
+    },
+    "logitech-mx-keys-s-pale-grey": {
+      "offers": [
+        {
+          "merchant": "Staples",
+          "price": 129.99,
+          "title": "Logitech MX Keys S Wireless Keyboard, Pale Gray (920-011559)",
+          "url": "https://www.staples.com/logitech-mx-keys-s-wireless-keyboard-pale-gray-920-011559/product_24562843"
+        },
+        {
+          "merchant": "Lenovo",
+          "price": 129.99,
+          "title": "Lenovo Logitech MX Keys S Wireless Keyboard with Backlit Keys - Pale Grey",
+          "url": "https://www.lenovo.com/us/en/p/accessories-and-software/keyboards-and-mice/keyboards/78414529"
+        },
+        {
+          "merchant": "Newegg",
+          "price": 117.0,
+          "title": "Logitech MX Keys S Wireless Keyboard, Low Profile, Fluid Precise Quiet Typing, Programmable Keys, Backlighting, Bluetooth, USB C Rechargeable, for Windows PC, Linux, Chrome, Mac (Pale Grey) (sale, list $140.49)",
+          "url": "https://www.newegg.com/logitech-mx-keys-s-bluetooth-and-usb-wireless/p/N82E16823126719"
+        }
+      ]
+    },
+    "keychron-k8-ultra-8k": {
+      "offers": [
+        {
+          "merchant": "Keychron direct",
+          "price": 119.99,
+          "title": "Keychron K8 Ultra 8K Wireless Custom Mechanical Keyboard",
+          "url": "https://www.keychron.com/products/keychron-k8-ultra-8k-wireless-custom-mechanical-keyboard?variant=43266301821017"
+        }
+      ]
+    },
+    "nintendo-switch-lite-turquoise": {
+      "offers": [
+        {
+          "merchant": "Nintendo",
+          "price": 229.99,
+          "title": "Nintendo Switch™ Lite - Turquoise",
+          "url": "https://www.nintendo.com/us/store/products/nintendo-switch-lite-turquoise/"
+        }
+      ]
+    },
+    "sony-dualsense-white": {
+      "offers": [
+        {
+          "merchant": "Kohl's",
+          "price": 74.99,
+          "title": "Sony DualSense Wireless Controller for PS5, PC, Mac & Mobile, White",
+          "url": "https://www.kohls.com/product/prd-8294216/sony-dualsense-wireless-controller-for-ps5-pc-mac-mobile.jsp?skuid=72913163"
+        }
+      ]
+    },
+    "xbox-wireless-controller-black": {
+      "offers": [
+        {
+          "merchant": "Lenovo",
+          "price": 64.99,
+          "title": "Lenovo Microsoft Xbox Wireless Controller – Carbon Black",
+          "url": "https://www.lenovo.com/us/en/p/accessories-and-software/game-consoles/gaming-consoles_gaming-console-accessories/78810010"
+        },
+        {
+          "merchant": "ThinkEdu",
+          "price": 61.99,
+          "title": "Microsoft Xbox Wireless Controller - Carbon Black - EP2-29929 (sale, list $64.99)",
+          "url": "https://thinkedu.com/collections/all/products/microsoft-xbox-wireless-controller-carbon-black-ep229929"
+        },
+        {
+          "merchant": "iBUYPOWER",
+          "price": 49.99,
+          "title": "Xbox Wireless Controller - Carbon Black (sale, list $64.99)",
+          "url": "https://www.ibuypower.com/gear-store/gaming-accessories/game-controllers/xbox-wireless-controller-carbon-black"
+        }
+      ]
+    },
+    "meta-quest-3s-128gb": {
+      "offers": [
+        {
+          "merchant": "T-Mobile",
+          "price": 349.99,
+          "title": "Meta Quest 3S 128GB - White",
+          "url": "https://www.t-mobile.com/business/accessory/meta-quest-3s-128gb-white?sku=815820025825"
+        },
+        {
+          "merchant": "QVC",
+          "price": 349.0,
+          "title": "Meta Quest 3S - 128GB - 3-Month Meta Horizon+ T rial",
+          "url": "https://www.qvc.com/qvc.product.E327955.html"
+        },
+        {
+          "merchant": "NFM",
+          "price": 349.99,
+          "title": "Meta Quest 3S 128GB Advanced All-in-One VR Headset in White",
+          "url": "https://www.nfm.com/meta-quest-3s-128gb-advanced-all-in-one-vr-headset-in-white-68466473/68466473.html"
+        },
+        {
+          "merchant": "Newegg",
+          "price": 349.99,
+          "title": "Meta Quest 3S 128GB | VR Headset — Thirty-Three Percent More Memory — 2X Graphical Processing Power — Virtual Reality Without Wires — Access to 40+ Ga",
+          "url": "https://www.newegg.com/meta-quest-3s/p/N82E16826910072"
+        }
+      ]
+    },
+    "anker-prime-100w": {
+      "offers": [
+        {
+          "merchant": "Anker direct",
+          "price": 69.99,
+          "title": "Anker Charger (100W, 3 Ports, Smart Display)",
+          "url": "https://www.anker.com/products/a121b-100w-3-ports-gan-charger?variant=45755056423062"
+        },
+        {
+          "merchant": "B&H Photo",
+          "price": 69.99,
+          "title": "Anker Prime 100W 3-Port USB GaN Wall Charger",
+          "url": "https://www.bhphotovideo.com/c/product/1907768-REG/anker_a2688j41_1_prime_3_port_100w_gan.html"
+        },
+        {
+          "merchant": "Newegg",
+          "price": 69.99,
+          "title": "Anker Prime Charger, 100W 3-Port GaN USB C Charger Block, 100W 3-Port GaN USB C Charger Block, Foldable and Compact for MacBook, iPad, iPhone 17 Serie",
+          "url": "https://www.newegg.com/p/379-004G-00027"
+        },
+        {
+          "merchant": "CDW",
+          "price": 69.99,
+          "title": "Anker Prime Power Adapter - Gan - 2 X Usb-c, Usb Type A - 100 Watt",
+          "url": "https://www.cdw.com/product/anker-prime-power-adapter-gan-2-x-usb-c-usb-type-a-100-watt/8208814"
+        }
+      ]
+    },
+    "apple-magic-mouse-usbc": {
+      "offers": [
+        {
+          "merchant": "Target",
+          "price": 79.99,
+          "title": "Apple Magic Mouse - White Multi - Touch Surface",
+          "url": "https://www.target.com/p/apple-magic-mouse-white-multi-touch-surface/-/A-94280921"
+        },
+        {
+          "merchant": "Sweetwater",
+          "price": 79.0,
+          "title": "Apple Magic Mouse with Multi-Touch Surface - White",
+          "url": "https://www.sweetwater.com/store/detail/MagicMouseMTWh--apple-magic-mouse-with-multi-touch-surface-white"
+        }
+      ]
+    },
+    "logitech-g-pro-x-superlight-2-black": {
+      "offers": [
+        {
+          "merchant": "Lenovo",
+          "price": 159.99,
+          "title": "Lenovo Logitech G PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse - Black (sale, list $179.99)",
+          "url": "https://www.lenovo.com/us/en/p/accessories-and-software/keyboards-and-mice/mice/78510955"
+        },
+        {
+          "merchant": "iBUYPOWER",
+          "price": 159.99,
+          "title": "Logitech Pro X Superlight 2 Wireless Gaming Mouse - Black",
+          "url": "https://www.ibuypower.com/gear-store/gaming-accessories/mice/logitech-pro-x-superlight-2-wireless-gaming-mouse-black"
+        },
+        {
+          "merchant": "Target",
+          "price": 159.99,
+          "title": "Logitech G Pro X Superlight 2 Lightspeed Wireless Gaming Mouse - Black: Lightweight, Bluetooth, Built-In Rechargeable Battery, USB Connection",
+          "url": "https://www.target.com/p/logitech-g-pro-x-superlight-2-lightspeed-wireless-gaming-mouse-black/-/A-89272461"
+        },
+        {
+          "merchant": "Sweetwater",
+          "price": 159.99,
+          "title": "Logitech G Pro X Superlight 2 Wireless Gaming Mouse - Black",
+          "url": "https://www.sweetwater.com/store/detail/GProXSLMsBlk--logitech-g-pro-by-superlight-2-wireless-gaming-mouse-black"
+        }
+      ]
+    },
+    "google-pixel-buds-pro-2-porcelain": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 169.0,
+          "title": "Google - Pixel Buds Pro 2 - Wireless Earbuds with Active Noise Cancellation – Bluetooth Headphones - Porcelain (sale, list $229)",
+          "url": "https://www.bestbuy.com/product/google-pixel-buds-pro-2-wireless-earbuds-with-active-noise-cancellation-bluetooth-headphones-porcelain/J39HHJXTCF/sku/6589930"
+        }
+      ]
+    },
+    "apple-macbook-air-13-m5": {
+      "offers": []
+    },
+    "apple-macbook-air-15-m5": {
+      "offers": []
+    },
+    "apple-macbook-pro-14-m6": {
+      "offers": [
+        {
+          "merchant": "Apple",
+          "price": 1999.0,
+          "title": "14-inch MacBook Pro - Space Black (M6, 16GB/1TB, MHWT4LL/A) - in stock, launch day 2026-11-06 (launch-day browser check, not the catalog feed)",
+          "url": "https://www.apple.com/us/shop/go/product/MHWT4LL/A"
+        },
+        {
+          "merchant": "Best Buy",
+          "price": 1999.0,
+          "title": "Apple MacBook Pro 14-inch Laptop M6 chip 12-core CPU 12-core GPU 16GB Memory 1TB SSD Space Black (MHWT4LL/A) - in stock, launch day 2026-11-06 (launch-day browser check, not the catalog feed); $100 gift card promo does not change the price",
+          "url": "https://www.bestbuy.com/product/apple-macbook-pro-14-inch-laptop-m6-chip-with-12-core-cpu-and-12-core-gpu-16gb-memory-1tb-ssd-space-black/JJGCQYK2SH"
+        }
+      ]
+    },
+    "apple-mac-mini-m6": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 899.0,
+          "title": "Apple Mac mini (M6)",
+          "url": "https://www.bhphotovideo.com/c/product/1997676-REG/apple_mhqk4ll_a_mac_mini_m6.html"
+        }
+      ]
+    },
+    "apple-ipad-a16-11": {
+      "offers": []
+    },
+    "apple-ipad-air-m4-11": {
+      "offers": [
+        {
+          "merchant": "Apple",
+          "price": 749.0,
+          "title": "11-inch iPad Air Wi‑Fi 128GB - Space Gray",
+          "url": "https://www.apple.com/us/shop/go/product/MH304LL/A"
+        }
+      ]
+    },
+    "apple-ipad-pro-m5-11": {
+      "offers": []
+    },
+    "apple-airpods-max-2": {
+      "offers": [
+        {
+          "merchant": "Apple",
+          "price": 549.0,
+          "title": "AirPods Max 2 - Midnight",
+          "url": "https://www.apple.com/us/shop/go/product/MHWK4AM/A"
+        },
+        {
+          "merchant": "Sam's Club",
+          "price": 549.0,
+          "title": "Apple airpods max 2 - midnight:- midnight",
+          "url": "https://www.samsclub.com/ip/19917468064"
+        }
+      ]
+    }
+  }
+}

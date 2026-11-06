@@ -780,7 +780,6 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Tests: 19 passed (re-run after the edit; no code changed).
 
 ## 033 (2026-11-01): MX Master 4 retailer Graphite hunt — Best Buy checked, no standard Graphite listing
-
 - Third Meta Catalog round + Best Buy direct check (read-only,
   2026-11-01 08:54-08:57 PT, no cart, no sign-in): Best Buy does
   NOT list the standard consumer MX Master 4 Graphite 910-007558
@@ -799,3 +798,126 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   Graphite; the next branches are other major retailers, when
   the catalog refreshes.
 - Tests: 19 passed (re-run after the edit; no code changed).
+
+## 034 (2026-11-06): First daily price refresh — all 28 models re-queried
+
+- Trigger: user asked for daily updates on the price comparison
+  project. First daily run under the new cadence: every one of
+  the 28 eval models re-run through the Meta Catalog CLI
+  (`catalog-search --intent targeted --currency USD --retries 2`),
+  same query style as the 10-31 rounds. 28 raw files,
+  `data/meta_catalog_raw_*_2026-11-06.json` (gitignored),
+  549 raw listings total. One new snapshot file,
+  `data/eval_snapshots_2026-11-06.json`; no old dated snapshot
+  overwritten, no catalog or DECISIONS change, no new models,
+  no Amazon touch.
+- Result: 56 quotes across 23 of 28 models (prior round: 59
+  quotes across 28 models). Eval: 56 quotes, 0 identifier-
+  matched, 56 suspected — the catalog source gives no UPC, so
+  every quote stays in the suspected table; that is the rule
+  working, not a bug.
+- Headline finding, stated plainly: **no same-merchant price
+  changed at all.** Every continuing merchant held its price
+  (Dell XM5 $399.99, Logitech MX Master 4 $119.99, Nintendo
+  OLED $399.99, B&H Buds4 Pro $249.99, Staples AirPods 5 $129,
+  Best Buy Kindle $199.99, Keychron $119.99, Kohl's DualSense
+  $74.99, Anker/B&H $69.99, Sweetwater Superlight 2 $159.99,
+  Best Buy Pixel Buds $169). All movement is merchant churn:
+  quotes appearing at new merchants, or disappearing from the
+  feed. Per-model diff (prior -> new):
+  - Anker Prime 100W 2 -> 4 (+Newegg, CDW, all $69.99).
+  - AirPods 5 3 -> 4 (Abt/Best Buy $129 gone; Apple $129,
+    T-Mobile $129.99, BJ's $129.99 new).
+  - AirPods Max 2 2 -> 2 (Best Buy $499 deal and Staples $549
+    gone; Apple $549, Sam's Club $549 new).
+  - AirPods Pro 3 1 -> 3 (Staples $249 gone; Apple $249,
+    T-Mobile $249.99, AT&T $249.99 new).
+  - iPad A16 3 -> 0; iPad Pro M5 11 4 -> 0; MacBook Air 13 M5
+    2 -> 0; MacBook Air 15 M5 1 -> 0; Watch SE 3 1 -> 0 (see
+    feed-gap note below).
+  - iPad Air M4 5 -> 1 (Apple direct $749 new; B&H $699 deal
+    gone with the rest).
+  - Mac mini M6 1 -> 1 (Abt $899 gone, B&H $899 new, same
+    price; URL confirms MHQK4LL/A, 16GB/256GB).
+  - Magic Mouse 1 -> 2 (Staples $79 gone; Target $79.99,
+    Sweetwater $79 new).
+  - Bose QC Ultra 2 4 -> 2 (Macy's $398.46,
+    RC Willey $449.99, NFM $369, Lenovo $369 all gone;
+    Crutchfield Black $449, T-Mobile Black $449.99 new).
+  - Pixel Buds Pro 2 1 -> 1 (Best Buy $169 sale, unchanged).
+  - K8 Ultra 8K 1 -> 1 (Keychron $119.99, unchanged).
+  - Kindle 1 -> 5 (Best Buy $199.99 held; Electronic Express
+    $199.99, Abt $199.99, Staples $199.99 new; NFM $196.99
+    new low, -$3).
+  - Superlight 2 2 -> 4 (Logitech direct gone; Lenovo $159.99
+    sale, iBUYPOWER $159.99, Target $159.99 new; Sweetwater
+    held).
+  - MX Keys S 1 -> 3 (ThinkEdu Pale Grey $138.99 gone — the
+    feed's ThinkEdu row is now Graphite 920-011406; Staples
+    $129.99 with 920-011559 in the title, Lenovo Pale Grey
+    $129.99, Newegg Pale Grey $117 sale new).
+  - MX Master 4 1 -> 1 (Logitech direct $119.99, unchanged).
+  - Quest 3S 2 -> 4 (Abt/B&H gone; T-Mobile $349.99, QVC
+    $349.00, NFM $349.99, Newegg $349.99 new, same level).
+  - Switch Lite 2 -> 1 (NFM/Walmart gone; Nintendo direct
+    Turquoise $229.99 new, same level).
+  - Switch OLED 4 -> 2 (Sam's Club, GameStop,
+    iCuracao gone; Nintendo direct $399.99 held, Target
+    $399.99 new).
+  - Buds4 Pro 3 -> 4 (Abt/Samsung direct gone; AT&T, T-Mobile,
+    NFM $249.99 new; B&H held).
+  - DualSense White 5 -> 1 (only Kohl's $74.99 held; Best Buy,
+    GameStop, Macy's, PlayStation Direct rows absent from the
+    feed this round).
+  - WF-1000XM5 Black 1 -> 3 (Suncoast $299.99 gone; Best Buy
+    $248 sale, P.C. Richard $248 sale, FocusCamera $199.99
+    new — street price down $52-$100 vs the prior single
+    quote).
+  - WH-1000XM5 Black 2 -> 2 (Target $399.99 gone; Dell $399.99
+    held, Macy's Black $398 new).
+  - Xbox Carbon Black 2 -> 3 (Newegg $49, MaxLevel $49.99
+    gone; Lenovo $64.99, ThinkEdu $61.99 sale, iBUYPOWER
+    $49.99 sale new — the $49 level survives via iBUYPOWER).
+  - MacBook Pro 14 M6 1 -> 2 (see launch-day note below).
+- Five models with zero qualifying rows — feed gap, not a
+  delisting (stated plainly, each checked): Watch SE 3 (only
+  carrier monthly/installment rows, a 44mm BJ's row, wrong
+  colors); MacBook Air 13 M5 (Apple rows carry other part
+  numbers MDHG4LL/A/MDH74LL/A; campus-bookstore rows are
+  education pricing); MacBook Air 15 M5 (only a Silver Best
+  Buy row, wrong color); iPad A16 (only carrier $16.67/mo rows
+  and accessories — the 10-31 $399 promos expired 10-31 23:59
+  ET, per the Apple snapshot traps); iPad Pro M5 11 (only
+  1TB/2TB/13-inch/cellular rows; the Staples $1,399 row is
+  cellular ME2N4LL/A).
+- MacBook Pro 14 M6 launch day (2026-11-06): the catalog round
+  returned no $1,999 base row (Apple $2,499 row is a higher
+  config). The snapshot's 2 quotes (Apple $1,999, Best Buy
+  $1,999, both in stock) come from the launch-day browser
+  check done the same day — Apple page still shows no UPC, so
+  the 2026-11-07 10:00 PT UPC check cron stands, and the
+  catalog.py pre-order note ("pre-order, ships 2026-11-06")
+  is left untouched in this commit per the refresh limits
+  (it now reads stale: the model is in stock, not pre-order).
+  Best Buy's $100 gift-card promo does not change the $1,999
+  price.
+- MX Master 4 Graphite, still open: no US retailer Graphite
+  row again — Best Buy and Newegg rows this round are Pale
+  Gray; Lenovo "for Business, Brown Box - Graphite" excluded
+  as a business edition; B&H was also checked in the
+  launch-day pass and does not list standard Graphite either
+  (second retailer ruled out after Best Buy). Only Logitech
+  direct $119.99 stands.
+- Kindle: entry unchanged (still pinned B0CFPL6CFY, user
+  undecided). RC Willey $199.99 excluded although the price
+  matches — its URL carries B0CFPJYX7P (the US code from the
+  pending decision) and is left out to keep the pinning clean.
+  Target Graphite $199.99 excluded (2026-release naming);
+  Kohl's $149.99 excluded (base Kindle, not Paperwhite).
+- Flags for a merchant-page recheck (no browser recheck in
+  this run): FocusCamera WF-1000XM5 $199.99 is a >$5 move vs
+  the prior $299.99 quote; NFM Kindle $196.99 is a new low;
+  Newegg MX Keys S $117 sale is well under the $129.99
+  standard.
+- Tests: 19 passed (eval + full suite re-run on the new
+  snapshot; no code changed).
