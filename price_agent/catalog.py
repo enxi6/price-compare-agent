@@ -2253,6 +2253,38 @@ EVAL_SET: list[EvalProduct] = [
         "Alice-layout scissor-switch line, sold through Keychron's own "
         "store only, so it holds a single quote.",
     ),
+    EvalProduct(
+        key="sony-mdr-7506",
+        brand="Sony",
+        model="MDR-7506",
+        variant="Black, standard edition (MDR7506)",
+        category="headphones",
+        notes="Sony direct $114.99 (MSRP, JSON-LD price on electronics.sony.com; page crawled 2026-10-17, stock not stated in the page text); Abt $113.00 (JSON-LD InStock, page-verified); Sweetwater $113.00 (Open Graph instock, page-verified); Full Compass, Samy's and Vintage King $114.99 and Focus Camera $113.00 (feed rows — suspected, no identifier in the feed rows); MusicArts $89.99 (feed row — suspected; the low outlier vs $113–$114.99 elsewhere, not page-verified). Correction vs the 2026-10-31 candidate price: $114.99 is confirmed current at Sony direct. Identifiers PENDING: MPN MDR7506 confirmed (Sony US + Abt + Sweetwater agree), but no UPC for the MDR-7506 surfaced on any US manufacturer or retailer spec page checked (Sony direct, Abt, Sweetwater, B&H), so identifiers stay empty per the Adaptive Controller / DualSense / PULSE Elite precedent. Excluded: Best Buy $119.99 (bundle with a desktop headphone stand), Newegg $160.99 (open-box 'Level 2') and $163.99 (International Model, no US warranty), Sweetwater $162.99 (bundle with bag), B&H $157.94 (bundle with earpads and case). Distinct from the set's other Sony lines — the set has no MDR model at all; the MDR-7506 (1991, 40mm closed-back wired studio monitor, 63 ohm, folding) is Sony's pro studio line, not a WH-1000X flagship, not an INZONE gaming headset, and not the MDR-V6 (discontinued 2020, near-identical but a different model — not added). Black is the only colorway sold.",
+    ),
+    EvalProduct(
+        key="sony-pulse-headset-white",
+        brand="Sony",
+        model="PlayStation Pulse Wireless Headset",
+        variant="White (launch colorway; Midnight Black is the other launch colorway)",
+        category="headphones",
+        notes="PlayStation Direct $99.99 (PRE-ORDER — launches 2026-11-19; $99.99 recommended retail price per the official PlayStation Blog Oct 21 update; pre-orders via direct.playstation.com from Oct 29, 7am PT in the US; no Direct product-page URL surfaced, so the announcement URL is the quote URL. Best Buy, Walmart and Target pre-order listings at $99.99 are confirmed by IGN / The Shortcut, but no verbatim Best Buy product URL surfaced, so no second quote is recorded). Correction vs the 2026-10-31 candidate note: the $99 (pre-order) figure is the NEW PlayStation Pulse headset (2026, planar magnetic drivers, PlayStation Link + Bluetooth, up to 30 hours, White and Midnight Black), NOT the PULSE 3D (CFI-ZWH1, 2020, $99.99) — the PULSE 3D is the older base line and was not added. Identifiers PENDING: no hardware model number (CFI-...), retail MPN or UPC for the new Pulse has been published on any official or retailer page yet, so identifiers stay empty per the Adaptive Controller / DualSense / PULSE Elite precedent; re-check after the Nov 19 launch. Distinct from the set's PULSE Elite Midnight Black (1000044173, CFI-ZWH2, $149) and PULSE Explore Midnight Black (1000044170, CFI-ZWE1, $199) — the Pulse is the new base planar-magnetic headset line below the Elite, and from the PULSE 3D (CFI-ZWH1, different model). White is pinned as the first-listed launch colorway in Sony's announcement; Midnight Black is the other launch colorway. The Pulse Edge (ANC, detachable boom mic, early 2027, no price yet) is a different model — not added.",
+    ),
+    EvalProduct(
+        key="sony-linkbuds-clip-black",
+        brand="Sony",
+        model="LinkBuds Clip",
+        variant="Black (WF-LC900/B)",
+        category="earbuds",
+        notes="Best Buy $198.00 (Model WFLC900/B, SKU 12317215, JSON-LD InStock, page-verified; comp. value $228.00); Sweetwater $198.00 (feed row — suspected, $198 sale vs $228 list); BuyDig $198.00 (Part # WFLC900/B, In Stock, page-verified; list $229.99); Abt $198.00 (Model WFLC900B, comp. value $228, search-index read of the Greige page which lists the Black at $198; manufacturer rebate ends 11/08/2026); Sony direct SRP $229.99 (Greige page, electronics.sony.com — stale crawl, 270 days; same SRP across colors per the Jan 2026 announcement). Correction vs the 2026-10-31 candidate price: $229.99 is the launch SRP — the current US street price is $198. Identifiers PENDING: MPN WFLC900/B confirmed (Best Buy US Model + Abt + BuyDig + Sony AU agree; hardware model WF-LC900 / YY2999 per the Sony reference guide), but UPC 027242934054 is stated on the BuyDig spec table only — no second non-Amazon US source surfaced, so identifiers stay empty per the Adaptive Controller / DualSense / PULSE Elite precedent. The Greige UPC 027242934177 (BuyDig) is a different colorway and was not copied; the AU EAN 4548736173699 (Sony AU) is a different regional code and was not copied. Excluded: Datavision / Focus Camera bundle rows (with care program / case bundle), ListenUp Greige $198 and Best Buy Greige / Lavender / Green rows (different colorways), Best Buy Lavender $129.99 (a different colorway on a holiday deal — not the Black price). Distinct from the set's LinkBuds Fit Black (WFLS910N/B, UPC 027242929289) and LinkBuds Open Black (WFL910/B, UPC 027242928695) — the Clip (WF-LC900, 2026, clip-on open-ear, 10mm driver, IPX4, up to 37 hours total) is the distinct clip-on line. Black, Greige, Green and Lavender are the four colorways; only Black is pinned.",
+    ),
+    EvalProduct(
+        key="nintendo-n64-controller",
+        brand="Nintendo",
+        model="Nintendo 64 Controller",
+        variant="Gray, standard edition (HAC-043; Nintendo SKU 128577)",
+        category="controllers",
+        notes="Nintendo direct $54.99 (JSON-LD InStock, page-verified 2026-11-06; the only seller — Nintendo Store exclusive). Correction vs the 2026-10-31 candidate price: $49.99 was the 2021 launch price — the current Nintendo direct price is $54.99. Purchase requires a paid Nintendo Switch Online membership (free-trial holders excluded), limit four per Nintendo Account, ships to the US and Canada only. Identifiers PENDING: hardware model HAC-043 confirmed (Nintendo Support US: 'Nintendo 64 Controller (model No. HAC-043)') and Nintendo SKU 128577 confirmed (Nintendo US store page), but UPC 00045496894948 is stated on the Nintendo US store page only — no second US source surfaced, so identifiers stay empty per the Adaptive Controller / DualSense / PULSE Elite precedent. The revised HAC-043(-01) with a replaceable battery (Europe, early 2027) is a different hardware revision — not added. Distinct from the set's Joy-Con 2 pair, Joy-Con pair and Switch Pro Controller (HACAFSSKA, UPC 045496590161) — the N64 controller (2021, wireless, Bluetooth, built-in rumble, USB-C rechargeable, 5220 mAh) is the distinct retro NSO controller line; third-party N64-style pads (Retro Fighters Brawler64, 8BitDo 64, Retro-Bit Tribute) are different models and were not added. Gray is the only colorway sold.",
+    ),
 ]
 
 

@@ -11,6 +11,33 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 14 (DECISIONS 036, continuous expansion per
+  DECISIONS 027): eval set 92 → 96 models, verified identifiers
+  stay 68 (all 4 new identifiers pending on single-source-only or
+  no-source codes). New: Sony MDR-7506, Black (MDR7506, no UPC
+  surfaced on any US spec page; $114.99 confirmed current at Sony
+  direct, $113 at Abt and Sweetwater — the set has no MDR model),
+  Sony PlayStation Pulse Wireless Headset, White ($99.99 pre-order,
+  launches 2026-11-19, no identifiers published yet — the new base
+  planar-magnetic headset below the Elite, not the PULSE 3D),
+  Sony LinkBuds Clip, Black (WF-LC900/B, UPC pending —
+  027242934054 on the BuyDig spec table only; $229.99 is the launch
+  SRP, the current street price is $198 at Best Buy, Sweetwater,
+  BuyDig and Abt), Nintendo 64 Controller, Gray (HAC-043, Nintendo
+  SKU 128577, UPC pending — 00045496894948 on the Nintendo US page
+  only; $49.99 was the 2021 launch price, the current Nintendo
+  direct price is $54.99, paid Nintendo Switch Online membership
+  required to purchase). Apple Pro Display XDR was NOT added: it
+  was discontinued March 3, 2026 and replaced by the Studio Display
+  XDR — the $3,299 candidate figure is the Studio Display XDR
+  launch price, not a Pro Display XDR configuration; the Studio
+  Display XDR itself was not substituted in and is a candidate for
+  a future batch. New snapshot
+  `data/eval_snapshots_batch14_2026-11-06.json` holds 15 quotes
+  across the 4 models (MDR-7506: 8, Pulse: 1, LinkBuds Clip: 5,
+  N64 controller: 1). DECISIONS 021 applied to every quote:
+  no marketplace/third-party rows, no non-US rows, no Amazon.
+
 - Expansion batch 13 (DECISIONS 035, continuous expansion per
   DECISIONS 027): eval set 87 → 92 models, verified identifiers
   stay 68 (all 5 new identifiers pending on single-source-only

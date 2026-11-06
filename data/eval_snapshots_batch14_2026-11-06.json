@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "collected_at": "2026-11-06T18:58:13Z",
+  "source": "Meta Catalog (2026-11-06) + brand-direct / retailer pages (page text / search-index reads, read-only)",
+  "sources_note": "Expansion batch 14 (DECISIONS 036, continuous expansion per DECISIONS 027, no per-batch approval): 4 new models, 15 quotes. Batch split: the fifth candidate, Apple Pro Display XDR, was NOT added — discontinued March 3, 2026 (EveryMac) and replaced by the Studio Display XDR; apple.com/shop/buy-mac/pro-display-xdr now serves the 'Buy Studio Display XDR' page, and the Meta Catalog feed returns Studio Display XDR rows for the query. The $3,299 candidate figure is the Studio Display XDR launch price (standard glass, tilt-and-height stand — Sweetwater $3,299, Sam's Club $3,299; Apple direct MFEP4LL/A nano-texture tilt-height $3,599, MFEQ4LL/A nano VESA $3,199), NOT a Pro Display XDR configuration — the Pro Display XDR was $4,999 standard glass / $5,999 nano-texture. The Studio Display XDR itself is a distinct new line (27-inch 5K mini-LED, 120Hz, from $3,299) and was NOT substituted in — it is a different model from the named candidate and needs its own batch. Meta Catalog CLI run 2026-11-06 (20 rows per model; raw files data/meta_catalog_raw_{apple-pro-display-xdr,sony-mdr-7506,sony-pulse-headset,sony-linkbuds-clip,nintendo-n64-controller}_2026-11-06.json, gitignored). Brand-direct / retailer prices verified read-only 2026-11-06 ~18:53-19:00 UTC (10:53-11:00 PT): no sign-in, no cart, no purchase. CORRECTIONS vs the 2026-10-31 candidate notes: (1) Pro Display XDR $3,299 — see above, not added. (2) The MDR-7506 candidate price $114.99 is confirmed current at Sony direct (MSRP, JSON-LD); street price is $113 at Abt and Sweetwater. (3) The PULSE $99 (pre-order) figure is the NEW PlayStation Pulse headset (2026), NOT the PULSE 3D (CFI-ZWH1, 2020) — launches Nov 19, 2026, $99.99, pre-orders open since Oct 29 via PlayStation Direct and participating retailers; no hardware model number, retail MPN or UPC published yet. (4) The LinkBuds Clip candidate price $229.99 is the launch SRP — the current US street price is $198 (Best Buy, Sweetwater, BuyDig, Abt; comp. value $228). (5) The N64 controller candidate price $49.99 was the 2021 launch price — the current Nintendo direct price is $54.99 (JSON-LD InStock); a paid Nintendo Switch Online membership is required to purchase. All four identifier sets stay pending (single-source or no-source codes only — see catalog notes): MDR-7506 no UPC surfaced on any US spec page; Pulse no identifiers published yet; LinkBuds Clip Black UPC 027242934054 (BuyDig spec table only); N64 UPC 00045496894948 (Nintendo US page only) — all recorded in the catalog notes, identifiers left empty per the Adaptive Controller / DualSense / PULSE Elite precedent. No Amazon touch: no Amazon quotes, no Amazon-sourced identifiers."
+ },
+ "models": {
+  "sony-mdr-7506": {
+   "offers": [
+    {
+     "merchant": "Sony",
+     "title": "Sony MDR-7506 Professional Stereo Monitor Headphones (MSRP $114.99, JSON-LD price; page crawled 2026-10-17, stock not stated in the page text)",
+     "price": 114.99,
+     "url": "https://electronics.sony.com/audio/headphones/all-headphones/p/mdr7506"
+    },
+    {
+     "merchant": "Abt",
+     "title": "Sony MDR-7506 Professional Stereo Monitor Wired Headphones in Black - MDR7506 (JSON-LD InStock, page-verified)",
+     "price": 113.0,
+     "url": "https://www.abt.com/Sony-MDR-7506-Headphones-Professional-Stereo-Monitor-Wired-in-Black-MDR7506/p/212834.html"
+    },
+    {
+     "merchant": "Sweetwater",
+     "title": "Sony MDR-7506 Closed-Back Professional Headphones (Open Graph instock, page-verified)",
+     "price": 113.0,
+     "url": "https://www.sweetwater.com/store/detail/MDR7506--sony-mdr-7506-closed-back-professional-headphones"
+    },
+    {
+     "merchant": "Full Compass",
+     "title": "Sony MDR-7506 Professional Large Diaphragm Headphones ($114.99, Meta Catalog feed row — suspected, no identifier in the feed row)",
+     "price": 114.99,
+     "url": "https://www.fullcompass.com/prod/015296-sony-mdr-7506-professional-large-diaphragm-headphones"
+    },
+    {
+     "merchant": "Samy's",
+     "title": "Sony MDR-7506 Circumaural Closed-Back Professional Monitor Headphone ($114.99, Meta Catalog feed row — suspected, no identifier in the feed row)",
+     "price": 114.99,
+     "url": "http://www.Samys.com/p/Over-The-Ear-Headphones/MDR7506/Sony-MDR-7506-Circumaural-Closed-Back-Professional-Monitor-Headphone/28414.html"
+    },
+    {
+     "merchant": "Vintage King",
+     "title": "Sony MDR-7506 Closed-back Headphones ($114.99, Meta Catalog feed row — suspected, no identifier in the feed row)",
+     "price": 114.99,
+     "url": "https://vintageking.com/products/sony-mdr-7506?variant=44449401307239"
+    },
+    {
+     "merchant": "Focus Camera",
+     "title": "Sony MDR7506 Folding Professional Closed Ear Headphones ($113.00, Meta Catalog feed row — suspected, no identifier in the feed row)",
+     "price": 113.0,
+     "url": "https://focuscamera.com/products/sony-mdr7506-sony-audio-electronics-headphones-earbuds?variant=42173148561456"
+    },
+    {
+     "merchant": "MusicArts",
+     "title": "Sony MDR-7506 Professional Closed-Back Headphones ($89.99, Meta Catalog feed row — suspected, no identifier in the feed row; the low outlier vs $113–$114.99 elsewhere, not page-verified)",
+     "price": 89.99,
+     "url": "https://www.musicarts.com/sony-mdr-7506-professional-closed-back-headphones-main0008999?variantid=0194692"
+    }
+   ]
+  },
+  "sony-pulse-headset-white": {
+   "offers": [
+    {
+     "merchant": "PlayStation Direct",
+     "title": "PlayStation Pulse Wireless Headset, White ($99.99 recommended retail price, PRE-ORDER — launches 2026-11-19; per the official PlayStation Blog Oct 21 update; pre-orders via direct.playstation.com from Oct 29 — no Direct product-page URL surfaced, so the announcement URL is the quote URL)",
+     "price": 99.99,
+     "url": "https://blog.playstation.com/2026/09/15/introducing-the-next-line-of-ps5-audio-products-playstation-pulse-and-pulse-edge-wireless-headsets"
+    }
+   ]
+  },
+  "sony-linkbuds-clip-black": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "title": "Sony - LinkBuds Clip Truly Wireless Open Earbuds - Black (Model WFLC900/B, SKU 12317215, JSON-LD InStock, page-verified; comp. value $228.00)",
+     "price": 198.0,
+     "url": "https://www.bestbuy.com/product/sony-linkbuds-clip-truly-wireless-open-earbuds-black/J7XSRH5K9X"
+    },
+    {
+     "merchant": "Sweetwater",
+     "title": "Sony LinkBuds Clip True Wireless Earbuds - Black ($198.00 sale vs $228 list, Meta Catalog feed row — suspected, no identifier in the feed row)",
+     "price": 198.0,
+     "url": "https://www.sweetwater.com/store/detail/WFLC900B--sony-linkbuds-clip-true-wireless-earbuds-black"
+    },
+    {
+     "merchant": "BuyDig",
+     "title": "Sony LinkBuds Clip Open-Ear Truly Wireless Earbuds - Black WFLC900/B (Part # WFLC900/B, In Stock, page-verified; list $229.99)",
+     "price": 198.0,
+     "url": "https://www.buydig.com/shop/product/SNWFLC900B/Sony-LinkBuds-Clip-Open-Ear-Truly-Wireless-Earbuds-Black-WFLC900B"
+    },
+    {
+     "merchant": "Abt",
+     "title": "Sony WFLC900B LinkBuds Clip Truly Wireless Open Earbuds in Black ($198.00, comp. value $228, search-index read of the Greige page which lists the Black at $198; manufacturer rebate ends 11/08/2026)",
+     "price": 198.0,
+     "url": "https://www.abt.com/Sony-LinkBuds-Clip-Truly-Wireless-Open-Earbuds-in-Greige-WFLC900C/p/238903.html"
+    },
+    {
+     "merchant": "Sony",
+     "title": "Sony LinkBuds Clip Truly Wireless Open Earbuds (SRP $229.99, Greige page on electronics.sony.com — stale crawl, 270 days; same SRP across colors per the Jan 2026 announcement; stock not stated)",
+     "price": 229.99,
+     "url": "https://electronics.sony.com/audio/headphones/all-headphones/p/wflc900-c"
+    }
+   ]
+  },
+  "nintendo-n64-controller": {
+   "offers": [
+    {
+     "merchant": "Nintendo",
+     "title": "Nintendo 64 controller (JSON-LD InStock, page-verified; SKU 128577; Nintendo Store exclusive — a paid Nintendo Switch Online membership is required to purchase, limit four per account, ships to the US and Canada only)",
+     "price": 54.99,
+     "url": "https://www.nintendo.com/us/store/products/nintendo-64-controller-128577/"
+    }
+   ]
+  }
+ }
+}

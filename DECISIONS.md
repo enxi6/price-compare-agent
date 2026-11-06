@@ -1209,6 +1209,88 @@ written as "superseded by" with the original text kept.
   direct CH720N $89.99 is a sale price and should be re-checked
   after the sale ends.
 
+## 036 (2026-11-06): Expansion batch 14 — 92 → 96 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 4 models from the remaining brand-sweep candidates
+  (BUILD_LOG 020/022/023/025), no per-batch user approval needed
+  (DECISIONS 027): Sony MDR-7506, Black (MDR7506, UPC pending),
+  Sony PlayStation Pulse Wireless Headset, White ($99.99, pre-order,
+  no identifiers published yet), Sony LinkBuds Clip, Black
+  (WF-LC900/B, UPC pending), Nintendo 64 Controller, Gray (HAC-043,
+  Nintendo SKU 128577, UPC pending). One variant pinned per model
+  (DECISIONS 015); 0 of 4 identifiers verified — all 4 stay pending
+  on single-source-only or no-source codes (Adaptive Controller /
+  DualSense / PULSE Elite precedent, not a reason to hold the batch).
+  Verified-identifier count stays 68. The fifth candidate, Apple Pro
+  Display XDR, was NOT added: discontinued March 3, 2026 and
+  replaced by the Studio Display XDR (see below) — the batch was
+  split rather than forcing it in (batch 3 AirPods 5 precedent).
+- Why these 4: they are the next un-added mainstream lines from the
+  five brand sweeps, each distinct from the set (MDR-7506 is Sony's
+  pro studio monitor line — the set has no MDR model at all; the new
+  PlayStation Pulse is the base planar-magnetic headset below the
+  Elite, distinct from the Elite, the Explore and the older PULSE 3D;
+  LinkBuds Clip is the distinct 2026 clip-on open-ear line vs the
+  Fit and the Open; the N64 controller is the distinct retro NSO
+  controller line vs the Joy-Con and Pro Controller lines). Three of
+  the four are in stock new in the US on 2026-11-06 (brand-direct
+  pages or InStock JSON-LD); the Pulse is pre-order only until its
+  November 19 launch, which is recorded explicitly rather than
+  presented as in-stock.
+- What was corrected along the way: the Pro Display XDR candidate
+  price $3,299 is NOT a Pro Display XDR configuration — the Pro
+  Display XDR was $4,999 standard glass / $5,999 nano-texture, and
+  it was discontinued March 3, 2026 (EveryMac); Apple's
+  /shop/buy-mac/pro-display-xdr URL now serves the "Buy Studio
+  Display XDR" page, and the Meta Catalog feed returns Studio
+  Display XDR rows for the query. $3,299 is the Studio Display XDR
+  launch price (standard glass, tilt-and-height stand — Sweetwater
+  $3,299, Sam's Club $3,299; Apple direct nano-texture tilt-height
+  $3,599, nano VESA $3,199). The Studio Display XDR itself (27-inch
+  5K mini-LED, 120Hz, from $3,299) is a distinct new line and was
+  NOT substituted in — it is a different model from the named
+  candidate and needs its own batch; the set's Studio Display 2026
+  (MFEX4LL/A, $1,599) is the separate non-XDR line. The PULSE $99
+  (pre-order) candidate figure is the NEW PlayStation Pulse headset
+  (2026), not the PULSE 3D (CFI-ZWH1, 2020, $99.99) — the PULSE 3D
+  is the older base line and was not added. The LinkBuds Clip
+  candidate price $229.99 is the launch SRP while the current US
+  street price is $198 at Best Buy, Sweetwater, BuyDig and Abt
+  (comp. value $228). The N64 controller candidate price $49.99 was
+  the 2021 launch price — the current Nintendo direct price is
+  $54.99. The MDR-7506 candidate price $114.99 is confirmed current
+  at Sony direct (street $113 at Abt and Sweetwater).
+- Variant pinning, recorded explicitly: MDR-7506 pins Black
+  (MDR7506), the only colorway sold; Pulse pins White, the
+  first-listed launch colorway in Sony's announcement — Midnight
+  Black is the other launch colorway; LinkBuds Clip pins Black
+  (WFLC900/B) — Greige, Green and Lavender are different colorways;
+  N64 controller pins Gray (HAC-043; Nintendo SKU 128577), the only
+  colorway sold — the revised HAC-043(-01) with a replaceable
+  battery (Europe, early 2027) is a different hardware revision.
+- What does NOT change: the existing 92 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro untouched,
+  batches 1–13 entries untouched). No other snapshot file is rewritten.
+  No Amazon touch. The daily refresh cron still says "57 models" in
+  its body and needs a count update to 96 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: all four identifier sets stay pending until a second
+  non-Amazon US source confirms each (MDR-7506: no UPC surfaced on
+  any US spec page; Pulse: no identifiers published yet — re-check
+  after the Nov 19 launch; LinkBuds Clip Black 027242934054, BuyDig
+  spec table only; N64 00045496894948, Nintendo US page only); the
+  Pulse has a single quote (PlayStation Direct $99.99 pre-order) —
+  add a Best Buy pre-order quote once a verbatim Best Buy product
+  URL surfaces; the Sony direct LinkBuds Clip price rests on a
+  270-day-old crawl ($229.99 SRP) — re-confirm; the MusicArts
+  MDR-7506 $89.99 feed row is the low outlier vs $113–$114.99
+  elsewhere and was not page-verified — re-check; the Studio
+  Display XDR (from $3,299) is a candidate for a future batch, not
+  added here; the ULT WEAR $148.00 Black Friday street price should
+  be re-checked after Nov 8 (batch 9 revisit, still open); the Sony
+  direct CH720N $89.99 is a sale price and should be re-checked
+  after the sale ends.
+
 ## 033 (2026-11-06): Expansion batch 11 — 77 → 82 models (continuous expansion, DECISIONS 027)
 
 - Decision: add 5 models from the remaining brand-sweep candidates

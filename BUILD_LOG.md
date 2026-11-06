@@ -2416,3 +2416,160 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   bug). Tests: 19 passed (test_snapshot_eval counts updated 87 →
   92 / verified stays 68 for the continuous expansion; the pending
   set gains the 5 new keys).
+
+## 052 — 2026-11-06: Expansion batch 14 — 92 → 96 models (DECISIONS 036)
+
+- Membership check (against the 92-model HEAD set, by name, MPN and
+  UPC — run programmatically against git HEAD price_agent/catalog.py
+  before adding anything; no catalog keys matched, all 5 are new
+  lines):
+  - Apple Pro Display XDR (MWPE2LL/A standard glass / MWPF2LL/A
+    nano-texture, $4,999 / $5,999) vs
+    apple-studio-display-2026-standard-tilt (MFEX4LL/A, UPC
+    195950529173): no match on any field — but NOT ADDED (see below).
+    The set's Studio Display 2026 is the separate non-XDR line
+    ($1,599, A19, Thunderbolt 5); the Studio Display XDR (from
+    $3,299) is a third, distinct line and was not substituted in.
+  - Sony MDR-7506 (MDR7506) vs every Sony headphone in the set
+    (WH-1000XM5/XM6, WH-1000XM4C, WH-CH720N, ULT WEAR, INZONE H5,
+    PULSE Elite/Explore): the set has no MDR model at all; the
+    MDR-7506 is Sony's pro studio monitor line, different model
+    from every WH/INZONE/PULSE line — not a duplicate. The MDR-V6
+    (discontinued 2020) is a different model and was not added.
+  - Sony PlayStation Pulse Wireless Headset, White (2026, $99.99,
+    pre-order) vs sony-pulse-elite-midnight-black (retail MPN
+    1000044173, CFI-ZWH2) and sony-pulse-explore-midnight-black
+    (1000044170, CFI-ZWE1): the new Pulse is the base
+    planar-magnetic headset line below the Elite, different model
+    from both — not a duplicate. The PULSE 3D (CFI-ZWH1, 2020,
+    $99.99) is a different, older model and was not added; the
+    Pulse Edge (ANC, early 2027, no price yet) is a different model
+    and was not added.
+  - Sony LinkBuds Clip Black (WFLC900/B, UPC 027242934054) vs
+    sony-linkbuds-fit-black (WFLS910N/B, UPC 027242929289) and
+    sony-linkbuds-open-black (WFL910/B, UPC 027242928695): the Clip
+    (WF-LC900, 2026 clip-on open-ear) is a distinct line, different
+    MPN and UPC — not a duplicate. The only HEAD mention of the
+    Clip is a notes reference in the Open entry ("a different model
+    and was not added") — no catalog key. Greige (UPC
+    027242934177), Green and Lavender are different colorways and
+    were not added.
+  - Nintendo 64 Controller, Gray (HAC-043, Nintendo SKU 128577,
+    UPC 00045496894948) vs nintendo-joy-con-2-pair-light-blue-
+    light-red, nintendo-joy-con-pair-neon-red-neon-blue and
+    nintendo-switch-pro-controller (HACAFSSKA, UPC 045496590161):
+    the N64 controller is the distinct retro NSO controller line,
+    different model — not a duplicate. Third-party N64-style pads
+    (Retro Fighters Brawler64, 8BitDo 64, Retro-Bit Tribute) are
+    different models and were not added.
+- Apple Pro Display XDR — NOT ADDED: discontinued March 3, 2026
+  (EveryMac: "Discontinued Date: March 3, 2026"; AppleInsider: "A
+  March 2026 revision introduced the Studio Display XDR, which
+  replaced the Pro Display XDR in the lineup"; photoworkout: "The
+  old Pro Display XDR ($4,999) is officially discontinued") and
+  Apple no longer sells it — apple.com/shop/buy-mac/pro-display-xdr
+  now serves the "Buy Studio Display XDR" page. The Meta Catalog
+  feed for the query returns Studio Display XDR rows (Apple direct
+  MFEP4LL/A nano-texture tilt-height $3,599, MFEQ4LL/A nano VESA
+  $3,199; Sweetwater standard-glass tilt-height $3,299; Sam's Club
+  $3,299) plus one $4,999 row from mtsproservices.com, an
+  unverifiable merchant — not a first-party/retailer-direct quote.
+  The $3,299 candidate figure is the Studio Display XDR launch
+  price, not a Pro Display XDR configuration. The Studio Display
+  XDR (27-inch 5K mini-LED, 120Hz, from $3,299) is a candidate for
+  a future batch, not substituted here. No catalog entry, no
+  snapshot model.
+- Sony MDR-7506, Black (MDR7506) — identifiers PENDING: MPN
+  MDR7506 confirmed (Sony US + Abt + Sweetwater agree), but no UPC
+  for the MDR-7506 surfaced on any US manufacturer or retailer spec
+  page checked (Sony direct, Abt, Sweetwater, B&H), so identifiers
+  stay empty per the Adaptive Controller / DualSense / PULSE Elite
+  precedent. Quotes (8): Sony direct $114.99 (MSRP, JSON-LD price;
+  page crawled 2026-10-17, stock not stated in the page text), Abt
+  $113.00 (JSON-LD InStock, page-verified), Sweetwater $113.00
+  (Open Graph instock, page-verified), Full Compass $114.99,
+  Samy's $114.99, Vintage King $114.99 and Focus Camera $113.00
+  (feed rows — suspected, no identifier in the feed rows),
+  MusicArts $89.99 (feed row — suspected; the low outlier vs
+  $113–$114.99 elsewhere, not page-verified). Correction vs the
+  2026-10-31 candidate price $114.99: confirmed current at Sony
+  direct; the street price is $113. Excluded: Best Buy $119.99
+  (bundle with a desktop headphone stand), Newegg $160.99
+  (open-box "Level 2") and $163.99 (International Model, no US
+  warranty), Sweetwater $162.99 (bundle with bag), B&H $157.94
+  (bundle with earpads and case), Target $114.99 "w/ Nylon Braided
+  Cable" row (ambiguous listing phrasing, not used).
+- Sony PlayStation Pulse Wireless Headset, White — identifiers
+  PENDING: no hardware model number (CFI-...), retail MPN or UPC
+  for the new Pulse has been published on any official or retailer
+  page yet, so identifiers stay empty per the Adaptive Controller /
+  DualSense / PULSE Elite precedent; re-check after the Nov 19
+  launch. Quotes (1): PlayStation Direct $99.99 (PRE-ORDER —
+  launches 2026-11-19; $99.99 recommended retail price per the
+  official PlayStation Blog Oct 21 update; pre-orders via
+  direct.playstation.com from Oct 29, 7am PT in the US; no Direct
+  product-page URL surfaced, so the announcement URL is the quote
+  URL). Best Buy, Walmart and Target pre-order listings at $99.99
+  are confirmed by IGN / The Shortcut, but no verbatim Best Buy
+  product URL surfaced, so no second quote is recorded — add one
+  once a URL surfaces. Correction vs the 2026-10-31 candidate note
+  "$99 (pre-order)": the figure is the NEW PlayStation Pulse
+  headset (2026, planar magnetic drivers, PlayStation Link +
+  Bluetooth, up to 30 hours, White and Midnight Black), NOT the
+  PULSE 3D (CFI-ZWH1, 2020, $99.99). White is pinned as the
+  first-listed launch colorway in Sony's announcement; Midnight
+  Black is the other launch colorway. Excluded: all PULSE 3D rows
+  ($99.99–$149.99, CFI-ZWH1), all PULSE Elite rows ($149.99) and
+  all PULSE Explore rows ($159.99–$199.99) in the same feed
+  (different models), the Pulse Edge (early 2027, no price yet),
+  headset cases and accessories.
+- Sony LinkBuds Clip, Black (WF-LC900/B) — identifiers PENDING:
+  MPN WFLC900/B confirmed (Best Buy US Model WFLC900/B, SKU
+  12317215 + Abt Model WFLC900B + BuyDig Part # WFLC900/B + Sony
+  AU Model WFLC900B agree; hardware model WF-LC900 / YY2999 per
+  the Sony reference guide), but UPC 027242934054 is stated on the
+  BuyDig spec table only — no second non-Amazon US source surfaced,
+  so identifiers stay empty per the Adaptive Controller / DualSense
+  / PULSE Elite precedent. The Greige UPC 027242934177 (BuyDig) is
+  a different colorway and was not copied; the AU EAN 4548736173699
+  (Sony AU) is a different regional code and was not copied.
+  Quotes (5): Best Buy $198.00 (Model WFLC900/B, SKU 12317215,
+  JSON-LD InStock, page-verified; comp. value $228.00), Sweetwater
+  $198.00 (feed row — suspected, $198 sale vs $228 list), BuyDig
+  $198.00 (Part # WFLC900/B, In Stock, page-verified; list
+  $229.99), Abt $198.00 (Model WFLC900B, comp. value $228,
+  search-index read of the Greige page which lists the Black at
+  $198; manufacturer rebate ends 11/08/2026), Sony direct SRP
+  $229.99 (Greige page, electronics.sony.com — stale crawl, 270
+  days; same SRP across colors per the Jan 2026 announcement).
+  Correction vs the 2026-10-31 candidate price $229.99: that is
+  the launch SRP — the current US street price is $198. Excluded:
+  Datavision / Focus Camera bundle rows (with care program / case
+  bundle), ListenUp Greige $198 and Best Buy Greige / Lavender /
+  Green rows (different colorways), Best Buy Lavender $129.99 (a
+  different colorway on a holiday deal — not the Black price),
+  StaplesPromo $975 (3-pack bundle).
+- Nintendo 64 Controller, Gray (HAC-043; Nintendo SKU 128577) —
+  identifiers PENDING: hardware model HAC-043 confirmed (Nintendo
+  Support US: "Nintendo 64 Controller (model No. HAC-043)") and
+  Nintendo SKU 128577 confirmed (Nintendo US store page), but UPC
+  00045496894948 is stated on the Nintendo US store page only — no
+  second US source surfaced, so identifiers stay empty per the
+  Adaptive Controller / DualSense / PULSE Elite precedent. Quotes
+  (1): Nintendo direct $54.99 (JSON-LD InStock, page-verified
+  2026-11-06; the only seller — Nintendo Store exclusive; a paid
+  Nintendo Switch Online membership is required to purchase, limit
+  four per Nintendo Account, ships to the US and Canada only).
+  Correction vs the 2026-10-31 candidate price $49.99: that was
+  the 2021 launch price — the current Nintendo direct price is
+  $54.99. Excluded: all third-party N64-style pads in the feed
+  (Retro Fighters Brawler64 $44.99–$69.99, 8BitDo 64 $37.99–$39.99,
+  Retro-Bit Tribute $44.99, Hyperkin Admiral $45.99, Old Skool
+  $19.99 — different models), Rock Candy / REMATCH controllers
+  (different models), Displate / Intec accessories.
+- Eval on the new snapshot: 96 models, 68 verified identifiers, 4
+  with quotes, 15 total quotes, 0 identifier-matched, 15 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 92 →
+  96 / verified stays 68 for the continuous expansion; the pending
+  set gains the 4 new keys).
