@@ -1344,3 +1344,20 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (snapshot offers carry no identifier — the rule working, not a
   bug). Tests: 19 passed (test_snapshot_eval counts updated 47 →
   52 / 43 → 47 for the approved expansion).
+
+## 043 (2026-11-06): Continuous expansion starts — authorization recorded (DECISIONS 027)
+
+- User authorized continuous expansion 52 → 200 models without
+  per-batch approval (2026-11-06, "这个不需要我每5款确定一次，效率
+  太低，目前就按照这个流程，一直加到200款"). Batches of 5 remain
+  the documentation unit only.
+- Starting state (verified 2026-11-06 09:54 PT): HEAD cfcae58, 52
+  models, 47 verified identifiers, 19 tests passing.
+- Work queue, in order: (1) remaining candidates from the five brand
+  sweeps (BUILD_LOG 020/022/023/024/025); (2) new-brand sweeps
+  (Anker, JBL, Razer, Corsair, Dell, HP, Lenovo, ASUS, Microsoft,
+  Garmin, …), one brand at a time, official US catalog first,
+  candidates list-only until added.
+- Coordination: one batch at a time in the repo — never two writers
+  on catalog.py/DECISIONS.md/BUILD_LOG.md at once; commits serialized.
+  Progress reports at 75, 100, 125, 150, 175, 200 models.

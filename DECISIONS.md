@@ -738,3 +738,43 @@ written as "superseded by" with the original text kept.
   further batches proceed under the same skill + DECISIONS 021 rules
   from 52 models up; DualSense Edge UPC stays pending until a US
   retailer spec page or box barcode settles it.
+
+## 027 (2026-11-06): Continuous expansion authorized — eval set 52 → 200, no per-batch approval
+
+- Decision (user, 2026-11-06, "这个不需要我每5款确定一次，效率太低，
+  目前就按照这个流程，一直加到200款"): expand the eval set
+  continuously from 52 to 200 models without per-batch user approval.
+  Batches of 5 are for documentation only. This replaces the
+  batch-by-batch approval rule (DECISIONS 013) for this run.
+- What stays the same: the expansion skill
+  (`~/workspace/custom-skills/price_compare_expansion/SKILL.md`) and
+  DECISIONS 021 apply to every batch — membership-check each batch
+  against the current set by name, MPN and UPC (record in BUILD_LOG);
+  pin exactly one variant per model (DECISIONS 015); verify identifiers
+  from at least two independent sources where possible, else leave
+  empty and mark pending — never invent an identifier, never carry one
+  across variants/revisions/regions; first-party/retailer-direct
+  quotes only; US-market goods only; mainstream or new products only.
+  No Amazon in any way; no purchases, sign-ins, spending,
+  registrations. Existing catalog entries are not modified; pending
+  identifiers (DualSense White, MacBook Pro 14 M6, Watch Series 12,
+  Watch Ultra 4, PS5 Pro CFI-7021) stay pending until genuinely new
+  evidence appears — dead ends are not re-searched daily.
+- Order of work: first exhaust the remaining candidates from the five
+  brand sweeps (BUILD_LOG 020/022/023/024/025), skipping bundles,
+  second colors of models already in the set, refurbished and
+  discontinued lines (DECISIONS 006/015); then sweep new mainstream US
+  electronics brands one at a time (Anker, JBL, Razer, Corsair, Dell,
+  HP, Lenovo, ASUS, Microsoft, Garmin, and others as needed), staying
+  in standardized consumer electronics. A new category (e.g. TVs,
+  appliances) is opened only if the existing categories cannot reach
+  200, and only with a category decision recorded in DECISIONS first.
+- Reporting: progress reports after every 25 models added (75, 100,
+  125, 150, 175) and at 200. Stop and report immediately (do not force
+  it) if no more models meet the rules, a site blocks repeatedly, a
+  rate limit hits, or tests fail and cannot be fixed cleanly. The
+  daily refresh cron (10:52 PT) also edits the repo — on a push
+  conflict, pull/rebase cleanly and retry once; if it still conflicts,
+  stop and report rather than force-pushing.
+- The daily refresh cron is parent-owned; the coordinator does not
+  touch it (the parent updates its model count).
