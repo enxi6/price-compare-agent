@@ -18,6 +18,19 @@ releases; breaking changes are called out in the release notes.
   changes; the rule bites on quote eligibility only (the Newegg
   $117 Astonlink row is excluded from future snapshots).
 
+- Expansion batch 1 (DECISIONS 022, user 2026-11-06): eval set
+  28 → 33 models — Nintendo Switch 2 base system (BEE-001, UPC
+  045496885816), Sony WH-1000XM6 Black (WH1000XM6/B, UPC
+  027242930698), Apple Watch Series 12 GPS 42mm Black Aluminum
+  Black Sport Band S/M (MJEA4LS/A, UPC pending — M6 precedent),
+  Logitech MX Anywhere 3S Graphite (910-006928, UPC 097855184030),
+  Samsung Galaxy Buds4 Black (SM-R540NZKAXAR, UPC 198957277207).
+  New snapshot `data/eval_snapshots_batch1_2026-11-06.json` holds
+  16 quotes across the 5 models (Switch 2: 5, XM6: 3, Watch 12: 2,
+  Anywhere 3S: 3, Buds4: 3), all DECISIONS 021-clean. Existing 28
+  entries untouched; no Amazon touch. Eval: 33 models, 30 verified
+  identifiers, 16 quotes, 0 identifier-matched, 16 suspected.
+
 ### Changed
 
 - Daily price refresh 2026-11-06 (first daily run): all 28 models

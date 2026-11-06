@@ -952,3 +952,70 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Daily cron `price-compare-daily-refresh` body updated with the
   three rules so every future run applies them.
 - Tests: 19 passed (re-run after the docs edit; no code changed).
+
+## 038 (2026-11-06): Expansion batch 1 — 5 models added, 28 → 33 (user-approved)
+
+- Switch 2, base system (BEE-001): identifiers VERIFIED — UPC
+  045496885816 (Nintendo US store page itself, GTIN 00045496885816,
+  + Visions + eBay) and MPN BEE-001 (Nintendo Support + iFixit +
+  eBay). Quotes (5): Nintendo direct $499.99 (page-verified,
+  InStock, SKU 123669), Dell $499.99 (page-verified InStock — the
+  feed row's $449.99 was contradicted by the merchant page and is
+  excluded as captured), BrandsMart USA $499.99, BJ's $499.99,
+  ShopMyExchange $499.99 (military community store; membership-
+  gated retailers such as BJ's are already in the set). Nothing
+  pending.
+- WH-1000XM6 Black (WH1000XM6/B): identifiers VERIFIED — UPC
+  027242930698 (B&H kit page + DataVision + Visions + Walts +
+  Amazon.ca agree) and MPN WH1000XM6/B (Best Buy US SKU 6620467 +
+  Sony). Conflicting code 094148746326 (Sony manual on
+  manuals.plus, single source) noted, not used. Quotes (3): Sony
+  direct $379.99 (was $459.99, page-verified price), T-Mobile
+  $459.99 (business-channel page; the consumer page shows a $38.34
+  monthly installment, not an outright price), Best Buy $378.00
+  (page-verified bare unit, InStock, sold by Best Buy; Early Black
+  Friday, comp. value $458 — the feed carried only the $378
+  accessories bundle, so this is a fresh page-verified quote).
+  Still pending: Sony direct stock was NOT confirmed in the page
+  text (a 2026-11-03 report noted an availability-alert button on
+  the page) — the $379.99 is recorded as price-only, flagged in the
+  snapshot notes.
+- Watch Series 12 GPS 42mm Black Aluminum, Black Sport Band S/M
+  (MJEA4LS/A): identifiers PENDING (M6 precedent) — MPN MJEA4LS/A
+  confirmed by Abt (US) + iClarified + Apple's own buy-page URL
+  parameter, but no US source states a UPC; PBTech NZ UPC
+  195951225470 (MJEA4X/A) and Very UK EAN 195951225395 are
+  regional and were not used. Quotes (2): Apple direct $399.00
+  (page-verified JSON-LD for the exact variant), BJ's $389.99
+  (exact variant). Still pending: US UPC — needs a US retailer
+  spec page or a physical box barcode.
+- MX Anywhere 3S Graphite (910-006928): identifiers VERIFIED — UPC
+  097855184030 + MPN 910-006928 (Logitech's own spec sheet + B&H
+  spec table + Staples Model # / Color Graphite + Woot). The NZ
+  graphite 910-006932 / UPC 097855184047 is a different regional
+  SKU, excluded. Quotes (3): B&H $89.99 (page-verified, InStock,
+  UPC 097855184030), Sweetwater $89.99, Lenovo $89.99 (all listed
+  as "Black" — B&H/Staples/Lenovo/Sweetwater naming for Logitech's
+  Graphite). Correction: the BUILD_LOG 024 candidate $69.99 was
+  the Pale Grey sale price (Newegg), not Graphite; graphite street
+  is $89.99. Still pending: no Logitech-direct Graphite quote —
+  the direct page read showed Pale Grey $89.99 (910-006926).
+- Galaxy Buds4 Black (SM-R540NZKAXAR): identifiers VERIFIED — UPC
+  198957277207 (Abt US + ChannelOnline agree) and MPN
+  SM-R540NZKAXAR (Samsung US buy-page URL + Abt). EU EAN
+  8806097998563 and MEA SM-R540NZKAMEA excluded as regional.
+  Quotes (3): Samsung direct $179.99 (page-verified), NFM $179.99,
+  Best Buy $179.99. Nothing pending.
+- MX Master 4 Graphite retailer hunt, third retailer ruled out
+  (from the parent's 2026-11-06 check, recorded here as arranged):
+  Adorama has no standard Graphite 910-007558 listing — part-number
+  search, UPC search, and name search all return 0 results or only
+  Black / Pale Gray / Mac / for-Business variants. Adorama is the
+  third retailer ruled out after Best Buy (BUILD_LOG 033) and B&H
+  (BUILD_LOG 035); the entry still holds only the Logitech direct
+  $119.99 quote.
+- Eval on the new snapshot: 33 models, 30 verified identifiers, 5
+  with quotes, 16 total quotes, 0 identifier-matched, 16 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 28 →
+  33 / 26 → 30 for the approved expansion).

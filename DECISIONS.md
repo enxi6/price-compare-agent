@@ -420,3 +420,61 @@ written as "superseded by" with the original text kept.
   non-US goods are separate expansion decisions, each needing its
   own user approval; do not bundle them into a general "expand"
   step.
+
+## 022 (2026-11-06): Expansion batch 1 — eval set 28 → 33, one model per brand
+
+- Decision (user, 2026-11-06, "按这 5 款加"): add the first expansion
+  batch, five models, each brand's current mainstream/new product,
+  drawn from the brand-catalog candidate lists (BUILD_LOG 020/022/
+  023/024/025). No other model is added; the remaining candidates stay
+  list-only for later batches, each needing its own user approval
+  (DECISIONS 013/021).
+  (a) Nintendo Switch 2, base system only — `nintendo-switch-2`,
+  pinned variant base system 256GB (BEE-001). The $549.99 Mario Kart
+  bundle and $529.99 Sports bundle are different SKUs, excluded.
+  (b) Sony WH-1000XM6, Black — `sony-wh1000xm6-black`, pinned
+  variant Black (WH1000XM6/B). Bare unit only; accessory bundles
+  excluded.
+  (c) Apple Watch Series 12, GPS 42mm — `apple-watch-series-12-42mm-
+  gps-black`, pinned variant GPS 42mm Black Aluminum, Black Sport
+  Band S/M (MJEA4LS/A). The entry-price GPS configuration (from
+  $399); GPS + Cellular and 46mm are different SKUs.
+  (d) Logitech MX Anywhere 3S, Graphite — `logitech-mx-anywhere-3s-
+  graphite`, pinned variant Graphite, standard edition
+  (910-006928). The current compact flagship mouse; for-Mac and
+  for-Business are different products.
+  (e) Samsung Galaxy Buds4, Black — `samsung-buds4-black`, pinned
+  variant Black (SM-R540NZKAXAR). White is a different SKU;
+  Buds4 Pro is a different model.
+- Identifier outcome: 4 of 5 verified (Switch 2, XM6, Anywhere 3S,
+  Buds4), 1 pending (Watch Series 12 — US UPC not yet found; MPN
+  MJEA4LS/A is confirmed but identifiers stay empty per the MacBook
+  Pro 14 M6 precedent, DECISIONS 008/BUILD_LOG 035). Eval set is now
+  33 models, 30 verified identifiers, 3 pending (DualSense White,
+  MacBook Pro 14 M6, Watch Series 12). `tests/test_snapshot_eval.py`
+  counts updated 28 → 33 / 26 → 30 to match; this is a coverage
+  change, not a loosened assertion.
+- Regional-code traps avoided, same discipline as the Kindle pin:
+  Anywhere 3S US Graphite is 910-006928 / UPC 097855184030
+  (Logitech spec sheet + B&H + Staples); the NZ graphite
+  910-006932 / UPC 097855184047 is a different regional SKU and was
+  NOT used. Watch Series 12 NZ MJEA4X/A UPC 195951225470 and UK EAN
+  195951225395 are regional; neither was used. XM6 carries one
+  conflicting code, 094148746326, from the Sony manual hosted on
+  manuals.plus (single source); the retailer-agreed 027242930698
+  was used instead.
+- Correction to BUILD_LOG 024: the $69.99 Anywhere 3S candidate price
+  was the Pale Grey sale price (Newegg), not Graphite. Graphite
+  street price is $89.99 (B&H, Sweetwater, Lenovo, 2026-11-06).
+- What changes in practice: new snapshot
+  `data/eval_snapshots_batch1_2026-11-06.json` holds 16 quotes
+  across the 5 models (Switch 2: 5, XM6: 3, Watch 12: 2, Anywhere
+  3S: 3, Buds4: 3). DECISIONS 021 applied to every quote: no
+  marketplace/third-party rows, no non-US rows, no Amazon.
+- What does NOT change: the existing 28 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense identifiers
+  untouched, MacBook Pro 14 M6 untouched). No other snapshot file
+  is rewritten. No Amazon touch.
+- Revisit: batch 2 candidates stay list-only until the user approves
+  the next batch; the daily refresh cron still says "28 models" in
+  its body and needs a count update to 33 on the next edit.

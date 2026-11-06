@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "collected_at": "2026-11-06T16:00:40Z",
+    "source": "Meta Catalog (2026-11-06) + brand-direct pages (browser-verified, read-only)",
+    "sources_note": "Expansion batch 1 (DECISIONS 022, user-approved 2026-11-06): 5 new models, 16 quotes. Meta Catalog CLI run 2026-11-06 (20 rows per model; raw files data/meta_catalog_raw_{switch2,xm6,watch12,anywhere3s,buds4}_2026-11-06.json, gitignored). Brand-direct prices browser-verified read-only 2026-11-06 ~15:57-15:58 UTC (07:57-07:58 PT): no sign-in, no cart, no purchase. Nintendo direct Switch 2 $499.99 InStock (nintendo.com, SKU 123669, UPC 00045496885816). Dell Switch 2 page shows $499.99 InStock — the feed row's $449.99 was contradicted by the merchant page and is excluded as captured; the page-verified $499.99 is used. Sony direct XM6 Black $379.99 (was $459.99, electronics.sony.com) — price verified, stock NOT confirmed in the page text (a 2026-11-03 report noted an availability-alert button on the page); treat as price-only. Best Buy XM6 Black bare unit $378.00 InStock, sold by Best Buy (Model WH1000XM6/B, SKU 6620467; Early Black Friday, comp. value $458) — the feed carried only the $378 accessories bundle, so this is a fresh page-verified quote. Apple Watch Series 12 GPS 42mm Black Aluminum Black Sport Band S/M $399.00 (apple.com buy page JSON-LD, product=mjea4ls/a). Logitech direct Anywhere 3S page shows Pale Grey $89.99 InStock (910-006926) — wrong color for the pinned Graphite, so no Logitech-direct Graphite quote is claimed; B&H Graphite/Black $89.99 InStock is the page-verified quote. Samsung direct Buds4 Black $179.99 (samsung.com US buy page, SM-R540NZKAXAR). URLs cleaned of fbclid/utm/ref params (variant-defining params kept).",
+    "excluded_traps": [
+      "Switch 2: Mario Kart World ($549.99) and Sports ($529.99) bundles excluded — different SKUs, base system only. Aaron's $100 excluded (rental). JNLGame $499.99 excluded (unverified small seller). GadgetLB $560 excluded (Lebanon, non-US). Dell feed row $449.99 excluded — merchant page shows $499.99. Games, dock sets, upgrade packs excluded.",
+      "XM6 Black: all accessory bundles excluded (Best Buy with-accessories $378, Macy's headphone-stand + charger $458, BuyDig 2-yr warranty $378, FocusCamera clip-on-light $378, Newegg Pink bundle $439.95, Target Silver bundle $428, Best Buy Silver/Sandstone bundles). Wrong colors excluded (Dell/Crutchfield/FocusCamera Silver, Best Buy Silver). T-Mobile consumer $38.34 excluded (monthly installment, not an outright price). WF-1000XM6 earbuds rows excluded (different product).",
+      "Watch Series 12: Sam's Club GPS 46mm $449, T-Mobile ceramic/titanium $749-$949, AT&T $15.28 installment, Best Buy GPS + Cellular rows, and Apple direct titanium/ceramic rows excluded — wrong size, connectivity, or material vs the pinned GPS 42mm Black Aluminum Black Sport Band S/M.",
+      "Anywhere 3S Graphite: Newegg Pale Grey sale $69.99 excluded — wrong color (this was the BUILD_LOG 024 candidate price; graphite street is $89.99). Logitech direct Pale Grey $79.99/$89.99 and Best Buy Pale Grey / for-Mac rows excluded (wrong color / Mac version). Lenovo + CDW for-Business $99.99 excluded (different product). Ultimate Ears 910-006927 $89.99 excluded (different part number). Ayoub Rose $58 excluded (MEA seller + wrong color). Newegg ambiguous-color $89.99 row excluded (color not stated).",
+      "Buds4 Black: White rows excluded (T-Mobile $179.99, Best Buy sale $169.99, NFM $179.99 — SM-R540NZWAXAR is a different SKU). Ayoub MEA SM-R540NZKAMEA $140 excluded (non-US variant). Newegg $195.99 excluded (Latino America version). Samsung Latin $135/$159 rows excluded (non-US store). Buds4 Pro rows excluded (different model).",
+      "No Amazon rows anywhere (DECISIONS 018: Phase 1 does not touch Amazon). No third-party/marketplace seller rows (DECISIONS 021)."
+    ]
+  },
+  "models": {
+    "nintendo-switch-2": {
+      "offers": [
+        {
+          "merchant": "Nintendo direct",
+          "price": 499.99,
+          "title": "Nintendo Switch™ 2 System (base system, in stock)",
+          "url": "https://www.nintendo.com/us/store/products/nintendo-switch-2-system-123669/"
+        },
+        {
+          "merchant": "Dell",
+          "price": 499.99,
+          "title": "Nintendo Switch 2 Console (base system, in stock)",
+          "url": "https://www.dell.com/en-us/shop/gaming-consoles/apd/ad592229/gaming-gaming-accessories"
+        },
+        {
+          "merchant": "BrandsMart USA",
+          "price": 499.99,
+          "title": "Nintendo Switch 2 Gaming Console",
+          "url": "https://www.brandsmartusa.com/products/electronics-gaming-nintendo-switch-2-gaming-console?variant=48203209408770"
+        },
+        {
+          "merchant": "BJ's",
+          "price": 499.99,
+          "title": "Nintendo Switch 2 System Console",
+          "url": "https://www.bjs.com/product/nintendo-switch-2-system-console/3000000000005662797/"
+        },
+        {
+          "merchant": "ShopMyExchange",
+          "price": 499.99,
+          "title": "Nintendo Switch 2 System",
+          "url": "https://www.shopmyexchange.com/nintendo-switch-2-system/4573756"
+        }
+      ]
+    },
+    "sony-wh1000xm6-black": {
+      "offers": [
+        {
+          "merchant": "Sony direct",
+          "price": 379.99,
+          "title": "WH-1000XM6 Best Wireless Noise Cancelling Headphones | Black (sale, was $459.99; stock not confirmed on page)",
+          "url": "https://electronics.sony.com/audio/headphones/headband/p/wh1000xm6-b"
+        },
+        {
+          "merchant": "T-Mobile",
+          "price": 459.99,
+          "title": "Sony WH-1000XM6 Headphones - Black (business channel page; consumer page shows installment pricing)",
+          "url": "https://www.t-mobile.com/business/accessory/sony-wh-1000xm6-headphones-black?sku=610214688767"
+        },
+        {
+          "merchant": "Best Buy",
+          "price": 378.0,
+          "title": "Sony - WH-1000XM6 Best Wireless Noise Cancelling Headphones - Black (bare unit, sold by Best Buy; Early Black Friday, comp. value $458)",
+          "url": "https://www.bestbuy.com/product/sony-wh1000xm6-best-wireless-noise-canceling-headphones-black/J7XSRH5RCF"
+        }
+      ]
+    },
+    "apple-watch-series-12-42mm-gps-black": {
+      "offers": [
+        {
+          "merchant": "Apple direct",
+          "price": 399.0,
+          "title": "Apple Watch Series 12 GPS 42mm Black Aluminum Case with Black Sport Band - S/M",
+          "url": "https://www.apple.com/shop/buy-watch/apple-watch?product=mjea4ls/a&step=select"
+        },
+        {
+          "merchant": "BJ's",
+          "price": 389.99,
+          "title": "Apple Watch Series 12 GPS 42mm Black Aluminum Case with Black Sport Band - S/M",
+          "url": "https://www.bjs.com/product/apple-watch-series-12-gps-42mm-black-aluminum-case-with-black-sport-band---sm/3000000000006456259/"
+        }
+      ]
+    },
+    "logitech-mx-anywhere-3s-graphite": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 89.99,
+          "title": "Logitech MX Anywhere 3S Wireless Mouse (Black) (910-006928, in stock)",
+          "url": "https://www.bhphotovideo.com/c/product/1760693-REG/logitech_910_006928_mx_anywhere_3s_wireless.html"
+        },
+        {
+          "merchant": "Sweetwater",
+          "price": 89.99,
+          "title": "Logitech MX Anywhere 3S Wireless Mouse - Black",
+          "url": "https://www.sweetwater.com/store/detail/MXAny3S2Bk--logitech-mx-anywhere-3s-wireless-mouse-black"
+        },
+        {
+          "merchant": "Lenovo",
+          "price": 89.99,
+          "title": "Lenovo Logitech MX Anywhere 3S Compact Performance Mouse - Black",
+          "url": "https://www.lenovo.com/us/en/p/accessories-and-software/keyboards-and-mice/mice/78414527"
+        }
+      ]
+    },
+    "samsung-buds4-black": {
+      "offers": [
+        {
+          "merchant": "Samsung direct",
+          "price": 179.99,
+          "title": "Samsung Galaxy Buds4 Noise Cancelling Wireless Earbuds – Black",
+          "url": "https://www.samsung.com/us/audio-sound/galaxy-buds4/buy/galaxy-buds4-black-sku-sm-r540nzkaxar/"
+        },
+        {
+          "merchant": "NFM",
+          "price": 179.99,
+          "title": "Samsung Galaxy Buds4 in Black",
+          "url": "https://www.nfm.com/samsung-galaxy-buds4-in-black-69857308/69857308.html"
+        },
+        {
+          "merchant": "Best Buy",
+          "price": 179.99,
+          "title": "Samsung - Galaxy Buds4 Wireless Earbud Headphones - Black",
+          "url": "https://www.bestbuy.com/product/samsung-galaxy-buds4-wireless-earbud-headphones-black/JJGRF3QW6G/sku/6668662"
+        }
+      ]
+    }
+  }
+}

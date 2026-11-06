@@ -421,6 +421,106 @@ EVAL_SET: list[EvalProduct] = [
                     "generation; Lightning version is a different model."
                 },
                 status="verified"),
+    # --- Expansion batch 1 (added 2026-11-06, user-approved) ---
+    # 28 -> 33 models. DECISIONS 022, BUILD_LOG 038.
+    EvalProduct(
+        key="nintendo-switch-2",
+        brand="Nintendo",
+        model="Switch 2",
+        variant="Base system, 256GB (BEE-001)",
+        category="consoles",
+        identifiers={"UPC": "045496885816", "MPN": "BEE-001"},
+        identifier_sources={
+            "UPC": "Nintendo US store page (shown as GTIN 00045496885816; "
+            "UPC-A form 045496885816) + Visions Electronics + eBay "
+            "listings agree for BEE-001. The Best Buy bundle UPC "
+            "196993181687 is a Pro Controller bundle, not the base "
+            "system, and was excluded."
+        },
+        notes="Base system only: the Mario Kart World ($549.99) and "
+        "Sports ($529.99) bundles are different SKUs and are excluded. "
+        "Nintendo US direct $499.99, in stock 2026-11-06.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-wh1000xm6-black",
+        brand="Sony",
+        model="WH-1000XM6",
+        variant="Black (WH1000XM6/B)",
+        category="headphones",
+        identifiers={"UPC": "027242930698", "MPN": "WH1000XM6/B"},
+        identifier_sources={
+            "UPC": "B&H Photo (kit page) + DataVision + Visions "
+            "Electronics + Walts + Amazon.ca listings agree for "
+            "WH1000XM6/B. A single conflicting code, 094148746326, "
+            "appears only in the Sony manual hosted on manuals.plus "
+            "and was not used. MPN confirmed by Best Buy US (Model "
+            "WH1000XM6/B, SKU 6620467) + Sony Electronics."
+        },
+        notes="Bare unit only: Best Buy / Macy's / BuyDig / FocusCamera "
+        "accessory bundles at $378-$458 are excluded. Sony direct "
+        "lists $379.99 (was $459.99); stock on the Sony page was not "
+        "confirmed in the page text (see BUILD_LOG 038).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="apple-watch-series-12-42mm-gps-black",
+        brand="Apple",
+        model="Watch Series 12 (GPS, 42mm)",
+        variant="GPS, 42mm, Black Aluminum, Black Sport Band S/M (MJEA4LS/A)",
+        category="wearables",
+        notes="Order number MJEA4LS/A confirmed by Abt (US) + iClarified "
+        "+ Apple's own buy-page URL parameter (product=mjea4ls/a). "
+        "US UPC not yet found: stays pending (identifiers empty, never "
+        "matched) per the MacBook Pro 14 M6 precedent. PBTech NZ UPC "
+        "195951225470 belongs to MJEA4X/A (NZ variant) and Very UK "
+        "EAN 195951225395 is regional; neither was used. GPS + "
+        "Cellular and 46mm are different SKUs. Apple direct $399, "
+        "BJ's $389.99 (2026-11-06).",
+    ),
+    EvalProduct(
+        key="logitech-mx-anywhere-3s-graphite",
+        brand="Logitech",
+        model="MX Anywhere 3S",
+        variant="Graphite, standard edition (910-006928)",
+        category="mice",
+        identifiers={"UPC": "097855184030", "MPN": "910-006928"},
+        identifier_sources={
+            "UPC": "Logitech's own spec sheet (Part # 910-006928, Bar "
+            "code 097855184030) + B&H Photo spec table (UPC "
+            "097855184030) agree. MPN confirmed by B&H + Staples "
+            "(Model # 910-006928, Color Graphite) + Woot (Graphite "
+            "(910-006928)). PBTech NZ graphite 910-006932 / UPC "
+            "097855184047 is a different regional SKU and was "
+            "excluded, as was Logitech US direct pale grey 910-006926."
+        },
+        notes="Graphite is sold as 'Black' by B&H / Staples / Lenovo / "
+        "Sweetwater; Logitech calls the color Graphite. The $69.99 "
+        "candidate price in BUILD_LOG 024 was the pale grey sale "
+        "price (Newegg), not graphite: graphite street price is "
+        "$89.99 (B&H, Sweetwater, Lenovo, 2026-11-06).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="samsung-buds4-black",
+        brand="Samsung",
+        model="Galaxy Buds4",
+        variant="Black (SM-R540NZKAXAR)",
+        category="earbuds",
+        identifiers={"UPC": "198957277207", "MPN": "SM-R540NZKAXAR"},
+        identifier_sources={
+            "UPC": "Abt (US) + ChannelOnline agree for SM-R540NZKAXAR. "
+            "MPN confirmed by the Samsung US buy-page URL "
+            "(galaxy-buds4-black-sku-sm-r540nzkaxar) + Abt. The EU "
+            "EAN 8806097998563 (SM-R540NZKAEUE) and the MEA "
+            "SM-R540NZKAMEA are different regional variants and were "
+            "excluded."
+        },
+        notes="Samsung US direct $179.99, in stock 2026-11-06; NFM and "
+        "Best Buy also $179.99. White is a different SKU "
+        "(SM-R540NZWAXAR); Buds4 Pro is a different model.",
+        status="verified",
+    ),
 ]
 
 
