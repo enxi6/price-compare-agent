@@ -5390,3 +5390,161 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   counts updated 175 → 180, verified 84 → 88, for the
   continuous expansion; the pending set gains the 1 new pending
   key: samsung-galaxy-tab-s11-ultra-256gb-gray).
+
+## 071 — 2026-11-06: Expansion batch 32 — 180 → 185 models (DECISIONS 054)
+
+- Membership check (against the 180-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): Garmin Instinct 3 — NO MATCH
+  (no Instinct 3 in the set; 010-02936-00 and 753759339487 match
+  nothing); Garmin Dash Cam 67W — NO MATCH (no dash cam in the
+  set; 010-02505-05 and 753759269395 match nothing) but skipped
+  per DECISIONS 016 (see skipped list); Bose SoundLink Flex
+  (2nd Gen) — NO MATCH (no SoundLink in the set; 887612-0100 and
+  017817852470 match nothing); Bose SoundLink Plus — NO MATCH
+  (894040-0100 and 017817857932 match nothing); Keychron K2 HE
+  — NO MATCH (no K2 HE in the set; K2H-F1, 4895248889175 and
+  4895248889199 match nothing); Dell UltraSharp U2725QE — NO
+  MATCH (no U2725QE in the set; 95WRG and 884116484578 match
+  nothing); ASUS ProArt PA279CRV — NO MATCH but held (see
+  skipped list). No candidate was dropped by the membership
+  check.
+- Garmin Instinct 3 AMOLED 45mm, Black with Black Band
+  (010-02936-00) — identifiers VERIFIED: UPC 753759339487 + MPN
+  010-02936-00 (distributor row in the Meta Catalog feed, Mfg.
+  Number 010-02936-00, UPC 753759339487, + DID Electrical, EAN
+  0753759339487 — the EAN-13 form of the same code, agree; an
+  Amazon US listing agreeing on the same code was read but not
+  cited and not used). MPN corroborated by Garmin US (product
+  URL pn/010-02936-00) + Abt (Model 010-02936-00). Quotes (3):
+  Garmin direct $349.99 (US store page JSON-LD read fresh
+  2026-11-06 21:48 UTC; the page read states no availability —
+  stock unconfirmed at Garmin direct); Abt $332.99 (page read
+  fresh 2026-11-06 21:50 UTC, JSON-LD InStock, Comp. Value
+  $349.99); The GPS Store $349.99 (feed authorized_retailer row
+  — suspected; not page-verified). 45mm AMOLED GPS smartwatch,
+  1.2-inch display, built-in LED flashlight, up to 18 days
+  smartwatch battery, launched Jan 2025. Excluded: the feed's
+  $199.99 brand_direct row (a UK shop, zenithwellness.co.uk —
+  non-US, DECISIONS 021) and the Kohl's $349.99 Neotropic row
+  (different colorway). Not the Solar 45mm Black (010-02934-00,
+  $349.99) or the AMOLED 50mm Black (010-03020-00, $399.99) or
+  the Solar 50mm Black (010-02935-00, $399.99).
+- Bose SoundLink Flex (2nd Gen), Black (887612-0100) —
+  identifiers VERIFIED: UPC 017817852470 + MPN 887612-0100
+  (B&H Photo, 887612-0100, Black, UPC 017817852470, $159.00
+  InStock, page read 2026-11-06 21:52 UTC, + Volza Peru import
+  records, Bose 887612-0100, SPKR SOUNDLINK FLEX BLACK, ITEM
+  NUMBER 017817852470, filings Dec 2024–Mar 2025, agree; an
+  Amazon US listing agreeing on the same code was read but not
+  cited and not used). MPN corroborated by Abt (887612-0100,
+  Black) + Crutchfield (MFR # 887612-0100, Black). Quotes (3):
+  Bose direct $159.00 (feed brand_direct rows — suspected; the
+  bose.com page text read 2026-11-06 21:49 UTC shows no price);
+  Abt $159.00 (page read fresh 2026-11-06 21:50 UTC, JSON-LD
+  InStock); B&H $159.00 (page read fresh 2026-11-06 21:52 UTC,
+  JSON-LD InStock). Portable Bluetooth speaker, IP67, Bluetooth
+  5.3, up to 12 hours battery, PositionIQ, launched Sep 2024.
+  Excluded: a $119.00 (was $159.00) authorized_retailer row shown
+  in the CLI preview but absent from the saved raw file — not
+  used, since it cannot be traced to a merchant or URL; and the
+  Sam's Club $139.00 Blue Dusk row (different colorway). Not the
+  Blue Dusk (887612-0200, UPC 017817852487) or the Sandstone
+  (887612-0300, UPC 017817852616) or the Alpine Sage
+  (887612-0400, UPC 017817852494).
+- Bose SoundLink Plus, Black (894040-0100) — identifiers
+  VERIFIED: UPC 017817857932 + MPN 894040-0100 (B&H Photo,
+  894040-0100, Bose Black, UPC 017817857932, page read
+  2026-11-06 21:52 UTC, + manuals.plus spec table, Model Number
+  894040-0100, UPC 017817857932, agree; an Amazon US listing
+  agreeing on the same code was read but not cited and not
+  used). MPN corroborated by Abt (894040-0100, Black) + Newegg
+  (model and part number 894040-0100, Black). Quotes (3): Bose
+  direct $269.00 (feed brand_direct row — suspected; not
+  page-read this round); B&H $179.00 (page read fresh
+  2026-11-06 21:52 UTC, JSON-LD InStock, Holiday Savings $90 off
+  $269.00); Abt $179.00 (page read fresh 2026-11-06 21:52 UTC,
+  JSON-LD InStock, manufacturer rebate ends 11/08/2026, Comp.
+  Value $269.00). Note: the $179.00 is a sale/rebate price ending
+  Nov 8 — re-check next refresh. Portable Bluetooth speaker,
+  IP67, Bluetooth 5.4, up to 20 hours battery, USB-C power-bank
+  output, launched Jun 2025. Excluded: the feed's drop_shipper
+  rows ($297.49 / $362.83, DECISIONS 021) and the $272.99
+  Macy's/Best Buy bundle rows (bundles, not the bare speaker).
+  Not the Blue Dusk or Sunset Peach — different SKUs.
+- Keychron K2 HE, Special Edition, Black, Gateron Double-Rail
+  Magnetic Nebula Switch Version 1 (K2H-F1) — identifiers
+  PENDING: EAN conflict with no tiebreak — the Keychron
+  official store public product JSON (browser-verified
+  2026-11-06) gives the Special Edition / Black / Nebula Switch
+  V1 variant (SKU K2H-F1, price $139.99, available: true)
+  barcode 4895248889175, while B&H Photo lists the same SKU
+  K2H-F1 with EAN 4895248889199. No third source surfaced for
+  either code and neither code appears in the other's source, so
+  identifiers stay empty per the strict two-source rule —
+  re-check next refresh. Not copied: 4895248889175 or
+  4895248889199 (conflicted candidates). Quotes (3): Keychron
+  direct $139.99 (official store JSON, available: true; 75%
+  ANSI, QMK, Hall Effect, 2.4 GHz / Bluetooth 5.2 / USB-C, 4000
+  mAh, up to 110 hours); B&H $139.99 (search-index page read,
+  Temporarily Out of Stock, expected 7–14 business days); Best
+  Buy $129.99 (feed authorized_retailer row — suspected; the
+  listing title names no edition or switch version and is most
+  likely the Standard version, a different variant). Excluded:
+  the Best Buy $199.99 Concrete Edition row (different variant)
+  and the feed's Newegg $255.82 / $272.75 rows (third-party
+  inflated prices, DECISIONS 021). Not the Standard Version
+  Black (K2H-J1, $129.99, currently unavailable at Keychron) or
+  the Special Edition White (K2H-Q1) or the Resin Edition
+  ($199.99) or the V2-switch variants (K2H-J1G / K2H-F1G).
+- Dell UltraSharp 27 4K Thunderbolt Hub Monitor U2725QE, Silver
+  (MPN 95WRG) — identifiers PENDING: the candidate UPC
+  884116484578 appears only at B&H Photo (U2725QE spec page,
+  $649.99 InStock) — the only other hit, Tanotis, reproduces
+  B&H's spec text verbatim (same data lineage, not
+  independent), and no second independent source surfaced, so
+  identifiers stay empty per the strict two-source rule — same
+  call as batch 30's Watch9 and batch 31's Tab S11 Ultra. Not
+  copied: 884116484578 (single-source candidate). MPN 95WRG
+  confirmed by the Dell US page (Manufacturer Part Number
+  95WRG); SHI lists Mfr Part # DELL-U2725QE. Quotes (3): Dell
+  direct $849.99 (feed row — suspected; the dell.com page read
+  2026-11-06 21:50 UTC confirms the model and specs but shows
+  no price in text); B&H $649.99 (search-index page read,
+  JSON-LD InStock, was $799.99); Adorama $649.99 (search-index
+  page read, JSON-LD BackOrder). Note the wide spread: Dell
+  direct $849.99 vs street $649.99 — re-check the Dell direct
+  price next refresh. 27-inch 4K UHD IPS Black, 120Hz,
+  Thunderbolt 4 hub with up to 140W power delivery, 99% DCI-P3,
+  DisplayHDR 600, KVM, launched early 2025. Excluded: the
+  feed's beachcamera bundle rows (bundles, not the bare
+  monitor) and the electroeshop $1,157.65 row (unverified
+  seller). Distinct from the set's UltraSharp 32 4K U3225QE —
+  the U2725QE is the 27-inch sibling.
+- Skipped this batch, list-only: Garmin Dash Cam 67W — verified
+  on its own terms (Garmin direct $259.99, US store page
+  JSON-LD read fresh 2026-11-06 21:49 UTC; UPC 753759269395 /
+  MPN 010-02505-05, Garmin authorized-dealer price sheet + a
+  second listing agree; Best Buy $279.99, page read fresh
+  2026-11-06 21:50 UTC, JSON-LD InStock, SKU 12924707; GPS
+  Nation $259.99 feed row — suspected, and its page says sold
+  out) but NOT added: a dash cam is a camera and DECISIONS 016
+  defers cameras to the category-expansion phase, so it stays
+  list-only for that phase rather than opening a new category
+  mid-Phase-1; the Dash Cam X-series (X110 $199.99, X210
+  $299.99, X310 $399.99, all on garmin.com) is blocked by the
+  same rule; ASUS ProArt Display PA279CRV — feed has no
+  ASUS-direct row and the street rows are thin ($444.59
+  authorized_retailer, $785 marketplace), held for a later
+  batch; the remaining Instinct 3 variants (Solar 45mm
+  010-02934-00, AMOLED 50mm 010-03020-00, Solar 50mm
+  010-02935-00) are different SKUs, not pinned. No phones and no
+  TVs were considered (new categories, DECISIONS 016).
+- Eval on the new snapshot: 185 models, 91 verified identifiers,
+  5 with quotes, 15 total quotes, 0 identifier-matched, 15
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 180 → 185, verified 88 → 91, for the
+  continuous expansion; the pending set gains the 2 new pending
+  keys: keychron-k2-he-special-black,
+  dell-ultrasharp-27-4k-thunderbolt-hub-monitor-u2725qe).

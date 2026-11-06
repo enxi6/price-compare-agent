@@ -193,6 +193,34 @@ releases; breaking changes are called out in the release notes.
   out / not sold in the US), Galaxy Watch8 40mm (superseded),
   Garmin Instinct 3 (held for a later batch) — all stay
   list-only.
+- Expansion batch 32 (DECISIONS 054, continuous expansion per
+  DECISIONS 027): eval set 180 → 185 models, verified identifiers
+  88 → 91 (3 of 5 new identifiers verified). New: Garmin Instinct
+  3 AMOLED 45mm, Black with Black Band (010-02936-00, UPC
+  753759339487 — distributor feed row + DID Electrical EAN agree;
+  $349.99 at Garmin direct, $332.99 in stock at Abt — the held
+  Garmin wearable from batch 31), Bose SoundLink Flex (2nd Gen),
+  Black (887612-0100, UPC 017817852470 — B&H + Volza import
+  records agree; $159.00 at Bose direct, Abt and B&H — the first
+  Bose speaker in the set), Bose SoundLink Plus, Black
+  (894040-0100, UPC 017817857932 — B&H + manuals.plus agree;
+  $269.00 at Bose direct, $179.00 in stock at B&H and Abt on a
+  rebate ending Nov 8 — the new mid-tier speaker, launched Jun
+  2025), Keychron K2 HE Special Edition, Black, Nebula Switch V1
+  (K2H-F1, identifiers pending — EAN conflict: Keychron store
+  JSON 4895248889175 vs B&H 4895248889199, no tiebreak; $139.99
+  at Keychron direct, available — the 75% Hall Effect board, a
+  2025 CES Innovation Award winner), Dell UltraSharp 27 4K
+  Thunderbolt Hub Monitor U2725QE (MPN 95WRG, UPC pending —
+  candidate 884116484578 is B&H-only; $849.99 at Dell direct,
+  $649.99 at B&H and Adorama — the 27-inch sibling of the set's
+  U3225QE). Garmin grows 7 → 8 entries, Bose 4 → 6, Keychron
+  6 → 7, Dell 4 → 5. Not added: Garmin Dash Cam 67W (verified on
+  its own terms — Garmin direct $259.99, UPC 753759269395 — but
+  a dash cam is a camera and DECISIONS 016 defers cameras to the
+  category-expansion phase, so no new category is opened
+  mid-Phase-1), ASUS ProArt Display PA279CRV (no ASUS-direct
+  feed row, street rows thin) — both stay list-only.
 - Expansion batch 25 (DECISIONS 047, continuous expansion per
   DECISIONS 027): eval set 145 → 150 models, verified identifiers
   stay 74 (0 of 5 new identifiers verified — all pending). New:

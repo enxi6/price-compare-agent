@@ -4961,6 +4961,171 @@ EVAL_SET: list[EvalProduct] = [
         "850 is the compact mid-tier Edge.",
         status="verified",
     ),
+    EvalProduct(
+        key="garmin-instinct-3-amoled-45mm-black",
+        brand="Garmin",
+        model="Instinct 3",
+        variant="AMOLED 45mm, Black with Black Band (010-02936-00)",
+        category="wearables",
+        identifiers={"UPC": "753759339487", "MPN": "010-02936-00"},
+        identifier_sources={
+            "UPC": "Distributor row in the Meta Catalog feed (Mfg. "
+            "Number 010-02936-00, UPC 753759339487) + DID Electrical "
+            "(EAN 0753759339487 — the EAN-13 form of the same code) "
+            "agree"
+        },
+        notes="Garmin direct $349.99 (US store page JSON-LD read fresh "
+        "2026-11-06 21:48 UTC; the page read states no availability — "
+        "stock unconfirmed at Garmin direct); Abt $332.99 (page read "
+        "fresh 2026-11-06 21:50 UTC, JSON-LD InStock, Comp. Value "
+        "$349.99, Model 010-02936-00); The GPS Store $349.99 (feed "
+        "authorized_retailer row — suspected; not page-verified). "
+        "45mm AMOLED GPS smartwatch, 1.2-inch display, built-in LED "
+        "flashlight, up to 18 days smartwatch battery, launched Jan "
+        "2025. The feed's $199.99 brand_direct row is a UK shop "
+        "(zenithwellness.co.uk) — non-US, excluded (DECISIONS 021); "
+        "the Kohl's $349.99 Neotropic row is a different colorway. "
+        "Not the Solar 45mm Black (010-02934-00, $349.99) or the "
+        "AMOLED 50mm Black (010-03020-00, $399.99) or the Solar 50mm "
+        "Black (010-02935-00, $399.99) — different SKUs. Distinct "
+        "from the set's Forerunner 165 and Forerunner 570 — the "
+        "Instinct 3 is Garmin's rugged outdoor watch, not a running "
+        "watch.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="bose-soundlink-flex-2nd-gen-black",
+        brand="Bose",
+        model="SoundLink Flex (2nd Gen)",
+        variant="Black (887612-0100)",
+        category="speakers",
+        identifiers={"UPC": "017817852470", "MPN": "887612-0100"},
+        identifier_sources={
+            "UPC": "B&H Photo (887612-0100, Black, UPC 017817852470, "
+            "$159.00 InStock, page read 2026-11-06 21:52 UTC) + "
+            "Volza Peru import records (Bose 887612-0100, SPKR "
+            "SOUNDLINK FLEX BLACK, ITEM NUMBER 017817852470, "
+            "filings Dec 2024–Mar 2025) agree. An Amazon US listing "
+            "agreeing on the same code was read but not cited and "
+            "not used (no-Amazon rule)."
+        },
+        notes="Bose direct $159.00 (feed brand_direct rows — "
+        "suspected; the bose.com page text read 2026-11-06 21:49 UTC "
+        "shows no price); Abt $159.00 (page read fresh 2026-11-06 "
+        "21:50 UTC, JSON-LD InStock, Model 887612-0100); B&H $159.00 "
+        "(page read fresh 2026-11-06 21:52 UTC, JSON-LD InStock). "
+        "Portable Bluetooth speaker, IP67, Bluetooth 5.3, up to 12 "
+        "hours battery, PositionIQ, launched Sep 2024. Not the Blue "
+        "Dusk (887612-0200, UPC 017817852487) or the Sandstone "
+        "(887612-0300, UPC 017817852616) or the Alpine Sage "
+        "(887612-0400, UPC 017817852494) — different SKUs. Distinct "
+        "from the set's Bose headphones and earbuds — the Flex is "
+        "Bose's portable speaker line, and the first Bose speaker in "
+        "the set.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="bose-soundlink-plus-black",
+        brand="Bose",
+        model="SoundLink Plus",
+        variant="Black (894040-0100)",
+        category="speakers",
+        identifiers={"UPC": "017817857932", "MPN": "894040-0100"},
+        identifier_sources={
+            "UPC": "B&H Photo (894040-0100, Bose Black, UPC "
+            "017817857932, page read 2026-11-06 21:52 UTC) + "
+            "manuals.plus spec table (Model Number 894040-0100, "
+            "UPC 017817857932) agree. An Amazon US listing agreeing "
+            "on the same code was read but not cited and not used "
+            "(no-Amazon rule)."
+        },
+        notes="Bose direct $269.00 (feed brand_direct row — suspected; "
+        "not page-read this round); B&H $179.00 (page read fresh "
+        "2026-11-06 21:52 UTC, JSON-LD InStock, Holiday Savings "
+        "$90 off $269.00); Abt $179.00 (page read fresh 2026-11-06 "
+        "21:52 UTC, JSON-LD InStock, manufacturer rebate ends "
+        "11/08/2026, Comp. Value $269.00). Note: the $179.00 is a "
+        "sale/rebate price ending Nov 8 — re-check next refresh. "
+        "Portable Bluetooth speaker, IP67, Bluetooth 5.4, up to 20 "
+        "hours battery, USB-C power-bank output, launched Jun 2025. "
+        "Not the Blue Dusk or Sunset Peach — different SKUs. "
+        "Distinct from the set's SoundLink Flex (2nd Gen) — the "
+        "Plus sits between the Flex and the Max (bigger driver, "
+        "20-hour battery, power-bank function).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="keychron-k2-he-special-black",
+        brand="Keychron",
+        model="K2 HE",
+        variant="Special Edition, Black, Gateron Double-Rail Magnetic "
+        "Nebula Switch Version 1 (K2H-F1)",
+        category="keyboards",
+        identifiers={},
+        identifier_sources={},
+        notes="Identifiers PENDING — EAN conflict, no tiebreak: the "
+        "Keychron official store public product JSON "
+        "(browser-verified 2026-11-06) gives the Special Edition / "
+        "Black / Nebula Switch V1 variant (SKU K2H-F1, price "
+        "$139.99, available: true) barcode 4895248889175, while B&H "
+        "Photo lists the same SKU K2H-F1 with EAN 4895248889199. No "
+        "third source surfaced for either code, and neither code "
+        "appears in the other's source, so identifiers stay empty "
+        "per the strict two-source rule — re-check next refresh. "
+        "Not copied: 4895248889175 or 4895248889199 (conflicted "
+        "candidates). Quotes (3): Keychron direct $139.99 (official "
+        "store JSON, available: true; 75% ANSI, QMK, Hall Effect, "
+        "2.4 GHz / Bluetooth 5.2 / USB-C, 4000 mAh, up to 110 "
+        "hours); B&H $139.99 (search-index page read, Temporarily "
+        "Out of Stock, expected 7–14 business days); Best Buy "
+        "$129.99 (feed authorized_retailer row — suspected; the "
+        "listing title names no edition or switch version and is "
+        "most likely the Standard version, a different variant). "
+        "Excluded: the Best Buy $199.99 Concrete Edition row and "
+        "the feed's Newegg $255.82 / $272.75 rows (third-party "
+        "inflated prices). Not the Standard Version Black "
+        "(K2H-J1, $129.99, currently unavailable at Keychron) or "
+        "the Special Edition White (K2H-Q1) or the Resin Edition "
+        "($199.99) — different variants. Distinct from the set's K8 "
+        "HE Special (K8H-F1) — the K2 HE is the 75% Hall Effect "
+        "board; and from the set's K8 lines and Q1 — the K2 HE won "
+        "a 2025 CES Innovation Award.",
+        status="pending",
+    ),
+    EvalProduct(
+        key="dell-ultrasharp-27-4k-thunderbolt-hub-monitor-u2725qe",
+        brand="Dell",
+        model="UltraSharp 27 4K Thunderbolt Hub Monitor",
+        variant="Silver (U2725QE, MPN 95WRG)",
+        category="monitors",
+        identifiers={},
+        identifier_sources={},
+        notes="Identifiers PENDING: the candidate UPC 884116484578 "
+        "appears only at B&H Photo (U2725QE spec page, $649.99 "
+        "InStock) — the only other hit, Tanotis, reproduces B&H's "
+        "spec text verbatim (same data lineage, not independent), "
+        "and no second independent source surfaced, so identifiers "
+        "stay empty per the strict two-source rule — same call as "
+        "batch 30's Watch9 and batch 31's Tab S11 Ultra. Not "
+        "copied: 884116484578 (single-source candidate). MPN 95WRG "
+        "confirmed by the Dell US page (Manufacturer Part Number "
+        "95WRG); SHI lists Mfr Part # DELL-U2725QE. Quotes (3): "
+        "Dell direct $849.99 (feed row — suspected; the dell.com "
+        "page read 2026-11-06 21:50 UTC confirms the model and "
+        "specs but shows no price in text); B&H $649.99 (page read "
+        "fresh 2026-11-06 21:52 UTC, JSON-LD InStock, was $799.99); "
+        "Adorama $649.99 (search-index page read, BackOrder). Note "
+        "the wide spread: Dell direct $849.99 vs street $649.99 — "
+        "re-check the Dell direct price next refresh. 27-inch 4K "
+        "UHD IPS Black, 120Hz, Thunderbolt 4 hub with up to 140W "
+        "power delivery, 99% DCI-P3, DisplayHDR 600, KVM, launched "
+        "early 2025 (MSRP $749 per trade coverage; SHI lists MSRP "
+        "$1,062.49). Distinct from the set's UltraSharp 32 4K "
+        "U3225QE — the U2725QE is the 27-inch sibling; and from the "
+        "set's Dell 27 Plus 4K S2725QS — the UltraSharp is the "
+        "Thunderbolt-hub pro line.",
+        status="pending",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:

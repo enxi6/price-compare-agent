@@ -2953,3 +2953,112 @@ written as "superseded by" with the original text kept.
   (five Lenovo sale prices after Early Black Friday ends Nov 8;
   Tab Plus Gen 2 $469.99; Idea Tab Pro Gen 2 bundle contents;
   five pending Lenovo UPCs).
+
+## 054 (2026-11-06): Expansion batch 32 — 180 → 185 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models (BUILD_LOG 071), no per-batch user approval
+  needed (DECISIONS 027): Garmin Instinct 3 AMOLED 45mm, Black
+  with Black Band (010-02936-00, UPC 753759339487 — verified),
+  Bose SoundLink Flex (2nd Gen), Black (887612-0100, UPC
+  017817852470 — verified), Bose SoundLink Plus, Black
+  (894040-0100, UPC 017817857932 — verified), Keychron K2 HE
+  Special Edition, Black, Gateron Double-Rail Magnetic Nebula
+  Switch Version 1 (K2H-F1, identifiers pending — EAN conflict)
+  and Dell UltraSharp 27 4K Thunderbolt Hub Monitor U2725QE
+  (MPN 95WRG, UPC pending — B&H-only candidate). One variant
+  pinned per model (DECISIONS 015); 3 of 5 identifiers verified,
+  2 stay pending. Verified-identifier count rises 88 → 91.
+  Garmin grows 7 → 8 entries, Bose 4 → 6, Keychron 6 → 7, Dell
+  4 → 5; no new brand enters the set. Category counts:
+  "wearables" 11 → 12, "speakers" 2 → 4, "keyboards" 21 → 22,
+  "monitors" 15 → 16. No new category is opened — the Garmin
+  dash cam was skipped for exactly that reason (see below). No
+  phones and no TVs were added (DECISIONS 016).
+- Why these 5: the Instinct 3 AMOLED 45mm is the held Garmin
+  wearable from batch 31's list-only pool, pinned to the base
+  Black config ($349.99, in stock at Abt, Garmin direct list);
+  the two Bose speakers are the first Bose speakers in the set —
+  the SoundLink Flex (2nd Gen) is the mainstream portable
+  ($159.00 everywhere) and the SoundLink Plus is the new mid-tier
+  launched Jun 2025 ($269.00 list, $179.00 on sale); the K2 HE
+  is Keychron's 75% Hall Effect board and a 2025 CES Innovation
+  Award winner ($139.99, in stock at Keychron direct); the
+  U2725QE is the 27-inch sibling of the set's UltraSharp 32 4K
+  U3225QE ($649.99 street, $849.99 at Dell direct).
+- What was corrected along the way: the Garmin Dash Cam 67W was
+  verified on its own terms (Garmin direct $259.99, UPC
+  753759269395 / MPN 010-02505-05, Best Buy $279.99 InStock) but
+  was NOT added — a dash cam is a camera, and DECISIONS 016
+  defers cameras to the category-expansion phase, so adding it
+  would open a new category mid-Phase-1; it stays list-only for
+  that phase, as do the Dash Cam X-series (X110/X210/X310). The
+  SoundLink Plus Black MPN is 894040-0100, not 884365-0100 (an
+  early guess, corrected by search). The feed's Instinct 3
+  $199.99 brand_direct row is a UK shop (zenithwellness.co.uk)
+  — non-US, excluded (DECISIONS 021); the Kohl's $349.99
+  Neotropic row is a different colorway. The K2 HE pin is the
+  Special Edition V1 ($139.99, available: true at Keychron
+  direct), not the Standard Version ($129.99, currently
+  unavailable at Keychron) — the feed's $139.99 row is the
+  Special Edition, confirmed by variant id 41846762930265. The
+  U2725QE's Dell direct $849.99 (feed row) sits well above the
+  $649.99 street at B&H and Adorama — flagged for re-check, not
+  treated as the street price.
+- Variant pinning, recorded explicitly: Instinct 3 pins AMOLED
+  45mm Black with Black Band (010-02936-00) — the base config;
+  the Solar 45mm Black (010-02934-00, $349.99), AMOLED 50mm
+  Black (010-03020-00, $399.99) and Solar 50mm Black
+  (010-02935-00, $399.99) are different SKUs. SoundLink Flex
+  (2nd Gen) pins Black (887612-0100); Blue Dusk (887612-0200,
+  UPC 017817852487), Sandstone (887612-0300, UPC 017817852616)
+  and Alpine Sage (887612-0400, UPC 017817852494) are different
+  SKUs. SoundLink Plus pins Black (894040-0100); Blue Dusk and
+  Sunset Peach are different SKUs. K2 HE pins Special Edition /
+  Black / Nebula Switch V1 (K2H-F1, $139.99); the Standard
+  Version Black (K2H-J1, $129.99), Special Edition White
+  (K2H-Q1), Resin Edition ($199.99) and the V2-switch variants
+  (K2H-J1G / K2H-F1G) are different SKUs. U2725QE pins Silver
+  (U2725QE, MPN 95WRG) — a single SKU with no color or size
+  variants.
+- What does NOT change: the existing 180 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6
+  Pro untouched, batches 1–31 entries untouched). No other
+  snapshot file is rewritten. No Amazon touch in the snapshot:
+  no Amazon quotes, no Amazon-sourced prices or identifiers
+  (Amazon US listings agreeing on the Flex 2nd Gen UPC
+  017817852470 and the SoundLink Plus UPC 017817857932 were read
+  but not cited and not used). The daily refresh cron still says
+  "57 models" in its body and needs a count update to 185 on the
+  next edit (parent owns the cron; not touched here).
+- Revisit: re-check the pending K2 HE EAN conflict (Keychron
+  store JSON 4895248889175 vs B&H 4895248889199 for SKU K2H-F1 —
+  needs a tiebreak source); re-check the pending U2725QE UPC
+  (candidate 884116484578 is B&H-only, needs a second
+  independent source); re-check the SoundLink Plus $179.00
+  sale/rebate price after the rebate ends Nov 8; re-check the
+  U2725QE Dell direct $849.99 vs the $649.99 street; confirm
+  stock on the Garmin direct Instinct 3 page (JSON-LD read
+  states no availability); the remaining Garmin candidates stay
+  list-only for later batches (Instinct 3 Solar 45mm 010-02934-00
+  with UPC 753759339500 from a distributor row, AMOLED 50mm
+  010-03020-00, Solar 50mm 010-02935-00; Garmin dash cams —
+  blocked by DECISIONS 016 until the category-expansion phase);
+  the ASUS ProArt Display PA279CRV stays list-only (feed has no
+  ASUS-direct row, street rows thin); the batch 31 revisits carry
+  over unchanged (pending Tab S11 Ultra UPC; three risen tablet
+  prices; Garmin direct stock; two pending batch 30 UPCs) and
+  the batch 30 revisits carry over unchanged (Watch8 Classic
+  $499.99 price vs the Sep 24 $419.99 report; Tab S10 FE $549.99
+  price vs the $499.99 MSRP list) and the batch 29 revisits carry
+  over unchanged (four Lenovo sale prices after the Early Black
+  Friday event ends Nov 8; four pending Lenovo/ASUS UPCs) and
+  the batch 28 revisits carry over unchanged (fēnix 9 UPC; Venu
+  4 Dell $499.99 sale after Black Friday Nov 27; vívoactive 6
+  stock; Forerunner 970 UPC tiebreak; Edge 1060 UPC) and the
+  batch 27 revisits carry over unchanged (Series X stock;
+  Wireless Headset $110.99; Surface Laptop $1,299.99 sale after
+  Black Friday; three pending Microsoft identifiers; remaining
+  Microsoft candidates list-only) and the batch 26 revisits carry
+  over unchanged (five Lenovo sale prices after Early Black
+  Friday ends Nov 8; Tab Plus Gen 2 $469.99; Idea Tab Pro Gen 2
+  bundle contents; five pending Lenovo UPCs).
