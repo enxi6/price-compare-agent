@@ -357,8 +357,8 @@ EVAL_SET: list[EvalProduct] = [
                 model="MacBook Pro 14-inch (M6, 2026)",
                 variant="M6, 16GB/1TB, Space Black (MHWT4LL/A)",
                 category="laptops",
-                notes="Current generation announced 2026-10-27; pre-order, "
-                "ships 2026-11-06. Part number MHWT4LL/A confirmed by "
+                notes="Current generation announced 2026-10-27; in stock from launch day 2026-11-06 (Apple + Best Buy, $1,999). "
+                "Part number MHWT4LL/A confirmed by "
                 "iClarified order number + Best Buy pre-order page "
                 "(SKU 6565882, $1,999). UPC not yet published: stays pending "
                 "(identifiers empty, never matched) until a retailer "

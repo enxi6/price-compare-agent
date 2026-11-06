@@ -921,3 +921,11 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   standard.
 - Tests: 19 passed (eval + full suite re-run on the new
   snapshot; no code changed).
+
+## 035 (2026-11-06): Launch-day browser check — MacBook Pro 14 M6 in stock; B&H has no MX Master 4 Graphite
+
+- MacBook Pro 14 M6 base (MHWT4LL/A, 16GB/1TB, Space Black), launch day 2026-11-06, read-only browser check (no cart, no sign-in): Apple US store $1,999.00, in stock — "Pick up Today at Apple South Coast Plaza", 2-hr delivery from store $9, free delivery Mon Nov 9; no "pre-order" wording. Best Buy $1,999.00, in stock — "Pickup FREE Today" (Orange, "Only 2 left!"), "Shipping FREE Tomorrow"; Model MHWT4LL/A, SKU 6565882; a "Free $100 gift card included" offer does not change the $1,999 price. Catalog note fixed in this commit: "pre-order, ships 2026-11-06" → "in stock from launch day 2026-11-06 (Apple + Best Buy, $1,999)" (the 034 refresh had left it stale per its limits).
+- Apple UPC: still not published — buy page, specs page, and site search for MHWT4LL/A show no part number or UPC. The 2026-11-07 10:00 PT UPC recheck cron stands. Availability wording is location-specific (Apple 92701 / South Coast Plaza; Best Buy Orange); bag/checkout orderability was not verified (read-only stop).
+- MX Master 4 Graphite standard (910-007558, UPC 097855207623): B&H does NOT list it — part-number search, UPC search, name search, and the family variant selector all come back without it (Black 910-007560 $119.99 in stock and Pale Gray 910-007559 are listed; the "for Business (Graphite)" 910-007616 is a different part). B&H is the second retailer ruled out after Best Buy (BUILD_LOG 033). Only Logitech direct $119.99 stands; not listing at B&H does not prove unavailability everywhere.
+- Merchant-page rechecks flagged by the 034 refresh (FocusCamera WF-1000XM5 $199.99, NFM Kindle $196.99, Newegg MX Keys S $117) were sent to a separate browser pass the same day; results to be recorded when they return.
+- Tests: 19 passed (re-run after the catalog note edit; no code changed).
