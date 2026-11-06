@@ -1672,3 +1672,131 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (snapshot offers carry no identifier — the rule working, not a
   bug). Tests: 19 passed (test_snapshot_eval counts updated 62 →
   67 / 55 → 58 for the approved expansion).
+
+## 047 — 2026-11-06: Expansion batch 9 — 67 → 72 models (DECISIONS 031)
+
+- Membership check (against the 67-model set, by name, MPN and UPC —
+  no matches, all 5 are new lines):
+  - Mac Studio M5 Max 36GB/512GB Silver (MHL64LL/A, UPC
+    195951078564) vs apple-mac-mini-m6 (MHQK4LL/A, UPC
+    195951021089), apple-imac-m6-24-10core-blue (MH094LL/A, UPC
+    195950838091), apple-macbook-pro-14-m6 (MHWT4LL/A),
+    apple-macbook-air-13-m5, apple-macbook-air-15-m5,
+    apple-macbook-neo-13-256gb-blush (MHFH4LL/A): no Mac Studio
+    in the set at all; distinct desktop line, different MPN and
+    UPC — not a duplicate. The M4 Max (MU963LL/A), M3 Ultra
+    (MU973LL/A), M2 Max/Ultra rows in the feed are outgoing
+    generations and were not added.
+  - ULT WEAR Black (WHULT900N/B, UPC 027242928688) vs
+    sony-wh1000xm5-black (WH1000XM5/B, UPC 027242923232),
+    sony-wh1000xm6-black (WH1000XM6/B, UPC 027242930698),
+    sony-wh1000xm4c-black (WH1000XM4C/B): distinct ULT Power
+    Sound bass line (WH-ULT900N, 2024), different model number
+    and UPC — not a duplicate.
+  - PULSE Explore Midnight Black (retail MPN 1000044170, CFI-ZWE1)
+    vs sony-pulse-elite-midnight-black (retail MPN 1000044173),
+    sony-playstation-portal (1000041319, UPC 711719579779),
+    sony-dualsense-white, sony-dualsense-edge-black-white: no
+    PULSE earbuds in the set; the Elite is the over-ear headset
+    (different MPN), the Explore is the earbuds line — not a
+    duplicate. The PULSE 3D (CFI-ZWH1) is a different headset and
+    was not added.
+  - Wave Keys Graphite (920-011898) vs logitech-ergo-k860-graphite
+    (920-009166, UPC 097855151667), logitech-mx-keys-s-pale-grey
+    (920-011559), logitech-mx-keys-mini-black (920-010475),
+    logitech-mx-mechanical-tactile-quiet-graphite (920-010547):
+    no Wave Keys in the set; distinct wavy-keyframe ergonomic
+    keyboard, different MPN — not a duplicate. The MK670 combo
+    (920-012059), Wave Keys for Business (920-012058) and Wave
+    Keys for Mac (920-012402) are different SKUs and were not
+    added.
+  - Sport Open Earbuds Black (901149-0010) vs
+    bose-qc-earbuds-black (888507-0100, UPC 017817853460),
+    bose-qc-ultra-2-black (890101-0100, UPC 017817859585),
+    bose-ultra-open-earbuds-2nd-gen-black (897806-0010, UPC
+    017817862714): distinct 2026 clip-on sport line, different
+    MPN — not a duplicate. The original 2021 Sport Open Earbuds
+    (857628-0010, UPC 017817826211) are a different product and
+    were not added.
+- Apple Mac Studio, M5 Max 18-core CPU/32-core GPU, 36GB/512GB,
+  Silver (MHL64LL/A) — identifiers VERIFIED: UPC 195951078564
+  (B&H US spec page + Adorama US UPC Codes list agree), MPN
+  MHL64LL/A (Apple US buy page + B&H + Best Buy US Model +
+  EveryMac agree; Mac17,14, A3545). Quotes (3): Apple direct
+  $2,499.00 (JSON-LD price; stock not stated in page-text crawl),
+  B&H $2,499.00 (page-verified In Stock, JSON-LD InStock), Best
+  Buy $2,499.00 (Model MHL64LL/A, SKU 6566932, sold by Best Buy).
+  Adorama $2,399.00 also seen. The B&H $2,299 sale price reported
+  by MacPrices on Oct 14/28 is gone — the B&H page today shows
+  $2,499.00. Excluded: M5 Ultra ($5,499, MHL74LL/A), 40-core GPU
+  tiers (48GB/1TB $3,399 Z1U4000E9), M4 Max/M3 Ultra/M2
+  marketplace rows, the feed's MU963LL/A $2,499 row (old MPN,
+  new price), UK MHL64B/A (UPC 195951078380) and AU MHL64X/A
+  (UPC 195951078724) regional variants.
+- Sony ULT WEAR, Black (WHULT900N/B) — identifiers VERIFIED: UPC
+  027242928688 (Amazon.com WHULT900NB.UC + Simcoe AV Canada
+  authorized-dealer barcode + ShopCGX US Style agree), MPN
+  WHULT900N/B (Best Buy Model + Crutchfield MFR + BuyDig agree).
+  Quotes (3): Best Buy $148.00 (SKU 6576179, Holiday Deal, comp
+  value $248.00), Crutchfield $148.00 (In Stock, Item 158ULT900B,
+  $100 off $248.00), BuyDig $148.00 (WHULT900N/B). Correction vs
+  the 2026-10-31 candidate price: $249.99 is the list price; the
+  current street price is $148 at all three retailers. Excluded:
+  headphone+adapter/stand/warranty bundles ($169.99-$386),
+  Target gSport case bundle ($249.99, third-party seller),
+  Coolblue NL $106 (non-US), the $25 copy row, Macy's SD-card
+  bundle ($386), White UPC 027242929449.
+- Sony PULSE Explore Wireless Earbuds, Midnight Black (retail MPN
+  1000044170, CFI-ZWE1) — identifiers PENDING: MPN 1000044170
+  confirmed (Best Buy Model + ShopCGX + P.C. Richard MODEL + Big
+  Apple Buddy agree) but the UPC was not verified from a
+  non-Amazon US source. The only US UPC seen, 711719587972,
+  appears on Amazon listings (ASIN B0DSQSX7FB) with no second
+  source; the UK/AU barcode 711719590231 (HMV + Gamesmen) is a
+  different regional code and was not copied. Quotes (3): Best
+  Buy $149.99 (page-verified JSON-LD InStock, Model 1000044170,
+  SKU 6614843, sold by Best Buy), Target $149.99 (feed row,
+  A-94472835), GameStop $149.99 (feed row). ShopCGX $149.99
+  (feed row, Model 1000044170, InStock) also confirmed. P.C.
+  Richard $199.99 OutOfStock is the list price. Excluded: White
+  Explore, PULSE Elite (1000044173), PULSE 3D (CFI-ZWH1),
+  PlayStation Link USB adapter ($24.99-$30), the $114.99
+  secret-castle row (unverified seller).
+- Logitech Wave Keys, Graphite (920-011898) — identifiers PENDING:
+  MPN 920-011898 confirmed (Amazon.com US Mfr Part Number +
+  Ryans Graphite agree) but the UPC 097855191533 appears only on
+  that Amazon listing, with no second US source. Quotes (3):
+  Logitech direct $69.99 (page-verified JSON-LD InStock; page
+  default color Off-white, price uniform $69.99 across colors),
+  Lenovo $69.99 (feed row, 'Wave Keys Wireless Ergonomic
+  Keyboard - Graphite' — suspected, no identifier in the feed
+  row), Newegg $69.99 (feed row — suspected). Correction vs the
+  2026-10-31 candidate note: $69.99 is the current price (the
+  2023 launch price was $59.99 per Logitech's blog). Excluded:
+  MK670 combo 920-012059 ($89.99), Wave Keys for Business
+  920-012058 ($76.99-$139.99), Wave Keys for Mac 920-012402,
+  Sand 920-013925 2026 refresh (B&H $69.99, Staples $77.27),
+  Wave Keys + Lift combos ($119.99), Rose / Off-White (Off-White
+  is 920-012275), US International layout 920-012304 (EAN
+  5099206117471), AU Graphite 920-012281, 920-013269 (a
+  single-source roundup figure conflicting with 920-011898),
+  the $50.97 / $81.10 / $86 Newegg rows (unverified variants).
+- Bose Sport Open Earbuds, Black (901149-0010) — identifiers
+  PENDING: MPN 901149-0010 confirmed (Best Buy Model + Abt +
+  The Good Guys AU + BuyDig feed agree) but no UPC was found for
+  the Black variant in any US source. B&H publishes only the
+  Eucalyptus Green UPC 017817865449, which was not copied across
+  colors. Quotes (3): Best Buy $199.00 (page-verified JSON-LD
+  InStock, Model 901149-0010, SKU 6688450, sold by Best Buy),
+  Abt $199 (page-verified price), Lenovo $199 (feed row,
+  brand_direct — suspected, no identifier in the feed row).
+  Bose direct price was not shown in the bose.com page text this
+  batch. Excluded: the original 2021 Sport Open Earbuds
+  857628-0010 (UPC 017817826211, ASIN B08VRLZGMF — a different
+  in-ear product), Eucalyptus Green 901149-0030 / White Smoke
+  901149-0020, Best Buy charger bundle ($202.99), BuyDig $204.
+- Eval on the new snapshot: 72 models, 60 verified identifiers, 5
+  with quotes, 15 total quotes, 0 identifier-matched, 15 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 67 →
+  72 / 58 → 60 for the approved expansion).

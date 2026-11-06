@@ -917,3 +917,69 @@ written as "superseded by" with the original text kept.
   confirmed in the page text); the K8 HE has a single quote
   (Keychron direct — the line is sold only through Keychron's own
   store).
+
+## 031 (2026-11-06): Expansion batch 9 — 67 → 72 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models from the remaining brand-sweep candidates
+  (BUILD_LOG 020/022/023/024/025), no per-batch user approval needed
+  (DECISIONS 027): Mac Studio M5 Max 18-core/32-core 36GB/512GB
+  Silver (MHL64LL/A, UPC 195951078564), Sony ULT WEAR Black
+  (WHULT900N/B, UPC 027242928688), Sony PULSE Explore Midnight Black
+  (retail MPN 1000044170, UPC pending), Logitech Wave Keys Graphite
+  (920-011898, UPC pending), Bose Sport Open Earbuds Black
+  (901149-0010, UPC pending). One variant pinned per model
+  (DECISIONS 015); 2 of 5 identifiers verified, PULSE Explore,
+  Wave Keys and Sport Open stay pending (UPC not verified from a
+  non-Amazon US source for any of the three — DualSense Edge / DEX
+  / Neo / PULSE Elite precedent, not a reason to hold the batch).
+- Why these 5: they are the next un-added mainstream lines from the
+  five brand sweeps, each distinct from the set (first Mac Studio in
+  the set, and the current M5 Max generation; ULT WEAR is Sony's
+  bass-first ULT line, not a 1000X flagship; PULSE Explore is the
+  first PlayStation earbuds line, the Elite's sibling; Wave Keys is
+  the first wavy-keyframe ergonomic keyboard vs the K860 split
+  keyboard; Sport Open is Bose's new 2026 clip-on sport line, not
+  the QC Earbuds or the Ultra Open 2nd Gen). All five are in stock
+  new in the US on 2026-11-06 (brand-direct pages or InStock
+  JSON-LD), except the Apple direct Mac Studio price row (price-only,
+  stock not stated in the page text) and the Bose direct price,
+  which was not shown in the bose.com page text this batch.
+- What was corrected along the way: the current Mac Studio is the
+  M5 Max generation (announced 2026-08-25, available 2026-09-22),
+  not the 2025 M4 Max — the M4 Max MU963LL/A launched at $1,999
+  and is discontinued, and the feed's Apple row pairing MU963LL/A
+  with $2,499 mixes the old MPN with the new price and was
+  excluded; the ULT WEAR candidate price $249.99 is the list price,
+  the current street price is $148.00 at three retailers (Black
+  Friday deal, Best Buy deal ends Nov 8); the PULSE Explore
+  candidate price $149 is $149.99, a sale price off the $199.99
+  list; the Wave Keys candidate price $69.99 is confirmed current
+  (the 2023 launch price was $59.99); the Bose Sport Open Earbuds
+  are a NEW 2026 product, not the 2021 original — the 2021 Sport
+  Open Earbuds 857628-0010 (UPC 017817826211) are a different
+  in-ear product and were excluded. The Wave Keys 920-012059 is
+  the MK670 keyboard+mouse combo, not the standalone keyboard;
+  the B&H $69.99 Wave Keys row is the 2026 Sand refresh
+  920-013925, a different colorway from the pinned Graphite.
+  The PULSE Explore is NOT the PULSE Elite (1000044173, over-ear
+  headset) and is NOT CFI-ZWH1 (the PULSE 3D headset); its
+  hardware model is CFI-ZWE1.
+- What does NOT change: the existing 67 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro untouched,
+  batches 1–8 entries untouched). No other snapshot file is rewritten.
+  No Amazon touch. The daily refresh cron still says "57 models" in
+  its body and needs a count update to 72 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: PULSE Explore Midnight Black UPC stays pending until a US
+  retailer spec page or box barcode settles it (the only US UPC
+  seen, 711719587972, is Amazon-only; the UK/AU barcode
+  711719590231 is a different regional code and must not be copied);
+  Wave Keys Graphite UPC stays pending (the only UPC found,
+  097855191533, is Amazon-only; the US International layout
+  920-012304 is a different layout and was not added); Sport Open
+  Black UPC stays pending (B&H publishes only the Eucalyptus Green
+  UPC 017817865449, which must not be copied across colors); the
+  Bose direct price should be re-checked on the next refresh
+  (bose.com page text showed no price this batch); the ULT WEAR
+  $148.00 street price is a Black Friday deal and should be
+  re-checked after Nov 8.

@@ -11,6 +11,24 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 9 (DECISIONS 031, continuous expansion per
+  DECISIONS 027): eval set 67 → 72 models, 58 → 60 verified
+  identifiers. New: Mac Studio M5 Max 36GB/512GB Silver (MHL64LL/A,
+  UPC 195951078564 — the current Mac Studio is the M5 Max
+  generation, not the M4 Max MU963LL/A at $1,999),
+  Sony ULT WEAR Black (WHULT900N/B, UPC 027242928688; list $249.99,
+  current street price $148.00 at three retailers), Sony PULSE
+  Explore Midnight Black (retail MPN 1000044170, UPC pending — the
+  only US UPC seen, 711719587972, is Amazon-only), Logitech Wave
+  Keys Graphite (920-011898, UPC pending — 920-012059 is the MK670
+  combo, not the standalone keyboard), Bose Sport Open Earbuds
+  Black (901149-0010, UPC pending — a new 2026 product, not the
+  2021 original 857628-0010). New snapshot
+  `data/eval_snapshots_batch9_2026-11-06.json` holds 15 quotes
+  across the 5 models (3 each). DECISIONS 021 applied to every
+  quote: no marketplace/third-party rows, no non-US rows, no
+  Amazon.
+
 - Expansion batch 8 (DECISIONS 030, continuous expansion per
   DECISIONS 027): eval set 62 → 67 models, 55 → 58 verified
   identifiers. New: iMac 24-inch M6 10-core Blue (MH094LL/A, UPC

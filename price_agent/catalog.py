@@ -1401,6 +1401,177 @@ EVAL_SET: list[EvalProduct] = [
         "and K8 Ultra 8K as successors.",
         status="verified",
     ),
+    # --- Expansion batch 9 (2026-11-06, DECISIONS 031) ---
+    EvalProduct(
+        key="apple-mac-studio-m5-max-36gb-512gb-silver",
+        brand="Apple",
+        model="Mac Studio (M5 Max, 2026)",
+        variant="M5 Max 18-core CPU/32-core GPU, 36GB/512GB, Silver (MHL64LL/A)",
+        category="desktops",
+        identifiers={"UPC": "195951078564", "MPN": "MHL64LL/A"},
+        identifier_sources={
+            "UPC": "B&H Photo US spec page for the exact MPN "
+            "(apple_mhl64ll_a, 18-core/32-core/36GB/512GB, UPC "
+            "195951078564) + Adorama US spec page UPC Codes list "
+            "(M5 Max 18-core/32-core 36GB 512GB: 195951078564) "
+            "agree. MPN MHL64LL/A corroborated by Apple US buy "
+            "page + Best Buy US Model MHL64LL/A (SKU 6566932) + "
+            "EveryMac (Mac17,14, A3545). The neighbouring UPC "
+            "195951078724 is the MHL64X/A (AU/NZ) variant and "
+            "195951078380 is the UK MHL64B/A variant; both were "
+            "excluded."
+        },
+        notes="Apple direct $2,499.00 (US buy page MHL64LL/A, "
+        "JSON-LD price; stock not stated in the page-text "
+        "crawl); B&H $2,499.00 (page-verified In Stock, JSON-LD "
+        "InStock); Best Buy $2,499.00 (Model MHL64LL/A, SKU "
+        "6566932, sold by Best Buy). Adorama $2,399.00 also "
+        "seen. Correction vs the 2026-10-31 candidate note: "
+        "the current Mac Studio is the M5 Max generation "
+        "(announced 2026-08-25, available 2026-09-22), not the "
+        "2025 M4 Max — the M4 Max MU963LL/A launched at "
+        "$1,999 and is discontinued per EveryMac, and the "
+        "feed's Apple row pairing MU963LL/A with $2,499 mixes "
+        "the old MPN with the new price and was excluded. The "
+        "M5 Ultra (from $5,499, MHL74LL/A), the 40-core GPU "
+        "tiers (48GB/1TB $3,399 Z1U4000E9) and M1/M2/M4 "
+        "marketplace rows are different configurations. "
+        "Distinct from the set's Mac mini M6 (MHQK4LL/A) and "
+        "the iMac M6 (MH094LL/A).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-ult-wear-black",
+        brand="Sony",
+        model="ULT WEAR",
+        variant="Black (WHULT900N/B)",
+        category="headphones",
+        identifiers={"UPC": "027242928688", "MPN": "WHULT900N/B"},
+        identifier_sources={
+            "UPC": "Amazon.com (WHULT900NB.UC, UPC 027242928688) "
+            "+ Simcoe Audio Video Canada, authorized Sony "
+            "dealer (barcode 027242928688, Black) + ShopCGX US "
+            "(Style: 027242928688, $149.99, InStock) agree. The "
+            "White UPC 027242929449 and the Target Plus bundle "
+            "UPC 880136519894 (third-party gSport case bundle) "
+            "are different codes and were excluded."
+        },
+        notes="Best Buy $148.00 (WHULT900N/B, SKU 6576179, "
+        "Holiday Deal, comp value $248.00); Crutchfield "
+        "$148.00 (In Stock, Item 158ULT900B, MFR WHULT900N/B, "
+        "$100 off $248.00); BuyDig $148.00 (WHULT900N/B). "
+        "Correction vs the 2026-10-31 candidate price: $249.99 "
+        "is the list price; the current street price is $148 "
+        "at all three retailers (Black Friday deal, Best Buy "
+        "deal ends Nov 8). Sony direct price was not captured "
+        "in this batch. The ULT WEAR (WH-ULT900N, 2024, ULT "
+        "Power Sound bass line) is distinct from the set's "
+        "WH-1000XM5 Black (027242923232), WH-1000XM6 Black "
+        "(027242930698) and WH-1000XM4C Black (pending). "
+        "Excluded: headphone+adapter / headphone+stand / "
+        "warranty bundles ($169.99-$386), Coolblue NL $106 "
+        "(non-US), the $25 copy row, and the Macy's SD-card "
+        "bundle ($386).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-pulse-explore-midnight-black",
+        brand="Sony",
+        model="PULSE Explore Wireless Earbuds",
+        variant="Midnight Black (retail MPN 1000044170, CFI-ZWE1)",
+        category="earbuds",
+        notes="MPN 1000044170 confirmed (Best Buy US Model + "
+        "ShopCGX Model + P.C. Richard MODEL + Big Apple Buddy "
+        "agree; hardware model CFI-ZWE1 per playstation.com), "
+        "but the UPC was not verified from a non-Amazon US "
+        "source, so identifiers stay empty per the DualSense "
+        "Edge / DEX / Neo / PULSE Elite precedent. The only US "
+        "UPC seen, 711719587972, appears on Amazon listings "
+        "(ASIN B0DSQSX7FB, CFI-ZWE1) with no second source. "
+        "The UK/AU barcode 711719590231 (HMV + Gamesmen) is a "
+        "different regional code and was not copied. Best Buy "
+        "$149.99 (page-verified JSON-LD InStock, Model "
+        "1000044170, SKU 6614843, sold by Best Buy); Target "
+        "$149.99 (feed row, A-94472835); GameStop $149.99 "
+        "(feed row). ShopCGX $149.99 (feed row, Model "
+        "1000044170, InStock) also confirmed. Correction vs "
+        "the 2026-10-31 candidate price: $149 is $149.99, a "
+        "sale price off the $199.99 list (P.C. Richard "
+        "$199.99, currently OutOfStock). Midnight Black "
+        "released 2025-02-20; the original White Explore is a "
+        "different colorway. Distinct from the set's PULSE "
+        "Elite Midnight Black (retail MPN 1000044173) — the "
+        "Elite is the over-ear headset, the Explore is the "
+        "earbuds line (CFI-ZWE1, not CFI-ZWH1, which is the "
+        "PULSE 3D headset).",
+    ),
+    EvalProduct(
+        key="logitech-wave-keys-graphite",
+        brand="Logitech",
+        model="Wave Keys",
+        variant="Graphite (920-011898)",
+        category="keyboards",
+        notes="MPN 920-011898 confirmed for the US Graphite "
+        "keyboard (Amazon.com US listing, Mfr Part Number "
+        "920-011898 + Ryans Graphite 920-011898 agree), but "
+        "the UPC 097855191533 appears only on that Amazon "
+        "listing, with no second US source, so identifiers "
+        "stay empty per the DualSense Edge / DEX / Neo / "
+        "PULSE Elite precedent. Logitech direct $69.99 "
+        "(page-verified JSON-LD InStock; the page default "
+        "color is Off-white and the price is uniform $69.99 "
+        "across colors, Graphite included per the Lenovo feed "
+        "rows); Lenovo $69.99 (feed row, 'Wave Keys Wireless "
+        "Ergonomic Keyboard - Graphite' — suspected, no "
+        "identifier in the feed row); Newegg $69.99 (feed row "
+        "— suspected). Correction vs the 2026-10-31 candidate "
+        "note: $69.99 is the current price (the 2023 launch "
+        "price was $59.99 per Logitech's blog). Excluded: the "
+        "MK670 Wave Keys + mouse combo 920-012059 ($89.99, "
+        "Best Buy Model 920-012059, SKU 10953065), Wave Keys "
+        "for Business 920-012058 ($76.99-$139.99), Wave Keys "
+        "for Mac 920-012402, the 2026 Sand refresh 920-013925 "
+        "(B&H $69.99, Staples $77.27 — a different colorway), "
+        "Wave Keys + Lift combos ($119.99), Rose and Off-White "
+        "colorways (Off-White is 920-012275), the US "
+        "International layout 920-012304 (EAN 5099206117471), "
+        "AU Graphite 920-012281, and 920-013269 (a "
+        "single-source roundup figure that conflicts with "
+        "920-011898). Distinct from the set's ERGO K860 "
+        "Graphite (920-009166) — the K860 is the split "
+        "keyboard, Wave Keys is the wavy-keyframe keyboard.",
+    ),
+    EvalProduct(
+        key="bose-sport-open-earbuds-black",
+        brand="Bose",
+        model="Sport Open Earbuds (2026)",
+        variant="Black (901149-0010)",
+        category="earbuds",
+        notes="MPN 901149-0010 confirmed (Best Buy US Model + "
+        "Abt + The Good Guys AU + BuyDig feed agree), but no "
+        "UPC was found for the Black variant in any US source, "
+        "so identifiers stay empty per the DualSense Edge / "
+        "DEX / Neo / PULSE Elite precedent. B&H publishes only "
+        "the Eucalyptus Green UPC 017817865449, which must NOT "
+        "be copied to Black — different color, different "
+        "barcode (Black 901149-0010, White Smoke 901149-0020, "
+        "Eucalyptus Green 901149-0030). Best Buy $199.00 "
+        "(page-verified JSON-LD InStock, Model 901149-0010, "
+        "SKU 6688450, sold by Best Buy); Abt $199 (page-"
+        "verified price); Lenovo $199 (feed row, brand_direct "
+        "— suspected, no identifier in the feed row). Bose "
+        "direct price was not shown in the bose.com page text "
+        "this batch. The 2026 Sport Open Earbuds (announced "
+        "2026-09-17, available 2026-10-01, clip-on open-ear, "
+        "IP54, $199) are a new product, distinct from the "
+        "set's QC Earbuds Black (888507-0100) and Ultra Open "
+        "Earbuds 2nd Gen Black (897806-0010, $299). Excluded: "
+        "the original 2021 Sport Open Earbuds 857628-0010 "
+        "(UPC 017817826211, ASIN B08VRLZGMF — a different "
+        "in-ear product, IPX4), the Eucalyptus Green and White "
+        "Smoke colorways, and the Best Buy charger bundle "
+        "($202.99).",
+    ),
 ]
 
 
