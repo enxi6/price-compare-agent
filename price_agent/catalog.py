@@ -1572,6 +1572,191 @@ EVAL_SET: list[EvalProduct] = [
         "Smoke colorways, and the Best Buy charger bundle "
         "($202.99).",
     ),
+    # --- Expansion batch 10 (2026-11-06, DECISIONS 032) ---
+    EvalProduct(
+        key="apple-studio-display-2026-standard-tilt",
+        brand="Apple",
+        model="Studio Display (2026)",
+        variant="Standard glass, Tilt-adjustable stand (MFEX4LL/A)",
+        category="monitors",
+        identifiers={"UPC": "195950529173", "MPN": "MFEX4LL/A"},
+        identifier_sources={
+            "UPC": "B&H Photo US spec page for the exact MPN "
+            "(apple_mfex4ll_a, 2026 Standard Glass "
+            "Tilt-Adjustable Stand, UPC 195950529173) + the "
+            "B&H Studio Display with AppleCare+ page, which "
+            "lists the same display UPC 195950529173 "
+            "alongside the kit UPC 195951182148, agree. MPN "
+            "MFEX4LL/A corroborated by Abt US (Model "
+            "MFEX4LL/A, Tilt-adjustable Stand, $1,599, "
+            "InStock) + Apple US buy page (from $1,599). The "
+            "neighbouring UPC 195950528794 is the MFEW4LL/A "
+            "(tilt-and-height stand) and 195950528992 is the "
+            "UK MFEX4B/A GTIN; both were excluded."
+        },
+        notes="Apple direct $1,599.00 (US buy page 'from "
+        "$1,599', base tilt config; the page JSON-LD $1,999 "
+        "is a different selected config); B&H $1,549.00 "
+        "(page-verified In Stock, JSON-LD InStock; Holiday "
+        "Savings $50 off $1,599, limited supply at this "
+        "price); Abt $1,599.00 (Model MFEX4LL/A, JSON-LD "
+        "InStock). Correction vs the 2026-10-31 candidate "
+        "note: the current Studio Display is the March 2026 "
+        "refresh (A19 chip, Thunderbolt 5, 12MP Center Stage "
+        "camera with Desk View, 27-inch 5K 60Hz 600-nit "
+        "panel, on sale 2026-03-11), NOT the 2022 model — "
+        "the 2022 Studio Display (A13, Thunderbolt 3, "
+        "MK0U3LL/A, UPC 0194253030447) is superseded and was "
+        "not added, though the base price is coincidentally "
+        "the same $1,599. The Studio Display XDR (mini-LED, "
+        "120Hz, from $3,299) is a separate line and was not "
+        "added. Other 2026 configs excluded: MFEW4LL/A "
+        "tilt-and-height $1,999, MFEY4LL/A VESA $1,599, "
+        "MFF14LL/A nano-texture tilt $1,899, MFF04LL/A "
+        "nano-texture tilt-and-height $2,299, MFF24LL/A nano "
+        "VESA. First monitor in the set; distinct from the "
+        "set's Mac desktops (Mac Studio MHL64LL/A, Mac mini "
+        "MHQK4LL/A, iMac MH094LL/A).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-linkbuds-fit-black",
+        brand="Sony",
+        model="LinkBuds Fit",
+        variant="Black (WF-LS910N/B)",
+        category="earbuds",
+        identifiers={"UPC": "027242929289", "MPN": "WFLS910N/B"},
+        identifier_sources={
+            "UPC": "B&H Photo US spec page for the exact MPN "
+            "(sony_wfls910n_b, UPC 027242929289) + Tanotis "
+            "(Sony WFLS910N/B, UPC 027242929289) agree. MPN "
+            "WFLS910N/B corroborated by Best Buy US Model "
+            "WFLS910N/B (SKU 6594431) + Sony US "
+            "(WF-LS910N/P is the Pink variant). The NZ EAN "
+            "4548736157897 is a different regional code and "
+            "was excluded."
+        },
+        notes="Best Buy $199.99 (Model WFLS910N/B, SKU 6594431, "
+        "JSON-LD price; stock not stated in the page-text "
+        "crawl); B&H $198.00 (page-verified, UPC "
+        "027242929289; Special Order, expected availability "
+        "2-4 Weeks — not in stock at B&H; Holiday Savings "
+        "$30 off $228.00); Crutchfield $198.00 (feed row — "
+        "suspected, no identifier in the feed row). "
+        "Correction vs the 2026-10-31 candidate price: "
+        "$229.99 is the list price; the current street price "
+        "is $198–$199.99 (Dell Black $229.99 brand_direct and "
+        "Sony direct Pink $229.99, sale $199.99, also seen). "
+        "Distinct from the set's WF-1000XM5 Black "
+        "(027242925601) and WF-1000XM6 Black (027242933460) "
+        "— the LinkBuds Fit (WF-LS910N, 2024, open-fit "
+        "Air Fitting Supporters) is a separate line, and "
+        "from the LinkBuds Open (also $228), which was "
+        "excluded. White, Sage Green, Pink and Violet are "
+        "different colorways.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="sony-access-controller-white",
+        brand="Sony",
+        model="Access Controller",
+        variant="White (retail MPN 1000037579, CFI-ZAC1)",
+        category="controllers",
+        notes="Retail MPN 1000037579 confirmed (Best Buy US "
+        "Model, SKU 12348387) and hardware model CFI-ZAC1 "
+        "confirmed (playstation.com accessories page, Model "
+        "Number - CFI-ZAC1 + SIE manuals), but no UPC was "
+        "verified from a US source, so identifiers stay "
+        "empty per the DualSense Edge / DEX / Neo / PULSE "
+        "Elite precedent. The only barcode seen, "
+        "711719567929, is a UK EAN (Very.co.uk) with no US "
+        "source and was not copied. PlayStation Direct "
+        "$89.00 (page-verified, Color: White, release "
+        "12/06/2023; stock not stated in the page-text "
+        "crawl); GameStop $89.99 (feed row — suspected, no "
+        "identifier in the feed row); Target $87.99 (Target "
+        "search listing — suspected, no identifier in the "
+        "listing). Correction vs the 2026-10-31 candidate "
+        "price: $89 is $89.00 direct / $89.99 list (Best "
+        "Buy comp value $89.99; Best Buy's live $79.95 "
+        "offer is sold by marketplace seller A2Z Games Inc "
+        "and was excluded per DECISIONS 021). The Access "
+        "controller is the only colorway (White); distinct "
+        "from the set's DualSense White (pending) and "
+        "DualSense Edge Black & White (CFI-ZCP1, pending) — "
+        "the Access (CFI-ZAC1) is the PS5 accessibility "
+        "controller kit, not a standard pad.",
+    ),
+    EvalProduct(
+        key="logitech-pop-keys-cosmos",
+        brand="Logitech",
+        model="POP Keys",
+        variant="Cosmos (920-011233)",
+        category="keyboards",
+        notes="MPN 920-011233 confirmed (Dell US Manufacturer "
+        "Part Number + Colamco + BuyDig + iFixit agree; "
+        "logitech.com product URL carries .920-011233), but "
+        "the UPC 097855179401 appears only on the Amazon "
+        "listing (ASIN B0BMX9KRDN), with no second US "
+        "source, so identifiers stay empty per the Wave "
+        "Keys / DualSense Edge precedent. Logitech direct "
+        "$99.99 (page-verified JSON-LD InStock; Color "
+        "Cosmos); Dell $89.99 (feed row, brand_direct — "
+        "suspected, no identifier in the feed row; sale off "
+        "the $99.99 list); Colamco $99.99 (search-verified, "
+        "MPN 920-011233 stated). Correction vs the "
+        "2026-10-31 candidate note: $99.99 is confirmed "
+        "current (the feed's Best Buy Blast Yellow $69.99 "
+        "and Heartbreaker Rose $117.22 rows are different "
+        "colorways / sale prices). Excluded: Blast Yellow "
+        "920-010707, Heartbreaker Rose 920-010709, Daydream, "
+        "Mist 920-011232, the POP Icon Keys line ($49.99, a "
+        "different keyboard), POP Mouse rows ($29.99–$39.99, "
+        "the mouse not the keyboard), the AU Cosmos Lavender "
+        "920-011227 (GTIN 097855179340, a different "
+        "regional variant), and the POP Keys + POP Mouse "
+        "combo. Distinct from the set's MX Mechanical "
+        "Graphite (920-010547), MX Keys S Pale Grey "
+        "(920-011559), MX Keys Mini Black (920-010475), "
+        "ERGO K860 Graphite (920-009166) and Wave Keys "
+        "Graphite (920-011898) — POP Keys is the "
+        "typewriter-style emoji-key line.",
+    ),
+    EvalProduct(
+        key="xbox-elite-series-2-core-white",
+        brand="Microsoft",
+        model="Xbox Elite Wireless Controller Series 2 – Core",
+        variant="White (4IK-00001)",
+        category="controllers",
+        notes="MPN 4IK-00001 confirmed (Best Buy US Model + "
+        "P.C. Richard MODEL + ThinkEdu + Microsoft Store "
+        "agree), but the UPC was not verified from a US "
+        "source, so identifiers stay empty per the "
+        "DualSense Edge / DEX / Neo / PULSE Elite "
+        "precedent. The only barcodes seen conflict and are "
+        "both non-US: Gamesmen AU 889842717082 vs a "
+        "Latvian listing 889842717075; neither was copied. "
+        "Microsoft direct $111.74 (page-verified JSON-LD "
+        "price; stock not confirmed in the page text); Best "
+        "Buy $149.99 (Model 4IK-00001, SKU 6514400, price "
+        "shown on the Best Buy reviews-page crawl); P.C. "
+        "Richard $149.99 (MODEL: 4IK-00001, JSON-LD). "
+        "Correction vs the 2026-10-31 candidate range "
+        "$111.74–$139.99: $111.74 is the current Microsoft "
+        "Store sale price and $149.99 is the current "
+        "retailer list (Kohl's and Lenovo also $149.99; "
+        "Target lists it at $109.99); the $139.99 ShopCGX "
+        "feed row is titled 'Series 2', not Core, and was "
+        "not used. Distinct from the set's full Elite "
+        "Series 2 Black (FST-00001, UPC 889842196344, "
+        "$159.99–$179.99) — the Core (4IK-00001) is the "
+        "cheaper line without the component pack, dock and "
+        "case — and from the set's Xbox Wireless Controller "
+        "Carbon Black (1914). The 2025 Core colorways (Blue, "
+        "Red and Blue, Green and Blue, Astral Purple, Gray, "
+        "Dark Green, all $149.99 at Best Buy) are different "
+        "models and were excluded.",
+    ),
 ]
 
 

@@ -983,3 +983,73 @@ written as "superseded by" with the original text kept.
   (bose.com page text showed no price this batch); the ULT WEAR
   $148.00 street price is a Black Friday deal and should be
   re-checked after Nov 8.
+
+## 032 (2026-11-06): Expansion batch 10 — 72 → 77 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models from the remaining brand-sweep candidates
+  (BUILD_LOG 020/022/023/024/025), no per-batch user approval needed
+  (DECISIONS 027): Apple Studio Display (2026) Standard glass,
+  Tilt-adjustable stand (MFEX4LL/A, UPC 195950529173), Sony LinkBuds
+  Fit Black (WFLS910N/B, UPC 027242929289), Sony Access Controller
+  White (retail MPN 1000037579, CFI-ZAC1, UPC pending), Logitech POP
+  Keys Cosmos (920-011233, UPC pending), Xbox Elite Wireless
+  Controller Series 2 – Core White (4IK-00001, UPC pending). One
+  variant pinned per model (DECISIONS 015); 2 of 5 identifiers
+  verified, Access Controller, POP Keys and Elite Core stay pending
+  (UPC not verified from a US source for any of the three —
+  DualSense Edge / DEX / Neo / PULSE Elite precedent, not a reason
+  to hold the batch).
+- Why these 5: they are the next un-added mainstream lines from the
+  five brand sweeps, each distinct from the set (first monitor in
+  the set, and the current March 2026 Studio Display generation;
+  LinkBuds Fit is Sony's open-fit Air Fitting Supporters line, not
+  a 1000X flagship; Access Controller is the first PlayStation
+  accessibility controller; POP Keys is the typewriter-style
+  emoji-key line vs the MX/Wave ergonomic keyboards; Elite Core is
+  the cheaper Elite line vs the full Elite Series 2 already in the
+  set). All five are in stock new in the US on 2026-11-06
+  (brand-direct pages or InStock JSON-LD), except the B&H LinkBuds
+  Fit (Special Order, 2-4 weeks) and the two price-only direct
+  rows noted below.
+- What was corrected along the way: the current Studio Display is
+  the March 2026 refresh (A19 chip, Thunderbolt 5, 12MP Center
+  Stage camera with Desk View), NOT the 2022 model (A13,
+  Thunderbolt 3, MK0U3LL/A, UPC 0194253030447) — the base price is
+  coincidentally the same $1,599, and the pinned config is the
+  Standard glass tilt-stand MFEX4LL/A; the Studio Display XDR
+  (mini-LED, 120Hz, from $3,299) is a separate line; the LinkBuds
+  Fit candidate price $229.99 is the list price, the current street
+  price is $198.00–$199.99; the Access Controller candidate price
+  $89 is $89.00 direct / $89.99 list, and Best Buy's live $79.95
+  offer is a marketplace seller (A2Z Games Inc) and was excluded;
+  the POP Keys candidate price $99.99 is confirmed current (the
+  feed's Best Buy Blast Yellow $69.99 and Heartbreaker Rose
+  $117.22 rows are different colorways); the Elite Core candidate
+  range $111.74–$139.99 resolves to $111.74 at Microsoft Store
+  (current sale price) and $149.99 retailer list, and the $139.99
+  ShopCGX feed row is titled "Series 2", not Core. The POP Keys
+  920-010817 feed row is not Cosmos (Cosmos is 920-011233 per
+  Dell, Colamco, BuyDig, iFixit and logitech.com); the feed's
+  Apple rows pairing the Studio Display with $5,499 is the Mac
+  Studio, not a display.
+- What does NOT change: the existing 72 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro untouched,
+  batches 1–9 entries untouched). No other snapshot file is rewritten.
+  No Amazon touch. The daily refresh cron still says "57 models" in
+  its body and needs a count update to 77 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: Access Controller White UPC stays pending until a US
+  retailer spec page or box barcode settles it (the only barcode
+  seen, 711719567929, is a UK EAN with no US source); POP Keys
+  Cosmos UPC stays pending (the only UPC found, 097855179401, is
+  Amazon-only; the AU Cosmos Lavender 920-011227 GTIN 097855179340
+  is a different regional variant and was not copied); Elite Core
+  White UPC stays pending (the only barcodes seen, AU 889842717082
+  vs LV 889842717075, conflict and are both non-US); the Studio
+  Display UPC 195950529173 rests on B&H (two B&H pages agree) and
+  should be re-confirmed on the next refresh (iMac precedent); the
+  Microsoft direct Elite Core $111.74 and PlayStation Direct Access
+  $89.00 prices are price-only (stock not confirmed in the page
+  text); the B&H LinkBuds Fit $198.00 is Special Order (2-4 weeks),
+  not in stock; the ULT WEAR $148.00 Black Friday street price
+  should be re-checked after Nov 8 (batch 9 revisit, still open).

@@ -11,6 +11,26 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 10 (DECISIONS 032, continuous expansion per
+  DECISIONS 027): eval set 72 → 77 models, 60 → 62 verified
+  identifiers. New: Apple Studio Display (2026) Standard glass,
+  Tilt-adjustable stand (MFEX4LL/A, UPC 195950529173 — the current
+  Studio Display is the March 2026 refresh with Thunderbolt 5 and
+  Desk View, not the 2022 A13 model; B&H $1,549.00 sale, Apple/Abt
+  $1,599.00), Sony LinkBuds Fit Black (WFLS910N/B, UPC
+  027242929289; list $229.99, current street $198.00–$199.99),
+  Sony Access Controller White (retail MPN 1000037579, CFI-ZAC1,
+  UPC pending — the only barcode seen, 711719567929, is a UK EAN),
+  Logitech POP Keys Cosmos (920-011233, UPC pending — the only UPC
+  found, 097855179401, is Amazon-only), Xbox Elite Wireless
+  Controller Series 2 – Core White (4IK-00001, UPC pending — the
+  only barcodes seen, AU 889842717082 vs LV 889842717075,
+  conflict). New snapshot
+  `data/eval_snapshots_batch10_2026-11-06.json` holds 15 quotes
+  across the 5 models (3 each). DECISIONS 021 applied to every
+  quote: no marketplace/third-party rows, no non-US rows, no
+  Amazon.
+
 - Expansion batch 9 (DECISIONS 031, continuous expansion per
   DECISIONS 027): eval set 67 → 72 models, 58 → 60 verified
   identifiers. New: Mac Studio M5 Max 36GB/512GB Silver (MHL64LL/A,

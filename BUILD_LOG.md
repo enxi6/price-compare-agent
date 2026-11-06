@@ -1800,3 +1800,148 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (snapshot offers carry no identifier — the rule working, not a
   bug). Tests: 19 passed (test_snapshot_eval counts updated 67 →
   72 / 58 → 60 for the approved expansion).
+
+## 048 — 2026-11-06: Expansion batch 10 — 72 → 77 models (DECISIONS 032)
+
+- Membership check (against the 72-model set, by name, MPN and UPC —
+  no matches, all 5 are new lines):
+  - Studio Display (2026), Standard glass, Tilt-adjustable stand
+    (MFEX4LL/A, UPC 195950529173) vs apple-mac-studio-m5-max-36gb-
+    512gb-silver (MHL64LL/A, UPC 195951078564),
+    apple-imac-m6-24-10core-blue (MH094LL/A, UPC 195950838091),
+    apple-mac-mini-m6 (MHQK4LL/A, UPC 195951021089): no monitor in
+    the set at all; distinct display line, different MPN and UPC —
+    not a duplicate. The 2022 Studio Display (MK0U3LL/A, UPC
+    0194253030447) is the superseded generation and was not added;
+    the Studio Display XDR (from $3,299) is a separate line and was
+    not added.
+  - LinkBuds Fit Black (WFLS910N/B, UPC 027242929289) vs
+    sony-wf1000xm5-black (WF1000XM5/B, UPC 027242925601),
+    sony-wf1000xm6-black (WF1000XM6/B, UPC 027242933460),
+    sony-wh1000xm5-black, sony-wh1000xm6-black, sony-wh1000xm4c-
+    black, sony-ult-wear-black (WHULT900N/B, UPC 027242928688):
+    distinct open-fit LinkBuds line (WF-LS910N, 2024, Air Fitting
+    Supporters), different model number and UPC — not a duplicate.
+    The LinkBuds Open (also $228) is a different line and was not
+    added.
+  - Access Controller White (retail MPN 1000037579, CFI-ZAC1) vs
+    sony-dualsense-white, sony-dualsense-edge-black-white
+    (CFI-ZCP1), sony-playstation-portal (1000041319, UPC
+    711719579779), sony-pulse-elite-midnight-black (1000044173),
+    sony-pulse-explore-midnight-black (1000044170): no
+    accessibility controller in the set; the Access (CFI-ZAC1) is
+    the PS5 accessibility kit, different MPN from every controller
+    in the set — not a duplicate.
+  - POP Keys Cosmos (920-011233) vs logitech-mx-mechanical-tactile-
+    quiet-graphite (920-010547, UPC 097855174659),
+    logitech-mx-keys-s-pale-grey (920-011559),
+    logitech-mx-keys-mini-black (920-010475),
+    logitech-ergo-k860-graphite (920-009166, UPC 097855151667),
+    logitech-wave-keys-graphite (920-011898): no POP Keys in the
+    set; distinct typewriter-style emoji-key keyboard, different
+    MPN — not a duplicate. The POP Icon Keys ($49.99) are a
+    different keyboard line and were not added; Blast Yellow
+    920-010707, Heartbreaker Rose 920-010709, Mist 920-011232 and
+    Daydream are different colorways and were not added.
+  - Elite Wireless Controller Series 2 – Core White (4IK-00001) vs
+    xbox-elite-series-2-black (FST-00001, UPC 889842196344),
+    xbox-wireless-controller-black (1914, UPC 196388518159):
+    distinct cheaper Elite line (Core, no component pack / dock /
+    case), different MPN — not a duplicate. The 2025 Core
+    colorways (Blue, Red and Blue, Green and Blue, Astral Purple,
+    Gray, Dark Green) are different models and were not added.
+- Apple Studio Display (2026), Standard glass, Tilt-adjustable
+  stand (MFEX4LL/A) — identifiers VERIFIED: UPC 195950529173
+  (B&H US spec page for the exact MPN + the B&H Studio Display
+  with AppleCare+ page, which lists the same display UPC
+  195950529173 alongside the kit UPC 195951182148, agree), MPN
+  MFEX4LL/A (Abt US Model + Apple US buy page agree; UK MFEX4B/A
+  GTIN 195950528992 excluded). Quotes (3): Apple direct $1,599.00
+  (buy page "from $1,599", base tilt config; page JSON-LD $1,999
+  is a different selected config), B&H $1,549.00 (page-verified
+  In Stock, JSON-LD InStock; Holiday Savings $50 off $1,599,
+  limited supply at this price), Abt $1,599.00 (Model MFEX4LL/A,
+  JSON-LD InStock). Correction vs the 2026-10-31 candidate note:
+  the current Studio Display is the March 2026 refresh (A19,
+  Thunderbolt 5, 12MP Center Stage with Desk View, 27-inch 5K
+  60Hz 600-nit panel, on sale 2026-03-11), not the 2022 model
+  (A13, Thunderbolt 3, MK0U3LL/A, UPC 0194253030447). Excluded:
+  Studio Display XDR (from $3,299, MFE* XDR codes), MFEW4LL/A
+  tilt-and-height $1,999, MFEY4LL/A VESA $1,599, MFF14LL/A nano
+  tilt $1,899, MFF04LL/A nano tilt-and-height $2,299, MFF24LL/A
+  nano VESA, the 2022 MK0U3LL/A, the feed's $5,499 Mac Studio row
+  (a computer, not a display), Samsung/VITURE monitor rows.
+- Sony LinkBuds Fit, Black (WFLS910N/B) — identifiers VERIFIED:
+  UPC 027242929289 (B&H US spec page for the exact MPN + Tanotis
+  WFLS910N/B agree), MPN WFLS910N/B (Best Buy US Model, SKU
+  6594431 + B&H agree). Quotes (3): Best Buy $199.99 (Model
+  WFLS910N/B, SKU 6594431, JSON-LD price; stock not stated in the
+  page-text crawl), B&H $198.00 (page-verified; Special Order,
+  expected availability 2-4 Weeks — not in stock at B&H; Holiday
+  Savings $30 off $228.00), Crutchfield $198.00 (feed row —
+  suspected, no identifier in the feed row). Correction vs the
+  2026-10-31 candidate price: $229.99 is the list price; the
+  current street price is $198–$199.99. Dell Black $229.99
+  (brand_direct) and Sony direct Pink $229.99, sale $199.99, also
+  seen. Excluded: LinkBuds Open ($228, different line), White /
+  Sage Green / Pink / Violet colorways, LinkBuds Fit + accessories
+  combos (Sony Panama store), the NZ EAN 4548736157897.
+- Sony Access Controller, White (retail MPN 1000037579, CFI-ZAC1)
+  — identifiers PENDING: retail MPN 1000037579 confirmed (Best
+  Buy US Model, SKU 12348387) and hardware model CFI-ZAC1
+  confirmed (playstation.com + SIE manuals), but no UPC was
+  verified from a US source. The only barcode seen, 711719567929,
+  is a UK EAN (Very.co.uk) with no US source and was not copied.
+  Quotes (3): PlayStation Direct $89.00 (page-verified, Color:
+  White, release 12/06/2023; stock not stated in the page-text
+  crawl), GameStop $89.99 (feed row — suspected), Target $87.99
+  (Target search listing — suspected). Correction vs the
+  2026-10-31 candidate price: $89 is $89.00 direct / $89.99 list
+  (Best Buy comp value $89.99). Excluded: Best Buy $79.95 (sold
+  by marketplace seller A2Z Games Inc, DECISIONS 021), CDW
+  $117.99 (inflated vs list), Siemens industrial "access
+  controller" rows (different products), the $250 961souq row
+  (non-US). White is the only colorway.
+- Logitech POP Keys, Cosmos (920-011233) — identifiers PENDING:
+  MPN 920-011233 confirmed (Dell US Manufacturer Part Number +
+  Colamco + BuyDig + iFixit agree; logitech.com product URL
+  carries .920-011233), but the UPC 097855179401 appears only on
+  the Amazon listing (ASIN B0BMX9KRDN), with no second US source,
+  so identifiers stay empty per the Wave Keys precedent. Quotes
+  (3): Logitech direct $99.99 (page-verified JSON-LD InStock;
+  Color Cosmos), Dell $89.99 (feed row, brand_direct — suspected;
+  sale off the $99.99 list), Colamco $99.99 (search-verified, MPN
+  920-011233 stated). Correction vs the 2026-10-31 candidate note:
+  $99.99 is confirmed current. Excluded: Blast Yellow 920-010707
+  (Best Buy $69.99 sale), Heartbreaker Rose 920-010709 ($117.22),
+  Mist 920-011232, Daydream, the POP Icon Keys line ($49.99),
+  POP Mouse rows ($29.99–$39.99), the AU Cosmos Lavender
+  920-011227 (GTIN 097855179340), the POP Keys + POP Mouse combo,
+  Target $111.22 (marketplace seller Mega Retail Store), the
+  920-010817 feed row (not Cosmos — Cosmos is 920-011233).
+- Xbox Elite Wireless Controller Series 2 – Core, White
+  (4IK-00001) — identifiers PENDING: MPN 4IK-00001 confirmed
+  (Best Buy US Model + P.C. Richard MODEL + ThinkEdu + Microsoft
+  Store agree), but the UPC was not verified from a US source.
+  The only barcodes seen conflict and are both non-US: Gamesmen
+  AU 889842717082 vs a Latvian listing 889842717075; neither was
+  copied. Quotes (3): Microsoft direct $111.74 (page-verified
+  JSON-LD price; stock not confirmed in the page text), Best Buy
+  $149.99 (Model 4IK-00001, SKU 6514400, price shown on the Best
+  Buy reviews-page crawl), P.C. Richard $149.99 (MODEL:
+  4IK-00001, JSON-LD). Correction vs the 2026-10-31 candidate
+  range $111.74–$139.99: $111.74 is the current Microsoft Store
+  sale price and $149.99 is the current retailer list (Kohl's and
+  Lenovo also $149.99; Target lists it at $109.99); the $139.99
+  ShopCGX feed row is titled "Series 2", not Core, and was not
+  used. Excluded: the full Elite Series 2 Black (FST-00001,
+  $159.99–$179.99), the 2025 Core colorways (Blue, Red and Blue,
+  Green and Blue, Astral Purple, Gray, Dark Green, all $149.99
+  at Best Buy), the $289.98 dual-controller bundle, NFM $106.99
+  sale (unverified), DreamController custom-painted rows
+  ($279.99–$299.99).
+- Eval on the new snapshot: 77 models, 62 verified identifiers, 5
+  with quotes, 15 total quotes, 0 identifier-matched, 15 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 72 →
+  77 / 60 → 62 for the approved expansion).
