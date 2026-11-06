@@ -11,6 +11,33 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 26 (DECISIONS 048, continuous expansion per
+  DECISIONS 027): eval set 150 → 155 models, verified identifiers
+  stay 74 (0 of 5 new identifiers verified — all pending; no UPC
+  surfaced for any of the five Lenovo part numbers). New: Lenovo
+  Legion Tab Gen 3 8.8-inch Gaming Tablet, Eclipse Black
+  (ZAEF0068US, UPC pending — no code surfaced; $549.99 at Lenovo
+  direct, InStock — the first Lenovo tablet and first Android
+  gaming tablet in the set), Lenovo Tab Plus Gen 2 12.1-inch
+  Tablet, Celestial White (ZAHT0078US, UPC pending — no code
+  surfaced; $469.99 at Lenovo direct, $299.99 at Newegg — the
+  current $469.99 supersedes the stale $269.99–$299.99 sale
+  prices), Lenovo Idea Tab Pro Gen 2 13-inch Tablet, Cloud Grey
+  (ZAHD0826US, UPC pending — no code surfaced; $399.99 sale vs
+  $549.99 list at Lenovo direct, $527.99 at Newegg — bundle
+  contents conflicted: feed says folio case + pen included,
+  droidgadgets says neither), Lenovo Tab One 8.7-inch Tablet,
+  Luna Grey (ZAF00008US, UPC pending — no code surfaced; $149.99
+  sale vs $199.99 est. value at Lenovo direct — Best Buy's
+  $99.99 is a different part, ZAF00067US, and was not used),
+  Lenovo Yoga Tab Plus Gen 2 13-inch Tablet, Cosmic Blue
+  (ZAHX0159US, UPC pending — no code surfaced; $799.99 sale vs
+  $999.99 list at Lenovo direct — the flagship creator tablet).
+  Lenovo is a new brand in the set; the Lenovo US store was
+  readable again this round after being unreadable in the
+  previous round. Not added: the remaining Lenovo candidates
+  (Legion Tab Gen 5, Yoga Tab Gen 2, Idea Tab, Idea Tab Plus,
+  Tab P12) stay list-only for later batches.
 - Expansion batch 25 (DECISIONS 047, continuous expansion per
   DECISIONS 027): eval set 145 → 150 models, verified identifiers
   stay 74 (0 of 5 new identifiers verified — all pending). New:

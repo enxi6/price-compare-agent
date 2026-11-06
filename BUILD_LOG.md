@@ -4564,3 +4564,112 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   asus-rog-swift-oled-pg27aqdpr-black,
   asus-rog-delta-usb-c-black, asus-rog-harpe-mini-core-black,
   asus-rog-pelta-black).
+
+## 065 — 2026-11-06: Expansion batch 26 — 150 → 155 models (DECISIONS 048)
+
+- Membership check (against the 150-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): Legion Tab Gen 3 — NO MATCH
+  (the set has no Lenovo entry of any kind and no 8.8-inch gaming
+  tablet; the six tablets in the set are all Apple iPads);
+  Tab Plus Gen 2 — NO MATCH (the set has no Tab Plus; the
+  original Tab Plus is a different, 2024 tablet and is not in the
+  set either); Idea Tab Pro Gen 2 — NO MATCH (the set has no Idea
+  Tab; the Idea Tab Pro Gen 1 is a different tablet and is not in
+  the set); Tab One — NO MATCH (the set has no Tab One); Yoga Tab
+  Plus Gen 2 — NO MATCH (the set has no Yoga Tab; the Yoga Tab
+  Plus Gen 1 is a different tablet and is not in the set). No
+  candidate matches an existing model on name, MPN or UPC. The
+  five are the Lenovo US store sweep candidates, one per tablet
+  family; the Lenovo US store was unreadable in the previous
+  round and is readable this round (guide page, category page,
+  and all five product pages return JSON-LD on fresh reads).
+- Lenovo Legion Tab Gen 3, Eclipse Black (ZAEF0068US) —
+  identifiers PENDING: no UPC surfaced for ZAEF0068US in any
+  source read, so identifiers stay empty per the strict
+  two-source rule. Not copied: nothing — no candidate code
+  surfaced. Quotes (1): Lenovo $549.99 (US product page JSON-LD
+  read fresh 2026-11-06 21:08 UTC, InStock; 8.8-inch 2.5K 165Hz,
+  Snapdragon 8 Gen 3, 12GB LPDDR5X / 256GB UFS 4.0, Eclipse
+  Black single colorway). Excluded: the feed's dbrand skin
+  ($26.95) and m2skins ($24) rows (accessories, not the tablet);
+  the Meta Catalog feed for this query carried no direct tablet
+  row at all. Not the FIFA World Cup 26 Edition (ZAEF0096US,
+  White, $569.99) or the Legion Tab Gen 5 ($899.99 list / $699.99
+  sale). Lenovo-only in the US per Notebookcheck — no second
+  retailer quote exists.
+- Lenovo Tab Plus Gen 2, Celestial White (ZAHT0078US) —
+  identifiers PENDING: no UPC surfaced for ZAHT0078US in any
+  source read, so identifiers stay empty per the strict
+  two-source rule. Not copied: nothing — no candidate code
+  surfaced. Quotes (2): Lenovo $469.99 (US product page JSON-LD
+  read fresh 2026-11-06 21:08 UTC, InStock; feed brand_direct
+  row agrees at $469.99; 12.1-inch 2.5K 120Hz, Dimensity 7400,
+  8GB LPDDR5 / 128GB UFS 3.1, JBL 9-unit Pro speakers, Celestial
+  White); Newegg $299.99 (feed authorized_retailer row —
+  suspected; not page-verified; 8GB/128GB, part ZAHT0078US).
+  Correction vs earlier sale reports: the $269.99 sale
+  (Slickdeals, Sep 29) and $289.99/$299.99 October sale prices
+  are stale — the current Lenovo direct price is $469.99 on two
+  agreeing reads. Excluded: the Best Buy ZAHT0043US row (8GB/
+  256GB, $449.99 sale $379 — different storage config). Not the
+  original Tab Plus (11.5-inch, 2024).
+- Lenovo Idea Tab Pro Gen 2, Cloud Grey (ZAHD0826US) —
+  identifiers PENDING: no UPC surfaced for ZAHD0826US in any
+  source read, so identifiers stay empty per the strict
+  two-source rule. Not copied: nothing — no candidate code
+  surfaced. Quotes (2): Lenovo $399.99 sale vs $549.99 list (US
+  product page JSON-LD read fresh 2026-11-06 21:08 UTC, InStock;
+  feed brand_direct row agrees at price $549.99 / sale $399.99;
+  13-inch 3.5K 144Hz, Snapdragon 8s Gen 4, 8GB / 128GB, Cloud
+  Grey); Newegg $527.99 sale vs $549.99 (feed
+  authorized_retailer row — suspected; not page-verified;
+  TB390FU, 8GB/128GB, part number not stated in the feed row).
+  Excluded: the Best Buy ZAHD0863US row ($529.99, with Tab Pen
+  Plus — different part/bundle) and the CDW ZAHC 256GB row
+  ($606.99 — different storage config). Bundle conflict
+  recorded: the feed description for ZAHD0826US says "Folio
+  case and Pen included" while droidgadgets (Oct 23) says this
+  part ships without pen or keyboard. Not the Idea Tab Pro Gen 1
+  (12.7-inch 3K, Dimensity 8300).
+- Lenovo Tab One, Luna Grey (ZAF00008US) — identifiers PENDING:
+  no UPC surfaced for ZAF00008US in any source read, so
+  identifiers stay empty per the strict two-source rule. Not
+  copied: nothing — no candidate code surfaced. Quotes (1):
+  Lenovo $149.99 sale vs $199.99 est. value (US product page
+  JSON-LD read fresh 2026-11-06 21:08 UTC, InStock; feed
+  brand_direct row agrees at price $199.99 / sale $149.99;
+  8.7-inch HD, Helio G85, 4GB / 64GB eMMC, Luna Grey). Excluded:
+  the Best Buy ZAF00067US row (SKU 6621480, $99.99 Holiday Deal
+  — a Best Buy-specific part number for the same 4GB/64GB Luna
+  Grey specs, confirmed on a fresh Best Buy page read
+  2026-11-06 21:09 UTC; the $99.99 price was NOT used) and the
+  Staples ZAF00043US row ($209.99 — different part) and the
+  Newegg folio-case bundle row ($149.99 — a bundle, not the bare
+  tablet). Not the Tab One LTE 128GB (different
+  storage/connectivity).
+- Lenovo Yoga Tab Plus Gen 2, Cosmic Blue (ZAHX0159US) —
+  identifiers PENDING: no UPC surfaced for ZAHX0159US in any
+  source read, so identifiers stay empty per the strict
+  two-source rule. Not copied: nothing — no candidate code
+  surfaced. Quotes (1): Lenovo $799.99 sale vs $999.99 list (US
+  product page JSON-LD read fresh 2026-11-06 21:08 UTC, InStock;
+  feed brand_direct row agrees at price $999.99 / sale $799.99;
+  Notebookcheck confirms the first discount, $999.99 to
+  $799.99; 13-inch 4K PureSight Pro 144Hz, Snapdragon 8 Elite,
+  12GB LPDDR5X / 256GB UFS 4.0, Cosmic Blue, clamshell keyboard
+  + Tab Pen Pro 2 included, Android 17 with 7 OS upgrades).
+  Excluded: the "Yoga Tab Plus (Gen 2) + Earbud" feed row
+  ($1,069.98 — a bundle). Not the Yoga Tab Plus Gen 1
+  (12.7-inch, Snapdragon 8 Gen 3, 16GB/256GB) or the Yoga Tab
+  Gen 2 (11.1-inch, $729.99).
+- Eval on the new snapshot: 155 models, 74 verified identifiers,
+  5 with quotes, 7 total quotes, 0 identifier-matched, 7
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 150 → 155, verified stays 74, for the
+  continuous expansion; the pending set gains the 5 new pending
+  keys: lenovo-legion-tab-gen-3-eclipse-black,
+  lenovo-tab-plus-gen-2-celestial-white,
+  lenovo-idea-tab-pro-gen-2-cloud-grey, lenovo-tab-one-luna-grey,
+  lenovo-yoga-tab-plus-gen-2-cosmic-blue).

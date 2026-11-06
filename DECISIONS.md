@@ -2296,3 +2296,111 @@ written as "superseded by" with the original text kept.
   199291232754, S2725QS UPC 884116485117, AW3225DM EAN
   5397184962725, AW920K UPC 884116448686, WB726 EAN
   5397321028925, second Target U3225QE feed row $1,028.97).
+
+## 048 (2026-11-06): Expansion batch 26 — 150 → 155 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 Lenovo tablets from the Lenovo US store sweep
+  (BUILD_LOG 065), no per-batch user approval needed (DECISIONS
+  027): Lenovo Legion Tab Gen 3 8.8-inch Gaming Tablet, Eclipse
+  Black (ZAEF0068US, UPC pending), Lenovo Tab Plus Gen 2 12.1-inch
+  Tablet, Celestial White (ZAHT0078US, UPC pending), Lenovo Idea
+  Tab Pro Gen 2 13-inch Tablet, Cloud Grey (ZAHD0826US, UPC
+  pending), Lenovo Tab One 8.7-inch Tablet, Luna Grey (ZAF00008US,
+  UPC pending), Lenovo Yoga Tab Plus Gen 2 13-inch Tablet, Cosmic
+  Blue (ZAHX0159US, UPC pending). One variant pinned per model
+  (DECISIONS 015); 0 of 5 identifiers verified, all 5 stay
+  pending — no UPC surfaced for any of the five part numbers in
+  any source read. Verified-identifier count stays 74. No model
+  was split out of this batch. No new category enters the set
+  ("tablets" already exists — 6 Apple iPads); one new brand
+  enters the set: Lenovo — the first Lenovo entries of any kind,
+  one per tablet family.
+- Why these 5: the Lenovo US store retry succeeded this round
+  (the previous round it was unreadable) — the lenovo.com US
+  tablets guide page, the Tab series category page, and all five
+  US product pages return JSON-LD Product.offers on fresh reads
+  2026-11-06 ~21:08 UTC, and the Meta Catalog feed agrees on
+  four of the five brand-direct prices. The five are one per
+  Lenovo tablet family with a current fixed-configuration US
+  part: the 8.8-inch gaming tablet, the speaker-first
+  entertainment tablet, the large-screen study tablet, the
+  entry-level compact tablet, and the flagship creator tablet.
+  No laptop or desktop pick: Lenovo laptops and desktops are
+  configurable with no retailer-pinned base configuration
+  (DECISIONS 015) — the sweep excluded them rather than forcing
+  one. All five are in stock new at Lenovo direct on 2026-11-06
+  — no stock caveat on any of them (the first batch with none).
+- What was corrected along the way: the Tab Plus Gen 2's earlier
+  sale prices are stale — $269.99 (Slickdeals, Sep 29) and
+  $289.99/$299.99 (October) no longer hold; the current Lenovo
+  direct price is $469.99 on two agreeing reads (fresh page +
+  feed), a sharp rise consistent with Lenovo's October US price
+  hikes (PhoneArena, Oct 13). Three part-number traps were caught
+  and excluded, not priced: the Best Buy Tab One is part
+  ZAF00067US (SKU 6621480), not the pinned ZAF00008US — its
+  $99.99 Holiday Deal price was NOT used; the Best Buy Tab Plus
+  Gen 2 ZAHT0043US is 8GB/256GB, not the pinned 8GB/128GB
+  ZAHT0078US; the Best Buy Idea Tab Pro Gen 2 ZAHD0863US
+  ($529.99, with Tab Pen Plus) is a different part/bundle from
+  the pinned ZAHD0826US. The Idea Tab Pro Gen 2 bundle contents
+  are genuinely conflicted — the feed description for ZAHD0826US
+  says "Folio case and Pen included" while droidgadgets (Oct 23)
+  says this part ships without pen or keyboard — the pin is the
+  part number, not the bundle claim. The Legion Tab Gen 3 feed
+  carried no direct tablet row at all (only dbrand/m2skins
+  accessory rows) — the Lenovo page read is the sole quote and
+  the accessory rows were excluded. Lenovo part numbers are
+  stated by two independent sources each (Lenovo US page +
+  Newegg listing for ZAHT0078US, ZAHD0826US, ZAF00008US;
+  Lenovo US page + Slickdeals/NeweggBusiness for ZAHX0159US;
+  Lenovo US page + Slickdeals thread for ZAEF0068US), but per
+  the catalog's standing precedent (every verified entry carries
+  a UPC or EAN; MPN-only verified has never happened) the
+  identifiers stay empty until a UPC/EAN is confirmed by two
+  independent sources — the MPNs live in the variant strings
+  and notes, as in batches 23–25.
+- Variant pinning, recorded explicitly: Legion Tab Gen 3 pins
+  Eclipse Black (ZAEF0068US) — the only colorway; the FIFA World
+  Cup 26 Edition (ZAEF0096US, White, $569.99) is a different,
+  limited-edition tablet and the Legion Tab Gen 5 ($899.99 list /
+  $699.99 sale) is a different, newer tablet. Tab Plus Gen 2 pins
+  Celestial White (ZAHT0078US, 8GB/128GB) — the only US config
+  (North America gets 8GB/128GB only per Notebookcheck); the
+  8GB/256GB ZAHT0043US is a different config. Idea Tab Pro Gen 2
+  pins Cloud Grey (ZAHD0826US, 8GB/128GB) — the only US config
+  listed at Lenovo direct; the 256GB ZAHC part is a different
+  config. Tab One pins Luna Grey (ZAF00008US, 4GB/64GB) — the
+  only colorway; the LTE 128GB is a different config. Yoga Tab
+  Plus Gen 2 pins Cosmic Blue (ZAHX0159US, 12GB/256GB) — the US
+  base config with keyboard + Tab Pen Pro 2 included; the 16GB /
+  512GB configs are different configs, and the Yoga Tab Plus Gen
+  1 (12.7-inch, Snapdragon 8 Gen 3) is a different tablet.
+- What does NOT change: the existing 150 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–25 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 155 on
+  the next edit (parent owns the cron; not touched here).
+- Revisit: re-check the five sale prices after the Early Black
+  Friday event ends Nov 8 (Legion Tab Gen 3 $549.99, Tab Plus Gen
+  2 $469.99, Idea Tab Pro Gen 2 $399.99 sale vs $549.99 list, Tab
+  One $149.99 sale vs $199.99 est. value, Yoga Tab Plus Gen 2
+  $799.99 sale vs $999.99 list); re-check the Tab Plus Gen 2
+  $469.99 price next refresh (the Sep–Oct $269.99–$299.99 sale
+  prices vs the current $469.99 is the sharpest move in this
+  batch); re-check the Idea Tab Pro Gen 2 ZAHD0826US bundle
+  contents (folio case + pen included or not); the five pending
+  UPCs stay pending until a second non-Amazon US source confirms
+  each (no UPC surfaced for any of the five part numbers —
+  ZAEF0068US, ZAHT0078US, ZAHD0826US, ZAF00008US, ZAHX0159US);
+  the remaining Lenovo candidates (Legion Tab Gen 5 $899.99 list /
+  $699.99 sale, Yoga Tab Gen 2 $729.99, Idea Tab $229.99 4GB /
+  $289.99 8GB, Idea Tab Plus $339.99, Tab P12) stay list-only for
+  later batches; the batch 25 revisits carry over unchanged
+  (PG32UCWM stock + UPC 199291571570, PG27AQDPR stock + UPC,
+  Delta US UPC, Harpe Mini Core UPC 199291014046, Pelta US UPC,
+  PG27UCWM stock + UPC 199291335226, Delta II US UPC, Gladius IV
+  Ace UPC, Azoth 96 HE UPC 199291008571, Cetra Open Wireless UPC
+  conflict 199291232747 vs 199291232754, S2725QS UPC 884116485117,
+  AW3225DM EAN 5397184962725, AW920K UPC 884116448686, WB726 EAN
+  5397321028925, second Target U3225QE feed row $1,028.97).

@@ -3970,6 +3970,158 @@ EVAL_SET: list[EvalProduct] = [
         "Pelta is the third ASUS headset in the set (after "
         "Delta II and Delta, batches 23/25).",
     ),
+    EvalProduct(
+        key="lenovo-legion-tab-gen-3-eclipse-black",
+        brand="Lenovo",
+        model="Legion Tab Gen 3 8.8-inch Gaming Tablet",
+        variant="Eclipse Black (ZAEF0068US)",
+        category="tablets",
+        identifiers={},
+        status="pending",
+        notes="Lenovo $549.99 (US product page JSON-LD read fresh "
+        "2026-11-06 21:08 UTC, InStock; 8.8-inch 2.5K 165Hz, "
+        "Snapdragon 8 Gen 3, 12GB LPDDR5X / 256GB UFS 4.0, "
+        "Eclipse Black single colorway, Android 14 with 3 OS "
+        "upgrades). Identifiers PENDING: no UPC surfaced for "
+        "ZAEF0068US in any source read, so identifiers stay "
+        "empty per the strict two-source rule; re-check next "
+        "refresh. Not copied: nothing — no candidate code "
+        "surfaced. Not the Legion Tab Gen 3 FIFA World Cup 26 "
+        "Edition (ZAEF0096US, White, $569.99 — different, "
+        "limited-edition tablet) or the Legion Tab Gen 5 (8.8-"
+        "inch Snapdragon, $899.99 list / $699.99 sale — "
+        "different, newer tablet). Excluded: the feed's dbrand "
+        "skin and m2skins rows (accessories, not the tablet); "
+        "the Meta Catalog feed for this query carried no direct "
+        "tablet row at all. Distinct from the set's six Apple "
+        "iPads — the Legion Tab Gen 3 is the first Lenovo tablet "
+        "in the set and its first Android gaming tablet; Lenovo "
+        "is a new brand in the set.",
+    ),
+    EvalProduct(
+        key="lenovo-tab-plus-gen-2-celestial-white",
+        brand="Lenovo",
+        model="Tab Plus Gen 2 12.1-inch Tablet",
+        variant="Celestial White (ZAHT0078US)",
+        category="tablets",
+        identifiers={},
+        status="pending",
+        notes="Lenovo $469.99 (US product page JSON-LD read fresh "
+        "2026-11-06 21:08 UTC, InStock; feed brand_direct row "
+        "agrees at $469.99; 12.1-inch 2.5K 120Hz, MediaTek "
+        "Dimensity 7400, 8GB LPDDR5 / 128GB UFS 3.1, JBL 9-unit "
+        "Pro speaker system, Celestial White); Newegg $299.99 "
+        "(feed authorized_retailer row — suspected; not "
+        "page-verified; 8GB/128GB, part ZAHT0078US). "
+        "Identifiers PENDING: no UPC surfaced for ZAHT0078US in "
+        "any source read, so identifiers stay empty per the "
+        "strict two-source rule; re-check next refresh. Not "
+        "copied: nothing — no candidate code surfaced. Not the "
+        "Best Buy ZAHT0043US (8GB/256GB, $449.99 sale $379 — "
+        "different storage config, different part) or the "
+        "original Tab Plus (11.5-inch, 2024, different tablet). "
+        "Correction vs earlier sale reports: the $269.99 sale "
+        "(Slickdeals, Sep 29) and $289.99/$299.99 October sale "
+        "prices are stale — the current Lenovo direct price is "
+        "$469.99 on two agreeing reads (fresh page + feed), a "
+        "sharp rise consistent with Lenovo's October US price "
+        "hikes (PhoneArena, Oct 13); re-check the $469.99 price "
+        "next refresh. Distinct from the set's iPads — the Tab "
+        "Plus Gen 2 is the second Lenovo tablet in the set and "
+        "its entertainment/speaker-first tablet.",
+    ),
+    EvalProduct(
+        key="lenovo-idea-tab-pro-gen-2-cloud-grey",
+        brand="Lenovo",
+        model="Idea Tab Pro Gen 2 13-inch Tablet",
+        variant="Cloud Grey (ZAHD0826US)",
+        category="tablets",
+        identifiers={},
+        status="pending",
+        notes="Lenovo $399.99 sale vs $549.99 list (US product page "
+        "JSON-LD read fresh 2026-11-06 21:08 UTC, InStock; feed "
+        "brand_direct row agrees at price $549.99 / sale "
+        "$399.99; 13-inch 3.5K 144Hz, Snapdragon 8s Gen 4, 8GB / "
+        "128GB, Cloud Grey); Newegg $527.99 sale vs $549.99 "
+        "(feed authorized_retailer row — suspected; not "
+        "page-verified; TB390FU, 8GB/128GB, part number not "
+        "stated in the feed row). Identifiers PENDING: no UPC "
+        "surfaced for ZAHD0826US in any source read, so "
+        "identifiers stay empty per the strict two-source rule; "
+        "re-check next refresh. Not copied: nothing — no "
+        "candidate code surfaced. Not the Best Buy ZAHD0863US "
+        "($529.99, with Tab Pen Plus — different part/bundle) "
+        "or the CDW ZAHC 256GB ($606.99 — different storage "
+        "config) or the Idea Tab Pro Gen 1 (12.7-inch 3K, "
+        "Dimensity 8300, different tablet). Bundle conflict "
+        "recorded: the feed description for ZAHD0826US says "
+        "'Folio case and Pen included' while droidgadgets (Oct "
+        "23) says this part ships without pen or keyboard — the "
+        "pin is the part number, not the bundle claim; re-check "
+        "bundle contents next refresh. Re-check the $399.99 sale "
+        "price after the Early Black Friday event ends Nov 8. "
+        "Distinct from the set's iPads — the Idea Tab Pro Gen 2 "
+        "is the third Lenovo tablet in the set and its "
+        "large-screen study tablet.",
+    ),
+    EvalProduct(
+        key="lenovo-tab-one-luna-grey",
+        brand="Lenovo",
+        model="Tab One 8.7-inch Tablet",
+        variant="Luna Grey (ZAF00008US)",
+        category="tablets",
+        identifiers={},
+        status="pending",
+        notes="Lenovo $149.99 sale vs $199.99 est. value (US product "
+        "page JSON-LD read fresh 2026-11-06 21:08 UTC, InStock; "
+        "feed brand_direct row agrees at price $199.99 / sale "
+        "$149.99; 8.7-inch HD, MediaTek Helio G85, 4GB / 64GB "
+        "eMMC, Luna Grey, Android 14 upgradable to 15). "
+        "Identifiers PENDING: no UPC surfaced for ZAF00008US in "
+        "any source read, so identifiers stay empty per the "
+        "strict two-source rule; re-check next refresh. Not "
+        "copied: nothing — no candidate code surfaced. Not the "
+        "Best Buy ZAF00067US (SKU 6621480, $99.99 Holiday Deal — "
+        "a Best Buy-specific part number for the same 4GB/64GB "
+        "Luna Grey specs, not the Lenovo-direct part; the "
+        "$99.99 price was NOT used) or the Staples ZAF00043US "
+        "($209.99 — different part) or the Tab One LTE 128GB "
+        "(different storage/connectivity). Re-check the $149.99 "
+        "sale price after the Early Black Friday event ends Nov "
+        "8. Distinct from the set's iPads — the Tab One is the "
+        "fourth Lenovo tablet in the set and its entry-level "
+        "compact tablet.",
+    ),
+    EvalProduct(
+        key="lenovo-yoga-tab-plus-gen-2-cosmic-blue",
+        brand="Lenovo",
+        model="Yoga Tab Plus Gen 2 13-inch Tablet",
+        variant="Cosmic Blue (ZAHX0159US)",
+        category="tablets",
+        identifiers={},
+        status="pending",
+        notes="Lenovo $799.99 sale vs $999.99 list (US product page "
+        "JSON-LD read fresh 2026-11-06 21:08 UTC, InStock; feed "
+        "brand_direct row agrees at price $999.99 / sale "
+        "$799.99; Notebookcheck confirms the first discount, "
+        "$999.99 to $799.99; 13-inch 4K PureSight Pro 144Hz, "
+        "Snapdragon 8 Elite, 12GB LPDDR5X / 256GB UFS 4.0, "
+        "Cosmic Blue, clamshell keyboard + Tab Pen Pro 2 "
+        "included, Android 17 with 7 OS upgrades). Identifiers "
+        "PENDING: no UPC surfaced for ZAHX0159US in any source "
+        "read, so identifiers stay empty per the strict "
+        "two-source rule; re-check next refresh. Not copied: "
+        "nothing — no candidate code surfaced. Not the Yoga Tab "
+        "Plus Gen 1 (12.7-inch, Snapdragon 8 Gen 3, 16GB/256GB, "
+        "different tablet) or the Yoga Tab Gen 2 (11.1-inch, "
+        "$729.99, different tablet) or the 'Yoga Tab Plus (Gen "
+        "2) + Earbud' bundle ($1,069.98 feed row — a bundle, "
+        "excluded). Re-check the $799.99 sale price after the "
+        "Early Black Friday event ends Nov 8. Distinct from the "
+        "set's iPads — the Yoga Tab Plus Gen 2 is the fifth "
+        "Lenovo tablet in the set and its flagship creator "
+        "tablet.",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:
