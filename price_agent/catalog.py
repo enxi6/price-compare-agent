@@ -4806,6 +4806,161 @@ EVAL_SET: list[EvalProduct] = [
         "and its mid-range FE tablet.",
         status="verified",
     ),
+    # --- Expansion batch 31 (added 2026-11-06, continuous expansion
+    # per DECISIONS 027, no per-batch approval). 175 -> 180 models.
+    # DECISIONS 053, BUILD_LOG 070.
+    EvalProduct(
+        key="samsung-galaxy-tab-s11-ultra-256gb-gray",
+        brand="Samsung",
+        model="Galaxy Tab S11 Ultra",
+        variant="Gray, 14.6-inch, 256GB, Wi-Fi (SM-X930NZAAXAR)",
+        category="tablets",
+        identifiers={},
+        status="pending",
+        notes="Samsung $1,299.99 (US buy page JSON-LD read fresh "
+        "2026-11-06 21:42 UTC, InStock; 14.6-inch Dynamic AMOLED 2X, "
+        "Dimensity 9400+, 12GB/256GB, S Pen included, IP68, 11,600mAh, "
+        "up to 23 hours video); Best Buy $1,299.99 (page read fresh "
+        "2026-11-06 21:42 UTC, InStock, Sold by Best Buy, SKU 6641197, "
+        "Model SM-X930NZAAXAR); Quill $1,320.99 (page read fresh "
+        "2026-11-06 21:44 UTC, Out of stock, Model SM-X930NZAAXAR). "
+        "Identifiers PENDING: the candidate UPC 198957230080 appears "
+        "only in Samsung's own Galaxy Tablet MSRP Price Lists (Sep, Dec "
+        "2025 and Mar, May 2026 editions all agree: SM-X930NZAAXAR, "
+        "Galaxy Tab S11 Ultra 12+256GB (Wi-Fi) Gray, UPC 198957230080) "
+        "— no second independent source was found (the Quill page "
+        "states no UPC; web search returns nothing else for the code), "
+        "so identifiers stay empty per the strict two-source rule — "
+        "same call as batch 30's Watch9. Not copied: 198957230080 "
+        "(single-source candidate). Note: the $1,199.99 MSRP (Samsung's "
+        "May 2026 list) is stale vs the current $1,299.99 at Samsung US "
+        "and Best Buy — the list price rose; re-check next refresh. "
+        "Excluded: the feed's Quill $1,281.99 row (stale vs the fresh "
+        "$1,320.99 page read) and the Newegg $1,129.99 / $1,944.52 rows "
+        "(unverified marketplace-style listings). Not the 512GB Gray "
+        "(SM-X930NZAEXAR, UPC 198957230066, $1,399.99 MSRP) or the 1TB "
+        "Silver (SM-X930NZSIXAR, $1,899.99). Distinct from the set's "
+        "Galaxy Tab S11 — the Tab S11 Ultra is Samsung's flagship "
+        "14.6-inch tablet.",
+    ),
+    EvalProduct(
+        key="samsung-galaxy-tab-a11-plus-128gb-gray",
+        brand="Samsung",
+        model="Galaxy Tab A11+",
+        variant="Gray, 11-inch, 128GB, Wi-Fi (SM-X230NZAIXAR)",
+        category="tablets",
+        identifiers={"UPC": "198957270390", "MPN": "SM-X230NZAIXAR"},
+        identifier_sources={
+            "UPC": "Samsung Galaxy Tablet MSRP Price Lists (Dec 2025 "
+            "and May 2026 editions agree: SM-X230NZAIXAR, Galaxy Tab "
+            "A11+ 6+128GB (Wi-Fi) Gray, UPC 198957270390) + eBay "
+            "product identifiers (MPN SM-X230NZAIXAR, UPC 198957270390, "
+            "Gray, 128GB) agree"
+        },
+        notes="Samsung $299.99 (US buy page JSON-LD read fresh "
+        "2026-11-06 21:42 UTC, InStock; 11-inch WUXGA 90Hz, MediaTek "
+        "Dimensity 7300, 6GB/128GB, microSD to 2TB, quad speakers, "
+        "Android 16); Best Buy $299.99 (page read fresh 2026-11-06 "
+        "21:43 UTC, InStock, Sold by Best Buy, SKU 6665037, Model "
+        "SM-X230NZAIXAR); Walmart $299.99 (feed authorized_retailer "
+        "row — suspected; not page-verified). Note: the $249.99 MSRP "
+        "(Samsung's Dec 2025 / May 2026 lists; NotebookCheck's Jan "
+        "2026 launch coverage) is stale vs the current $299.99 at "
+        "Samsung US and Best Buy — the list price rose; re-check next "
+        "refresh. Not the 256GB Gray (SM-X230NZATXAR, UPC 198957270383, "
+        "$329.99 MSRP) or the 5G Unlocked (SM-X238UZAAXAA, $279.99 "
+        "MSRP) or the Silver (SM-X230NZSIXAR). Distinct from the set's "
+        "Galaxy Tab S11 / S10 FE lines — the Tab A11+ is Samsung's "
+        "entry-level 11-inch tablet.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="samsung-galaxy-tab-s10-fe-plus-128gb-gray",
+        brand="Samsung",
+        model="Galaxy Tab S10 FE+",
+        variant="Gray, 13.1-inch, 128GB, Wi-Fi (SM-X620NZAAXAR)",
+        category="tablets",
+        identifiers={"UPC": "887276992563", "MPN": "SM-X620NZAAXAR"},
+        identifier_sources={
+            "UPC": "Samsung Galaxy Tablet MSRP Price Lists (Mar, Jun, "
+            "Sep, Dec 2025 and Mar, Apr, May 2026 editions all agree: "
+            "SM-X620NZAAXAR, Galaxy Tab S10 FE+ 8+128GB (Wi-Fi) Gray, "
+            "UPC 887276992563) + manuals.plus mirror of Samsung's June "
+            "2025 list (same code)"
+        },
+        notes="Samsung $699.99 (US buy page JSON-LD read fresh "
+        "2026-11-06 21:42 UTC, InStock; 13.1-inch WQXGA 90Hz, Exynos "
+        "1580, 8GB/128GB, S Pen included, IP68); Best Buy $699.99 "
+        "(search-index page read, InStock, Sold by Best Buy, SKU "
+        "6618945, Model SM-X620NZAAXAR); bkstr $699.99 (feed "
+        "authorized_retailer row — suspected; not page-verified). "
+        "Note: the $649.99 MSRP (Samsung's May 2026 list) is stale vs "
+        "the current $699.99 at Samsung US and Best Buy — the list "
+        "price rose; re-check next refresh. Excluded: the antonline "
+        "marketplace rows ($549.99 / $705.41, Best Buy marketplace "
+        "seller, DECISIONS 021) and the shopabunda $540 'International "
+        "Model' row (non-US, DECISIONS 021). Not the 256GB Gray "
+        "(SM-X620NZAEXAR, UPC 887276992556, $819.99) or the Blue "
+        "(SM-X620NLBAXAR) or Silver (SM-X620NZSAXAR). Distinct from "
+        "the set's Galaxy Tab S10 FE — the FE+ is the 13.1-inch big-screen "
+        "FE tablet.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="garmin-forerunner-165-black-slate-gray",
+        brand="Garmin",
+        model="Forerunner 165",
+        variant="Black with Slate Gray band, non-Music (010-02863-20)",
+        category="wearables",
+        identifiers={"UPC": "753759326593", "MPN": "010-02863-20"},
+        identifier_sources={
+            "UPC": "Snapklik (Model 010-02863-20, UPC 753759326593) + "
+            "Cycle Superstore barcodes (753759326593) + Evolution Bikes "
+            "(SKU 010-02863-20, EAN 753759326593) agree"
+        },
+        notes="Garmin direct $249.99 (US store page JSON-LD read fresh "
+        "2026-11-06 21:44 UTC; the page read states no availability — "
+        "stock unconfirmed at Garmin direct); Crutchfield $249.99 "
+        "(search-index page read, InStock, Black with Slate Gray band); "
+        "Running Warehouse $249.99 (search-index page read, In Stock "
+        "4+, Stock # 010-02863-20). 43mm AMOLED GPS running watch, "
+        "1.2-inch display, up to 11 days smartwatch battery, launched "
+        "Feb 2024. Not the Music edition (010-02863-30, $299.99) or "
+        "the Mist Gray (010-02863-21) — different SKUs. Distinct from "
+        "the set's Forerunner 570 — the 165 is Garmin's entry-level "
+        "AMOLED running watch.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="garmin-edge-850",
+        brand="Garmin",
+        model="Edge 850",
+        variant="Device only, Black (010-03023-00)",
+        category="cycling-computers",
+        identifiers={"UPC": "753759356644", "MPN": "010-03023-00"},
+        identifier_sources={
+            "UPC": "HeartRateMonitorsUSA MPN/UPC table (Edge 850, "
+            "010-03023-00, UPC 753759356644, $599.99) + The Pro's "
+            "Closet (mpn 010-03023-00, upc 753759356644) agree. MPN "
+            "010-03023-00 corroborated by Garmin US (product URL "
+            "pn/010-03023-00) + Best Buy US (Model 010-03023-00, SKU "
+            "6665042) + BikeTiresDirect (Mfg PartNum 010-03023-00)"
+        },
+        notes="Garmin direct $599.99 (US store page JSON-LD read fresh "
+        "2026-11-06 21:44 UTC; the page read states no availability — "
+        "stock unconfirmed at Garmin direct); Best Buy $599.99 "
+        "(search-index page read, InStock, Sold by Best Buy, SKU "
+        "6665042, Model 010-03023-00); BikeTiresDirect $599.99 "
+        "(search-index page read, JSON-LD InStock, Mfg PartNum "
+        "010-03023-00); Sun & Ski $599.99 (feed authorized_retailer "
+        "row — suspected; not page-verified). Compact GPS cycling "
+        "computer, 2.7-inch color touchscreen + buttons, Garmin Pay, "
+        "speaker / bike bell, up to 12 hours demanding / 36 hours "
+        "battery saver, launched Sep 9, 2025. Single SKU — no color "
+        "or size variants. Distinct from the set's Edge 1050 — the "
+        "850 is the compact mid-tier Edge.",
+        status="verified",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:

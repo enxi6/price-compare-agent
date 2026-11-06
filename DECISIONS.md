@@ -2849,3 +2849,107 @@ written as "superseded by" with the original text kept.
   prices after Early Black Friday ends Nov 8; Tab Plus Gen 2
   $469.99; Idea Tab Pro Gen 2 bundle contents; five pending
   Lenovo UPCs).
+
+## 053 (2026-11-06): Expansion batch 31 — 175 → 180 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models (BUILD_LOG 070), no per-batch user approval
+  needed (DECISIONS 027): the Samsung tablet sweep completed —
+  Galaxy Tab S11 Ultra 14.6-inch 256GB Wi-Fi, Gray
+  (SM-X930NZAAXAR, UPC pending), Galaxy Tab A11+ 11-inch 128GB
+  Wi-Fi, Gray (SM-X230NZAIXAR, UPC 198957270390 — verified),
+  Galaxy Tab S10 FE+ 13.1-inch 128GB Wi-Fi, Gray (SM-X620NZAAXAR,
+  UPC 887276992563 — verified) — plus 2 Garmin substitutes from
+  the batch 28 list-only pool, because the remaining Samsung
+  candidates all failed the current-catalog test (see below):
+  Garmin Forerunner 165 43mm, Black/Slate Gray, non-Music
+  (010-02863-20, UPC 753759326593 — verified) and Garmin Edge 850
+  (010-03023-00, UPC 753759356644 — verified). One variant pinned
+  per model (DECISIONS 015); 4 of 5 identifiers verified, 1 stays
+  pending. Verified-identifier count rises 84 → 88. Samsung
+  grows 8 → 11 entries, Garmin 5 → 7; no new brand enters the
+  set. Category counts: "tablets" 17 → 20, "wearables" 10 → 11,
+  "cycling-computers" 1 → 2. No phones and no TVs were added —
+  both would open new categories, out of scope for this batch
+  (DECISIONS 016).
+- Why these 5: the three tablets are the last three Samsung US
+  current-catalog tablets not yet in the set — the S11 Ultra is
+  the flagship 14.6-inch tablet ($1,299.99), the A11+ is the
+  entry-level 11-inch tablet ($299.99) and the S10 FE+ is the
+  big-screen FE tablet ($699.99); all three are in stock new at
+  Samsung US on 2026-11-06 (buy-page JSON-LD InStock reads) with
+  Best Buy agreeing on every price. The two Garmin substitutes
+  are the cleanest remaining Garmin candidates: the Forerunner
+  165 ($249.99) is Garmin's entry-level AMOLED running watch and
+  the Edge 850 ($599.99) is the compact mid-tier Edge — both
+  single-SKU pins with two-source UPCs, both still current (the
+  165 launched Feb 2024, the 850 launched Sep 9, 2025).
+- What was corrected along the way: all three tablet MSRPs are
+  stale vs current street prices — the S11 Ultra $1,199.99 MSRP
+  (Samsung's May 2026 list) vs the current $1,299.99 at Samsung
+  US and Best Buy; the A11+ $249.99 MSRP (Dec 2025 / May 2026
+  lists; NotebookCheck's Jan 2026 launch coverage) vs the
+  current $299.99; the S10 FE+ $649.99 MSRP (May 2026 list) vs
+  the current $699.99. The Forerunner 165 base Black/Slate Gray
+  MPN is 010-02863-20, not 010-02863-00 (the -00 suffix does not
+  exist for this line; the -20 was confirmed by Garmin's own
+  product URL, Running Warehouse, Focus Camera and P.C.
+  Richard). The feed's Quill S11 Ultra $1,281.99 row is stale vs
+  the fresh $1,320.99 page read (out of stock); the feed's
+  antonline S10 FE+ marketplace rows and the shopabunda $540
+  "International Model" row were excluded (DECISIONS 021).
+- Variant pinning, recorded explicitly: Tab S11 Ultra pins Gray
+  256GB Wi-Fi (SM-X930NZAAXAR) — the entry storage tier; 512GB
+  (SM-X930NZAEXAR, $1,399.99 MSRP) and 1TB Silver
+  (SM-X930NZSIXAR, $1,899.99) are different SKUs. Tab A11+ pins
+  Gray 128GB Wi-Fi (SM-X230NZAIXAR) — the entry tier; 256GB
+  (SM-X230NZATXAR, $329.99 MSRP) and 5G Unlocked (SM-X238UZAAXAA,
+  $279.99 MSRP) are different SKUs, as is Silver
+  (SM-X230NZSIXAR). Tab S10 FE+ pins Gray 128GB Wi-Fi
+  (SM-X620NZAAXAR) — the entry tier; 256GB (SM-X620NZAEXAR,
+  $819.99) is a different SKU, as are Blue (SM-X620NLBAXAR) and
+  Silver (SM-X620NZSAXAR). Forerunner 165 pins Black/Slate Gray
+  non-Music (010-02863-20) — the base config; the Music edition
+  (010-02863-30, $299.99) and Mist Gray (010-02863-21) are
+  different SKUs. Edge 850 pins the device-only Black
+  (010-03023-00) — a single SKU with no color or size variants.
+- What does NOT change: the existing 175 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6
+  Pro untouched, batches 1–30 entries untouched). No other
+  snapshot file is rewritten. No Amazon touch in the snapshot:
+  no Amazon quotes, no Amazon-sourced prices or identifiers
+  (the Forerunner 165 UPC rests on Snapklik + Cycle Superstore +
+  Evolution Bikes; an Amazon US listing agreeing on the same
+  code was read but not cited and not used). The daily refresh
+  cron still says "57 models" in its body and needs a count
+  update to 180 on the next edit (parent owns the cron; not
+  touched here).
+- Revisit: re-check the pending Tab S11 Ultra UPC (candidate
+  198957230080 needs a second independent source); re-check the
+  three risen tablet prices (S11 Ultra $1,299.99 vs $1,199.99
+  MSRP; A11+ $299.99 vs $249.99 MSRP; S10 FE+ $699.99 vs
+  $649.99 MSRP) next refresh; confirm stock on the two Garmin
+  direct pages (both JSON-LD reads state no availability);
+  re-check the two pending batch 30 UPCs (Watch9 SM-L340NZKAXAA
+  — candidate 198957310546 needs a second independent source;
+  Tab S11 SM-X730NZAAXAR — no UPC surfaced at all); the
+  remaining Garmin candidates stay list-only for later batches
+  (Garmin Instinct 3 — AMOLED 45mm Black 010-02936-00 $349.99,
+  Solar 45mm Black 010-02934-00 $349.99 with UPC 753759339500
+  from a distributor row, AMOLED 50mm Black 010-03020-00
+  $399.99, Solar 50mm Black 010-02935-00 $399.99; Garmin dash
+  cams — not yet swept); the batch 30 revisits carry over
+  unchanged (Watch8 Classic $499.99 price vs the Sep 24 $419.99
+  report; Tab S10 FE $549.99 price vs the $499.99 MSRP list) and
+  the batch 29 revisits carry over unchanged (four Lenovo sale
+  prices after the Early Black Friday event ends Nov 8; four
+  pending Lenovo/ASUS UPCs) and the batch 28 revisits carry over
+  unchanged (fēnix 9 UPC; Venu 4 Dell $499.99 sale after Black
+  Friday Nov 27; vívoactive 6 stock; Forerunner 970 UPC
+  tiebreak; Edge 1060 UPC) and the batch 27 revisits carry over
+  unchanged (Series X stock; Wireless Headset $110.99; Surface
+  Laptop $1,299.99 sale after Black Friday; three pending
+  Microsoft identifiers; remaining Microsoft candidates
+  list-only) and the batch 26 revisits carry over unchanged
+  (five Lenovo sale prices after Early Black Friday ends Nov 8;
+  Tab Plus Gen 2 $469.99; Idea Tab Pro Gen 2 bundle contents;
+  five pending Lenovo UPCs).

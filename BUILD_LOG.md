@@ -5227,3 +5227,166 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   continuous expansion; the pending set gains the 2 new pending
   keys: samsung-galaxy-watch9-40mm-graphite,
   samsung-galaxy-tab-s11-128gb-gray).
+
+## 070 — 2026-11-06: Expansion batch 31 — 175 → 180 models (DECISIONS 053)
+
+- Membership check (against the 175-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): Galaxy Tab S11 Ultra — NO MATCH
+  (no S11 Ultra in the set; SM-X930NZAAXAR and 198957230080 match
+  nothing); Galaxy Tab A11+ — NO MATCH (no A11+ in the set;
+  SM-X230NZAIXAR and 198957270390 match nothing); Galaxy Tab S10
+  FE+ — NO MATCH as an entry (the only hits for SM-X620NZAAXAR /
+  "S10 FE+" are the mention inside the Tab S10 FE entry's notes
+  — "Not the Tab S10 FE+ 13.1-inch (SM-X620NZAAXAR, $649.99
+  MSRP)" — which is a cross-reference, not a catalog entry; no
+  EvalProduct key samsung-galaxy-tab-s10-fe-plus exists, and
+  887276992563 matches nothing); Galaxy Buds3 Pro — NO MATCH in
+  the set but fails the current-catalog test (see skipped list);
+  Galaxy Buds3 base — NO MATCH in the set (the one "Galaxy
+  Buds3" hit is the Buds3 FE model name; SM-R530 matches
+  nothing) but fails the current-catalog test; Galaxy Tab S9 FE
+  — NO MATCH (SM-X510 matches nothing) but fails the
+  current-catalog test; Galaxy Tab A9+ — NO MATCH (SM-X210
+  matches nothing) but fails the current-catalog test; Garmin
+  Forerunner 165 — NO MATCH (no 165 in the set; the set's
+  Forerunners are the 570 only); Garmin Edge 850 — NO MATCH (no
+  850 in the set; the set's Edges are the 1050 only); Garmin
+  Instinct 3 — NO MATCH (checked, held for a later batch). UPC
+  cross-check: 198957270390 (A11+), 887276992563 (S10 FE+),
+  753759326593 (Forerunner 165) and 753759356644 (Edge 850) match
+  nothing in the set; 198957230080 (S11 Ultra candidate) is not
+  recorded. No candidate was dropped by the membership check.
+- Samsung Galaxy Tab S11 Ultra 14.6-inch 256GB Wi-Fi, Gray
+  (SM-X930NZAAXAR) — identifiers PENDING: the candidate UPC
+  198957230080 appears only in Samsung's own Galaxy Tablet MSRP
+  Price Lists (Sep, Dec 2025 and Mar, May 2026 editions all
+  agree: SM-X930NZAAXAR, Galaxy Tab S11 Ultra 12+256GB (Wi-Fi)
+  Gray, $1,199.99, UPC 198957230080) — no second independent
+  source was found (the Quill page states no UPC; web search
+  returns nothing else for the code), so identifiers stay empty
+  per the strict two-source rule — same call as batch 30's
+  Watch9. Not copied: 198957230080 (single-source candidate).
+  MPN confirmed by the Samsung US buy-page URL
+  (galaxy-tab-s11-ultra-256gb-gray-wi-fi-sku-sm-x930nzaaxar) +
+  Best Buy US (Model SM-X930NZAAXAR, SKU 6641197) + Quill
+  (Model SM-X930NZAAXAR). Quotes (3): Samsung $1,299.99 (US buy
+  page JSON-LD read fresh 2026-11-06 21:42 UTC, InStock;
+  14.6-inch Dynamic AMOLED 2X, Dimensity 9400+, 12GB/256GB, S
+  Pen included, IP68, 11,600mAh, up to 23 hours video); Best Buy
+  $1,299.99 (page read fresh 2026-11-06 21:42 UTC, InStock, Sold
+  by Best Buy); Quill $1,320.99 (page read fresh 2026-11-06
+  21:44 UTC, Out of stock). Note: the $1,199.99 MSRP (Samsung's
+  May 2026 list) is stale vs the current $1,299.99 at Samsung US
+  and Best Buy — the list price rose; re-check next refresh.
+  Excluded: the feed's Quill $1,281.99 row (stale vs the fresh
+  $1,320.99 page read) and the Newegg $1,129.99 / $1,944.52 rows
+  (unverified marketplace-style listings). Not the 512GB Gray
+  (SM-X930NZAEXAR, UPC 198957230066, $1,399.99 MSRP) or the 1TB
+  Silver (SM-X930NZSIXAR, $1,899.99).
+- Samsung Galaxy Tab A11+ 11-inch 128GB Wi-Fi, Gray
+  (SM-X230NZAIXAR) — identifiers VERIFIED: UPC 198957270390 +
+  MPN SM-X230NZAIXAR (Samsung Galaxy Tablet MSRP Price Lists,
+  Dec 2025 and May 2026 editions agree: SM-X230NZAIXAR, Galaxy
+  Tab A11+ 6+128GB (Wi-Fi) Gray, $249.99, UPC 198957270390, +
+  eBay product identifiers, MPN SM-X230NZAIXAR, UPC 198957270390,
+  Gray, 128GB, agree). Quotes (3): Samsung $299.99 (US buy page
+  JSON-LD read fresh 2026-11-06 21:42 UTC, InStock; 11-inch
+  WUXGA 90Hz, MediaTek Dimensity 7300, 6GB/128GB, microSD to
+  2TB, quad speakers, Android 16); Best Buy $299.99 (page read
+  fresh 2026-11-06 21:43 UTC, InStock, Sold by Best Buy, SKU
+  6665037, Model SM-X230NZAIXAR); Walmart $299.99 (feed
+  authorized_retailer row — suspected; not page-verified). Note:
+  the $249.99 MSRP is stale vs the current $299.99 at Samsung US
+  and Best Buy — the list price rose; re-check next refresh.
+  Not the 256GB Gray (SM-X230NZATXAR, UPC 198957270383, $329.99
+  MSRP) or the 5G Unlocked (SM-X238UZAAXAA, $279.99 MSRP) or the
+  Silver (SM-X230NZSIXAR).
+- Samsung Galaxy Tab S10 FE+ 13.1-inch 128GB Wi-Fi, Gray
+  (SM-X620NZAAXAR) — identifiers VERIFIED: UPC 887276992563 +
+  MPN SM-X620NZAAXAR (Samsung Galaxy Tablet MSRP Price Lists,
+  Mar, Jun, Sep, Dec 2025 and Mar, Apr, May 2026 editions all
+  agree: SM-X620NZAAXAR, Galaxy Tab S10 FE+ 8+128GB (Wi-Fi)
+  Gray, $649.99, UPC 887276992563, + manuals.plus mirror of
+  Samsung's June 2025 list, same code — the same verification
+  pattern as batch 30's Tab S10 FE). Quotes (3): Samsung $699.99
+  (US buy page JSON-LD read fresh 2026-11-06 21:42 UTC, InStock;
+  13.1-inch WQXGA 90Hz, Exynos 1580, 8GB/128GB, S Pen included,
+  IP68); Best Buy $699.99 (search-index page read, InStock, Sold
+  by Best Buy, SKU 6618945, Model SM-X620NZAAXAR); bkstr $699.99
+  (feed authorized_retailer row — suspected; not
+  page-verified). Note: the $649.99 MSRP is stale vs the current
+  $699.99 at Samsung US and Best Buy — the list price rose;
+  re-check next refresh. Excluded: the antonline marketplace
+  rows ($549.99 / $705.41, Best Buy marketplace seller,
+  DECISIONS 021) and the shopabunda $540 "International Model"
+  row (non-US, DECISIONS 021). Not the 256GB Gray (SM-X620NZAEXAR,
+  UPC 887276992556, $819.99) or the Blue (SM-X620NLBAXAR) or
+  Silver (SM-X620NZSAXAR).
+- Garmin Forerunner 165 43mm, Black with Slate Gray band,
+  non-Music (010-02863-20) — identifiers VERIFIED: UPC
+  753759326593 + MPN 010-02863-20 (Snapklik, Model 010-02863-20,
+  UPC 753759326593, + Cycle Superstore barcodes, 753759326593, +
+  Evolution Bikes, SKU 010-02863-20, EAN 753759326593, agree).
+  MPN corroborated by Garmin US (product URL pn/010-02863-20) +
+  Running Warehouse (Stock # 010-02863-20) + Focus Camera +
+  P.C. Richard (010-02863-20 in the URL). Correction: the base
+  Black MPN is 010-02863-20, not 010-02863-00 — the -00 suffix
+  does not exist for this line. Quotes (3): Garmin direct
+  $249.99 (US store page JSON-LD read fresh 2026-11-06 21:44
+  UTC; the page read states no availability — stock unconfirmed
+  at Garmin direct); Crutchfield $249.99 (search-index page
+  read, InStock); Running Warehouse $249.99 (search-index page
+  read, In Stock 4+). 43mm AMOLED GPS running watch, 1.2-inch
+  display, up to 11 days smartwatch battery, launched Feb 2024.
+  Excluded: the Best Buy bundle rows ($254.99 bundles, not the
+  bare watch) and the feed's new_item_marketplace $249.99 row.
+  Not the Music edition (010-02863-30, $299.99) or the Mist Gray
+  (010-02863-21).
+- Garmin Edge 850, Device only, Black (010-03023-00) —
+  identifiers VERIFIED: UPC 753759356644 + MPN 010-03023-00
+  (HeartRateMonitorsUSA MPN/UPC table, Edge 850, 010-03023-00,
+  UPC 753759356644, $599.99, + The Pro's Closet, mpn
+  010-03023-00, upc 753759356644, agree). MPN corroborated by
+  Garmin US (product URL pn/010-03023-00) + Best Buy US (Model
+  010-03023-00, SKU 6665042) + BikeTiresDirect (Mfg PartNum
+  010-03023-00). Quotes (3): Garmin direct $599.99 (US store
+  page JSON-LD read fresh 2026-11-06 21:44 UTC; the page read
+  states no availability — stock unconfirmed at Garmin direct);
+  Best Buy $599.99 (search-index page read, InStock, Sold by
+  Best Buy); BikeTiresDirect $599.99 (search-index page read,
+  JSON-LD InStock); Sun & Ski $599.99 (feed authorized_retailer
+  row — suspected; not page-verified). Compact GPS cycling
+  computer, 2.7-inch color touchscreen + buttons, Garmin Pay,
+  speaker / bike bell, up to 12 hours demanding / 36 hours
+  battery saver, launched Sep 9, 2025 (Garmin launch release,
+  $599.99 US). Single SKU — no color or size variants.
+- Skipped this batch, list-only: Galaxy Buds3 base — the
+  samsung.com/us/mobile-audio/galaxy-buds3/buy/ page redirects
+  to the Buds4 Pro page (out of the Samsung US current catalog,
+  same as the Buds3 Pro in batch 30); Target still lists the
+  Buds3 at $179.98 but Samsung direct is gone, so it fails the
+  DECISIONS 011 current-catalog test; Galaxy Tab S9 FE
+  (SM-X510) — the samsung.com/us/tablets/galaxy-tab-s9-fe/buy/
+  page redirects to the Tab S10 FE page (out of the current
+  catalog, superseded by the S10 FE); Galaxy Tab A9+
+  (SM-X210) — the samsung.com/us/tablets/galaxy-tab-a9-plus/buy/
+  page redirects to the Tab A11+ page (out of the current
+  catalog, superseded by the A11+); Galaxy Buds3 Pro, Silver
+  (SM-R630NZAAXAR) — still out of the Samsung US catalog (batch
+  30); Galaxy Buds Core (SM-R410) — still not sold in the US
+  (batch 30); Galaxy Watch8 40mm (superseded by the Watch9);
+  Garmin Instinct 3 — held for a later batch (feed shows Garmin
+  direct rows: AMOLED 45mm Black 010-02936-00 $349.99, Solar
+  45mm Black 010-02934-00 $349.99 with UPC 753759339500 from a
+  distributor row, AMOLED 50mm Black 010-03020-00 $399.99,
+  Solar 50mm Black 010-02935-00 $399.99); Garmin dash cams — not
+  yet swept. No phones and no TVs were considered (new
+  categories, DECISIONS 016).
+- Eval on the new snapshot: 180 models, 88 verified identifiers,
+  5 with quotes, 15 total quotes, 0 identifier-matched, 15
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 175 → 180, verified 84 → 88, for the
+  continuous expansion; the pending set gains the 1 new pending
+  key: samsung-galaxy-tab-s11-ultra-256gb-gray).

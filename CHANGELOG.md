@@ -164,6 +164,35 @@ releases; breaking changes are called out in the release notes.
   sold in the US — LatAm/MEA stock only), Galaxy Watch8 40mm
   (superseded by the Watch9), Tab S11 Ultra / Tab A11+ / Tab S10
   FE+ (held for later batches) — all stay list-only.
+- Expansion batch 31 (DECISIONS 053, continuous expansion per
+  DECISIONS 027): eval set 175 → 180 models, verified identifiers
+  84 → 88 (4 of 5 new identifiers verified). New: Samsung Galaxy
+  Tab S11 Ultra 14.6-inch 256GB Wi-Fi, Gray (SM-X930NZAAXAR, UPC
+  pending — candidate 198957230080 is Samsung-MSRP-list-only, no
+  second source; $1,299.99 at Samsung direct and Best Buy,
+  $1,320.99 out of stock at Quill — the flagship 14.6-inch
+  tablet), Samsung Galaxy Tab A11+ 11-inch 128GB Wi-Fi, Gray
+  (SM-X230NZAIXAR, UPC 198957270390 — Samsung tablet MSRP lists
+  ×2 editions + eBay agree; $299.99 at Samsung direct, Best Buy
+  and Walmart — the entry-level 11-inch tablet), Samsung Galaxy
+  Tab S10 FE+ 13.1-inch 128GB Wi-Fi, Gray (SM-X620NZAAXAR, UPC
+  887276992563 — Samsung tablet MSRP lists ×7 editions +
+  manuals.plus mirror agree; $699.99 at Samsung direct, Best Buy
+  and bkstr — the big-screen FE tablet), Garmin Forerunner 165
+  43mm, Black/Slate Gray, non-Music (010-02863-20, UPC
+  753759326593 — Snapklik + Cycle Superstore + Evolution Bikes
+  agree; $249.99 at Garmin direct, Crutchfield and Running
+  Warehouse — Garmin's entry-level AMOLED running watch), Garmin
+  Edge 850 (010-03023-00, UPC 753759356644 —
+  HeartRateMonitorsUSA + The Pro's Closet agree; $599.99 at
+  Garmin direct, Best Buy and BikeTiresDirect — the compact
+  mid-tier Edge). Samsung grows 8 → 11 entries, Garmin 5 → 7.
+  Not added: Galaxy Buds3 base, Tab S9 FE and Tab A9+ (all three
+  Samsung US buy pages now redirect to their successors — out of
+  the current catalog), Galaxy Buds3 Pro and Buds Core (still
+  out / not sold in the US), Galaxy Watch8 40mm (superseded),
+  Garmin Instinct 3 (held for a later batch) — all stay
+  list-only.
 - Expansion batch 25 (DECISIONS 047, continuous expansion per
   DECISIONS 027): eval set 145 → 150 models, verified identifiers
   stay 74 (0 of 5 new identifiers verified — all pending). New:
