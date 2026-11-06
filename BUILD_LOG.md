@@ -3506,3 +3506,222 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   alienware-27-qd-oled-aw2726dm,
   alienware-pro-wireless-gaming-keyboard-dark-side-of-the-moon,
   alienware-pro-wireless-gaming-headset-dark-side-of-the-moon).
+
+## 059 — 2026-11-06: Brand sweep — HP, Lenovo, ASUS + remaining Dell (candidates LIST-ONLY, DECISIONS 013/015/021)
+
+- Read-only sweep, 2026-11-06 ~19:40–20:10 UTC / 11:40–12:10 PT (no
+  cart, no sign-in, no purchase; no Meta Catalog CLI run, no Amazon
+  anywhere). Sources: hp.com/us-en product and category pages
+  (search-index reads, prices in JSON-LD), asus.com/us + rog.asus.com
+  US store/category pages (search-index + one direct page read),
+  lenovo.com/us (see the Lenovo caveat below — the US store would
+  not surface in search; Lenovo prices below are corroborated from
+  US press/retailer reads and are flagged where they are not
+  lenovo.com-direct), and the Dell held-candidate list from BUILD_LOG
+  058 (recorded earlier today, carried forward, not re-priced).
+  Membership check: grep of price_agent/catalog.py finds zero HP,
+  Lenovo or ASUS brand entries in the 125-model set (the only
+  'HP'/'Lenovo'/'ASUS' strings are merchant mentions in other
+  entries' notes), and no Dell model below duplicates the 5 Dell
+  entries added in batch 20 (S3225QS, AW2726DM, Pro Mouse, Pro
+  Keyboard, Pro Headset). No candidate below matches an existing
+  model on name, MPN or UPC. Nothing was added to catalog.py.
+- HP (hp.com/us-en — readable, prices in page JSON-LD):
+  - OMEN 27s 27" FHD 240Hz gaming monitor, $389.99, InStock, MPN
+    780G5AA#ABA.
+  - OMEN 27k 27" UHD 144Hz gaming monitor, $370.32, InStock, MPN
+    780G8AA#ABA.
+  - HyperX OMEN OLED 27q 27" QHD 240Hz gaming monitor, $399.99,
+    InStock, MPN CH0R2AA#ABA.
+  - OMEN 27q G2 27" QHD 180Hz gaming monitor, $203.99, InStock,
+    MPN AV4H6AA#ABA.
+  - HP Series 3 Pro 27" FHD Monitor 327pf, $194.00, In Stock, MPN
+    B0CG3UT#ABA.
+  - HP E24mv G4 FHD Conferencing Monitor, $210.40, InStock, MPN
+    169L0AA#ABA.
+  - HP E27k G5 4K USB-C Monitor, $504.00, In Stock, MPN
+    6N4C4AA#ABA.
+  - HyperX Cloud III Gaming Headset, Black-Red, $99.99, MPN
+    4P5M0AA (bundle listing + OMEN desktop accessory upsell agree).
+  - HyperX Cloud III S Wireless, Black-Red, $179.99 (hp.com US
+    headsets category page).
+  - HyperX CloudX Flight 2 Wireless Gaming Headset, Black (Xbox),
+    $139.99 (hp.com US headsets category page).
+  - HyperX CloudX Gaming Headset, Black-Silver (Xbox), $59.99
+    (hp.com US headsets category page).
+  - HyperX Alloy Rise 75 Gaming Keyboard, $84.99 sale (was
+    $169.99), MPN 7G7A4AA#ABA.
+  - HyperX Pulsefire Haste 2 Pro Wireless Gaming Mouse, $119.99
+    (hp.com US accessory upsell on OMEN laptop pages).
+  - HyperX Pulsefire Haste 2 Wireless Gaming Mouse, Black, $89.99,
+    MPN 6N0B0AA.
+  - HyperX QuadCast 2 S USB Microphone, Black, $149.99 sale (was
+    $199.99), MPN 9A273AA.
+  - HP 920 Ergonomic Vertical Mouse, $68.99, InStock, MPN
+    6H1A4AA#ABA.
+  - HP 710 Rechargeable Silent Mouse, $79.99 (US list price from
+    2023 reviews; US MPN not confirmed on hp.com/us — 6E6F1AA is
+    the AU SKU, 6E6F2AA appears on an India listing — identifier
+    stays open).
+  - HP 960 4K Streaming Webcam, $219.99 list (2022 reviews; no
+    current hp.com/us price read this sweep — stale, needs a
+    fresh page read before any batch).
+  - HP Series 3 27" FHD 327se (2025), ~$178.49, and HP E27u G4
+    QHD, $343.98–$499.00 — observed only in third-party roundups,
+    not on hp.com/us; prices NOT pinned, needs an hp.com read.
+  - Excluded (HP): all OMEN / Victus / HP laptops and OMEN 35L
+    desktops — configurable, no single pinnable base configuration
+    (DECISIONS 015; e.g. OMEN 15t-ga000 from $1,249.99, OMEN
+    35L GT16-0100t from $2,699.99); all HyperX bundles (Cloud II +
+    Haste 2 + Alloy Core kit $129.00; Alloy Rise + Cloud III S +
+    Saga Pro kit $286.00; Alloy Core + Pulsefire Fuse kit $78.99;
+    Cloud II + Haste 2 kits $100.00; HP 920 + HP 960 bundle
+    $144.73) — bundles, not standalone lines; HP 725 keyboard/
+    mouse combo — bundle; HP printers (OfficeJet/LaserJet) — not
+    swept in depth: no printer category exists in the 125-model
+    set, so adding one needs a category decision first, not a
+    silent batch addition; refurbished/clearance lines — none
+    listed as candidates.
+- Lenovo (lenovo.com/us — NOT readable this sweep, stated plainly):
+  every search for the US store returned the India store
+  (store.lenovo.com/in, INR prices) or non-US regional pages; no
+  lenovo.com/us/en product page surfaced with a USD price, so no
+  Lenovo price below is a lenovo.com-direct read. Candidates rest
+  on US press/retailer corroboration and need a lenovo.com/us
+  page read (live-browser takeover or a later indexed read) before
+  any batch:
+  - Lenovo Legion Tab Gen 5, 8.8", 12GB/256GB, Eclipse Black
+    (ZAH20126US) — Lenovo direct $699.99 sale (was $899.99 list;
+    launch $849, May 2026); B&H $799.99 (was $899.99), UPC
+    199275342448. Single US configuration, so pinnable.
+  - Lenovo Yoga Tab Plus Gen 2, 13", 12GB/256GB, Snapdragon 8
+    Elite — Lenovo direct $799.99 sale (was $999.99 list); ships
+    with Tab Pen Pro 2 + folio keyboard in the box (bundled
+    accessories, not a multi-product bundle — flag at batch time).
+  - Lenovo Yoga Tab Gen 2, 11.1" — Lenovo direct $599.99 sale
+    (was $729.99 list).
+  - Lenovo Tab Plus Gen 2, 12.1", 8GB/128GB (only NA config) —
+    $399.99 at North-America launch, now $469.99 per PhoneArena
+    2026-10-26 (price moved; re-check before any batch).
+  - Lenovo Legion Go 2, 1TB — Lenovo US $1,999.99, but listed
+    "available soon" / out of stock at Lenovo (Best Buy has
+    stock); price has climbed twice from a $1,349.99 launch, so
+    treat as volatile. The 32GB/2TB config at $3,081.99 is
+    excluded (out of stock at Lenovo + 2x launch price).
+  - Lenovo Legion R34w-30 34" Curved WQHD 180Hz monitor —
+    Staples $453.29 (JSON-LD, LimitedAvailability); US MPN not
+    confirmed.
+  - Lenovo Legion Y25-25 24.5" FHD 240Hz monitor — $249.99 US
+    (price-history trackers, Amazon-derived; list $369.99/$339.99
+    conflicting) — needs a US retailer page read.
+  - Lenovo Legion R27fc-30 27" FHD 280Hz curved monitor — $179
+    US (Kotaku, Amazon-derived, was $239); US MPN 67B6GAC1US
+    appears on AU/IN listings only (67B6GAC1AU / 67B6GAC1IN) —
+    US code unconfirmed.
+  - Lenovo Legion K500 RGB Mechanical Gaming Keyboard, US English
+    (GY40T26478) — $63.99–$87.34 US (Amazon-derived $63.99;
+    Compsource $87.34 InStock); 2019 line, still sold in the US.
+  - Lenovo Legion M600 RGB Wireless Gaming Mouse (GY51C96033) —
+    $123.49 US (Amazon-derived only) — needs a US retailer read.
+  - ThinkVision P34WD-4v $699 / P27UL-40 $1,299 / T32UD-4v $899 —
+    IFA 2026 launch prices, global rollout; US availability not
+    confirmed — observed only, not pinned.
+  - Legion 24-1r / 27-1r 280Hz monitors from $99 (July 2026
+    launch) — US availability not confirmed — observed only.
+  - Excluded (Lenovo): all ThinkPad / Yoga / Legion / IdeaPad
+    laptops and Legion / ThinkCentre desktops — configurable, no
+    single pinnable base configuration (DECISIONS 015); Legion
+    MK2 keyboard — China-only, no US release (DECISIONS 021);
+    Legion H500 Pro headset ($99.99, 2019 launch) — legacy line,
+    no current US price found; Legion 27Q-20 monitor — China-only
+    launch (¥1,149), global release unconfirmed.
+- ASUS (asus.com/us + rog.asus.com — readable; ASUS Store prices
+  shown on category pages, eShop operated by a reseller/distributor
+  per ASUS's own note):
+  - ROG Swift OLED PG27UCWM 27" 4K 240Hz, $1,199.00 (flagged
+    Temporarily out of stock on one ROG listing).
+  - ROG Swift OLED PG32UCWM 32" 4K 240Hz, $1,399.00 (also flagged
+    Temporarily out of stock on one ROG listing).
+  - ROG Swift OLED PG27AQDPR 27" QHD 500Hz, $899.00 (sale, save
+    $170).
+  - ROG Swift OLED PG32UCDM Gen3 (PG32UCDM3) 32" 4K 240Hz,
+    $1,299.00.
+  - ROG Swift OLED PG27UCDM 27" 4K 240Hz, $1,099.00.
+  - ROG Strix OLED XG32UQDS 32" 4K 180Hz, $749.00.
+  - ROG Swift OLED PG34WCDN 34" ultrawide, $1,299.00.
+  - ROG Swift OLED PG32UCDMR 32", $1,299.00 — Out of Stock on the
+    ASUS eShop page (Part No. 90LM0C00-B019B2); candidate with a
+    stock caveat, not a clean pin.
+  - ROG Delta II Gaming Headset, $185.99 (rog.asus.com JSON-LD,
+    InStock).
+  - ROG Delta Gaming Headset (USB-C), $149.99.
+  - ROG Pelta Core Gaming Headset, $119.99.
+  - ROG Pelta Gaming Headset, from $84.99 ($129.99 full price
+    shown on the same listing — two prices, needs a page read to
+    pin which tier is the base).
+  - ROG Cetra Open Wireless Gaming Earbuds, $229.99.
+  - ROG Kithara Gaming Headset, $259.99 sale (was $299.99).
+  - ROG Gladius IV Ace Gaming Mouse, $169.99.
+  - ROG Spatha X 65K Gaming Mouse, $179.99.
+  - ROG Harpe II Ace Gaming Mouse, price not shown on the
+    category-page read (name/specs only) — needs a page read.
+  - ROG Harpe Mini Core Gaming Mouse, $69.99.
+  - ROG Keris II Origin-KJP Gaming Mouse, price not shown on the
+    category-page read — needs a page read.
+  - ROG Azoth 96 HE Lite analog keyboard, $359.99.
+  - ROG Azoth 96 HE analog keyboard, $308.99.
+  - ROG Strix Morph 96 Wireless keyboard, $115.99 sale (was
+    $139.99).
+  - ROG Strix Scope II 96 RX Wireless keyboard, $132.99 sale (was
+    $179.99).
+  - ROG Falchion Ace 75 HE keyboard, from $177.99 (was $219.99).
+  - Excluded (ASUS): all Zenbook / Vivobook / ROG / TUF laptops
+    and desktops — configurable, no single pinnable base
+    configuration (DECISIONS 015); ROG Azoth Extreme Edition 20
+    keyboard ($599.99) and ROG Harpe II Extreme Edition 20 mouse
+    ($259.99) — limited 20th-anniversary editions, not mainstream
+    lines; ROG Gjallar Gaming Soundbar $599.99 — soundbar, no
+    soundbar category in the set (same category-decision caveat as
+    HP printers); mouse pads (Scabbard/Sheath/Hone, $35.99–
+    $89.99) — accessories, not a set category; phones (Zenfone)
+    — out of scope per the iPhone precedent (DECISIONS 006/013);
+    ASUS routers — not swept (no router category in the set).
+  - Identifier note (ASUS): no MPN/UPC surfaced on the ASUS
+    category pages read; the one part number seen is PG32UCDMR
+    90LM0C00-B019B2. ASUS identifiers will need per-model page
+    reads at batch time — 0 of ~24 ASUS candidates carry an
+    identifier from this sweep.
+- Dell, remaining (carried forward from BUILD_LOG 058, recorded
+  2026-11-06, not re-priced): S2725QS 27" 4K ~$279.99; S2725DSM
+  27" QHD $189.99; S2725HSM 27" FHD $159.99; S2425HSM 24" FHD
+  $129.99; SE2426H 24" $89.99; S3225QC 32" 4K QD-OLED $620.41;
+  UltraSharp U3225QE 32" 4K $1,099.99; AW3226DM 32" 240Hz
+  $299.99; AW2726DL 27" 280Hz $229.99; AW3225DM 32" $249.99;
+  AW2525HM 25" 320Hz $249.99; AW2725DM 27" $269.99; AW2725QF 27"
+  4K dual-resolution $499.99; AW3426DWM 34" 240Hz $399.99;
+  AW3425DWM 34" $349.99; AW3926QW 39" 5K OLED $1,099.99;
+  AW2725Q 27" 4K $799.99; AW720M Tri-Mode Mouse $79.99; AW620M
+  Wireless Mouse $86.99 sale; AW920K Tri-Mode Keyboard $159.99;
+  AW510K Low Profile Keyboard $129.99; AW420K Tenkeyless Keyboard
+  $99.99; AW725H Tri-Mode Headset $149.99; AW920H Tri-Mode
+  Headset $109.99; AW520H Wired Headset $79.99; AW320M Wired
+  Mouse $69.99; Dell Pro 7 Webcam WB726; Dell Pro Thunderbolt 5
+  Smart Dock SD25TB5; Dell Premier Wireless ANC Headset WL7022
+  $299.99; Dell Pro Plus Wireless Speakerphone SL525. Excluded
+  (Dell, unchanged from 058): XPS 14 (2026), XPS 14 9440,
+  Alienware 16 Aurora, XPS Desktop 8960, Alienware Aurora R16 —
+  configurable, no retailer-pinned base configuration
+  (DECISIONS 015); Alienware 16 Aurora featured config also Sold
+  Out.
+- Pool assessment: yes — comfortably big enough for 25 more models
+  (batches 21–25). Cleanest, best-evidenced pool is HP (~17
+  candidates with hp.com/us prices + MPNs) + ASUS (~24 candidates,
+  prices confirmed but identifiers open) + Dell held list (~30
+  candidates from 058). Lenovo is the thin leg: ~10 candidates,
+  none with a lenovo.com/us-direct price this sweep, and two of
+  the strongest (Legion Tab Gen 5, Yoga Tab Plus Gen 2) need a
+  lenovo.com/us page read before a batch. Recommended batch order:
+  HP monitors/accessories first, then ASUS monitors/headsets,
+  then Dell held monitors/accessories, with Lenovo tablets held
+  until the US store can be read. No catalog, DECISIONS,
+  CHANGELOG, test or snapshot file was touched.
