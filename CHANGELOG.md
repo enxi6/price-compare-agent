@@ -193,6 +193,45 @@ releases; breaking changes are called out in the release notes.
   out / not sold in the US), Galaxy Watch8 40mm (superseded),
   Garmin Instinct 3 (held for a later batch) — all stay
   list-only.
+- Expansion batch 34 (DECISIONS 056, continuous expansion per
+  DECISIONS 027): eval set 190 → 195 models, verified identifiers
+  94 → 97 (3 of 5 new identifiers verified). New: JBL Charge 6,
+  Black (JBLCHARGE6BLKAM, identifiers pending — candidate UPC
+  050036407441 is Amazon US + Canex CA, needs a second US
+  non-Amazon source; $199.95 list / $149.95 Early Black Friday
+  sale at JBL direct, T-Mobile and Dell, $149.95 at Sweetwater
+  and Crutchfield — JBL's mainstream portable speaker with a
+  built-in powerbank; the Best Buy $149.95 row was sold by
+  Electronic Express, a marketplace seller, and was excluded),
+  Razer DeathAdder V4 Pro, Black (RZ01-05330100-R3U1, UPC
+  840272920718 — Amazon US + Layup agree, Best Buy US confirms
+  the MPN; $169.99 at Razer direct, Newegg, Abt and Best Buy,
+  $166.99 at NFM — Razer's ergonomic esports flagship beside the
+  set's Viper V4 Pro), Anker Soundcore Boom 2, Phantom Black
+  (UPC 194644188276 — B&H + Romanian importer label agree; MPN
+  not recorded, B&H states A3138011 while Target US states
+  A3138012; $129.99 at soundcore direct — page-read fresh,
+  superseding the feed's stale $139.99 anker.com rows — $99.99
+  sale at Target, $139.99 at Newegg — the first Anker/Soundcore
+  speaker in the set), Garmin Venu 3, Black — Slate Stainless
+  Steel Bezel (010-02784-01, UPC 753759314743 — Petra US
+  distributor + PB Tech NZ + HeartRateMonitorsUSA table agree;
+  $449.99 at Kohl's, Best Buy and Cabela's, $449.99 list /
+  $299.99 Dell sale — the previous-generation 45mm AMOLED health
+  watch beside the set's Venu 4), Keychron Q1 Max, Carbon Black
+  / Gateron Jupiter Brown (Q1M-M3, identifiers pending — barcode
+  4895248870609 is Keychron-store-only, no second source; $229.99
+  at Keychron direct and Best Buy — the retry of the batch 33
+  hold, whose reason is gone now that Keychron-direct + Best Buy
+  rows exist). JBL grows 5 → 6 entries, Razer 5 → 6, Anker
+  6 → 7, Garmin 8 → 9, Keychron 8 → 9. Not added: ASUS ROG
+  Keris II Ace Black (no clean brand_direct Black row), Samsung
+  Galaxy Buds Core (Latin American stock and marketplace rows
+  only, no clean US row), Keychron K3 Max (no feed row at all),
+  Corsair HS80 MAX Black (no Black variant exists — White and
+  Steel Gray only), Microsoft Bluetooth Ergonomic Mouse and Dell
+  UltraSharp U3425WE (carried over from batch 33, still messy /
+  bundle-only) — all stay list-only.
 - Expansion batch 33 (DECISIONS 055, continuous expansion per
   DECISIONS 027): eval set 185 → 190 models, verified identifiers
   91 → 94 (3 of 5 new identifiers verified). New: Bose SoundLink

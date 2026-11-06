@@ -5717,3 +5717,174 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   continuous expansion; the pending set gains the 2 new pending
   keys: keychron-k2-max-black-rgb-aluminum-banana,
   hyperx-cloud-iii-black).
+
+## 073 — 2026-11-06: Expansion batch 34 — 190 → 195 models (DECISIONS 056)
+
+- Membership check (against the 190-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): JBL Charge 6 — NO MATCH (no
+  Charge 6 in the set; JBLCHARGE6BLKAM and 050036407441 match
+  nothing — the single "Charge 6" hit in the catalog is a note
+  inside the Flip 7 entry mentioning a Charge 6 + case bundle);
+  Razer DeathAdder V4 Pro — NO MATCH (no DeathAdder in the set;
+  RZ01-05330100-R3U1 and 840272920718 match nothing — the hits are
+  notes inside the Viper V4 Pro entry naming the DeathAdder V4 Pro
+  at $169.99); Anker Soundcore Boom 2 — NO MATCH (no Soundcore in
+  the set; A3138011/A3138012 and 194644188276 match nothing);
+  Garmin Venu 3 — NO MATCH (the set has the Venu 4, a different
+  model; 010-02784-01 and 753759314743 match nothing); Keychron Q1
+  Max — NO MATCH (no Q1 Max in the set; Q1M-M3 and 4895248870609
+  match nothing — the single "Q1 Max" hit is a note inside the Q1
+  Knob entry citing the $229.99 price range). ASUS ROG Keris II
+  Ace — NO MATCH but skipped (see skipped list); Samsung Galaxy
+  Buds Core — NO MATCH but skipped; Keychron K3 Max — NO MATCH
+  but skipped; Corsair HS80 MAX — NO MATCH but skipped. No
+  candidate was dropped by the membership check.
+- JBL Charge 6, Black (JBLCHARGE6BLKAM) — identifiers PENDING:
+  MPN JBLCHARGE6BLKAM is corroborated (Best Buy US Model
+  JBLCHARGE6BLKAM, SKU 10736029, page read fresh 2026-11-06 22:05
+  UTC, + Canex CA + Amazon US agree), but the only UPC found,
+  050036407441, is stated on Amazon US (Model JBLCHARGE6BLKAM,
+  UPC 050036407441) + Canex CA (SKU 050036407441 for
+  JBLCHARGE6BLKAM) + an eBay refurbished listing (MPN
+  JBLCHARGE6BLKAM-Z, UPC 050036407441) — no second US non-Amazon
+  source states it for the exact JBLCHARGE6BLKAM variant, so
+  identifiers stay empty per the strict two-source rule, same call
+  as batch 33's K2 Max and Cloud III. Not copied: 050036407441
+  (single-lineage candidate). MPN JBLCHARGE6BLKAM is not recorded
+  either (0 MPN-only entries in the set). Quotes (5): JBL direct
+  $199.95 list / $149.95 sale (feed brand_direct rows — suspected;
+  the jbl.com page was not page-read this round); T-Mobile $199.99
+  (feed brand_direct row); Dell $199.95 (feed brand_direct row);
+  Sweetwater $199.95 list / $149.95 sale (feed authorized_retailer
+  row); Crutchfield $149.95 (feed authorized_retailer row). The
+  $149.95 is an Early Black Friday sale — re-check after the event
+  ends Nov 8. Portable Bluetooth speaker, JBL Pro Sound with AI
+  Sound Boost, up to 28 hours playtime (24h + 4h Playtime Boost),
+  IP68 waterproof/dustproof/drop-proof (1 m onto concrete),
+  Auracast multi-speaker, built-in powerbank, USB-C lossless
+  audio, launched Apr 2025. Excluded: the Best Buy $149.95 JSON-LD
+  row (page read fresh 2026-11-06 22:05 UTC) — sold & shipped by
+  Electronic Express, a marketplace seller (DECISIONS 021); the
+  Best Buy $157.45 rows (speaker + carrying case bundles); the
+  $24,998 feed rows (bad data); the Woot $119.95 deal reported by
+  SamMobile 2026-10-30 (not a feed row, not counted). Not the Flip
+  7 (already in the set) or the Charge 5 — different models.
+- Razer DeathAdder V4 Pro, Black (RZ01-05330100-R3U1) —
+  identifiers VERIFIED: UPC 840272920718 + MPN RZ01-05330100-R3U1
+  (Amazon US, Model RZ01-05330100-R3U1, UPC 840272920718, + Layup,
+  Model RZ01-05330100-R3U1, UPC 840272920718, agree; Best Buy US
+  confirms the MPN, Model RZ01-05330100-R3U1, SKU 6621764, page
+  read fresh 2026-11-06 22:05 UTC; an Amazon US listing agreeing
+  on the same code was read but not cited and not used for
+  corroboration). Quotes (5): Razer direct $169.99 (feed
+  brand_direct row); Newegg $169.99 (feed authorized_retailer
+  row); Abt $169.99 (feed authorized_retailer row); NFM $166.99
+  (feed authorized_retailer row); Best Buy $169.99 (page read fresh
+  2026-11-06 22:05 UTC, SKU 6621764, 4.8/5 from 252 reviews).
+  Ultra-lightweight wireless esports mouse, 56 g, Focus Pro 45K
+  Optical Sensor Gen-2 (45,000 DPI), HyperSpeed Wireless Gen-2,
+  first optical scroll wheel, Gen-4 optical switches, 8,000 Hz
+  polling, up to 150 hours battery, launched Jul 2025. Not the
+  White (RZ01-05330200-R3U1, $169.99) or the Esports Green Edition
+  ($152.99 sale) or the NiKo Edition (RZ01-05330300-R3U1, $189.99)
+  or the DeathAdder V3 Pro ($139.99 sale) or the DeathAdder
+  Essential ($29.99) — different SKUs/models. Distinct from the
+  set's Viper V4 Pro — the DeathAdder V4 Pro is Razer's ergonomic
+  flagship, the Viper is the symmetrical line.
+- Anker Soundcore Boom 2, Phantom Black (A3138) — identifiers
+  VERIFIED (UPC-only): UPC 194644188276 (B&H Photo, A3138011,
+  Phantom Black, UPC 194644188276, + Romanian importer label,
+  r-c.ro, Boom 2, UPC 194644188276, agree; Amazon US, AnkerDirect,
+  UPC 194644188276, states the same code but is not used for
+  corroboration). MPN NOT recorded: B&H states A3138011 for the US
+  Phantom Black while Target US (A-95002904) and the r-c.ro label
+  state A3138012 — the two US sources disagree on the suffix, so
+  no MPN is pinned (the UPC is shared across both suffixes; the
+  set has 4 prior UPC-only entries). Quotes (3): soundcore direct
+  $129.99 (soundcore.com page read fresh 2026-11-06 22:06 UTC,
+  "Buy Now for $129.99" — this supersedes the feed's stale $139.99
+  anker.com / us.anker.com rows); Target $99.99 (feed
+  authorized_retailer row, sale vs the $139.99 list); Newegg
+  $139.99 (feed authorized_retailer row). Portable Bluetooth
+  speaker, 80W max (60W + BassUp 2.0), 50W racetrack subwoofer +
+  dual 15W tweeters, 24-hour playtime, IPX7 waterproof and
+  floatable, beat-synced RGB light show, PartyCast 2.0, built-in
+  power bank, Bluetooth 5.3, USB-C, launched 2024. B&H lists it
+  Temporarily Out of Stock. Not the Boom 2 Plus (140W, A3134,
+  $250 list) or the Boom 2 Pro or the Soundcore 2 ($44.99) or the
+  Motion Boom — different models. The first Anker/Soundcore
+  speaker in the set — Anker previously entered only with chargers,
+  hubs and a power bank.
+- Garmin Venu 3, Black — Slate Stainless Steel Bezel, Black
+  Case/Band (010-02784-01) — identifiers VERIFIED: UPC
+  753759314743 + MPN 010-02784-01 (Petra US distributor, Vendor
+  SKU 010-02784-01, UPC 753759314743, + PB Tech NZ, MPN
+  010-02784-01, UPC 753759314743, + HeartRateMonitorsUSA MPN/UPC
+  table, 010-02784-01, 753759314743, agree). Quotes (4): Dell
+  $449.99 list / $299.99 sale (feed brand_direct row — the $299.99
+  is a Dell sale, re-check next refresh); Kohl's $449.99 (feed
+  authorized_retailer row, Black Case & Silicone Band); Best Buy
+  $449.99 (feed authorized_retailer row, Stainless Steel and
+  Black); Cabela's $449.99 (feed authorized_retailer row, Black
+  45mm). 45mm AMOLED smartwatch, 1.4-inch display, up to 14 days
+  battery, 30+ sports apps, calls from the wrist, 5 ATM, launched
+  Sep 2023. Correction: 010-02784-00 is the Whitestone (UPC
+  753759314736), not the Black — the Black is 010-02784-01
+  (corrected before pinning). Not the Whitestone (010-02784-00) or
+  the Venu 3S (41mm) or the Venu 4 (already in the set) —
+  different SKUs/models.
+- Keychron Q1 Max, Carbon Black / Fully Assembled Knob / Gateron
+  Jupiter Brown (Q1M-M3) — identifiers PENDING: the Keychron
+  official store public product JSON (read fresh 2026-11-06 22:07
+  UTC) gives variant 40707102802009 (Fully Assembled Knob / Carbon
+  Black / Gateron Jupiter Brown, SKU Q1M-M3, $229.99) barcode
+  4895248870609, but no second independent source states that
+  barcode — PB Tech lists UPC "-" for Q1M-M3, and the barcode
+  search surfaced no second source — so identifiers stay empty per
+  the strict two-source rule, same call as batch 33's K2 Max and
+  K2 HE. Not copied: 4895248870609 (single-source candidate). MPN
+  Q1M-M3 is corroborated (Keychron JSON + Best Buy Canada Model
+  Q1M-M3 + PB Tech Manufacturer Part No Q1M-M3) but is not
+  recorded either (0 MPN-only entries in the set). Quotes (3):
+  Keychron direct $229.99 (feed brand_direct row); Best Buy
+  $229.99 (page read fresh 2026-11-06 22:06 UTC, SKU 12683717,
+  JSON-LD InStock, sold & shipped by Keychron — the brand itself);
+  Newegg $317.29 (feed authorized_retailer row — higher than the
+  $229.99 direct price, noted not used as the reference). This is
+  the retry of the batch 33 hold: the hold reason is gone — the
+  feed now carries Keychron-direct + Best Buy rows at $229.99,
+  same pattern as the batch 33 PA279CRV retry. 75% ANSI full-metal
+  QMK/VIA board, CNC aluminum, 2.4 GHz / Bluetooth 5.1 / USB-C,
+  1000 Hz polling, hot-swappable Gateron Jupiter, 4000 mAh, KSA
+  double-shot PBT keycaps, knob. Not the Q1M-M1 (Red, barcode
+  4895248870593) or the Q1M-M4 (Banana, 4895248870616) or the
+  Q1M-M3-UK (ISO) or the Q1M-M3-SW (Swiss, EAN 7640156523034) or
+  the barebone Q1M-B1 ($209.99) or the Q1 HE ($239.99) or the Q1
+  Pro ($149.99) or the Q1 Ultra 8K — different SKUs/models.
+- Skipped this batch, list-only: ASUS ROG Keris II Ace Black —
+  no clean brand_direct Black row in the dedicated search ($159.99
+  authorized_retailer row + a $118.99 poor-quality row; the
+  brand_direct rows are the Keris II Origin and the Keris Wireless
+  AimPoint, different models); Samsung Galaxy Buds Core — no
+  clean US row (Latin American Stock $103.33 row, a $7,999
+  marketplace row, and Buds4 rows dominate the search); Keychron
+  K3 Max — no K3 Max row surfaced at all (the search returned the
+  K2 Max, the K3 Ultra 8K and the Q1 Max instead), stays
+  list-only; Corsair HS80 MAX Black — no Black variant exists
+  (the HS80 MAX comes in White and Steel Gray only; the Steel
+  Gray rows conflict, $119.99 vs $149.99 at Corsair direct), stays
+  list-only; Microsoft Bluetooth Ergonomic Mouse — carried over
+  from batch 33, feed still messy after Microsoft's accessories
+  exit, no clean Black US row; Dell UltraSharp 34 Curved
+  Thunderbolt Hub Monitor U3425WE — carried over from batch 33,
+  feed still bundle-only; Garmin dash cams — blocked by DECISIONS
+  016 until the category-expansion phase. No phones and no TVs
+  were considered (new categories, DECISIONS 016).
+- Eval on the new snapshot: 195 models, 97 verified identifiers,
+  5 with quotes, 20 total quotes, 0 identifier-matched, 20
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 190 → 195, verified 94 → 97, for the
+  continuous expansion; the pending set gains the 2 new pending
+  keys: jbl-charge-6-black, keychron-q1-max-carbon-black).

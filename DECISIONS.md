@@ -3167,3 +3167,121 @@ written as "superseded by" with the original text kept.
   over unchanged (five Lenovo sale prices after Early Black
   Friday ends Nov 8; Tab Plus Gen 2 $469.99; Idea Tab Pro Gen 2
   bundle contents; five pending Lenovo UPCs).
+
+## 056 (2026-11-06): Expansion batch 34 — 190 → 195 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models (BUILD_LOG 073), no per-batch user approval
+  needed (DECISIONS 027): JBL Charge 6, Black (JBLCHARGE6BLKAM,
+  identifiers pending — candidate UPC 050036407441 is Amazon US +
+  Canex CA, needs a second US non-Amazon source), Razer DeathAdder
+  V4 Pro, Black (RZ01-05330100-R3U1, UPC 840272920718 — verified),
+  Anker Soundcore Boom 2, Phantom Black (UPC 194644188276 —
+  verified, UPC-only; MPN not recorded, B&H states A3138011 while
+  Target US states A3138012), Garmin Venu 3, Black — Slate
+  Stainless Steel Bezel (010-02784-01, UPC 753759314743 —
+  verified) and Keychron Q1 Max, Carbon Black / Gateron Jupiter
+  Brown (Q1M-M3, identifiers pending — barcode 4895248870609 is
+  Keychron-store-only, no second source). One variant pinned per
+  model (DECISIONS 015); 3 of 5 identifiers verified, 2 stay
+  pending. Verified-identifier count rises 94 → 97. JBL grows
+  5 → 6 entries, Razer 5 → 6, Anker 6 → 7, Garmin 8 → 9, Keychron
+  8 → 9; no new brand enters the set. Category counts: "speakers"
+  5 → 7, "mice" 17 → 18, "wearables" 12 → 13, "keyboards" 23 → 24.
+  No new category is opened — no phones, no TVs, no cameras
+  were added (DECISIONS 016).
+- Why these 5: the Charge 6 is JBL's mainstream portable speaker
+  ($199.95 list, $149.95 Early Black Friday sale) and the second
+  JBL speaker beside the set's Flip 7; the DeathAdder V4 Pro is
+  Razer's ergonomic esports flagship ($169.99) and the DeathAdder
+  line's first entry beside the set's Viper V4 Pro; the Boom 2 is
+  the first Anker/Soundcore speaker in the set ($129.99 at
+  soundcore direct, $99.99 sale at Target) after Anker previously
+  entered only with chargers, hubs and a power bank; the Venu 3
+  is the previous-generation 45mm AMOLED health watch ($449.99)
+  beside the set's Venu 4; the Q1 Max is the retry of the batch 33
+  hold — the hold reason is gone, the feed now carries
+  Keychron-direct + Best Buy rows at $229.99, and it is the
+  full-metal wireless QMK/VIA board beside the set's K2 Max.
+- What was corrected along the way: the feed's $139.99 anker.com
+  / us.anker.com Boom 2 rows are stale — the soundcore.com page
+  read fresh 2026-11-06 22:06 UTC says "Buy Now for $129.99", so
+  $129.99 is the soundcore-direct price, not $139.99. The Best
+  Buy Charge 6 $149.95 JSON-LD row is sold & shipped by
+  Electronic Express, a marketplace seller — excluded
+  (DECISIONS 021), not treated as the Best Buy price. The Venu 3
+  Black is 010-02784-01 (UPC 753759314743), not 010-02784-00 —
+  the -00 is the Whitestone (UPC 753759314736), a different
+  variant (corrected before pinning). The Q1 Max pin is Q1M-M3
+  (Carbon Black / Gateron Jupiter Brown, ANSI), not the Q1M-M1
+  (Red) or the Q1M-M4 (Banana) or the Q1M-M3-UK (ISO) or the
+  Q1M-M3-SW (Swiss, EAN 7640156523034) — different SKUs. The
+  Boom 2 MPN is not pinned at all — B&H says A3138011, Target US
+  says A3138012, so the entry is UPC-only (4 prior UPC-only
+  entries exist in the set).
+- Variant pinning, recorded explicitly: Charge 6 pins Black
+  (JBLCHARGE6BLKAM); the Red, Blue, Camo, White, Squad and Purple
+  codes (JBLCHARGE6REDAM, JBLCHARGE6WHTAM, JBLCHARGE6PURAM and
+  siblings) are different SKUs. DeathAdder V4 Pro pins Black
+  (RZ01-05330100-R3U1); the White (RZ01-05330200-R3U1), the
+  Esports Green Edition and the NiKo Edition (RZ01-05330300-R3U1)
+  are different SKUs. Boom 2 pins Phantom Black (A3138); the
+  Adventure Green and Explorer Blue colorways are different SKUs.
+  Venu 3 pins Black — Slate Stainless Steel Bezel, Black Case/Band
+  (010-02784-01); the Whitestone (010-02784-00) and the Venu 3S
+  (41mm) are different SKUs/models. Q1 Max pins Carbon Black /
+  Fully Assembled Knob / Gateron Jupiter Brown (Q1M-M3, $229.99);
+  the Red (Q1M-M1), the Banana (Q1M-M4), the barebone (Q1M-B1)
+  and the side-printed-keycap variants (Q1M-M3S and siblings) are
+  different SKUs.
+- What does NOT change: the existing 190 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6
+  Pro untouched, batches 1–33 entries untouched). No other
+  snapshot file is rewritten. No Amazon touch in the snapshot:
+  no Amazon quotes, no Amazon-sourced prices or identifiers
+  (Amazon US listings agreeing on the Charge 6 UPC 050036407441,
+  the DeathAdder V4 Pro UPC 840272920718 and the Boom 2 UPC
+  194644188276 were read but not cited and not used for
+  corroboration). The daily refresh cron still says "57 models"
+  in its body and needs a count update to 195 on the next edit
+  (parent owns the cron; not touched here).
+- Revisit: re-check the Charge 6 $149.95 sale and the Venu 3 Dell
+  $299.99 sale after the Early Black Friday event ends Nov 8;
+  re-check the pending Charge 6 UPC (candidate 050036407441 is
+  Amazon US + Canex CA, needs a second US non-Amazon source)
+  and the pending Q1 Max barcode (candidate 4895248870609 is
+  Keychron-store-only, needs a second independent source);
+  re-check the Boom 2 MPN suffix split (B&H A3138011 vs Target
+  A3138012) and the B&H Temporarily Out of Stock; the batch 33
+  revisits carry over unchanged (re-check the QuietComfort
+  $169.00 sale and the SoundLink Max $329.00 sale after the
+  Black Friday event ends Nov 8; re-check the Cloud III $69.99
+  Holiday Deal after the Early Black Friday event ends Nov 8;
+  re-check the pending K2 Max barcode (candidate 4895248880271
+  is Keychron-store-only, needs a second independent source) and
+  find a second US retailer quote for the exact K2M-C4 variant
+  (this entry carries a single quote); re-check the pending
+  Cloud III UPC (candidate 197029008220 is Amazon-lineage only,
+  needs a second independent source — same call as the set's
+  Black-Red Cloud III); the batch 32 revisits carry over
+  unchanged (pending K2 HE EAN conflict; pending U2725QE UPC;
+  SoundLink Plus $179.00 sale/rebate price after the rebate ends
+  Nov 8; U2725QE Dell direct $849.99 vs the $649.99 street;
+  Garmin direct Instinct 3 stock; remaining Garmin candidates
+  list-only; Garmin dash cams blocked by DECISIONS 016; the
+  batch 31 revisits carry over unchanged (pending Tab S11 Ultra
+  UPC; three risen tablet prices; Garmin direct stock; two
+  pending batch 30 UPCs) and the batch 30 revisits carry over
+  unchanged (Watch8 Classic $499.99 price vs the Sep 24 $419.99
+  report; Tab S10 FE $549.99 price vs the $499.99 MSRP list) and
+  the batch 29 revisits carry over unchanged (four Lenovo sale
+  prices after the Early Black Friday event ends Nov 8; four
+  pending Lenovo/ASUS UPCs) and the batch 28 revisits carry over
+  unchanged (fēnix 9 UPC; Venu 4 Dell $499.99 sale after Black
+  Friday Nov 27; vívoactive 6 stock; Forerunner 970 UPC tiebreak;
+  Edge 1060 UPC) and the batch 27 revisits carry over unchanged
+  (Series X stock; Wireless Headset $110.99; Surface Laptop
+  $1,299.99 sale after Black Friday; three pending Microsoft
+  identifiers; remaining Microsoft candidates list-only) and the
+  batch 26 revisits carry over unchanged (five Lenovo sale prices
+  after Early Black Friday ends Nov 8; Tab Plus Gen 2 $469.99;
+  Idea Tab Pro Gen 2 bundle contents; five pending Lenovo UPCs).

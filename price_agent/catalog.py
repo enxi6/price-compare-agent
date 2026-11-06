@@ -5311,6 +5311,186 @@ EVAL_SET: list[EvalProduct] = [
         "the all-Black colorway at the same $99.99 list.",
         status="pending",
     ),
+    EvalProduct(
+        key="jbl-charge-6-black",
+        brand="JBL",
+        model="Charge 6",
+        variant="Black (JBLCHARGE6BLKAM)",
+        category="speakers",
+        identifiers={},
+        identifier_sources={},
+        notes="Identifiers PENDING: MPN JBLCHARGE6BLKAM is corroborated "
+        "(Best Buy US Model JBLCHARGE6BLKAM, SKU 10736029, page read "
+        "fresh 2026-11-06 22:05 UTC + Canex CA + Amazon US agree), but "
+        "the only UPC found, 050036407441, is stated on Amazon US "
+        "(Model JBLCHARGE6BLKAM, UPC 050036407441) + Canex CA (SKU "
+        "050036407441 for JBLCHARGE6BLKAM) + an eBay refurbished "
+        "listing (MPN JBLCHARGE6BLKAM-Z, UPC 050036407441) — no second "
+        "US non-Amazon source states it for the exact JBLCHARGE6BLKAM "
+        "variant, so identifiers stay empty per the strict two-source "
+        "rule, same call as batch 33's K2 Max and Cloud III. Not "
+        "copied: 050036407441 (single-lineage candidate). MPN "
+        "JBLCHARGE6BLKAM is not recorded either (0 MPN-only entries in "
+        "the set). Quotes (5): JBL direct $199.95 list / $149.95 sale "
+        "(feed brand_direct rows — suspected; the jbl.com page was not "
+        "page-read this round); T-Mobile $199.99 (feed brand_direct "
+        "row); Dell $199.95 (feed brand_direct row); Sweetwater "
+        "$199.95 list / $149.95 sale (feed authorized_retailer row); "
+        "Crutchfield $149.95 (feed authorized_retailer row). The "
+        "$149.95 is an Early Black Friday sale — re-check after the "
+        "event ends Nov 8. Portable Bluetooth speaker, JBL Pro Sound "
+        "with AI Sound Boost, up to 28 hours playtime (24h + 4h "
+        "Playtime Boost), IP68 waterproof/dustproof/drop-proof (1 m "
+        "onto concrete), Auracast multi-speaker, built-in powerbank, "
+        "USB-C lossless audio, launched Apr 2025. Excluded: the Best "
+        "Buy $149.95 JSON-LD row (page read fresh 2026-11-06 22:05 "
+        "UTC) — sold & shipped by Electronic Express, a marketplace "
+        "seller (DECISIONS 021); the Best Buy $157.45 rows (speaker + "
+        "carrying case bundles); the $24,998 feed rows (bad data); "
+        "the Woot $119.95 deal reported by SamMobile 2026-10-30 (not "
+        "a feed row, not counted). Not the Flip 7 (already in the set) "
+        "or the Charge 5 — different models. Distinct from the set's "
+        "Flip 7, PartyBox Stage 320 and Tour One M3 — the Charge 6 is "
+        "JBL's mainstream portable speaker with a built-in powerbank.",
+        status="pending",
+    ),
+    EvalProduct(
+        key="razer-deathadder-v4-pro-black",
+        brand="Razer",
+        model="DeathAdder V4 Pro",
+        variant="Black (RZ01-05330100-R3U1)",
+        category="mice",
+        identifiers={"UPC": "840272920718", "MPN": "RZ01-05330100-R3U1"},
+        identifier_sources={
+            "UPC": "Amazon US (Model RZ01-05330100-R3U1, UPC "
+            "840272920718) + Layup (Model RZ01-05330100-R3U1, UPC "
+            "840272920718) agree; Best Buy US confirms the MPN "
+            "(Model RZ01-05330100-R3U1, SKU 6621764, page read fresh "
+            "2026-11-06 22:05 UTC)"
+        },
+        notes="Quotes (5): Razer direct $169.99 (feed brand_direct "
+        "row); Newegg $169.99 (feed authorized_retailer row); Abt "
+        "$169.99 (feed authorized_retailer row); NFM $166.99 (feed "
+        "authorized_retailer row); Best Buy $169.99 (page read fresh "
+        "2026-11-06 22:05 UTC, SKU 6621764, 4.8/5 from 252 reviews). "
+        "Ultra-lightweight wireless esports mouse, 56 g, Focus Pro 45K "
+        "Optical Sensor Gen-2 (45,000 DPI), HyperSpeed Wireless Gen-2, "
+        "first optical scroll wheel, Gen-4 optical switches, 8,000 Hz "
+        "polling, up to 150 hours battery, launched Jul 2025. Not the "
+        "White (RZ01-05330200-R3U1, $169.99) or the Esports Green "
+        "Edition ($152.99 sale) or the NiKo Edition (RZ01-05330300-"
+        "R3U1, $189.99) or the DeathAdder V3 Pro ($139.99 sale) or the "
+        "DeathAdder Essential ($29.99) — different SKUs/models. "
+        "Distinct from the set's Viper V4 Pro — the DeathAdder V4 Pro "
+        "is Razer's ergonomic flagship, the Viper is the symmetrical "
+        "line.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="anker-soundcore-boom-2-black",
+        brand="Anker",
+        model="Soundcore Boom 2",
+        variant="Phantom Black (A3138)",
+        category="speakers",
+        identifiers={"UPC": "194644188276"},
+        identifier_sources={
+            "UPC": "B&H Photo (A3138011, Phantom Black, UPC "
+            "194644188276) + Romanian importer label (r-c.ro, Boom 2, "
+            "UPC 194644188276) agree; Amazon US (AnkerDirect, UPC "
+            "194644188276) states the same code but is not used for "
+            "corroboration"
+        },
+        notes="MPN NOT recorded: B&H states A3138011 for the US Phantom "
+        "Black while Target US (A-95002904) and the r-c.ro label state "
+        "A3138012 — the two US sources disagree on the suffix, so no "
+        "MPN is pinned (the UPC is shared across both suffixes). "
+        "Quotes (3): soundcore direct $129.99 (soundcore.com page read "
+        "fresh 2026-11-06 22:06 UTC, 'Buy Now for $129.99' — this "
+        "supersedes the feed's stale $139.99 anker.com / us.anker.com "
+        "rows); Target $99.99 (feed authorized_retailer row, sale vs "
+        "the $139.99 list); Newegg $139.99 (feed authorized_retailer "
+        "row). Portable Bluetooth speaker, 80W max (60W + BassUp 2.0), "
+        "50W racetrack subwoofer + dual 15W tweeters, 24-hour playtime, "
+        "IPX7 waterproof and floatable, beat-synced RGB light show, "
+        "PartyCast 2.0, built-in power bank, Bluetooth 5.3, USB-C, "
+        "launched 2024. B&H lists it Temporarily Out of Stock. Not "
+        "the Boom 2 Plus (140W, A3134, $250 list) or the Boom 2 Pro or "
+        "the Soundcore 2 ($44.99) or the Motion Boom — different "
+        "models. The first Anker/Soundcore speaker in the set — Anker "
+        "previously entered only with chargers, hubs and a power bank.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="garmin-venu-3-black",
+        brand="Garmin",
+        model="Venu 3",
+        variant="Black — Slate Stainless Steel Bezel, Black Case/Band "
+        "(010-02784-01)",
+        category="wearables",
+        identifiers={"UPC": "753759314743", "MPN": "010-02784-01"},
+        identifier_sources={
+            "UPC": "Petra US distributor (Vendor SKU 010-02784-01, UPC "
+            "753759314743) + PB Tech NZ (MPN 010-02784-01, UPC "
+            "753759314743) + HeartRateMonitorsUSA MPN/UPC table "
+            "(010-02784-01, 753759314743) agree"
+        },
+        notes="Quotes (4): Dell $449.99 list / $299.99 sale (feed "
+        "brand_direct row — the $299.99 is a Dell sale, re-check next "
+        "refresh); Kohl's $449.99 (feed authorized_retailer row, Black "
+        "Case & Silicone Band); Best Buy $449.99 (feed "
+        "authorized_retailer row, Stainless Steel and Black); "
+        "Cabela's $449.99 (feed authorized_retailer row, Black 45mm). "
+        "45mm AMOLED smartwatch, 1.4-inch display, up to 14 days "
+        "battery, 30+ sports apps, calls from the wrist, 5 ATM, "
+        "launched Sep 2023. Not the Whitestone (010-02784-00, UPC "
+        "753759314736) or the Venu 3S (41mm) or the Venu 4 (already in "
+        "the set) — different SKUs/models. Distinct from the set's "
+        "Venu 4 — the Venu 3 is the previous-generation 45mm AMOLED "
+        "health watch at the same $449.99 list.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="keychron-q1-max-carbon-black",
+        brand="Keychron",
+        model="Q1 Max",
+        variant="Carbon Black, Fully Assembled Knob, Gateron Jupiter "
+        "Brown (Q1M-M3)",
+        category="keyboards",
+        identifiers={},
+        identifier_sources={},
+        notes="Identifiers PENDING: the Keychron official store public "
+        "product JSON (read fresh 2026-11-06 22:07 UTC) gives variant "
+        "40707102802009 (Fully Assembled Knob / Carbon Black / Gateron "
+        "Jupiter Brown, SKU Q1M-M3, $229.99) barcode 4895248870609, "
+        "but no second independent source states that barcode — PB "
+        "Tech lists UPC '-' for Q1M-M3, and the barcode search "
+        "surfaced no second source — so identifiers stay empty per "
+        "the strict two-source rule, same call as batch 33's K2 Max "
+        "and K2 HE. Not copied: 4895248870609 (single-source "
+        "candidate). MPN Q1M-M3 is corroborated (Keychron JSON + Best "
+        "Buy Canada Model Q1M-M3 + PB Tech Manufacturer Part No "
+        "Q1M-M3) but is not recorded either (0 MPN-only entries in "
+        "the set). Quotes (3): Keychron direct $229.99 (feed "
+        "brand_direct row); Best Buy $229.99 (page read fresh "
+        "2026-11-06 22:06 UTC, SKU 12683717, JSON-LD InStock, sold & "
+        "shipped by Keychron — the brand itself); Newegg $317.29 "
+        "(feed authorized_retailer row — higher than the $229.99 "
+        "direct price, noted not used as the reference). This is the "
+        "retry of the batch 33 hold: the hold reason is gone — the "
+        "feed now carries Keychron-direct + Best Buy rows at $229.99, "
+        "same pattern as the batch 33 PA279CRV retry. 75% ANSI "
+        "full-metal QMK/VIA board, CNC aluminum, 2.4 GHz / Bluetooth "
+        "5.1 / USB-C, 1000 Hz polling, hot-swappable Gateron Jupiter, "
+        "4000 mAh, KSA double-shot PBT keycaps, knob. Not the Q1M-M1 "
+        "(Red, barcode 4895248870593) or the Q1M-M4 (Banana, "
+        "4895248870616) or the Q1M-M3-UK (ISO) or the Q1M-M3-SW "
+        "(Swiss, EAN 7640156523034) or the barebone Q1M-B1 ($209.99) "
+        "or the Q1 HE ($239.99) or the Q1 Pro ($149.99) or the Q1 "
+        "Ultra 8K — different SKUs/models. Distinct from the set's Q1 "
+        "Knob (the base Q1 V2) — the Q1 Max is the full-metal "
+        "wireless QMK/VIA board with 2.4 GHz.",
+        status="pending",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:
