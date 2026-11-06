@@ -2573,3 +2573,136 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   bug). Tests: 19 passed (test_snapshot_eval counts updated 92 →
   96 / verified stays 68 for the continuous expansion; the pending
   set gains the 4 new keys).
+
+## 053 — 2026-11-06: Expansion batch 15 — 96 → 100 models (DECISIONS 037)
+
+- Membership check (against the 96-model HEAD set, by name, MPN and
+  UPC — run programmatically against git HEAD price_agent/catalog.py
+  before adding anything; no catalog keys matched, 4 of 5 are new
+  lines, 1 not added):
+  - Apple Studio Display XDR, Standard glass, Tilt- and
+    height-adjustable stand (MFEL4LL/A, $3,299) vs
+    apple-studio-display-2026-standard-tilt (MFEX4LL/A, UPC
+    195950529173): no match on any field — the 2026 Studio Display
+    is the separate non-XDR line ($1,599, 60Hz, A19); the XDR
+    (27-inch 5K mini-LED, 120Hz, 2000 nits peak HDR, Thunderbolt 5,
+    released March 11, 2026) is a distinct line. The discontinued
+    Pro Display XDR (32-inch 6K, $4,999, discontinued March 3,
+    2026) is a different model and was not added.
+  - Sony MDR-M1 (MDRM1, $269.99 candidate) vs sony-mdr-7506
+    (MDR7506) and every other Sony headphone in the set
+    (WH-1000XM5/XM6, WH-1000XM4C, WH-CH720N, ULT WEAR, INZONE H5,
+    PULSE Elite/Explore, LinkBuds lines): the M1 (2024, 40mm
+    closed-back, 50 ohm, 216 g, 5Hz–80kHz) is Sony's modern pro
+    reference closed monitor line, different model from the 1991
+    MDR-7506 and from every WH/INZONE/PULSE line — not a
+    duplicate. The MDR-M1ST ($389.99, Japan-domestic) is a
+    different model and was not added.
+  - Sony MDR-MV1 (MDRMV1, $339.99 candidate) vs sony-mdr-7506 and
+    sony-mdr-m1 (added in this same batch): the MV1 (2023, 40mm
+    open-back, 24 ohm, 223 g, 5Hz–80kHz) is the open-back
+    reference monitor sibling of the M1, different model from
+    both — not a duplicate.
+  - Sony INZONE H7 (WH-G700, ~$349.99 candidate) vs
+    sony-inzone-h5-black (WHG500/B): the H7 is the distinct
+    mid-range wireless INZONE line (2022, 40-hour battery, no ANC)
+    above the H5 — no match — but NOT ADDED (see below).
+  - Keychron B39 (B39-K9, $54.99 candidate) vs
+    keychron-b40-deep-black (B40-K9, 75% Alice, $49.99) and the
+    set's K8 lines (K8-G1, K8 HE, K8 Ultra 8K) and Q1: the B39
+    (96% Alice with dedicated numpad) is the larger sibling of
+    the B40, a different model — not a duplicate.
+- Apple Studio Display XDR, Standard glass, Tilt- and
+  height-adjustable stand (MFEL4LL/A) — identifiers PENDING: MPN
+  MFEL4LL/A confirmed (Apple US buy page + Best Buy US Model
+  MFEL4LL/A, SKU 6505397 + Abt Model MFEL4LL/A agree), but no UPC
+  for MFEL4LL/A surfaced on any US retailer spec page checked —
+  the B&H UPC 195950527650 belongs to the VESA config (MFEN4LL/A;
+  the B&H MFEN page and the VESA + AppleCare+ kit page both list
+  it), so it was not copied; the UK GTIN 195950527858 is the
+  MFEP4B/A (different region) and was not copied. Quotes (5):
+  Apple direct $3,299.00 (US buy page JSON-LD, search-index read;
+  stock not stated); Best Buy $3,299.99 (Model MFEL4LL/A, SKU
+  6505397, JSON-LD InStock, page-verified, sold by Best Buy); Abt
+  $3,299.00 (Model MFEL4LL/A, JSON-LD InStock, page-verified, est.
+  delivery Nov 10); Sam's Club $3,299.00 and Sweetwater $3,299.00
+  (feed rows — suspected, no identifier in the feed rows).
+  Correction vs the 2026-10-31 candidate price $3,299: confirmed
+  current — it is the standard-glass tilt-and-height config;
+  $2,899 is the standard-glass VESA config (MFEN4LL/A) and
+  $3,599 / $3,199 are the nano-texture tilt-height / VESA configs.
+  Excluded: refurbished Apple $2,799 (refurbished, not new); NFM
+  rows (bundles with 3-year AppleCare+); Melrose Mac $2,899 and
+  SVA Campus Store $3,199 (VESA-config prices on tilt-height
+  rows); nano-texture rows ($3,499–$3,599); non-US rows (Artifact
+  Argentina $5,700, 961souq $3,000); MacExperience $6,998 (Pro
+  Display XDR, different model).
+- Sony MDR-M1, Black (MDRM1) — identifiers PENDING: MPN MDRM1
+  confirmed (Sony US + B&H + Sweetwater agree), but UPC
+  027242930612 is stated on the B&H US spec page only — the only
+  other source stating it is manuals.plus, which mirrors the
+  Amazon ASIN listing, and Amazon is not used for identifier
+  corroboration, so identifiers stay empty per the Adaptive
+  Controller / DualSense / PULSE Elite precedent; re-check next
+  refresh. Quotes (6): Sony direct $249.99 (launch MSRP, page
+  crawled 2024-10-22 — stale, stock not stated); B&H $268.00
+  (JSON-LD InStock, page-verified); Sweetwater $268.00 (Open Graph
+  instock, page-verified); Guitar Center $268.00, Vintage King
+  $269.99 and Focus Camera $268.00 (feed rows — suspected, no
+  identifier in the feed rows). Correction vs the 2026-10-31
+  candidate price $269.99: confirmed current-ish — $268 at B&H
+  and Sweetwater, $269.99 at Vintage King; $249.99 is the launch
+  MSRP, not the current street price. Excluded: MDR-M1ST $389.99
+  (Japan-domestic model), 5-pack $1,002.99 bundle, WUQ / Newegg
+  $426.99 (third-party seller row), MercadoLibre $219 (non-US
+  marketplace), Walmart $268 feed row (marketplace ambiguity —
+  seller not confirmed first-party), MDR-MV1 rows (different
+  model), MDR-ZX110NC rows (different model).
+- Sony MDR-MV1, Black (MDRMV1) — identifiers PENDING: MPN MDRMV1
+  confirmed (Sony AU/NZ Product ID + Macy's + Sweetwater agree;
+  EAN 4548736147836 is the AU/NZ regional code and was not
+  copied), but UPC 027242926585 appears in an eBay listing only —
+  no US retailer spec page surfaced, so identifiers stay empty per
+  the Adaptive Controller / DualSense / PULSE Elite precedent;
+  re-check next refresh. Quotes (5): Sweetwater $418.00 (Open
+  Graph instock, page-verified); Macy's $419.99, SoundPure
+  $419.99, Unique Photo $418.00 and Impulse Cameras $419.99 (feed
+  rows — suspected, no identifier in the feed rows). Correction vs
+  the 2026-10-31 candidate price $339.99: that matches no US
+  price — the MSRP is $419.99 (SoundGuys) and the current US
+  street price is $418–$419.99; $399 was a launch-era figure in
+  some reviews. The Sony direct US page returned 403 on
+  2026-11-06, so no direct quote is recorded. Excluded: Target
+  $418 bundle (with hard shell case), Newegg 5-pack $1,002.99
+  bundle, Greentoe $386 ("make an offer" marketplace-style row),
+  Voomisupply $928.42, Walmart $418 feed row (marketplace
+  ambiguity), MDR-M1 rows (different model), 360 VME software $269
+  and the Mogami cable $204.95 (different products).
+- Keychron B39, 96% Alice, Deep Black (B39-K9) — identifiers
+  PENDING: SKU B39-K9 comes from the Keychron official store page
+  only and no UPC/EAN for the B39 surfaced anywhere, so
+  identifiers stay empty per the Adaptive Controller / DualSense
+  precedent; re-check next refresh. Quotes (1): Keychron direct
+  $54.99 (official store, Deep Black variant Available,
+  page-verified 2026-11-06; the only seller — Keychron's own store
+  only, so it holds a single quote, like the B40). Correction vs
+  the 2026-10-31 candidate price $54.99: confirmed current at
+  Keychron direct.
+- Sony INZONE H7 — NOT ADDED (batch split, Pro Display XDR
+  precedent): discontinued by Sony — Audio46 lists it
+  "Discontinued" and Headphone Zone says it is "permanently
+  discontinued by the manufacturer"; the Meta Catalog feed for the
+  query returns no Sony-direct H7 row and no Best Buy H7 row
+  (only H5/H9/H3/H6 rows and H9/H7 earpads); the only remaining US
+  listing found is ListenUp $228.00 (Available, page-verified
+  2026-11-06). The candidate "~$349.99 launch price" was also
+  wrong: the H7 launched in 2022 at $229.99 US (Audio46 $229.99;
+  GamesRadar $200 after a launch-price adjustment). Revisit only
+  if Sony re-lists it; the H9 (WH-G900N, $329.99) and H9 II are
+  the current upper INZONE lines, not substitutes.
+- Eval on the new snapshot: 100 models, 68 verified identifiers, 4
+  with quotes, 17 total quotes, 0 identifier-matched, 17 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 96 →
+  100 / verified stays 68 for the continuous expansion; the pending
+  set gains the 4 new keys).

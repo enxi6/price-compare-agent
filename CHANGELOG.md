@@ -11,6 +11,34 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 15 (DECISIONS 037, continuous expansion per
+  DECISIONS 027): eval set 96 → 100 models, verified identifiers
+  stay 68 (all 4 new identifiers pending on single-source-only or
+  no-source codes). New: Apple Studio Display XDR, Standard glass,
+  Tilt- and height-adjustable stand (MFEL4LL/A, UPC pending — the
+  B&H UPC 195950527650 belongs to the VESA MFEN4LL/A and was not
+  copied; $3,299 confirmed current at Apple direct, Best Buy and
+  Abt — the separate mini-LED 120Hz XDR line vs the non-XDR Studio
+  Display 2026), Sony MDR-M1, Black (MDRM1, UPC pending —
+  027242930612 on the B&H spec page only; $268 at B&H and
+  Sweetwater, $269.99 at Vintage King — Sony's modern pro reference
+  closed monitor line vs the 1991 MDR-7506), Sony MDR-MV1, Black
+  (MDRMV1, UPC pending — 027242926585 in an eBay listing only;
+  $339.99 matched no US price, the MSRP is $419.99 and the street
+  price is $418–$419.99 at Sweetwater, Macy's, SoundPure, Unique
+  Photo and Impulse Cameras — the open-back reference monitor
+  sibling of the M1), Keychron B39, 96% Alice, Deep Black (B39-K9,
+  UPC pending — SKU on the Keychron page only; $54.99 confirmed
+  current at Keychron direct, the only seller — the larger 96%
+  sibling of the 75% B40). Sony INZONE H7 was NOT added: it is
+  discontinued by Sony and only ListenUp still lists it ($228.00);
+  the "~$349.99 launch price" was wrong (it launched in 2022 at
+  $229.99 US). New snapshot
+  `data/eval_snapshots_batch15_2026-11-06.json` holds 17 quotes
+  across the 4 models (Studio Display XDR: 5, MDR-M1: 6, MDR-MV1:
+  5, B39: 1). DECISIONS 021 applied to every quote:
+  no marketplace/third-party rows, no non-US rows, no Amazon.
+
 - Expansion batch 14 (DECISIONS 036, continuous expansion per
   DECISIONS 027): eval set 92 → 96 models, verified identifiers
   stay 68 (all 4 new identifiers pending on single-source-only or

@@ -1291,6 +1291,80 @@ written as "superseded by" with the original text kept.
   direct CH720N $89.99 is a sale price and should be re-checked
   after the sale ends.
 
+## 037 (2026-11-06): Expansion batch 15 — 96 → 100 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 4 models from the remaining brand-sweep candidates
+  (BUILD_LOG 020/022/023/025), no per-batch user approval needed
+  (DECISIONS 027): Apple Studio Display XDR, Standard glass,
+  Tilt- and height-adjustable stand (MFEL4LL/A, UPC pending), Sony
+  MDR-M1, Black (MDRM1, UPC pending), Sony MDR-MV1, Black (MDRMV1,
+  UPC pending), Keychron B39, 96% Alice, Deep Black (B39-K9, UPC
+  pending). One variant pinned per model (DECISIONS 015); 0 of 4
+  identifiers verified — all 4 stay pending on single-source-only
+  or no-source codes (Adaptive Controller / DualSense / PULSE Elite
+  precedent, not a reason to hold the batch). Verified-identifier
+  count stays 68. The fifth candidate, Sony INZONE H7, was NOT
+  added: discontinued by Sony (Audio46 lists it "Discontinued";
+  Headphone Zone: "permanently discontinued by the manufacturer"),
+  the Meta Catalog feed returns no Sony-direct or Best Buy H7 row,
+  and only ListenUp still lists it ($228.00) — the batch was split
+  rather than forcing it in (batch 3 AirPods 5 precedent; batch 14
+  Pro Display XDR precedent).
+- Why these 4: they are the next un-added mainstream lines from the
+  five brand sweeps, each distinct from the set (the Studio Display
+  XDR is the separate mini-LED 120Hz XDR monitor line vs the
+  non-XDR Studio Display 2026; the MDR-M1 is Sony's modern pro
+  reference closed monitor line vs the 1991 MDR-7506; the MDR-MV1
+  is the open-back reference monitor sibling of the M1, not a
+  closed-back variant of it; the B39 is the larger 96% Alice
+  sibling of the 75% B40). All four are in stock new in the US on
+  2026-11-06 (brand-direct pages or InStock JSON-LD), except the
+  Sony direct MDR-M1 price, which rests on a stale 2024 crawl (see
+  below).
+- What was corrected along the way: the Studio Display XDR
+  candidate price $3,299 is confirmed current and is the
+  standard-glass tilt-and-height config (MFEL4LL/A) — $2,899 is
+  the standard-glass VESA config (MFEN4LL/A), $3,599 / $3,199 are
+  the nano-texture tilt-height / VESA configs; the B&H UPC
+  195950527650 belongs to the VESA config and was not copied to
+  the MFEL entry. The MDR-M1 candidate price $269.99 is confirmed
+  current-ish ($268 at B&H and Sweetwater, $269.99 at Vintage
+  King) while $249.99 is the launch MSRP, not the current street
+  price. The MDR-MV1 candidate price $339.99 matches no US price —
+  the MSRP is $419.99 and the current US street price is
+  $418–$419.99. The B39 candidate price $54.99 is confirmed
+  current at Keychron direct (Deep Black, Available). The INZONE
+  H7 candidate "~$349.99 launch price" was wrong: the H7 launched
+  in 2022 at $229.99 US.
+- Variant pinning, recorded explicitly: Studio Display XDR pins
+  Standard glass, Tilt- and height-adjustable stand (MFEL4LL/A) —
+  the VESA (MFEN4LL/A, $2,899) and nano-texture (MFEP4LL/A,
+  $3,599; MFEQ4LL/A, $3,199) configs are different configurations;
+  MDR-M1 pins Black (MDRM1), the only colorway sold; MDR-MV1 pins
+  Black (MDRMV1), the only colorway sold; B39 pins 96% Alice, Deep
+  Black (B39-K9) — Deep Black is the only colorway sold, mirroring
+  the B40 pinning.
+- What does NOT change: the existing 96 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro untouched,
+  batches 1–14 entries untouched). No other snapshot file is rewritten.
+  No Amazon touch. The daily refresh cron still says "57 models" in
+  its body and needs a count update to 100 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: all four identifier sets stay pending until a second
+  non-Amazon US source confirms each (XDR MFEL4LL/A: no UPC on any
+  US retailer spec page; MDR-M1 027242930612, B&H spec page only —
+  manuals.plus mirrors the Amazon ASIN listing and does not count
+  as the second source; MDR-MV1 027242926585, eBay listing only;
+  B39: SKU B39-K9 on the Keychron page only, no UPC anywhere);
+  the Sony direct MDR-M1 $249.99 rests on a page crawled
+  2024-10-22 — re-confirm the direct price; the Sony direct MDR-MV1
+  US page returned 403 on 2026-11-06 — re-check; the INZONE H7
+  stays out while discontinued (ListenUp $228 is the sole remaining
+  US listing); the ULT WEAR $148.00 Black Friday street price should
+  be re-checked after Nov 8 (batch 9 revisit, still open); the Sony
+  direct CH720N $89.99 is a sale price and should be re-checked
+  after the sale ends.
+
 ## 033 (2026-11-06): Expansion batch 11 — 77 → 82 models (continuous expansion, DECISIONS 027)
 
 - Decision: add 5 models from the remaining brand-sweep candidates
