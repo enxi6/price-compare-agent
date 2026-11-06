@@ -2506,3 +2506,110 @@ written as "superseded by" with the original text kept.
   Black Friday ends Nov 8; Tab Plus Gen 2 $469.99; Idea Tab Pro
   Gen 2 bundle contents; five pending Lenovo UPCs; remaining
   Lenovo candidates list-only).
+
+## 050 (2026-11-06): Expansion batch 28 — 160 → 165 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 Garmin models from the Garmin US store
+  sweep (BUILD_LOG 067), no per-batch user approval needed
+  (DECISIONS 027): vívoactive 6, Slate with Black silicone
+  band (010-02985-00, UPC 753759342807 — verified), Venu 4
+  45mm, Silver stainless steel bezel with Silver Gray
+  silicone band (010-03014-01, UPC 753759342883 —
+  verified), Forerunner 570 42mm, Raspberry Aluminum with
+  Translucent Bone/Mango band (010-02970-02, UPC
+  753759349820 — verified), Edge 1050 cycling computer,
+  device only, Black (010-02890-00, UPC 753759336288 —
+  verified), fēnix 9 47mm, Titanium with Pebble Gray
+  silicone band (010-04762-00, identifiers pending — no UPC
+  surfaced). One variant pinned per model (DECISIONS 015);
+  4 of 5 identifiers verified, 1 stays pending.
+  Verified-identifier count rises 76 → 80. Garmin is a new
+  brand in the set (0 → 5 entries); "cycling-computers" is
+  a new category (Edge 1050 is its first entry); the four
+  watches join "wearables" (3 → 7 entries).
+- Why these 5: the Garmin US store pages all return JSON-LD
+  Product.offers on fresh reads 2026-11-06 ~21:21 UTC, and
+  the Meta Catalog feed agrees on every price. The five are
+  one per current Garmin hardware family with a fixed US
+  configuration: the entry fitness watch, the lifestyle
+  flagship, the mid-range running watch, the premium cycling
+  computer, and the flagship multisport watch. All five are
+  listed new at Garmin direct on 2026-11-06; stock is not
+  confirmed on any of the five Garmin pages except the
+  vívoactive 6, which Dell shows Temporarily Out of Stock
+  (see caveats).
+- What was corrected along the way: the Venu 4's $599.99
+  feed rows are the leather-band variant (010-03014-03),
+  not the pinned silicone variant — the pinned variant is
+  $549.99 at Garmin direct, with a Dell $499.99 sale row
+  (early Black Friday, suspected). The Forerunner 570's
+  47mm size is a different size at the same $549.99, and a
+  $563 third-party row was excluded. The Edge 1050's
+  $713.99 Best Buy rows are the sensor bundle
+  (010-02890-01, different MPN/EAN), not the device-only
+  010-02890-00 at $699.99. The fēnix 9's $1,049.99 rows are
+  the Carbon Gray DLC Titanium variant (010-04762-10) and
+  the $1,099.99+ rows are the Pro lines — the pinned base
+  fēnix 9 is $999.99 at Garmin direct, Abt and NFM. Two
+  identifier traps were caught and excluded, not priced:
+  the Forerunner 970's UPC is conflicted across variants
+  (-00: Amazon + Snapklik 753759349929 vs a single eBay
+  listing 753759349899; -01: Abt 753759349905 vs Snapklik
+  753759349936) — nothing copied, the 970 stays list-only
+  for a dedicated tiebreak; the Edge 1050 bundle's EAN
+  0753759336295 (010-02890-01) was not copied onto the
+  device-only 010-02890-00.
+- Variant pinning, recorded explicitly: vívoactive 6 pins
+  Slate/Black (010-02985-00) — the Lunar Gold/Bone
+  (010-02985-01), Metallic Jasper Green (010-02985-02) and
+  Pink Dawn (010-02985-03) colorways are different variants,
+  as is the vívoactive 5 (previous generation). Venu 4 pins
+  the 45mm Silver/Silver Gray silicone (010-03014-01) — the
+  41mm is a different size at the same $549.99, and the
+  Slate/Black silicone (010-03014-00), Silver/Citron
+  (010-03014-02) and Slate/Black + Brown leather
+  (010-03014-03, $599.99) are different variants.
+  Forerunner 570 pins the 42mm Raspberry (010-02970-02) —
+  the 47mm is a different size at the same $549.99, and the
+  Slate Gray (010-02970-00) and Cloud Blue (010-02970-01)
+  are different colorways. Edge 1050 pins the device-only
+  010-02890-00 — the 010-02890-01 sensor bundle is a
+  different SKU, as is the Edge 1040 Solar (previous
+  generation). fēnix 9 pins the 47mm base Titanium/Pebble
+  Gray (010-04762-00) — the 43mm and 51mm are different
+  sizes, the Carbon Gray DLC Titanium (010-04762-10,
+  $1,049.99) is a different variant, and the fēnix 9 Pro
+  lines ($1,099.99+, full titanium case and/or inReach /
+  solar) are different models.
+- What does NOT change: the existing 160 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6
+  Pro untouched, batches 1–27 entries untouched). No other
+  snapshot file is rewritten. No Amazon touch in the
+  snapshot: no Amazon quotes, no Amazon-sourced prices or
+  identifiers (Amazon item details were read only as a third
+  corroboration for the Forerunner 570 UPC, which is
+  verified on Target US + Selenal.lv without it). The daily
+  refresh cron still says "57 models" in its body and needs
+  a count update to 165 on the next edit (parent owns the
+  cron; not touched here).
+- Revisit: re-check the fēnix 9 UPC next refresh (MPN
+  010-04762-00 confirmed, no UPC surfaced — ten-week-old
+  model, retailer UPC fields still blank); re-check the
+  Venu 4 Dell $499.99 sale price after Black Friday (Nov
+  27); re-check vívoactive 6 stock (Dell Temporarily Out of
+  Stock); tiebreak the Forerunner 970 UPC conflict (Best
+  Buy specs or a box barcode) before adding the 970; the
+  remaining Garmin candidates stay list-only for later
+  batches (Edge 1060 $799.99 — launched Oct 20, 2026, too
+  new for UPC verification; Fenix 8 47mm AMOLED —
+  superseded by the fēnix 9, now discounted last-gen;
+  Instinct 3, Forerunner 165, Edge 850, Garmin dash cams —
+  not yet swept); the batch 27 revisits carry over
+  unchanged (Series X stock; Wireless Headset $110.99;
+  Surface Laptop $1,299.99 sale after Black Friday; three
+  pending Microsoft identifiers; remaining Microsoft
+  candidates list-only) and the batch 26 revisits carry
+  over unchanged (five Lenovo sale prices after Early Black
+  Friday ends Nov 8; Tab Plus Gen 2 $469.99; Idea Tab Pro
+  Gen 2 bundle contents; five pending Lenovo UPCs;
+  remaining Lenovo candidates list-only).

@@ -4288,6 +4288,163 @@ EVAL_SET: list[EvalProduct] = [
         "and first Microsoft laptop; distinct from the set's "
         "MacBook lines.",
     ),
+    EvalProduct(
+        key="garmin-vivoactive-6-slate-black",
+        brand="Garmin",
+        model="vívoactive 6",
+        variant="Slate with Black silicone band (010-02985-00)",
+        category="wearables",
+        identifiers={"UPC": "753759342807", "MPN": "010-02985-00"},
+        identifier_sources={
+            "UPC": "Petra US (Vendor SKU 010-02985-00, UPC "
+            "753759342807) + HeartRateMonitorsUSA MPN/UPC table "
+            "(Slate/Black 010-02985-00 / 753759342807) agree. "
+            "MPN 010-02985-00 corroborated by Dell US (Mfr Part # "
+            "010-02985-00) + Best Buy US (Model 010-02985-00, SKU "
+            "6628683)"
+        },
+        notes="Garmin direct $299.99 (US store page JSON-LD read "
+        "fresh 2026-11-06; the page shows the Lunar Gold variant "
+        "but the price is uniform $299.99 across all four colors). "
+        "Dell $299.99 (Mfr Part # 010-02985-00) agrees but shows "
+        "Temporarily Out of Stock; Best Buy $299.99 (Model "
+        "010-02985-00) agrees. 42.2 mm AMOLED fitness smartwatch, "
+        "up to 11 days battery, launched 2025. Not the Lunar Gold "
+        "/ Bone (010-02985-01, UPC 753759342814), Metallic Jasper "
+        "Green (010-02985-02, UPC 753759342821) or Pink Dawn "
+        "(010-02985-03, UPC 753759342838) colorways, and not the "
+        "vívoactive 5 (previous generation). The set's first "
+        "Garmin entry; distinct from the set's Apple Watch lines.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="garmin-venu-4-45mm-silver-gray",
+        brand="Garmin",
+        model="Venu 4",
+        variant="45mm, Silver stainless steel bezel with Silver Gray silicone band (010-03014-01)",
+        category="wearables",
+        identifiers={"UPC": "753759342883", "MPN": "010-03014-01"},
+        identifier_sources={
+            "UPC": "Petra US (Vendor SKU 010-03014-01, UPC "
+            "753759342883, GTIN 00753759342883) + "
+            "HeartRateMonitorsUSA MPN/UPC table (45mm Silver / "
+            "Silver Gray 010-03014-01 / 753759342883) agree. MPN "
+            "corroborated by Abt US (Model 010-03014-01) + the "
+            "Garmin US store URL itself (pn/010-03014-01)"
+        },
+        notes="Garmin direct $549.99 (US store page JSON-LD read "
+        "fresh 2026-11-06 — the page description is the pinned "
+        "variant exactly, Silver with Silver Gray Silicone Band). "
+        "Dell feed row shows $499.99 sale vs $549.99 list for "
+        "this exact variant (early Black Friday pricing, "
+        "suspected — not page-verified). Launched Sep 22, 2025 "
+        "at $549.99 (Garmin press release); 45 mm AMOLED, "
+        "stainless steel bezel, ECG app, LED flashlight, up to "
+        "12 days battery. Not the 41 mm Venu 4 (different size, "
+        "same $549.99), the Slate/Black silicone 010-03014-00 "
+        "(UPC 753759342876), the Silver/Citron 010-03014-02, or "
+        "the Slate/Black + Brown leather 010-03014-03 ($599.99). "
+        "The set's first Venu; distinct from the set's "
+        "vívoactive 6 (entry fitness watch, $299.99).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="garmin-forerunner-570-42mm-raspberry",
+        brand="Garmin",
+        model="Forerunner 570",
+        variant="42mm, Raspberry Aluminum with Translucent Bone/Mango band (010-02970-02)",
+        category="wearables",
+        identifiers={"UPC": "753759349820", "MPN": "010-02970-02"},
+        identifier_sources={
+            "UPC": "Target US (TCIN 94760143, UPC 753759349820, "
+            "$549.99, In Stock) + Selenal.lv (part code "
+            "010-02970-02, Barcode 753759349820) agree; "
+            "CycleSuperStore.ie barcode list confirms the "
+            "-00/-01/-02 mapping (753759349806 / 753759349813 / "
+            "753759349820). MPN corroborated by the Garmin US "
+            "store URL (pn/010-02970-02) + Meta Catalog feed row "
+            "for this exact variant"
+        },
+        notes="Garmin direct $549.99 (US store page JSON-LD read "
+        "fresh 2026-11-06 — the 42 mm page shows the Slate Gray "
+        "variant but the price is uniform $549.99 across sizes "
+        "and colors; the Meta Catalog feed carries a $549.99 "
+        "Garmin row for this exact Raspberry variant, "
+        "pn/010-02970-02). Target $549.99 In Stock agrees. "
+        "Launched May 21, 2025 at $549.99 alongside the "
+        "Forerunner 970; 42 mm AMOLED, multi-band GPS, speaker "
+        "and mic, up to 10 days battery — no offline maps and no "
+        "ECG, which stay exclusive to the 970. Not the 47 mm "
+        "570 (different size, same $549.99), the Slate Gray "
+        "010-02970-00 or Cloud Blue 010-02970-01 colorways, or "
+        "the Forerunner 970 ($749.99, titanium/sapphire/maps). "
+        "The set's first Forerunner.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="garmin-edge-1050",
+        brand="Garmin",
+        model="Edge 1050",
+        variant="Device only, Black (010-02890-00)",
+        category="cycling-computers",
+        identifiers={"UPC": "753759336288", "MPN": "010-02890-00"},
+        identifier_sources={
+            "UPC": "HeartRateMonitorsUSA (010-02890-00 / "
+            "753759336288) + 6ave (UPC 753759336288, MPN "
+            "010-02890-00) + The Pro's Closet (mpn 010-02890-00, "
+            "upc 753759336288) + SunnySports (MFR 010-02890-00, "
+            "UPC 753759336288) agree; the Meta Catalog feed row "
+            "for this device carries GTIN 753759336288. The "
+            "010-02890-01 bundle's EAN 0753759336295 is a "
+            "different code and was excluded"
+        },
+        notes="Garmin direct $699.99 (US store page JSON-LD read "
+        "fresh 2026-11-06). Best Buy feed row $699.99 sale "
+        "(list $704.95) agrees; BikeTiresDirect $699.99 (Mfg "
+        "PartNum 010-02890-00) agrees. Launched Jun 2024 at "
+        "$699.99; 3.5-inch 480x800 touchscreen, 64 GB, speaker "
+        "and bike bell, Garmin Pay, up to 20 hours demanding "
+        "use / 60 hours battery saver. The Edge 1060 launched "
+        "Oct 20, 2026 at $799.99 and replaces the 1050 as "
+        "Garmin's premium computer, but the 1050 is still "
+        "listed and sold at $699.99 at Garmin direct and "
+        "multiple US bike shops on 2026-11-06 — not "
+        "discontinued. Not the 010-02890-01 sensor bundle "
+        "(different MPN/EAN) or the Edge 1040 Solar ($699.99, "
+        "previous generation). The set's first cycling computer "
+        "and first entry in the new \"cycling-computers\" "
+        "category.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="garmin-fenix-9-47mm-titanium-pebble-gray",
+        brand="Garmin",
+        model="fēnix 9",
+        variant="47mm, Titanium with Pebble Gray silicone band (010-04762-00)",
+        category="wearables",
+        identifiers={},
+        status="pending",
+        notes="Garmin direct $999.99 (US store page JSON-LD read "
+        "fresh 2026-11-06 — the page description is the pinned "
+        "variant exactly, Titanium with Pebble Gray Silicone "
+        "Band). Abt $999.99 (Model 010-04762-00, InStock) and "
+        "NFM $999.99 agree; the Meta Catalog feed carries five "
+        "$999.99 rows naming MPN 010-04762-00. Announced Aug 25, "
+        "2026, orderable Aug 28; 47 mm AMOLED (twice as bright "
+        "as fēnix 8), titanium bezel, sapphire lens, leakproof "
+        "metal buttons, LED flashlight, 64 GB, up to 16 days "
+        "battery. Identifiers PENDING: MPN 010-04762-00 is "
+        "confirmed by Garmin US + Abt + RA Cycles, but no UPC "
+        "surfaced in any source read — the fēnix 9 is ten weeks "
+        "old and retailer UPC fields are still blank; the MPN "
+        "lives in the variant string only, per the Surface "
+        "Laptop (batch 27) precedent; re-check next refresh. "
+        "Not the 43 mm or 51 mm fēnix 9 ($999.99 / $1,099.99), "
+        "the Carbon Gray DLC Titanium 010-04762-10 ($1,049.99), "
+        "or any fēnix 9 Pro line ($1,099.99+, full titanium case "
+        "and/or inReach/solar). The set's first fēnix; distinct "
+        "from the set's Venu 4 and Forerunner 570.",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:

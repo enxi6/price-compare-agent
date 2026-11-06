@@ -67,6 +67,41 @@ releases; breaking changes are called out in the release notes.
   Black (sunset Aug 2026) and Xbox Series X25 Limited Edition
   ($899.99, launches Nov 13) — all stay list-only for later
   batches.
+- Expansion batch 28 (DECISIONS 050, continuous expansion per
+  DECISIONS 027): eval set 160 → 165 models, verified identifiers
+  76 → 80 (4 of 5 new identifiers verified). New: Garmin
+  vívoactive 6, Slate with Black silicone band (010-02985-00,
+  UPC 753759342807 — Petra + HeartRateMonitorsUSA agree;
+  $299.99 at Garmin direct, Dell Temporarily Out of Stock —
+  the set's first Garmin entry), Garmin Venu 4 45mm, Silver
+  stainless steel bezel with Silver Gray silicone band
+  (010-03014-01, UPC 753759342883 — Petra +
+  HeartRateMonitorsUSA agree; $549.99 at Garmin direct, Dell
+  $499.99 sale — the set's first Venu), Garmin Forerunner 570
+  42mm, Raspberry Aluminum with Translucent Bone/Mango band
+  (010-02970-02, UPC 753759349820 — Target US + Selenal.lv
+  agree; $549.99 at Garmin direct and Target, In Stock — the
+  set's first Forerunner), Garmin Edge 1050 cycling computer,
+  device only, Black (010-02890-00, UPC 753759336288 —
+  HeartRateMonitorsUSA + 6ave + Pro's Closet + SunnySports
+  agree; $699.99 at Garmin direct — the set's first cycling
+  computer and first entry in the new "cycling-computers"
+  category; the Edge 1060 launched Oct 20, 2026 at $799.99
+  but the 1050 is still sold at $699.99, not discontinued),
+  Garmin fēnix 9 47mm, Titanium with Pebble Gray silicone
+  band (010-04762-00, identifiers pending — MPN confirmed by
+  Garmin US + Abt + RA Cycles, no UPC surfaced; $999.99 at
+  Garmin direct, Abt and NFM — the set's first fēnix).
+  Garmin is a new brand in the set (0 → 5 entries). Not
+  added: Forerunner 970 47mm Carbon Gray DLC Titanium
+  010-02969-00 ($749.99 — UPC conflicted: Amazon + Snapklik
+  753759349929 vs a single eBay listing 753759349899, and the
+  -01 variant is likewise conflicted; needs a dedicated
+  tiebreak), Edge 1060 ($799.99, too new for UPC
+  verification), Fenix 8 47mm AMOLED (superseded by the
+  fēnix 9, now discounted last-gen), Instinct 3, Forerunner
+  165, Edge 850 and Garmin dash cams (not yet swept) — all
+  stay list-only for later batches.
 - Expansion batch 25 (DECISIONS 047, continuous expansion per
   DECISIONS 027): eval set 145 → 150 models, verified identifiers
   stay 74 (0 of 5 new identifiers verified — all pending). New:

@@ -4799,3 +4799,144 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   keys: xbox-series-s-512gb-robot-white,
   xbox-wireless-headset-2024-black,
   microsoft-surface-laptop-13-8-8th-edition-platinum).
+
+## 067 — 2026-11-06: Expansion batch 28 — 160 → 165 models (DECISIONS 050)
+
+- Membership check (against the 160-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): vívoactive 6 — NO MATCH (the
+  set has no Garmin entry of any kind; the wearables in the set
+  are 3 Apple Watch lines); Venu 4 — NO MATCH (no Venu of any
+  kind; the 41mm is a different size and is not in the set
+  either); Forerunner 570 — NO MATCH (no Forerunner of any
+  kind; the 47mm is a different size and is not in the set
+  either); Edge 1050 — NO MATCH (the set has no cycling
+  computer of any kind and no "cycling-computers" category);
+  fēnix 9 — NO MATCH (no fēnix of any kind; the fēnix 8 is a
+  different model and is not in the set either). No candidate
+  matches an existing model on name, MPN or UPC. The five are
+  the Garmin US store sweep candidates, one per hardware
+  family; all five Garmin US store pages return JSON-LD
+  Product.offers on fresh reads 2026-11-06 ~21:21 UTC.
+- Garmin vívoactive 6, Slate with Black silicone band
+  (010-02985-00) — identifiers VERIFIED: UPC 753759342807 +
+  MPN 010-02985-00 (Petra US, Vendor SKU 010-02985-00, UPC
+  753759342807, + HeartRateMonitorsUSA MPN/UPC table,
+  Slate/Black 010-02985-00 / 753759342807, agree; MPN
+  corroborated by Dell US Mfr Part # 010-02985-00 + Best Buy
+  US Model 010-02985-00, SKU 6628683). Quotes (2): Garmin
+  $299.99 (US store page JSON-LD read fresh 2026-11-06 —
+  the page shows the Lunar Gold variant but the price is
+  uniform $299.99 across all four colors); Dell $299.99
+  (Mfr Part # 010-02985-00, Temporarily Out of Stock —
+  stock caveat recorded). 42.2 mm AMOLED, up to 11 days
+  battery, launched 2025. Not the Lunar Gold/Bone
+  010-02985-01 (UPC 753759342814), Metallic Jasper Green
+  010-02985-02 (UPC 753759342821) or Pink Dawn 010-02985-03
+  (UPC 753759342838) colorways, and not the vívoactive 5.
+- Garmin Venu 4, 45mm, Silver stainless steel bezel with
+  Silver Gray silicone band (010-03014-01) — identifiers
+  VERIFIED: UPC 753759342883 + MPN 010-03014-01 (Petra US,
+  Vendor SKU 010-03014-01, UPC 753759342883, GTIN
+  00753759342883, + HeartRateMonitorsUSA MPN/UPC table,
+  45mm Silver / Silver Gray 010-03014-01 / 753759342883,
+  agree; MPN corroborated by Abt US Model 010-03014-01 +
+  the Garmin US store URL pn/010-03014-01). Quotes (2):
+  Garmin $549.99 (US store page JSON-LD read fresh
+  2026-11-06 — the page description is the pinned variant
+  exactly); Dell $499.99 sale vs $549.99 list (Meta Catalog
+  feed authorized_retailer row for this exact variant —
+  early Black Friday pricing, suspected, not
+  page-verified). Launched Sep 22, 2025 at $549.99 (Garmin
+  press release); 45 mm AMOLED, stainless steel bezel, ECG
+  app, LED flashlight, up to 12 days battery. Not the 41 mm
+  (different size, same $549.99), the Slate/Black silicone
+  010-03014-00 (UPC 753759342876), the Silver/Citron
+  010-03014-02, or the Slate/Black + Brown leather
+  010-03014-03 ($599.99).
+- Garmin Forerunner 570, 42mm, Raspberry Aluminum with
+  Translucent Bone/Mango band (010-02970-02) — identifiers
+  VERIFIED: UPC 753759349820 + MPN 010-02970-02 (Target US,
+  TCIN 94760143, UPC 753759349820, $549.99, In Stock, +
+  Selenal.lv, part code 010-02970-02, Barcode 753759349820,
+  agree; CycleSuperStore.ie barcode list confirms the
+  -00/-01/-02 mapping, 753759349806 / 753759349813 /
+  753759349820; MPN corroborated by the Garmin US store URL
+  pn/010-02970-02 + the Meta Catalog feed row for this exact
+  variant). Amazon item details were read only as a third
+  corroboration and are not needed for the verification.
+  Quotes (2): Garmin $549.99 (Meta Catalog feed Garmin row
+  for this exact variant pn/010-02970-02; Garmin US store
+  page JSON-LD read fresh 2026-11-06 confirms $549.99 for
+  the 42mm line — the page shows the Slate Gray variant but
+  the price is uniform across sizes and colors); Target
+  $549.99 In Stock (TCIN 94760143 — agrees with Garmin
+  direct). Launched May 21, 2025 at $549.99 alongside the
+  Forerunner 970; 42 mm AMOLED, multi-band GPS, speaker and
+  mic, up to 10 days battery — no offline maps and no ECG,
+  which stay exclusive to the 970. Not the 47 mm 570
+  (different size, same $549.99), the Slate Gray
+  010-02970-00 or Cloud Blue 010-02970-01 colorways, or the
+  Forerunner 970 ($749.99).
+- Garmin Edge 1050, device only, Black (010-02890-00) —
+  identifiers VERIFIED: UPC 753759336288 + MPN 010-02890-00
+  (HeartRateMonitorsUSA 010-02890-00 / 753759336288 +
+  6ave UPC 753759336288, MPN 010-02890-00 + The Pro's
+  Closet mpn 010-02890-00, upc 753759336288 + SunnySports
+  MFR 010-02890-00, UPC 753759336288 agree; the Meta
+  Catalog feed row for this device carries GTIN
+  753759336288. The 010-02890-01 bundle's EAN
+  0753759336295 is a different code and was excluded.)
+  Quotes (2): Garmin $699.99 (US store page JSON-LD read
+  fresh 2026-11-06); BikeTiresDirect $699.99 (Mfg PartNum
+  010-02890-00 — agrees with Garmin direct). Best Buy feed
+  row $699.99 sale (list $704.95) also agrees. Launched Jun
+  2024 at $699.99; 3.5-inch 480x800 touchscreen, 64 GB,
+  speaker and bike bell, Garmin Pay, up to 20 hours
+  demanding use / 60 hours battery saver. The Edge 1060
+  launched Oct 20, 2026 at $799.99 and replaces the 1050 as
+  Garmin's premium computer, but the 1050 is still listed
+  and sold at $699.99 at Garmin direct and multiple US bike
+  shops on 2026-11-06 — not discontinued. Not the
+  010-02890-01 sensor bundle (different MPN/EAN) or the
+  Edge 1040 Solar (previous generation).
+- Garmin fēnix 9, 47mm, Titanium with Pebble Gray silicone
+  band (010-04762-00) — identifiers PENDING: MPN
+  010-04762-00 is confirmed by Garmin US + Abt + RA Cycles,
+  but no UPC surfaced in any source read — the fēnix 9 is
+  ten weeks old and retailer UPC fields are still blank;
+  the MPN lives in the variant string only, per the Surface
+  Laptop (batch 27) precedent; re-check next refresh.
+  Quotes (2): Garmin $999.99 (US store page JSON-LD read
+  fresh 2026-11-06 — the page description is the pinned
+  variant exactly); Abt $999.99 (Model 010-04762-00,
+  InStock — agrees with Garmin direct). NFM $999.99 also
+  agrees, and the Meta Catalog feed carries five $999.99
+  rows naming MPN 010-04762-00. Announced Aug 25, 2026,
+  orderable Aug 28; 47 mm AMOLED (twice as bright as
+  fēnix 8), titanium bezel, sapphire lens, leakproof metal
+  buttons, LED flashlight, 64 GB, up to 16 days battery.
+  Not the 43 mm or 51 mm fēnix 9 ($999.99 / $1,099.99),
+  the Carbon Gray DLC Titanium 010-04762-10 ($1,049.99),
+  or any fēnix 9 Pro line ($1,099.99+, full titanium case
+  and/or inReach/solar).
+- Skipped this batch, list-only: Forerunner 970 47mm Carbon
+  Gray DLC Titanium 010-02969-00 ($749.99 at Garmin direct,
+  Abt and Best Buy — UPC conflicted: Amazon item details +
+  Snapklik say 753759349929, a single eBay listing says
+  753759349899, and the -01 variant is likewise conflicted,
+  Abt 753759349905 vs Snapklik 753759349936 — nothing
+  copied; needs a dedicated tiebreak, e.g. Best Buy specs
+  or a box barcode, before any code is recorded); Edge 1060
+  ($799.99, launched Oct 20, 2026 — too new for UPC
+  verification; re-check once retailer UPC fields
+  populate); Fenix 8 47mm AMOLED (superseded by the
+  fēnix 9, now discounted last-gen); Instinct 3, Forerunner
+  165, Edge 850, Garmin dash cams (not yet swept).
+- Eval on the new snapshot: 165 models, 80 verified identifiers,
+  5 with quotes, 10 total quotes, 0 identifier-matched, 10
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 160 → 165, verified 76 → 80, for the
+  continuous expansion; the pending set gains the 1 new pending
+  key: garmin-fenix-9-47mm-titanium-pebble-gray).
