@@ -2752,6 +2752,185 @@ EVAL_SET: list[EvalProduct] = [
         "Razer's flagship lifestyle/haptic headset; the BlackShark "
         "is the esports line. Black is the only colorway sold.",
     ),
+    EvalProduct(
+        key="corsair-m65-rgb-ultra-black",
+        brand="Corsair",
+        model="M65 RGB Ultra",
+        variant="Black, wired (CH-9309411-NA2)",
+        category="mice",
+        notes="Corsair direct $59.99 (US product page, $59.99 InStock, "
+        "page-verified 2026-11-06; Meta feed brand_direct rows agree "
+        "at $59.99); Micro Center $59.99 (feed authorized_retailer "
+        "row, page-verified $59.99 InStock, JSON-LD, 2026-11-06; the "
+        "feed row states Mfr Part # CH-9309411-NA2 and UPC "
+        "840006657613); CDW $84.99 (feed row — suspected; above the "
+        "$59.99 list, not page-verified). Identifiers PENDING: MPN "
+        "CH-9309411-NA2 confirmed (Corsair US SKU + Micro Center "
+        "feed row + ShopAbunda spec table agree; ShopAbunda also "
+        "ties the SKU to Black), but UPC 840006657613 is stated on "
+        "the Micro Center feed row only — no second non-Amazon US "
+        "source states it, so identifiers stay empty per the "
+        "Adaptive Controller / DualSense precedent; re-check next "
+        "refresh. Not copied: the original CH-9309411-NA SKU (the "
+        "US page shows $69.99 Discontinued — a superseded revision "
+        "of the same mouse); the M65 RGB Ultra Wireless (CH-9319511, "
+        "$129.99, a different connectivity variant); the M65 RGB "
+        "Elite and M65 Pro RGB (different, older models). Excluded: "
+        "the FlexShopper $3/$6/$7 rows (lease-to-own marketplace, "
+        "not straight prices); the $469.97 mouse + headset + "
+        "keyboard bundle. Distinct from the set's Logitech and "
+        "Razer mice — the M65 RGB Ultra (2022, tunable weight "
+        "97–115 g, 26,000 DPI MARKSMAN sensor, optical switches, "
+        "QUICKSTRIKE buttons, AXON hyper-processing, aluminum "
+        "frame) is Corsair's flagship wired FPS mouse and the first "
+        "Corsair entry in the set. Black is pinned; the wireless "
+        "version is a different SKU.",
+    ),
+    EvalProduct(
+        key="corsair-k65-plus-wireless-midnight-grey",
+        brand="Corsair",
+        model="K65 Plus Wireless",
+        variant="Midnight Grey, MLX Red linear (CH-91D401L-NA)",
+        category="keyboards",
+        notes="Corsair direct $159.99 (US product page, $159.99 InStock, "
+        "page-verified 2026-11-06; MLX Red linear switches, NA "
+        "layout, up to 266 hours with LEDs off; Meta feed "
+        "brand_direct row agrees at $159.99); Best Buy $159.99 "
+        "(Model CH-91D401L-NA, SKU 6572502, Black/Gray, "
+        "search-index page read 2026-11-06). A stale crawl showed "
+        "$129.99 InStock 4 days ago and a second crawl $159.99 "
+        "OutOfStock — the live page read today says $159.99 "
+        "InStock and Best Buy agrees at $159.99, so $159.99 is "
+        "recorded and the $129.99 is treated as a lapsed sale, not "
+        "the current price. Identifiers PENDING: MPN CH-91D401L-NA "
+        "confirmed (Corsair US SKU + Best Buy US Model agree), but "
+        "no UPC surfaced on any US manufacturer or retailer spec "
+        "page, so identifiers stay empty per the Adaptive "
+        "Controller / DualSense precedent; re-check next refresh. "
+        "Not copied: the Tactile variant CH-91D441F-NA ($129.99, "
+        "different switches); the licensed editions (Call of Duty: "
+        "Black Ops 7 $129.99, Witcher 3 $169.99, Cyberpunk "
+        "Edgerunners 2 $169.99, Cyberpunk 2077 Arasaka White "
+        "$169.99 — different SKUs); the Frost White / Glacier Blue "
+        "Mac-and-PC editions (different colorways); the K65 Plus "
+        "(wired, $179.99) and the Revival Series $67.99 "
+        "(refurbished). Excluded: the Revival/refurbished rows. "
+        "Distinct from the set's Logitech, Keychron and Razer "
+        "boards — the K65 Plus Wireless (2024, 75% hot-swappable, "
+        "pre-lubed MLX Red linear switches, 2.4 GHz + Bluetooth + "
+        "wired, 1,000 Hz) is Corsair's current 75% wireless "
+        "keyboard and the first Corsair keyboard in the set. "
+        "Corsair's own edition list calls the base colorway "
+        "'Original (Midnight Grey)'; Best Buy lists it as "
+        "Black/Gray. Only Midnight Grey / MLX Red is pinned.",
+    ),
+    EvalProduct(
+        key="corsair-virtuoso-max-wireless-carbon",
+        brand="Corsair",
+        model="Virtuoso Max Wireless",
+        variant="Carbon, Black (CA-9011372-WW)",
+        category="headphones",
+        notes="Corsair direct $249.99 (US product page, $249.99 InStock, "
+        "page-verified 2026-11-06; Meta feed brand_direct rows "
+        "agree at $249.99); Best Buy $249.99 (Model CA-9011372-WW, "
+        "SKU 6594136, Carbon, Holiday Deal, save $50 off comp. "
+        "value $299.99, page-verified 2026-11-06). The $249.99 is a "
+        "holiday sale price against the $299.99 list (a stale "
+        "checkout.corsair.com feed row still shows $299.99) and "
+        "should be re-checked after the sale ends (the Early Black "
+        "Friday event ends Nov 8). Identifiers PENDING: MPN "
+        "CA-9011372-WW confirmed (Corsair US SKU + Best Buy US "
+        "Model + manuals.plus agree), but UPC 840440484615 is "
+        "stated only by manuals.plus (reproducing the manual's "
+        "spec table), an eBay listing and Amazon — no retailer or "
+        "manufacturer listing states it, and the Best Buy page text "
+        "does not carry it, so identifiers stay empty per the "
+        "Adaptive Controller / DualSense precedent; re-check next "
+        "refresh. Not copied: the Silver UPC (EAN 0840440484622, "
+        "CA-9011373-WW, a different colorway); the Xbox version "
+        "CA-9011374-WW (EAN 0840440484639, a different platform "
+        "variant at the same $249.99). Excluded: the Virtuoso RGB "
+        "Wireless XT $199.99 and Virtuoso RGB Wireless $199.99 "
+        "(previous-generation lines); the Revival Series $147.99 "
+        "(refurbished); the ShopAbunda $229.99 row (Amazon-"
+        "fulfilled). Distinct from the set's Sony, Bose, JBL and "
+        "Razer headsets — the Virtuoso Max (2024, 50 mm graphene "
+        "drivers, Dolby Atmos, ANC + transparency, SoundID, "
+        "simultaneous 2.4 GHz + Bluetooth, up to 60 hours, "
+        "detachable broadcast mic) is Corsair's flagship wireless "
+        "headset and the first Corsair headset in the set. Carbon "
+        "is pinned; Silver is the same price but a different SKU.",
+    ),
+    EvalProduct(
+        key="corsair-frame-4000d-rs-argb-black",
+        brand="Corsair",
+        model="FRAME 4000D RS ARGB",
+        variant="Black (CC-9011296-WW)",
+        category="pc-cases",
+        notes="Corsair direct $119.99 (US product page, $119.99 InStock, "
+        "page-verified 2026-11-06; Meta feed brand_direct rows "
+        "agree at $119.99); Newegg $114.99 (feed authorized_"
+        "retailer row — suspected; the feed title reads 'Non-LED' "
+        "while the model is RS ARGB, and the Newegg page text shows "
+        "no price or MPN, so the row may belong to the non-ARGB "
+        "FRAME 4000D RS instead — not page-verified). Identifiers "
+        "PENDING: MPN CC-9011296-WW confirmed (Corsair US SKU + "
+        "custompcgaming, mixed-news and Toppreise spec tables agree "
+        "it is the Black RS ARGB case), but UPC 840440487715 is "
+        "stated on Amazon.in only — Amazon is not used for "
+        "identifier corroboration, so identifiers stay empty per "
+        "the Adaptive Controller / DualSense precedent; re-check "
+        "next refresh. Not copied: the White RS ARGB (CC-9011297-"
+        "WW, $124.99, a different colorway); the fanless FRAME "
+        "4000D ($104.99) and FRAME 4000D RS non-ARGB (CC-9011312-"
+        "WW, $114.99 — a different fan configuration); the FRAME "
+        "4000D LCD RS ARGB ($399.99, a different model with a "
+        "pre-installed LCD). Excluded: the older iCUE 4000D RGB "
+        "Airflow (Discontinued on corsair.com); the FRAME 4000D RS "
+        "ARGB All-in-One bundles ($399.96/$484.96). Distinct from "
+        "everything in the set — the FRAME 4000D RS ARGB (2025, "
+        "fully modular mid-tower, 3x RS120 ARGB fans, InfiniRail "
+        "mounting, dual 360 mm radiators, reverse-connector "
+        "motherboard support, GPU anti-sag arm) is Corsair's "
+        "current modular mid-tower case and the first PC case in "
+        "the set. Black is pinned.",
+    ),
+    EvalProduct(
+        key="corsair-titan-ii-360-rx-rgb-black",
+        brand="Corsair",
+        model="iCUE LINK Titan II 360 RX RGB",
+        variant="Black (CW-9061037-WW)",
+        category="cpu-coolers",
+        notes="Corsair direct $179.99 (US product page, $179.99 InStock, "
+        "page-verified 2026-11-06); Best Buy $179.99 (Model "
+        "CW-9061037-WW, SKU 6683807, Black, sold by Best Buy, Add "
+        "to cart, JSON-LD InStock, page-verified 2026-11-06 — the "
+        "page's 'About this product' block wrongly describes the "
+        "Titan II Ultra 360 LX LCD, a Best Buy copy error; the "
+        "Model, SKU, color and price are for this cooler); Newegg "
+        "$179.99 (feed authorized_retailer row — suspected; no "
+        "identifier in the feed row, not page-verified). "
+        "Identifiers PENDING: MPN CW-9061037-WW confirmed (Corsair "
+        "US SKU + Best Buy US Model + Newegg + Scan UK agree), but "
+        "GTIN 840440419464 is stated on the Scan UK page only — no "
+        "second, US source states it, so identifiers stay empty "
+        "per the Adaptive Controller / DualSense precedent; "
+        "re-check next refresh. Not copied: the White GTIN "
+        "840440419471 (CW-9061038-WW, a different colorway, "
+        "currently OutOfStock on corsair.com); the Titan II 360 RX "
+        "LCD ($239.99, a different model with a 5-inch LCD); the "
+        "previous-generation Titan 360 RX RGB (CW-9061018-WW, "
+        "$199.99, OutOfStock) and Titan 360 RX LCD ($219.99). "
+        "Excluded: the FlexShopper $11 row (lease-to-own "
+        "marketplace); the Titan 360 RX LCD + fan bundles ($309.97–"
+        "$414.97); the iCUE H150i RGB Pro XT / Elite (Discontinued "
+        "on corsair.com). Distinct from everything in the set — the "
+        "Titan II 360 RX RGB (2026, FlowDrive 2 pump, unified "
+        "RX360 II RGB fan frame, 360 mm radiator, iCUE LINK System "
+        "Hub included, 6-year warranty) is Corsair's current "
+        "flagship 360 mm AIO and the first CPU cooler in the set. "
+        "Black is pinned.",
+    ),
 ]
 
 

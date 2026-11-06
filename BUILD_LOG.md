@@ -3159,3 +3159,160 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   working, not a bug). Tests: 19 passed (test_snapshot_eval
   counts updated 110 → 115 for the continuous expansion;
   verified stays 69; the pending set gains the 5 new Razer keys).
+
+## 057 — 2026-11-06: Expansion batch 19 — 115 → 120 models (DECISIONS 041)
+
+- Corsair US store sweep (corsair.com, read-only, 2026-11-06
+  ~19:26–19:30 UTC / 11:26–11:30 PT): unlike the Razer sweep, the
+  US product pages return full product offers (price + InStock) in
+  the page text for every pick, so direct prices are page-verified
+  rather than feed-derived. Feed shelf observed across the 5 Meta
+  Catalog runs (100 rows): M65 RGB Ultra $59.99 wired / $129.99
+  wireless; M65 RGB Elite $79.99 / Pro RGB $59.99–$69.99 (older
+  models); K65 Plus Wireless $159.99 base / $129.99 Tactile /
+  $119.99 Atomic Purple / $169.99 licensed editions (CoD: Black
+  Ops 7, Witcher 3, Cyberpunk Edgerunners 2, Cyberpunk 2077
+  Arasaka White) / $179.99 Frost White + Glacier Blue Mac-and-PC
+  editions / $67.99 Revival; K70 MAX $249.99 Discontinued; K70
+  CORE SE $89.99–$109.99; K100 RGB OPX standard page not current
+  (Revival only, $129.99); Virtuoso Max $249.99 Carbon/Silver/Xbox
+  (list $299.99); Virtuoso RGB Wireless XT $199.99; HS80 Max
+  Wireless $119.99; HS80 v2 Max $199.99; FRAME 4000D RS ARGB
+  $119.99 Black / $124.99 White; FRAME 4000D $104.99; FRAME 4000D
+  LCD RS ARGB $399.99; Titan II 360 RX RGB $179.99 / Titan II 360
+  RX LCD $239.99; Titan (gen 1) 360 RX RGB $199.99 OutOfStock;
+  iCUE H150i RGB Pro XT $159.99 Discontinued / Elite $204.90
+  Discontinued; RM850x $149.99 Discontinued / RM850x SHIFT 2nd gen
+  (US price unverified); Vengeance RGB DDR5 32GB 6000 CL30
+  $599.99–$657.99 with conflicting stock; XENEON 27QHD240 OLED
+  $999.99 OutOfStock direct; WARTHOG $179.99 / WARTHOG RS $199.99
+  pre-order only. Full candidate list (list-only): M65 RGB Ultra
+  Wireless $129.99; Sabre RGB Pro Wireless (price unverified);
+  K65 Plus Wireless Tactile $129.99; K70 CORE SE $89.99–$109.99;
+  K100 RGB OPX (Revival $129.99 only); HS80 Max Wireless $119.99;
+  HS80 v2 Max $199.99; Virtuoso RGB Wireless XT $199.99; Vengeance
+  RGB DDR5 32GB 6000 CL30 $599.99–$657.99; RM850x SHIFT 2nd gen
+  (US price unverified); XENEON 27QHD240 OLED $999.99 (direct
+  OutOfStock); WARTHOG $179.99 / WARTHOG RS $199.99 (pre-order).
+  Not added (no clean pin): K70 MAX and RM850x (2024) — both
+  Discontinued on corsair.com; the older iCUE 4000D RGB Airflow —
+  Discontinued; XENEON 27QHD240 OLED — direct OutOfStock; WARTHOG
+  — pre-order only, not shipping; Vengeance RGB DDR5 — prices
+  volatile across $599.99–$657.99 with conflicting stock crawls.
+  No controller pick: Corsair sells no first-party controller on
+  corsair.com US (SCUF is a separate store).
+- Membership check (against the 115-model set, by name, MPN and
+  UPC): grep finds zero 'corsair' in price_agent/catalog.py — the
+  set had no Corsair entry at all, so no name, MPN or UPC overlap
+  for any of the 5 picked models. M65 RGB Ultra (CH-9309411-NA2):
+  no match — the set's mice are Logitech and Razer, different
+  brands and models. K65 Plus Wireless (CH-91D401L-NA): no match —
+  distinct from the set's Logitech, Keychron and Razer boards.
+  Virtuoso Max (CA-9011372-WW): no match — distinct from the set's
+  Sony, Bose, JBL and Razer headsets. FRAME 4000D RS ARGB
+  (CC-9011296-WW): no match — the set had no PC case at all.
+  Titan II 360 RX RGB (CW-9061037-WW): no match — the set had no
+  CPU cooler at all.
+- Per-model record (all 5 added; identifiers, quotes, pending):
+- Corsair M65 RGB Ultra, Black, wired (CH-9309411-NA2) —
+  identifiers PENDING: MPN confirmed (Corsair US SKU + Micro
+  Center feed row + ShopAbunda spec table agree; ShopAbunda also
+  ties the SKU to Black), but UPC 840006657613 is stated on the
+  Micro Center feed row only — no second non-Amazon US source.
+  Not copied: the original CH-9309411-NA SKU (US page $69.99
+  Discontinued — a superseded revision); the Wireless MPN
+  CH-9319511 (EU White CH-9319511-EU2 at 129.99 EUR); the M65 RGB
+  Elite / Pro RGB (different, older models). Quotes (3): Corsair
+  direct $59.99 (US page $59.99 InStock, page-verified; feed
+  brand_direct rows agree); Micro Center $59.99 (feed row, Mfr
+  Part # + UPC in the row; page-verified $59.99 InStock, JSON-LD);
+  CDW $84.99 (feed row — suspected; above list, not
+  page-verified). Excluded: FlexShopper $3/$6/$7 rows
+  (lease-to-own marketplace); the $469.97 mouse + headset +
+  keyboard bundle; wireless rows (different connectivity).
+- Corsair K65 Plus Wireless, Midnight Grey, MLX Red linear
+  (CH-91D401L-NA) — identifiers PENDING: MPN confirmed (Corsair
+  US SKU + Best Buy US Model agree), but no UPC surfaced on any US
+  manufacturer or retailer spec page. Not copied: the Tactile MPN
+  CH-91D441F-NA ($129.99, different switches); the licensed-edition
+  SKUs (CoD: Black Ops 7 CH-91B4BCD-NA, Witcher 3 CH-91B4BBD-NA,
+  Cyberpunk Edgerunners 2 CH-91D401N-NA, Cyberpunk 2077 Arasaka
+  White CH-91D401M-NA); the Frost White / Glacier Blue Mac-and-PC
+  editions (different colorways); the K65 Plus wired ($179.99).
+  Quotes (2): Corsair direct $159.99 (US page $159.99 InStock,
+  page-verified; feed brand_direct row agrees); Best Buy $159.99
+  (Model CH-91D401L-NA, SKU 6572502, Black/Gray, search-index page
+  read). A 4-day-old crawl showed $129.99 InStock and another
+  $159.99 OutOfStock — the live page read today says $159.99
+  InStock and Best Buy agrees, so $159.99 is recorded and $129.99
+  is treated as a lapsed sale. Excluded: Revival/refurbished rows
+  ($67.99/$79.99); the Tactile and licensed-edition rows
+  (different variants).
+- Corsair Virtuoso Max Wireless, Carbon (CA-9011372-WW) —
+  identifiers PENDING: MPN confirmed (Corsair US SKU + Best Buy
+  US Model + manuals.plus agree), but UPC 840440484615 is stated
+  only by manuals.plus (reproducing the manual's spec table), an
+  eBay listing and Amazon — no retailer or manufacturer listing
+  states it and the Best Buy page text does not carry it. Not
+  copied: the Silver EAN 0840440484622 (CA-9011373-WW, different
+  colorway); the Xbox EAN 0840440484639 (CA-9011374-WW, different
+  platform variant). Quotes (3): Corsair direct $249.99 (US page
+  $249.99 InStock, page-verified; feed brand_direct rows agree —
+  a holiday sale price vs the $299.99 list, re-check after the
+  sale ends, Early Black Friday ends Nov 8); Best Buy $249.99
+  (Model CA-9011372-WW, SKU 6594136, Holiday Deal, comp. value
+  $299.99, page-verified); Corsair $299.99 (feed brand_direct row
+  on checkout.corsair.com — suspected; a stale list-price row).
+  Excluded: Virtuoso RGB Wireless XT $199.99 / Virtuoso RGB
+  Wireless $199.99 (previous-generation lines); Revival $147.99
+  (refurbished); ShopAbunda $229.99 (Amazon-fulfilled).
+- Corsair FRAME 4000D RS ARGB, Black (CC-9011296-WW) —
+  identifiers PENDING: MPN confirmed (Corsair US SKU +
+  custompcgaming, mixed-news and Toppreise spec tables agree it is
+  the Black RS ARGB case), but UPC 840440487715 is stated on
+  Amazon.in only. Not copied: the White MPN CC-9011297-WW
+  ($124.99, confirmed by Newegg + Scan UK — a different colorway;
+  its Amazon-only UPC 840440487722 was not recorded either); the
+  fanless FRAME 4000D ($104.99) and FRAME 4000D RS non-ARGB
+  (CC-9011312-WW, $114.99 — different fan configuration); the
+  FRAME 4000D LCD RS ARGB ($399.99, different model). Quotes (2):
+  Corsair direct $119.99 (US page $119.99 InStock, page-verified;
+  feed brand_direct rows agree); Newegg $114.99 (feed row —
+  suspected; the feed title reads 'Non-LED' while the model is RS
+  ARGB and the Newegg page text shows no price or MPN, so the row
+  may belong to the non-ARGB RS case). Excluded: the older iCUE
+  4000D RGB Airflow (Discontinued); the RS ARGB All-in-One bundles
+  ($399.96/$484.96).
+- Corsair iCUE LINK Titan II 360 RX RGB, Black (CW-9061037-WW) —
+  identifiers PENDING: MPN confirmed (Corsair US SKU + Best Buy
+  US Model + Newegg + Scan UK agree), but GTIN 840440419464 is
+  stated on the Scan UK page only — no second, US source. Not
+  copied: the White GTIN 840440419471 (CW-9061038-WW, different
+  colorway, OutOfStock on corsair.com); the Titan II 360 RX LCD
+  ($239.99, different model); the previous-generation Titan 360 RX
+  RGB (CW-9061018-WW, $199.99, OutOfStock). Quotes (3): Corsair
+  direct $179.99 (US page $179.99 InStock, page-verified); Best Buy
+  $179.99 (Model CW-9061037-WW, SKU 6683807, Black, sold by Best
+  Buy, Add to cart, JSON-LD InStock, page-verified — the page's
+  'About this product' block wrongly describes the Titan II Ultra
+  360 LX LCD, a Best Buy copy error); Newegg $179.99 (feed row —
+  suspected; no identifier in the feed row, not page-verified).
+  Excluded: FlexShopper $11 (lease-to-own marketplace); the Titan
+  360 RX LCD + fan bundles ($309.97–$414.97); the iCUE H150i RGB
+  Pro XT / Elite (Discontinued).
+- Not added from the sweep (held for later batches, all current
+  US models, no defect): M65 RGB Ultra Wireless $129.99; K65 Plus
+  Wireless Tactile $129.99; K70 CORE SE $89.99–$109.99; HS80 Max
+  Wireless $119.99; HS80 v2 Max $199.99; Virtuoso RGB Wireless XT
+  $199.99; Vengeance RGB DDR5 32GB 6000 CL30 $599.99–$657.99
+  (volatile, conflicting stock); WARTHOG $179.99 / WARTHOG RS
+  $199.99 (pre-order only). Not added (no clean pin): K70 MAX /
+  RM850x (2024) / iCUE 4000D RGB Airflow (Discontinued); XENEON
+  27QHD240 OLED (direct OutOfStock); K100 RGB OPX (standard US
+  page not current — Revival only).
+- Eval on the new snapshot: 120 models, 69 verified identifiers,
+  5 with quotes, 13 total quotes, 0 identifier-matched, 13
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 115 → 120 for the continuous expansion;
+  verified stays 69; the pending set gains the 5 new Corsair keys).

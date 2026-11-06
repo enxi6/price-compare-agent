@@ -1673,3 +1673,89 @@ written as "superseded by" with the original text kept.
   re-checked after Nov 8 (batch 9 revisit, still open); the Sony
   direct CH720N $89.99 is a sale price and should be re-checked
   after the sale ends.
+
+## 041 (2026-11-06): Expansion batch 19 — 115 → 120 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 Corsair models from the corsair.com US store sweep
+  (BUILD_LOG 057), no per-batch user approval needed (DECISIONS
+  027): Corsair M65 RGB Ultra, Black, wired (CH-9309411-NA2, UPC
+  pending), Corsair K65 Plus Wireless, Midnight Grey, MLX Red
+  linear (CH-91D401L-NA, UPC pending), Corsair Virtuoso Max
+  Wireless, Carbon (CA-9011372-WW, UPC pending), Corsair FRAME
+  4000D RS ARGB, Black (CC-9011296-WW, UPC pending), Corsair iCUE
+  LINK Titan II 360 RX RGB, Black (CW-9061037-WW, UPC pending).
+  One variant pinned per model (DECISIONS 015); 0 of 5 identifiers
+  verified — all 5 stay pending on single-source-only or no-source
+  codes (Anker batch 16 precedent: 0 of 5 verified is not a reason
+  to hold the batch). Verified-identifier count stays 69. No model
+  was split out of this batch. Two new categories enter the set:
+  pc-cases (FRAME 4000D RS ARGB) and cpu-coolers (Titan II 360 RX
+  RGB); category is free-form and unused by the eval.
+- Why these 5: they are the first Corsair-brand sweep (the set had
+  no Corsair entry at all — grep finds zero), one per product family
+  where the official US catalog has a current in-stock model —
+  flagship wired FPS mouse, current 75% wireless keyboard, flagship
+  wireless headset, current modular mid-tower case, current flagship
+  360 mm AIO cooler. Corsair sells no first-party controller on
+  corsair.com US (SCUF is a separate store), so there is no
+  controller pick this batch. All five are in stock new in the US on
+  2026-11-06 (Corsair direct pages, page-verified, plus Best Buy /
+  Micro Center / Newegg feed rows).
+- What was corrected along the way: Corsair SKUs carry regional
+  suffixes — the NA/NA2 US codes were pinned and the EU/EU2 codes
+  were not used (M65 RGB Ultra Wireless White EU CH-9319511-EU2 at
+  129.99 EUR; K65 Plus Wireless EU at 159.99 EUR); the M65's
+  original CH-9309411-NA SKU shows $69.99 Discontinued on
+  corsair.com — the current revision is CH-9309411-NA2 at $59.99;
+  the K65 Plus Wireless base colorway is Corsair's 'Original
+  (Midnight Grey)', not Black (Best Buy lists it as Black/Gray);
+  the Virtuoso Max $249.99 is a holiday sale price against the
+  $299.99 list (stale checkout.corsair.com feed row still shows
+  $299.99), not a price cut; the K65's $129.99 is a lapsed sale
+  from a 4-day-old crawl — the live page read today says $159.99
+  and Best Buy agrees; the Newegg FRAME 4000D RS ARGB $114.99 feed
+  row is titled 'Non-LED' and may belong to the non-ARGB RS case,
+  so it stays suspected; the Best Buy Titan II page's 'About this
+  product' block wrongly describes the Titan II Ultra 360 LX LCD
+  (a Best Buy copy error — Model/SKU/color/price are for this
+  cooler); the Virtuoso Max UPC 840440484615 (manuals.plus spec
+  table + eBay + Amazon) and the FRAME UPC 840440487715 (Amazon.in
+  only) were not recorded — neither has a retailer or manufacturer
+  listing stating it, and Amazon is never a corroborating source.
+- Variant pinning, recorded explicitly: M65 RGB Ultra pins the
+  wired Black (CH-9309411-NA2) — the Wireless (CH-9319511, $129.99)
+  is a different connectivity variant; K65 Plus Wireless pins
+  Midnight Grey, MLX Red linear (CH-91D401L-NA) — the Tactile
+  (CH-91D441F-NA, $129.99) and all licensed editions (Call of Duty,
+  Witcher 3, Cyberpunk) are different SKUs; Virtuoso Max pins
+  Carbon (CA-9011372-WW) — Silver (CA-9011373-WW) is a different
+  colorway and the Xbox version (CA-9011374-WW) a different platform
+  variant, both at the same $249.99; FRAME 4000D RS ARGB pins Black
+  (CC-9011296-WW) — White (CC-9011297-WW, $124.99) is a different
+  colorway and the fanless FRAME 4000D ($104.99) a different model;
+  Titan II 360 RX RGB pins Black (CW-9061037-WW) — White
+  (CW-9061038-WW, GTIN 840440419471) is a different colorway and
+  the LCD version ($239.99) a different model.
+- What does NOT change: the existing 115 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–18 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 120 on
+  the next edit (parent owns the cron; not touched here).
+- Revisit: all five identifier sets stay pending until a second
+  non-Amazon US source confirms each (M65: UPC 840006657613 on the
+  Micro Center feed row only; K65: no UPC anywhere; Virtuoso Max:
+  UPC 840440484615 on manuals.plus + eBay only; FRAME: UPC
+  840440487715 on Amazon.in only; Titan II: GTIN 840440419464 on
+  Scan UK only); the Virtuoso Max $249.99 and K65 $159.99 prices
+  should be re-checked after the Early Black Friday event ends Nov
+  8 (the Virtuoso Max is a $50-off holiday deal; the K65's $129.99
+  crawl may return); the M65 RGB Ultra Wireless ($129.99), Sabre
+  RGB Pro Wireless, HS80 Max Wireless ($119.99), Virtuoso RGB
+  Wireless XT ($199.99), K70 CORE SE ($89.99–$109.99), Vengeance
+  RGB DDR5 32GB 6000 CL30 (volatile $599.99–$657.99, conflicting
+  stock) and WARTHOG case ($179.99, pre-order only) stay list-only
+  for later batches; the ULT WEAR $148.00 Black Friday street price
+  should be re-checked after Nov 8 (batch 9 revisit, still open);
+  the Sony direct CH720N $89.99 is a sale price and should be
+  re-checked after the sale ends.

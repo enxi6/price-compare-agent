@@ -11,6 +11,36 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 19 (DECISIONS 041, continuous expansion per
+  DECISIONS 027): eval set 115 → 120 models, verified identifiers
+  stay 69 (all 5 new Corsair identifiers stay pending on
+  single-source-only or no-source codes). New: Corsair M65 RGB
+  Ultra, Black, wired (CH-9309411-NA2, UPC pending — 840006657613
+  on the Micro Center feed row only; the original CH-9309411-NA
+  SKU is Discontinued; $59.99 at Corsair direct and Micro Center,
+  $84.99 at CDW — Corsair's flagship wired FPS mouse, the first
+  Corsair entry in the set), Corsair K65 Plus Wireless, Midnight
+  Grey, MLX Red linear (CH-91D401L-NA, UPC pending — no UPC
+  surfaced anywhere; $159.99 at Corsair direct and Best Buy — a
+  $129.99 crawl is treated as a lapsed sale; Corsair's current 75%
+  wireless keyboard), Corsair Virtuoso Max Wireless, Carbon
+  (CA-9011372-WW, UPC pending — 840440484615 on manuals.plus +
+  eBay + Amazon only, no retailer or manufacturer listing states
+  it; $249.99 at Corsair direct and Best Buy, a holiday sale price
+  vs the $299.99 list — Corsair's flagship wireless headset),
+  Corsair FRAME 4000D RS ARGB, Black (CC-9011296-WW, UPC pending —
+  840440487715 on Amazon.in only; $119.99 at Corsair direct,
+  $114.99 at Newegg — suspected, the feed title reads 'Non-LED' —
+  the first PC case in the set), Corsair iCUE LINK Titan II 360 RX
+  RGB, Black (CW-9061037-WW, UPC pending — GTIN 840440419464 on
+  Scan UK only; $179.99 at Corsair direct, Best Buy and Newegg —
+  Corsair's current flagship 360 mm AIO, the first CPU cooler in
+  the set). Not added: K70 MAX and RM850x (Discontinued); XENEON
+  27QHD240 OLED (direct OutOfStock); WARTHOG case (pre-order
+  only); Vengeance RGB DDR5 32GB 6000 CL30 (volatile pricing);
+  M65 RGB Ultra Wireless and HS80 Max Wireless (list-only for
+  later batches). No controller pick — Corsair sells no
+  first-party controller on corsair.com US.
 - Expansion batch 18 (DECISIONS 040, continuous expansion per
   DECISIONS 027): eval set 110 → 115 models, verified identifiers
   stay 69 (all 5 new Razer identifiers stay pending on
