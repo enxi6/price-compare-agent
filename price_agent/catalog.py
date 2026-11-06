@@ -3798,6 +3798,178 @@ EVAL_SET: list[EvalProduct] = [
         "way). Re-check the $199.99 price after the Early Black "
         "Friday event ends Nov 8.",
     ),
+    EvalProduct(
+        key="asus-rog-swift-oled-pg32ucwm-black",
+        brand="ASUS",
+        model="ROG Swift OLED PG32UCWM 32-inch 4K 240Hz Gaming Monitor",
+        variant="Black (90LM0DN0-B019B1)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="ASUS $1,399.00 (ROG US product page JSON-LD read "
+        "fresh 2026-11-06, InStock; 31.5-inch 4K Tandem RGB "
+        "OLED, dual mode 4K@240Hz / FHD@480Hz, TrueBlack "
+        "Glossy, DP 2.1a, USB-C 90W, 3-year warranty); B&H "
+        "$1,399.00 (page read fresh 2026-11-06, InStock, UPC "
+        "199291571570); Newegg $1,399.99 (feed "
+        "authorized_retailer row — suspected; not "
+        "page-verified). Identifiers PENDING: the UPC "
+        "199291571570 is B&H-only — no second independent "
+        "source states it (Scan UK lists GTIN 4711636571531 "
+        "for the EU listing, a different regional code, not a "
+        "corroboration), and the MPN 90LM0DN0-B019B1 is ASUS "
+        "eShop USA only, so identifiers stay empty per the "
+        "strict two-source rule; re-check next refresh. Not "
+        "copied: 199291571570 (single-source); 4711636571531 "
+        "(EU GTIN); 90LM0DN0-B019B2 (PG32UCDMR part, different "
+        "monitor). Excluded: the silarius $1,427.99 row "
+        "(mislabeled brand_direct in the feed — unconfirmed "
+        "reseller, not ASUS; same pattern as batch 24's "
+        "WB726). Distinct from the set's Dell, Alienware, HP "
+        "and ASUS PG27UCWM monitors — the PG32UCWM (ASUS's "
+        "32-inch Tandem RGB OLED flagship) is the second ASUS "
+        "monitor in the set.",
+    ),
+    EvalProduct(
+        key="asus-rog-swift-oled-pg27aqdpr-black",
+        brand="ASUS",
+        model="ROG Swift OLED PG27AQDPR 27-inch QHD 500Hz Gaming Monitor",
+        variant="Black (single colorway)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="ASUS $729.00 sale vs $899.00 list (ROG US monitors "
+        "category page, search-index read crawled 2026-11-03, "
+        "Temporarily out of stock at direct; 27-inch QHD "
+        "QD-OLED, 500Hz, OLED Anti-Flicker 2.0, OLED Care Pro, "
+        "DisplayHDR 500 True Black); Best Buy $999.99 (page "
+        "read fresh 2026-11-06, InStock, Model PG27AQDPR, SKU "
+        "6685336, Sold by Best Buy). Identifiers PENDING: no "
+        "UPC and no ASUS part number (90LM...) surfaced for "
+        "this model in any source read, so identifiers stay "
+        "empty per the strict two-source rule; re-check next "
+        "refresh. Not copied: nothing — no candidate code "
+        "surfaced. Not the PG27AQDP (480Hz WOLED, $799/$679 — "
+        "different monitor) or the PG27AQWP-W (540Hz "
+        "dual-mode, $1,099). Correction vs sweep 059: the "
+        "sweep's $899.00 'sale, save $170' misreads the "
+        "category page — $899.00 is the LIST and $729.00 is "
+        "the sale (save $170.00); the feed's $599.00 ROG row "
+        "is a category-page misassociation (that price belongs "
+        "to another monitor on the same page — the ROG US "
+        "product page carries no offer block on the fresh "
+        "read) and was not used. Stock caveat: temporarily out "
+        "of stock at ROG US — added per the PS5 Pro precedent "
+        "(batch 3: price-verified, stock not confirmed); Best "
+        "Buy has stock. Re-check the $729.00 sale price after "
+        "the Early Black Friday event ends Nov 8. Distinct "
+        "from the set's other monitors — the PG27AQDPR is the "
+        "third ASUS monitor in the set and ASUS's 500Hz "
+        "QD-OLED monitor.",
+    ),
+    EvalProduct(
+        key="asus-rog-delta-usb-c-black",
+        brand="ASUS",
+        model="ROG Delta USB-C Gaming Headset",
+        variant="Black (90YH01D1-B2UA00)",
+        category="headphones",
+        identifiers={},
+        status="pending",
+        notes="ASUS $149.99 (ROG US product page JSON-LD + ASUS "
+        "eShop USA page read fresh 2026-11-06, OutOfStock at "
+        "direct; ESS 9218 Quad-DAC, USB-C + USB 2.0 adapter, "
+        "Aura Sync RGB, 387 g); Newegg $102.78 (feed "
+        "authorized_retailer row — suspected; 'ASUS ROG DELTA "
+        "USB Connector Circumaural Headset', not "
+        "page-verified). Identifiers PENDING: MPN "
+        "90YH01D1-B2UA00 confirmed (ASUS eShop USA page, "
+        "Product Name ROG DELTA/SR/UBW/ACI, Color Black), but "
+        "no US UPC surfaced in any source read, so "
+        "identifiers stay empty per the strict two-source "
+        "rule; re-check next refresh. Not copied: "
+        "90YH00Z1-B2UA00 (UK part, different regional part); "
+        "90YH02K0-B2UA00 (Delta S, different headset). Not the "
+        "Delta II (different headset, $185.99) or the Delta "
+        "White Edition (different colorway/model). Excluded: "
+        "the 961souq $203/$250 rows (overseas). Stock caveat: "
+        "out of stock at ASUS direct — added per the PS5 Pro "
+        "precedent (batch 3: price-verified, stock not "
+        "confirmed); re-check stock next refresh. Distinct "
+        "from the set's Sony, Bose, JBL, Razer, Corsair, "
+        "HyperX, Alienware and ASUS Delta II headsets — the "
+        "Delta (2018, the original ESS Quad-DAC ROG headset) "
+        "is the second ASUS headset in the set.",
+    ),
+    EvalProduct(
+        key="asus-rog-harpe-mini-core-black",
+        brand="ASUS",
+        model="ROG Harpe Mini Core Gaming Mouse",
+        variant="Black (90MP04D0-BMAA02)",
+        category="mice",
+        identifiers={},
+        status="pending",
+        notes="ASUS $44.99 (ROG US product page JSON-LD + ASUS "
+        "eShop USA read fresh 2026-11-06, InStock; 52 g wired, "
+        "12,000 DPI, ROG Micro Switch II, Push-Fit sockets, "
+        "Paracord, P524 ROG HARPE MINI CORE); B&H $29.99 (page "
+        "read fresh 2026-11-06, InStock, UPC 199291014046); "
+        "Newegg $32.00 sale vs $44.99 (feed "
+        "authorized_retailer row — suspected; not "
+        "page-verified). Identifiers PENDING: the UPC "
+        "199291014046 is B&H-only — no second independent "
+        "source states it — and the MPN 90MP04D0-BMAA02 is ASUS "
+        "eShop USA only (the JP part is 90MP04D0-BMUA00, also "
+        "listed by PB Tech NZ), so identifiers stay empty per "
+        "the strict two-source rule; re-check next refresh. "
+        "Not copied: 199291014046 (single-source); "
+        "90MP04D0-BMUA00 (JP/non-US part). Not the Harpe Ace "
+        "Mini (wireless, $81.99-$129.99, different mouse). "
+        "Correction vs sweep 059: the sweep's $69.99 is the "
+        "list — the current ASUS price is $44.99 sale (was "
+        "$59.99). Excluded: the MercadoLibre $55 marketplace "
+        "row (DECISIONS 021) and the JP 8,980 yen row "
+        "(non-US). Re-check the $44.99 sale price after the "
+        "Early Black Friday event ends Nov 8. Distinct from "
+        "the set's Logitech, Razer, Corsair, Alienware, HP, "
+        "HyperX and ASUS Gladius IV Ace mice — the Harpe Mini "
+        "Core is the second ASUS mouse in the set.",
+    ),
+    EvalProduct(
+        key="asus-rog-pelta-black",
+        brand="ASUS",
+        model="ROG Pelta Gaming Headset",
+        variant="Black (90YH0410-BHAA00)",
+        category="headphones",
+        identifiers={},
+        status="pending",
+        notes="ASUS $104.99 sale vs $129.99 list (ASUS eShop USA "
+        "BHAA00 page read fresh 2026-11-06, InStock, Product "
+        "Name A501 ROG PELTA/BLK, Color Black; ROG US product "
+        "page JSON-LD agrees at $104.99; tri-mode BT/2.4GHz/"
+        "USB-C, 50 mm titanium drivers, 309 g, up to 70-hour "
+        "battery). Identifiers PENDING: MPN 90YH0410-BHAA00 "
+        "confirmed (ASUS eShop USA), but no US UPC surfaced "
+        "— the only UPC found, 199291069725, is stated on a "
+        "single ASUS datasheet for 90YH0410-BHUA10 (the White "
+        "non-US part, EAN 4711636069724), so identifiers stay "
+        "empty per the strict two-source rule; re-check next "
+        "refresh. Not copied: 199291069725 (non-US White part, "
+        "single datasheet); 90YH0410-BHAA10 (White, $104.99 — "
+        "different colorway); 90YH0410-BHUA00 (non-US Black "
+        "part). Not the Pelta Core (wired, $119.99, different "
+        "headset). Correction vs sweep 059: the sweep's 'from "
+        "$84.99' is not corroborated — no $84.99 price appears "
+        "on any fresh read (ROG US $104.99/$129.99, eShop "
+        "$104.99 both colorways); the $114.99 feed row for "
+        "BHAA00 is stale (fresh eShop read $104.99) and was "
+        "not used. Excluded: the Walmart $104.99 feed row "
+        "(sold-by unconfirmed — marketplace risk, DECISIONS "
+        "021, same as batch 23's Cetra). Re-check the $104.99 "
+        "sale price after the Early Black Friday event ends "
+        "Nov 8. Distinct from the set's other headsets — the "
+        "Pelta is the third ASUS headset in the set (after "
+        "Delta II and Delta, batches 23/25).",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:

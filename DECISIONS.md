@@ -2204,3 +2204,95 @@ written as "superseded by" with the original text kept.
   Delta II US UPC, Gladius IV Ace UPC, Azoth 96 HE UPC
   199291008571, Cetra Open Wireless UPC conflict 199291232747 vs
   199291232754, remaining ASUS candidates).
+
+## 047 (2026-11-06): Expansion batch 25 — 145 → 150 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 ASUS ROG models from the ASUS held list
+  (BUILD_LOG 059), no per-batch user approval needed (DECISIONS
+  027): ROG Swift OLED PG32UCWM, Black (90LM0DN0-B019B1, UPC
+  pending), ROG Swift OLED PG27AQDPR, Black (UPC pending), ROG
+  Delta USB-C Gaming Headset, Black (90YH01D1-B2UA00, UPC
+  pending), ROG Harpe Mini Core Gaming Mouse, Black
+  (90MP04D0-BMAA02, UPC pending), ROG Pelta Gaming Headset, Black
+  (90YH0410-BHAA00, UPC pending). One variant pinned per model
+  (DECISIONS 015); 0 of 5 identifiers verified, all 5 stay
+  pending on single-source, Amazon-only, or non-US-part codes.
+  Verified-identifier count stays 74. No model was split out of
+  this batch. No new category enters the set (monitors,
+  headphones, mice already exist); ASUS is already in the set
+  (batch 23: PG27UCWM, Delta II, Gladius IV Ace, Azoth 96 HE,
+  Cetra Open Wireless).
+- Why these 5: they are the best-evidenced ASUS held candidates
+  — the ASUS official US store sweep (BUILD_LOG 059) priced all
+  five and the US product pages confirm identity and US part
+  number for each (PG32UCWM 90LM0DN0-B019B1, Delta
+  90YH01D1-B2UA00, Harpe Mini Core 90MP04D0-BMAA02, Pelta
+  90YH0410-BHAA00): the 32-inch Tandem RGB OLED flagship
+  monitor, the 500Hz QD-OLED monitor, the original ESS Quad-DAC
+  USB-C headset, the 52 g value wired mouse, and the tri-mode
+  wireless headset. All five are listed by the ASUS US store on
+  2026-11-06; three are in stock at direct (PG32UCWM, Harpe Mini
+  Core, Pelta), two carry a stock caveat (PG27AQDPR temporarily
+  out of stock at ROG US, Best Buy has stock; Delta out of stock
+  at ASUS direct) and were added per the PS5 Pro precedent
+  (batch 3: price-verified, stock not confirmed).
+- What was corrected along the way: the PG27AQDPR sweep price
+  $899.00 "sale, save $170" misreads the ROG US category page —
+  $899.00 is the LIST and $729.00 is the sale (save $170.00);
+  the feed's $599.00 ROG row for the PG27AQDPR is a
+  category-page misassociation (that price belongs to another
+  monitor on the same page — the ROG US product page carries no
+  offer block on the fresh read) and was not used. The Harpe
+  Mini Core sweep price $69.99 is the list — the current ASUS
+  price is $44.99 sale (was $59.99). The Pelta sweep price "from
+  $84.99" is not corroborated — no $84.99 price appears on any
+  fresh read (ROG US $104.99 sale vs $129.99 list, eShop $104.99
+  both colorways); the $114.99 feed row for the Black part
+  BHAA00 is stale (fresh eShop read $104.99) and was not used.
+  The Pelta base tier is pinned Black (90YH0410-BHAA00, $104.99
+  sale vs $129.99 list); White (90YH0410-BHAA10, also $104.99)
+  is a different colorway, not a different model. ASUS
+  identifiers are regional by part suffix and were NOT carried
+  across regions: the Harpe Mini Core US part is 90MP04D0-BMAA02
+  while JP is 90MP04D0-BMUA00; the Pelta US parts are
+  90YH0410-BHAA00 (Black) / BHAA10 (White) while the non-US
+  parts are BHUA00 / BHUA10; the Delta US part is
+  90YH01D1-B2UA00 while UK is 90YH00Z1-B2UA00. The two
+  B&H-only UPCs were NOT recorded: PG32UCWM 199291571570 and
+  Harpe Mini Core 199291014046 (each stated by B&H Photo alone,
+  same as batch 23's PG27UCWM 199291335226); the Pelta UPC
+  199291069725 is stated on a single ASUS datasheet for the
+  non-US White part BHUA10 (EAN 4711636069724) and was not
+  carried to the US Black part.
+- What does NOT change: the existing 145 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–24 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 150 on
+  the next edit (parent owns the cron; not touched here). NOTE:
+  the working tree at batch start contained a modified
+  data/eval_snapshots_2026-11-06.json — the daily refresh cron's
+  own file, rewritten by its run; that file is the cron's work and
+  is NOT committed with this batch.
+- Revisit: re-check the five sale prices after the Early Black
+  Friday event ends Nov 8 (PG32UCWM $1,399.00, PG27AQDPR $729.00
+  sale vs $899.00 list, Delta $149.99, Harpe Mini Core $44.99
+  sale, Pelta $104.99 sale vs $129.99 list); re-check PG27AQDPR
+  and Delta stock next refresh; the five pending UPCs stay
+  pending until a second non-Amazon US source confirms each
+  (PG32UCWM 199291571570 — B&H-only; PG27AQDPR — no UPC
+  surfaced; Delta — no US UPC surfaced; Harpe Mini Core
+  199291014046 — B&H-only; Pelta — no US UPC surfaced, only
+  199291069725 for the non-US White part); the remaining ASUS
+  held candidates (PG32UCDM Gen3 $1,299, PG27UCDM $1,099,
+  XG32UQDS $749, PG34WCDN $1,299, PG32UCDMR $1,299 Out of Stock,
+  Pelta Core $119.99, Kithara $259.99 sale, Spatha X 65K $179.99,
+  Azoth 96 HE Lite $359.99, Strix Morph 96 $115.99 sale, Strix
+  Scope II 96 RX $132.99 sale, Falchion Ace 75 HE from $177.99)
+  stay list-only for later batches; the batch 23/24 revisits
+  carry over unchanged (PG27UCWM stock + UPC 199291335226,
+  Delta II US UPC, Gladius IV Ace UPC, Azoth 96 HE UPC
+  199291008571, Cetra Open Wireless UPC conflict 199291232747 vs
+  199291232754, S2725QS UPC 884116485117, AW3225DM EAN
+  5397184962725, AW920K UPC 884116448686, WB726 EAN
+  5397321028925, second Target U3225QE feed row $1,028.97).

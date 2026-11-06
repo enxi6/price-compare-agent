@@ -11,6 +11,33 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 25 (DECISIONS 047, continuous expansion per
+  DECISIONS 027): eval set 145 → 150 models, verified identifiers
+  stay 74 (0 of 5 new identifiers verified — all pending). New:
+  ASUS ROG Swift OLED PG32UCWM 32-inch 4K 240Hz Gaming Monitor,
+  Black (90LM0DN0-B019B1, UPC pending — code 199291571570 is
+  B&H-only; $1,399.00 at ASUS direct and B&H, $1,399.99 at
+  Newegg — ASUS's 32-inch Tandem RGB OLED flagship monitor, the
+  second ASUS monitor in the set), ASUS ROG Swift OLED PG27AQDPR
+  27-inch QHD 500Hz Gaming Monitor, Black (UPC pending — no code
+  surfaced; $729.00 sale vs $899.00 list at ASUS direct, $999.99
+  at Best Buy — ASUS's 500Hz QD-OLED monitor, the third ASUS
+  monitor in the set; temporarily out of stock at ASUS direct),
+  ASUS ROG Delta USB-C Gaming Headset, Black (90YH01D1-B2UA00,
+  UPC pending — no US code surfaced; $149.99 at ASUS direct,
+  $102.78 at Newegg — the original 2018 ESS Quad-DAC ROG
+  headset, the second ASUS headset in the set; out of stock at
+  ASUS direct), ASUS ROG Harpe Mini Core Gaming Mouse, Black
+  (90MP04D0-BMAA02, UPC pending — code 199291014046 is B&H-only;
+  $44.99 at ASUS direct, $29.99 at B&H, $32.00 at Newegg — the
+  52 g value wired mouse, the second ASUS mouse in the set),
+  ASUS ROG Pelta Gaming Headset, Black (90YH0410-BHAA00, UPC
+  pending — the only code found, 199291069725, is for the
+  non-US White part; $104.99 sale vs $129.99 list at ASUS direct
+  — the tri-mode wireless headset, the third ASUS headset in the
+  set). Not added: the remaining ASUS held candidates stay
+  list-only for later batches.
+
 - Expansion batch 24 (DECISIONS 046, continuous expansion per
   DECISIONS 027): eval set 140 → 145 models, verified identifiers
   73 → 74 (1 of 5 new identifiers verified). New: Dell 27 Plus 4K
