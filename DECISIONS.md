@@ -2404,3 +2404,105 @@ written as "superseded by" with the original text kept.
   conflict 199291232747 vs 199291232754, S2725QS UPC 884116485117,
   AW3225DM EAN 5397184962725, AW920K UPC 884116448686, WB726 EAN
   5397321028925, second Target U3225QE feed row $1,028.97).
+
+## 049 (2026-11-06): Expansion batch 27 — 155 → 160 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 Microsoft models from the Microsoft US store
+  sweep (BUILD_LOG 066), no per-batch user approval needed
+  (DECISIONS 027): Xbox Series X 1TB Disc Edition, Black
+  (RRT-00001, UPC 889842640724 — verified), Xbox Series S 512GB
+  All-Digital, Robot White (UPC pending — conflicting part
+  numbers), Xbox Wireless Headset, 2024 refresh, Black ($110.99,
+  identifiers pending — no MPN/UPC surfaced), Xbox Stereo
+  Headset, Black (8LI-00001, UPC 889842748031 — verified),
+  Surface Laptop, 13.8-inch (8th Edition), Snapdragon X2 Plus
+  10-core / 16GB / 512GB, Platinum (EP2-59028, identifiers
+  pending — MPN single AU source only). One variant pinned per
+  model (DECISIONS 015); 2 of 5 identifiers verified, 3 stay
+  pending. Verified-identifier count rises 74 → 76. No model
+  was split out of this batch. No new category enters the set
+  ("consoles" already exists — 9 PS5/Switch entries; "headphones"
+  and "laptops" already exist); the Xbox consoles are the first
+  Microsoft entries in "consoles", and the Surface Laptop is the
+  first Microsoft entry in "laptops" and the set's first Surface
+  device of any kind. Microsoft was already in the set (4 Xbox
+  controllers); this batch takes it to 9 entries.
+- Why these 5: the Microsoft US store pages all return JSON-LD
+  Product.offers on fresh reads 2026-11-06 ~21:13–21:14 UTC, and
+  the Meta Catalog feed agrees on the Wireless Headset price and
+  carries $499.99 Series S rows. The five are one per Microsoft
+  hardware family with a current fixed US configuration: the
+  flagship disc console, the entry all-digital console, the
+  wireless headset (2024 refresh), the wired headset, and the
+  current Surface Laptop base config. The Surface base config
+  pinned cleanly — the 13.8-inch 8th Edition's US entry config
+  is X2 Plus 10-core / 16GB / 512GB / Platinum (pcdepo confirms
+  the entry config; 512GB is the storage minimum), at $1,299.99
+  sale vs $1,599.99 list at Microsoft direct. All five are
+  listed new at Microsoft direct on 2026-11-06; stock is not
+  confirmed on any of the five Microsoft pages (see caveats).
+- What was corrected along the way: the Wireless Headset's
+  $99.99 feed row is the stale 2021-model price — the current
+  2024-refresh Microsoft direct price is $110.99 on two agreeing
+  fresh JSON-LD crawls, $1 above the $109.99 launch price
+  (Notebookcheck / Xbox Wire Oct 2024). The Stereo Headset's
+  $79.99/$74.99 feed rows are third-party inflated — Microsoft
+  direct and Verizon agree at $59.99, unchanged since the Sep
+  2021 launch. The Series X price is $799.99 list, not a sale:
+  Microsoft raised US Xbox prices Aug 1, 2026 (disc $649.99 to
+  $799.99, Digital $599.99 to $749.99; Xbox Wire Jun 25, 2026).
+  The Surface Laptop's $1,399.99 "starting at" in older crawls
+  is a $200-off sale that has deepened to $300 off — the pinned
+  config is $1,299.99 sale vs $1,599.99 list, and Best Buy's
+  $1,199.99 (reg $1,600, 9to5Toys Nov 2) is reported, not
+  page-verified. Three identifier traps were caught and
+  excluded, not priced: the Series S part numbers conflict
+  (Micro Center EP2-10050 / UPC 196388421343 vs eBay RRS-00001
+  / UPC 0889842651317 vs Amazon's unattributed 889842640731 vs
+  PBTech NZ EP2-10071 / UPC 196388421541) — nothing copied;
+  the 2021 Wireless Headset's TLL-00001 code was not copied to
+  the 2024 refresh; the Stereo Headset's second eBay UPC
+  499007320363 conflicts with the agreed 889842748031 and was
+  excluded.
+- Variant pinning, recorded explicitly: Series X pins the 1TB
+  Disc Edition in Black (RRT-00001) — the Digital Edition in
+  White ($749.99, no disc drive) is a different console, as are
+  the 2TB Galaxy Black Special Edition (sunset Aug 2026) and the
+  Series X25 Limited Edition ($899.99, launches Nov 13). Series
+  S pins the 512GB Robot White — the 1TB Robot White ($599.99)
+  and 1TB Carbon Black are different storage/color configs.
+  Wireless Headset pins the 2024 refresh in Black — the Starfield
+  Limited Edition ($250.79) and Forza Horizon 6 Limited Edition
+  ($134.99) are different headsets. Stereo Headset pins Black
+  (8LI-00001), the only colorway — the 20th Anniversary Special
+  Edition is a different headset. Surface Laptop pins the 8th
+  Edition 13.8-inch base, X2 Plus 10-core / 16GB / 512GB /
+  Platinum (EP2-59028) — the X2 Elite 12-core, 32GB/64GB and 1TB
+  configs, the 15-inch 8th Edition and the 7th Edition are
+  different configs/models, and the 256GB EP2-77788 is the
+  smaller 13-inch Surface Laptop, a different model.
+- What does NOT change: the existing 155 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–26 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron
+  still says "57 models" in its body and needs a count update to
+  160 on the next edit (parent owns the cron; not touched here).
+- Revisit: re-check Series X stock next refresh (Micro Center
+  and ShopCGX both OutOfStock for RRT-00001; Microsoft page
+  states no stock flag); re-check the Wireless Headset $110.99
+  price ($1 above the $109.99 launch); re-check the Surface
+  Laptop $1,299.99 sale price after Black Friday (Nov 27); the
+  three pending identifiers stay pending until two independent
+  US sources confirm each (Series S part-number conflict,
+  Wireless Headset 2024 refresh MPN/UPC, Surface Laptop
+  EP2-59028 US confirmation + UPC); the remaining Microsoft
+  candidates stay list-only for later batches (Surface Slim Pen
+  2 $129.99 — MPN 8WV-00001 vs 8WX-00001 conflict; Xbox
+  Rechargeable Battery + USB-C Cable SXW-00001 $24.99 — UPC
+  889842590364 single source; Surface Pro 11th Edition — base
+  config price not pinned cleanly; Xbox Series X25 Limited
+  Edition $899.99 — launches Nov 13); the batch 26 revisits
+  carry over unchanged (five Lenovo sale prices after Early
+  Black Friday ends Nov 8; Tab Plus Gen 2 $469.99; Idea Tab Pro
+  Gen 2 bundle contents; five pending Lenovo UPCs; remaining
+  Lenovo candidates list-only).

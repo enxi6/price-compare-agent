@@ -4673,3 +4673,129 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   lenovo-tab-plus-gen-2-celestial-white,
   lenovo-idea-tab-pro-gen-2-cloud-grey, lenovo-tab-one-luna-grey,
   lenovo-yoga-tab-plus-gen-2-cosmic-blue).
+
+## 066 — 2026-11-06: Expansion batch 27 — 155 → 160 models (DECISIONS 049)
+
+- Membership check (against the 155-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): Xbox Series X — NO MATCH (the
+  set has no Xbox console of any kind; the four Microsoft entries
+  are all controllers — Wireless 1914, Elite Series 2 FST-00001,
+  Elite Core 4IK-00001, Adaptive Controller; the consoles in the
+  set are PS5 and Switch lines); Xbox Series S — NO MATCH (no
+  Series S of any kind; the 1TB Robot White/Carbon Black are
+  different configs of the same console family and are not in
+  the set either); Xbox Wireless Headset (2024 refresh) — NO
+  MATCH (the set has no Xbox headset; the PULSE Elite/Explore
+  are Sony headsets); Xbox Stereo Headset — NO MATCH (no Xbox
+  wired headset; the 20th Anniversary Special Edition is a
+  different headset and is not in the set); Surface Laptop,
+  13.8-inch (8th Edition) — NO MATCH (the set has no Surface
+  device of any kind; the laptops in the set are MacBook lines
+  plus Lenovo/Dell/HP/ASUS entries). No candidate matches an
+  existing model on name, MPN or UPC. The five are the Microsoft
+  US store sweep candidates, one per hardware family; all five
+  Microsoft US store pages return JSON-LD Product.offers on
+  fresh reads 2026-11-06 ~21:13–21:14 UTC.
+- Xbox Series X 1TB Disc Edition, Black (RRT-00001) —
+  identifiers VERIFIED: UPC 889842640724 + MPN RRT-00001
+  (Micro Center US spec, SKU 191429, HDR Blu-ray drive, + marknet
+  auction listing agree on the exact pair; Amazon's RRT-00001
+  listing corroborates the code as GTIN 00889842640724).
+  Quotes (2): Microsoft $799.99 (US store page JSON-LD read
+  fresh 2026-11-06 21:13 UTC, $749.99 to $799.99 — $799.99 is
+  the Disc Black pinned here, $749.99 is the Digital White;
+  stock not stated in the page text); ShopCGX $799.99 (Model
+  RRT-00001, OutOfStock — agrees on price). Stock caveat: Micro
+  Center and ShopCGX both show RRT-00001 OutOfStock, and gamegpu
+  (Nov 1) reports US shortages after the Digital Edition was
+  discounted to $599.99 at Amazon/Target — re-check stock next
+  refresh. Not the 1TB Digital Edition in White ($749.99), the
+  2TB Galaxy Black Special Edition (sunset Aug 2026) or the Xbox
+  Series X25 Limited Edition ($899.99, launches Nov 13). The
+  $799.99 is the Aug 1, 2026 list price (was $649.99), not a
+  sale.
+- Xbox Series S 512GB All-Digital, Robot White — identifiers
+  PENDING: no code has two agreeing US sources — Micro Center
+  lists the current 512GB console as Mfr Part # EP2-10050, UPC
+  196388421343 (single source); eBay lists the original part
+  RRS-00001, UPC 0889842651317 (single source); Amazon's Series
+  X listing lumps 889842640731 among five unattributed UPCs;
+  PBTech NZ lists EP2-10071, UPC 196388421541 (regional).
+  Nothing was copied; re-check next refresh. Quotes (2):
+  Microsoft $499.99 (US store page JSON-LD read fresh
+  2026-11-06, $499.99 to $599.99 — $499.99 is the 512GB Robot
+  White pinned here; stock not stated); feed rows at $499.99 for
+  the 512GB Digital console agree (suspected; not
+  page-verified). The $499.99 is the Aug 1, 2026 list price (was
+  $399.99). Not the 1TB Robot White ($599.99) or the 1TB Carbon
+  Black.
+- Xbox Wireless Headset, 2024 refresh, Black — identifiers
+  PENDING: no MPN or UPC surfaced for the 2024 refresh in any
+  source read; the 2021 model's TLL-00001 code was not copied
+  across. Not copied: nothing — no candidate code surfaced.
+  Quotes (2): Microsoft $110.99 (US store page JSON-LD, two
+  fresh crawls agree 2026-11-06; stock not stated; feed
+  Microsoft row agrees at $110.99). Correction vs the stale
+  price: the feed's Microsoft $99.99 row is the 2021-model
+  price; the 2024 refresh launched at $109.99 (Xbox Wire Oct 22,
+  2024 — Dolby Atmos, Bluetooth 5.3, 20-hour battery, upgraded
+  mic, green accents removed) and now lists at $110.99, $1
+  above launch. Not the Starfield Limited Edition ($250.79 feed
+  row) or the Forza Horizon 6 Limited Edition ($134.99 feed
+  row).
+- Xbox Stereo Headset, Black (8LI-00001) — identifiers VERIFIED:
+  UPC 889842748031 + MPN 8LI-00001 (Ubuy listing, Model
+  8LI-00001, UPC 889842748031, + eBay US product identifiers,
+  MPN 8LI00001, UPC 0889842748031, agree; MPN corroborated by
+  Verizon + Best Buy US Model 8LI-00001 SKU 6474763 +
+  manuals.plus). A second eBay listing's 499007320363 conflicts
+  and was excluded. Quotes (2): Microsoft $59.99 (US store page
+  JSON-LD read fresh 2026-11-06; stock not stated); Verizon
+  $59.99 (Model 8LI-00001/Black) agrees. The feed's Microsoft
+  $79.99 and $74.99 rows are third-party inflated and were not
+  used. Launched Sep 2021 at $59.99 — price unchanged five years
+  on. Not the 20th Anniversary Special Edition (feed rows
+  $99.99–$119.99).
+- Surface Laptop, 13.8-inch (8th Edition), Platinum
+  (EP2-59028) — identifiers PENDING: MPN EP2-59028 is stated
+  only by TheGoodGuys AU for this exact config (single non-US
+  source) and no UPC surfaced, so identifiers stay empty per the
+  strict two-source rule; the MPN lives in the variant string
+  only, as in batches 23–26. Not copied: nothing — no candidate
+  code surfaced. Quotes (2): Microsoft $1,299.99 sale vs
+  $1,599.99 list (US store configure page, two fresh crawls
+  2026-11-06 agree — X2 Plus (10 Core) 'From $1,299.99' with
+  'Save $300.00' on the Platinum 16GB/512GB config; the
+  $1,599.99 list is the per-config price on the 5-day-old crawl
+  and pcdepo's 'starts at around $1,600'); Best Buy $1,199.99
+  sale (reg $1,600), reported by 9to5Toys Nov 2 (early Black
+  Friday) — reported, not page-verified. Base config pinned
+  cleanly: 8th Edition introduced Jun 16, 2026 (Snapdragon X2,
+  120 Hz HDR PixelSense Flow, haptic touchpad, up to 20-hour
+  battery); US base is X2 Plus 10-core / 16GB / 512GB / Platinum
+  (pcdepo confirms the entry config; 512GB is the storage
+  minimum). Not the X2 Elite 12-core, 32GB/64GB or 1TB configs,
+  the 15-inch 8th Edition, the 7th Edition (feed row $1,799.99)
+  or the 256GB EP2-77788 (smaller 13-inch Surface Laptop, a
+  different model). Re-check the $1,299.99 sale price after
+  Black Friday (Nov 27).
+- Skipped this batch, list-only: Surface Slim Pen 2 ($129.99 at
+  Microsoft direct; MPN 8WV-00001 vs 8WX-00001 conflict
+  unresolved — feed rows cite both codes); Xbox Rechargeable
+  Battery + USB-C Cable SXW-00001 ($24.99; UPC 889842590364
+  appears as a feed brand field, single source); Surface Pro
+  11th Edition (base config price not pinned cleanly — LCD
+  256GB vs 512GB rows conflict across feed and Microsoft
+  crawls); Xbox Series X 2TB Galaxy Black Special Edition
+  (sunset Aug 2026); Xbox Series X25 Limited Edition ($899.99,
+  launches Nov 13).
+- Eval on the new snapshot: 160 models, 76 verified identifiers,
+  5 with quotes, 10 total quotes, 0 identifier-matched, 10
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 155 → 160, verified 74 → 76, for the
+  continuous expansion; the pending set gains the 3 new pending
+  keys: xbox-series-s-512gb-robot-white,
+  xbox-wireless-headset-2024-black,
+  microsoft-surface-laptop-13-8-8th-edition-platinum).

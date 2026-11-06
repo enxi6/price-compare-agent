@@ -38,6 +38,35 @@ releases; breaking changes are called out in the release notes.
   previous round. Not added: the remaining Lenovo candidates
   (Legion Tab Gen 5, Yoga Tab Gen 2, Idea Tab, Idea Tab Plus,
   Tab P12) stay list-only for later batches.
+- Expansion batch 27 (DECISIONS 049, continuous expansion per
+  DECISIONS 027): eval set 155 → 160 models, verified identifiers
+  74 → 76 (2 of 5 new identifiers verified). New: Xbox Series X
+  1TB Disc Edition, Black (RRT-00001, UPC 889842640724 —
+  Micro Center + marknet agree; $799.99 at Microsoft direct,
+  the Aug 1, 2026 list price — the set's first Xbox console;
+  stock caveat: OutOfStock at Micro Center and ShopCGX),
+  Xbox Series S 512GB All-Digital, Robot White (UPC pending —
+  part numbers conflict: Micro Center EP2-10050 / UPC
+  196388421343 vs eBay RRS-00001 / UPC 0889842651317; $499.99
+  at Microsoft direct), Xbox Wireless Headset, 2024 refresh,
+  Black (identifiers pending — no MPN/UPC surfaced; $110.99 at
+  Microsoft direct, $1 above the $109.99 launch — the stale
+  $99.99 feed row is the 2021-model price), Xbox Stereo
+  Headset, Black (8LI-00001, UPC 889842748031 — Ubuy + eBay
+  agree; $59.99 at Microsoft direct and Verizon, unchanged
+  since the Sep 2021 launch), Surface Laptop, 13.8-inch
+  (8th Edition), Snapdragon X2 Plus 10-core / 16GB / 512GB,
+  Platinum (EP2-59028, identifiers pending — MPN single AU
+  source only; $1,299.99 sale vs $1,599.99 list at Microsoft
+  direct, Best Buy $1,199.99 reported — the set's first Surface
+  device and first Microsoft laptop). Microsoft grows from 4 to
+  9 entries. Not added: Surface Slim Pen 2 (MPN 8WV-00001 vs
+  8WX-00001 conflict), Xbox Rechargeable Battery + USB-C Cable
+  SXW-00001 (UPC single source), Surface Pro 11th Edition (base
+  config price not pinned cleanly), Xbox Series X 2TB Galaxy
+  Black (sunset Aug 2026) and Xbox Series X25 Limited Edition
+  ($899.99, launches Nov 13) — all stay list-only for later
+  batches.
 - Expansion batch 25 (DECISIONS 047, continuous expansion per
   DECISIONS 027): eval set 145 → 150 models, verified identifiers
   stay 74 (0 of 5 new identifiers verified — all pending). New:
