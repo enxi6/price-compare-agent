@@ -11,6 +11,31 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 18 (DECISIONS 040, continuous expansion per
+  DECISIONS 027): eval set 110 → 115 models, verified identifiers
+  stay 69 (all 5 new Razer identifiers stay pending on
+  single-source-only or no-source codes). New: Razer Viper V4 Pro,
+  Black (RZ01-05630100-R3U1, UPC pending — no US UPC surfaced;
+  the EU EAN 8887910085134 belongs to the R3G1 variant and was not
+  copied; $159.99 at Razer direct and Best Buy, $156.99 at NFM —
+  Razer's current flagship symmetrical esports mouse, the first
+  Razer entry in the set), Razer BlackWidow V4 Pro, Green switches,
+  Black (RZ03-04680200-R3U1, UPC pending — 840272903315 on the B&H
+  page only; $229.99 at Razer direct, $199.99 at B&H, $267.93 at
+  Staples — Razer's flagship full-size keyboard), Razer BlackShark
+  V3 Pro, PC version, Black (RZ04-05400100-R3U1, UPC pending —
+  840272919484 on Amazon listings only; $249.99 at Razer direct,
+  Best Buy and Electronic Express — Razer's flagship esports
+  headset), Razer Wolverine V3 Pro, Black (RZ06-05200100-R3U1, UPC
+  pending — no UPC surfaced anywhere; $199.99 at Razer direct,
+  $169.99 at Best Buy, $166.99 at NFM — Razer's flagship Xbox/PC
+  controller), Razer Kraken V4 Pro, Black (RZ04-05160100-R3U1, UPC
+  pending — PBTech's 840272909980 is listed against the R3M1
+  variant; $399.99 at Razer direct, $299.99 at Best Buy and Beach
+  Camera — Razer's flagship haptic lifestyle headset). Not added:
+  DeathAdder V4 Pro and Basilisk V4 Pro (both $169.99, list-only
+  for later batches); Blade laptops (configurable — no single
+  retailer-pinned base config, DECISIONS 015).
 - Expansion batch 17 (DECISIONS 039, continuous expansion per
   DECISIONS 027): eval set 105 → 110 models, verified identifiers
   68 → 69 (the Flip 7 Black is verified; the other 4 new

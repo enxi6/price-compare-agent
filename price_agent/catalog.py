@@ -2573,6 +2573,185 @@ EVAL_SET: list[EvalProduct] = [
         "in the set. Black and White colorways sold; only Black is "
         "pinned.",
     ),
+    EvalProduct(
+        key="razer-viper-v4-pro-black",
+        brand="Razer",
+        model="Viper V4 Pro",
+        variant="Black (RZ01-05630100-R3U1)",
+        category="mice",
+        notes="Razer direct $159.99 (March 24, 2026 launch release: "
+        "US$159.99 MSRP, available now at Razer.com; Windows Central: "
+        "'retails for $159.99 and is available now, both directly "
+        "from Razer's website as well as through digital retailers "
+        "like Amazon and Best Buy'; the US product URL resolves to "
+        "the Viper V4 Pro page — price-only, stock not confirmed in "
+        "the page text, which returns only the 'more gear' "
+        "carousel); Best Buy $159.99 (Model RZ01-05630100-R3U1, SKU "
+        "6669259, sold by Best Buy, JSON-LD InStock, page-verified "
+        "2026-11-06); NFM $156.99 (feed row — suspected). "
+        "Identifiers PENDING: MPN RZ01-05630100-R3U1 confirmed "
+        "(Best Buy US Model + Canada Computers MPN + ShopAbunda + "
+        "Big Apple Buddy sourced from Best Buy agree), but no US "
+        "UPC surfaced anywhere — the only barcode found is the EU "
+        "EAN 8887910085134 for the R3G1 variant (Scan UK, Singular "
+        "CY, startech24 datasheet), which was NOT copied across "
+        "regions per the MDR-MV1 EAN precedent; re-check next "
+        "refresh. Not copied: the White MPN RZ01-05630200-R3U1 "
+        "(different colorway, 50 g vs 49 g). Excluded: the Ayoub "
+        "$191 R3G1 row (non-US variant); the Lethal Aero Base Mod "
+        "$14.99 (an accessory, not the mouse); DeathAdder V4 Pro "
+        "and Basilisk V4 Pro rows (different models — the "
+        "DeathAdder V4 Pro Black RZ01-05330100-R3U1 at $169.99 and "
+        "the Basilisk V4 Pro Black RZ01-05670100-R3U1 at $169.99 "
+        "stay list-only for later batches). Distinct from the set's "
+        "Logitech G Pro X Superlight 2 / Superlight 2 DEX and the "
+        "G502 X PLUS — the Viper V4 Pro (March 2026, 49 g, Focus "
+        "Pro 50K Optical Sensor Gen-3, true 8,000 Hz wireless "
+        "polling, HyperSpeed Wireless Gen-2, Gen-4 optical "
+        "switches, up to 180 hours at 1,000 Hz) is Razer's current "
+        "flagship symmetrical esports mouse and the first Razer "
+        "entry in the set. Black and White colorways sold; only "
+        "Black is pinned.",
+    ),
+    EvalProduct(
+        key="razer-blackwidow-v4-pro-green-black",
+        brand="Razer",
+        model="BlackWidow V4 Pro",
+        variant="Green switches, Black (RZ03-04680200-R3U1)",
+        category="keyboards",
+        notes="Razer direct $229.99 (Meta feed brand_direct row, URL "
+        "carries RZ03-04680200-R3U1; $229.99 is the February 2023 "
+        "launch MSRP); B&H $199.99 (Holiday Savings $50 off "
+        "$249.99, In Stock, JSON-LD InStock, page-verified "
+        "2026-11-06; the page states UPC 840272903315); Staples "
+        "$267.93 (feed row for the exact MPN — suspected; above the "
+        "$229.99 list, an outlier). Identifiers PENDING: MPN "
+        "RZ03-04680200-R3U1 confirmed (B&H + Newegg + NeweggBusiness "
+        "agree), but UPC 840272903315 is stated on the B&H page "
+        "only — no second non-Amazon US source states it, so "
+        "identifiers stay empty per the Adaptive Controller / "
+        "DualSense precedent; re-check next refresh. Not copied: "
+        "the Yellow-switch UPC 840272903339 (Amazon listing for "
+        "RZ03-04681900-R3U1 — a different switch variant, and "
+        "Amazon is not used for corroboration); the Orange-switch "
+        "MPN RZ03-04683500-R3M1 (a non-US code on the Razer feed "
+        "row); the EU Yellow code RZ03-04682200-R3F1. Excluded: "
+        "the Best Buy White $199.99 sale row (different colorway, "
+        "RZ03-04683600-R3U1); the gadgetlb $279 row (non-US); the "
+        "BlackWidow V4 Pro 75% $299.99 (different model, "
+        "RZ03-05130200-R3U1, list-only). Distinct from the set's "
+        "Logitech MX / G915 X / PRO X TKL and Keychron boards — "
+        "the BlackWidow V4 Pro (full-size wired, Green clicky "
+        "switches, 8,000 Hz polling, Command Dial, 8 dedicated "
+        "macro keys, doubleshot ABS keycaps, Chroma RGB, magnetic "
+        "plush wrist rest) is Razer's flagship full-size keyboard "
+        "and the first Razer keyboard in the set. Green, Yellow "
+        "and Orange switches sold; only Green is pinned.",
+    ),
+    EvalProduct(
+        key="razer-blackshark-v3-pro-black",
+        brand="Razer",
+        model="BlackShark V3 Pro",
+        variant="Black, PC version (RZ04-05400100-R3U1)",
+        category="headphones",
+        notes="Razer direct $249.99 (Meta feed brand_direct row, URL "
+        "carries RZ04-05400100-R3U1; Razer's US store price read "
+        "2026-10-15 at $249.99 with Add to cart; the White, Xbox "
+        "and PlayStation versions are the same price); Best Buy "
+        "$249.99 (Model RZ04-05400100-R3U1, SKU 6632881, sold by "
+        "Best Buy, search-index page read 2026-11-06); Electronic "
+        "Express $249.99 (feed row — suspected). Identifiers "
+        "PENDING: MPN RZ04-05400100-R3U1 confirmed (Best Buy US "
+        "Model + manuals.plus + Amazon product info agree), but "
+        "UPC 840272919484 is stated on Amazon listings only — "
+        "Amazon is not used for identifier corroboration, so "
+        "identifiers stay empty per the Adaptive Controller / "
+        "DualSense precedent; re-check next refresh. Not copied: "
+        "the White UPC (different colorway, RZ04-05400200-R3U1); "
+        "the PlayStation Black code RZ04-05400500-R3G1 and the "
+        "Xbox Black code RZ04-05400300-R3U1 (different platform "
+        "variants at the same $249.99); the CS2 Edition code "
+        "RZ04-05400800-R3M1 (GTIN 8887910061657, a different "
+        "edition). Excluded: the Abt Xbox-variant row (different "
+        "platform variant); the Sentinels team-store row (not a "
+        "general retailer); the Esports Green / NiKo / CS2 edition "
+        "rows (different editions). Distinct from the set's Sony "
+        "WH-1000XM5/XM6, Bose QC Ultra 2 and JBL Tour One M3 — the "
+        "BlackShark V3 Pro (July 2025, hybrid ANC, 50 mm TriForce "
+        "Bio-Cellulose Gen-2 drivers, detachable HyperClear 12 mm "
+        "full-band mic, HyperSpeed Wireless Gen-2, up to 70 hours, "
+        "THX Spatial Audio, 367 g) is Razer's flagship esports "
+        "headset and the first Razer headset in the set. The PC "
+        "version in Black is pinned; the platform variants are "
+        "different products.",
+    ),
+    EvalProduct(
+        key="razer-wolverine-v3-pro-black",
+        brand="Razer",
+        model="Wolverine V3 Pro",
+        variant="Black (RZ06-05200100-R3U1)",
+        category="controllers",
+        notes="Razer direct $199.99 (Meta feed brand_direct row, URL "
+        "carries RZ06-05200100-R3U1; $199.99 is the August 2024 "
+        "launch MSRP); Best Buy $169.99 (Model RZ06-05200100-R3U1, "
+        "SKU 6594728, save $30 off comp. value $199.99, "
+        "page-verified 2026-11-06); NFM $166.99 sale vs $199.99 "
+        "list (feed row — suspected). Identifiers PENDING: MPN "
+        "RZ06-05200100-R3U1 confirmed (Best Buy US Model + "
+        "ShopAbunda + Eneba spec table agree), but no UPC surfaced "
+        "on any US manufacturer or retailer spec page, so "
+        "identifiers stay empty per the Adaptive Controller / "
+        "DualSense precedent; re-check next refresh. Not copied: "
+        "the White MPN RZ06-05200200-R3U1 (different colorway, "
+        "Best Buy $191.99); the EU code RZ06-05200100-R3M1 "
+        "(Overclockers UK — a different regional variant). "
+        "Excluded: the FlexShopper $247.99 / $10 row (lease-to-own, "
+        "not a straight price); the Staples White $213.60 row "
+        "(different colorway); the Macy's Wolverine V3 Pro 8K PC "
+        "row (a different, PC-only model, RZ06-05540100-R3U1, "
+        "list-only); the Woot $109.99 White row (different "
+        "colorway); the sigmatiendas $279.42 row (non-US). "
+        "Distinct from the set's Xbox Elite Series 2 / Elite Core, "
+        "Xbox Wireless Controller, DualSense / DualSense Edge and "
+        "Switch Pro controllers — the Wolverine V3 Pro (August "
+        "2024, Razer's first wireless Xbox controller, Hall Effect "
+        "thumbsticks, 6 remappable buttons, Pro HyperTriggers, "
+        "1,000 Hz PC Tournament Mode, ~20 hours) is Razer's "
+        "flagship Xbox/PC controller and the first Razer controller "
+        "in the set. Black and White colorways sold; only Black is "
+        "pinned.",
+    ),
+    EvalProduct(
+        key="razer-kraken-v4-pro-black",
+        brand="Razer",
+        model="Kraken V4 Pro",
+        variant="Black (RZ04-05160100-R3U1)",
+        category="headphones",
+        notes="Razer direct $399.99 (Meta feed brand_direct row, URL "
+        "carries RZ04-05160100-R3U1; $399.99 is the September 2024 "
+        "launch MSRP); Best Buy $299.99 (Model RZ04-05160100-R3U1, "
+        "SKU 6589878, comp. value $399.99, search-index page read "
+        "2026-11-06); Beach Camera $299.00 (feed row — suspected; "
+        "the same $299.00 row appears twice in the feed). "
+        "Identifiers PENDING: MPN RZ04-05160100-R3U1 confirmed "
+        "(Best Buy US Model + manuals.plus agree), but no US UPC "
+        "surfaced — PBTech lists UPC 840272909980 against the "
+        "R3M1 variant and the EU EAN is 8887910060094 (itworkup, "
+        "trippodo), so neither code was carried across regions per "
+        "the MDR-MV1 EAN precedent; re-check next refresh. Not "
+        "copied: the Kraken V4 (non-Pro) UPC 840272910054 (a "
+        "different model, RZ04-05170100-R3U1). Excluded: the "
+        "Kraken V4 Pro + Base Station V2 Chroma bundle $469.98 "
+        "(bundle); the Kraken V4 $179.99 and CDW Kraken V4 $205.99 "
+        "rows (the non-Pro model); the Newegg Evangelion combo "
+        "$1,149.99 (bundle). Distinct from the set's BlackShark V3 "
+        "Pro (added in this same batch) — the Kraken V4 Pro "
+        "(September 2024, Sensa HD Haptics, OLED Control Hub, 40 "
+        "mm TriForce Bio-Cellulose drivers, 4 connectivity modes, "
+        "9-zone Chroma RGB, retractable mic, up to 50 hours) is "
+        "Razer's flagship lifestyle/haptic headset; the BlackShark "
+        "is the esports line. Black is the only colorway sold.",
+    ),
 ]
 
 

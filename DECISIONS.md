@@ -1598,3 +1598,78 @@ written as "superseded by" with the original text kept.
   should be re-checked after Nov 8 (batch 9 revisit, still open);
   the Sony direct CH720N $89.99 is a sale price and should be
   re-checked after the sale ends.
+
+## 040 (2026-11-06): Expansion batch 18 — 110 → 115 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 Razer models from the razer.com US store sweep
+  (BUILD_LOG 056), no per-batch user approval needed (DECISIONS
+  027): Razer Viper V4 Pro, Black (RZ01-05630100-R3U1, UPC
+  pending), Razer BlackWidow V4 Pro, Green switches, Black
+  (RZ03-04680200-R3U1, UPC pending), Razer BlackShark V3 Pro, PC
+  version, Black (RZ04-05400100-R3U1, UPC pending), Razer
+  Wolverine V3 Pro, Black (RZ06-05200100-R3U1, UPC pending),
+  Razer Kraken V4 Pro, Black (RZ04-05160100-R3U1, UPC pending).
+  One variant pinned per model (DECISIONS 015); 0 of 5 identifiers
+  verified — all 5 stay pending on single-source-only or no-source
+  codes (Anker batch 16 precedent: 0 of 5 verified is not a reason
+  to hold the batch). Verified-identifier count stays 69. No model
+  was split out of this batch.
+- Why these 5: they are the first Razer-brand sweep (the set had no
+  Razer entry at all), one per product family where the official US
+  catalog has a current model — flagship symmetrical esports mouse,
+  flagship full-size keyboard, flagship esports headset, flagship
+  Xbox/PC controller, flagship haptic lifestyle headset. The two
+  headsets are different lines (BlackShark = esports, Kraken =
+  lifestyle/haptic), not a duplicate family. All five are in stock
+  new in the US on 2026-11-06 (Razer direct listings + Best Buy
+  InStock JSON-LD / Add to cart, page-verified).
+- What was corrected along the way: Razer's US models all carry
+  the R3U1 suffix — the R3G1 (EU) and R3M1 (global) codes are
+  different regional variants and were not used as US identifiers
+  (Viper V4 Pro EU EAN 8887910085134, Kraken V4 Pro EU EAN
+  8887910060094, PBTech's Kraken UPC 840272909980 listed against
+  the R3M1); the BlackShark V3 Pro UPC 840272919484 appears on
+  Amazon listings only and was not recorded; the BlackWidow V4 Pro
+  Green UPC 840272903315 is stated on the B&H page only and stays
+  pending for lack of a second source; the Yellow-switch UPC
+  840272903339 is a different switch variant and was not copied;
+  the BlackShark platform variants (PlayStation RZ04-05400500-R3G1,
+  Xbox RZ04-05400300-R3U1) are different products at the same
+  $249.99 and were not pinned; the Wolverine V3 Pro 8K PC
+  (RZ06-05540100-R3U1, PC-only) is a different model from the
+  Xbox/PC Wolverine V3 Pro and was not pinned; the Razer direct
+  Viper V4 Pro price is $159.99 (the March 24, 2026 launch release
+  and Windows Central agree) — there is no Razer direct row for it
+  in the Meta feed, so the quote rests on the release + the
+  resolving US product URL, marked price-only.
+- Variant pinning, recorded explicitly: Viper V4 Pro pins Black
+  (RZ01-05630100-R3U1) — White (RZ01-05630200-R3U1) is a different
+  SKU, 50 g vs 49 g; BlackWidow V4 Pro pins Green switches, Black
+  (RZ03-04680200-R3U1) — Yellow (RZ03-04681900-R3U1) and Orange
+  (RZ03-04683500-R3M1) are different switch variants, White
+  (RZ03-04683600-R3U1) a different colorway; BlackShark V3 Pro
+  pins the PC version, Black (RZ04-05400100-R3U1) — the platform
+  variants above are different products; Wolverine V3 Pro pins
+  Black (RZ06-05200100-R3U1) — White (RZ06-05200200-R3U1) is a
+  different SKU; Kraken V4 Pro pins Black (RZ04-05160100-R3U1),
+  the only colorway sold.
+- What does NOT change: the existing 110 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–17 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 115 on
+  the next edit (parent owns the cron; not touched here).
+- Revisit: all five identifier sets stay pending until a second
+  non-Amazon US source confirms each (Viper V4 Pro: no US UPC
+  anywhere; BlackWidow Green: UPC 840272903315 on B&H only;
+  BlackShark V3 Pro: UPC 840272919484 on Amazon only; Wolverine
+  V3 Pro: no UPC anywhere; Kraken V4 Pro: UPC 840272909980 listed
+  against the R3M1 only); the DeathAdder V4 Pro Black
+  (RZ01-05330100-R3U1, $169.99) and Basilisk V4 Pro Black
+  (RZ01-05670100-R3U1, $169.99) stay list-only for later batches;
+  Blade laptops stay out — Razer rotates configurations and no
+  single retailer-pinned base config was found (DECISIONS 015);
+  the ULT WEAR $148.00 Black Friday street price should be
+  re-checked after Nov 8 (batch 9 revisit, still open); the Sony
+  direct CH720N $89.99 is a sale price and should be re-checked
+  after the sale ends.

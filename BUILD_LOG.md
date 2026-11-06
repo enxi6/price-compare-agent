@@ -3012,3 +3012,150 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   counts updated 105 → 110 / verified 68 → 69 for the
   continuous expansion; the pending set gains the 4 new pending
   keys — the Flip 7 is verified).
+
+## 056 — 2026-11-06: Expansion batch 18 — 110 → 115 models (DECISIONS 040)
+
+- Razer US store sweep (razer.com, read-only, 2026-11-06
+  ~19:10–19:30 UTC / 11:10–11:30 PT): the US product pages resolve
+  for every pick (page titles confirm the right products), but the
+  text fetch returns only the "MORE GAMER GEAR YOU'LL DIG"
+  carousel, not the product's own price or stock — so direct prices
+  are taken from the Meta feed brand_direct rows carrying the exact
+  US MPN in the URL, corroborated by Razer's own launch releases
+  and retailer pages (the JBL batch 17 precedent). Feed shelf
+  observed across the 5 runs (100 rows): Viper V4 Pro $159.99;
+  DeathAdder V4 Pro Black $169.99 / White $169.99 / Esports Green
+  $152.99 sale / NiKo $189.99; Basilisk V4 Pro Black/White
+  $169.99; Naga V3 Pro $179.99; BlackWidow V4 Pro Green/Yellow
+  $229.99 (Orange row is the R3M1 code); BlackWidow V4 Pro 75%
+  $299.99; BlackWidow V4 Low-Profile HyperSpeed $199.99;
+  BlackShark V3 Pro $249.99 (PC/Xbox/PlayStation, Black/White);
+  BlackShark V3 $149.99; BlackShark V3 X HyperSpeed $99.99;
+  Wolverine V3 Pro Black/White $199.99; Wolverine V3 Pro 8K PC
+  $199.99; Wolverine V3 Tournament Edition $99.99; Wolverine V4
+  Tournament Edition $99.99; Raiju V3 Pro $219.99; Kraken V4 Pro
+  $399.99; Kraken V4 $179.99; Kraken V4 X $79.99; Seiren V3 Pro
+  $249.99; Huntsman V3 Pro Mini 8KHz $179.99; Hammerhead V3
+  HyperSpeed $129.99; Gigantus V2 Pro mats $49.99. Full candidate
+  list (list-only): DeathAdder V4 Pro Black $169.99; DeathAdder V4
+  Pro White $169.99; Basilisk V4 Pro Black $169.99; Basilisk V4
+  Pro White $169.99; Naga V3 Pro $179.99; Viper V3 Pro SE $99.99;
+  Cobra HyperSpeed $99.99; Orochi V2 $39.99; BlackWidow V4 Pro
+  75% $299.99; BlackWidow V4 Low-Profile HyperSpeed $199.99;
+  BlackWidow V4 $169.99; BlackWidow V4 75% $189.99; Huntsman V3
+  Pro Mini 8KHz $179.99; Huntsman V3 HE Magnetic TKL 8KHz
+  $139.99; BlackShark V3 $149.99; BlackShark V3 X HyperSpeed
+  $99.99; Kraken V4 $179.99; Kraken V4 X $79.99; Barracuda X
+  Chroma $129.99; Wolverine V3 Pro 8K PC $199.99; Wolverine V3
+  Tournament Edition $99.99; Wolverine V4 Tournament Edition
+  $99.99; Raiju V3 Pro $219.99; Seiren V3 Pro $249.99; Hammerhead
+  V3 HyperSpeed $129.99; Blade 14 from $2,299 / Blade 16 from
+  $2,399 / Blade 18 from $3,499 (configurable — no single
+  retailer-pinned base config found, DECISIONS 015, not added).
+- Membership check (against the 110-model set, by name, MPN and
+  UPC): the set had no Razer entry at all — no name, MPN or UPC
+  overlap for any of the 5 picked models. Viper V4 Pro
+  (RZ01-05630100-R3U1): no match — the set's only flagship mice
+  are Logitech (Superlight 2 / DEX / G502 X PLUS), a different
+  brand and model. BlackWidow V4 Pro Green (RZ03-04680200-R3U1):
+  no match — distinct from the set's Logitech and Keychron boards.
+  BlackShark V3 Pro (RZ04-05400100-R3U1): no match — distinct
+  from the set's Sony, Bose and JBL headphones. Wolverine V3 Pro
+  (RZ06-05200100-R3U1): no match — distinct from the set's Xbox,
+  DualSense and Switch controllers. Kraken V4 Pro
+  (RZ04-05160100-R3U1): no match — distinct from the BlackShark
+  V3 Pro added in this same batch (different line, different MPN).
+- Per-model record (all 5 added; identifiers, quotes, pending):
+- Razer Viper V4 Pro, Black (RZ01-05630100-R3U1) — identifiers
+  PENDING: MPN confirmed (Best Buy US Model + Canada Computers
+  MPN + ShopAbunda + Big Apple Buddy sourced from Best Buy
+  agree), but no US UPC surfaced anywhere. Not copied: EU EAN
+  8887910085134 (Scan UK + Singular CY + startech24 datasheet —
+  the R3G1 variant); White MPN RZ01-05630200-R3U1 (different
+  colorway). Quotes (3): Razer direct $159.99 (March 24, 2026
+  launch release US$159.99 MSRP + Windows Central 'directly from
+  Razer's website'; US product URL resolves — price-only, stock
+  not confirmed in the page text); Best Buy Black $159.99 (Model
+  RZ01-05630100-R3U1, SKU 6669259, sold by Best Buy, Add to cart,
+  JSON-LD InStock, page-verified); NFM Black $156.99 (feed row —
+  suspected). Excluded: Ayoub $191 R3G1 (non-US variant); Lethal
+  Aero Base Mod $14.99 (accessory); DeathAdder/Basilisk rows
+  (different models).
+- Razer BlackWidow V4 Pro, Green switches, Black
+  (RZ03-04680200-R3U1) — identifiers PENDING: MPN confirmed
+  (B&H + Newegg + NeweggBusiness agree), but UPC 840272903315 is
+  stated on the B&H page only — no second non-Amazon US source.
+  Not copied: Yellow-switch UPC 840272903339 (Amazon listing for
+  RZ03-04681900-R3U1 — different switch variant); Orange MPN
+  RZ03-04683500-R3M1 (non-US code); EU Yellow code
+  RZ03-04682200-R3F1. Quotes (3): Razer direct $229.99 (feed
+  brand_direct row, URL carries the MPN; February 2023 launch
+  MSRP); B&H $199.99 (Holiday Savings $50 off $249.99, In Stock,
+  JSON-LD InStock, page-verified; UPC on the page); Staples
+  $267.93 (feed row for the exact MPN — suspected; above list).
+  Excluded: Best Buy White $199.99 (different colorway);
+  gadgetlb $279 (non-US); BlackWidow V4 Pro 75% $299.99
+  (different model).
+- Razer BlackShark V3 Pro, PC version, Black
+  (RZ04-05400100-R3U1) — identifiers PENDING: MPN confirmed
+  (Best Buy US Model + manuals.plus agree), but UPC 840272919484
+  is stated on Amazon listings only. Not copied: White
+  RZ04-05400200-R3U1; PlayStation Black RZ04-05400500-R3G1;
+  Xbox Black RZ04-05400300-R3U1; CS2 Edition RZ04-05400800-R3M1
+  (GTIN 8887910061657). Quotes (3): Razer direct $249.99 (feed
+  brand_direct row; US store price read 2026-10-15 at $249.99
+  with Add to cart); Best Buy Black $249.99 (Model
+  RZ04-05400100-R3U1, SKU 6632881, sold by Best Buy, search-index
+  page read); Electronic Express Black $249.99 (feed row —
+  suspected). Excluded: Abt Xbox-variant row (different platform
+  variant); Sentinels team-store row (not a general retailer);
+  Esports Green / NiKo / CS2 edition rows.
+- Razer Wolverine V3 Pro, Black (RZ06-05200100-R3U1) —
+  identifiers PENDING: MPN confirmed (Best Buy US Model +
+  ShopAbunda + Eneba spec table agree), but no UPC surfaced on
+  any US manufacturer or retailer spec page. Not copied: White
+  MPN RZ06-05200200-R3U1 (Best Buy $191.99); EU code
+  RZ06-05200100-R3M1 (Overclockers UK). Quotes (3): Razer direct
+  $199.99 (feed brand_direct row; August 2024 launch MSRP); Best
+  Buy Black $169.99 (Model RZ06-05200100-R3U1, SKU 6594728, save
+  $30 off comp. value $199.99, page-verified); NFM Black $166.99
+  sale vs $199.99 list (feed row — suspected). Excluded:
+  FlexShopper $247.99 / $10 (lease-to-own); Staples White $213.60
+  (different colorway); Macy's Wolverine V3 Pro 8K PC row
+  (different, PC-only model); Woot $109.99 White (different
+  colorway); sigmatiendas $279.42 (non-US).
+- Razer Kraken V4 Pro, Black (RZ04-05160100-R3U1) — identifiers
+  PENDING: MPN confirmed (Best Buy US Model + manuals.plus
+  agree), but no US UPC surfaced — PBTech lists UPC 840272909980
+  against the R3M1 variant and the EU EAN is 8887910060094, so
+  neither was carried across regions. Not copied: Kraken V4
+  (non-Pro) UPC 840272910054 (different model, RZ04-05170100-
+  R3U1). Quotes (3): Razer direct $399.99 (feed brand_direct row;
+  September 2024 launch MSRP); Best Buy Black $299.99 (Model
+  RZ04-05160100-R3U1, SKU 6589878, comp. value $399.99,
+  search-index page read); Beach Camera $299.00 (feed row —
+  suspected; the same row appears twice in the feed). Excluded:
+  Kraken V4 Pro + Base Station V2 Chroma bundle $469.98; Kraken
+  V4 $179.99 / CDW $205.99 (non-Pro model); Newegg Evangelion
+  combo $1,149.99 (bundle).
+- Not added from the sweep (held for later batches, all current
+  US models, no defect): DeathAdder V4 Pro Black $169.99 / White
+  $169.99; Basilisk V4 Pro Black $169.99 / White $169.99; Naga V3
+  Pro $179.99; Viper V3 Pro SE $99.99; Cobra HyperSpeed $99.99;
+  Orochi V2 $39.99; BlackWidow V4 Pro 75% $299.99; BlackWidow V4
+  Low-Profile HyperSpeed $199.99; BlackWidow V4 $169.99;
+  BlackWidow V4 75% $189.99; Huntsman V3 Pro Mini 8KHz $179.99;
+  Huntsman V3 HE Magnetic TKL 8KHz $139.99; BlackShark V3
+  $149.99; BlackShark V3 X HyperSpeed $99.99; Kraken V4 $179.99;
+  Kraken V4 X $79.99; Barracuda X Chroma $129.99; Wolverine V3
+  Pro 8K PC $199.99; Wolverine V3 Tournament Edition $99.99;
+  Wolverine V4 Tournament Edition $99.99; Raiju V3 Pro $219.99;
+  Seiren V3 Pro $249.99; Hammerhead V3 HyperSpeed $129.99.
+  Not added (no clean pin): Blade 14/16/18 (configurable laptops
+  — no single retailer-pinned base config, DECISIONS 015).
+- Eval on the new snapshot: 115 models, 69 verified identifiers,
+  5 with quotes, 15 total quotes, 0 identifier-matched, 15
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 110 → 115 for the continuous expansion;
+  verified stays 69; the pending set gains the 5 new Razer keys).
