@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "collected_at": "2026-11-06T18:51:17Z",
+    "source": "Meta Catalog (2026-11-06) + brand-direct / retailer pages (page text / search-index reads, read-only)",
+    "sources_note": "Expansion batch 13 (DECISIONS 035, continuous expansion per DECISIONS 027, no per-batch approval): 5 new models, 17 quotes. Meta Catalog CLI run 2026-11-06 (20 rows per model; raw files data/meta_catalog_raw_{apple-macbook-pro-14-proled-xdr,sony-wf-c510,sony-inzone-h5,logitech-g-superstrike,keychron-b40}_2026-11-06.json, gitignored). Brand-direct / retailer prices verified read-only 2026-11-06 ~18:48-19:00 UTC (10:48-11:00 PT): no sign-in, no cart, no purchase. CORRECTIONS vs the 2026-10-31 candidate notes: (1) The PROLED XDR candidate 'from $2,899' is confirmed current — the pinned base 14-inch M5 Pro 15-core/16-core, 24GB/1TB, Space Black, Standard display (MJ2K4LL/A) is $2,899 at Apple direct and Best Buy; it is a distinct touchscreen tandem-OLED line, not the M6 (the set's apple-macbook-pro-14-m6 is the separate entry-level M6 line) and not the Liquid Retina M5 Pro (MGDR4LL/A, $2,499). (2) The WF-C510 candidate price $69.99 is the list price — the current street price is $58 at B&H, Abt and Electronic Express/Focus Camera, $59.99 at Best Buy, while Fred Meyer still lists $69.99. (3) The INZONE H5 candidate price ~$249.99 does not match any current US price — the current US street price is $128 at Focus Camera, Datavision and Abt (comp. value $178); Sony direct lists the White at $159.99 sale / $179.99 original (stale category crawl; the Black direct price was not confirmed). (4) 'Logitech G Superstrike' is a MOUSE, not a keyboard — the Logitech PRO X2 SUPERSTRIKE LIGHTSPEED wireless gaming mouse (910-007700, Lunar Eclipse), $179.99; the $199.99 Best Buy row is the newer PRO X3 SUPERSTRIKE (910-007876), a different model. (5) The Keychron B40 candidate price $49.99 is confirmed current at Keychron direct (Deep Black, the only variant, SKU B40-K9, Available). All five identifier sets stay pending (single-source UPC/EAN only — see catalog notes): PROLED UPC 195951196749 (Adorama spec table only), WF-C510 UPC 027242930339 (B&H spec page only), INZONE H5 UPC 027242927919 (Sony spec sheet via manuals.plus only), Superstrike UPC 097855211309 (B&H spec page only), B40 no UPC/EAN found anywhere (Keychron SKU B40-K9 only) — all recorded in the catalog notes, identifiers left empty per the Adaptive Controller / DualSense / PULSE Elite precedent. No Amazon touch: no Amazon quotes, no Amazon-sourced identifiers."
+  },
+  "models": {
+    "apple-macbook-pro-14-proled-xdr": {
+      "offers": [
+        {
+          "merchant": "Apple",
+          "title": "MacBook Pro with PROLED XDR Display, 14-inch, M5 Pro Chip, 15-core CPU, 16-core GPU, Space Black, Standard display, 24GB memory, 1TB storage ($2,899, Apple US store buy page, 'Available starting 11.6' — price per Apple announcement and Best Buy, not shown in the page text)",
+          "price": 2899.0,
+          "url": "https://www.apple.com/shop/buy-mac/macbook-pro-proled-xdr/14-inch-space-black-standard-display-apple-m5-pro-chip-15-core-cpu-16-core-gpu-24gb-memory-1tb-storage"
+        },
+        {
+          "merchant": "Best Buy",
+          "title": "Apple MacBook Pro 14-inch Laptop with PROLED XDR Touch Display - M5 Pro chip with 15-core CPU - 24GB Memory - 1TB SSD - Space Black (Model MJ2K4LL/A, SKU 6565892, Sold by Best Buy, JSON-LD InStock, page-verified; free $100 e-gift card promo with purchase)",
+          "price": 2899.0,
+          "url": "https://www.bestbuy.com/product/6565892/6565892"
+        }
+      ]
+    },
+    "sony-wf-c510-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "title": "Sony WFC510 Truly Wireless Earbuds - Black (Model WFC510/B, SKU 6594425, JSON-LD InStock, page-verified)",
+          "price": 59.99,
+          "url": "https://www.bestbuy.com/product/sony-wfc510-truly-wireless-earbuds-black/J7XSRH566R/sku/6594425"
+        },
+        {
+          "merchant": "B&H Photo",
+          "title": "Sony WF-C510 True Wireless Earbuds (Black) (In Stock, was $68.00, page-verified)",
+          "price": 58.0,
+          "url": "https://www.bhphotovideo.com/c/product/1850117-REG/sony_wfc510_b_wf_c510_true_wireless_earbuds.html/overview"
+        },
+        {
+          "merchant": "Abt",
+          "title": "Sony WF-C510 Truly Wireless Earbuds in Black ($58.00, Meta Catalog feed row — suspected, no identifier in the feed row; search-index read agrees: $58, manufacturer rebate ends 11/08/2026, comp. value $68)",
+          "price": 58.0,
+          "url": "https://www.abt.com/Sony-WF-C510-Earbuds-Truly-Wireless-in-Black-WFC510B/p/212831.html"
+        },
+        {
+          "merchant": "Electronic Express",
+          "title": "Sony WFC510B WF-C510 Truly Wireless Earbuds - Black ($58.00, Meta Catalog feed row — suspected, no identifier in the feed row)",
+          "price": 58.0,
+          "url": "https://www.electronicexpress.com/catalog/413373/sony-wfc510bwf-c510trulywirelessearbuds-black"
+        },
+        {
+          "merchant": "Focus Camera",
+          "title": "Sony WF-C510 Truly Wireless Earbuds - Black ($58.00, Meta Catalog feed row — suspected, no identifier in the feed row)",
+          "price": 58.0,
+          "url": "https://focuscamera.com/products/sony-wfc510b-audio-electronics-headphones-earbuds?variant=42152080638000"
+        },
+        {
+          "merchant": "Fred Meyer",
+          "title": "Sony WFC510B WF-C510 Truly Wireless Earbuds - Black (JSON-LD InStock, page-verified; list price)",
+          "price": 69.99,
+          "url": "https://www.fredmeyer.com/p/sony-wfc510b-wf-c510-truly-wireless-earbuds-black/0002724293033?fulfillment=SHIP"
+        }
+      ]
+    },
+    "sony-inzone-h5-black": {
+      "offers": [
+        {
+          "merchant": "Focus Camera",
+          "title": "Sony INZONE H5 Wireless Gaming Headset (Black) ($128.00 vs $178.00, page-verified; the Meta Catalog feed row for the same URL was $178, so the price has dropped since the feed was cut)",
+          "price": 128.0,
+          "url": "https://focuscamera.com/products/sony-whg500b-gaming-gaming-accessories"
+        },
+        {
+          "merchant": "Datavision",
+          "title": "Sony INZONE H5 Wireless Gaming Headset 360 Spatial Sound WH-G500 Black ($128.00, Meta Catalog feed row — suspected, no identifier in the feed row)",
+          "price": 128.0,
+          "url": "https://datavision.com/products/sony-inzone-h5-wireless-gaming-headset-360-spatial-sound-wh-g500-black?variant=41018901233751"
+        },
+        {
+          "merchant": "Abt",
+          "title": "Sony INZONE H5 Wired and Wireless Gaming Headset in Black ($128.00, page-verified — price-only: 'Notify me when this item is available', PreOrder; manufacturer rebate ends 11/22/2026, comp. value $178)",
+          "price": 128.0,
+          "url": "https://www.abt.com/Sony-Video-Gaming-Headset-INZONE-H5-Wired-and-Wireless-in-Black-WHG500B/p/201892.html"
+        }
+      ]
+    },
+    "logitech-pro-x2-superstrike-lunar-eclipse": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "title": "Logitech G PRO X2 SUPERSTRIKE LIGHTSPEED Wireless Gaming Mouse (In Stock, page-verified)",
+          "price": 179.99,
+          "url": "https://www.bhphotovideo.com/c/product/1949585-REG/logitech_910_007700_pro_x2_superstrike_lightspeed.html"
+        },
+        {
+          "merchant": "Abt",
+          "title": "Logitech 910-007700 PRO X2 SUPERSTRIKE LIGHTSPEED Wireless Gaming Mouse in Lunar Eclipse ($179.99, search-index read — suspected, page not opened)",
+          "price": 179.99,
+          "url": "https://www.abt.com/Logitech-PRO-X2-SUPERSTRIKE-LIGHTSPEED-Wireless-Gaming-Mouse-in-Lunar-Eclipse-910007700/p/240393.html"
+        },
+        {
+          "merchant": "Target",
+          "title": "Logitech PRO X2 Superstrike Lightspeed Wireless Gaming Mouse ($179.99, Meta Catalog feed row — suspected, no identifier in the feed row)",
+          "price": 179.99,
+          "url": "https://www.target.com/p/logitech-pro-x2-superstrike-lightspeed-wireless-gaming-mouse-ultra-fast-performance-customizable-click-haptics-usb-c-charging-hero-2-wireless/-/A-1012204463"
+        },
+        {
+          "merchant": "Lenovo",
+          "title": "Logitech PRO X2 Superstrike Lightspeed Wireless Gaming Mouse ($179.99, Meta Catalog feed row — suspected, no identifier in the feed row)",
+          "price": 179.99,
+          "url": "https://www.lenovo.com/us/en/p/accessories-and-software/keyboards-and-mice/mice/78820007"
+        },
+        {
+          "merchant": "Electronic Express",
+          "title": "Logitech 910-007700 PRO X2 Superstrike Lightspeed Wireless Gaming Mouse - Lunar Eclipse ($179.99, Meta Catalog feed row — suspected, no identifier in the feed row)",
+          "price": 179.99,
+          "url": "https://www.electronicexpress.com/catalog/574767/logitech-910007700-pro-x2-superstrike-lightspeed-wireless-gaming-mouse-lunar-eclipse"
+        }
+      ]
+    },
+    "keychron-b40-deep-black": {
+      "offers": [
+        {
+          "merchant": "Keychron",
+          "title": "Keychron B40 Wireless Keyboard, Deep Black (SKU B40-K9, $49.99, variant Available, page-verified)",
+          "price": 49.99,
+          "url": "https://www.keychron.com/products/keychron-b40-wireless-keyboard?variant=44554000957529"
+        }
+      ]
+    }
+  }
+}

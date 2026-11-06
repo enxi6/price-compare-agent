@@ -2116,6 +2116,143 @@ EVAL_SET: list[EvalProduct] = [
         "the K8, the base Q1 is sold through Keychron's own store only, "
         "so it holds a single quote.",
     ),
+    EvalProduct(
+        key="apple-macbook-pro-14-proled-xdr",
+        brand="Apple",
+        model="MacBook Pro 14-inch with PROLED XDR Display",
+        variant="M5 Pro 15-core CPU/16-core GPU, 24GB/1TB, Space Black, Standard display (MJ2K4LL/A)",
+        category="laptops",
+        notes="Apple direct $2,899 (US store buy page, 'Available starting "
+        "11.6', page-verified 2026-11-06 — the page text lists the "
+        "configuration but not the price; $2,899 per the Apple "
+        "announcement and Best Buy); Best Buy $2,899 (Model MJ2K4LL/A, "
+        "SKU 6565892, Sold by Best Buy, JSON-LD InStock, page-verified; "
+        "free $100 e-gift card promo with purchase). MPN MJ2K4LL/A "
+        "confirmed by Best Buy US only (the AU/NZ MJ2K4X/A is the same "
+        "configuration in a different region suffix, not a US "
+        "confirmation), and UPC 195951196749 is stated in the Adorama "
+        "spec table only — no second source surfaced for either, so "
+        "identifiers stay empty per the Adaptive Controller / DualSense "
+        "precedent; re-check next refresh. Correction vs the 2026-10-31 "
+        "candidate note 'from $2,899 (pre-order 11.6)': confirmed "
+        "current, and the base 14-inch is M5 Pro 15-core/16-core with "
+        "24GB/1TB — not M6. The 16-inch (from $3,399), M5 Max "
+        "configurations (from $4,499), the 48GB/1TB Space Black "
+        "MMF64LL/A ($3,699 at Adorama) and the Nano-texture display "
+        "are different configurations. Distinct from the set's "
+        "apple-macbook-pro-14-m6 (the separate entry-level M6 line, "
+        "MHWT4LL/A, $1,999, UPC pending) and from the Liquid Retina "
+        "XDR M5 Pro 24GB/1TB (MGDR4LL/A, $2,499) — the PROLED XDR is "
+        "the distinct touchscreen tandem-OLED line announced 2026-10-28, "
+        "on sale from 2026-11-06.",
+    ),
+    EvalProduct(
+        key="sony-wf-c510-black",
+        brand="Sony",
+        model="WF-C510",
+        variant="Black (WFC510/B)",
+        category="earbuds",
+        notes="Best Buy $59.99 (Model WFC510/B, SKU 6594425, JSON-LD "
+        "InStock, page-verified 2026-11-06); B&H Photo $58.00 (In "
+        "Stock, was $68.00, page-verified); Abt $58.00 (feed row; "
+        "manufacturer rebate ends 11/08/2026, comp. value $68); "
+        "Electronic Express $58.00 and Focus Camera $58.00 (feed rows, "
+        "Black); Fred Meyer $69.99 (JSON-LD InStock, page-verified — "
+        "the list price). MPN WFC510/B confirmed (Best Buy US Model + "
+        "B&H + Sony AU Model WFC510B agree), but UPC 027242930339 is "
+        "stated on the B&H spec page only — no second non-Amazon US "
+        "source surfaced, so identifiers stay empty per the Adaptive "
+        "Controller / DualSense / PULSE Elite precedent; re-check next "
+        "refresh. Correction vs the 2026-10-31 candidate price $69.99: "
+        "that is the list price — the current street price is $58 at "
+        "B&H, Abt, Electronic Express and Focus Camera and $59.99 at "
+        "Best Buy. White (UPC 027242930346), Blue and Yellow are "
+        "different colorways. Distinct from the set's WF-C710N Black "
+        "(WFC710N/B) and WF-1000XM5/XM6 Black — the C510 (2024) is "
+        "Sony's compact everyday budget line, no noise cancelling.",
+    ),
+    EvalProduct(
+        key="sony-inzone-h5-black",
+        brand="Sony",
+        model="INZONE H5",
+        variant="Black (WHG500/B)",
+        category="headphones",
+        notes="Focus Camera $128.00 (Black, $128 vs $178, page-verified "
+        "2026-11-06 — the Meta Catalog feed row for the same URL was "
+        "$178, so the price has dropped since the feed was cut); "
+        "Datavision $128.00 (feed row, Black); Abt $128.00 "
+        "(page-verified — price-only: 'Notify me when this item is "
+        "available', PreOrder; manufacturer rebate ends 11/22/2026, "
+        "comp. value $178). MPN WHG500/B confirmed (Best Buy US Model "
+        "WHG500/B, SKU 6562125 + Crutchfield MFR # WHG500/B + Abt "
+        "agree), but UPC 027242927919 appears in the Sony spec sheet "
+        "via manuals.plus only — no second non-Amazon US source "
+        "surfaced, so identifiers stay empty per the Adaptive "
+        "Controller / DualSense / PULSE Elite precedent; re-check next "
+        "refresh. Correction vs the 2026-10-31 candidate price "
+        "~$249.99: that matches no current US price — the current US "
+        "street price is $128 at Focus Camera, Datavision and Abt "
+        "(comp. value $178); Sony direct lists the White at $159.99 "
+        "sale / $179.99 original (stale category crawl; the Black "
+        "direct price was not confirmed) and is not quoted. White "
+        "(UPC 027242927896) is a different colorway. Distinct from "
+        "the set's PULSE Elite / PULSE Explore headsets and from the "
+        "INZONE Buds (WF-G700N) and INZONE H9 — the H5 (WH-G500, "
+        "2023) is the first INZONE headset in the set, Sony's "
+        "mid-range wireless gaming headset (360 Spatial Sound, 28-hour "
+        "battery, no active noise cancelling).",
+    ),
+    EvalProduct(
+        key="logitech-pro-x2-superstrike-lunar-eclipse",
+        brand="Logitech",
+        model="PRO X2 SUPERSTRIKE LIGHTSPEED",
+        variant="Lunar Eclipse (910-007700)",
+        category="mice",
+        notes="B&H Photo $179.99 (In Stock, page-verified 2026-11-06); "
+        "Abt $179.99 (Lunar Eclipse, search-index read); Target "
+        "$179.99, Lenovo $179.99 and Electronic Express $179.99 "
+        "(feed rows, 910-007700 / Lunar Eclipse). The candidate called "
+        "this a gaming keyboard — it is a MOUSE: the PRO X2 "
+        "SUPERSTRIKE LIGHTSPEED wireless gaming mouse with the Haptic "
+        "Inductive Trigger System (HITS), HERO 2 sensor, 8 kHz "
+        "polling, 61 g, white casing with black buttons (the only US "
+        "colorway, Lunar Eclipse). MPN 910-007700 confirmed (B&H + "
+        "Abt + Electronic Express agree), but UPC 097855211309 is "
+        "stated on the B&H spec page only — no second non-Amazon US "
+        "source surfaced, so identifiers stay empty per the Adaptive "
+        "Controller / DualSense / PULSE Elite precedent; re-check next "
+        "refresh. The Logitech G direct US price was not confirmed in "
+        "page text (Notebookcheck reports $179.99 at the Logitech "
+        "online store). The PRO X3 SUPERSTRIKE (910-007876, $199.99 "
+        "at Best Buy, Midnight Black) is the newer successor, a "
+        "different model — not added. The EU/Asia 910-007777 / "
+        "910-007778 part numbers are different regional variants. "
+        "Distinct from the set's PRO X Superlight 2 Black "
+        "(910-006628) and Superlight 2 DEX — the Superstrike is "
+        "Logitech G's haptic-trigger PRO mouse line, not a Superlight.",
+    ),
+    EvalProduct(
+        key="keychron-b40-deep-black",
+        brand="Keychron",
+        model="B40",
+        variant="75% Alice, Deep Black (B40-K9)",
+        category="keyboards",
+        notes="Keychron direct $49.99 (official store, Deep Black variant "
+        "Available, page-verified 2026-11-06). SKU B40-K9 comes from "
+        "the Keychron official store page only and no UPC/EAN for the "
+        "B40 surfaced anywhere, so identifiers stay empty per the "
+        "Adaptive Controller / DualSense precedent; re-check next "
+        "refresh. Correction vs the 2026-10-31 candidate price: $49.99 "
+        "is confirmed current at Keychron direct. Variant pinning: "
+        "Deep Black is the only colorway sold (75% Alice layout, "
+        "scissor-key, tri-mode 2.4 GHz / Bluetooth 5.2 / USB-C, "
+        "800 mAh, up to 330 hours in 2.4 GHz mode). The B39 (96% "
+        "Alice, $54.99, B39-K9) is the larger sibling, a different "
+        "model — not added. Distinct from the set's K8 lines (K8-G1, "
+        "K8 HE, K8 Ultra 8K) and Q1 — the B40 is Keychron's budget "
+        "Alice-layout scissor-switch line, sold through Keychron's own "
+        "store only, so it holds a single quote.",
+    ),
 ]
 
 

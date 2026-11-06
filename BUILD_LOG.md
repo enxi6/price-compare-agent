@@ -2269,3 +2269,150 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (snapshot offers carry no identifier — the rule working, not a
   bug). Tests: 19 passed (test_snapshot_eval counts updated 82 →
   87 / 66 → 68 for the continuous expansion).
+
+## 051 — 2026-11-06: Expansion batch 13 — 87 → 92 models (DECISIONS 035)
+
+- Membership check (against the 87-model set, by name, MPN and UPC —
+  run programmatically against price_agent/catalog.py, no matches,
+  all 5 are new lines):
+  - MacBook Pro 14 PROLED XDR (MJ2K4LL/A, UPC 195951196749) vs
+    apple-macbook-pro-14-m6 (MHWT4LL/A, UPC pending): the set's M6
+    is the separate entry-level M6 line ($1,999, 16GB/1TB); the
+    PROLED XDR is the distinct touchscreen tandem-OLED line with
+    M5 Pro silicon, different MPN — not a duplicate. The Liquid
+    Retina XDR M5 Pro 24GB/1TB (MGDR4LL/A, $2,499) is a different
+    display line and was not added; the 16-inch, M5 Max, 48GB/1TB
+    MMF64LL/A and Nano-texture configurations are different
+    configurations and were not added.
+  - WF-C510 Black (WFC510/B, UPC 027242930339) vs
+    sony-wf-c710n-black (WFC710N/B, UPC 027242931770) and
+    sony-wf1000xm5-black / sony-wf1000xm6-black: the C510 is Sony's
+    compact everyday budget earbud line (2024, no noise
+    cancelling), different MPN and UPC — not a duplicate. White
+    (UPC 027242930346), Blue and Yellow are different colorways
+    and were not added.
+  - INZONE H5 Black (WHG500/B, UPC 027242927919) vs
+    sony-pulse-elite-midnight-black and sony-pulse-explore-midnight-
+    black: the set has no INZONE model at all; the H5 (WH-G500,
+    2023) is Sony's mid-range wireless gaming headset, different
+    MPN and UPC from the PULSE headsets — not a duplicate. White
+    (UPC 027242927896) is a different colorway and was not added;
+    the INZONE Buds (WF-G700N) and INZONE H9 are different models
+    and were not added.
+  - PRO X2 SUPERSTRIKE Lunar Eclipse (910-007700, UPC
+    097855211309) vs logitech-g-pro-x-superlight-2-black
+    (910-006628, UPC 097855177797), logitech-g-pro-x-superlight-2-
+    dex-black and logitech-g915-x-lightspeed-tactile-black
+    (920-012670): the Superstrike is Logitech G's haptic-trigger
+    (HITS) PRO mouse line, different MPN and UPC from the
+    Superlight mice and the G915 X keyboard — not a duplicate. The
+    newer PRO X3 SUPERSTRIKE (910-007876, $199.99) is a different
+    model and was not added; the EU/Asia 910-007777 / 910-007778
+    are different regional part numbers and were not added.
+  - Keychron B40 Deep Black (B40-K9, no UPC/EAN) vs
+    keychron-k8-hot-swappable-red (K8-G1, UPC 617748997921),
+    keychron-k8-he-special-black (K8H-F1), keychron-k8-ultra-8k
+    (K8U-J1) and keychron-q1-knob-navy-blue-red (Q1-O1Z): the B40
+    is Keychron's budget 75% Alice scissor-switch line, different
+    SKU from every K8/Q1 line — not a duplicate. The B39 (96%
+    Alice, $54.99, B39-K9) is the larger sibling, a different
+    model, and was not added.
+- Apple MacBook Pro 14-inch with PROLED XDR Display, M5 Pro
+  15-core/16-core, 24GB/1TB, Space Black, Standard display
+  (MJ2K4LL/A) — identifiers PENDING: MPN MJ2K4LL/A confirmed by
+  Best Buy US only (Model MJ2K4LL/A, SKU 6565892; the AU/NZ
+  MJ2K4X/A is the same configuration in a different region suffix),
+  and UPC 195951196749 is stated in the Adorama spec table only —
+  no second source surfaced for either, so identifiers stay empty
+  per the Adaptive Controller / DualSense precedent. Quotes (2):
+  Apple direct $2,899.00 (US store buy page, "Available starting
+  11.6", page-verified — price per the Apple announcement and Best
+  Buy, not shown in the page text), Best Buy $2,899.00 (Model
+  MJ2K4LL/A, SKU 6565892, Sold by Best Buy, JSON-LD InStock,
+  page-verified; free $100 e-gift card promo). Correction vs the
+  2026-10-31 candidate note "from $2,899 (pre-order 11.6)":
+  confirmed current, on sale from 2026-11-06, and the base 14-inch
+  runs M5 Pro — not M6. Excluded: NFM $3,699 48GB/1TB and $3,294
+  Silver 2TB (different configurations), all Meta Catalog rows for
+  other PROLED configs (16-inch, M5 Max, Nano-texture), the
+  Liquid Retina M5 Pro rows (MDE34LL/A / MGDR4LL/A, $2,199-$2,499
+  — a different display line), dbrand skins (accessories).
+- Sony WF-C510, Black (WFC510/B) — identifiers PENDING: MPN
+  WFC510/B confirmed (Best Buy US Model WFC510/B, SKU 6594425 +
+  B&H + Sony AU Model WFC510B agree), but UPC 027242930339 is
+  stated on the B&H spec page only — no second non-Amazon US
+  source surfaced, so identifiers stay empty per the Adaptive
+  Controller / DualSense / PULSE Elite precedent. Quotes (6):
+  Best Buy $59.99 (Model WFC510/B, SKU 6594425, JSON-LD InStock,
+  page-verified), B&H Photo $58.00 (In Stock, was $68.00,
+  page-verified), Abt $58.00 (feed row; manufacturer rebate ends
+  11/08/2026, comp. value $68), Electronic Express $58.00 and
+  Focus Camera $58.00 (feed rows, Black), Fred Meyer $69.99
+  (JSON-LD InStock, page-verified — the list price). Correction vs
+  the 2026-10-31 candidate price $69.99: that is the list price —
+  the current street price is $58. Sony direct Black price was not
+  freshly confirmed (no current US Sony store page surfaced) and is
+  not quoted. Excluded: ShopMyExchange $49.99 (military exchange,
+  restricted eligibility), Newegg $58 rows (seller unclear —
+  marketplace risk), Sweetwater $48.00 (backordered + $20-off
+  promo), Macy's $68 Yellow and shop.simon $58 Yellow (different
+  colorway + marketplace), Ayoub $52 / iCuracao $69.99 (non-US),
+  White/Blue/Yellow rows (different colorways).
+- Sony INZONE H5, Black (WHG500/B) — identifiers PENDING: MPN
+  WHG500/B confirmed (Best Buy US Model WHG500/B, SKU 6562125 +
+  Crutchfield MFR # WHG500/B + Abt agree), but UPC 027242927919
+  appears in the Sony spec sheet via manuals.plus only — no second
+  non-Amazon US source surfaced, so identifiers stay empty per the
+  Adaptive Controller / DualSense / PULSE Elite precedent. Quotes
+  (3): Focus Camera $128.00 (Black, $128 vs $178, page-verified —
+  the feed row for the same URL was $178, so the price has dropped
+  since the feed was cut), Datavision $128.00 (feed row, Black),
+  Abt $128.00 (page-verified — price-only: "Notify me when this
+  item is available", PreOrder; rebate ends 11/22/2026, comp.
+  value $178). Correction vs the 2026-10-31 candidate price
+  ~$249.99: that matches no current US price — the current street
+  price is $128 (comp. value $178); Sony direct lists the White at
+  $159.99 sale / $179.99 original (stale category crawl; the Black
+  direct price was not confirmed) and is not quoted. Excluded:
+  Focus Camera White $128 and Sweetwater White $178 (different
+  colorway), INZONE Buds rows ($159.99-$239.99, WF-G700N) and
+  INZONE H9 rows (different models), Crutchfield (no price in the
+  76-day-old crawl), Best Buy (price not confirmed in page text).
+- Logitech PRO X2 SUPERSTRIKE LIGHTSPEED, Lunar Eclipse
+  (910-007700) — identifiers PENDING: MPN 910-007700 confirmed
+  (B&H + Abt + Electronic Express agree), but UPC 097855211309 is
+  stated on the B&H spec page only — no second non-Amazon US
+  source surfaced, so identifiers stay empty per the Adaptive
+  Controller / DualSense / PULSE Elite precedent. Quotes (5):
+  B&H Photo $179.99 (In Stock, page-verified), Abt $179.99
+  (Lunar Eclipse, search-index read), Target $179.99, Lenovo
+  $179.99 and Electronic Express $179.99 (feed rows, Lunar
+  Eclipse). Correction vs the 2026-10-31 candidate note: the
+  candidate called this a gaming keyboard — it is a MOUSE (HITS
+  haptic triggers, HERO 2, 8 kHz, 61 g, white casing / black
+  buttons, the only US colorway). The Logitech G direct US price
+  was not confirmed in page text (Notebookcheck reports $179.99
+  at the Logitech online store). Excluded: Best Buy $199.99 PRO
+  X3 SUPERSTRIKE (910-007876, newer successor, different model),
+  Etsy $15 (marketplace), Lethal.gg mouse skates/grips
+  (accessories for the Superlight, not the mouse), Newegg $179.99
+  (seller unclear — marketplace risk).
+- Keychron B40, 75% Alice, Deep Black (B40-K9) — identifiers
+  PENDING: SKU B40-K9 comes from the Keychron official store page
+  only and no UPC/EAN for the B40 surfaced anywhere, so
+  identifiers stay empty per the Adaptive Controller / DualSense
+  precedent. Quotes (1): Keychron direct $49.99 (Deep Black
+  variant Available, page-verified 2026-11-06). Variant pinning:
+  Deep Black is the only colorway sold. Correction vs the
+  2026-10-31 candidate price: $49.99 is confirmed current at
+  Keychron direct. Excluded: B39 $54.99 (larger 96% sibling,
+  different model), B1/B2/B3/B4 Pro rows (different lines), Q/V/K
+  rows in the same feed (different models). Like the K8 and Q1,
+  the B40 is sold through Keychron's own store only, so it holds a
+  single quote.
+- Eval on the new snapshot: 92 models, 68 verified identifiers, 5
+  with quotes, 17 total quotes, 0 identifier-matched, 17 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 87 →
+  92 / verified stays 68 for the continuous expansion; the pending
+  set gains the 5 new keys).

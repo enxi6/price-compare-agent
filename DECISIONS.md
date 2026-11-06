@@ -1132,6 +1132,83 @@ written as "superseded by" with the original text kept.
   $89.99 is a sale price and should be re-checked after the sale
   ends.
 
+## 035 (2026-11-06): Expansion batch 13 — 87 → 92 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models from the remaining brand-sweep candidates
+  (BUILD_LOG 020/022/024/025), no per-batch user approval needed
+  (DECISIONS 027): Apple MacBook Pro 14-inch with PROLED XDR
+  Display, M5 Pro 15-core/16-core, 24GB/1TB, Space Black, Standard
+  display (MJ2K4LL/A, UPC pending), Sony WF-C510 Black (WFC510/B,
+  UPC pending), Sony INZONE H5 Black (WHG500/B, UPC pending),
+  Logitech PRO X2 SUPERSTRIKE LIGHTSPEED, Lunar Eclipse (910-007700,
+  UPC pending), Keychron B40 75% Alice, Deep Black (B40-K9, no
+  UPC/EAN found). One variant pinned per model (DECISIONS 015); 0 of
+  5 identifiers verified — all 5 stay pending on single-source-only
+  UPC/EAN codes (Adorama spec table only, B&H spec page only, Sony
+  spec sheet via manuals.plus only, Keychron store page only —
+  Adaptive Controller / DualSense / PULSE Elite precedent, not a
+  reason to hold the batch). Verified-identifier count stays 68.
+- Why these 5: they are the next un-added mainstream lines from the
+  five brand sweeps, each distinct from the set (PROLED XDR is the
+  first touchscreen tandem-OLED MacBook Pro, a distinct display line
+  vs the M6 and the Liquid Retina M5 Pro; C510 is Sony's compact
+  everyday budget earbud line, not a 1000X flagship or the C710N;
+  INZONE H5 is the first INZONE headset in the set, Sony's mid-range
+  wireless gaming headset vs the PULSE headsets; Superstrike is
+  Logitech G's haptic-trigger PRO mouse line, not a Superlight and
+  not a keyboard — the candidate note mislabelled it; B40 is
+  Keychron's budget Alice-layout scissor-switch line, not a K8 or
+  Q-series board). All five are in stock new in the US on 2026-11-06
+  (brand-direct pages or InStock JSON-LD), except the two price-only
+  direct rows and the Abt INZONE PreOrder row noted below.
+- What was corrected along the way: the PROLED XDR candidate note
+  "from $2,899 (pre-order 11.6)" is confirmed current — the base
+  14-inch is $2,899 at Apple direct and Best Buy, on sale from
+  2026-11-06, and it runs M5 Pro (not M6); the WF-C510 candidate
+  price $69.99 is the list price while the current street price is
+  $58 at B&H, Abt, Electronic Express and Focus Camera ($59.99 at
+  Best Buy); the INZONE H5 candidate price ~$249.99 matches no
+  current US price — the current street price is $128 at Focus
+  Camera, Datavision and Abt (comp. value $178), with Sony direct
+  listing the White at $159.99 sale / $179.99 original; the
+  "Superstrike" candidate was a gaming keyboard in the notes but is
+  in fact a wireless gaming mouse ($179.99), and the $199.99 Best
+  Buy row is the newer PRO X3 SUPERSTRIKE, a different model; the
+  B40 candidate price $49.99 is confirmed current at Keychron
+  direct (Deep Black, the only variant).
+- Variant pinning, recorded explicitly: PROLED XDR pins the base
+  14-inch M5 Pro 15-core CPU / 16-core GPU, 24GB, 1TB, Space Black,
+  Standard display (MJ2K4LL/A) — the 16-inch, M5 Max, 48GB and
+  Nano-texture configurations are different configurations; WF-C510
+  pins Black (WFC510/B) — White, Blue and Yellow are different
+  colorways; INZONE H5 pins Black (WHG500/B) — White is a different
+  colorway; Superstrike pins Lunar Eclipse (910-007700), the only US
+  colorway (white casing, black buttons) — the EU/Asia 910-007777 /
+  910-007778 are different regional part numbers; B40 pins Deep
+  Black (B40-K9), the only colorway sold — the B39 (96% Alice,
+  $54.99) is the larger sibling, a different model.
+- What does NOT change: the existing 87 catalog entries are untouched
+  (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro untouched,
+  batches 1–12 entries untouched). No other snapshot file is rewritten.
+  No Amazon touch. The daily refresh cron still says "57 models" in
+  its body and needs a count update to 92 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: all five UPC/EAN codes stay pending until a second
+  non-Amazon US source confirms each (PROLED 195951196749, WF-C510
+  027242930339, INZONE H5 027242927919, Superstrike 097855211309,
+  B40 none found); the Apple direct PROLED price was not shown in
+  the buy-page text ($2,899 per the Apple announcement and Best
+  Buy) — re-check next refresh; the Abt INZONE H5 $128 is price-only
+  (PreOrder, "Notify me when this item is available") — re-check
+  stock next refresh; the Sony direct INZONE H5 Black price was not
+  confirmed (only the White, $159.99 sale / $179.99 original, on a
+  stale category crawl) — re-check next refresh; the Logitech G
+  direct Superstrike US price was not confirmed in page text —
+  re-check; the ULT WEAR $148.00 Black Friday street price should
+  be re-checked after Nov 8 (batch 9 revisit, still open); the Sony
+  direct CH720N $89.99 is a sale price and should be re-checked
+  after the sale ends.
+
 ## 033 (2026-11-06): Expansion batch 11 — 77 → 82 models (continuous expansion, DECISIONS 027)
 
 - Decision: add 5 models from the remaining brand-sweep candidates

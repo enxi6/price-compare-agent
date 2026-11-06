@@ -11,6 +11,34 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 13 (DECISIONS 035, continuous expansion per
+  DECISIONS 027): eval set 87 → 92 models, verified identifiers
+  stay 68 (all 5 new identifiers pending on single-source-only
+  codes). New: Apple MacBook Pro 14-inch with PROLED XDR Display,
+  M5 Pro 15-core/16-core, 24GB/1TB, Space Black, Standard display
+  (MJ2K4LL/A, UPC pending — 195951196749 in the Adorama spec table
+  only; $2,899 at Apple direct and Best Buy — the base 14-inch runs
+  M5 Pro, not M6, and is the distinct touchscreen tandem-OLED line
+  vs the M6 and the Liquid Retina M5 Pro), Sony WF-C510 Black
+  (WFC510/B, UPC pending — 027242930339 on the B&H spec page only;
+  $69.99 is the list price, the current street price is $58 at B&H,
+  Abt, Electronic Express and Focus Camera, $59.99 at Best Buy),
+  Sony INZONE H5 Black (WHG500/B, UPC pending — 027242927919 in the
+  Sony spec sheet via manuals.plus only; the ~$249.99 candidate
+  price matches no current US price — the current street price is
+  $128 at Focus Camera, Datavision and Abt, comp. value $178),
+  Logitech PRO X2 SUPERSTRIKE LIGHTSPEED, Lunar Eclipse
+  (910-007700, UPC pending — 097855211309 on the B&H spec page
+  only; $179.99 — the candidate note called this a keyboard, it is
+  a wireless gaming mouse, and the $199.99 Best Buy row is the newer
+  PRO X3 SUPERSTRIKE, a different model), Keychron B40 75% Alice,
+  Deep Black (B40-K9, no UPC/EAN found; $49.99 confirmed current at
+  Keychron direct, the only colorway sold). New snapshot
+  `data/eval_snapshots_batch13_2026-11-06.json` holds 17 quotes
+  across the 5 models (PROLED XDR: 2, WF-C510: 6, INZONE H5: 3,
+  Superstrike: 5, B40: 1). DECISIONS 021 applied to every quote:
+  no marketplace/third-party rows, no non-US rows, no Amazon.
+
 - Expansion batch 12 (DECISIONS 034, continuous expansion per
   DECISIONS 027): eval set 82 → 87 models, 66 → 68 verified
   identifiers. New: Apple Magic Keyboard with Touch ID and Numeric
