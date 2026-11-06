@@ -600,6 +600,30 @@ releases; breaking changes are called out in the release notes.
 
 ### Changed
 
+- Daily price refresh 2026-11-06 (second run, PM): scope frozen at 100
+  models (92 swept at run start + 8 more; expansion batches 16+ join the
+  consolidated snapshot tomorrow), 1,987 raw listings; the snapshot
+  `data/eval_snapshots_2026-11-06.json` supersedes the morning 28-model
+  file and holds 192 quotes across 82 of 100 models. One confirmed
+  same-merchant move: Keychron Q1 $89.99 -> $69.99 (keychron.com sale,
+  verified). One move unverified: WH-CH720N BJ's $179.99 -> $99.99
+  (BJ's shows "Member Only Price", sign-in required; item in stock).
+  Five feed rows proven wrong by merchant-page checks and excluded:
+  PS5 Digital Best Buy $729 (RYTEK marketplace), Quest 3S Best Buy
+  $422.82 (EZ Tech marketplace), Xbox controller Best Buy $89.25
+  (IPC-STORE marketplace), Kindle Best Buy $229.99 (marketplace range
+  top; Best Buy own price $199.99 carried forward, browser-verified),
+  MX Vertical Dell $89.99 (page shows $119.99, carried) and Logitech
+  $84.99 (page shows $99.99). Samsung Buds4 $135 was a Panama shop row
+  (shop.samsung.com/latin/pa/) and is excluded; US price $179.99.
+  PS5 Digital has no seller-direct quotes this round (Best Buy own
+  listing out of stock). 18 models hold zero qualifying rows — feed
+  gaps, not delistings. MX Master 4 Graphite retailer hunt (Walmart)
+  blocked by a bot-check page, no workaround; still only Logitech
+  direct $119.99. Apple patrol: no Apple model delisted. M6 Pro UPC
+  still unpublished (2026-11-07 10:00 PT check stands). Kindle pin
+  unchanged (B0CFPL6CFY). Eval: 192 quotes, 0 identifier-matched,
+  192 suspected (catalog gives no UPC — the rule working, not a bug).
 - Daily price refresh 2026-11-06 (first daily run): all 28 models
   re-queried through Meta Catalog (549 raw listings, 28 files
   `data/meta_catalog_raw_*_2026-11-06.json`, gitignored); new

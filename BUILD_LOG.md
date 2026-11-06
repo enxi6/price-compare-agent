@@ -4307,3 +4307,141 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   alienware-32-curved-gaming-monitor-aw3225dm,
   alienware-tri-mode-wireless-gaming-keyboard-aw920k-dark-side-of-the-moon,
   dell-pro-7-webcam-4k-wb726).
+
+## 063 — 2026-11-06: Daily price refresh (PM) — 100 models, supersedes the morning 28-model snapshot
+
+- Trigger: scheduled daily refresh (`price-compare-daily-refresh`,
+  10:52 PT). Second run of the day. Scope frozen at 100 models: 92
+  swept at run start + 8 more swept after the expansion update to
+  100 (Sony MDR-7506, Pulse headset white, LinkBuds Clip black,
+  N64 controller, Studio Display XDR standard tilt/height, MDR-M1,
+  MDR-MV1, Keychron B39 Deep Black). Expansion batches 16+ (Anker,
+  JBL, Razer, Corsair, Dell, HP, Lenovo, ASUS — live EVAL_SET now
+  140, batch 24 landing) have their own batch snapshots and join the
+  consolidated daily snapshot tomorrow; this run lists candidates
+  only and adds no model. All 100 models re-queried through the Meta
+  Catalog CLI (`catalog-search --intent targeted --currency USD
+  --retries 2`), 1,987 raw listings, raw files
+  `data/meta_catalog_raw_*_2026-11-06.json` (gitignored). One new
+  dated snapshot, `data/eval_snapshots_2026-11-06.json`, OVERWRITES
+  the morning 28-model file (same date, larger scope — stated in
+  the snapshot meta); no old dated snapshot overwritten, no catalog
+  or DECISIONS change, no new models, no Amazon touch, no Kindle
+  pin change.
+- Result: 192 quotes across 82 of 100 models. Eval (live set is
+  140, so the 40 batch-16+ models show 0 quotes — expected):
+  82 with snapshot quotes, 192 total quotes, 0 identifier-matched,
+  192 suspected — the catalog source gives no UPC, so every quote
+  stays in the suspected table; that is the rule working, not a bug.
+  Tests: 19 passed (`pytest tests/ -q`). Note: pytest briefly
+  failed mid-run on a transient syntax error in the coordinator's
+  uncommitted batch-24 edit to `catalog.py` (a mis-escaped note
+  string); the coordinator fixed it before this commit and the
+  suite passes on the committed tree. This refresh did not touch
+  `catalog.py` or `tests/`.
+- Price moves (same-merchant, >$5) and their verification:
+  - CONFIRMED: Keychron Q1 Keychron $89.99 -> $69.99 — keychron.com
+    product page shows "Sale $69.99 $169.99", JSON-LD $69.99.
+  - UNVERIFIED: WH-CH720N BJ's $179.99 -> $99.99 — the BJ's page
+    shows "Member Only Price — Sign in to see price" (no sign-in
+    attempted); the item is in stock at BJ's. The $99.99 feed row
+    stays in the snapshot, flagged unverified; Sony direct $89.99
+    is the model's cheapest quote either way.
+  - REJECTED (feed row contradicted by the merchant's own page,
+    added to KNOWN_BAD): Kindle Best Buy $229.99 (bestbuy.com
+    JSON-LD $199.99 InStock; $229.99 is the top of the
+    marketplace-seller range on that page — carried forward as
+    $199.99, browser-verified); PS5 Digital Best Buy $729 (page:
+    "Sold & shipped by RYTEK", marketplace; Best Buy own listing
+    out of stock); Quest 3S Best Buy $422.82 (page: "Sold &
+    shipped by EZ Tech", marketplace); Xbox controller Best Buy
+    $89.25 (live-browser check: "Sold & shipped by IPC-STORE",
+    marketplace; price itself matches the feed); MX Vertical Dell
+    $89.99 (dell.com shows $119.99 — carried) and Logitech $84.99
+    (logitech.com shows $99.99, sale from $119.99 — the feed also
+    returned a correct $99.99 Logitech row, so no duplicate was
+    carried). Samsung Buds4 $135 (shop.samsung.com/latin/pa/ —
+    Panama shop; excluded by a new URL-path non-US check; US price
+    $179.99 at Best Buy/NFM/Samsung US).
+  - Trivial (<$5, not rechecked): Switch 2 ShopMyExchange $499.99
+    -> $499.00; DualSense Edge Abt $199.99 -> $199.00; WH-1000XM4C
+    Best Buy $299.99 -> $298.00.
+- Carried quotes (CARRIED_QUOTES, browser-verified, used only where
+  the feed has no surviving row for that merchant): M6 Pro Apple
+  $1,999 / Best Buy $1,999 (launch-day check, AM); Kindle Best Buy
+  $199.99 (PM); MX Vertical Dell $119.99 (PM). Logitech MX Vertical
+  $99.99 was NOT carried — the feed returned a correct $99.99 row.
+- GONE characterization: 164 rows GONE vs the prior baseline
+  (morning + batch 1–15 snapshots). Most are feed churn — the feed
+  returns a different sample each round (e.g. all prior MDR-7506,
+  MDR-MV1/M1, Buds3 FE quotes absent). A minority are rule-driven:
+  host-blocked (Newegg, bkstr campus subdomains), variant-filtered
+  (keyboard switch/layout rows, Anker 200W/bundle, Joy-Con single),
+  or price-band drops (scalpers, games, accessories). No model was
+  removed from the catalog.
+- Zero-quote models (18) — feed gaps, not delistings (each checked
+  against its raw rows): Anker Prime 100W (only a 200W row, a
+  charger+cable bundle, and a Panama seller); iMac M6 (only a
+  12-core NFM row; pinned is 10-core); iPad A16 / Air 11 / Air 13
+  / mini / Pro 11 / Pro 13 (Apple rows are other configs — MPN
+  check); MacBook Air 13/15 M5 (Apple rows are other part numbers);
+  MacBook Neo (no Apple feed rows; listed on apple.com at $699
+  after the 2026-06-25 increase); Mac Studio (Apple $5,499 row is
+  a higher config; Abt $2,799 is 1TB vs pinned 512GB); Bose QC
+  Earbuds (Bose direct rows carry no color); Keychron K8 HE / K8
+  hot-swappable (Keychron rows carry no color/switch); N64
+  controller (Nintendo row carries no color); Switch Pro Controller
+  (Dell row carries no color); Pulse headset white (only Pulse
+  Elite rows returned); PS5 Digital (Best Buy own listing out of
+  stock; only RYTEK marketplace $729, excluded).
+- Builder fixes applied in this refresh (in the refresh builder,
+  not in the repo): "joy con" removed from the global exclusion
+  list (the Switch console's own title names Joy-Con — restores
+  Nintendo Switch Neon $339.99); "core" added as a config unit with
+  a per-unit any-match rule (a title stating one of two required
+  core counts is not a conflict — restores MacBook Pro 14 ProLED
+  XDR NFM $2,899); MPN-in-URL check skipped for watches (the Watch
+  MPN encodes only the band — restores Watch SE 3 Apple $249);
+  "w" (watts) added as a config unit (rejects the Anker 200W row);
+  charger+cable "and" titles rejected as bundles; Joy-Con pairs
+  must name both sides in the title (rejects the single (L) $54.99
+  row); keyboard switch/layout exclusions (MX Mechanical
+  Mini/Clicky/Linear, G915 X Clicky/GL Blue/TKL/Core, PRO X TKL
+  Rapid/Linear/Core/INT'L); duplicate magic-mouse MODEL_MATCH entry
+  removed; "combo" added to traps; ankerpanama.com, fattalonline.com,
+  bkstr.com (incl. campus subdomains) blocked; URL-path non-US check
+  (/latin/ and non-/us/ Samsung shops); merchant canonicalization
+  completed (Logitech G, Lenovo US, JustPressPlay, RC Willey,
+  Electronic Express, Impulse Cameras, CDW, PlayStation Direct,
+  MacExperience, MelroseMac, Walt's, HSN, Silarius, Boolchand,
+  Golf+ VR, Virtuix, Quill, Antonline; also fixed the
+  "electronicsexpress.com" map-key typo).
+- Rotation items: (1) MX Master 4 Graphite retailer hunt — Walmart:
+  BLOCKED. `browser.search` found no Walmart listing; `browser.open`
+  on walmart.com/search returned a "Robot or human?" bot-check page.
+  Stopped, marked unverified, no workaround. Still only Logitech
+  direct $119.99. Next retailer: Target, then Costco. (Best Buy,
+  B&H, Adorama already ruled out; Newegg rows are Pale Gray only.)
+  (2) Brand patrol — Apple, first in rotation: 9 of 11 zero-quote
+  Apple models have apple.com rows for other configs in the feed;
+  iPad A16 and MacBook Neo have no Apple feed rows but are listed
+  on apple.com (iPad A16 US $449; MacBook Neo Blush 256GB listed,
+  US $699). No Apple model is delisted. M6 Pro $1,999 in stock
+  (launch-day check) and Watch SE 3 Apple $249 confirmed.
+  M6 Pro UPC check (one-off, 2026-11-07 10:00 PT) not duplicated.
+- New merchants to watch (first appearance as a model's only or
+  cheapest quote, not page-verified this run): Silarius (Buds3 FE
+  $169.99, only quote — MPN in title matches exactly); Quill (G Pro
+  X Superlight 2 DEX $214.99, only quote vs prior $159.99);
+  MelroseMac (Studio Display XDR $2,899 vs $3,299 list); Golf+ VR
+  (Quest 3 512GB $599.99); Smith's Food and Drug (Pulse Elite
+  $149.99). Also flagged, unverified: Switch OLED White Best Buy
+  $411.38 (above the $399.99 list); BuyDig CH720N $129.99 and
+  Datavision XM6 $298 rows carry protection-plan suffixes (price is
+  the product's own, kept).
+- Kindle: pin UNCHANGED (B0CFPL6CFY). Best Buy's own page lists
+  Model B0CFPJYX7P — further evidence for the pending user decision,
+  no change made. Target $199.99 new; NFM $196.99 still the low.
+- Switch 2: Nintendo $499.99 keeps — the earlier GONE was a dedupe
+  bug (a $3.99 game row shadowed the merchant; fixed by per-row
+  band filtering). Dell $449.99 stays KNOWN_BAD.
