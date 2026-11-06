@@ -2613,3 +2613,135 @@ written as "superseded by" with the original text kept.
   Friday ends Nov 8; Tab Plus Gen 2 $469.99; Idea Tab Pro
   Gen 2 bundle contents; five pending Lenovo UPCs;
   remaining Lenovo candidates list-only).
+
+## 051 (2026-11-06): Expansion batch 29 — 165 → 170 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 models from the Lenovo US store sweep plus
+  one ASUS held candidate (BUILD_LOG 068), no per-batch user
+  approval needed (DECISIONS 027): Lenovo Legion Tab Gen 5
+  8.8-inch Gaming Tablet, Eclipse Black (ZAH20126US, UPC
+  199275342448 — verified), Lenovo Yoga Tab Gen 2 11.1-inch
+  Tablet, Cosmic Blue (ZAJ00250US, UPC pending), Lenovo Idea
+  Tab 11-inch Tablet, Luna Grey (ZAFR0923US, UPC pending),
+  Lenovo Idea Tab Plus 12.1-inch Tablet, Cloud Grey
+  (ZAG71084US, UPC pending), ASUS ROG Swift OLED PG27UCDM
+  27-inch 4K 240Hz Gaming Monitor, Black (90LM0B30-B019B2,
+  UPC pending). One variant pinned per model (DECISIONS 015);
+  1 of 5 identifiers verified, 4 stay pending.
+  Verified-identifier count rises 80 → 81. No new brand enters
+  the set (Lenovo 5 → 9 entries, ASUS 10 → 11 entries); no new
+  category enters the set ("tablets" 11 → 15 entries,
+  "monitors" 12 → 13 entries).
+- Why these 5: four of the five batch 26 list-only Lenovo
+  tablets pin cleanly on fresh Lenovo US page reads
+  2026-11-06 ~21:26 UTC, with the Meta Catalog feed agreeing
+  on every brand-direct price; the fifth Lenovo candidate
+  (Tab P12) is gone from Lenovo US, so the batch is filled
+  from the ASUS held list (DECISIONS 047) with the PG27UCDM —
+  the 27-inch 4K Tandem QD-OLED flagship, verified on a fresh
+  ASUS eShop USA page read 2026-11-06 ~21:29 UTC with Newegg
+  agreeing at the same $1,099. All five are in stock new at
+  brand direct on 2026-11-06 — no stock caveat on any of
+  them. No laptop or desktop pick: Lenovo laptops and desktops
+  are configurable with no retailer-pinned base configuration
+  (DECISIONS 015).
+- What was corrected along the way: the Legion Tab Gen 5's
+  $598.49 Slickdeals price is a coupon stack (two eCoupons),
+  not a clean sale price — the clean prices are Lenovo
+  $699.99 sale vs $899.99 list and B&H $799.99 sale vs
+  $899.99 list; the $849.99 launch list rose to $899.99 in
+  October (PhoneArena Oct 13), so the $679.99/$680 September
+  sale prices are stale. The Yoga Tab Gen 2's ~$582
+  Notebookcheck price (Oct 24) is stale vs the current
+  $599.99. The Idea Tab Plus's $339.99 PhoneArena figure
+  (Oct 13) was the 8GB config — the current Lenovo-direct
+  part is the 6GB ZAG71084US at $369.99. The PG27UCDM's $949
+  ROG row and $1,199 shop.asus.com row are stale /
+  other-storefront vs the $1,099 eShop + ROG page + Newegg
+  agreement. Three part-number traps were caught and
+  excluded, not priced: the Idea Tab's Amazon UPCs belong to
+  different parts (ZAFR0920US 199271882283, ZAFR0928US
+  199271888728, ZAFR0925US 199271882306 — none is the pinned
+  ZAFR0923US); the Staples Idea Tab ZAFR0912US ($269.99) is a
+  different part at the same price; the Idea Tab Plus 8GB
+  parts (ZAG70917US, ZAG70921US, ZAG70922US) are different
+  parts from the pinned 6GB ZAG71084US. The PG27UCDM
+  candidate UPC 197105815193 was NOT recorded: it is tied to
+  the EU part 90LM0B30-B01971 in the ASUS brochure (with EAN
+  4711387815236) and to PG27UCDM generally on Tanotis/eBay/
+  Ubuy, but no source ties it to the US part 90LM0B30-B019B2
+  — the same call as batch 25's PG32UCWM. The Harpe Mini
+  Core was nearly re-added as the fill and caught by the
+  membership check: it is already in the set as
+  asus-rog-harpe-mini-core-black (batch 25).
+- Variant pinning, recorded explicitly: Legion Tab Gen 5 pins
+  Eclipse Black (ZAH20126US) — the only US colorway
+  (Notebookcheck); the FIFA World Cup 26 Edition
+  (ZAEF0096US, White, $569.99) is a different, limited-
+  edition tablet and the Glacier White / Surge green
+  colorways are not sold in the US. Yoga Tab Gen 2 pins
+  Cosmic Blue (ZAJ00250US, 8GB/256GB) — the only US config
+  listed at Lenovo direct (droidgadgets); the 12GB/256GB
+  configs are different configs. Idea Tab pins Luna Grey
+  (ZAFR0923US, 4GB/128GB) — the $269.99 4GB tier
+  (PhoneArena Oct 26); the 8GB ZAFR0928US ($339.99, with
+  pen) is a different part. Idea Tab Plus pins Cloud Grey
+  (ZAG71084US, 6GB/128GB) — the current Lenovo-direct part;
+  the 8GB and 12GB parts are different parts. PG27UCDM pins
+  Black (90LM0B30-B019B2) — the US eShop part; the EU part
+  90LM0B30-B01971 is a different regional part, as is the
+  PG27UCDMR ($1,299, Out of Stock).
+- What does NOT change: the existing 165 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6
+  Pro untouched, batches 1–28 entries untouched). No other
+  snapshot file is rewritten. No Amazon touch in the
+  snapshot: no Amazon quotes, no Amazon-sourced prices or
+  identifiers (Amazon item details were read only to confirm
+  which Idea Tab part numbers they do NOT cover). The daily
+  refresh cron still says "57 models" in its body and needs
+  a count update to 170 on the next edit (parent owns the
+  cron; not touched here).
+- Revisit: re-check the four Lenovo sale prices after the
+  Early Black Friday event ends Nov 8 (Legion Tab Gen 5
+  $699.99, Yoga Tab Gen 2 $599.99, Idea Tab $269.99, Idea Tab
+  Plus $369.99); re-check the Idea Tab $269.99 price next
+  refresh (third rise in 2026) and the Idea Tab Plus $369.99
+  price (6GB part vs the earlier 8GB $339.99 reports);
+  re-check the four pending Lenovo/ASUS UPCs (ZAJ00250US,
+  ZAFR0923US, ZAG71084US, PG27UCDM 90LM0B30-B019B2 — the
+  197105815193 candidate needs a US-part tie); the remaining
+  candidates stay list-only for later batches (Lenovo Yoga
+  Tab Gen 1 ZAG60266US $659.99 — superseded by the Yoga Tab
+  Gen 2, excluded per the batch 28 Fenix 8 precedent;
+  ThinkPad Universal USB-C Dock 40AY0090US — no Lenovo US
+  direct price surfaced, reseller prices $148.99–$309
+  conflict; Alienware AW720M $79.99 — 2022 mouse, Dell US
+  direct price unconfirmed, no UPC; ASUS ROG Delta original
+  — no current ASUS row; remaining ASUS held candidates
+  PG32UCDM Gen3 $1,299, PG34WCDN $1,299, PG32UCDMR $1,299
+  Out of Stock, Pelta Core $119.99, Kithara $259.99 sale,
+  Spatha X 65K $179.99, Azoth 96 HE Lite $359.99, Strix
+  Morph 96 $115.99 sale, Strix Scope II 96 RX $132.99 sale,
+  Falchion Ace 75 HE from $177.99; remaining HP candidates
+  Series 3 Pro 327pf $194.00, E24mv G4 $210.40, E27k G5
+  $504.00, CloudX Flight 2 $139.99, CloudX $59.99, Pulsefire
+  Haste 2 Wireless $89.99; remaining Dell candidates
+  AW3226DM $299.99, AW2726DL $229.99, AW2525HM $249.99,
+  AW2725DM $269.99, AW2725QF $499.99, AW3426DWM $399.99,
+  AW3425DWM $349.99, AW3926QW $1,099.99, AW2725Q $799.99,
+  AW620M $86.99 sale, AW510K $129.99, AW420K $99.99, AW725H
+  $149.99, AW920H $109.99, AW520H $79.99, AW320M $69.99, Dell
+  Pro Thunderbolt 5 Smart Dock SD25TB5, Dell Premier Wireless
+  ANC Headset WL7022 $299.99, Dell Pro Plus Wireless
+  Speakerphone SL525); the batch 28 revisits carry over
+  unchanged (fēnix 9 UPC; Venu 4 Dell $499.99 sale after
+  Black Friday Nov 27; vívoactive 6 stock; Forerunner 970
+  UPC tiebreak; Edge 1060 UPC; remaining Garmin candidates
+  list-only) and the batch 27 revisits carry over unchanged
+  (Series X stock; Wireless Headset $110.99; Surface Laptop
+  $1,299.99 sale after Black Friday; three pending Microsoft
+  identifiers; remaining Microsoft candidates list-only) and
+  the batch 26 revisits carry over unchanged (five Lenovo
+  sale prices after Early Black Friday ends Nov 8; Tab Plus
+  Gen 2 $469.99; Idea Tab Pro Gen 2 bundle contents; five
+  pending Lenovo UPCs).

@@ -102,6 +102,39 @@ releases; breaking changes are called out in the release notes.
   fēnix 9, now discounted last-gen), Instinct 3, Forerunner
   165, Edge 850 and Garmin dash cams (not yet swept) — all
   stay list-only for later batches.
+- Expansion batch 29 (DECISIONS 051, continuous expansion per
+  DECISIONS 027): eval set 165 → 170 models, verified identifiers
+  80 → 81 (1 of 5 new identifiers verified). New: Lenovo Legion
+  Tab Gen 5 8.8-inch Gaming Tablet, Eclipse Black (ZAH20126US,
+  UPC 199275342448 — B&H Photo + TempDeals/edealinfo agree;
+  $699.99 sale vs $899.99 list at Lenovo direct, $799.99 sale
+  at B&H — the set's flagship Lenovo gaming tablet), Lenovo Yoga
+  Tab Gen 2 11.1-inch Tablet, Cosmic Blue (ZAJ00250US, UPC
+  pending — no code surfaced; $599.99 sale vs $729.99 list at
+  Lenovo direct, pen + keyboard included — the set's mid-size
+  Lenovo creator tablet), Lenovo Idea Tab 11-inch Tablet, Luna
+  Grey (ZAFR0923US, UPC pending — no code surfaced for this
+  part; the Amazon UPCs for ZAFR0920US/ZAFR0925US/ZAFR0928US
+  are different parts and were not copied; $269.99 at Lenovo
+  direct — the set's entry-level Lenovo student tablet), Lenovo
+  Idea Tab Plus 12.1-inch Tablet, Cloud Grey (ZAG71084US, UPC
+  pending — no code surfaced; $369.99 at Lenovo direct, $279.00
+  at Newegg — the current Lenovo-direct part is the 6GB config,
+  not the earlier-reported 8GB $339.99), ASUS ROG Swift OLED
+  PG27UCDM 27-inch 4K 240Hz Gaming Monitor, Black
+  (90LM0B30-B019B2, UPC pending — candidate 197105815193 is
+  tied to the EU part, not the US part; $1,099 at ASUS eShop
+  USA and Newegg — the set's 27-inch 4K Tandem QD-OLED
+  flagship). Lenovo grows 5 → 9 entries, ASUS 10 → 11. Not
+  added: Lenovo Tab P12 (2023 tablet — no longer sold at
+  Lenovo US, effectively discontinued in the US), Lenovo Yoga
+  Tab Gen 1 ZAG60266US ($659.99 — superseded by the Yoga Tab
+  Gen 2), ASUS ROG Harpe Mini Core (already in the set, batch
+  25 — duplicate catch), ThinkPad Universal USB-C Dock
+  40AY0090US (no Lenovo US direct price; reseller prices
+  $148.99–$309 conflict), Alienware AW720M (2022 mouse, Dell
+  US price unconfirmed, no UPC), ASUS ROG Delta original (no
+  current ASUS row) — all stay list-only for later batches.
 - Expansion batch 25 (DECISIONS 047, continuous expansion per
   DECISIONS 027): eval set 145 → 150 models, verified identifiers
   stay 74 (0 of 5 new identifiers verified — all pending). New:

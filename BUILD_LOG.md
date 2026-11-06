@@ -4940,3 +4940,136 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   counts updated 160 → 165, verified 76 → 80, for the
   continuous expansion; the pending set gains the 1 new pending
   key: garmin-fenix-9-47mm-titanium-pebble-gray).
+
+## 068 — 2026-11-06: Expansion batch 29 — 165 → 170 models (DECISIONS 051)
+
+- Membership check (against the 165-model set in
+  price_agent/catalog.py, by name, MPN and UPC — recorded here so
+  a later session can repeat it): Legion Tab Gen 5 — NO MATCH
+  (the set has the Legion Tab Gen 3 only, a different tablet);
+  Yoga Tab Gen 2 — NO MATCH (the set has the Yoga Tab Plus Gen
+  2 only); Idea Tab — NO MATCH (the set has the Idea Tab Pro
+  Gen 2 only); Idea Tab Plus — NO MATCH (no Idea Tab Plus in
+  the set); ROG Swift OLED PG27UCDM — NO MATCH (the set has
+  the PG27UCWM, PG32UCWM and PG27AQDPR, all different
+  monitors). UPC cross-check: 199275342448 (Legion Tab Gen 5)
+  matches nothing in the set; 197105815193 (PG27UCDM
+  candidate) is not recorded. One near-miss caught by the
+  check: the ROG Harpe Mini Core was the first fill choice
+  after the Tab P12 dropped out, but it is already in the set
+  as asus-rog-harpe-mini-core-black (batch 25) — not re-added.
+  The five are four Lenovo tablets from the batch 26 list-only
+  set plus the PG27UCDM from the ASUS held list (DECISIONS
+  047); the Lenovo US store pages and the ASUS eShop USA page
+  all return price data on fresh reads.
+- Lenovo Legion Tab Gen 5, Eclipse Black (ZAH20126US) —
+  identifiers VERIFIED: UPC 199275342448 + MPN ZAH20126US
+  (B&H Photo US, Model ZAH20126US, UPC 199275342448, page read
+  fresh 2026-11-06 21:27 UTC, + TempDeals/edealinfo, tags
+  ZAH20126US | 199275342448, deal URL
+  edealinfo.com/d/00199275342448, agree; MPN corroborated by
+  Lenovo US page title + Slickdeals ZAH20126US + the Meta
+  Catalog feed brand_direct row URL /zah20126us). Quotes (2):
+  Lenovo $699.99 sale vs $899.99 list (US product page JSON-LD
+  read fresh 2026-11-06 21:26 UTC, InStock; feed brand_direct
+  row agrees; 8.8-inch 3K 165Hz, Snapdragon 8 Elite Gen 5,
+  12GB LPDDR5T / 256GB UFS 4.1, folio case + 68W charger
+  included, Android 16); B&H $799.99 sale vs $899.99 list
+  (page read fresh 2026-11-06 21:27 UTC, InStock). Excluded:
+  the $598.49 Slickdeals price (coupon stack, not a clean sale
+  price) and the stale $679.99/$680 September prices (the list
+  rose $849.99 to $899.99 in October). Not the FIFA World Cup
+  26 Edition (ZAEF0096US, White, $569.99) or the Glacier White
+  / Surge green colorways (not sold in the US) or the Legion
+  Tab Gen 3 (previous generation, already in the set).
+- Lenovo Yoga Tab Gen 2, Cosmic Blue (ZAJ00250US) —
+  identifiers PENDING: no UPC surfaced for ZAJ00250US in any
+  source read, so identifiers stay empty per the strict
+  two-source rule. Not copied: nothing — no candidate code
+  surfaced. Quotes (1): Lenovo $599.99 sale vs $729.99 list
+  (US product page JSON-LD read fresh 2026-11-06 21:26 UTC,
+  InStock; feed brand_direct row agrees; 11.1-inch 4K
+  PureSight Pro 144Hz, Dimensity 9500s, 8GB / 256GB, Tab Pen
+  Pro 2 + 2-in-1 Keyboard Pack included, Android 17, model
+  TB711FU per GSMArena/PSREF). Excluded: the 'Yoga Tab (Gen
+  2) + Earbud' bundle ($639.98 feed row) and the stale ~$582
+  Notebookcheck price (Oct 24). Not the Yoga Tab Plus Gen 2
+  (already in the set) or the Yoga Tab Gen 1 (superseded, not
+  added per the batch 28 Fenix 8 precedent). Lenovo-only in
+  the US — no second retailer quote exists.
+- Lenovo Idea Tab, Luna Grey (ZAFR0923US) — identifiers
+  PENDING: no UPC surfaced for ZAFR0923US in any source read,
+  so identifiers stay empty per the strict two-source rule.
+  Not copied: nothing for this part — the Amazon UPCs
+  199271882283 (ZAFR0920US), 199271888728 (ZAFR0928US) and
+  199271882306 (ZAFR0925US) are all different parts. Quotes
+  (1): Lenovo $269.99 (US product page JSON-LD read fresh
+  2026-11-06 21:26 UTC, InStock; feed brand_direct row agrees;
+  11-inch 2.5K 90Hz, Dimensity 6300, 4GB / 128GB, Tab Pen Plus
+  sold separately). The 4GB tier is $269.99 and the 8GB tier
+  $339.99 (PhoneArena Oct 26); the 8GB part is ZAFR0928US.
+  Excluded: the Staples ZAFR0912US row ($269.99 — a different
+  part at the same price). Not the Idea Tab Pro Gen 2 (already
+  in the set) or the Tab K11 Gen 2 (the Idea Tab's
+  business-channel twin, same TB336FU hardware — not added
+  separately). Lenovo-only in the US for this part.
+- Lenovo Idea Tab Plus, Cloud Grey (ZAG71084US) — identifiers
+  PENDING: no UPC surfaced for ZAG71084US in any source read,
+  so identifiers stay empty per the strict two-source rule.
+  Not copied: nothing — no candidate code surfaced. Quotes
+  (2): Lenovo $369.99 (US product page JSON-LD read fresh
+  2026-11-06 21:26 UTC, InStock; feed brand_direct row agrees;
+  12.1-inch 2.5K 90Hz, Dimensity 6400, 6GB / 128GB); Newegg
+  $279.00 (feed authorized_retailer row — suspected; not
+  page-verified; part ZAG71084US stated in the listing).
+  Correction vs earlier reports: the $339.99 PhoneArena figure
+  (Oct 13) was the 8GB config — the current Lenovo-direct part
+  is the 6GB ZAG71084US at $369.99. Excluded: the 8GB parts
+  ZAG70917US / ZAG70921US / ZAG70922US (different parts) and
+  their Best Buy rows ($299.99 / $349.99). Not the Tab Plus
+  Gen 2 or the Idea Tab Pro Gen 2 (both already in the set).
+- ASUS ROG Swift OLED PG27UCDM, Black (90LM0B30-B019B2) —
+  identifiers PENDING: the candidate UPC 197105815193 is not
+  tied to the US part 90LM0B30-B019B2 by a second US source
+  (ASUS brochure PDF lists it with EAN 4711387815236 for the
+  EU part 90LM0B30-B01971; Tanotis/eBay/Ubuy list it for
+  PG27UCDM generally), so identifiers stay empty per the
+  strict two-source rule — same call as batch 25's PG32UCWM.
+  Not copied: 197105815193 (candidate UPC, part tie
+  unconfirmed); 4711387815236 (EU EAN). Quotes (2): ASUS
+  $1,099.00 (eShop USA page read fresh 2026-11-06 21:29 UTC,
+  InStock; feed brand_direct rows agree at $1,099 — eShop row
+  + ROG US page row; 26.5-inch 4K Tandem QD-OLED, 240Hz,
+  0.03ms, DP 2.1a UHBR20, USB-C 90W, 3-year warranty incl.
+  burn-in); Newegg $1,099.00 sale vs $1,199.99 list (feed
+  authorized_retailer row — suspected; not page-verified).
+  Excluded: the $949 ROG row and the $1,199 shop.asus.com row
+  (stale / other storefront), the AirVision M1 bundle ($100
+  add-on), and the CDW $1,199 / Macy's $1,124.99 rows (not
+  used). Not the PG27UCWM ($1,699, already in the set), the
+  PG32UCWM ($1,399, already in the set), the PG27UCDMR
+  ($1,299, Out of Stock) or the PG27AQDM-R (QHD, $599 sale).
+- Skipped this batch, list-only: Lenovo Tab P12 (2023 tablet,
+  Android 13, Dimensity 7050 — no Lenovo US product page, no
+  Lenovo-direct feed row, only marketplace/old-stock rows in
+  the Tab P12 feed round; no longer sold at Lenovo US,
+  effectively discontinued in the US; no clean current US
+  price to pin); Lenovo Yoga Tab Gen 1 ZAG60266US ($659.99 at
+  Lenovo direct — superseded by the Yoga Tab Gen 2, excluded
+  per the batch 28 Fenix 8 precedent); Lenovo ThinkPad
+  Universal USB-C Dock 40AY0090US (no Lenovo US direct price
+  surfaced; reseller prices conflict $148.99–$309; 2021
+  product); Alienware AW720M ($79.99 — 2022 mouse, Dell US
+  direct price unconfirmed, no UPC surfaced); ASUS ROG Delta
+  original (no current ASUS row — likely discontinued at ASUS
+  US); the remaining ASUS/HP/Dell held candidates listed in
+  DECISIONS 051 (not yet swept).
+- Eval on the new snapshot: 170 models, 81 verified identifiers,
+  5 with quotes, 8 total quotes, 0 identifier-matched, 8
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 165 → 170, verified 80 → 81, for the
+  continuous expansion; the pending set gains the 4 new pending
+  keys: lenovo-yoga-tab-gen-2-cosmic-blue,
+  lenovo-idea-tab-luna-grey, lenovo-idea-tab-plus-cloud-grey,
+  asus-rog-swift-oled-pg27ucdm-black).

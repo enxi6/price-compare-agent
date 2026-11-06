@@ -4445,6 +4445,201 @@ EVAL_SET: list[EvalProduct] = [
         "and/or inReach/solar). The set's first fēnix; distinct "
         "from the set's Venu 4 and Forerunner 570.",
     ),
+    # --- Expansion batch 29 (2026-11-06, DECISIONS 051) ---
+    # 165 -> 170 models. DECISIONS 051, BUILD_LOG 068.
+    EvalProduct(
+        key="lenovo-legion-tab-gen-5-eclipse-black",
+        brand="Lenovo",
+        model="Legion Tab Gen 5 8.8-inch Gaming Tablet",
+        variant="Eclipse Black (ZAH20126US)",
+        category="tablets",
+        identifiers={"UPC": "199275342448", "MPN": "ZAH20126US"},
+        identifier_sources={
+            "UPC": "B&H Photo US (Model ZAH20126US, UPC "
+            "199275342448, page read fresh 2026-11-06) + "
+            "TempDeals/edealinfo (tags ZAH20126US | "
+            "199275342448; deal URL "
+            "edealinfo.com/d/00199275342448) agree. MPN "
+            "ZAH20126US corroborated by Lenovo US (page title), "
+            "Slickdeals (ZAH20126US, Oct 31) and the Meta "
+            "Catalog feed brand_direct row URL "
+            "(/zah20126us)"
+        },
+        status="verified",
+        notes="Lenovo $699.99 sale vs $899.99 list (US product page "
+        "JSON-LD read fresh 2026-11-06 21:26 UTC, InStock; feed "
+        "brand_direct row agrees at price $899.99 / sale "
+        "$699.99; 8.8-inch 3K 165Hz, Snapdragon 8 Elite Gen 5, "
+        "12GB LPDDR5T / 256GB UFS 4.1, Eclipse Black single US "
+        "colorway, folio case + 68W charger included, Android "
+        "16); B&H $799.99 sale vs $899.99 list (page read fresh "
+        "2026-11-06 21:27 UTC, InStock — a different, smaller "
+        "discount than Lenovo direct). Re-check the $699.99 sale "
+        "price after the Early Black Friday event ends Nov 8. "
+        "Not the FIFA World Cup 26 Edition (ZAEF0096US, White, "
+        "$569.99 — different, limited-edition tablet), the "
+        "Glacier White or Surge green colorways (not sold in "
+        "the US — Notebookcheck: single Eclipse Black US "
+        "colorway) or the Legion Tab Gen 3 (ZAEF0068US, "
+        "Snapdragon 8 Gen 3, $549.99 — previous generation, "
+        "already in the set). Excluded: the $598.49 Slickdeals "
+        "price (Oct 31 — requires stacking two eCoupons, "
+        "DEALDAYSLIVE + EXTRAFIVE, at checkout, not a clean "
+        "sale price) and the $680/$679.99 September sale prices "
+        "(stale — the list rose $849.99 to $899.99 in October, "
+        "PhoneArena Oct 13). Distinct from the set's Legion Tab "
+        "Gen 3 — the Gen 5 is the sixth Lenovo tablet in the "
+        "set and its flagship gaming tablet.",
+    ),
+    EvalProduct(
+        key="lenovo-yoga-tab-gen-2-cosmic-blue",
+        brand="Lenovo",
+        model="Yoga Tab Gen 2 11.1-inch Tablet",
+        variant="Cosmic Blue (ZAJ00250US)",
+        category="tablets",
+        identifiers={},
+        status="pending",
+        notes="Lenovo $599.99 sale vs $729.99 list (US product page "
+        "JSON-LD read fresh 2026-11-06 21:26 UTC, InStock; feed "
+        "brand_direct row agrees at price $729.99 / sale "
+        "$599.99; 11.1-inch 4K PureSight Pro 144Hz, MediaTek "
+        "Dimensity 9500s, 8GB LPDDR5X / 256GB UFS 4.1, Cosmic "
+        "Blue, Tab Pen Pro 2 + 2-in-1 Keyboard Pack included, "
+        "Android 17 with 7 OS upgrades, 11,000mAh). "
+        "Identifiers PENDING: no UPC surfaced for ZAJ00250US in "
+        "any source read, so identifiers stay empty per the "
+        "strict two-source rule; re-check next refresh. Not "
+        "copied: nothing — no candidate code surfaced. The "
+        "model number is TB711FU (GSMArena / PSREF). Not the "
+        "Yoga Tab Plus Gen 2 (13-inch, Snapdragon 8 Elite, "
+        "$799.99 sale — already in the set) or the Yoga Tab "
+        "Gen 1 (11.1-inch, Snapdragon 8 Gen 3, $659.99 — "
+        "previous generation, superseded, not added per the "
+        "batch 28 Fenix 8 precedent) or the 'Yoga Tab (Gen 2) "
+        "+ Earbud' bundle ($639.98 feed row — a bundle, "
+        "excluded). The ~$582 Notebookcheck price (Oct 24, 20% "
+        "off) is stale vs the current $599.99. Lenovo-only in "
+        "the US — no second retailer quote exists (no retailer "
+        "row in the feed). Re-check the $599.99 sale price "
+        "after the Early Black Friday event ends Nov 8. "
+        "Distinct from the set's Yoga Tab Plus Gen 2 — the "
+        "Yoga Tab Gen 2 is the seventh Lenovo tablet in the "
+        "set and its mid-size creator tablet.",
+    ),
+    EvalProduct(
+        key="lenovo-idea-tab-luna-grey",
+        brand="Lenovo",
+        model="Idea Tab 11-inch Tablet",
+        variant="Luna Grey (ZAFR0923US)",
+        category="tablets",
+        identifiers={},
+        status="pending",
+        notes="Lenovo $269.99 (US product page JSON-LD read fresh "
+        "2026-11-06 21:26 UTC, InStock; feed brand_direct row "
+        "agrees at $269.99; 11-inch 2.5K 90Hz, MediaTek "
+        "Dimensity 6300, 4GB / 128GB, Luna Grey, Android 15 "
+        "with 2 OS upgrades; Tab Pen Plus sold separately). "
+        "Identifiers PENDING: no UPC surfaced for ZAFR0923US in "
+        "any source read, so identifiers stay empty per the "
+        "strict two-source rule; re-check next refresh. Not "
+        "copied: nothing for this part — the Amazon UPCs "
+        "199271882283 (ZAFR0920US, 8GB/256GB with pen + folio), "
+        "199271888728 (ZAFR0928US, 8GB/128GB with pen) and "
+        "199271882306 (ZAFR0925US, 4GB/128GB with pen + folio) "
+        "are all different parts and were NOT copied onto "
+        "ZAFR0923US. The 4GB tier is $269.99 and the 8GB tier "
+        "$339.99 (PhoneArena, Oct 26 — the Idea Tab rose from "
+        "$239.99/$309.99 to $269.99/$339.99); the 8GB part is "
+        "ZAFR0928US at $339.99 (feed brand_direct row), a "
+        "different part. Not the Staples ZAFR0912US ($269.99 — "
+        "a different part, TB336FU 128GB) or the Idea Tab Pro "
+        "Gen 2 (13-inch, Snapdragon 8s Gen 4 — already in the "
+        "set) or the Tab K11 Gen 2 (the Idea Tab's business-"
+        "channel twin, TB336FU — same hardware family under a "
+        "different channel name, not added separately). "
+        "Lenovo-only in the US — no second retailer quote "
+        "exists for this part. Re-check the $269.99 price next "
+        "refresh (third price rise for this tablet in 2026). "
+        "Distinct from the set's Idea Tab Pro Gen 2 — the Idea "
+        "Tab is the eighth Lenovo tablet in the set and its "
+        "entry-level student tablet.",
+    ),
+    EvalProduct(
+        key="lenovo-idea-tab-plus-cloud-grey",
+        brand="Lenovo",
+        model="Idea Tab Plus 12.1-inch Tablet",
+        variant="Cloud Grey (ZAG71084US)",
+        category="tablets",
+        identifiers={},
+        status="pending",
+        notes="Lenovo $369.99 (US product page JSON-LD read fresh "
+        "2026-11-06 21:26 UTC, InStock; feed brand_direct row "
+        "agrees at $369.99; 12.1-inch 2.5K 90Hz, MediaTek "
+        "Dimensity 6400, 6GB / 128GB, Cloud Grey, Android 15); "
+        "Newegg $279.00 (feed authorized_retailer row — "
+        "suspected; not page-verified; part ZAG71084US stated "
+        "in the listing, 6GB/128GB). Identifiers PENDING: no "
+        "UPC surfaced for ZAG71084US in any source read, so "
+        "identifiers stay empty per the strict two-source rule; "
+        "re-check next refresh. Not copied: nothing — no "
+        "candidate code surfaced. Correction vs earlier "
+        "reports: the $339.99 PhoneArena figure (Oct 13) was "
+        "the 8GB config — the current Lenovo-direct part is "
+        "the 6GB ZAG71084US at $369.99. Not the 8GB/128GB "
+        "ZAG70917US (Luna Grey, pen + folio — $279-$294 at "
+        "retailers) or the Best Buy ZAG70921US (8GB/128GB, "
+        "$279.99 sale vs $369.99 comp value) or the 12GB/256GB "
+        "ZAG70922US — all different parts/configs — or the Tab "
+        "Plus Gen 2 (12.1-inch, Dimensity 7400, JBL 9-unit "
+        "speakers — already in the set) or the Idea Tab Pro "
+        "Gen 2 (13-inch — already in the set). Re-check the "
+        "$369.99 price next refresh. Distinct from the set's "
+        "Tab Plus Gen 2 and Idea Tab Pro Gen 2 — the Idea Tab "
+        "Plus is the ninth Lenovo tablet in the set and its "
+        "lightweight large-screen student tablet.",
+    ),
+    EvalProduct(
+        key="asus-rog-swift-oled-pg27ucdm-black",
+        brand="ASUS",
+        model="ROG Swift OLED PG27UCDM 27-inch 4K 240Hz Gaming Monitor",
+        variant="Black (90LM0B30-B019B2)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="ASUS $1,099.00 (eShop USA page read fresh "
+        "2026-11-06 21:29 UTC, InStock; feed brand_direct rows "
+        "agree at $1,099 — eShop row + ROG US page row; "
+        "26.5-inch 4K Tandem QD-OLED, 240Hz, 0.03ms, DP 2.1a "
+        "UHBR20, USB-C 90W, Dolby Vision, DisplayHDR 400 True "
+        "Black, 99% DCI-P3, 3-year warranty incl. burn-in); "
+        "Newegg $1,099.00 sale vs $1,199.99 list (feed "
+        "authorized_retailer row — suspected; not "
+        "page-verified; agrees with ASUS eShop). Identifiers "
+        "PENDING: the candidate UPC 197105815193 is not tied "
+        "to the US part 90LM0B30-B019B2 by a second US source — "
+        "it appears in the ASUS brochure PDF (with EAN "
+        "4711387815236) for the EU part 90LM0B30-B01971 and on "
+        "Tanotis/eBay/Ubuy listings for PG27UCDM generally, "
+        "but no source states it for the B019B2 part "
+        "specifically, so identifiers stay empty per the "
+        "strict two-source rule (same call as batch 25's "
+        "PG32UCWM, whose B&H-only UPC stayed unrecorded); "
+        "re-check next refresh. Not copied: 197105815193 "
+        "(candidate UPC, part tie unconfirmed); 4711387815236 "
+        "(EU EAN for the B01971 part). Not the PG27UCWM "
+        "(27-inch 4K 240Hz Tandem RGB OLED, $1,699 — already "
+        "in the set), the PG32UCWM (32-inch, $1,399 — already "
+        "in the set), the PG27UCDMR ($1,299, Out of Stock — "
+        "different monitor) or the PG27AQDM-R (QHD, $599 sale "
+        "— different monitor). Excluded: the $949 ROG row and "
+        "the $1,199 shop.asus.com row (stale / other storefront "
+        "vs the $1,099 eShop + ROG page + Newegg agreement), "
+        "the AirVision M1 bundle ($100 add-on), and the CDW "
+        "$1,199 / Macy's $1,124.99 sale rows (not used). "
+        "Distinct from the set's other ASUS monitors — the "
+        "PG27UCDM is the third ASUS monitor in the set and its "
+        "27-inch 4K Tandem QD-OLED flagship.",
+    ),
 ]
 
 def get_product(key: str) -> EvalProduct:
