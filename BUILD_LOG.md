@@ -937,3 +937,18 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - MX Keys S Pale Grey (920-011559), Newegg $117: **NOT confirmed as a Newegg-sold price**. The page does show $117.00 (was $129.99), right model and part number — but "Sold by Astonlink | Shipped by Astonlink | Ships from China", free delivery Nov 20–Dec 02, quantity 1, no explicit in-stock wording. Newegg's own listing for the same keyboard is $129.99 with free shipping. The $117 is a marketplace-seller price, not a Newegg price.
 - Method note: Google Search returned an "unusual traffic" page during this pass; it was not used or worked around — checks went directly to each merchant's own site search instead.
 - Tests: 19 passed (re-run after the log edit; no code changed).
+
+## 037 (2026-11-06): Selection and quote-eligibility rules set (DECISIONS 021)
+
+- User decision (2026-11-06): third-party sellers not touched for
+  now, non-US-market goods not touched, selection stays each
+  brand's mainstream or new products with gradual expansion later.
+- Operational effect from the next daily run: marketplace /
+  third-party seller rows are excluded from snapshots entirely
+  (not just flagged) — the Newegg $117 Astonlink row from the
+  2026-11-06 snapshot is out. Non-US rows stay excluded as
+  before, now under a named rule. No catalog entry changes: no
+  current eval model is itself a third-party or non-US product.
+- Daily cron `price-compare-daily-refresh` body updated with the
+  three rules so every future run applies them.
+- Tests: 19 passed (re-run after the docs edit; no code changed).

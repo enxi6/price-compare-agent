@@ -9,6 +9,15 @@ releases; breaking changes are called out in the release notes.
 
 ## [Unreleased]
 
+### Added
+
+- Selection and quote-eligibility rules (DECISIONS 021, user
+  2026-11-06): no third-party/marketplace sellers for now, no
+  non-US-market goods, selection stays each brand's mainstream or
+  new products with gradual expansion later. No catalog entry
+  changes; the rule bites on quote eligibility only (the Newegg
+  $117 Astonlink row is excluded from future snapshots).
+
 ### Changed
 
 - Daily price refresh 2026-11-06 (first daily run): all 28 models

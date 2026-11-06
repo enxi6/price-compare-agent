@@ -378,3 +378,45 @@ written as "superseded by" with the original text kept.
   demand filter ("pre-screened for attention and traffic"), and
   that filter is adopted — but as prioritization over the brand
   catalog, not as replacement of it.
+
+## 021 (2026-11-06): Quote eligibility — no third-party sellers, no non-US-market goods; selection stays mainstream-or-new
+
+- Decision (user, 2026-11-06): three rules, effective immediately for
+  all snapshots and browser rechecks.
+  (a) Third-party sellers: NOT touched for now. A quote only counts
+  when the seller is the merchant itself (first-party sale: brand
+  direct, or a named retailer selling directly). Marketplace /
+  third-party seller rows are excluded from snapshots entirely —
+  not flagged, excluded — even when cheaper. Rationale: today's
+  Newegg $117 case (BUILD_LOG 036) — the price looked like a deal
+  but was Astonlink shipping from China, 2-week delivery,
+  quantity 1; a buyer-side ranking that surfaces it as
+  "Newegg $117" misleads the buyer. Earlier precedent: the
+  TECHVAULT third-party Anker row, excluded on five independent
+  grounds (2026-10-31).
+  (b) Non-US-market goods: NOT touched. Only US-market versions
+  count — US MPN/UPC, sold by US retailers / US stores.
+  Excluded: parallel imports, international variants (non-US
+  ASINs, MEA/LatAm suffixes, overseas sellers, non-US listings).
+  This formalizes what prior rounds already practiced (e.g.
+  Ayoub Lebanon, iCuracao, Australian ASIN rows excluded).
+  (c) Selection: each brand's mainstream or new products first;
+  expand gradually later. Phase 1 keeps tracking the current 28
+  (each brand's core/bestseller lineup or new release); no
+  long-tail, niche, or legacy models added now. Expansion stays
+  batch-by-batch with user approval (DECISIONS 013); candidate
+  lists stay list-only.
+- What changes in practice: the 2026-11-06 snapshot's Newegg $117
+  Astonlink row is excluded from future snapshots (it was already
+  marked not-confirmed in BUILD_LOG 036; from the next daily run
+  it is out of the feed-derived quote set, not carried as a
+  quote). No catalog entry changes: no current eval model is
+  itself a third-party or non-US product — the rule bites on
+  quote eligibility only.
+- What does NOT change: DECISIONS 011/013/020 stand; this narrows
+  quote eligibility and selection pace, it does not replace the
+  brand-catalog backbone or the demand-prioritization layer.
+- Revisit: when the user says expand, third-party sellers and
+  non-US goods are separate expansion decisions, each needing its
+  own user approval; do not bundle them into a general "expand"
+  step.
