@@ -1759,3 +1759,88 @@ written as "superseded by" with the original text kept.
   should be re-checked after Nov 8 (batch 9 revisit, still open);
   the Sony direct CH720N $89.99 is a sale price and should be
   re-checked after the sale ends.
+
+## 042 (2026-11-06): Expansion batch 20 — 120 → 125 models (continuous expansion, DECISIONS 027)
+
+- Decision: add 5 Dell/Alienware models from the dell.com US store
+  sweep (BUILD_LOG 058), no per-batch user approval needed (DECISIONS
+  027): Dell 32 Plus 4K Monitor S3225QS, Ash White (F06FR, UPC
+  884116485131 verified), Alienware 27 240Hz QD-OLED Gaming Monitor
+  AW2726DM, Black (JW05F, UPC pending), Alienware Pro Wireless Gaming
+  Mouse, Dark Side of the Moon (PRO-MS-G-DEAM, UPC 884116464914
+  verified), Alienware Pro Wireless Gaming Keyboard, Dark Side of the
+  Moon (WR47C, UPC pending), Alienware Pro Wireless Gaming Headset,
+  Dark Side of the Moon (UPC pending). One variant pinned per model
+  (DECISIONS 015); 2 of 5 identifiers verified, 3 stay pending on
+  single-source-only or no-source codes (Corsair batch 19 precedent:
+  0 of 5 verified is not a reason to hold the batch). Verified-
+  identifier count rises 69 → 71. No model was split out of this
+  batch. This batch completes the 125-model milestone (progress
+  report point per DECISIONS 027). Two new brands enter the set:
+  Dell and Alienware; two new categories enter the set: monitors
+  (S3225QS, AW2726DM — the set's first monitors) — category is
+  free-form and unused by the eval.
+- Why these 5: they are the first Dell-brand sweep (the set had no
+  Dell or Alienware entry at all), one per product family where the
+  official US catalog has a current fixed-configuration in-stock
+  model — mainstream 32-inch 4K productivity monitor, budget QD-OLED
+  gaming monitor, flagship pro wireless mouse, flagship pro wireless
+  keyboard, flagship pro wireless headset. No laptop or desktop pick:
+  Dell laptops and desktops are configurable with no retailer-pinned
+  base configuration (DECISIONS 015) — the Alienware 16 Aurora
+  featured config is Sold Out and the XPS 14 (2026) has no fixed
+  base config, so both families were left out rather than forced.
+  All five are in stock new in the US on 2026-11-06 (Dell direct
+  pages, page-verified or search-index read, plus Best Buy / Micro
+  Center / Newegg feed rows).
+- What was corrected along the way: Dell monitor MPNs are regional
+  — the US codes were pinned and the regional codes were not used
+  (S3225QS US F06FR vs Ireland MX17X; AW2726DM US JW05F vs UK
+  N0XJ0); the S3225QS UPC 884116485131 is verified on Icecat +
+  eBay, not on the Amazon listing that also states it (Amazon is
+  never a corroborating source); the Pro Mouse UPC 884116464914
+  belongs to the Black PRO-MS-G-DEAM, while the White PRO-MS-W-DEAM
+  carries 884116464945 and was not used; the keyboard UPC
+  884116464853 belongs to the White/Lunar Light board (Icecat
+  PRO-KB-W-WW + Ubuy X3V4D) and was not carried across colorways
+  to the pinned Dark Side board; the headset has two candidate
+  UPCs (884116469728 manuals.plus, 884116469759 Amazon Lunar
+  Light) and neither is corroborated, so both stay unrecorded; the
+  keyboard MPN WR47C is Dark Side by elimination (X3V4D is Lunar
+  Light); the headset's Dell feed rows ($229.99 / $199.99) lag the
+  $174.99 sale shown on Dell's own search page and techaeris, so
+  the page reads win per the Quill precedent; the AW2726DM's only
+  code is the EU EAN 5397321030553 (single Icecat datasheet), not
+  a US UPC.
+- Variant pinning, recorded explicitly: S3225QS pins Ash White
+  (F06FR) — the only colorway; AW2726DM pins Black (JW05F) — the
+  only colorway; Pro Mouse pins Dark Side of the Moon
+  (PRO-MS-G-DEAM) — Lunar Light (PRO-MS-W-DEAM) is a different
+  colorway at the same $149.99 list; Pro Keyboard pins Dark Side
+  of the Moon (WR47C) — Lunar Light (X3V4D) is a different
+  colorway at the same $199.99 list; Pro Headset pins Dark Side
+  of the Moon — Lunar Light is a different colorway (Best Buy
+  BBY-AWProH-L, SKU 6605024, $199.99) and the AW725H/AW920H are
+  different, cheaper headsets.
+- What does NOT change: the existing 120 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense and M6 Pro
+  untouched, batches 1–19 entries untouched). No other snapshot
+  file is rewritten. No Amazon touch. The daily refresh cron still
+  says "57 models" in its body and needs a count update to 125 on
+  the next edit (parent owns the cron; not touched here).
+- Revisit: all five sale prices should be re-checked after the
+  Early Black Friday event ends Nov 8 (S3225QS $329.99, AW2726DM
+  $319.99, Pro Mouse $129.99, Pro Keyboard $174.99, Pro Headset
+  $174.99); the AW2726DM UPC, Pro Keyboard Dark Side UPC and Pro
+  Headset UPC stay pending until a second non-Amazon US source
+  confirms each; the remaining Dell candidates (S2725QS 27-inch 4K
+  $279.99, AW3226DM 32-inch $299.99, AW2726DL 280 Hz $229.99,
+  AW3225DM 32-inch $249.99, AW2525HM 25-inch 320 Hz $249.99,
+  AW720M $79.99, AW620M $86.99, AW920K $159.99, AW510K $129.99,
+  AW420K $99.99, AW725H $149.99, AW520H $79.99, AW320M $69.99,
+  UltraSharp U3225QE, Dell Pro 7 Webcam WB726, Dell Pro Thunderbolt
+  5 Smart Dock SD25TB5) stay list-only for later batches; the ULT
+  WEAR $148.00 Black Friday street price should be re-checked after
+  Nov 8 (batch 9 revisit, still open); the Sony direct CH720N
+  $89.99 is a sale price and should be re-checked after the sale
+  ends.

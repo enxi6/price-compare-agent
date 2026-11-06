@@ -40,9 +40,9 @@ def test_snapshot_staleness(tmp_path):
 
 
 def test_eval_set_shape():
-    assert len(EVAL_SET) == 120
+    assert len(EVAL_SET) == 125
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 69
+    assert len(verified) == 71
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
@@ -96,12 +96,15 @@ def test_eval_set_shape():
         "corsair-k65-plus-wireless-midnight-grey",
         "corsair-virtuoso-max-wireless-carbon",
         "corsair-frame-4000d-rs-argb-black",
-        "corsair-titan-ii-360-rx-rgb-black"}
+        "corsair-titan-ii-360-rx-rgb-black",
+        "alienware-27-qd-oled-aw2726dm",
+        "alienware-pro-wireless-gaming-keyboard-dark-side-of-the-moon",
+        "alienware-pro-wireless-gaming-headset-dark-side-of-the-moon"}
 
 
 def test_evaluate_counts_fixture_snapshot(tmp_path):
     result = evaluate(_snapshot(tmp_path))
-    assert result["models"] == 120
+    assert result["models"] == 125
     assert result["total_offers"] == 1
     # No UPC in snapshots -> everything lands in "suspected", by design.
     assert result["matched"] == 0 and result["suspected"] == 1

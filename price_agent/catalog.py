@@ -2931,6 +2931,172 @@ EVAL_SET: list[EvalProduct] = [
         "flagship 360 mm AIO and the first CPU cooler in the set. "
         "Black is pinned.",
     ),
+    EvalProduct(
+        key="dell-32-plus-4k-monitor-s3225qs",
+        brand="Dell",
+        model="32 Plus 4K Monitor S3225QS",
+        variant="Ash White (F06FR)",
+        category="monitors",
+        identifiers={"UPC": "884116485131", "MPN": "F06FR"},
+        identifier_sources={
+            "UPC": "Icecat datasheet for DELL-S3225QS (EAN "
+            "5397184962374 / GTIN 0884116485131) + eBay US product "
+            "catalog (GTIN 0884116485131, ePID 21080788835) agree; "
+            "Amazon US also states 884116485131 but is never a "
+            "corroborating source"
+        },
+        status="verified",
+        notes="Dell direct $329.99 (sale vs $369.99 estimated value, "
+        "Dell US page via search-index reads 2026-10-23/26, "
+        "topsave + Windows Central; the Meta feed brand_direct row "
+        "still shows the $369.99 list); Best Buy $379.99 (Model "
+        "S3225QS, SKU 6619489, feed authorized_retailer row — "
+        "suspected, not page-verified); Micro Center $399.99 (feed "
+        "authorized_retailer row — suspected, not page-verified). "
+        "Dell US page confirms Manufacturer Part Number F06FR, "
+        "Ash White, 31.5-inch 4K VA 120 Hz, dual 5 W speakers. "
+        "The regional MPN differs (Ireland MX17X) and was not "
+        "used. Distinct from everything in the set — the S3225QS "
+        "(2025, 4K 120 Hz VA, FreeSync Premium, 99% sRGB, 95% "
+        "DCI-P3, built-in speakers) is Dell's current mainstream "
+        "32-inch 4K monitor and the first Dell monitor in the set. "
+        "Re-check the $329.99 sale price after the Early Black "
+        "Friday event ends Nov 8.",
+    ),
+    EvalProduct(
+        key="alienware-27-qd-oled-aw2726dm",
+        brand="Alienware",
+        model="27 240Hz QD-OLED Gaming Monitor AW2726DM",
+        variant="Black (JW05F)",
+        category="monitors",
+        identifiers={},
+        status="pending",
+        notes="Dell direct $319.99 (sale vs $349.99 estimated value, "
+        "mixed-news 2026-10-30, 'the US listing was accepting "
+        "orders when checked'; Windows Central 2026-10-26 agrees "
+        "at $319.99); Best Buy $349.99 (Model AW2726DM, SKU "
+        "6670439, search-index JSON-LD read); Dell $349.99 (Meta "
+        "feed brand_direct row — the list price). Dell US page "
+        "confirms Manufacturer Part Number JW05F, Black, 26.5-inch "
+        "viewable QD-OLED 2560x1440 240 Hz, 0.03 ms, FreeSync "
+        "Premium. Identifiers PENDING: MPN JW05F confirmed (Dell "
+        "US + CA + AU pages agree; the UK MPN N0XJ0 is regional "
+        "and was not used), but no US UPC surfaced — the only code "
+        "found is EAN 5397321030553 on a single Icecat datasheet "
+        "(EU), so identifiers stay empty per the DualSense "
+        "precedent; re-check next refresh. Not copied: the AW2724DM "
+        "(different, older 180 Hz model); the AW2726DL 280 Hz IPS "
+        "($229.99, different panel); the AW3226DM 32-inch ($299.99, "
+        "different size). Distinct from everything in the set — "
+        "the AW2726DM (April 2026, the cheapest QD-OLED gaming "
+        "monitor on the market at launch, 3-year burn-in warranty) "
+        "is Alienware's current budget QD-OLED monitor and the "
+        "first Alienware monitor in the set. Re-check the $319.99 "
+        "sale price after the Early Black Friday event ends Nov 8.",
+    ),
+    EvalProduct(
+        key="alienware-pro-wireless-gaming-mouse-dark-side-of-the-moon",
+        brand="Alienware",
+        model="Pro Wireless Gaming Mouse",
+        variant="Dark Side of the Moon (PRO-MS-G-DEAM)",
+        category="mice",
+        identifiers={"UPC": "884116464914", "MPN": "PRO-MS-G-DEAM"},
+        identifier_sources={
+            "UPC": "Icecat datasheet for PRO-MS-G-DEAM (EAN "
+            "5397184877548 / GTIN 0884116464914, product color "
+            "Black, multiple locale PDFs of the same datasheet) + "
+            "axitech.be Black listing (545-BBFP PRO-MS-G-DEAM, "
+            "EANs 5397184877548 0884116464914) agree"
+        },
+        status="verified",
+        notes="Dell direct $129.99 (sale vs $149.99 list, Dell US "
+        "Dark Side of the Moon category page, Offer ID 584RN, "
+        "Add to Cart, page-verified 2026-11-06; 4.5 stars, 501 "
+        "reviews); Newegg $160.99 (feed authorized_retailer row — "
+        "suspected; above list, color unstated, not page-verified). "
+        "Dell MPN 2021Y / Dell part 570-BBGJ is the Dell-side code "
+        "for the Dark Side mouse (Ubuy ties 2021Y to Dark Side of "
+        "the Moon; Dell's own accessory listing ties 2021Y to the "
+        "Pro Mouse). Not copied: the Lunar Light UPC 884116464945 "
+        "(PRO-MS-W-DEAM, 545-BBFN, a different colorway); the "
+        "AW720M Tri-Mode ($79.99) and AW620M ($86.99 sale) — "
+        "different, cheaper Alienware mice. Excluded: the "
+        "FlexShopper $136.99 row (lease-to-own marketplace). "
+        "Distinct from the set's Logitech, Razer and Corsair mice — "
+        "the Pro Wireless Mouse (Jan 2024, 4KHz wireless / 8KHz "
+        "wired, <60 g, 26,000 DPI, magnetic-force keyplates, "
+        "designed with 100+ esports athletes) is Alienware's "
+        "flagship pro mouse and the first Alienware mouse in the "
+        "set. Re-check the $129.99 sale price after the Early "
+        "Black Friday event ends Nov 8.",
+    ),
+    EvalProduct(
+        key="alienware-pro-wireless-gaming-keyboard-dark-side-of-the-moon",
+        brand="Alienware",
+        model="Pro Wireless Gaming Keyboard",
+        variant="Dark Side of the Moon (WR47C)",
+        category="keyboards",
+        identifiers={},
+        status="pending",
+        notes="Dell direct $174.99 (sale vs $199.99 list, Dell US "
+        "Dark Side of the Moon category page, Offer ID K6YT7, Add "
+        "to Cart, page-verified 2026-11-06; 4.6 stars, 448 reviews; "
+        "the Dell US product page 580-BBMZ agrees at $174.99 "
+        "InStock); Newegg $294.99 (feed authorized_retailer row — "
+        "suspected; above list, color unstated, not page-verified). "
+        "The Meta feed brand_direct row still shows the $199.99 "
+        "list. MPN WR47C confirmed (Dell US page, Dell part "
+        "580-BBMZ); the color mapping is by elimination — the "
+        "other variant X3V4D is Lunar Light (Ubuy + ShopAbunda + "
+        "Icecat PRO-KB-W-WW), so WR47C is Dark Side of the Moon. "
+        "Identifiers PENDING: the only UPC found, 884116464853, "
+        "belongs to the White/Lunar Light keyboard (Icecat "
+        "datasheet PRO-KB-W-WW + Ubuy X3V4D agree) and was not "
+        "carried across colorways; no Dark Side UPC surfaced, so "
+        "identifiers stay empty per the DualSense precedent; "
+        "re-check next refresh. Not copied: the AW920K Tri-Mode "
+        "($159.99), AW510K Low Profile ($129.99) and AW420K TKL "
+        "($99.99) — different Alienware keyboards. Distinct from "
+        "the set's Logitech, Keychron, Razer and Corsair boards — "
+        "the Pro Wireless Keyboard (Jan 2024, 75%, hot-swappable "
+        "linear switches, tri-mode, up to 798 hours) is Alienware's "
+        "flagship pro keyboard and the first Alienware keyboard in "
+        "the set. Re-check the $174.99 sale price after the Early "
+        "Black Friday event ends Nov 8.",
+    ),
+    EvalProduct(
+        key="alienware-pro-wireless-gaming-headset-dark-side-of-the-moon",
+        brand="Alienware",
+        model="Pro Wireless Gaming Headset",
+        variant="Dark Side of the Moon",
+        category="headphones",
+        identifiers={},
+        status="pending",
+        notes="Dell direct $174.99 (sale vs $199.99 list, Dell US "
+        "search-index read, Offer ID 9K2M1; techaeris Black Friday "
+        "hub 2026-11-05 agrees at $174.99); Best Buy $199.99 "
+        "(Dark Side of the Moon, Model BBY-AWProH-D, SKU 6605023, "
+        "save $30 off comp. value $229.99, search-index page read). "
+        "The Meta feed today shows $229.99 list rows for both "
+        "merchants and a $199.99 Dell row (N6YJD, Dark Side slug) — "
+        "the feed lags the sale, so the page reads win per the "
+        "Quill precedent; re-check after the Early Black Friday "
+        "event ends Nov 8. Identifiers PENDING: the only UPC "
+        "candidate, 884116469728, is stated on manuals.plus alone "
+        "(reproducing the manual's spec table for ASIN B0DHWH425M, "
+        "color unattributed), while Amazon's Lunar Light listing "
+        "states 884116469759 — two colorways, two codes, neither "
+        "corroborated by a second non-Amazon source, so "
+        "identifiers stay empty per the DualSense precedent; "
+        "re-check next refresh. Not copied: the Lunar Light UPC "
+        "884116469759; the AW725H Tri-Mode ($149.99) and AW920H "
+        "($109.99) — different Alienware headsets. Distinct from "
+        "the set's Sony, Bose, JBL, Razer and Corsair headsets — "
+        "the Pro Wireless Headset (2024, 50 mm graphene drivers, "
+        "hybrid ANC, 75-hour battery, 15-minute fast charge, "
+        "detachable boom mic) is Alienware's flagship pro headset "
+        "and the first Alienware headset in the set.",
+    ),
 ]
 
 

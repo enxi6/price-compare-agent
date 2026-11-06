@@ -3316,3 +3316,193 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   working, not a bug). Tests: 19 passed (test_snapshot_eval
   counts updated 115 → 120 for the continuous expansion;
   verified stays 69; the pending set gains the 5 new Corsair keys).
+
+## 058 — 2026-11-06: Expansion batch 20 — 120 → 125 models (DECISIONS 042)
+
+- Dell US store sweep (dell.com, read-only, 2026-11-06
+  ~19:33–19:35 UTC / 11:33–11:35 PT): Dell US product pages confirm
+  model identity and MPNs in page text, but prices render via JS,
+  so Dell direct prices are search-index / category-page reads —
+  the Dark Side of the Moon category page returns full offers with
+  Add to Cart for the Pro Mouse and Pro Keyboard, and the monitor
+  pages return full Tech Specs (S3225QS MPN F06FR, Ash White;
+  AW2726DM MPN JW05F, Black). Dell laptops and desktops are
+  configurable: XPS 14 (2026) DA14260 from ~$1,599 and XPS 14 9440
+  $1,700 sale have no fixed base configuration; Alienware 16 Aurora
+  AC16250 featured config $1,349.99 is Sold Out; XPS Desktop 8960
+  $1,060 sale and Alienware Aurora R16 RTX 5080 from $1,849.99 are
+  configurable — no laptop or desktop was added (DECISIONS 015).
+  Feed shelf observed across the 5 Meta Catalog runs (99 rows):
+  S3225QS Dell $369.99 list / Best Buy $379.99 / Micro Center
+  $399.99; AW2726DM Dell $349.99 list (plus AW3226DM 32-inch
+  $299.99, AW2726DL 280 Hz $229.99, AW3426DWM 34-inch $399.99,
+  AW2725QF 4K $499.99, AW3926QW 39-inch 5K $1,099.99, AW2525HM
+  25-inch 320 Hz $249.99, AW2725DM $269.99, AW3425DWM $349.99);
+  Pro Mouse Best Buy Lunar Light $149.99 / Newegg $160.99 /
+  AW720M $79.99 / AW620M $99.99; Pro Keyboard Best Buy Lunar Light
+  $199.99 / Newegg $294.99 / AW920K $159.99 / AW510K $129.99 /
+  AW420K $99.99; Pro Headset Dell $229.99 + $199.99 (Dark Side
+  slug) / Best Buy Dark Side $229.99 + Lunar Light $199.99 /
+  Newegg $301.99 / AW725H $149.99 / AW920H $109.99 / AW520H $79.99;
+  S3225QC 32-inch 4K QD-OLED $620.41 (Walmart). Full candidate list
+  (list-only): S2725QS 27-inch 4K ~$279.99; S2725DSM 27-inch QHD
+  $189.99; S2725HSM 27-inch FHD $159.99; S2425HSM 24-inch FHD
+  $129.99; SE2426H 24-inch $89.99; S3225QC 32-inch 4K QD-OLED
+  $620.41; UltraSharp U3225QE 32-inch 4K $1,099.99; AW3226DM 32-inch
+  240 Hz $299.99; AW2726DL 27-inch 280 Hz $229.99; AW3225DM 32-inch
+  $249.99; AW2525HM 25-inch 320 Hz $249.99; AW2725DM 27-inch
+  $269.99; AW2725QF 27-inch 4K dual-resolution $499.99; AW3426DWM
+  34-inch 240 Hz $399.99; AW3425DWM 34-inch $349.99; AW3926QW
+  39-inch 5K OLED $1,099.99; AW2725Q 27-inch 4K $799.99; AW720M
+  Tri-Mode Mouse $79.99; AW620M Wireless Mouse $86.99 sale; AW920K
+  Tri-Mode Keyboard $159.99; AW510K Low Profile Keyboard $129.99;
+  AW420K Tenkeyless Keyboard $99.99; AW725H Tri-Mode Headset
+  $149.99; AW920H Tri-Mode Headset $109.99; AW520H Wired Headset
+  $79.99; AW320M Wired Mouse $69.99; Dell Pro 7 Webcam WB726; Dell
+  Pro Thunderbolt 5 Smart Dock SD25TB5; Dell Premier Wireless ANC
+  Headset WL7022 $299.99; Dell Pro Plus Wireless Speakerphone
+  SL525. Not added (no clean pin): XPS 14 (2026), XPS 14 9440,
+  Alienware 16 Aurora, XPS Desktop 8960, Alienware Aurora R16 —
+  all configurable with no retailer-pinned base configuration
+  (DECISIONS 015); Alienware 16 Aurora featured config also Sold
+  Out.
+- Membership check (against the 120-model set, by name, MPN and
+  UPC): grep finds zero 'dell' or 'alienware' brand entries in
+  price_agent/catalog.py — 'Dell' appears only as a merchant in
+  other entries' notes, so no name, MPN or UPC overlap for any of
+  the 5 picked models. S3225QS (F06FR / UPC 884116485131): no
+  match — the set had no Dell monitor at all, and no entry carries
+  that UPC. AW2726DM (JW05F): no match — distinct from the set's
+  monitors (none) and from the AW2724DM (different, older 180 Hz
+  model, not in the set). Pro Mouse (PRO-MS-G-DEAM / UPC
+  884116464914): no match — the set's mice are Logitech, Razer and
+  Corsair, different brands and models. Pro Keyboard (WR47C): no
+  match — distinct from the set's Logitech, Keychron, Razer and
+  Corsair boards. Pro Headset: no match — distinct from the set's
+  Sony, Bose, JBL, Razer and Corsair headsets.
+- Per-model record (all 5 added; identifiers, quotes, pending):
+- Dell 32 Plus 4K Monitor S3225QS, Ash White (F06FR) —
+  identifiers VERIFIED: UPC 884116485131, agreed by the Icecat
+  datasheet for DELL-S3225QS (EAN 5397184962374 / GTIN
+  0884116485131) and the eBay US product catalog (GTIN
+  0884116485131, ePID 21080788835); Amazon US also states it but
+  was not used as corroboration. MPN F06FR confirmed (Dell US
+  page). Not copied: the Ireland MPN MX17X (regional). Quotes
+  (3): Dell direct $329.99 (sale vs $369.99 estimated value,
+  search-index reads 2026-10-23/26, topsave + Windows Central;
+  the feed brand_direct row still shows the $369.99 list); Best
+  Buy $379.99 (Model S3225QS, SKU 6619489, feed row — suspected,
+  not page-verified); Micro Center $399.99 (feed row — suspected,
+  not page-verified). Excluded: non-US retailer rows (ermitazas,
+  k-rauta, nexoltic, cybermoa); the S3225QC QD-OLED rows
+  ($620.41, a different model); the P3225QE/P3225DE Pro rows
+  (different models); the shop.app $249.95 marketplace row.
+- Alienware 27 240Hz QD-OLED Gaming Monitor AW2726DM, Black
+  (JW05F) — identifiers PENDING: MPN confirmed (Dell US + CA +
+  AU pages agree; the UK MPN N0XJ0 is regional and was not used),
+  but no US UPC surfaced — the only code found is EAN
+  5397321030553 on a single Icecat datasheet (EU). Not copied:
+  the AW2724DM (different, older 180 Hz model); the AW2726DL
+  280 Hz IPS ($229.99, different panel); the AW3226DM 32-inch
+  ($299.99, different size). Quotes (3): Dell direct $319.99
+  (sale vs $349.99 Estimated Value, mixed-news 2026-10-30, 'the
+  US listing was accepting orders when checked'; Windows Central
+  2026-10-26 agrees); Best Buy $349.99 (Model AW2726DM, SKU
+  6670439, search-index JSON-LD read); Dell $349.99 (feed
+  brand_direct row — the list price). Excluded: the sigmatiendas
+  $660 row (non-US); the Newegg $426.49 row (title truncated,
+  model unconfirmed); the AW2724DM $314.99 / AW2725DM $269.99
+  Best Buy rows (different models).
+- Alienware Pro Wireless Gaming Mouse, Dark Side of the Moon
+  (PRO-MS-G-DEAM) — identifiers VERIFIED: UPC 884116464914,
+  agreed by the Icecat datasheet for PRO-MS-G-DEAM (EAN
+  5397184877548 / GTIN 0884116464914, product color Black,
+  multiple locale PDFs of the same datasheet) and the axitech.be
+  Black listing (545-BBFP PRO-MS-G-DEAM, EANs 5397184877548
+  0884116464914). Dell MPN 2021Y / Dell part 570-BBGJ is the
+  Dell-side code for the Dark Side mouse (Ubuy ties 2021Y to Dark
+  Side of the Moon; Dell's own accessory listing ties 2021Y to
+  the Pro Mouse). Not copied: the Lunar Light UPC 884116464945
+  (PRO-MS-W-DEAM, 545-BBFN, a different colorway); the AW720M
+  Tri-Mode ($79.99) and AW620M ($86.99 sale) — different, cheaper
+  Alienware mice. Quotes (2): Dell direct $129.99 (sale vs
+  $149.99 list, Dell US Dark Side of the Moon category page,
+  Offer ID 584RN, Add to Cart, page-verified 2026-11-06; 4.5
+  stars, 501 reviews); Newegg $160.99 (feed row — suspected;
+  above list, color unstated, not page-verified). Excluded: the
+  FlexShopper $136.99 row (lease-to-own marketplace); the AW720M
+  $149.99 Dell row (a different model mislabeled in the feed);
+  the Corsair Sabre v2 Pro rows (different brand).
+- Alienware Pro Wireless Gaming Keyboard, Dark Side of the Moon
+  (WR47C) — identifiers PENDING: MPN confirmed (Dell US page,
+  Dell part 580-BBMZ), and the color mapping is by elimination —
+  the other variant X3V4D is Lunar Light (Ubuy + ShopAbunda +
+  Icecat PRO-KB-W-WW), so WR47C is Dark Side of the Moon — but
+  no Dark Side UPC surfaced: the only UPC found, 884116464853,
+  belongs to the White/Lunar Light board (Icecat datasheet
+  PRO-KB-W-WW + Ubuy X3V4D agree) and was not carried across
+  colorways. Not copied: the AW920K Tri-Mode ($159.99), AW510K
+  Low Profile ($129.99) and AW420K TKL ($99.99) — different
+  Alienware keyboards. Quotes (2): Dell direct $174.99 (sale vs
+  $199.99 list, Dell US Dark Side of the Moon category page,
+  Offer ID K6YT7, Add to Cart, page-verified 2026-11-06; 4.6
+  stars, 448 reviews; the Dell US product page 580-BBMZ agrees
+  at $174.99 InStock; the feed brand_direct row still shows the
+  $199.99 list); Newegg $294.99 (feed row — suspected; above
+  list, color unstated, not page-verified). Excluded: the Best
+  Buy Lunar Light $199.99 row (SKU 6571728, a different
+  colorway); the AULA / CHERRY / YUNZII rows (different brands).
+- Alienware Pro Wireless Gaming Headset, Dark Side of the Moon —
+  identifiers PENDING: no MPN pinned (the 83XJY code in a
+  distributor pricelist covers both colorways, so it is a family
+  code, not a Dark Side code; Best Buy's BBY-AWProH-D is a
+  Best Buy-specific model code). The only UPC candidate,
+  884116469728, is stated on manuals.plus alone (reproducing the
+  manual's spec table for ASIN B0DHWH425M, color unattributed),
+  while Amazon's Lunar Light listing states 884116469759 — two
+  colorways, two codes, neither corroborated by a second
+  non-Amazon source, so identifiers stay empty per the DualSense
+  precedent. Not copied: the Lunar Light UPC 884116469759; the
+  AW725H Tri-Mode ($149.99) and AW920H ($109.99) — different
+  Alienware headsets. Quotes (2): Dell direct $174.99 (sale vs
+  $199.99 list, Dell US search-index read, Offer ID 9K2M1;
+  techaeris Black Friday hub 2026-11-05 agrees at $174.99); Best
+  Buy $199.99 (Dark Side of the Moon, Model BBY-AWProH-D, SKU
+  6605023, save $30 off comp. value $229.99, search-index page
+  read). The Meta feed today shows $229.99 list rows for both
+  merchants and a $199.99 Dell row (N6YJD, Dark Side slug) — the
+  feed lags the sale, so the page reads win per the Quill
+  precedent; re-check after the Early Black Friday event ends
+  Nov 8. Excluded: the mydex.shop $319.49 row (unknown merchant,
+  seller_type 'other'); the Newegg $301.99 row (above list,
+  color unstated); the Walmart $228.99 AW720H row (different
+  model); the SteelSeries / Logitech / Turtle Beach rows sold on
+  dell.com (different brands).
+- Not added from the sweep (held for later batches, all current
+  US models, no defect): S2725QS 27-inch 4K ~$279.99; S2725DSM
+  27-inch QHD $189.99; S2725HSM 27-inch FHD $159.99; S2425HSM
+  24-inch FHD $129.99; SE2426H 24-inch $89.99; S3225QC 32-inch 4K
+  QD-OLED $620.41; UltraSharp U3225QE 32-inch 4K $1,099.99;
+  AW3226DM 32-inch 240 Hz $299.99; AW2726DL 27-inch 280 Hz
+  $229.99; AW3225DM 32-inch $249.99; AW2525HM 25-inch 320 Hz
+  $249.99; AW2725DM 27-inch $269.99; AW2725QF 27-inch 4K
+  dual-resolution $499.99; AW3426DWM 34-inch 240 Hz $399.99;
+  AW3425DWM 34-inch $349.99; AW3926QW 39-inch 5K OLED $1,099.99;
+  AW2725Q 27-inch 4K $799.99; AW720M $79.99; AW620M $86.99 sale;
+  AW920K $159.99; AW510K $129.99; AW420K $99.99; AW725H $149.99;
+  AW920H $109.99; AW520H $79.99; AW320M $69.99; Dell Pro 7 Webcam
+  WB726; Dell Pro Thunderbolt 5 Smart Dock SD25TB5; Dell Premier
+  Wireless ANC Headset WL7022 $299.99; Dell Pro Plus Wireless
+  Speakerphone SL525. Not added (no clean pin): XPS 14 (2026),
+  XPS 14 9440, Alienware 16 Aurora, XPS Desktop 8960, Alienware
+  Aurora R16 — all configurable with no retailer-pinned base
+  configuration (DECISIONS 015).
+- Eval on the new snapshot: 125 models, 71 verified identifiers,
+  5 with quotes, 12 total quotes, 0 identifier-matched, 12
+  suspected (snapshot offers carry no identifier — the rule
+  working, not a bug). Tests: 19 passed (test_snapshot_eval
+  counts updated 120 → 125 / 69 → 71 for the continuous
+  expansion; the pending set gains the 3 new pending keys:
+  alienware-27-qd-oled-aw2726dm,
+  alienware-pro-wireless-gaming-keyboard-dark-side-of-the-moon,
+  alienware-pro-wireless-gaming-headset-dark-side-of-the-moon).

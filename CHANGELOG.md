@@ -11,6 +11,35 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Expansion batch 20 (DECISIONS 042, continuous expansion per
+  DECISIONS 027): eval set 120 → 125 models (the 125-model
+  milestone), verified identifiers 69 → 71 (2 of 5 new identifiers
+  verified). New: Dell 32 Plus 4K Monitor S3225QS, Ash White
+  (F06FR, UPC 884116485131 verified — Icecat datasheet + eBay US
+  product catalog agree; $329.99 sale at Dell direct, $379.99 at
+  Best Buy, $399.99 at Micro Center — Dell's current mainstream
+  32-inch 4K monitor, the first Dell monitor in the set),
+  Alienware 27 240Hz QD-OLED Gaming Monitor AW2726DM, Black (JW05F,
+  UPC pending — only the EU EAN 5397321030553 on a single Icecat
+  datasheet; $319.99 sale at Dell direct, $349.99 at Best Buy —
+  Alienware's current budget QD-OLED monitor, the first Alienware
+  monitor in the set), Alienware Pro Wireless Gaming Mouse, Dark
+  Side of the Moon (PRO-MS-G-DEAM, UPC 884116464914 verified —
+  Icecat datasheet + axitech.be Black listing agree; $129.99 sale
+  at Dell direct, $160.99 at Newegg — Alienware's flagship pro
+  mouse), Alienware Pro Wireless Gaming Keyboard, Dark Side of the
+  Moon (WR47C, UPC pending — the only UPC found, 884116464853,
+  belongs to the Lunar Light board; $174.99 sale at Dell direct,
+  $294.99 at Newegg — Alienware's flagship pro keyboard),
+  Alienware Pro Wireless Gaming Headset, Dark Side of the Moon
+  (UPC pending — 884116469728 on manuals.plus alone, 884116469759
+  is the Lunar Light code; $174.99 sale at Dell direct, $199.99 at
+  Best Buy — Alienware's flagship pro headset). Not added: all Dell
+  laptops and desktops (configurable, no retailer-pinned base
+  configuration — DECISIONS 015; Alienware 16 Aurora featured
+  config also Sold Out); the remaining Dell/Alienware candidates
+  stay list-only for later batches. All five sale prices should be
+  re-checked after the Early Black Friday event ends Nov 8.
 - Expansion batch 19 (DECISIONS 041, continuous expansion per
   DECISIONS 027): eval set 115 → 120 models, verified identifiers
   stay 69 (all 5 new Corsair identifiers stay pending on
