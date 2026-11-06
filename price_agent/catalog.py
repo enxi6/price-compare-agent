@@ -1,4 +1,4 @@
-"""Phase 1 evaluation set: 28 standardized electronics models, US market.
+"""Phase 1 evaluation set: 42 standardized electronics models, US market.
 
 Identifier policy (DECISIONS 002): an identifier is recorded only when a
 retailer or manufacturer listing states it for the exact pinned variant.
@@ -631,6 +631,101 @@ EVAL_SET: list[EvalProduct] = [
         "Galaxy Buds FE is a different model. Macy's $149.99 row "
         "is shipped and sold by DataVision (marketplace) and is "
         "excluded per DECISIONS 021.",
+        status="verified",
+    ),
+    # --- Expansion batch 3 (added 2026-11-06, user-approved) ---
+    # 38 -> 42 models. DECISIONS 024, BUILD_LOG 040. AirPods 5 was
+    # already in the set (apple-airpods-5-usbc, MKFW4LL/A, UPC
+    # 195951378978) and was NOT re-added: 4 new models, not 5.
+    EvalProduct(
+        key="sony-ps5-pro",
+        brand="Sony",
+        model="PlayStation 5 Pro",
+        variant="2TB, White, all-digital (1000046529 / CFI-7019B01X)",
+        category="consoles",
+        identifiers={"UPC": "711719595946", "MPN": "1000046529"},
+        identifier_sources={
+            "UPC": "Best Buy US (Model 1000046529, SKU 10145289, UPC "
+            "711719595946) + Amazon US (ASIN B0DGY63Z2H, UPC "
+            "711719595946, MPN 1000046529, Model CFI-7019B01X) + "
+            "Desertcart + SeekMonkey (EAN 0711719595946) agree. "
+            "711719581124 was an unverified guess and was not used."
+        },
+        notes="Bare 2TB console only: no disc drive included (sold "
+        "separately). PlayStation's current PDP lists model CFI-7021 "
+        "and Best Buy's current listing (SKU 6601524) shows Model "
+        "1000046529/1000050805, so the UPC is verified for the "
+        "launch revision (CFI-7019B01X / 1000046529); a separate UPC "
+        "for the CFI-7021 revision was not found and is flagged, not "
+        "assumed. US MSRP $899.99 since 2026-04-02 (PlayStation "
+        "Direct displays $899 rounded); broadly out of stock in the "
+        "US since mid-September 2026 (Best Buy sold out, GameStop "
+        "new unavailable, 2026-11-06).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="nintendo-switch-oled-neon",
+        brand="Nintendo",
+        model="Switch - OLED Model",
+        variant="Neon Blue/Neon Red set (HEGSKABAA; SKU 115464)",
+        category="consoles",
+        identifiers={"UPC": "045496883409", "MPN": "HEGSKABAA"},
+        identifier_sources={
+            "UPC": "Nintendo US store page itself (SKU 115464, GTIN "
+            "00045496883409; UPC-A form 045496883409) + Micro Center "
+            "(SKU 642595, Mfr Part# 045496883409, UPC 045496883409) + "
+            "J&L Game + eBay product identifiers agree for the Neon "
+            "set. Console model HEG-001 (Nintendo hardware page)."
+        },
+        notes="Neon Blue/Neon Red Joy-Con set only: the White set is "
+        "already in the catalog (nintendo-switch-oled-white, UPC "
+        "045496883386) and is a different SKU; Splatoon 3, Mario Red "
+        "and Zelda editions are different SKUs. Nintendo US direct "
+        "$399.99, in stock 2026-11-06; Best Buy $399.00 (Model "
+        "HEGSKABAA, SKU 11897850).",
+        status="verified",
+    ),
+    EvalProduct(
+        key="logitech-lift-graphite",
+        brand="Logitech",
+        model="Lift",
+        variant="Graphite, standard right-handed (910-006466)",
+        category="mice",
+        identifiers={"UPC": "097855170927", "MPN": "910-006466"},
+        identifier_sources={
+            "UPC": "Logitech's own spec sheet (Part # 910-006466, "
+            "Bar code 097855170927, EAN-13) + Desertcart (multiple "
+            "regions, UPC 097855170927, GTIN 00097855170927, ASIN "
+            "B09J1TB35S) + Ubuy agree. A manuals.plus snippet's "
+            "'097855170972' is a truncated typo of the same code."
+        },
+        notes="Right-handed standard edition only: the left-handed "
+        "Lift, for-Business and for-Mac are different SKUs; Rose and "
+        "Off-White are different colors. Logitech direct $79.99, in "
+        "stock 2026-11-06; Dell $69.99 (sale), B&H $74.99.",
+        status="verified",
+    ),
+    EvalProduct(
+        key="meta-quest-3-512gb",
+        brand="Meta",
+        model="Quest 3 (512GB)",
+        variant="512GB (899-00583-01)",
+        category="vr",
+        identifiers={"UPC": "815820024071", "MPN": "899-00583-01"},
+        identifier_sources={
+            "UPC": "B&H Photo (BH # MEQ3512, MFR # 899-00583-01, UPC "
+            "815820024071) + Amazon US (ASIN B0CD1JTBSC, UPC "
+            "815820024071) + Amazon.ca + Desertcart/Ubuy agree. "
+            "Amazon's 'Model Number 899-00585-01' is a different "
+            "code (bundle/box) and was not used; the 128GB Quest 3 "
+            "was phased out in 2024, so 512GB is the only current "
+            "Quest 3 storage tier."
+        },
+        notes="Bare 512GB headset only: the Target GOLF+ bundle and "
+        "the Elite Strap kit are different SKUs; Quest 3S (128GB / "
+        "256GB) is a different model and is already in the set "
+        "(meta-quest-3s-128gb). Meta direct $599.99, in stock "
+        "2026-11-06; NFM, Abt and Newegg also $599.99.",
         status="verified",
     ),
 ]

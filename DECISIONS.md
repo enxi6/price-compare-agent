@@ -479,6 +479,65 @@ written as "superseded by" with the original text kept.
   the next batch; the daily refresh cron still says "28 models" in
   its body and needs a count update to 33 on the next edit.
 
+## 024 (2026-11-06): Expansion batch 3 — eval set 38 → 42, one model per brand
+
+- Decision (user, 2026-11-06, "按这 5 款加"): add the third expansion
+  batch, each brand's current mainstream/new product, drawn from the
+  brand-catalog candidate lists (BUILD_LOG 020/022/023/024/025). One
+  of the five was already in the set, so the batch adds FOUR new
+  models, 38 → 42 — no duplicate key was created (see (e)).
+  (a) Sony PlayStation 5 Pro, 2TB — `sony-ps5-pro`, pinned variant
+  2TB, White, all-digital (1000046529 / CFI-7019B01X). Bare console
+  only; the disc drive is sold separately. UPC 711719595946
+  verified (Best Buy + Amazon US + Desertcart + SeekMonkey agree);
+  the unverified guess 711719581124 was NOT used. PlayStation's
+  current PDP lists model CFI-7021 and Best Buy's current listing
+  shows 1000046529/1000050805 — the UPC is verified for the launch
+  revision; a separate CFI-7021 UPC was not found and is flagged
+  in the entry notes, not assumed.
+  (b) Nintendo Switch - OLED Model, Neon Blue/Neon Red set —
+  `nintendo-switch-oled-neon`, pinned variant Neon set (HEGSKABAA;
+  SKU 115464). The White set is already in the set and is a
+  different SKU; Splatoon 3, Mario Red and Zelda editions are
+  different SKUs.
+  (c) Logitech Lift, Graphite — `logitech-lift-graphite`, pinned
+  variant Graphite, standard right-handed (910-006466). The
+  left-handed Lift, for-Business and for-Mac are different SKUs;
+  Rose and Off-White are different colors.
+  (d) Meta Quest 3, 512GB — `meta-quest-3-512gb`, pinned variant
+  512GB (899-00583-01). The 128GB Quest 3 was phased out in 2024,
+  so 512GB is the only current Quest 3 storage tier; Quest 3S is
+  a different model and is already in the set. Amazon's "Model
+  Number 899-00585-01" is a different code (bundle/box) and was
+  NOT used.
+  (e) Apple AirPods 5 — NOT added: already in the set since
+  2026-10-31 as `apple-airpods-5-usbc`, USB-C case (MKFW4LL/A),
+  UPC 195951378978, verified. DECISIONS 015 (one configuration
+  per model) forbids adding the $149 wireless-charging-case
+  variant (MKFT4LL/A) as a second entry. The batch was approved
+  as five and delivered as four new models plus one
+  already-present; nothing was forced in to make it five.
+- What changes in practice: new snapshot
+  `data/eval_snapshots_batch3_2026-11-06.json` holds 13 quotes
+  across the 4 models (PS5 Pro: 4, OLED Neon: 2, Lift: 3,
+  Quest 3: 4). DECISIONS 021 applied to every quote: no
+  marketplace/third-party rows, no non-US rows, no Amazon. One
+  direct price is price-only (stock not confirmed): PlayStation
+  Direct PS5 Pro $899.00 — the console is broadly out of stock in
+  the US since mid-September 2026 (Best Buy sold out, GameStop
+  new unavailable, 2026-11-06). Eval: 42 models, 38 verified
+  identifiers, 13 quotes, 0 identifier-matched, 13 suspected.
+- What does NOT change: the existing 38 catalog entries are
+  untouched (Kindle still pinned B0CFPL6CFY, DualSense identifiers
+  untouched, MacBook Pro 14 M6 untouched, batch 1 and 2 entries
+  untouched). No other snapshot file is rewritten. No Amazon
+  touch. The daily refresh cron still says "38 models" in its
+  body and needs a count update to 42 on the next edit (parent
+  owns the cron; not touched here).
+- Revisit: PS5 Pro CFI-7021 revision UPC (if it differs from the
+  launch revision's 711719595946); Watch Ultra 4 UPC still needs
+  a second independent US source.
+
 ## 023 (2026-11-06): Expansion batch 2 — eval set 33 → 38, one model per brand
 
 - Decision (user, 2026-11-06, "按这 5 款加"): add the second expansion

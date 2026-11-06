@@ -1020,6 +1020,81 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   bug). Tests: 19 passed (test_snapshot_eval counts updated 28 →
   33 / 26 → 30 for the approved expansion).
 
+## 040 (2026-11-06): Expansion batch 3 — 4 new models added, 38 → 42 (user-approved)
+
+- Apple AirPods 5 — NOT added: already in the eval set since
+  2026-10-31 as `apple-airpods-5-usbc`, USB-C case (MKFW4LL/A),
+  UPC 195951378978, verified (B&H Photo spec + eBay GTIN agree;
+  Best Buy US confirms Model MKFW4LL/A, SKU 6376553, $129). The
+  Meta Catalog round still ran for it (20 rows; Apple direct
+  $129 MKFW4LL/A and $149 MKFT4LL/A wireless-charging-case
+  variant both present) — the $149 variant is a different
+  configuration and was not added per DECISIONS 015. Batch 3 is
+  therefore 4 new models, not 5.
+- PlayStation 5 Pro 2TB, White, all-digital (1000046529 /
+  CFI-7019B01X): identifiers VERIFIED — UPC 711719595946 (Best
+  Buy US, Model 1000046529, SKU 10145289 + Amazon US ASIN
+  B0DGY63Z2H + Desertcart + SeekMonkey EAN 0711719595946 agree)
+  and MPN 1000046529. The guess 711719581124 appears nowhere in
+  any source and was not used. Flagged, not assumed:
+  PlayStation's current PDP lists model CFI-7021 and Best Buy's
+  current listing (SKU 6601524) shows Model 1000046529/1000050805,
+  so the UPC is verified for the launch revision; a separate
+  CFI-7021 UPC was not found. Quotes (4): PlayStation Direct
+  $899.00 (direct.playstation.com lists $899; US MSRP $899.99
+  since 2026-04-02, up from $699.99 launch — stock not confirmed,
+  Oct 2026 coverage reports Direct out of stock), Best Buy
+  $899.99 (page-verified, sold by Best Buy, SOLD OUT), NFM
+  $899.99, GameStop $899.99 (new, Currently Unavailable).
+  Excluded: Best Buy marketplace $1,519.99-$1,672.90, Walmart
+  $1,644.99 marketplace / $1,919.99 3TB bundle, FlexShopper
+  bundle $998.99, renewed $1,264.49, drop-shipper $789.99, and
+  all non-US rows (Siman, ZoneTecno, Titan, Distritech, 961souq,
+  Outgeeked, Pixels-Bytes, GadgetLB, Boolchand); MDG $29.90 and
+  GetItNow $28.05 are nonsense/installment rows, not prices.
+- Switch - OLED Model, Neon Blue/Neon Red set (HEGSKABAA; SKU
+  115464): identifiers VERIFIED — UPC 045496883409 (Nintendo US
+  store page itself, GTIN 00045496883409 + Micro Center SKU 642595
+  + J&L Game + eBay agree) and MPN HEGSKABAA (Best Buy Model).
+  Console model HEG-001. Quotes (2): Nintendo direct $399.99
+  (page-verified JSON-LD, InStock), Best Buy $399.00 (Model
+  HEGSKABAA, SKU 11897850, Add to cart present). Excluded: White
+  set $399.99 (different color, already in the set), Splatoon 3
+  edition $359.99, Mario Red / Zelda rows ($44.99-$54.99, feed
+  price errors for game rows), Walmart $399.99 (seller not
+  confirmed), Walmart bundles $419.99-$459.99, CDW $532.99 /
+  $552.99 (above MSRP), Ayoub $329 (non-US), Walmart JP import
+  $385 (non-US).
+- Logitech Lift Graphite, standard right-handed (910-006466):
+  identifiers VERIFIED — UPC 097855170927 (Logitech's own spec
+  sheet, Part # 910-006466, Bar code 097855170927 + Desertcart
+  multiple regions, GTIN 00097855170927 + Ubuy agree) and MPN
+  910-006466. Quotes (3): Logitech direct $79.99 (page-verified
+  JSON-LD, Graphite, In stock. Ready to ship), Dell $69.99
+  (graphite, sale), B&H $74.99 (InStock, JSON-LD). Excluded:
+  for-Business and for-Mac rows, left-handed rows, Rose /
+  Off-White / Sand rows, EMEA rows, Newegg rows (variant/seller
+  unclear), Sears $116.89 (above MSRP).
+- Meta Quest 3 512GB (899-00583-01): identifiers VERIFIED — UPC
+  815820024071 (B&H Photo BH # MEQ3512, MFR # 899-00583-01 +
+  Amazon US ASIN B0CD1JTBSC + Amazon.ca + Desertcart/Ubuy agree)
+  and MPN 899-00583-01 (B&H MFR # + Best Buy Model + Abt). The
+  128GB Quest 3 was phased out in 2024; 512GB is the only current
+  tier. Quotes (4, all $599.99): Meta direct $599.99 (meta.com
+  JSON-LD, InStock; re-checked by VR.org 2026-11-05), NFM
+  $599.99, Abt $599.99 (899-00583-01), Newegg $599.99 (sold by
+  Newegg). Excluded: Target $599.99 GOLF+ bundle (bundle), QVC
+  $649.99 and CDW $699.99 (above MSRP), Quest 3S rows (different
+  model, already in the set), accessories ($37.99/$39.99 facial
+  interface), Aaron's / Mike's rent-to-own $100/$30 (rental, not
+  sale), Virtuix $599 (third-party checkout).
+- Eval on the new snapshot: 42 models, 38 verified identifiers, 4
+  with quotes, 13 total quotes, 0 identifier-matched, 13 suspected
+  (snapshot offers carry no identifier — the rule working, not a
+  bug). Tests: 19 passed (test_snapshot_eval counts updated 38 →
+  42 / 34 → 38 for the approved expansion; the pending set is
+  unchanged: DualSense, M6 Pro, Watch Series 12, Watch Ultra 4).
+
 ## 039 (2026-11-06): Expansion batch 2 — 5 models added, 33 → 38 (user-approved)
 
 - WF-1000XM6 Black (WF1000XM6/B): identifiers VERIFIED — UPC

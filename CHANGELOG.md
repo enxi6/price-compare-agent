@@ -48,6 +48,24 @@ releases; breaking changes are called out in the release notes.
   in page text): Sony direct WF-1000XM6 $298.00 and Apple direct
   Ultra 4 $799.00.
 
+- Expansion batch 3 (DECISIONS 024, user 2026-11-06): eval set
+  38 → 42 models — Sony PlayStation 5 Pro 2TB White
+  (1000046529 / CFI-7019B01X, UPC 711719595946), Nintendo Switch
+  OLED Model Neon Blue/Neon Red set (HEGSKABAA, SKU 115464, UPC
+  045496883409), Logitech Lift Graphite (910-006466, UPC
+  097855170927), Meta Quest 3 512GB (899-00583-01, UPC
+  815820024071). Apple AirPods 5 was NOT added: already in the
+  set since 2026-10-31 as `apple-airpods-5-usbc` (MKFW4LL/A, UPC
+  195951378978) — the batch is 4 new models, not 5. New snapshot
+  `data/eval_snapshots_batch3_2026-11-06.json` holds 13 quotes
+  across the 4 models (PS5 Pro: 4, OLED Neon: 2, Lift: 3,
+  Quest 3: 4), all DECISIONS 021-clean. Existing 38 entries
+  untouched; no Amazon touch. Eval: 42 models, 38 verified
+  identifiers, 13 quotes, 0 identifier-matched, 13 suspected.
+  One direct price is price-only (stock not confirmed):
+  PlayStation Direct PS5 Pro $899.00 — the console is broadly out
+  of stock in the US since mid-September 2026.
+
 ### Changed
 
 - Daily price refresh 2026-11-06 (first daily run): all 28 models
