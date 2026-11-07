@@ -6077,3 +6077,62 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Deliverable: static web artifact (review build) bundling the same
   consolidated dataset; the repo generator is the durable,
   re-runnable asset.
+
+## 076 — 2026-11-07: Identifier-bearing quote source connected (DECISIONS 059)
+
+- New collector `price_agent/collect_identified.py` (stdlib-only):
+  reads `data/shopify_handles.json` (31 entries, one pinned variant
+  each), fetches each store's public product JSON (`.js`, `.json`
+  fallback), writes
+  `data/eval_snapshots_identified_2026-11-07.json` (31 offers, 29
+  models; 1 hand-verified B&H row appended). Paced 12 s between
+  requests, retry on 429/5xx; per-entry failures are warnings, never
+  fatal. Safety enforced in the collector: only the pinned variant
+  (or the single variant) is ever written; multi-variant without a
+  pin is skipped, never guessed; bundle-titled variants/handles are
+  skipped; the identifier is recorded exactly as the store states
+  it (barcode preferred, else sku); matching is decided by the
+  merge, never here.
+- Two implementation bugs found live and fixed: (1) the `.js`
+  endpoint returns the product object at the top level, not wrapped
+  in a `product` key — the first Keychron pilot run skipped all 7
+  entries with "no variants" before the fix; (2) the config's K8
+  Ultra 8K pin pointed at the Banana variant (barcode
+  4894979057983) while the catalog entry is the Red K8U-J1 (EAN
+  4894979057969) — corrected to variant 43266301755481 after
+  checking each pinned variant's barcode against the catalog.
+  HyperX's 4 null pins were hand-pinned from live `.js` reads
+  (Alloy Rise 75 UPC 197192334096 resolves a pending UPC; the other
+  three HyperX SKUs match the catalog MPNs). Xbox Series X was
+  rate-limited (429) during pinning but collected on the paced sweep
+  via the single-variant fallback ($799.99, catalog UPC).
+- Merge rewrite `price_agent/build_site_snapshot.py`: two-stream
+  merge per DECISIONS 059 (filename-prefix partition + meta-flag
+  cross-check; matched-only supersede; pending-model guard; new
+  meta fields `verified_ranking_models`, `matched_offers`,
+  `suspected_offers`, `identified_source_files`; per-model
+  `identified_source_file` / `identified_collected_at`). Render
+  rewrite `price_agent/build_site.py`: matched offers render in a
+  new "Verified ranking (identifier-matched)" table with a green
+  notice; the empty-ranking warning stays verbatim where nothing
+  matched; the suspected table is unchanged in structure; home /
+  method / coverage copy is conditional on the new counts.
+- Apple hand row: AirPods Pro 3 B&H $224.99, UPC 195950543698,
+  re-verified personally via browser.open on the B&H PDP (In Stock,
+  $224.99, UPC on the page, JSON-LD 224.99 USD, crawled 2026-11-07
+  11:05 UTC). Target Pro 3 $199.99 (TCIN 85978609) was NOT added:
+  price and item identity were re-verified on the PDP, but the UPC
+  did not appear in the extracted page text, so worker evidence
+  alone was not enough for a ranking row.
+- Results: site rebuilt — 200 models, 470 offers (448 Meta + 31
+  identified - 9 superseded), **11 matched offers in 11 verified
+  rankings**, 0 matched on any pending model, 18 no-quote models
+  unchanged. Tests: 52 passed (27 baseline + 9 new merge + 6 new
+  render + 10 new collector). No catalog.py identifier changes; no
+  spending; no registrations; no Amazon.
+- Deliverable: the live site at gopriceproof.com now shows a
+  populated verified ranking on 11 product pages; the other 189
+  pages keep the honest empty-ranking warning and the suspected
+  table. The generator + collector are the durable, re-runnable
+  assets; the daily-refresh cron body edit is proposed to the
+  parent, not done here.

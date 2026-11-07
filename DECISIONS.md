@@ -3444,3 +3444,99 @@ written as "superseded by" with the original text kept.
 - Alternative (not chosen): Build the read-only API alongside v1
   per ROADMAP §3.1 — deferred as above; a full dynamic web app
   (ROADMAP Shape C) — rejected in ROADMAP §3.1, unchanged.
+
+## 059 (2026-11-07): Identifier-bearing quote source — Shopify product JSON primary, hand-verified retailer spec rows secondary
+
+- Decision: Connect an identifier-bearing quote source so product
+  pages get a real verified ranking. Primary source: **Shopify
+  public product JSON** (tier 1, DECISIONS 004) — the store's
+  public `/products/<handle>.js` (`.json` fallback) returns the
+  pinned variant's price + barcode/SKU, a public product interface,
+  not scraping. Secondary source: **hand-verified retailer spec-page
+  rows** (tier 4) for the Apple cluster — B&H (visible-text UPC +
+  MPN + JSON-LD price) first, Target (spec-table UPC + JSON-LD
+  price) second. Each hand row is re-verified personally before it
+  enters a ranking; worker-reported rows are never trusted blind.
+- Why this source: the Meta Catalog returns no identifiers at all
+  (checked: 6,281 items across 302 raw files, zero gtin/upc/ean/mpn/
+  sku/barcode fields), so the v1 ranking was empty everywhere by
+  construction (DECISIONS 058). Shopify JSON is mechanical, tier-1,
+  and the bridge is proven (Meta item URL handle -> store product
+  JSON -> match by pinned `variant_id` -> sku/barcode/price).
+  Retailer JSON-LD was checked and does not expose UPC/GTIN inside
+  the extracted block; brand DTC pages need ~10 brand-specific
+  parsers for a ~106-model ceiling — deferred, not this run.
+- Merge design (new snapshot stream, no catalog changes): identified
+  quotes live in `data/eval_snapshots_identified_YYYY-MM-DD.json`
+  (same `{meta, models}` envelope, `meta.identified: true`); each
+  offer carries `identifier` (raw, never normalized in file),
+  `identifier_kind` (UPC/EAN/MPN/SKU), `source_tier` (1-4),
+  `source`. The merge partitions streams by filename prefix with a
+  meta-flag cross-check that fails the build on disagreement; two
+  independent latest-per-model passes, then union (identified never
+  wholesale-replaces Meta rows). A quote enters the verified ranking
+  ONLY when `identity.match_offers()` matches it against the
+  catalog entry's verified MPN/UPC (GTIN-14 == UPC-12); anything
+  unmatched stays in the suspected table. Supersede is
+  **matched-only**: an identified row replaces a Meta row only on
+  the same merchant + same price AND a match — a mismatched row is
+  a different variant and must not kill a Meta row (this is the one
+  deviation from the literal task wording, recorded here).
+  Pending models can never match (build-failing guard asserts
+  `matched` is empty for them); their identified rows are stored
+  with the identifier preserved so they match later without
+  re-collection. Dedupe on (merchant, normalized identifier, price).
+- Open items from the design draft, decided here: supersede
+  matched-only (above); per-model `identified_source_file` /
+  `identified_collected_at` added to the site snapshot; pilot
+  Shopify first, Apple second; collector config at
+  `data/shopify_handles.json` (one pinned variant per entry,
+  DECISIONS 015/021). Rollback = delete the identified files and
+  rebuild; the Meta stream is untouched.
+- What did NOT change: identifier rules (pending stays pending —
+  98 verified / 102 pending unchanged; no catalog.py identifier
+  changes, no rule relaxation); seller-direct / US-goods only
+  (DECISIONS 021); no Amazon in any way (DECISIONS 018); no
+  spending, no paid tools, no new registrations.
+- Results (2026-11-07): 31 identified offers across 29 models;
+  **11 matched offers, 11 models with a verified ranking**
+  (AirPods Pro 3 B&H $224.99; K8 Ultra 8K Keychron $119.99; Xbox
+  controller ThinkEdu $61.99; WF-1000XM6 Moon Audio $298.00;
+  Buds3 FE Silarius $169.99; Quest 3 Golf+ VR $599.99; Joy-Con 2
+  JustPressPlay $99.99; LinkBuds Fit Worldwidestereo $208.00;
+  Magic Trackpad MelroseMac $129.00; Xbox Series X ShopCGX
+  $799.99; JBL Xtreme 4 Rock & Soul $379.95). 20 identified rows
+  stayed suspected, all correctly: 14 on pending models
+  (identifiers harvested for later matching) and 6 on verified
+  models whose stated identifier does not match the catalog
+  (Switch 2 BrandsMart SKU BEESKB6AA vs MPN BEE-001; LinkBuds Open
+  Beach Camera UPC 196641194861 vs catalog 027242928695; WF-1000XM6
+  Datavision UPC 810141665705 vs catalog 027242933460; WF-1000XM6
+  ListenUp SKU SON-WF1000XM6-BLK vs MPN WF1000XM6/B; XM5
+  BrandsMart SKU WH1000XM5B vs UPC-only catalog entry). The
+  WF-1000XM6 and LinkBuds Open UPC conflicts are merchant-stated
+  code differences, not catalog errors: no catalog change is made
+  on one merchant's say-so; a second independent source is needed
+  before any catalog discussion.
+- Known quirks: the site snapshot file keeps its rolling name
+  `data/site_snapshot_2026-11-06.json` while `meta.snapshot_date`
+  inside is 2026-11-07 (the filename is a legacy label; the date
+  inside is authoritative). The Studio Display XDR row's SKU from
+  MelroseMac contains a control character (`MFEN4LL\x01A`, stored
+  exactly as the store states it, suspected). Two sweep entries hit
+  HTTP 429 (InZone H5 @ Datavision, LinkBuds Fit @
+  Worldwidestereo); LinkBuds Fit was retried once after a pause and
+  collected ($208.00, catalog UPC, matched); InZone H5 @ Datavision
+  was not retried — the model is pending and Focus Camera already
+  harvested its barcode.
+- Deferred (not this run): brand-DTC per-brand parsing; a raw-HTML
+  JSON-LD verification pass (needs a live browser — flagged to the
+  parent); the Target AirPods Pro 3 row ($199.99, TCIN 85978609 —
+  price and item identity re-verified personally, but the UPC was
+  not visible in the extracted PDP text, so the row was NOT added);
+  the daily-refresh cron body edit to insert the identified
+  collection step (parent-owned; proposed, not done).
+- Alternative (not chosen): keep the ranking empty until a perfect
+  source covers all 200 — rejected; a partial, honestly labeled
+  verified ranking (11 of 200) is strictly more truthful than an
+  empty one, and the suspected table is unchanged for the rest.

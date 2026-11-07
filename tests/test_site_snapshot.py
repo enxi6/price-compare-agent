@@ -71,7 +71,11 @@ def test_merge_output_is_exactly_the_catalog(tmp_path):
     assert result["meta"]["pending_identifiers"] == 102
 
 
-def test_merge_invents_nothing(tmp_path):
+def test_merge_invents_nothing_meta_only(tmp_path):
+    """Meta stream only: identifiers are copied from the catalog, never
+    invented. (Identified-stream assertions live in the identified
+    tests below; this test is scoped to the Meta stream, not loosened.)
+    """
     result = build_site_snapshot(_files(tmp_path))
     catalog = {p.key: p for p in EVAL_SET}
     for model in result["models"]:
@@ -82,6 +86,195 @@ def test_merge_invents_nothing(tmp_path):
         for offer in model["offers"]:
             assert offer["identifier"] is None
             assert offer["suspected"] is True
+
+
+def _id_offer(merchant, price, identifier, kind="UPC",
+              url="https://example.com/id",
+              collected_at="2026-11-07T10:00:00Z"):
+    return {
+        "merchant": merchant, "price": price,
+        "title": "Sony WH-1000XM5 Black", "url": url,
+        "collected_at": collected_at, "identifier": identifier,
+        "identifier_kind": kind, "source_tier": 1,
+        "source": "shopify:test-store",
+    }
+
+
+def _identified(tmp_path, models, name="identified.json",
+                collected_at="2026-11-07T10:00:00Z"):
+    data = {
+        "meta": {"collected_at": collected_at, "source": "test",
+                 "source_tier": 1, "identified": True,
+                 "generated_by": "test"},
+        "models": models,
+    }
+    path = tmp_path / name
+    path.write_text(json.dumps(data), encoding="utf-8")
+    return [{"path": str(path), "data": data}]
+
+
+def _xm5(result):
+    return {m["key"]: m for m in result["models"]}["sony-wh1000xm5-black"]
+
+
+def test_identified_offer_matching(tmp_path):
+    identified = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Best Buy", 389.99, "027242923232",
+                      url="https://example.com/bb-id"),
+        ]},
+    })
+    result = build_site_snapshot(_files(tmp_path), identified)
+    xm5 = _xm5(result)
+    matched = [o for o in xm5["offers"] if not o["suspected"]]
+    assert len(matched) == 1
+    assert matched[0]["merchant"] == "Best Buy"
+    assert matched[0]["identifier"] == "027242923232"
+    assert matched[0]["identifier_kind"] == "UPC"
+    assert matched[0]["source"] == "shopify:test-store"
+    assert result["meta"]["matched_offers"] == 1
+    assert result["meta"]["verified_ranking_models"] == 1
+    assert result["meta"]["identified_source_files"] == 1
+
+
+def test_identified_offer_mismatch_stays_suspected(tmp_path):
+    # 027242923249 is the Silver variant's UPC (catalog.py): a real
+    # wrong-variant trap — it must never enter the Black ranking.
+    identified = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Dell", 379.99, "027242923249",
+                      url="https://example.com/dell-id"),
+        ]},
+    })
+    result = build_site_snapshot(_files(tmp_path), identified)
+    xm5 = _xm5(result)
+    assert all(o["suspected"] is True for o in xm5["offers"])
+    assert result["meta"]["matched_offers"] == 0
+    assert result["meta"]["verified_ranking_models"] == 0
+    # The mismatched row is preserved with its identifier (it may
+    # match later if the catalog ever gains that variant), and the
+    # Meta Dell row survives: matched-only supersede (§2.2).
+    dell_rows = [o for o in xm5["offers"] if o["merchant"] == "Dell"]
+    assert len(dell_rows) == 2
+    assert {o["identifier"] for o in dell_rows} == {
+        None, "027242923249"}
+
+
+def test_identified_supersedes_meta_same_merchant_price(tmp_path):
+    identified = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Dell", 379.99, "027242923232",
+                      url="https://example.com/dell-id"),
+        ]},
+    })
+    result = build_site_snapshot(_files(tmp_path), identified)
+    xm5 = _xm5(result)
+    dell_rows = [o for o in xm5["offers"] if o["merchant"] == "Dell"]
+    assert len(dell_rows) == 1  # Meta row replaced, not duplicated
+    assert dell_rows[0]["identifier"] == "027242923232"
+    assert dell_rows[0]["source"] == "shopify:test-store"
+    assert dell_rows[0]["suspected"] is False
+    assert len(xm5["offers"]) == 2  # Dell matched + Best Buy suspected
+
+
+def test_identified_does_not_replace_meta_for_other_merchants(tmp_path):
+    identified = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Dell", 379.99, "027242923232",
+                      url="https://example.com/dell-id"),
+        ]},
+    })
+    result = build_site_snapshot(_files(tmp_path), identified)
+    xm5 = _xm5(result)
+    bb_rows = [o for o in xm5["offers"] if o["merchant"] == "Best Buy"]
+    assert len(bb_rows) == 1
+    assert bb_rows[0]["identifier"] is None
+    assert bb_rows[0]["suspected"] is True
+
+
+def test_identified_dedupe_same_merchant_identifier_price(tmp_path):
+    # Same merchant + identifier + price twice in one file, once as
+    # GTIN-14 and once as UPC-12, different titles/URLs: one row.
+    identified = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Dell", 379.99, "00027242923232",
+                      url="https://example.com/dell-a"),
+            dict(_id_offer("Dell", 379.99, "027242923232",
+                           url="https://example.com/dell-b"),
+                 title="Sony WH-1000XM5 Black (other listing)"),
+        ]},
+    })
+    result = build_site_snapshot(_files(tmp_path), identified)
+    xm5 = _xm5(result)
+    dell_rows = [o for o in xm5["offers"] if o["merchant"] == "Dell"]
+    assert len(dell_rows) == 1
+    assert result["meta"]["matched_offers"] == 1
+
+
+def test_pending_model_never_has_verified_ranking(tmp_path):
+    identified = _identified(tmp_path, {
+        "sony-dualsense-white": {"offers": [
+            _id_offer("Sony", 69.99, "711719541080",
+                      url="https://example.com/ds"),
+        ]},
+        "apple-macbook-pro-14-m6": {"offers": [
+            _id_offer("Apple", 1999.00, "195951080291",
+                      url="https://example.com/m6"),
+        ]},
+    })
+    result = build_site_snapshot(_files(tmp_path), identified)
+    by_key = {m["key"]: m for m in result["models"]}
+    for key in ("sony-dualsense-white", "apple-macbook-pro-14-m6"):
+        assert all(
+            o["suspected"] is True for o in by_key[key]["offers"]
+        )
+    assert result["meta"]["matched_offers"] == 0
+    assert result["meta"]["verified_ranking_models"] == 0
+
+
+def test_meta_counts_include_verified_ranking(tmp_path):
+    identified = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Best Buy", 389.99, "027242923232",
+                      url="https://example.com/bb-id"),
+        ]},
+        "sony-dualsense-white": {"offers": [
+            _id_offer("Sony", 69.99, "711719541080",
+                      url="https://example.com/ds"),
+        ]},
+    })
+    result = build_site_snapshot(_files(tmp_path), identified)
+    meta = result["meta"]
+    assert meta["verified_ranking_models"] == 1
+    assert meta["matched_offers"] == 1
+    assert meta["suspected_offers"] == meta["total_offers"] - 1
+    assert meta["identified_source_files"] == 1
+
+
+def test_identified_unknown_key_ignored(tmp_path):
+    identified = _identified(tmp_path, {
+        "keychron-k8-pro": {"offers": [  # retired key
+            _id_offer("Keychron", 49.99, "4895248870609",
+                      url="https://example.com/k8"),
+        ]},
+    })
+    result = build_site_snapshot(_files(tmp_path), identified)
+    assert len(result["models"]) == 200
+    assert "keychron-k8-pro" not in {m["key"] for m in result["models"]}
+
+
+def test_identifier_normalization_gtin14_matches_upc12(tmp_path):
+    identified = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Best Buy", 389.99, "00027242923232",
+                      url="https://example.com/bb-id"),
+        ]},
+    })
+    result = build_site_snapshot(_files(tmp_path), identified)
+    xm5 = _xm5(result)
+    matched = [o for o in xm5["offers"] if not o["suspected"]]
+    assert len(matched) == 1
+    assert matched[0]["identifier"] == "00027242923232"
 
 
 def test_merge_dedupes_exact_duplicate_rows(tmp_path):

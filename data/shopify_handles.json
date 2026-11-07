@@ -1,0 +1,222 @@
+{
+  "note": "Shopify public product JSON handles, derived from Meta Catalog snapshot URLs (data/site_snapshot_2026-11-06.json). One pinned variant per entry; variant_id null means resolve at collection time (single-variant product) or hand-pin after inspecting the store JSON. Reviewed like the catalog; never hardcode handles in code.",
+  "entries": [
+    {
+      "product_key": "apple-magic-trackpad-usbc",
+      "merchant": "MelroseMac",
+      "store": "melrosemac.com",
+      "handle": "magic-trackpad-usb-c",
+      "variant_id": 46348329517268
+    },
+    {
+      "product_key": "apple-studio-display-xdr-standard-tilt-height",
+      "merchant": "MelroseMac",
+      "store": "melrosemac.com",
+      "handle": "apple-studio-display-27-inch-5k-retina-standard-glass-standard-glass-tilt-adjustable-stand2026",
+      "variant_id": 47681759379668
+    },
+    {
+      "product_key": "dell-27-plus-4k-monitor-s2725qs",
+      "merchant": "ThinkEdu",
+      "store": "thinkedu.com",
+      "handle": "dell-s2725qs-27-plus-4k-27-monitor",
+      "variant_id": 50608574038302
+    },
+    {
+      "product_key": "hyperx-alloy-rise-75-black",
+      "merchant": "HyperX",
+      "store": "hyperx.com",
+      "handle": "hyperx-alloy-rise-75-mechanical-gaming-keyboard",
+      "variant_id": 44827739586717
+    },
+    {
+      "product_key": "hyperx-omen-oled-27q-black",
+      "merchant": "HyperX",
+      "store": "hyperx.com",
+      "handle": "hyperx-omen-oled-27-inch-qhd-240hz-gaming-monitor-omen-oled-27q",
+      "variant_id": 47766607659165
+    },
+    {
+      "product_key": "hyperx-pulsefire-haste-2-pro-slate-grey",
+      "merchant": "HyperX",
+      "store": "hyperx.com",
+      "handle": "hyperx-pulsefire-haste-2-pro-4k-wireless-gaming-mouse",
+      "variant_id": 46359079026845
+    },
+    {
+      "product_key": "hyperx-quadcast-2-s-black",
+      "merchant": "HyperX",
+      "store": "hyperx.com",
+      "handle": "hyperx-quadcast-2-s-usb-microphone",
+      "variant_id": 45953570504861
+    },
+    {
+      "product_key": "jbl-xtreme-4-black",
+      "merchant": "Rock & Soul",
+      "store": "rockandsoul.com",
+      "handle": "jbl-xtreme-4-portable-bluetooth-speaker-powerful-sound-and-deep-bass-black",
+      "variant_id": 40989517217874
+    },
+    {
+      "product_key": "keychron-b39-deep-black",
+      "merchant": "Keychron",
+      "store": "www.keychron.com",
+      "handle": "keychron-b39-wireless-keyboard",
+      "variant_id": 43704718983257
+    },
+    {
+      "product_key": "keychron-b40-deep-black",
+      "merchant": "Keychron",
+      "store": "www.keychron.com",
+      "handle": "keychron-b40-wireless-keyboard",
+      "variant_id": 44554000957529
+    },
+    {
+      "product_key": "keychron-k2-he-special-black",
+      "merchant": "Keychron",
+      "store": "www.keychron.com",
+      "handle": "keychron-k2-he-wireless-magnetic-switch-keyboard",
+      "variant_id": 41846762930265
+    },
+    {
+      "product_key": "keychron-k2-max-black-rgb-aluminum-banana",
+      "merchant": "Keychron",
+      "store": "www.keychron.com",
+      "handle": "keychron-k2-max-qmk-wireless-mechanical-keyboard",
+      "variant_id": 41767535870041
+    },
+    {
+      "product_key": "keychron-k8-ultra-8k",
+      "merchant": "Keychron",
+      "store": "www.keychron.com",
+      "handle": "keychron-k8-ultra-8k-wireless-custom-mechanical-keyboard",
+      "variant_id": 43266301755481
+    },
+    {
+      "product_key": "keychron-q1-knob-navy-blue-red",
+      "merchant": "Keychron",
+      "store": "www.keychron.com",
+      "handle": "keychron-q1",
+      "variant_id": 39898879197273
+    },
+    {
+      "product_key": "keychron-q1-max-carbon-black",
+      "merchant": "Keychron",
+      "store": "www.keychron.com",
+      "handle": "keychron-q1-max-qmk-via-wireless-custom-mechanical-keyboard",
+      "variant_id": 40707102802009
+    },
+    {
+      "product_key": "meta-quest-3-512gb",
+      "merchant": "Golf+ VR",
+      "store": "store.golfplusvr.com",
+      "handle": "meta-quest-3-512gb",
+      "variant_id": 42639321432131
+    },
+    {
+      "product_key": "nintendo-joy-con-2-pair-light-blue-light-red",
+      "merchant": "JustPressPlay",
+      "store": "justpressplayonline.com",
+      "handle": "joy-con-2-controller-light-blue-light-red-ns2",
+      "variant_id": 51231989367098
+    },
+    {
+      "product_key": "nintendo-switch-2",
+      "merchant": "BrandsMart USA",
+      "store": "www.brandsmartusa.com",
+      "handle": "electronics-gaming-nintendo-switch-2-gaming-console",
+      "variant_id": 48203209408770
+    },
+    {
+      "product_key": "razer-kraken-v4-pro-black",
+      "merchant": "Beach Camera",
+      "store": "www.beachcamera.com",
+      "handle": "razer-usa-razer-kraken-v4-pro-wireless-gaming-headset-w-oled",
+      "variant_id": 67106994651507
+    },
+    {
+      "product_key": "samsung-buds3-fe-black",
+      "merchant": "Silarius",
+      "store": "silarius.com",
+      "handle": "samsung-sm-r420nzkaxar-galaxy-buds3-fe-black",
+      "variant_id": 50667417534567
+    },
+    {
+      "product_key": "sony-inzone-h5-black",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "sony-inzone-h5-wireless-gaming-headset-360-spatial-sound-wh-g500-black",
+      "variant_id": 41018901233751
+    },
+    {
+      "product_key": "sony-inzone-h5-black",
+      "merchant": "Focus Camera",
+      "store": "focuscamera.com",
+      "handle": "sony-whg500b-gaming-gaming-accessories",
+      "variant_id": 42152086667312
+    },
+    {
+      "product_key": "sony-linkbuds-clip-black",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "sony-linkbuds-clip-open-ear-truly-wireless-earbuds-black-wflc900-b-w-27-month-axiom-device-care-program",
+      "variant_id": 42559711608919
+    },
+    {
+      "product_key": "sony-linkbuds-fit-black",
+      "merchant": "Worldwidestereo",
+      "store": "www.worldwidestereo.com",
+      "handle": "sony-linkbuds-fit-truly-wireless-noise-cancelling-earbuds-black",
+      "variant_id": 49801459925303
+    },
+    {
+      "product_key": "sony-linkbuds-open-black",
+      "merchant": "Beach Camera",
+      "store": "www.beachcamera.com",
+      "handle": "sony-linkbuds-open-truly-wireless-earbud-headphones-black-with-1-year-warranty",
+      "variant_id": 62178228011379
+    },
+    {
+      "product_key": "sony-wf1000xm6-black",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "sony-wf-1000xm6-noise-cancelling-bluetooth-earbuds-headphones-black-2026-w-27-month-axiom-device-care-program",
+      "variant_id": 42559711379543
+    },
+    {
+      "product_key": "sony-wf1000xm6-black",
+      "merchant": "ListenUp",
+      "store": "listenup.com",
+      "handle": "sony-wf-1000xm6-noise-cancelling-earbuds",
+      "variant_id": 62692171612319
+    },
+    {
+      "product_key": "sony-wf1000xm6-black",
+      "merchant": "Moon Audio",
+      "store": "www.moon-audio.com",
+      "handle": "wf-1000xm6-the-best-truly-wireless-noise-cancelling-earbuds",
+      "variant_id": 53057484751162
+    },
+    {
+      "product_key": "sony-wh1000xm5-black",
+      "merchant": "BrandsMart USA",
+      "store": "www.brandsmartusa.com",
+      "handle": "audio-headphones-headphones-wireless-headphones-wireless-noise-cancelling-dsee-extreme-over-the-ear-headphones-black",
+      "variant_id": 48203639554306
+    },
+    {
+      "product_key": "xbox-series-x-1tb-black",
+      "merchant": "ShopCGX",
+      "store": "shopcgx.com",
+      "handle": "xbox-series-x-1tb-d-h-9-22-20",
+      "variant_id": null
+    },
+    {
+      "product_key": "xbox-wireless-controller-black",
+      "merchant": "ThinkEdu",
+      "store": "thinkedu.com",
+      "handle": "microsoft-xbox-wireless-controller-carbon-black-ep229929",
+      "variant_id": 59499176165662
+    }
+  ]
+}

@@ -11,6 +11,26 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Identifier-bearing quote source (DECISIONS 059): Shopify public
+  product JSON (tier 1) via new `price_agent/collect_identified.py`
+  + `data/shopify_handles.json` (31 pinned-variant entries), and
+  hand-verified retailer spec-page rows (tier 4) for the Apple
+  cluster. New identified snapshot stream
+  `data/eval_snapshots_identified_YYYY-MM-DD.json`; the merge
+  (`price_agent/build_site_snapshot.py`) admits an offer into the
+  verified ranking only when its identifier matches the catalog
+  entry's verified MPN/UPC, with matched-only supersede and a
+  build-failing guard against matched offers on pending models.
+  Result: 31 identified offers across 29 models, 11 matched offers
+  in 11 verified rankings (AirPods Pro 3, K8 Ultra 8K, Xbox
+  controller, WF-1000XM6, Buds3 FE, Quest 3, Joy-Con 2, LinkBuds
+  Fit, Magic Trackpad, Xbox Series X, JBL Xtreme 4); 20 rows stayed
+  suspected, all correctly (14 pending models, 6 verified models
+  with non-matching identifiers). Site rebuilt (470 offers);
+  home/method/coverage copy now reflects the populated rankings.
+  No catalog identifier changes, no rule relaxation, no spending,
+  no registrations, no Amazon.
+
 - Phase 2 website v1 (DECISIONS 058, ROADMAP §3.2 M1.3): pure static
   site — home + search across the 200 models, one compare page per
   model, a method-and-principles page, and a coverage-and-gaps page.

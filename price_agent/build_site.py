@@ -46,6 +46,8 @@ margin-bottom:24px}nav a{margin-right:16px}.muted{color:#555;font-size:.9em}
 .notice{background:#fff8e1;border:1px solid #e6c200;padding:12px 16px;
 border-radius:6px;margin:16px 0}.warn{background:#fdecea;border:1px solid #d93025;
 padding:12px 16px;border-radius:6px;margin:16px 0}
+.ok{background:#e6f4ea;border:1px solid #137333;
+padding:12px 16px;border-radius:6px;margin:16px 0}
 table{border-collapse:collapse;width:100%;margin:12px 0}
 th,td{border:1px solid #ddd;padding:8px;text-align:left;vertical-align:top}
 th{background:#f2f2f2}tr:nth-child(even){background:#fafafa}
@@ -127,6 +129,36 @@ def offer_rows(model: dict, now: datetime) -> str:
     return "\n".join(rows)
 
 
+def verified_rows(model: dict, now: datetime) -> str:
+    """Rows for the verified ranking: matched offers, stored order."""
+    rows = []
+    for rank, offer in enumerate(
+        [o for o in model["offers"] if not o["suspected"]], start=1
+    ):
+        identifier = offer.get("identifier") or ""
+        kind = offer.get("identifier_kind") or ""
+        rows.append(
+            "<tr><td>{rank}</td><td>{merchant}</td><td>{price}</td>"
+            "<td>{total}</td><td>{title}</td>"
+            "<td>{identifier}</td><td>{source}</td>"
+            "<td>{fetched}<br>{fresh}</td></tr>".format(
+                rank=rank,
+                merchant=esc(offer["merchant"]),
+                price=money(offer["price"]),
+                total=(
+                    f"{money(offer['price'])} + shipping unknown"
+                    " (not included)"
+                ),
+                title=esc(offer["title"]),
+                identifier=esc(f"{kind} {identifier}".strip()),
+                source=esc(offer.get("source") or "meta-catalog"),
+                fetched=esc(offer["collected_at"][:16].replace("T", " ")),
+                fresh=freshness_label(offer["collected_at"], now),
+            )
+        )
+    return "\n".join(rows)
+
+
 def product_page(model: dict, now: datetime, snapshot_date: str,
                  generated_at: str, source_file: str) -> str:
     if model["status"] == "verified":
@@ -141,19 +173,58 @@ def product_page(model: dict, now: datetime, snapshot_date: str,
             "ranking.</p>"
         )
         status_tag = '<span class="tag pending">Identifier pending</span>'
-    if model["offers"]:
-        table = (
-            "<h2>Title-matched offers (suspected same product)</h2>"
-            "<p>These offers matched by title only. They are a price "
-            "signal, not a verified same-product ranking: our quote "
-            "source does not return identifiers, so no offer can enter "
-            "the verified ranking yet.</p>"
-            "<table><tr><th>Merchant</th><th>Price</th>"
+    matched = [o for o in model["offers"] if not o["suspected"]]
+    suspected = [o for o in model["offers"] if o["suspected"]]
+    if matched:
+        id_list = ", ".join(
+            f"{esc(k)} {esc(v)}" for k, v in model["identifiers"].items()
+        )
+        ranking = (
+            '<div class="ok"><p><strong>Verified ranking: '
+            f"{len(matched)} identifier-matched offer(s).</strong> "
+            f"These offers matched the verified identifier(s) for this "
+            f"exact variant ({id_list}), ordered by delivered total. "
+            "Shipping is unknown unless shown.</p></div>"
+            "<h2>Verified ranking (identifier-matched)</h2>"
+            "<table><tr><th>Rank</th><th>Merchant</th><th>Price</th>"
             "<th>Landed total</th><th>Listing title</th>"
-            "<th>Source</th><th>Fetched</th></tr>"
-            + offer_rows(model, now)
+            "<th>Identifier</th><th>Source</th><th>Fetched</th></tr>"
+            + verified_rows(model, now)
             + "</table>"
         )
+    else:
+        ranking = (
+            '<div class="warn"><p><strong>Verified ranking: empty.</strong> No\n'
+            "identifier-matched quotes exist in the latest snapshot, because the\n"
+            "quote source we use does not return identifiers. Until an\n"
+            "identifier-returning source is connected, this page shows\n"
+            "title-matched offers only, clearly labeled as such.</p></div>"
+        )
+    if model["offers"]:
+        if not suspected:
+            table = (
+                '<p class="muted">No additional title-matched offers.</p>'
+            )
+        else:
+            suspected_intro = (
+                "These additional offers matched by title only and are not "
+                "in the verified ranking above."
+                if matched else
+                "These offers matched by title only. They are a price "
+                "signal, not a verified same-product ranking: our quote "
+                "source does not return identifiers, so no offer can enter "
+                "the verified ranking yet."
+            )
+            table = (
+                "<h2>Title-matched offers (suspected same product)</h2>"
+                f"<p>{suspected_intro}</p>"
+                "<table><tr><th>Merchant</th><th>Price</th>"
+                "<th>Landed total</th><th>Listing title</th>"
+                "<th>Source</th><th>Fetched</th></tr>"
+                + offer_rows(
+                    {"offers": suspected}, now)
+                + "</table>"
+            )
     else:
         table = (
             '<div class="notice"><p><strong>No quotes in the latest '
@@ -162,19 +233,22 @@ def product_page(model: dict, now: datetime, snapshot_date: str,
             "stock or not listed by the sources we check. That is not a "
             "claim that it is discontinued.</p></div>"
         )
+    identified_note = ""
+    if model.get("identified_source_file"):
+        identified_note = (
+            f" Identifier-bearing quotes: "
+            f"{esc(model['identified_source_file'])} &middot; fetched "
+            f"{esc((model.get('identified_collected_at') or '')[:16].replace('T', ' '))} UTC."
+        )
     body = f"""<p><a href="../index.html">&larr; All models</a> &middot;
 {esc(model['category'])}</p>
 <h1>{esc(model['brand'])} {esc(model['model'])}</h1>
 <p>{esc(model['variant'])} &middot; {status_tag}</p>
 {id_html}
-<div class="warn"><p><strong>Verified ranking: empty.</strong> No
-identifier-matched quotes exist in the latest snapshot, because the
-quote source we use does not return identifiers. Until an
-identifier-returning source is connected, this page shows
-title-matched offers only, clearly labeled as such.</p></div>
+{ranking}
 {table}
 <p class="muted">Source snapshot: {esc(model['source_file'] or 'none')}
-&middot; fetched {esc((model['source_collected_at'] or '')[:16].replace('T', ' '))} UTC.
+&middot; fetched {esc((model['source_collected_at'] or '')[:16].replace('T', ' '))} UTC.{identified_note}
 Shipping is unknown for every offer above, so the landed total is a
 lower bound: item price only, shipping not included. Tax is estimated
 at $0.00. Check the merchant page before buying.</p>"""
@@ -205,6 +279,27 @@ def home_page(data: dict, now: datetime, snapshot_date: str,
         f"<li>{esc(c)}: {n} models</li>"
         for c, n in sorted(cats.items())
     )
+    ranked_models = meta.get("verified_ranking_models", 0)
+    matched_count = meta.get("matched_offers", 0)
+    if ranked_models:
+        notice = (
+            f"<p><strong>Read this first:</strong> {ranked_models} of "
+            f"{meta['models']} models now have a verified ranking from "
+            f"identifier-matched quotes ({matched_count} matched "
+            "offers). Every other product page shows title-matched "
+            "offers only, clearly labeled. That is the rule working as "
+            "designed, not a bug &mdash; see "
+            '<a href="method.html">Method &amp; principles</a>.</p>'
+        )
+    else:
+        notice = (
+            "<p><strong>Read this first:</strong> our quote source "
+            "does not return identifiers, so no offer on this site is in the "
+            "verified ranking yet. Every product page shows title-matched offers "
+            "only, clearly labeled. That is the rule working as designed, not a "
+            "bug &mdash; see "
+            '<a href="method.html">Method &amp; principles</a>.</p>'
+        )
     body = f"""<h1>Buyer-side price comparison</h1>
 <p>Compare prices for 200 standardized electronics models sold in the
 US. Ranking is by delivered total price only. We earn no commission
@@ -213,12 +308,10 @@ from any quote shown, and commissions never affect ranking.</p>
 <span class="stat">{meta['verified_identifiers']}</span> verified identifiers
 &middot; <span class="stat">{meta['pending_identifiers']}</span> pending
 &middot; <span class="stat">{meta['total_offers']}</span> offers in the
-latest snapshot (<strong>{esc(snapshot_date)}</strong>)</p>
-<div class="notice"><p><strong>Read this first:</strong> our quote source
-does not return identifiers, so no offer on this site is in the
-verified ranking yet. Every product page shows title-matched offers
-only, clearly labeled. That is the rule working as designed, not a
-bug &mdash; see <a href="method.html">Method &amp; principles</a>.</p></div>
+latest snapshot (<strong>{esc(snapshot_date)}</strong>) &middot;
+<span class="stat">{ranked_models}</span> models with a verified ranking
+(<span class="stat">{matched_count}</span> matched offers)</p>
+<div class="notice">{notice}</div>
 <input type="search" id="q" placeholder="Search by product name, UPC or MPN&hellip;" autocomplete="off">
 <div id="results"><p class="muted">Type to search all 200 models.</p></div>
 <h2>Browse by category</h2><ul>{cat_list}</ul>
@@ -262,18 +355,14 @@ and never enter the main ranking. An identifier is recorded only when
 two independent sources state it for the exact variant (color, storage
 and connectivity included). Identifiers are never invented, never
 carried across variants, revisions or regions.</p>
-<p><strong>Current state, stated plainly:</strong> our quote source
-(Meta Catalog search) returns no identifiers, so every offer on this
-site is currently title-matched only. The verified ranking is empty on
-every product page until an identifier-returning source is connected.
-The suspected table is shown as what it is &mdash; a price signal,
-not a verified ranking.</p>
+<p><strong>Current state, stated plainly:</strong> {current_state}</p>
 
 <h2>3. Data sources, in tiers</h2>
 <p>Official APIs and feeds first, then affiliate catalogs, then
 structured data, then read-only browser verification. A channel that
 is blocked or prohibited by its terms of service stops there: no
 bypassing verification, no fake identity, no rotating proxies.</p>
+{identified_sources}
 <p><strong>Amazon is not covered in v1.</strong> Its access wall is
 treated as a permanent property of the retailer, not a temporary
 failure. Only legitimate channels will ever be used (its official
@@ -306,11 +395,59 @@ collected. Search runs in your browser; nothing you type leaves the
 page.</p>"""
 
 
-def method_page(snapshot_date: str, generated_at: str,
+def method_page(data: dict, snapshot_date: str, generated_at: str,
                 source_file: str) -> str:
+    meta = data["meta"]
+    ranked_models = meta.get("verified_ranking_models", 0)
+    matched_count = meta.get("matched_offers", 0)
+    if ranked_models:
+        current_state = (
+            f"As of {snapshot_date}, {matched_count} offers across "
+            f"{ranked_models} models are identifier-matched and appear "
+            "in verified rankings. The remaining offers are "
+            "title-matched only. New identifier-returning sources are "
+            "added source by source; a model enters the verified "
+            "ranking only when a quote's identifier matches its "
+            "verified identifier."
+        )
+    else:
+        current_state = (
+            "our quote source (Meta Catalog search) returns no "
+            "identifiers, so every offer on this site is currently "
+            "title-matched only. The verified ranking is empty on "
+            "every product page until an identifier-returning source "
+            "is connected. The suspected table is shown as what it is "
+            "&mdash; a price signal, not a verified ranking."
+        )
+    tier_names = {
+        1: "Shopify public product JSON (tier 1)",
+        2: "affiliate catalogs (tier 2)",
+        3: "structured data from retailer spec pages (tier 3)",
+        4: "browser-verified retailer spec pages (tier 4)",
+    }
+    tiers = sorted(
+        {
+            o.get("source_tier")
+            for m in data["models"]
+            for o in m["offers"]
+            if not o["suspected"] and o.get("source_tier") in tier_names
+        }
+    )
+    if tiers:
+        identified_sources = (
+            "<p>Identifier-bearing quotes currently come from "
+            + ", ".join(tier_names[t] for t in tiers)
+            + ".</p>"
+        )
+    else:
+        identified_sources = ""
+    body = METHOD_BODY.format(
+        current_state=current_state,
+        identified_sources=identified_sources,
+    )
     return render_page(
         "Method & principles — price comparison",
-        METHOD_BODY, "", snapshot_date, generated_at, source_file,
+        body, "", snapshot_date, generated_at, source_file,
     )
 
 
@@ -320,20 +457,24 @@ def coverage_page(data: dict, now: datetime, snapshot_date: str,
     models = data["models"]
     from collections import Counter
     cats = Counter(m["category"] for m in models)
+    ranked_models = meta.get("verified_ranking_models", 0)
+    matched_count = meta.get("matched_offers", 0)
     cat_rows = "".join(
         f"<tr><td>{esc(c)}</td><td>{n}</td>"
         f"<td>{sum(1 for m in models if m['category'] == c and m['status'] == 'verified')}</td>"
-        f"<td>{sum(1 for m in models if m['category'] == c and m['offers'])}</td></tr>"
+        f"<td>{sum(1 for m in models if m['category'] == c and m['offers'])}</td>"
+        f"<td>{sum(1 for m in models if m['category'] == c and any(not o['suspected'] for o in m['offers']))}</td></tr>"
         for c, n in sorted(cats.items())
     )
     model_rows = "".join(
         "<tr><td><a href=\"products/{key}.html\">{brand} {model}</a></td>"
-        "<td>{status}</td><td>{n}</td><td>{fetched}</td></tr>".format(
+        "<td>{status}</td><td>{n}</td><td>{matched}</td><td>{fetched}</td></tr>".format(
             key=esc(m["key"]),
             brand=esc(m["brand"]),
             model=esc(m["model"]),
             status=("Verified" if m["status"] == "verified" else "Pending"),
             n=len(m["offers"]),
+            matched=sum(1 for o in m["offers"] if not o["suspected"]),
             fetched=esc((m["source_collected_at"] or "")[:16].replace("T", " ")),
         )
         for m in models
@@ -350,22 +491,35 @@ def coverage_page(data: dict, now: datetime, snapshot_date: str,
         and age_hours(m["offers"][0]["collected_at"], now)
         > STALE_AFTER_HOURS
     ]
+    if ranked_models:
+        ranking_gap = (
+            f"<li><strong>Verified ranking populated for "
+            f"{ranked_models} of {meta['models']} models "
+            f"({matched_count} matched offers);</strong> the remaining "
+            "models show title-matched offers only.</li>"
+        )
+    else:
+        ranking_gap = (
+            "<li><strong>The verified ranking is empty everywhere.</strong> All\n"
+            f"{meta['total_offers']} offers are title-matched (suspected), because the\n"
+            "quote source returns no identifiers. See the Method page.</li>"
+        )
     body = f"""<h1>Coverage &amp; gaps</h1>
 <p><span class="stat">{meta['models']}</span> models &middot;
 <span class="stat">{meta['verified_identifiers']}</span> verified identifiers
 &middot; <span class="stat">{meta['pending_identifiers']}</span> pending
 &middot; <span class="stat">{meta['total_offers']}</span> offers &middot;
 <span class="stat">{meta['models_with_offers']}</span> models with at least
-one offer. Snapshot date: <strong>{esc(snapshot_date)}</strong>.</p>
+one offer &middot; <span class="stat">{ranked_models}</span> models with a
+verified ranking (<span class="stat">{matched_count}</span> matched offers).
+Snapshot date: <strong>{esc(snapshot_date)}</strong>.</p>
 
 <h2>Gaps, written truthfully</h2>
 <ul>
 <li><strong>{len(no_quotes)} models have no quotes</strong> in the latest
 snapshot: <ul>{no_quote_list}</ul>They may be out of stock or not listed
 by the sources we check. That is not a claim that they are discontinued.</li>
-<li><strong>The verified ranking is empty everywhere.</strong> All
-{meta['total_offers']} offers are title-matched (suspected), because the
-quote source returns no identifiers. See the Method page.</li>
+{ranking_gap}
 <li><strong>{len(stale)} models have offers older than 24 hours</strong>
 and are labeled "Needs re-check" on their pages.</li>
 <li><strong>Amazon is not covered.</strong> See the Method page for why.</li>
@@ -376,10 +530,10 @@ states their identifier.</li>
 
 <h2>Coverage by category</h2>
 <table><tr><th>Category</th><th>Models</th><th>Verified</th>
-<th>With offers</th></tr>{cat_rows}</table>
+<th>With offers</th><th>With verified ranking</th></tr>{cat_rows}</table>
 
 <h2>Coverage by model</h2>
-<table><tr><th>Model</th><th>Identifier</th><th>Offers</th>
+<table><tr><th>Model</th><th>Identifier</th><th>Offers</th><th>Matched</th>
 <th>Latest fetch (UTC)</th></tr>{model_rows}</table>"""
     return render_page(
         "Coverage & gaps — price comparison",
@@ -403,7 +557,7 @@ def build_site(input_path: str, out_dir: str) -> dict:
         pages["index.html"] = home_page(
             data, now, snapshot_date, generated_at, source_file)
         pages["method.html"] = method_page(
-            snapshot_date, generated_at, source_file)
+            data, snapshot_date, generated_at, source_file)
         pages["coverage.html"] = coverage_page(
             data, now, snapshot_date, generated_at, source_file)
         for model in data["models"]:
@@ -423,6 +577,10 @@ def build_site(input_path: str, out_dir: str) -> dict:
         "pages": len(pages),
         "models": len(data["models"]),
         "offers": data["meta"]["total_offers"],
+        "matched_offers": data["meta"].get("matched_offers", 0),
+        "verified_ranking_models": data["meta"].get(
+            "verified_ranking_models", 0
+        ),
         "out_dir": out_dir,
     }
 
@@ -437,7 +595,9 @@ def main() -> None:
     result = build_site(args.input, args.out)
     print(
         f"wrote {result['pages']} pages to {result['out_dir']}/ "
-        f"({result['models']} models, {result['offers']} offers)"
+        f"({result['models']} models, {result['offers']} offers, "
+        f"{result['matched_offers']} matched in "
+        f"{result['verified_ranking_models']} verified rankings)"
     )
 
 

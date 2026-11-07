@@ -1,17 +1,30 @@
 """Build the consolidated site snapshot from all eval snapshots.
 
-Reads every ``data/eval_snapshots*.json`` file and, for each of the 200
-catalog models, keeps the offers from the snapshot with the latest
-``meta.collected_at`` that contains that model. Snapshot keys that are
-not in the current catalog (retired entries, e.g. ``keychron-k8-pro``)
-are ignored, never added: the output is exactly the 200 catalog models.
+Reads every ``data/eval_snapshots*.json`` file (Meta Catalog stream,
+no identifiers) and every ``data/eval_snapshots_identified_*.json``
+file (identifier-bearing quotes, e.g. Shopify public product JSON)
+and, for each of the 200 catalog models, merges the two streams into
+one offer list. Snapshot keys that are not in the current catalog
+(retired entries, e.g. ``keychron-k8-pro``) are ignored, never added:
+the output is exactly the 200 catalog models.
 
-Snapshot offers carry no identifier (the catalog source returns none),
-so every offer in the output is flagged ``suspected: true`` with
-``identifier: None`` -- title-matched only, never the verified ranking.
-Nothing is invented here: identifiers come only from the catalog,
-prices only from snapshots, and a model whose latest snapshot has no
-offers keeps an empty offers list.
+Merge rules (DECISIONS 002/021/059):
+- Within each stream, latest ``meta.collected_at`` per model wins.
+- The two streams union; an identified file never wholesale-replaces
+  a model's Meta rows.
+- An identified row supersedes a Meta row only when it is MATCHED
+  (its identifier equals a catalog verified identifier) and shares
+  the Meta row's merchant and price. A mismatched identified row is a
+  different variant: it joins the suspected table and supersedes
+  nothing.
+- The verified ranking is decided only by ``identity.match_offers``:
+  matched -> ``suspected: False``; everything else -> suspected.
+  Pending models (no verified identifier) can never have a matched
+  offer; the build fails rather than publishing one.
+- Identifiers come only from identified files (recorded exactly as
+  the source stated them), prices only from snapshots, and nothing
+  is invented: a model whose latest snapshots have no offers keeps
+  an empty offers list.
 
 Usage:
     python3 -m price_agent.build_site_snapshot
@@ -27,13 +40,21 @@ import os
 from datetime import datetime, timezone
 
 from .catalog import EVAL_SET
+from .identity import match_offers, normalize_identifier
+from .models import Offer
+from .ranking import rank_offers
 
 SNAPSHOT_GLOB = "data/eval_snapshots*.json"
+IDENTIFIED_GLOB = "data/eval_snapshots_identified_*.json"
 DEFAULT_OUT = "data/site_snapshot_2026-11-06.json"
 
 
 def _parse_collected_at(value: str) -> datetime:
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
+
+
+def _is_identified_path(path: str) -> bool:
+    return os.path.basename(path).startswith("eval_snapshots_identified_")
 
 
 def load_snapshot_files(pattern: str = SNAPSHOT_GLOB) -> list[dict]:
@@ -46,18 +67,19 @@ def load_snapshot_files(pattern: str = SNAPSHOT_GLOB) -> list[dict]:
     return files
 
 
-def build_site_snapshot(snapshot_files: list[dict] | None = None) -> dict:
-    """Merge snapshots into one per-model record for the whole catalog.
+def load_meta_files() -> list[dict]:
+    """Meta stream: every eval snapshot except identified files."""
+    return [
+        entry
+        for entry in load_snapshot_files()
+        if not _is_identified_path(entry["path"])
+    ]
 
-    Returns a dict with ``meta`` (counts, source files, generation time)
-    and ``models`` (one entry per catalog model, in catalog order).
-    """
-    if snapshot_files is None:
-        snapshot_files = load_snapshot_files()
 
-    # Latest observation per model key: (collected_at, source_path, offers).
+def _latest_per_model(files: list[dict]) -> dict[str, tuple[datetime, str, list[dict]]]:
+    """Latest observation per model key: (collected_at, source_path, offers)."""
     latest: dict[str, tuple[datetime, str, list[dict]]] = {}
-    for entry in snapshot_files:
+    for entry in files:
         path = entry["path"]
         data = entry["data"]
         collected_at = _parse_collected_at(data["meta"]["collected_at"])
@@ -65,40 +87,248 @@ def build_site_snapshot(snapshot_files: list[dict] | None = None) -> dict:
             offers = model_data.get("offers", [])
             if key not in latest or collected_at > latest[key][0]:
                 latest[key] = (collected_at, path, offers)
+    return latest
+
+
+def _exact_dedupe(rows: list[dict]) -> list[dict]:
+    seen = set()
+    out = []
+    for row in rows:
+        key = (
+            row["merchant"],
+            float(row["price"]),
+            row.get("title", ""),
+            row.get("url", ""),
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(row)
+    return out
+
+
+def _identified_dedupe(rows: list[dict]) -> list[dict]:
+    """Collapse identified rows on (merchant, normalized identifier, price).
+
+    Keeps the lowest source_tier, then earliest collected_at, then
+    shortest url — the same merchant selling the same identified
+    product at the same price is one offer, however often collected.
+    """
+    best: dict[tuple, dict] = {}
+    for row in rows:
+        key = (
+            row["merchant"].strip().casefold(),
+            normalize_identifier(row["identifier"]),
+            round(float(row["price"]), 2),
+        )
+        current = best.get(key)
+        if current is None:
+            best[key] = row
+            continue
+        candidate_rank = (
+            row.get("source_tier") or 99,
+            row.get("collected_at") or "",
+            len(row.get("url") or ""),
+        )
+        current_rank = (
+            current.get("source_tier") or 99,
+            current.get("collected_at") or "",
+            len(current.get("url") or ""),
+        )
+        if candidate_rank < current_rank:
+            best[key] = row
+    return list(best.values())
+
+
+def _to_offer(row: dict, collected_at: str) -> Offer:
+    return Offer(
+        merchant=row["merchant"],
+        title=row.get("title", ""),
+        identifier=row.get("identifier"),
+        price=float(row["price"]),
+        shipping=None,
+        tax_estimate=0.0,
+        url=row.get("url", ""),
+        in_stock=row.get("in_stock", True),
+        fetched_at=row.get("collected_at") or collected_at,
+    )
+
+
+def build_site_snapshot(snapshot_files: list[dict] | None = None,
+                        identified_files: list[dict] | None = None) -> dict:
+    """Merge snapshots into one per-model record for the whole catalog.
+
+    Returns a dict with ``meta`` (counts, source files, generation time)
+    and ``models`` (one entry per catalog model, in catalog order).
+    When ``snapshot_files`` is passed explicitly (tests), the identified
+    stream defaults to empty so fixtures stay hermetic; the real run
+    loads both globs.
+    """
+    if snapshot_files is None:
+        snapshot_files = load_meta_files()
+        if identified_files is None:
+            identified_files = load_snapshot_files(IDENTIFIED_GLOB)
+    elif identified_files is None:
+        identified_files = []
+
+    for entry in snapshot_files:
+        if entry["data"].get("meta", {}).get("identified"):
+            raise ValueError(
+                f"Meta stream file {entry['path']} carries "
+                "meta.identified=true; move it to the identified stream"
+            )
+    for entry in identified_files:
+        if not entry["data"].get("meta", {}).get("identified"):
+            raise ValueError(
+                f"Identified stream file {entry['path']} lacks "
+                "meta.identified=true; the filename prefix and the meta "
+                "flag must agree"
+            )
+
+    meta_latest = _latest_per_model(snapshot_files)
+    identified_latest = _latest_per_model(identified_files)
+
+    all_dates = [
+        _parse_collected_at(entry["data"]["meta"]["collected_at"])
+        for entry in snapshot_files + identified_files
+    ]
+    snapshot_date = (
+        max(all_dates).date().isoformat() if all_dates
+        else datetime.now(timezone.utc).date().isoformat()
+    )
 
     models_out = []
     total_offers = 0
+    matched_offers = 0
+    verified_ranking_models = 0
     for product in EVAL_SET:
-        collected_at, source_path, offers = latest.get(
+        collected_at, source_path, meta_offers = meta_latest.get(
             product.key, (None, None, [])
         )
-        clean_offers = []
-        seen_rows = set()
-        for offer in offers:
-            row = (
-                offer["merchant"],
-                float(offer["price"]),
-                offer.get("title", ""),
-                offer.get("url", ""),
+        id_collected_at, id_source_path, id_offers = identified_latest.get(
+            product.key, (None, None, [])
+        )
+
+        meta_rows = [
+            {
+                "merchant": offer["merchant"],
+                "price": float(offer["price"]),
+                "title": offer.get("title", ""),
+                "url": offer.get("url", ""),
+                "collected_at": (
+                    collected_at.isoformat() if collected_at else None
+                ),
+                "identifier": None,
+                "identifier_kind": None,
+                "source_tier": None,
+                "source": "meta-catalog",
+                "in_stock": offer.get("in_stock", True),
+            }
+            for offer in _exact_dedupe(meta_offers)
+        ]
+        identified_rows = [
+            {
+                "merchant": offer["merchant"],
+                "price": float(offer["price"]),
+                "title": offer.get("title", ""),
+                "url": offer.get("url", ""),
+                "collected_at": offer.get("collected_at"),
+                "identifier": offer["identifier"],
+                "identifier_kind": offer.get("identifier_kind"),
+                "source_tier": offer.get("source_tier"),
+                "source": offer.get("source"),
+                "in_stock": offer.get("in_stock", True),
+            }
+            for offer in _identified_dedupe(_exact_dedupe(id_offers))
+            if offer.get("identifier")
+        ]
+
+        # Match gate: only identity.match_offers decides the ranking.
+        merged = meta_rows + identified_rows
+        offers = [
+            _to_offer(
+                row,
+                (collected_at.isoformat() if collected_at else ""),
             )
-            if row in seen_rows:
-                continue
-            seen_rows.add(row)
-            clean_offers.append(
-                {
-                    "merchant": offer["merchant"],
-                    "price": float(offer["price"]),
-                    "title": offer.get("title", ""),
-                    "url": offer.get("url", ""),
-                    "collected_at": (
-                        collected_at.isoformat() if collected_at else None
-                    ),
-                    "identifier": None,
-                    "suspected": True,
-                }
+            for row in merged
+        ]
+        matched, _suspected = match_offers(offers, product)
+        if not product.identifiers:
+            # Pending models can never have a verified ranking. The
+            # matcher already returns ([], all) for them; this guard
+            # fails the build rather than publishing a contradiction.
+            assert not matched, (
+                f"pending model {product.key} has matched offers"
             )
-        clean_offers.sort(key=lambda o: (o["price"], o["merchant"]))
-        total_offers += len(clean_offers)
+        matched_ids = {id(o) for o in matched}
+
+        # Supersede: a MATCHED identified row replaces the Meta row
+        # with the same merchant and price (it carries the identifier
+        # the Meta row lacks). Mismatched rows supersede nothing.
+        matched_rows = [
+            row for row, offer in zip(merged, offers)
+            if id(offer) in matched_ids
+        ]
+        meta_keep = []
+        for row in meta_rows:
+            dropped = any(
+                mrow["merchant"].strip().casefold()
+                == row["merchant"].strip().casefold()
+                and round(mrow["price"], 2) == round(row["price"], 2)
+                for mrow in matched_rows
+                if mrow.get("identifier") is not None
+            )
+            if not dropped:
+                meta_keep.append(row)
+        identified_keep = [
+            row for row in identified_rows
+        ]
+        kept = meta_keep + identified_keep
+        kept_offers = [
+            _to_offer(
+                row,
+                (collected_at.isoformat() if collected_at else ""),
+            )
+            for row in kept
+        ]
+        kept_matched, _kept_suspected = match_offers(kept_offers, product)
+        if not product.identifiers:
+            assert not kept_matched, (
+                f"pending model {product.key} has matched offers"
+            )
+        kept_matched_ids = {id(o) for o in kept_matched}
+        ranked = rank_offers(kept_matched)
+        suspected_rows = [
+            dict(row)
+            for row, offer in zip(kept, kept_offers)
+            if id(offer) not in kept_matched_ids
+        ]
+        suspected_rows.sort(key=lambda o: (o["price"], o["merchant"]))
+        # Re-emit rows in ranked-then-suspected order, flags from the
+        # split. Paired by position, never by value: two rows may
+        # share merchant/price/title and still be different offers.
+        # split. Paired by position, never by value: two rows may
+        # share merchant/price/title and still be different offers.
+        ordered = []
+        for offer in ranked:
+            # rank_offers returns the same Offer objects in sorted
+            # order; locate them by identity.
+            row = None
+            for idx, candidate in enumerate(kept_offers):
+                if candidate is offer:
+                    row = dict(kept[idx])
+                    break
+            assert row is not None
+            row["suspected"] = False
+            ordered.append(row)
+        for out_row in suspected_rows:
+            out_row["suspected"] = True
+            ordered.append(out_row)
+
+        total_offers += len(ordered)
+        matched_offers += len(ranked)
+        if ranked:
+            verified_ranking_models += 1
         models_out.append(
             {
                 "key": product.key,
@@ -108,12 +338,20 @@ def build_site_snapshot(snapshot_files: list[dict] | None = None) -> dict:
                 "category": product.category,
                 "status": product.status,
                 "identifiers": dict(product.identifiers),
-                "offers": clean_offers,
+                "offers": ordered,
                 "source_file": (
                     os.path.basename(source_path) if source_path else None
                 ),
                 "source_collected_at": (
                     collected_at.isoformat() if collected_at else None
+                ),
+                "identified_source_file": (
+                    os.path.basename(id_source_path)
+                    if id_source_path else None
+                ),
+                "identified_collected_at": (
+                    id_collected_at.isoformat()
+                    if id_collected_at else None
                 ),
             }
         )
@@ -122,21 +360,29 @@ def build_site_snapshot(snapshot_files: list[dict] | None = None) -> dict:
     return {
         "meta": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
-            "snapshot_date": "2026-11-06",
+            "snapshot_date": snapshot_date,
             "source_files": len(snapshot_files),
+            "identified_source_files": len(identified_files),
             "models": len(models_out),
             "verified_identifiers": verified,
             "pending_identifiers": len(models_out) - verified,
             "total_offers": total_offers,
+            "matched_offers": matched_offers,
+            "suspected_offers": total_offers - matched_offers,
+            "verified_ranking_models": verified_ranking_models,
             "models_with_offers": sum(
                 1 for m in models_out if m["offers"]
             ),
             "note": (
-                "Latest snapshot per model (by collected_at). Offers carry "
-                "no identifier: the catalog source returns none, so every "
-                "offer is title-matched (suspected), never the verified "
-                "ranking. Prices are as of their snapshot date; anything "
-                "older than 24h needs re-check."
+                "Latest snapshot per model (by collected_at) from the "
+                "Meta Catalog stream, unioned with identifier-bearing "
+                "quotes (Shopify public product JSON and "
+                "browser-verified retailer spec pages). An offer enters "
+                "the verified ranking only when its identifier matches "
+                "the catalog's verified identifier for that exact "
+                "variant; everything else is title-matched (suspected). "
+                "Prices are as of their snapshot date; anything older "
+                "than 24h needs re-check."
             ),
         },
         "models": models_out,
@@ -151,8 +397,9 @@ def main() -> None:
     parser.add_argument("--glob", default=SNAPSHOT_GLOB)
     args = parser.parse_args()
 
-    files = load_snapshot_files(args.glob)
-    result = build_site_snapshot(files)
+    files = load_meta_files()
+    identified = load_snapshot_files(IDENTIFIED_GLOB)
+    result = build_site_snapshot(files, identified)
     with open(args.out, "w", encoding="utf-8") as handle:
         json.dump(result, handle, indent=2, ensure_ascii=False)
     meta = result["meta"]
@@ -160,7 +407,11 @@ def main() -> None:
         f"wrote {args.out}: {meta['models']} models, "
         f"{meta['verified_identifiers']} verified / "
         f"{meta['pending_identifiers']} pending, "
-        f"{meta['total_offers']} offers from {meta['source_files']} files, "
+        f"{meta['total_offers']} offers "
+        f"({meta['matched_offers']} matched, "
+        f"{meta['verified_ranking_models']} models with a verified "
+        f"ranking) from {meta['source_files']} files + "
+        f"{meta['identified_source_files']} identified files, "
         f"{meta['models_with_offers']} models with offers"
     )
 
