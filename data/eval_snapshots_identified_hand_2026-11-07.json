@@ -22,6 +22,22 @@
           "in_stock": true
         }
       ]
+    },
+    "apple-macbook-pro-14-m6": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 1999.00,
+          "title": "Apple 14\" MacBook Pro (M6, Space Black)",
+          "url": "https://www.bhphotovideo.com/c/product/2010245-REG/apple_mhwt4ll_a_14_inch_macbook_pro_apple.html",
+          "collected_at": "2026-11-07T21:05:43Z",
+          "identifier": "195951080291",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07; price + UPC on the same page)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

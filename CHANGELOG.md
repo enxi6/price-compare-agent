@@ -82,6 +82,12 @@ releases; breaking changes are called out in the release notes.
   offers. Test count guard updated (98 → 99) and the pending-model
   fixture switched from the M6 to the DualSense Edge; 52 tests pass.
 
+- M6 first verified ranking (hand row, DECISIONS 059 mechanism):
+  B&H Photo $1,999.00 for the MacBook Pro 14 M6 (UPC 195951080291,
+  in stock, price + UPC on the same spec page, re-verified
+  2026-11-07 before ingest) added to the hand-identified file.
+  Verified ranking 54 → 55 of 200 models, matched offers 60 → 61.
+
 - Phase 2 website v1 (DECISIONS 058, ROADMAP §3.2 M1.3): pure static
   site — home + search across the 200 models, one compare page per
   model, a method-and-principles page, and a coverage-and-gaps page.

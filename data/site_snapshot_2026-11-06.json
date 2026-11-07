@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-11-07T20:59:18.734652+00:00",
+    "generated_at": "2026-11-07T21:05:52.766984+00:00",
     "snapshot_date": "2026-11-07",
     "source_files": 47,
     "identified_source_files": 4,
     "models": 200,
     "verified_identifiers": 99,
     "pending_identifiers": 101,
-    "total_offers": 650,
-    "matched_offers": 60,
+    "total_offers": 651,
+    "matched_offers": 61,
     "suspected_offers": 590,
-    "verified_ranking_models": 54,
+    "verified_ranking_models": 55,
     "models_with_offers": 174,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -1458,6 +1458,19 @@
       },
       "offers": [
         {
+          "merchant": "B&H Photo",
+          "price": 1999.0,
+          "title": "Apple 14\" MacBook Pro (M6, Space Black)",
+          "url": "https://www.bhphotovideo.com/c/product/2010245-REG/apple_mhwt4ll_a_14_inch_macbook_pro_apple.html",
+          "collected_at": "2026-11-07T21:05:43Z",
+          "identifier": "195951080291",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07; price + UPC on the same page)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Apple",
           "price": 1999.0,
           "title": "14-inch MacBook Pro - Space Black",
@@ -1486,8 +1499,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-07.json",
       "source_collected_at": "2026-11-07T20:32:23.346397+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "apple-mac-mini-m6",

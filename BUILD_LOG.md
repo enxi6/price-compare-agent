@@ -6323,3 +6323,17 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   rankings (54 of 200, 60 matched, 650 offers). Tests 52 pass;
   count guard updated 98 → 99; pending fixture M6 → DualSense Edge.
 - Site rebuilt; M6 and Kindle pages verified locally before push.
+## 081 — 2026-11-07: M6 first verified ranking via B&H hand row
+
+- Hand-verified tier-4 row added (DECISIONS 059 mechanism): MacBook
+  Pro 14 M6 @ B&H Photo $1,999.00, UPC 195951080291, in stock —
+  price + UPC on the same B&H spec page, re-verified 2026-11-07
+  21:05 UTC before ingest. Row appended to the hand file
+  (eval_snapshots_identified_hand_2026-11-07.json), which the
+  collector never overwrites.
+- Result: verified ranking 54 → 55 of 200 models; matched offers
+  60 → 61; total offers 650 → 651. M6 page now shows B&H $1,999.00
+  in the verified ranking; Apple and Best Buy $1,999.00 rows stay
+  suspected (identifier-null Meta rows, correctly unmatched).
+- Tests 52 pass. No catalog identifier changes, no DECISIONS
+  changes, no models added, no Amazon touch, no spending.
