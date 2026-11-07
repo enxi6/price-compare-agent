@@ -1,5 +1,5 @@
 {
-  "note": "Shopify public product JSON handles, derived from Meta Catalog snapshot URLs (data/site_snapshot_2026-11-06.json). One pinned variant per entry; variant_id null means resolve at collection time (single-variant product) or hand-pin after inspecting the store JSON. Reviewed like the catalog; never hardcode handles in code.",
+  "note": "Shopify public product JSON handles. One pinned variant per entry; variant_id null means resolve at collection time (single-variant product) or hand-pin after inspecting the store JSON. Reviewed like the catalog; never hardcode handles in code. Expansion 2026-11-07 (DECISIONS 061): 50 new pins across 44 models (Expercom, Datavision, Beach Camera, Focus Camera, Audio46, Heart Rate Monitors USA, Keychron, HyperX, Contender Bicycles, Incycle, Recovery For Athletes, CompTechDirect, 6ave). 7 out-of-stock pins HELD, not in config (see DECISIONS 061).",
   "entries": [
     {
       "product_key": "apple-magic-trackpad-usbc",
@@ -217,6 +217,356 @@
       "store": "thinkedu.com",
       "handle": "microsoft-xbox-wireless-controller-carbon-black-ep229929",
       "variant_id": 59499176165662
+    },
+    {
+      "product_key": "garmin-edge-1050",
+      "merchant": "Focus Camera",
+      "store": "focuscamera.com",
+      "handle": "garmin-010-02890-00-automotive-electronics-gps-navigation-systems",
+      "variant_id": 42151029932080
+    },
+    {
+      "product_key": "garmin-edge-1050",
+      "merchant": "Beach Camera",
+      "store": "beachcamera.com",
+      "handle": "garmin-edge-1050-premium-cycling-computer-vivid-color-touchscreen-display",
+      "variant_id": 52753531339123
+    },
+    {
+      "product_key": "garmin-edge-1050",
+      "merchant": "6ave",
+      "store": "6ave.com",
+      "handle": "garmin-edge-1050%C2%AE-premium-cycling-computer-vivid-color-touchscreen-display-built-in-speaker-advanced-training-and-group-ride-features-road-hazard-alerts",
+      "variant_id": 47816740307100
+    },
+    {
+      "product_key": "garmin-edge-1050",
+      "merchant": "Contender Bicycles",
+      "store": "contenderbicycles.com",
+      "handle": "garmin-edge-1050",
+      "variant_id": 45544513437941
+    },
+    {
+      "product_key": "garmin-edge-850",
+      "merchant": "Incycle",
+      "store": "incycle.com",
+      "handle": "garmin-edge-850",
+      "variant_id": 45652728348803
+    },
+    {
+      "product_key": "garmin-edge-850",
+      "merchant": "Contender Bicycles",
+      "store": "contenderbicycles.com",
+      "handle": "garmin-edge-850-cycling-computer",
+      "variant_id": 47036609265909
+    },
+    {
+      "product_key": "garmin-forerunner-165-black-slate-gray",
+      "merchant": "Focus Camera",
+      "store": "focuscamera.com",
+      "handle": "garmin-010-02863-20-wearable-technology-smart-devices-smartwatches",
+      "variant_id": 42159100067888
+    },
+    {
+      "product_key": "garmin-forerunner-165-black-slate-gray",
+      "merchant": "Heart Rate Monitors USA",
+      "store": "heartratemonitorsusa.com",
+      "handle": "garmin-forerunner-165-gps-running-watch",
+      "variant_id": 42767324971181
+    },
+    {
+      "product_key": "garmin-venu-3-black",
+      "merchant": "Focus Camera",
+      "store": "focuscamera.com",
+      "handle": "garmin-010-02784-01-wearable-technology-smart-devices-smartwatches",
+      "variant_id": 42168333008944
+    },
+    {
+      "product_key": "garmin-venu-3-black",
+      "merchant": "Heart Rate Monitors USA",
+      "store": "heartratemonitorsusa.com",
+      "handle": "garmin-venu-3-gps-smartwatch",
+      "variant_id": 42365028335789
+    },
+    {
+      "product_key": "garmin-venu-4-45mm-silver-gray",
+      "merchant": "Heart Rate Monitors USA",
+      "store": "heartratemonitorsusa.com",
+      "handle": "garmin-venu-4-advanced-health-and-fitness-gps-smartwatch",
+      "variant_id": 45698294415533
+    },
+    {
+      "product_key": "garmin-vivoactive-6-slate-black",
+      "merchant": "Heart Rate Monitors USA",
+      "store": "heartratemonitorsusa.com",
+      "handle": "garmin-vivoactive-6-gps-smartwatch",
+      "variant_id": 44321902461101
+    },
+    {
+      "product_key": "garmin-instinct-3-amoled-45mm-black",
+      "merchant": "Heart Rate Monitors USA",
+      "store": "heartratemonitorsusa.com",
+      "handle": "garmin-instinct-3-rugged-outdoor-gps-smartwatch",
+      "variant_id": 45703839383725
+    },
+    {
+      "product_key": "garmin-forerunner-570-42mm-raspberry",
+      "merchant": "Recovery For Athletes",
+      "store": "recoveryforathletes.com",
+      "handle": "garmin-forerunner-570-advanced-running-smartwatch",
+      "variant_id": 47167034196219
+    },
+    {
+      "product_key": "dell-ultrasharp-32-4k-thunderbolt-hub-monitor-u3225qe",
+      "merchant": "CompTechDirect",
+      "store": "comptechdirect.com",
+      "handle": "dell-ultrasharp-31-5-4k-uhd-thunderbolt-hub-monitor-16-9-5ms-3000-1-contrast-dell-u3225qe",
+      "variant_id": 46344402567386
+    },
+    {
+      "product_key": "sony-wh1000xm5-black",
+      "merchant": "Focus Camera",
+      "store": "focuscamera.com",
+      "handle": "sony-wh1000xm5b-audio-electronics-headphones-earbuds",
+      "variant_id": 42755358130224
+    },
+    {
+      "product_key": "sony-wh-ch720n-black",
+      "merchant": "Beach Camera",
+      "store": "beachcamera.com",
+      "handle": "sony-wh-ch720n-wireless-noise-cancelling-headphone-black",
+      "variant_id": 41702322503863
+    },
+    {
+      "product_key": "sony-linkbuds-open-black",
+      "merchant": "Beach Camera",
+      "store": "beachcamera.com",
+      "handle": "sony-linkbuds-open-truly-wireless-earbud-headphones-with-mic-black",
+      "variant_id": 52297852322163
+    },
+    {
+      "product_key": "sony-wf-c710n-black",
+      "merchant": "Beach Camera",
+      "store": "beachcamera.com",
+      "handle": "sony-wf-c710n-truly-wireless-noise-canceling-earbuds-black",
+      "variant_id": 52759448617331
+    },
+    {
+      "product_key": "apple-ipad-mini-a20-128gb-wifi-starlight",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "ipad-mini-a20-pro",
+      "variant_id": 69465684508706
+    },
+    {
+      "product_key": "apple-imac-m6-24-10core-blue",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "imac-m6-10-core-cpu-10-core-gpu-16gb-memory-256gb-storage-standard-glass-blue",
+      "variant_id": 69486174142498
+    },
+    {
+      "product_key": "apple-studio-display-2026-standard-tilt",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "apple-studio-display-copy",
+      "variant_id": 44947409600546
+    },
+    {
+      "product_key": "apple-airpods-5-usbc",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "airpods-5",
+      "variant_id": 47460147560482
+    },
+    {
+      "product_key": "apple-magic-mouse-usbc",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "magic-mouse-usb-c",
+      "variant_id": 43221380071458
+    },
+    {
+      "product_key": "apple-airpods-max-2",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "airpods-max-2",
+      "variant_id": 45071980429346
+    },
+    {
+      "product_key": "apple-macbook-air-13-m5",
+      "merchant": "MelroseMac",
+      "store": "melrosemac.com",
+      "handle": "13-inch-macbook-air-m5-midnight",
+      "variant_id": 47643097661652
+    },
+    {
+      "product_key": "sony-wh1000xm6-black",
+      "merchant": "Audio46",
+      "store": "audio46.com",
+      "handle": "sony-wh-1000xm6-wireless-noise-canceling-headphones",
+      "variant_id": 48415751504105
+    },
+    {
+      "product_key": "samsung-buds4-pro-white",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "samsung-galaxy-buds4-pro-bluetooth-wireless-earbud-headphones-white-us-version-sm-r640nzwaxar",
+      "variant_id": 42651401519191
+    },
+    {
+      "product_key": "samsung-buds4-black",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "samsung-galaxy-buds4-bluetooth-wireless-earbud-headphones-black-us-version-sm-r540nzkaxar",
+      "variant_id": 42651401715799
+    },
+    {
+      "product_key": "samsung-galaxy-watch8-classic-46mm-black",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "samsung-galaxy-watch8-classic-stainless-steel-smartwatch-46mm-bt-black-2025-sm-l500nzkaxaa",
+      "variant_id": 42651400863831
+    },
+    {
+      "product_key": "samsung-galaxy-watch-ultra2-47mm-titanium-silver",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "samsung-galaxy-watch-ultra2-titanium-silver-sm-l715uzsaxaa",
+      "variant_id": 44084859469911
+    },
+    {
+      "product_key": "samsung-galaxy-tab-s10-fe-128gb-gray",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "samsung-galaxy-tab-s10-fe-10-9-tablet-128-gb-gray-sm-x520nzaaxar",
+      "variant_id": 42730656432215
+    },
+    {
+      "product_key": "samsung-galaxy-tab-a11-plus-128gb-gray",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "samsung-galaxy-tab-a11-11-tablet-128gb-gray-sm-x230nzaixar",
+      "variant_id": 42726647496791
+    },
+    {
+      "product_key": "samsung-galaxy-tab-s10-fe-plus-128gb-gray",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "samsung-galaxy-tab-s10-fe-13-1-tablet-128gb-gray-sm-x620nzaaxar",
+      "variant_id": 42726647726167
+    },
+    {
+      "product_key": "keychron-k8-he-special-black",
+      "merchant": "Keychron",
+      "store": "keychron.com",
+      "handle": "keychron-k8-he-wireless-magnetic-switch-custom-keyboard",
+      "variant_id": 42283609555033
+    },
+    {
+      "product_key": "jbl-flip-7-black",
+      "merchant": "Datavision",
+      "store": "datavision.com",
+      "handle": "jbl-flip-7-portable-bluetooth-speaker-black",
+      "variant_id": 41739086004311
+    },
+    {
+      "product_key": "hyperx-cloud-iii-s-wireless-black-red",
+      "merchant": "HyperX",
+      "store": "hyperx.com",
+      "handle": "hyperx-cloud-iii-s-wireless-gaming-headset",
+      "variant_id": 46760503935133
+    },
+    {
+      "product_key": "bose-qc-ultra-2-black",
+      "merchant": "Beach Camera",
+      "store": "beachcamera.com",
+      "handle": "bose-quietcomfort-ultra-headphones-2nd-gen-black",
+      "variant_id": 64020822851955
+    },
+    {
+      "product_key": "bose-soundlink-flex-2nd-gen-black",
+      "merchant": "Beach Camera",
+      "store": "beachcamera.com",
+      "handle": "bose-soundlink-flex-ii-black",
+      "variant_id": 64045617250675
+    },
+    {
+      "product_key": "bose-soundlink-max-black",
+      "merchant": "Beach Camera",
+      "store": "beachcamera.com",
+      "handle": "bose-soundlink-max-black",
+      "variant_id": 64024500470131
+    },
+    {
+      "product_key": "bose-soundlink-plus-black",
+      "merchant": "Beach Camera",
+      "store": "beachcamera.com",
+      "handle": "bose-soundlink-plus-black",
+      "variant_id": 64084876886387
+    },
+    {
+      "product_key": "bose-ultra-open-earbuds-2nd-gen-black",
+      "merchant": "Beach Camera",
+      "store": "beachcamera.com",
+      "handle": "bose-ultra-open-earbuds-2nd-gen-black",
+      "variant_id": 64675245130099
+    },
+    {
+      "product_key": "meta-quest-3s-128gb",
+      "merchant": "Meta Store Official",
+      "store": "beachcamera.com",
+      "handle": "meta-quest-3s-128gb",
+      "variant_id": 62500207296883
+    },
+    {
+      "product_key": "apple-macbook-air-15-m5",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "15-inch-macbook-air-m5-10-core-cpu-10-core-gpu-16gb-memory-512gb-storage-midnight",
+      "variant_id": 67664162062370
+    },
+    {
+      "product_key": "apple-mac-mini-m6",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "mac-mini-m6-12-core-cpu-12-core-gpu-16gb-memory-256gb-storage-2-5-gigabit-ethernet",
+      "variant_id": 50462560387106
+    },
+    {
+      "product_key": "apple-mac-studio-m5-max-36gb-512gb-silver",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "mac-studio-m5-max-18-core-cpu-32-core-gpu-36gb-memory-512gb-storage",
+      "variant_id": 46551229497378
+    },
+    {
+      "product_key": "apple-ipad-air-m4-11",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "ipad-air-11-inch-m4",
+      "variant_id": 44895906496546
+    },
+    {
+      "product_key": "apple-ipad-air-m4-13",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "ipad-air-13-inch-m4",
+      "variant_id": 44895894175778
+    },
+    {
+      "product_key": "apple-ipad-pro-m5-11",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "ipad-pro-11-inch-with-apple-m5",
+      "variant_id": 44398521483298
+    },
+    {
+      "product_key": "apple-ipad-pro-m5-13",
+      "merchant": "Expercom",
+      "store": "expercom.com",
+      "handle": "ipad-pro-13-inch-with-apple-m5",
+      "variant_id": 44398644002850
     }
   ]
 }

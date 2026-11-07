@@ -31,6 +31,26 @@ releases; breaking changes are called out in the release notes.
   No catalog identifier changes, no rule relaxation, no spending,
   no registrations, no Amazon.
 
+- Shopify expansion (DECISIONS 061): 50 new pinned variants across
+  44 models added to `data/shopify_handles.json` (31 → 81 entries,
+  25 merchants — Expercom, Datavision, Beach Camera, Focus Camera,
+  Audio46, Heart Rate Monitors USA, Contender Bicycles, Incycle,
+  Recovery For Athletes, CompTechDirect, 6ave, Keychron, HyperX).
+  Main sweep collected 55 offers (26 skipped on rate-limits); a
+  30 s-pace retry recovered 29 more. Result: verified ranking
+  11 → 53 of 200 models, 58 matched offers, 517 total offers; all
+  11 prior rankings intact; identifiers unchanged (98 verified /
+  102 pending). Two rulings: Shopify Collective counts as
+  brand-direct when the vendor of record is the brand's own
+  official store (Meta Quest 3S); 7 out-of-stock pins held, not
+  ingested (the renderer shows no out-of-stock label). Process
+  fix: hand-verified rows now live in a separate
+  `eval_snapshots_identified_hand_*.json` file the collector never
+  overwrites (the B&H AirPods Pro 3 row was rescued from git after
+  a sweep overwrote it). Still unranked: PS5 consoles, Logitech
+  MX / Nintendo hardware, Google Pixel Buds, Razer DeathAdder V4
+  Pro, Bose QC Earbuds / QC Headphones.
+
 - Generic retailer JSON-LD parser ruled out (DECISIONS 060): raw
   fetch of 27 retailer pages found zero JSON-LD blocks (Target
   genuinely negative — client-side data via the redsky API; B&H,

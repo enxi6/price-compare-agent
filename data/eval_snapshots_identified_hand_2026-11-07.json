@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "collected_at": "2026-11-07T11:32:16.629832Z",
+    "source": "hand-verified retailer spec pages (browser, tier 4) — separated from collector output so re-runs cannot clobber hand rows (DECISIONS 061)",
+    "source_tier": 4,
+    "identified": true,
+    "generated_by": "manual extraction from 3bc92c8 snapshot"
+  },
+  "models": {
+    "apple-airpods-pro-3": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 224.99,
+          "title": "Apple AirPods Pro with Wireless MagSafe Charging Case (USB-C, 3rd Generation)",
+          "url": "https://www.bhphotovideo.com/c/product/1920300-REG/apple_mfhp4ll_a_airpods_pro_with_wireless.html",
+          "collected_at": "2026-11-07T11:39:56.896097Z",
+          "identifier": "195950543698",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    }
+  }
+}

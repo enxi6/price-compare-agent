@@ -1,25 +1,216 @@
 {
   "meta": {
-    "collected_at": "2026-11-07T11:32:16.629832Z",
-    "source": "shopify public product JSON sweep + hand-verified retailer spec rows (B&H AirPods Pro 3)",
+    "collected_at": "2026-11-07T16:19:49.454591Z",
+    "source": "shopify public product JSON sweep",
     "source_tier": 1,
     "identified": true,
-    "generated_by": "price_agent/collect_identified.py",
-    "hand_verified_rows": 1
+    "generated_by": "price_agent/collect_identified.py"
   },
   "models": {
-    "apple-magic-trackpad-usbc": {
+    "apple-airpods-5-usbc": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 129.0,
+          "title": "AirPods 5 - AirPods 5",
+          "url": "https://expercom.com/products/airpods-5?variant=47460147560482",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "195951378978",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-airpods-max-2": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 549.0,
+          "title": "AirPods Max 2 - Midnight",
+          "url": "https://expercom.com/products/airpods-max-2?variant=45071980429346",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "195951039060",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-imac-m6-24-10core-blue": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 1499.0,
+          "title": "iMac - M6 10-core CPU 10-core GPU - 16GB Memory - 256GB Storage - Standard glass - Blue",
+          "url": "https://expercom.com/products/imac-m6-10-core-cpu-10-core-gpu-16gb-memory-256gb-storage-standard-glass-blue?variant=69486174142498",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "195950838091",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-ipad-air-m4-11": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 719.0,
+          "title": "iPad Air 11-inch (M4) - Space Gray / 128GB / Wi-Fi",
+          "url": "https://expercom.com/products/ipad-air-11-inch-m4?variant=44895906496546",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "00195950823578",
+          "identifier_kind": "EAN",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-ipad-air-m4-13": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 909.0,
+          "title": "iPad Air 13-inch (M4) - Space Gray / 128GB / Wi-Fi",
+          "url": "https://expercom.com/products/ipad-air-13-inch-m4?variant=44895894175778",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "00195950797817",
+          "identifier_kind": "EAN",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-ipad-pro-m5-11": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 1139.0,
+          "title": "iPad Pro 11-inch (M5) - Space Black / Standard glass / 256GB / Wi-Fi",
+          "url": "https://expercom.com/products/ipad-pro-11-inch-with-apple-m5?variant=44398521483298",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "195950395419",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-ipad-pro-m5-13": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 1429.0,
+          "title": "iPad Pro 13-inch (M5) - Space Black / Standard glass / 256GB / Wi-Fi",
+          "url": "https://expercom.com/products/ipad-pro-13-inch-with-apple-m5?variant=44398644002850",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "195950398090",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-mac-mini-m6": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 854.0,
+          "title": "Mac Mini - M6 12-core CPU 12-core GPU - 16GB Memory - 256GB Storage - 2.5 Gigabit Ethernet",
+          "url": "https://expercom.com/products/mac-mini-m6-12-core-cpu-12-core-gpu-16gb-memory-256gb-storage-2-5-gigabit-ethernet?variant=50462560387106",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "195951021089",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-mac-studio-m5-max-36gb-512gb-silver": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 2374.0,
+          "title": "Mac Studio - M5 Max 18-core CPU 32-core GPU - 36GB Memory - 512GB Storage",
+          "url": "https://expercom.com/products/mac-studio-m5-max-18-core-cpu-32-core-gpu-36gb-memory-512gb-storage?variant=46551229497378",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "195951078564",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-macbook-air-13-m5": {
       "offers": [
         {
           "merchant": "MelroseMac",
-          "price": 129.0,
-          "title": "Apple Magic Trackpad (USB-C) - White",
-          "url": "https://melrosemac.com/products/magic-trackpad-usb-c?variant=46348329517268",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "195949654305",
-          "identifier_kind": "UPC",
+          "price": 1299.0,
+          "title": "Apple 13\" MacBook Air M5 - Midnight - 10-core CPU and 8-core GPU / 16GB / 512GB SSD / 40W Dynamic Power Adapter with 60W Max",
+          "url": "https://melrosemac.com/products/13-inch-macbook-air-m5-midnight?variant=47643097661652",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "MDHE4LLA",
+          "identifier_kind": "SKU",
           "source_tier": 1,
           "source": "shopify:melrosemac.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-macbook-air-15-m5": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 1429.0,
+          "title": "15-inch MacBook Air - M5 10-core CPU 10-core GPU - 16GB Memory - 512GB Storage - Midnight",
+          "url": "https://expercom.com/products/15-inch-macbook-air-m5-10-core-cpu-10-core-gpu-16gb-memory-512gb-storage-midnight?variant=67664162062370",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "195950697087",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-magic-mouse-usbc": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 79.0,
+          "title": "Magic Mouse (USB-C) - White",
+          "url": "https://expercom.com/products/magic-mouse-usb-c?variant=43221380071458",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "195949655883",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-studio-display-2026-standard-tilt": {
+      "offers": [
+        {
+          "merchant": "Expercom",
+          "price": 1499.0,
+          "title": "Apple Studio Display - Standard glass / Tilt-adjustable stand",
+          "url": "https://expercom.com/products/apple-studio-display-copy?variant=44947409600546",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "195950529173",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:expercom.com",
           "in_stock": true
         }
       ]
@@ -31,7 +222,7 @@
           "price": 2899.0,
           "title": "Apple 27\" Studio Display - XDR / Standard glass / VESA mount adapter",
           "url": "https://melrosemac.com/products/apple-studio-display-27-inch-5k-retina-standard-glass-standard-glass-tilt-adjustable-stand2026?variant=47681759379668",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "MFEN4LL\u0001A",
           "identifier_kind": "SKU",
           "source_tier": 1,
@@ -40,31 +231,207 @@
         }
       ]
     },
-    "dell-27-plus-4k-monitor-s2725qs": {
+    "bose-qc-ultra-2-black": {
       "offers": [
         {
-          "merchant": "ThinkEdu",
-          "price": 284.99,
-          "title": "Dell S2725QS 27 Plus 4K UHD 27\" 120Hz Adjustable Multimedia Monitor",
-          "url": "https://thinkedu.com/products/dell-s2725qs-27-plus-4k-27-monitor?variant=50608574038302",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "S2725QS",
-          "identifier_kind": "SKU",
+          "merchant": "Beach Camera",
+          "price": 399.0,
+          "title": "Bose QuietComfort Ultra Headphones (2nd Gen) - Black",
+          "url": "https://beachcamera.com/products/bose-quietcomfort-ultra-headphones-2nd-gen-black?variant=64020822851955",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "017817859585",
+          "identifier_kind": "UPC",
           "source_tier": 1,
-          "source": "shopify:thinkedu.com",
+          "source": "shopify:beachcamera.com",
           "in_stock": true
         }
       ]
     },
-    "hyperx-alloy-rise-75-black": {
+    "bose-soundlink-flex-2nd-gen-black": {
+      "offers": [
+        {
+          "merchant": "Beach Camera",
+          "price": 159.0,
+          "title": "Bose SoundLink Flex II - Black",
+          "url": "https://beachcamera.com/products/bose-soundlink-flex-ii-black?variant=64045617250675",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "017817852470",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:beachcamera.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "bose-soundlink-max-black": {
+      "offers": [
+        {
+          "merchant": "Beach Camera",
+          "price": 399.0,
+          "title": "Bose SoundLink Max Bluetooth Speaker - Black",
+          "url": "https://beachcamera.com/products/bose-soundlink-max-black?variant=64024500470131",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "017817848817",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:beachcamera.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "bose-soundlink-plus-black": {
+      "offers": [
+        {
+          "merchant": "Beach Camera",
+          "price": 269.0,
+          "title": "Bose SoundLink Plus - Black",
+          "url": "https://beachcamera.com/products/bose-soundlink-plus-black?variant=64084876886387",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "017817857932",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:beachcamera.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "bose-ultra-open-earbuds-2nd-gen-black": {
+      "offers": [
+        {
+          "merchant": "Beach Camera",
+          "price": 299.0,
+          "title": "Bose Ultra Open Earbuds (2nd Gen) - Black",
+          "url": "https://beachcamera.com/products/bose-ultra-open-earbuds-2nd-gen-black?variant=64675245130099",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "017817862714",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:beachcamera.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "garmin-edge-1050": {
+      "offers": [
+        {
+          "merchant": "Focus Camera",
+          "price": 699.99,
+          "title": "Garmin Edge 1050 Premium Cycling Computer with Incident Detection and Bike Alarm (Black)",
+          "url": "https://focuscamera.com/products/garmin-010-02890-00-automotive-electronics-gps-navigation-systems?variant=42151029932080",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "753759336288",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:focuscamera.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "garmin-edge-850": {
+      "offers": [
+        {
+          "merchant": "Contender Bicycles",
+          "price": 599.99,
+          "title": "Garmin Edge 850 Cycling Computer - With Touchscreen",
+          "url": "https://contenderbicycles.com/products/garmin-edge-850-cycling-computer?variant=47036609265909",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "753759356644",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:contenderbicycles.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "garmin-forerunner-165-black-slate-gray": {
+      "offers": [
+        {
+          "merchant": "Focus Camera",
+          "price": 249.99,
+          "title": "Garmin Forerunner 165 GPS Running Smartwatch (Black-Slate Gray)",
+          "url": "https://focuscamera.com/products/garmin-010-02863-20-wearable-technology-smart-devices-smartwatches?variant=42159100067888",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "753759326593",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:focuscamera.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "garmin-instinct-3-amoled-45mm-black": {
+      "offers": [
+        {
+          "merchant": "Heart Rate Monitors USA",
+          "price": 349.99,
+          "title": "Garmin Instinct® 3 Rugged Outdoor GPS Smartwatch – Military-Grade Durability & Adventure Tracking - Black / Black (AMOLED) / 45 MM",
+          "url": "https://heartratemonitorsusa.com/products/garmin-instinct-3-rugged-outdoor-gps-smartwatch?variant=45703839383725",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "753759339487",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:heartratemonitorsusa.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "garmin-venu-3-black": {
+      "offers": [
+        {
+          "merchant": "Focus Camera",
+          "price": 449.99,
+          "title": "Garmin Venu 3 Slate Stainless Steel Bezel Smart Watch with 45mm Black Case and Silicone Band",
+          "url": "https://focuscamera.com/products/garmin-010-02784-01-wearable-technology-smart-devices-smartwatches?variant=42168333008944",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "753759314743",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:focuscamera.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "garmin-venu-4-45mm-silver-gray": {
+      "offers": [
+        {
+          "merchant": "Heart Rate Monitors USA",
+          "price": 549.99,
+          "title": "Garmin Venu® 4 AMOLED GPS Smartwatch – Advanced Health, Fitness Tracking & Smart Features - Silver with Silver Gray Silicone Band / 45 MM",
+          "url": "https://heartratemonitorsusa.com/products/garmin-venu-4-advanced-health-and-fitness-gps-smartwatch?variant=45698294415533",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "753759342883",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:heartratemonitorsusa.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "garmin-vivoactive-6-slate-black": {
+      "offers": [
+        {
+          "merchant": "Heart Rate Monitors USA",
+          "price": 299.99,
+          "title": "Garmin vivoactive® 6 Fitness Smartwatch with GPS & AMOLED – Health, Training & Smart Features - Black Slate / 42 MM",
+          "url": "https://heartratemonitorsusa.com/products/garmin-vivoactive-6-gps-smartwatch?variant=44321902461101",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "753759342807",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:heartratemonitorsusa.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "hyperx-cloud-iii-s-wireless-black-red": {
       "offers": [
         {
           "merchant": "HyperX",
-          "price": 84.99,
-          "title": "HyperX Alloy Rise 75 \u2013 Mechanical Gaming Keyboard - Black / US Layout / HyperX Red - Linear",
-          "url": "https://hyperx.com/products/hyperx-alloy-rise-75-mechanical-gaming-keyboard?variant=44827739586717",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "197192334096",
+          "price": 179.99,
+          "title": "HyperX Cloud III S Wireless – Gaming Headset - Black-Red",
+          "url": "https://hyperx.com/products/hyperx-cloud-iii-s-wireless-gaming-headset?variant=46760503935133",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "198415435569",
           "identifier_kind": "UPC",
           "source_tier": 1,
           "source": "shopify:hyperx.com",
@@ -79,7 +446,7 @@
           "price": 399.99,
           "title": "HyperX OMEN OLED 27 inch QHD 240Hz Gaming Monitor - OMEN OLED 27q - Black",
           "url": "https://hyperx.com/products/hyperx-omen-oled-27-inch-qhd-240hz-gaming-monitor-omen-oled-27q?variant=47766607659165",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "199642944428",
           "identifier_kind": "UPC",
           "source_tier": 1,
@@ -93,9 +460,9 @@
         {
           "merchant": "HyperX",
           "price": 119.99,
-          "title": "HyperX Pulsefire Haste 2 Pro \u2013 4K Wireless Gaming Mouse - Slate Gray",
+          "title": "HyperX Pulsefire Haste 2 Pro – 4K Wireless Gaming Mouse - Slate Gray",
           "url": "https://hyperx.com/products/hyperx-pulsefire-haste-2-pro-4k-wireless-gaming-mouse?variant=46359079026845",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "198122802432",
           "identifier_kind": "UPC",
           "source_tier": 1,
@@ -109,13 +476,29 @@
         {
           "merchant": "HyperX",
           "price": 149.99,
-          "title": "HyperX QuadCast 2 S \u2013 USB Microphone - Black",
+          "title": "HyperX QuadCast 2 S – USB Microphone - Black",
           "url": "https://hyperx.com/products/hyperx-quadcast-2-s-usb-microphone?variant=45953570504861",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "197961186741",
           "identifier_kind": "UPC",
           "source_tier": 1,
           "source": "shopify:hyperx.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "jbl-flip-7-black": {
+      "offers": [
+        {
+          "merchant": "Datavision",
+          "price": 129.95,
+          "title": "JBL Flip 7 Portable Bluetooth Speaker - Black",
+          "url": "https://datavision.com/products/jbl-flip-7-portable-bluetooth-speaker-black?variant=41739086004311",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "050036407342",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:datavision.com",
           "in_stock": true
         }
       ]
@@ -127,27 +510,11 @@
           "price": 379.95,
           "title": "JBL Xtreme 4 - Portable Bluetooth Speaker, Powerful Sound and Deep Bass (Black)",
           "url": "https://rockandsoul.com/products/jbl-xtreme-4-portable-bluetooth-speaker-powerful-sound-and-deep-bass-black?variant=40989517217874",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "050036398190",
           "identifier_kind": "UPC",
           "source_tier": 1,
           "source": "shopify:rockandsoul.com",
-          "in_stock": true
-        }
-      ]
-    },
-    "keychron-b39-deep-black": {
-      "offers": [
-        {
-          "merchant": "Keychron",
-          "price": 54.99,
-          "title": "Keychron B39 Wireless Keyboard - Deep Black",
-          "url": "https://www.keychron.com/products/keychron-b39-wireless-keyboard?variant=43704718983257",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "4894979059499",
-          "identifier_kind": "EAN",
-          "source_tier": 1,
-          "source": "shopify:www.keychron.com",
           "in_stock": true
         }
       ]
@@ -159,7 +526,7 @@
           "price": 49.99,
           "title": "Keychron B40 Wireless Keyboard - Deep Black",
           "url": "https://www.keychron.com/products/keychron-b40-wireless-keyboard?variant=44554000957529",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "4894979058683",
           "identifier_kind": "EAN",
           "source_tier": 1,
@@ -175,7 +542,7 @@
           "price": 139.99,
           "title": "Keychron K2 HE Wireless Magnetic Switch Custom Keyboard - Special Edition / Black / Gateron Double-Rail Magnetic Nebula Switch Version 1",
           "url": "https://www.keychron.com/products/keychron-k2-he-wireless-magnetic-switch-keyboard?variant=41846762930265",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "4895248889175",
           "identifier_kind": "EAN",
           "source_tier": 1,
@@ -191,7 +558,7 @@
           "price": 114.99,
           "title": "Keychron K2 Max QMK Wireless Mechanical Keyboard - Black / RGB Backlight Aluminum Frame / Keychron Super Banana",
           "url": "https://www.keychron.com/products/keychron-k2-max-qmk-wireless-mechanical-keyboard?variant=41767535870041",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "4895248880271",
           "identifier_kind": "EAN",
           "source_tier": 1,
@@ -207,7 +574,7 @@
           "price": 119.99,
           "title": "Keychron K8 Ultra 8K Wireless Custom Mechanical Keyboard - Fully Assembled / Black / Keychron Apex Switch - Red",
           "url": "https://www.keychron.com/products/keychron-k8-ultra-8k-wireless-custom-mechanical-keyboard?variant=43266301755481",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "4894979057969",
           "identifier_kind": "EAN",
           "source_tier": 1,
@@ -223,7 +590,7 @@
           "price": 69.99,
           "title": "Keychron Q1 QMK Custom Mechanical Keyboard - Version 2 - Barebone Knob / Navy Blue / Barebone",
           "url": "https://www.keychron.com/products/keychron-q1?variant=39898879197273",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "4897115553332",
           "identifier_kind": "EAN",
           "source_tier": 1,
@@ -239,7 +606,7 @@
           "price": 229.99,
           "title": "Keychron Q1 Max QMK/VIA Wireless Custom Mechanical Keyboard - Fully Assembled Knob / Carbon Black / Gateron Jupiter Brown",
           "url": "https://www.keychron.com/products/keychron-q1-max-qmk-via-wireless-custom-mechanical-keyboard?variant=40707102802009",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "4895248870609",
           "identifier_kind": "EAN",
           "source_tier": 1,
@@ -248,98 +615,114 @@
         }
       ]
     },
-    "meta-quest-3-512gb": {
+    "meta-quest-3s-128gb": {
       "offers": [
         {
-          "merchant": "Golf+ VR",
-          "price": 599.99,
-          "title": "Meta Quest 3 512GB",
-          "url": "https://store.golfplusvr.com/products/meta-quest-3-512gb?variant=42639321432131",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "899-00583-01",
+          "merchant": "Meta Store Official",
+          "price": 349.99,
+          "title": "Meta Quest 3S 128GB",
+          "url": "https://beachcamera.com/products/meta-quest-3s-128gb?variant=62500207296883",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "SK-1000926-01",
           "identifier_kind": "SKU",
           "source_tier": 1,
-          "source": "shopify:store.golfplusvr.com",
+          "source": "shopify:beachcamera.com",
           "in_stock": true
         }
       ]
     },
-    "nintendo-joy-con-2-pair-light-blue-light-red": {
+    "samsung-buds4-black": {
       "offers": [
         {
-          "merchant": "JustPressPlay",
-          "price": 99.99,
-          "title": "Joy-Con 2 Controller Set (L)/(R) - Nintendo Switch 2 - Light Blue/Light Red - New",
-          "url": "https://justpressplayonline.com/products/joy-con-2-controller-light-blue-light-red-ns2?variant=51231989367098",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "045496885892",
+          "merchant": "Datavision",
+          "price": 179.99,
+          "title": "Samsung Galaxy Buds4 Bluetooth Wireless Earbud Headphones - Black - (US Version SM-R540NZKAXAR)",
+          "url": "https://datavision.com/products/samsung-galaxy-buds4-bluetooth-wireless-earbud-headphones-black-us-version-sm-r540nzkaxar?variant=42651401715799",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "198957277207",
           "identifier_kind": "UPC",
           "source_tier": 1,
-          "source": "shopify:justpressplayonline.com",
+          "source": "shopify:datavision.com",
           "in_stock": true
         }
       ]
     },
-    "nintendo-switch-2": {
+    "samsung-buds4-pro-white": {
       "offers": [
         {
-          "merchant": "BrandsMart USA",
-          "price": 499.99,
-          "title": "2 Gaming Console",
-          "url": "https://www.brandsmartusa.com/products/electronics-gaming-nintendo-switch-2-gaming-console?variant=48203209408770",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "BEESKB6AA",
-          "identifier_kind": "SKU",
-          "source_tier": 1,
-          "source": "shopify:www.brandsmartusa.com",
-          "in_stock": true
-        }
-      ]
-    },
-    "razer-kraken-v4-pro-black": {
-      "offers": [
-        {
-          "merchant": "Beach Camera",
-          "price": 299.0,
-          "title": "Razer USA Razer Kraken V4 Pro Wireless Gaming Headset w/OLED",
-          "url": "https://www.beachcamera.com/products/razer-usa-razer-kraken-v4-pro-wireless-gaming-headset-w-oled?variant=67106994651507",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "840272909997",
+          "merchant": "Datavision",
+          "price": 249.99,
+          "title": "Samsung Galaxy Buds4 Pro Bluetooth Wireless Earbud Headphones - White - (US Version SM-R640NZWAXAR)",
+          "url": "https://datavision.com/products/samsung-galaxy-buds4-pro-bluetooth-wireless-earbud-headphones-white-us-version-sm-r640nzwaxar?variant=42651401519191",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "198957273582",
           "identifier_kind": "UPC",
           "source_tier": 1,
-          "source": "shopify:www.beachcamera.com",
+          "source": "shopify:datavision.com",
           "in_stock": true
         }
       ]
     },
-    "samsung-buds3-fe-black": {
+    "samsung-galaxy-tab-a11-plus-128gb-gray": {
       "offers": [
         {
-          "merchant": "Silarius",
-          "price": 169.99,
-          "title": "Samsung SM-R420NZKAXAR Galaxy Buds3 FE - Black",
-          "url": "https://silarius.com/products/samsung-sm-r420nzkaxar-galaxy-buds3-fe-black?variant=50667417534567",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "SM-R420NZKAXAR",
-          "identifier_kind": "SKU",
-          "source_tier": 1,
-          "source": "shopify:silarius.com",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-inzone-h5-black": {
-      "offers": [
-        {
-          "merchant": "Focus Camera",
-          "price": 128.0,
-          "title": "Sony INZONE H5 Wireless Gaming Headset with AI Noise Reduction and Built-In Battery (Black)",
-          "url": "https://focuscamera.com/products/sony-whg500b-gaming-gaming-accessories?variant=42152086667312",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "027242927919",
+          "merchant": "Datavision",
+          "price": 299.99,
+          "title": "Samsung Galaxy Tab A11+ 11\" Tablet, 128GB, Gray - SM-X230NZAIXAR",
+          "url": "https://datavision.com/products/samsung-galaxy-tab-a11-11-tablet-128gb-gray-sm-x230nzaixar?variant=42726647496791",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "198957270390",
           "identifier_kind": "UPC",
           "source_tier": 1,
-          "source": "shopify:focuscamera.com",
+          "source": "shopify:datavision.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "samsung-galaxy-tab-s10-fe-128gb-gray": {
+      "offers": [
+        {
+          "merchant": "Datavision",
+          "price": 549.99,
+          "title": "Samsung Galaxy Tab S10 FE 10.9\" Tablet, 128 GB, Gray - SM-X520NZAAXAR",
+          "url": "https://datavision.com/products/samsung-galaxy-tab-s10-fe-10-9-tablet-128-gb-gray-sm-x520nzaaxar?variant=42730656432215",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "887276992266",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:datavision.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "samsung-galaxy-watch-ultra2-47mm-titanium-silver": {
+      "offers": [
+        {
+          "merchant": "Datavision",
+          "price": 699.0,
+          "title": "Samsung Galaxy Watch Ultra2 - Titanium Silver SM-L715UZSAXAA",
+          "url": "https://datavision.com/products/samsung-galaxy-watch-ultra2-titanium-silver-sm-l715uzsaxaa?variant=44084859469911",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "198957393730",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:datavision.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "samsung-galaxy-watch8-classic-46mm-black": {
+      "offers": [
+        {
+          "merchant": "Datavision",
+          "price": 499.0,
+          "title": "Samsung Galaxy Watch8 Classic Stainless Steel Smartwatch 46mm BT - Black - (2025, SM-L500NZKAXAA)",
+          "url": "https://datavision.com/products/samsung-galaxy-watch8-classic-stainless-steel-smartwatch-46mm-bt-black-2025-sm-l500nzkaxaa?variant=42651400863831",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "198957093562",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:datavision.com",
           "in_stock": true
         }
       ]
@@ -351,7 +734,7 @@
           "price": 198.0,
           "title": "Sony LinkBuds Clip Open-Ear Truly Wireless Earbuds, Black - WFLC900/B w 27-Month Axiom Device Care Program",
           "url": "https://datavision.com/products/sony-linkbuds-clip-open-ear-truly-wireless-earbuds-black-wflc900-b-w-27-month-axiom-device-care-program?variant=42559711608919",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "810141665729",
           "identifier_kind": "UPC",
           "source_tier": 1,
@@ -367,11 +750,39 @@
           "price": 239.99,
           "title": "Sony LinkBuds Open Truly Wireless Earbud Headphones Black with 1 Year Warranty",
           "url": "https://www.beachcamera.com/products/sony-linkbuds-open-truly-wireless-earbud-headphones-black-with-1-year-warranty?variant=62178228011379",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "196641194861",
           "identifier_kind": "UPC",
           "source_tier": 1,
           "source": "shopify:www.beachcamera.com",
+          "in_stock": true
+        },
+        {
+          "merchant": "Beach Camera",
+          "price": 228.0,
+          "title": "Sony LinkBuds Open Truly Wireless Earbud Headphones with Mic - Black",
+          "url": "https://beachcamera.com/products/sony-linkbuds-open-truly-wireless-earbud-headphones-with-mic-black?variant=52297852322163",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "027242928695",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:beachcamera.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-wf-c710n-black": {
+      "offers": [
+        {
+          "merchant": "Beach Camera",
+          "price": 98.0,
+          "title": "Sony WF-C710N Truly Wireless Noise Canceling Earbuds | Black",
+          "url": "https://beachcamera.com/products/sony-wf-c710n-truly-wireless-noise-canceling-earbuds-black?variant=52759448617331",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "027242931770",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:beachcamera.com",
           "in_stock": true
         }
       ]
@@ -383,7 +794,7 @@
           "price": 298.0,
           "title": "Sony WF-1000XM6 Noise Cancelling Bluetooth Earbuds Headphones - Black (2026) w 27-Month Axiom Device Care Program",
           "url": "https://datavision.com/products/sony-wf-1000xm6-noise-cancelling-bluetooth-earbuds-headphones-black-2026-w-27-month-axiom-device-care-program?variant=42559711379543",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "810141665705",
           "identifier_kind": "UPC",
           "source_tier": 1,
@@ -391,27 +802,31 @@
           "in_stock": true
         },
         {
-          "merchant": "ListenUp",
-          "price": 298.0,
-          "title": "Sony WF-1000XM6 Noise Cancelling Earbuds - Black",
-          "url": "https://listenup.com/products/sony-wf-1000xm6-noise-cancelling-earbuds?variant=62692171612319",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "SON-WF1000XM6-BLK",
-          "identifier_kind": "SKU",
-          "source_tier": 1,
-          "source": "shopify:listenup.com",
-          "in_stock": true
-        },
-        {
           "merchant": "Moon Audio",
           "price": 298.0,
           "title": "Sony WF-1000XM6 Wireless Noise Cancelling Earbuds - Black",
           "url": "https://www.moon-audio.com/products/wf-1000xm6-the-best-truly-wireless-noise-cancelling-earbuds?variant=53057484751162",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "027242933460",
           "identifier_kind": "UPC",
           "source_tier": 1,
           "source": "shopify:www.moon-audio.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-wh-ch720n-black": {
+      "offers": [
+        {
+          "merchant": "Beach Camera",
+          "price": 178.0,
+          "title": "Sony Wireless Noise Cancelling Headphone, Black WHCH720N/B - none",
+          "url": "https://beachcamera.com/products/sony-wh-ch720n-wireless-noise-cancelling-headphone-black?variant=41702322503863",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "027242925397",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:beachcamera.com",
           "in_stock": true
         }
       ]
@@ -421,30 +836,26 @@
         {
           "merchant": "BrandsMart USA",
           "price": 299.99,
-          "title": "Wireless Noise Cancelling DSEE Extreme\u2122 Over-the-Ear Headphones - Black",
+          "title": "Wireless Noise Cancelling DSEE Extreme™ Over-the-Ear Headphones - Black",
           "url": "https://www.brandsmartusa.com/products/audio-headphones-headphones-wireless-headphones-wireless-noise-cancelling-dsee-extreme-over-the-ear-headphones-black?variant=48203639554306",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "WH1000XM5B",
           "identifier_kind": "SKU",
           "source_tier": 1,
           "source": "shopify:www.brandsmartusa.com",
           "in_stock": true
-        }
-      ]
-    },
-    "xbox-series-x-1tb-black": {
-      "offers": [
+        },
         {
-          "merchant": "ShopCGX",
-          "price": 799.99,
-          "title": "Microsoft Xbox Series X 1TB Console",
-          "url": "https://shopcgx.com/products/xbox-series-x-1tb-d-h-9-22-20?variant=41622889988271",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
-          "identifier": "889842640724",
+          "merchant": "Focus Camera",
+          "price": 198.0,
+          "title": "Sony WH-1000XM5 Wireless Noise Canceling Over-Ear Headphones (Black)",
+          "url": "https://focuscamera.com/products/sony-wh1000xm5b-audio-electronics-headphones-earbuds?variant=42755358130224",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
+          "identifier": "027242923232",
           "identifier_kind": "UPC",
           "source_tier": 1,
-          "source": "shopify:shopcgx.com",
-          "in_stock": false
+          "source": "shopify:focuscamera.com",
+          "in_stock": true
         }
       ]
     },
@@ -455,43 +866,11 @@
           "price": 61.99,
           "title": "Microsoft Xbox Wireless Controller - Carbon Black - EP2-29929",
           "url": "https://thinkedu.com/products/microsoft-xbox-wireless-controller-carbon-black-ep229929?variant=59499176165662",
-          "collected_at": "2026-11-07T11:32:16.629832+00:00",
+          "collected_at": "2026-11-07T16:19:49.454591+00:00",
           "identifier": "196388518159",
           "identifier_kind": "UPC",
           "source_tier": 1,
           "source": "shopify:thinkedu.com",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-linkbuds-fit-black": {
-      "offers": [
-        {
-          "merchant": "Worldwidestereo",
-          "price": 208.0,
-          "title": "Sony Linkbuds Fit Truly Wireless Noise Cancelling Earbuds (Black)",
-          "url": "https://www.worldwidestereo.com/products/sony-linkbuds-fit-truly-wireless-noise-cancelling-earbuds-black?variant=49801459925303",
-          "collected_at": "2026-11-07T11:39:51.825943+00:00",
-          "identifier": "027242929289",
-          "identifier_kind": "UPC",
-          "source_tier": 1,
-          "source": "shopify:www.worldwidestereo.com",
-          "in_stock": true
-        }
-      ]
-    },
-    "apple-airpods-pro-3": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 224.99,
-          "title": "Apple AirPods Pro with Wireless MagSafe Charging Case (USB-C, 3rd Generation)",
-          "url": "https://www.bhphotovideo.com/c/product/1920300-REG/apple_mfhp4ll_a_airpods_pro_with_wireless.html",
-          "collected_at": "2026-11-07T11:39:56.896097Z",
-          "identifier": "195950543698",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
           "in_stock": true
         }
       ]

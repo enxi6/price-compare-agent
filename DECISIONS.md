@@ -3606,3 +3606,72 @@ written as "superseded by" with the original text kept.
   JSON-LD parsing; it would need its own tier/terms evaluation
   before any use. Per-retailer visible-text parsers (~10 parsers
   for the brand-DTC ceiling) remain deferred as in DECISIONS 059.
+
+## 061 (2026-11-07): Shopify expansion — verified ranking 11 → 53 models
+
+- Survey: 4 workers by brand cluster (Apple/Sony, Logitech/Nintendo/
+  Garmin, Bose/Samsung/Keychron/etc., small brands + general sweep),
+  all pins verified at the store's public product JSON (`.js`) and
+  checked against the catalog with `identity.normalize_identifier`
+  before ingest: 50 new pins across 44 models, all 50 verified
+  (product key exists, barcode/sku normalizes to a catalog
+  identifier, status verified), 0 duplicates vs the existing 31
+  entries. `data/shopify_handles.json` 31 → 81 entries, 25 merchants.
+  New stores: Expercom (Apple Premier Partner, 14 pins), Datavision
+  (8), Beach Camera (9), Focus Camera (4 more), Audio46 (2),
+  Heart Rate Monitors USA (5), Contender Bicycles (2), Incycle (1),
+  Recovery For Athletes (1), CompTechDirect (1), 6ave (1), plus
+  Keychron/HyperX brand stores (2 more).
+- Collector runs (2026-11-07): main sweep 55 offers collected, 26
+  skipped (25× HTTP 429 rate-limit, 1× HTTP 404); retry at 30 s
+  pace recovered 29 offers, 3 still skipped. Shopify `.js`
+  endpoints rate-limit aggressively — 12 s pacing is not enough
+  for some stores; per-entry failures stay warnings, never fatal,
+  and the daily cron's `collect_identified` step should expect
+  partial sweeps.
+- Coverage: 53 of 200 models with a verified ranking (was 11), 58
+  matched offers (was 11), 517 total offers, 191 models with
+  offers. All 11 prior rankings intact. Identifiers unchanged:
+  98 verified / 102 pending. Newly ranked clusters: Apple 14
+  (Expercom/MelroseMac), Garmin 7 of 8, Samsung 7, Bose 5,
+  Sony +4 (XM5, XM6, CH720N, WF-C710N, LinkBuds Open), Dell U3225QE,
+  JBL Flip 7, HyperX Cloud III S, Meta Quest 3S, Keychron K8 HE.
+- Ruling 1 — Shopify Collective counts as brand-direct: Meta Quest
+  3S 128GB @ Beach Camera is a Collective listing whose vendor of
+  record is "Meta Store Official", barcode null, SKU SK-1000926-01
+  matching the catalog MPN exactly. DECISIONS 021's seller test is
+  about who sells: here the seller is the brand's own official
+  store, i.e. brand-direct, fulfilled by the brand — materially
+  different from a marketplace third-party seller. Merchant is
+  recorded as "Meta Store Official" (URL stays beachcamera.com)
+  so the attribution is honest. If a future Collective listing's
+  vendor is not the brand itself, it does not qualify.
+- Ruling 2 — out-of-stock pins are HELD, not ingested (7 total):
+  iPad A16 + Watch SE 3 @ Expercom, XM5/ULT WEAR/WF-1000XM5 @
+  Audio46, XM5 @ Audio Advice, K8 hot-swappable red @ Keychron.
+  The renderer shows no out-of-stock label, so an OOS row would
+  display as a buyable ranked price. Held pins are recorded here
+  with full variant IDs for restock recheck; they enter the config
+  only when back in stock.
+- Process fix — hand rows separated from collector output: the main
+  sweep overwrote `data/eval_snapshots_identified_2026-11-07.json`
+  and clobbered the one hand-verified tier-4 row (AirPods Pro 3 @
+  B&H Photo $224.99). It was rescued verbatim from git (3bc92c8)
+  into `data/eval_snapshots_identified_hand_2026-11-07.json`,
+  which the collector never writes; the builder unions all
+  `eval_snapshots_identified_*.json` files. Retry output goes to a
+  separate dated file (`...-retry.json`) instead of overwriting.
+- Not ranked this round: Forerunner 570 (Recovery For Athletes
+  429 twice), Tab S10 FE+ (Datavision 404 twice — handle resolves
+  on www.datavision.com but the collector uses the bare domain;
+  follow-up, not forced), PS5 consoles (no US Shopify retailer
+  lists bare consoles — structural, not a discovery failure),
+  Logitech MX / Nintendo hardware (no US Shopify retailer found),
+  Google Pixel Buds 2/Pro 2, Razer DeathAdder V4 Pro, Bose QC
+  Earbuds / QC Headphones, Kindle (Amazon-exclusive as expected).
+  MX Vertical stays unranked (Electric Zebra third-party seller —
+  DECISIONS 060/021, not revisited).
+- What did NOT change: identifier rules (98/102, pending stays
+  pending); seller-direct / US-goods only (DECISIONS 021); no
+  Amazon in any form (DECISIONS 018); no spending, no paid tools,
+  no new registrations. Commit 3bc92c8 → this run; 52 tests pass.

@@ -6168,3 +6168,44 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Coverage unchanged: 11 of 200 models with a verified ranking;
   98 verified / 102 pending identifiers. Next coverage step is
   Shopify expansion (more pinned stores), not a new parser.
+
+## 078 — 2026-11-07: Shopify expansion — verified ranking 11 → 53 models (DECISIONS 061)
+
+- Survey: 4 workers by brand cluster, all pins verified at the
+  store `.js` endpoint and checked against the catalog with
+  `identity.normalize_identifier` before ingest. 50 new pins
+  across 44 models (0 bad, 0 duplicates): Expercom 14, Datavision
+  8, Beach Camera 9, Focus Camera 4, Audio46 2, Heart Rate Monitors
+  USA 5, Contender Bicycles 2, Incycle 1, Recovery For Athletes 1,
+  CompTechDirect 1, 6ave 1, Keychron/HyperX 2.
+  `data/shopify_handles.json` 31 → 81 entries (25 merchants).
+- Collector: main sweep 55 offers collected, 26 skipped (25× HTTP
+  429, 1× 404 — Samsung Tab S10 FE+ @ Datavision, handle resolves
+  on www but not the bare domain the collector uses). Retry at
+  30 s pace recovered 29 offers (3 still skipped: Edge 850 @
+  Incycle 429, Forerunner 570 @ Recovery For Athletes 429, Tab S10
+  FE+ 404). All 6 previously-ranked models that 429'd in the main
+  sweep recovered in the retry.
+- Hand-row rescue: the main sweep overwrote the 2026-11-07
+  identified file and clobbered the B&H AirPods Pro 3 $224.99
+  tier-4 row. Rescued verbatim from git (3bc92c8) into
+  `data/eval_snapshots_identified_hand_2026-11-07.json`, which the
+  collector never writes; retry output went to a separate dated
+  file. Builder unions all identified files (3 this run).
+- Rebuild: site snapshot 200 models, 98 verified / 102 pending,
+  517 offers (58 matched, 53 models with a verified ranking),
+  191 models with offers. All 11 prior rankings intact; 42 new.
+  Site rebuilt (203 pages). 52 tests pass (27 baseline + 25 from
+  the identifier work). Home page now reads "53 of 200 models now
+  have a verified ranking".
+- Rulings recorded in DECISIONS 061: (1) Shopify Collective counts
+  as brand-direct when the vendor of record is the brand's own
+  official store (Meta Quest 3S @ Beach Camera, vendor Meta Store
+  Official, SKU-only match); (2) 7 out-of-stock pins held, not
+  ingested — the renderer shows no OOS label, so an OOS row would
+  display as a buyable price; held for restock recheck.
+- Still unranked: 45 priority models, incl. PS5 consoles
+  (structural — no Shopify retailer lists bare consoles), Logitech
+  MX / Nintendo hardware (no US Shopify retailer), Google Pixel
+  Buds, Razer DeathAdder V4 Pro, Bose QC Earbuds / QC Headphones.
+  Forerunner 570 + Tab S10 FE+ missed on 429/404, not on merit.
