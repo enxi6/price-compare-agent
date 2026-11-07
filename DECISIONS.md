@@ -3675,3 +3675,39 @@ written as "superseded by" with the original text kept.
   pending); seller-direct / US-goods only (DECISIONS 021); no
   Amazon in any form (DECISIONS 018); no spending, no paid tools,
   no new registrations. Commit 3bc92c8 → this run; 52 tests pass.
+## 062 (2026-11-07): M6 UPC verified; Kindle re-pinned to the US code
+
+- MacBook Pro 14 M6 (MHWT4LL/A, 16GB/1TB, $1,999): UPC 195951080291
+  confirmed by three independent retailers in the 2026-11-07 10:00 PT
+  one-off check — B&H Photo (live page read, in stock $1,999.00),
+  Adorama (SPECS tab "UPC Codes", $1,999.00), Micro Center (Overview
+  + SPECS, $1,999.99). Best Buy (SKU 6565882) confirms the model and
+  price but publishes no UPC. Check digit valid. Upgraded to verified
+  in the catalog on user confirmation (2026-11-07 12:57 PT).
+  Identifiers 98 → 99 verified / 101 pending.
+- Kindle Paperwhite 16GB (2024): re-pinned from the non-US code
+  B0CFPL6CFY / UPC 840268942847 (PBTech NZ/AU single source) to the
+  US code B0CFPJYX7P / UPC 840268989538 on user confirmation. UPC
+  corroboration: NFM listing (Model B0CFPJYX7P, UPC 840268989538,
+  SKU 67502252, $196.99) + CamelCamelCamel product page for
+  B0CFPJYX7P (ASIN B0CFPJYX7P, UPC 840268989538) agree; MPN
+  confirmed by Best Buy US (Model B0CFPJYX7P, $199.99), Dell US,
+  TrustedReviews, pricehistory.app. Old pin retired, never reused;
+  the only historical snapshot row carrying the old code is a
+  title string (identifier null) — no identifier-bearing row is
+  orphaned.
+- No new verified rankings from either change (no identifier-bearing
+  M6 or Kindle quotes exist yet); verified rankings stay 54 of 200,
+  60 matched offers, 650 total offers. Site rebuilt and verified
+  locally (M6 page shows 195951080291, Kindle page shows B0CFPJYX7P
+  with zero occurrences of the old code).
+- Test maintenance: the hardcoded verified-count guard (98) updated
+  to 99 in test_snapshot_eval.py and test_site_snapshot.py; the
+  pending-model fixture in
+  test_pending_model_never_has_verified_ranking switched from the M6
+  to the DualSense Edge (still pending, same guard intent). The
+  test_build_site.py fixture count (98) is an offline fixture, not
+  the catalog — left unchanged. 52 tests pass.
+- What did NOT change: identifier rules (no relaxation); seller-direct
+  / US-goods only (DECISIONS 021); no Amazon in any form (DECISIONS
+  018); no models added; no spending, no registrations, no purchases.

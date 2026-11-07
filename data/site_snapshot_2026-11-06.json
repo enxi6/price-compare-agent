@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-11-07T20:32:38.131124+00:00",
+    "generated_at": "2026-11-07T20:59:18.734652+00:00",
     "snapshot_date": "2026-11-07",
     "source_files": 47,
     "identified_source_files": 4,
     "models": 200,
-    "verified_identifiers": 98,
-    "pending_identifiers": 102,
+    "verified_identifiers": 99,
+    "pending_identifiers": 101,
     "total_offers": 650,
     "matched_offers": 60,
     "suspected_offers": 590,
@@ -672,12 +672,12 @@
       "key": "kindle-paperwhite-16gb-2024",
       "brand": "Amazon",
       "model": "Kindle Paperwhite (16GB, 2024)",
-      "variant": "Black, 16GB (B0CFPL6CFY)",
+      "variant": "Black, 16GB (B0CFPJYX7P)",
       "category": "e-readers",
       "status": "verified",
       "identifiers": {
-        "UPC": "840268942847",
-        "MPN": "B0CFPL6CFY"
+        "UPC": "840268989538",
+        "MPN": "B0CFPJYX7P"
       },
       "offers": [
         {
@@ -1451,8 +1451,11 @@
       "model": "MacBook Pro 14-inch (M6, 2026)",
       "variant": "M6, 16GB/1TB, Space Black (MHWT4LL/A)",
       "category": "laptops",
-      "status": "pending",
-      "identifiers": {},
+      "status": "verified",
+      "identifiers": {
+        "UPC": "195951080291",
+        "MPN": "MHWT4LL/A"
+      },
       "offers": [
         {
           "merchant": "Apple",

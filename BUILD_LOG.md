@@ -6310,3 +6310,16 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
+## 080 — 2026-11-07: M6 UPC verified; Kindle re-pinned to US code (DECISIONS 062)
+
+- MacBook Pro 14 M6 (MHWT4LL/A): UPC 195951080291 verified by three
+  retailers (B&H $1,999.00, Adorama $1,999.00, Micro Center
+  $1,999.99); upgraded to verified on user confirmation.
+- Kindle Paperwhite 16GB: re-pinned B0CFPL6CFY → B0CFPJYX7P, UPC
+  840268942847 → 840268989538 (NFM + CamelCamelCamel agree on the
+  UPC; US code confirmed by Best Buy US, Dell US, TrustedReviews,
+  pricehistory.app). Old non-US pin retired.
+- Identifiers 98 → 99 verified / 101 pending. No new verified
+  rankings (54 of 200, 60 matched, 650 offers). Tests 52 pass;
+  count guard updated 98 → 99; pending fixture M6 → DualSense Edge.
+- Site rebuilt; M6 and Kindle pages verified locally before push.

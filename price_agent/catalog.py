@@ -165,19 +165,32 @@ EVAL_SET: list[EvalProduct] = [
                 status="verified"),
     EvalProduct(key="kindle-paperwhite-16gb-2024", brand="Amazon",
                 model="Kindle Paperwhite (16GB, 2024)",
-                variant="Black, 16GB (B0CFPL6CFY)",
+                variant="Black, 16GB (B0CFPJYX7P)",
                 category="e-readers",
-                identifiers={"UPC": "840268942847", "MPN": "B0CFPL6CFY"},
+                identifiers={"UPC": "840268989538", "MPN": "B0CFPJYX7P"},
                 identifier_sources={
-                    "UPC": "PBTech NZ/AU listing for B0CFPL6CFY (single seller; "
-                    "color/storage variants differ)"
+                    "UPC": "NFM listing (Model B0CFPJYX7P, UPC "
+                    "840268989538, SKU 67502252, $196.99) + "
+                    "CamelCamelCamel product page for B0CFPJYX7P "
+                    "(ASIN B0CFPJYX7P, UPC 840268989538) agree",
+                    "MPN": "B0CFPJYX7P is the US amazon.com code: "
+                    "confirmed by Best Buy US (Model B0CFPJYX7P, "
+                    "$199.99), Dell US, TrustedReviews, "
+                    "pricehistory.app, NFM and CamelCamelCamel. "
+                    "Old pin B0CFPL6CFY / UPC 840268942847 was the "
+                    "non-US code (PBTech NZ/AU single source); "
+                    "re-pinned to the US code 2026-11-07 on user "
+                    "confirmation (DECISIONS 062)."
                 },
                 notes="Update 2026-10-31: amazon.com refused AI-agent "
                 "access (Conditions of Use wall) during the small- "
                 "brands sweep (BUILD_LOG 025); official currency "
                 "unverified. Entry unchanged — neither confirmed nor "
                 "removed on this basis; needs live-browser takeover or "
-                "a retailer currency check.",
+                "a retailer currency check. Update 2026-11-07: "
+                "re-pinned to the US code B0CFPJYX7P on user "
+                "confirmation; the old non-US pin is retired, never "
+                "reused.",
                 status="verified"),
     EvalProduct(key="logitech-mx-keys-s-pale-grey", brand="Logitech",
                 model="MX Keys S", variant="Pale Grey (920-011559)",
@@ -357,13 +370,22 @@ EVAL_SET: list[EvalProduct] = [
                 model="MacBook Pro 14-inch (M6, 2026)",
                 variant="M6, 16GB/1TB, Space Black (MHWT4LL/A)",
                 category="laptops",
+                identifiers={"UPC": "195951080291", "MPN": "MHWT4LL/A"},
+                identifier_sources={
+                    "UPC": "B&H Photo + Adorama + Micro Center listings "
+                    "agree on 195951080291 for MHWT4LL/A (2026-11-07 "
+                    "check; B&H $1,999.00, Adorama $1,999.00, Micro "
+                    "Center $1,999.99). Best Buy (SKU 6565882) confirms "
+                    "the model and price but publishes no UPC."
+                },
                 notes="Current generation announced 2026-10-27; in stock from launch day 2026-11-06 (Apple + Best Buy, $1,999). "
                 "Part number MHWT4LL/A confirmed by "
                 "iClarified order number + Best Buy pre-order page "
-                "(SKU 6565882, $1,999). UPC not yet published: stays pending "
-                "(identifiers empty, never matched) until a retailer "
-                "listing states the UPC. User confirmed 2026-10-31 to track "
-                "the M6 base over the in-stock M5 24GB/1TB (MDE34LL/A)."),
+                "(SKU 6565882, $1,999). UPC verified 2026-11-07 "
+                "(three retailers agree) and upgraded to verified on "
+                "user confirmation (DECISIONS 062). User confirmed 2026-10-31 to track "
+                "the M6 base over the in-stock M5 24GB/1TB (MDE34LL/A).",
+                status="verified"),
     EvalProduct(key="apple-mac-mini-m6", brand="Apple",
                 model="Mac mini (M6, 2026)",
                 variant="M6, 16GB/256GB, Silver (MHQK4LL/A)",
@@ -2141,7 +2163,7 @@ EVAL_SET: list[EvalProduct] = [
         "MMF64LL/A ($3,699 at Adorama) and the Nano-texture display "
         "are different configurations. Distinct from the set's "
         "apple-macbook-pro-14-m6 (the separate entry-level M6 line, "
-        "MHWT4LL/A, $1,999, UPC pending) and from the Liquid Retina "
+        "MHWT4LL/A, $1,999, UPC 195951080291 verified 2026-11-07) and from the Liquid Retina "
         "XDR M5 Pro 24GB/1TB (MGDR4LL/A, $2,499) — the PROLED XDR is "
         "the distinct touchscreen tandem-OLED line announced 2026-10-28, "
         "on sale from 2026-11-06.",

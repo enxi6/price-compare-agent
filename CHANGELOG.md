@@ -67,6 +67,21 @@ releases; breaking changes are called out in the release notes.
   models with a verified ranking. No code, catalog, or snapshot
   changes; record only.
 
+- M6 UPC verified + Kindle re-pinned to the US code (DECISIONS 062):
+  MacBook Pro 14 M6 (MHWT4LL/A) UPC 195951080291 confirmed by three
+  independent retailers (B&H Photo $1,999.00, Adorama $1,999.00,
+  Micro Center $1,999.99) and upgraded to verified on user
+  confirmation; identifiers 98 → 99 verified / 101 pending.
+  Kindle Paperwhite 16GB (2024) re-pinned from the non-US code
+  B0CFPL6CFY / UPC 840268942847 to the US code B0CFPJYX7P / UPC
+  840268989538 (NFM + CamelCamelCamel agree on the UPC; Best Buy
+  US, Dell US, TrustedReviews, pricehistory.app confirm the US
+  code); the old non-US pin is retired, never reused. No new
+  verified rankings yet (no identifier-bearing M6 or Kindle quotes
+  exist); site rebuilt, 54 models with a verified ranking, 650
+  offers. Test count guard updated (98 → 99) and the pending-model
+  fixture switched from the M6 to the DualSense Edge; 52 tests pass.
+
 - Phase 2 website v1 (DECISIONS 058, ROADMAP §3.2 M1.3): pure static
   site — home + search across the 200 models, one compare page per
   model, a method-and-principles page, and a coverage-and-gaps page.
@@ -1212,7 +1227,5 @@ hours by design and are flagged stale, never presented as live prices.
 - Sony DualSense White: four conflicting UPC codes from US sources;
   the entry stays pending until a tiebreaker (physical box barcode or a
   Sony spec sheet) appears.
-- MacBook Pro 14 M6: UPC not yet published; the entry stays pending
-  until post-launch retailer pages show it.
 - Snapshot quotes go stale after 24 hours; the CLI flags them for
   re-check instead of presenting them as current prices.

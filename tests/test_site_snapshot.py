@@ -67,8 +67,8 @@ def test_merge_output_is_exactly_the_catalog(tmp_path):
     }
     # Retired snapshot keys never enter the output.
     assert "keychron-k8-pro" not in {m["key"] for m in result["models"]}
-    assert result["meta"]["verified_identifiers"] == 98
-    assert result["meta"]["pending_identifiers"] == 102
+    assert result["meta"]["verified_identifiers"] == 99
+    assert result["meta"]["pending_identifiers"] == 101
 
 
 def test_merge_invents_nothing_meta_only(tmp_path):
@@ -217,14 +217,14 @@ def test_pending_model_never_has_verified_ranking(tmp_path):
             _id_offer("Sony", 69.99, "711719541080",
                       url="https://example.com/ds"),
         ]},
-        "apple-macbook-pro-14-m6": {"offers": [
-            _id_offer("Apple", 1999.00, "195951080291",
-                      url="https://example.com/m6"),
+        "sony-dualsense-edge-black-white": {"offers": [
+            _id_offer("Sony", 69.99, "711719999999",
+                      url="https://example.com/dse"),
         ]},
     })
     result = build_site_snapshot(_files(tmp_path), identified)
     by_key = {m["key"]: m for m in result["models"]}
-    for key in ("sony-dualsense-white", "apple-macbook-pro-14-m6"):
+    for key in ("sony-dualsense-white", "sony-dualsense-edge-black-white"):
         assert all(
             o["suspected"] is True for o in by_key[key]["offers"]
         )
