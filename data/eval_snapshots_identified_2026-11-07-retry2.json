@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "collected_at": "2026-11-07T20:24:41.586860Z",
+    "source": "shopify public product JSON sweep",
+    "source_tier": 1,
+    "identified": true,
+    "generated_by": "price_agent/collect_identified.py"
+  },
+  "models": {
+    "garmin-edge-850": {
+      "offers": [
+        {
+          "merchant": "Incycle",
+          "price": 599.99,
+          "title": "Garmin Edge 850",
+          "url": "https://incycle.com/products/garmin-edge-850?variant=45652728348803",
+          "collected_at": "2026-11-07T20:24:41.586860+00:00",
+          "identifier": "753759356644",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:incycle.com",
+          "in_stock": true
+        },
+        {
+          "merchant": "Contender Bicycles",
+          "price": 599.99,
+          "title": "Garmin Edge 850 Cycling Computer - With Touchscreen",
+          "url": "https://contenderbicycles.com/products/garmin-edge-850-cycling-computer?variant=47036609265909",
+          "collected_at": "2026-11-07T20:24:41.586860+00:00",
+          "identifier": "753759356644",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:contenderbicycles.com",
+          "in_stock": true
+        }
+      ]
+    },
+    "garmin-forerunner-570-42mm-raspberry": {
+      "offers": [
+        {
+          "merchant": "Recovery For Athletes",
+          "price": 549.99,
+          "title": "Garmin Forerunner 570 Advanced Running Smartwatch - Raspberry Aluminum w/ Translucent Bone/Mango Band / 42 mm",
+          "url": "https://recoveryforathletes.com/products/garmin-forerunner-570-advanced-running-smartwatch?variant=47167034196219",
+          "collected_at": "2026-11-07T20:24:41.586860+00:00",
+          "identifier": "753759349820",
+          "identifier_kind": "UPC",
+          "source_tier": 1,
+          "source": "shopify:recoveryforathletes.com",
+          "in_stock": true
+        }
+      ]
+    }
+  }
+}

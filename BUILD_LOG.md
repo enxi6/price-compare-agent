@@ -6209,3 +6209,104 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   MX / Nintendo hardware (no US Shopify retailer), Google Pixel
   Buds, Razer DeathAdder V4 Pro, Bose QC Earbuds / QC Headphones.
   Forerunner 570 + Tab S10 FE+ missed on 429/404, not on merit.
+
+## 079 — 2026-11-07: Daily refresh — full 200-model sweep, builder hardening, PS5 Pro $899.99
+
+- Sweep: 200/200 Meta Catalog calls OK, 3,984 raw listings (prev
+  2,287 — the feed returned more rows per model). Snapshot
+  `data/eval_snapshots_2026-11-07.json`: 580 quotes, 165/200 models
+  with offers. Eval: 200 models, 98 verified identifiers, 165 with
+  quotes, 580 total, 0 identifier-matched (all suspected — the
+  feed carries no UPC, the rule working). 52 tests pass.
+- Identified stream: no full re-sweep (2 h after the morning one —
+  429 risk, would overwrite the file). Targeted retry of the 3
+  still-skipped products only, to
+  `data/eval_snapshots_identified_2026-11-07-retry2.json`: Edge 850
+  @ Incycle $599.99 and @ Contender Bicycles $599.99 (UPC
+  753759356644), Forerunner 570 @ Recovery For Athletes $549.99
+  (UPC 753759349820) — all recovered. Tab S10 FE+ @ Datavision
+  still 404 (handle resolves on www, not the bare domain the
+  collector uses). Site snapshot: 650 offers, 60 matched, 54
+  models with a verified ranking (was 53). Site rebuilt (203 pages).
+- Builder reconstruction: yesterday's builder lived in /tmp and was
+  lost on VM restart. Reconstructed at /tmp/build_snapshot.py and
+  saved durably to the goal hidden_files
+  (`build_snapshot.py`) so later runs reuse it. Validated against
+  the 2026-11-06 snapshot; LOST quotes (12) are all intended
+  corrections (wrong config / color / variant / bundle rows), and
+  the ADDED prices were spot-checked as legit.
+- Builder fixes this run (all evidence-driven from the raw files):
+  (1) NON_US_TLDS completed — .lb, .pa, .uk, .ee, .lt, .lv, .bm,
+  .zw and 60+ more were missing; the "Com" merchant (titan.com.pa
+  and other LatAm hosts) was leaking through. (2) Country-subdomain
+  check — a first label that is a country code or region
+  (uy.jbl.com = JBL Uruguay, row.* = rest of world) now blocks;
+  "us" deliberately allowed. (3) Shopezio block typo fixed: the
+  entry read "shopeizio.com", the real host is "shopezio.com" —
+  the $85 Buds4 Pro row was slipping through. (4) T-Mobile
+  store-locator pages (/stores/pd/) excluded — they show monthly
+  installment prices ($11.95) that poisoned the Watch 9 in-run
+  median; Samsung $379.99 / Best Buy $409.26 now kept. (5) Color
+  words: mocha→brown, latte→beige, whitestone→white, mist→gray,
+  porcelain→white, peony→pink, moonstone→gray; Pop Keys colorway
+  rule (Cosmos/Mist/Heartbreaker/Daydream/Blast, incl. the
+  "Hearbreaker" merchant misspelling). (6) "global model/version"
+  and "international model/version" excluded (Target Buds4 Pro
+  $219.99 "Global Model" dropped; US price $259.99). (7) Handedness
+  rule now catches "left mouse" (Dell Lift $79.99 left-handed row
+  dropped; both remaining Dell listings are right-handed).
+  (8) "12-core CPU" spec strip + Unicode-hyphen normalization
+  (U+2011 in the Datavision title broke the word-boundary rule) —
+  Mac mini recovered at Datavision $898 (pinned MHQK4LL/A).
+  (9) "palm rest", "lock fit", "headphone cable/cord" excluded.
+  (10) Designer-collab exclusion (Thom Browne $950 Bose row).
+  (11) Roman numerals ii/iii/iv in the model-line suffix list;
+  CN/UK/DE/FR/JP/KR in the layout list. (12) Title-word
+  extra-suffix check ("forerunner265s", "q1max" — 265S rows
+  dropped). (13) "mx creative" added to the bundle trap (B&H MX
+  Master 4 $319.98 bundle dropped). (14) jbl.pr canonicalized to
+  "JBL" (Puerto Rico is a US territory — allowed).
+- KNOWN_BAD additions (page-verified): DualSense Edge Macy's
+  $224.95 (all-black variant; page says "Shipped and sold by
+  Offer Express" — third-party marketplace); DualSense White
+  Kohl's $84.99 (page shows Color: Red, not White). Carried quote
+  added: MX Master 4 Graphite Target $119.99 (browser-verified,
+  Target A-95007381 — the retailer hunt is resolved; Target is a
+  new source after Best Buy, B&H, Adorama ruled out and Walmart
+  bot-blocked).
+- Confirmed price moves (merchant-page verified): PS5 Pro $899.99
+  at PlayStation Direct / Boolchand / NFM — Sony raised the US
+  list price $200 on Apr 2, 2026 (multiple news sources confirm;
+  sold out at major retailers ahead of GTA 6, Nov 19); iPad Air
+  M4 13" Apple $949.00 for MH5N4LL/A (apple.com JSON-LD — up from
+  the $799 launch price; feed gap today, no Apple row in the
+  snapshot); Nintendo Switch neon $299.99 at nintendo.com (SKU
+  117972-3, in stock — the $339.99 listing is a stale duplicate).
+  Unverified on the page (feed-only): Lift Dell $69.99 / $79.99
+  (Dell's page did not render a price), PlayStation Portal Macy's
+  $288.99 -> $283.99, Buds4 Pro Target $259.99 (Target page text
+  had no price). PlayStation Direct's PS5 Pro page hides the price
+  behind "See Price"; the $899.99 is corroborated by two other
+  merchants plus news coverage.
+- Rotation: pending-item = M6 Pro UPC (reused the 10:00 PT
+  three-source check: B&H, Adorama, Micro Center all confirm
+  195951080291; catalog entry still pending until the user
+  confirms the upgrade to verified). MX Master 4 Graphite hunt:
+  Target carries it at $119.99 (resolved — see carried quote).
+  Brand patrol = Sony: WH-1000XM6 in stock at
+  electronics.sony.com, $379.99 sale (was $459.99); PULSE 3D not
+  listed on Sony's electronics store (PlayStation product, not in
+  that store's catalog — search by CFI-ZWH1 returns 0 results);
+  sony.com/en-us/store/search is retired and 404s.
+- Zero-quote models (35): feed gaps, not delistings. Notable:
+  G502 X Plus (feed returned only wrong-color / 44K-sensor rows
+  today; the black HERO 25K rows are absent), PS5 Digital 825GB
+  (original 825GB model discontinued), PULSE 3D, MacBook Air 13/15
+  M5 (feed surfaces only wrong-config Apple rows), Mac Studio
+  (Abt 1TB row vs pinned 512GB), Watch SE 3 40mm (feed surfaces
+  only Starlight 40mm / 44mm rows; pinned Midnight MEH94LW/A
+  absent), iMac M6 blue (only the 512GB MWV13LL/A row; pinned
+  256GB absent).
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
+  no DECISIONS.md changes, no models added, no Amazon touch, no
+  spending, no registrations, no purchases.

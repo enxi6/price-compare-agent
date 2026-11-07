@@ -1020,6 +1020,66 @@ releases; breaking changes are called out in the release notes.
 
 ### Changed
 
+- Daily price refresh 2026-11-07: full 200-model Meta Catalog sweep
+  (3,984 raw listings, 200/200 calls OK); snapshot
+  `data/eval_snapshots_2026-11-07.json` holds 580 quotes across 165
+  of 200 models (prev: 192 quotes / 82 of 100 — the set grew to 200
+  with the Shopify expansion, so the jump is coverage, not a price
+  move). Identified stream: targeted retry of the 3 still-skipped
+  products recovered Edge 850 @ Incycle and @ Contender Bicycles
+  $599.99 and Forerunner 570 @ Recovery For Athletes $549.99 (all
+  UPC-matched); Tab S10 FE+ @ Datavision still 404 (handle resolves
+  on www, not the bare domain). Verified ranking 53 → 54 models
+  (60 matched offers, 650 total offers in the site snapshot).
+  Confirmed moves: PS5 Pro now $899.99 at PlayStation Direct,
+  Boolchand and NFM (Sony raised the US list price $200 on Apr 2,
+  2026 — the old $749.99 baseline is stale; sold out at major
+  retailers ahead of GTA 6 on Nov 19); iPad Air M4 13" Apple
+  $949.00 for MH5N4LL/A (apple.com JSON-LD confirms — up from the
+  $799 launch price; the feed did not return the row today, so the
+  snapshot has no Apple offer for this model); Nintendo Switch neon
+  $299.99 at nintendo.com (SKU 117972-3, in stock — the $339.99
+  listing is a stale duplicate); Target MX Master 4 Graphite
+  $119.99 (browser-verified, Target A-95007381 — retailer hunt
+  resolved, carried as a new quote). Feed rows proven wrong and
+  excluded: DualSense Edge Macy's $224.95 (all-black variant, and
+  the page says "Shipped and sold by Offer Express" — third-party
+  marketplace; Macy's own price stays $209.99), DualSense White
+  Kohl's $84.99 (page shows Color: Red, not White; Kohl's White
+  stays $74.99), Samsung Buds4 Pro Target $219.99 ("Global Model"
+  — non-US; US Target price $259.99), B&H MX Master 4 $319.98
+  (MX Master 4 + MX Creative bundle). Unverified on the merchant
+  page (feed-only): Lift Dell $69.99 / $79.99 (two Dell listings
+  for the right-handed Graphite; Dell's page did not render a
+  price), PlayStation Portal Macy's $288.99 -> $283.99, Buds4 Pro
+  Target $259.99. Builder fixes (snapshot builder, durable copy in
+  the goal hidden_files): non-US TLD list completed (.lb, .pa, .uk,
+  .ee, .lt, .lv and 60+ more) + country-subdomain check (uy.jbl.com
+  is JBL Uruguay — blocked); Shopezio block typo fixed
+  ("shopeizio" -> "shopezio"); T-Mobile store-locator pages
+  (/stores/pd/) excluded (monthly-installment prices poisoned the
+  Watch 9 median — Samsung $379.99 / Best Buy $409.26 now kept);
+  color words added (mocha, latte, whitestone, mist, porcelain,
+  peony, moonstone) + Pop Keys colorway rule (Cosmos/Mist/
+  Heartbreaker/Daydream/Blast); "global model/version" and
+  "international model/version" excluded; handedness rule now
+  catches "left mouse"; "12-core" spec strip + Unicode-hyphen
+  normalization (Datavision Mac mini $898 recovered); "palm rest",
+  "lock fit", "headphone cable/cord" excluded; designer-collab
+  exclusion (Thom Browne $950 Bose row dropped); Roman-numeral
+  suffixes (ii/iii/iv) and CN/UK/DE/FR/JP/KR layouts; title-word
+  extra-suffix check (Forerunner 265S rows dropped). Sony patrol:
+  WH-1000XM6 in stock at electronics.sony.com, $379.99 sale (was
+  $459.99); PULSE 3D not listed on Sony's electronics store (it is
+  a PlayStation product; sony.com/en-us/store/search is retired
+  and 404s). Zero-quote models (35): feed gaps, not delistings —
+  incl. G502 X Plus (feed returned only wrong-color / 44K-sensor
+  rows today), PS5 Digital 825GB (original 825GB model
+  discontinued), PULSE 3D. M6 Pro UPC 195951080291 confirmed by
+  B&H, Adorama and Micro Center (10:00 PT check); catalog entry
+  still pending until the user confirms the upgrade to verified.
+  Kindle pin unchanged (B0CFPL6CFY). Eval: 580 quotes, 0
+  identifier-matched, 580 suspected. 52 tests pass.
 - Daily price refresh 2026-11-06 (second run, PM): scope frozen at 100
   models (92 swept at run start + 8 more; expansion batches 16+ join the
   consolidated snapshot tomorrow), 1,987 raw listings; the snapshot
