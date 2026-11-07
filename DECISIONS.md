@@ -3412,3 +3412,35 @@ written as "superseded by" with the original text kept.
   batch 26 revisits carry over unchanged (five Lenovo sale prices
   after Early Black Friday ends Nov 8; Tab Plus Gen 2 $469.99;
   Idea Tab Pro Gen 2 bundle contents; five pending Lenovo UPCs).
+
+## 058 (2026-11-06): Phase 2 website v1 — static site (Shape A), M1.3 scope only
+
+- Decision: The v1 website is a pure static site (ROADMAP §3.1 Shape A,
+  milestone M1.3): home + search, one compare page per model (200),
+  a method-and-principles page, and a coverage-and-gaps page. No
+  accounts, no login, no payments, no user reviews, no "recommended
+  for you" (a recommendation algorithm would break ranking neutrality),
+  no backend, no writes. The site is rendered from consolidated
+  snapshots by a stdlib-only generator (`price_agent/build_site.py`,
+  output `site/`), reproducible on a schedule per ROADMAP §3.3.
+- Why: v1's goal is "let people verify this comparison is
+  trustworthy", not "build a complete product". Static pages are
+  naturally auditable: each compare page is a timestamped public
+  snapshot.
+- What was deliberately NOT built (M1.4, later): price-drop alert
+  subscription, read-only API, price history page, Apple showcase
+  page. ROADMAP §3.1 says the read-only API should be "built
+  alongside v1"; this decision defers it to M1.4, because the API
+  needs an always-on service and the v1 goal does not require it.
+  The exclusion is recorded here, not silently dropped.
+- Honesty state carried onto the site, stated on every product page
+  and on the Method page: snapshot offers carry no identifier (the
+  catalog source returns none), so the verified ranking is EMPTY on
+  all 200 pages until an identifier-returning source is connected.
+  All offers are shown only in a clearly labeled title-matched
+  ("suspected") table, never dressed up as a ranking. Prices are
+  as-of the snapshot date (2026-11-06); anything older than 24h is
+  labeled "Needs re-check".
+- Alternative (not chosen): Build the read-only API alongside v1
+  per ROADMAP §3.1 — deferred as above; a full dynamic web app
+  (ROADMAP Shape C) — rejected in ROADMAP §3.1, unchanged.

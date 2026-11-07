@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method &amp; principles — price comparison</title><style>
+body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;max-width:960px;
+margin:0 auto;padding:24px 16px;color:#1a1a1a;line-height:1.55}
+a{color:#0b5fff}header{border-bottom:2px solid #1a1a1a;padding-bottom:12px;
+margin-bottom:24px}nav a{margin-right:16px}.muted{color:#555;font-size:.9em}
+.notice{background:#fff8e1;border:1px solid #e6c200;padding:12px 16px;
+border-radius:6px;margin:16px 0}.warn{background:#fdecea;border:1px solid #d93025;
+padding:12px 16px;border-radius:6px;margin:16px 0}
+table{border-collapse:collapse;width:100%;margin:12px 0}
+th,td{border:1px solid #ddd;padding:8px;text-align:left;vertical-align:top}
+th{background:#f2f2f2}tr:nth-child(even){background:#fafafa}
+.tag{display:inline-block;padding:1px 8px;border-radius:10px;font-size:.85em;
+background:#e8f0fe}.tag.pending{background:#fef3c7}.tag.stale{background:#fdecea}
+input[type=search]{width:100%;padding:10px;font-size:1.05em;margin:12px 0}
+.stat{font-size:1.4em;font-weight:700}footer{border-top:1px solid #ddd;
+margin-top:40px;padding-top:12px;color:#555;font-size:.9em}
+h1{font-size:1.6em}h2{font-size:1.25em;margin-top:28px}
+</style></head>
+<body><header><nav>
+<a href="index.html">Home</a>
+<a href="method.html">Method &amp; principles</a>
+<a href="coverage.html">Coverage &amp; gaps</a>
+</nav></header>
+<h1>Method &amp; principles</h1>
+<p>How this site compares prices, what it can and cannot verify, and
+where its money does and does not come from. No black-box scores.</p>
+
+<h2>1. Ranking: delivered total, nothing else</h2>
+<p>Offers in a verified ranking are ordered by delivered total:
+item price + shipping + estimated tax &minus; discounts. Offers with
+unknown shipping rank behind offers with known shipping, because an
+unknown total is a lower bound, not a delivered price. Ties break by
+delivery days, then seller rating. There is no composite score and no
+"recommended for you".</p>
+
+<h2>2. Same product means matching identifier</h2>
+<p>Only a matching UPC, EAN, MPN or official SKU counts as the same
+product. Similar titles go to the "suspected same product" appendix
+and never enter the main ranking. An identifier is recorded only when
+two independent sources state it for the exact variant (color, storage
+and connectivity included). Identifiers are never invented, never
+carried across variants, revisions or regions.</p>
+<p><strong>Current state, stated plainly:</strong> our quote source
+(Meta Catalog search) returns no identifiers, so every offer on this
+site is currently title-matched only. The verified ranking is empty on
+every product page until an identifier-returning source is connected.
+The suspected table is shown as what it is &mdash; a price signal,
+not a verified ranking.</p>
+
+<h2>3. Data sources, in tiers</h2>
+<p>Official APIs and feeds first, then affiliate catalogs, then
+structured data, then read-only browser verification. A channel that
+is blocked or prohibited by its terms of service stops there: no
+bypassing verification, no fake identity, no rotating proxies.</p>
+<p><strong>Amazon is not covered in v1.</strong> Its access wall is
+treated as a permanent property of the retailer, not a temporary
+failure. Only legitimate channels will ever be used (its official
+API, or licensed data providers); none is live yet, and no Amazon
+spend is approved.</p>
+
+<h2>4. Which quotes count</h2>
+<p>Only seller-direct or retailer-direct quotes: the merchant itself
+selling the product. Marketplace and third-party seller rows are
+excluded, even when cheaper. Only US-market goods (US MPN/UPC, sold by
+US retailers). Only new units: used, refurbished and open-box are out
+of scope for Phase 1. Bundles are excluded at snapshot time.</p>
+
+<h2>5. Freshness</h2>
+<p>Every price carries its merchant, source link and fetch time.
+Prices are as of their snapshot date, shown on every page. Anything
+older than 24 hours is labeled "Needs re-check" and is never
+presented as a live price.</p>
+
+<h2>6. Money and disclosure</h2>
+<p>This site currently earns no commission from any quote shown. If
+affiliate links are added later, they will be disclosed on this page
+and will never affect ranking. There are no ads and no sponsored
+placements. Ranking factors contain buyer interests only: total
+price, delivery, reputation.</p>
+
+<h2>7. Privacy</h2>
+<p>This is a static site. No accounts, no login, no tracking, no data
+collected. Search runs in your browser; nothing you type leaves the
+page.</p>
+<footer><p>Prices are from our latest snapshot (2026-11-06). Quotes older
+than 24 hours are labeled "Needs re-check". This site earns no commission
+from any quote shown, runs no ads, and collects no data. See
+<a href="method.html">Method &amp; principles</a>.</p>
+<p>Generated 2026-11-07T00:29:22.713828+00:00 from site_snapshot_2026-11-06.json.</p></footer>
+</body></html>

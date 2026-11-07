@@ -11,6 +11,19 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Phase 2 website v1 (DECISIONS 058, ROADMAP §3.2 M1.3): pure static
+  site — home + search across the 200 models, one compare page per
+  model, a method-and-principles page, and a coverage-and-gaps page.
+  New `price_agent/build_site_snapshot.py` merges all 46 eval snapshots
+  into `data/site_snapshot_2026-11-06.json` (200 models, 98 verified /
+  102 pending identifiers, 448 offers, 182 models with offers); new
+  `price_agent/build_site.py` renders `site/` (203 pages). Honest by
+  construction: snapshot offers carry no identifier, so the verified
+  ranking is empty on every product page and all offers appear only in
+  a clearly labeled title-matched table; prices older than 24h are
+  labeled "Needs re-check". Excluded from this build (M1.4, later):
+  alert subscription, read-only API, price history, Apple showcase.
+
 - Expansion batch 26 (DECISIONS 048, continuous expansion per
   DECISIONS 027): eval set 150 → 155 models, verified identifiers
   stay 74 (0 of 5 new identifiers verified — all pending; no UPC

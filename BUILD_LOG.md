@@ -6043,3 +6043,37 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   keys: razer-basilisk-v3-pro-35k-black,
   garmin-forerunner-265-black, corsair-k70-core-rgb-black,
   asus-rog-keris-ii-ace-black).
+
+## 075 — 2026-11-06: Phase 2 website v1 — static site live (DECISIONS 058)
+
+- Consolidated snapshot: new `price_agent/build_site_snapshot.py`
+  (stdlib-only) merges all 46 `data/eval_snapshots*.json` files, latest
+  `collected_at` per model, output `data/site_snapshot_2026-11-06.json`:
+  exactly 200 models, 98 verified / 102 pending identifiers, 448 offers
+  (455 raw rows minus 7 exact duplicates), 182 models with offers, 18
+  with none. All 200 models' latest snapshot is 2026-11-06. The 7
+  snapshot keys not in the catalog are retired entries (AirPods 4
+  USB-C, AirPods Max USB-C, AirPods Pro 2 Lightning, iPad Pro M4 11,
+  K8 Pro, MX Master 3S, Buds2 Pro White) and are ignored, never added.
+  Identifiers copied from the catalog only; every offer flagged
+  identifier-null / suspected. Verified by script + assertions.
+- Static generator: new `price_agent/build_site.py` (stdlib-only)
+  renders `site/`: 203 pages (home + search, 200 product pages,
+  method, coverage). Every product page states the verified ranking
+  is empty and shows title-matched offers only, with merchant, price,
+  source link, fetch time and staleness label; shipping unknown on
+  every offer, so landed totals are lower bounds. Home search covers
+  name/UPC/MPN across the 200 models; unknown models say "not
+  indexed". Method copy follows DECISIONS 001/002/004/018/021.
+  Coverage page lists the 18 no-quote models and all gaps truthfully.
+- Tests: 27 passed (19 baseline + 4 merge + 4 generator). New
+  `tests/test_site_snapshot.py` (latest-wins, exact-catalog,
+  invents-nothing, dedupe) and `tests/test_build_site.py` (page
+  count, no faked ranking, no-quotes wording, not-indexed wording).
+- Excluded from this build (M1.4, later): alert subscription,
+  read-only API, price history, Apple showcase page. No Amazon in
+  any way; no catalog.py identifier changes; Kindle pin untouched
+  (B0CFPL6CFY). No spending, no registrations, no purchases.
+- Deliverable: static web artifact (review build) bundling the same
+  consolidated dataset; the repo generator is the durable,
+  re-runnable asset.
