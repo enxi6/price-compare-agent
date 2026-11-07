@@ -6337,3 +6337,17 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   suspected (identifier-null Meta rows, correctly unmatched).
 - Tests 52 pass. No catalog identifier changes, no DECISIONS
   changes, no models added, no Amazon touch, no spending.
+## 082 — 2026-11-07: Target redsky API evaluation — NOT VIABLE (DECISIONS 063)
+
+- 1 plain request to redsky PDP endpoint (AirPods Pro 3 TCIN
+  85978609): HTTP 435, PerimeterX captcha. No data returned; no
+  retry, no key hunt, no header tricks.
+- Terms: Target ToS bans commercial collection of listings/prices
+  and automated tools; redsky robots.txt is a total disallow
+  (User-agent: * / Disallow: /). No authorized route (developer
+  portal restricted; Target Plus API seller-side only).
+- Coverage cost: Target carries 28 of 42 unranked priority models;
+  lift would have been 23–28 models (55 → ~78–83). Unattainable
+  via this route. Target hand rows need a fresh compliance call —
+  not cleared here.
+- No code, catalog, or snapshot changes; record only.

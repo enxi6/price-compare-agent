@@ -3711,3 +3711,46 @@ written as "superseded by" with the original text kept.
 - What did NOT change: identifier rules (no relaxation); seller-direct
   / US-goods only (DECISIONS 021); no Amazon in any form (DECISIONS
   018); no models added; no spending, no registrations, no purchases.
+## 063 (2026-11-07): Target redsky API — NOT VIABLE, no collector built
+
+- Technical: 1 plain request (curl, default UA, no headers/cookies/
+  key/login, AirPods Pro 3 TCIN 85978609, 2026-11-07 13:55 PST)
+  returned HTTP 435, PerimeterX captcha page — no JSON, no price,
+  no UPC, no seller, no availability. Stopped immediately; no
+  retry, no header tricks, no proxy, no key hunt. Whether a key
+  parameter alone would pass PerimeterX is unknown and untested
+  (forbidden by the task rules).
+- Terms: Target Terms of Use license is personal, noncommercial use
+  only; "Unlawful or Prohibited Uses" bans any collection/use of
+  product listings, descriptions, prices or images for commercial
+  purposes, bans navigating with any engine/software/tool/agent
+  other than Target's own search or generally available browsers,
+  and bans data extraction/scraping/mining and systematic
+  downloading/storing. A daily automated CLI refresh hits at least
+  three of these. robots.txt for redsky.target.com is a total
+  closure (User-agent: * / Disallow: /). No authorized route:
+  developer portal restricted to employees/trusted third parties,
+  Target Plus API is seller-side only, affiliate program is
+  links/commissions not a data API.
+- Sourcing caveat: live target.com/terms fetch returned only
+  Target Circle loyalty terms; general site terms verified via
+  Target's staging-domain copy plus two mirrors with identical
+  wording. robots.txt findings are direct live reads.
+- Coverage (opportunity cost): Target carries 28 of the 42
+  unranked priority models (Logitech 10/16, Nintendo 8/9, Sony
+  consoles 4/4, Google 2/2, Bose 3/3, Xbox 1/1; Razer 0/7 —
+  Target stocks only X-tier/entry Razer). Realistic lift if an
+  identifier-bearing Target source existed: 23–28 models
+  (55 → ~78–83 verified rankings). 18 near-certain first-party
+  (Nintendo 8, Sony 4, Google 2, Bose 3, Xbox 1); ~5–10 Logitech
+  depend on a seller check. Only 5 TCINs actually found; "sold by
+  Target" could not be directly verified from fetched pages (PDP
+  text fetches omit the seller block).
+- Follow-up flag: Target hand-verified rows need a fresh compliance
+  call before anyone treats them as cleared — the ToS bans
+  systematic collection even via a normal browser render. Not
+  cleared here.
+- What did NOT change: identifier rules; seller-direct / US-goods
+  only (DECISIONS 021); no Amazon in any form (DECISIONS 018); no
+  code, catalog, or snapshot changes; record only. Fallback stands:
+  hand-verified rows + Shopify expansion (DECISIONS 059/061).

@@ -88,6 +88,15 @@ releases; breaking changes are called out in the release notes.
   2026-11-07 before ingest) added to the hand-identified file.
   Verified ranking 54 → 55 of 200 models, matched offers 60 → 61.
 
+- Target redsky API ruled out (DECISIONS 063): one plain request
+  returned HTTP 435 (PerimeterX captcha, no data); Target's terms
+  ban commercial collection of listings/prices and automated
+  tools, and redsky's robots.txt disallows everything. No
+  collector built. Opportunity cost is real — Target carries 28
+  of the 42 unranked priority models (lift would have been 23–28)
+  — but unattainable via this route. Target hand rows need a fresh
+  compliance call and are not cleared here.
+
 - Phase 2 website v1 (DECISIONS 058, ROADMAP §3.2 M1.3): pure static
   site — home + search across the 200 models, one compare page per
   model, a method-and-principles page, and a coverage-and-gaps page.
