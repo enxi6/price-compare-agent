@@ -31,6 +31,22 @@ releases; breaking changes are called out in the release notes.
   No catalog identifier changes, no rule relaxation, no spending,
   no registrations, no Amazon.
 
+- Generic retailer JSON-LD parser ruled out (DECISIONS 060): raw
+  fetch of 27 retailer pages found zero JSON-LD blocks (Target
+  genuinely negative — client-side data via the redsky API; B&H,
+  Best Buy, Newegg, Adorama, Walmart all bot-block raw fetches),
+  and a live-browser check of 22 URLs verified exactly one
+  JSON-LD Product block (Walmart MX Vertical, gtin13
+  097855144461, $94). No parser built: no reliable automatable
+  collection route exists (curl and text-fetch both hit Walmart's
+  bot-check page, the W3C validator is flaky, no public product
+  JSON endpoint, the affiliate API needs a key + registration).
+  The Walmart MX Vertical row is a candidate 12th verified ranking
+  but is NOT counted — its identifiers match the catalog exactly,
+  but the seller was never verified. Coverage unchanged: 11 of 200
+  models with a verified ranking. No code, catalog, or snapshot
+  changes; record only.
+
 - Phase 2 website v1 (DECISIONS 058, ROADMAP §3.2 M1.3): pure static
   site — home + search across the 200 models, one compare page per
   model, a method-and-principles page, and a coverage-and-gaps page.

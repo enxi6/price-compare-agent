@@ -6136,3 +6136,35 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   table. The generator + collector are the durable, re-runnable
   assets; the daily-refresh cron body edit is proposed to the
   parent, not done here.
+
+## 077 — 2026-11-07: Generic retailer JSON-LD parser ruled out (DECISIONS 060)
+
+- Hypothesis test (phase 1 of this task): raw curl over 27
+  retailer pages found ZERO JSON-LD blocks; Target confirmed
+  genuinely negative (Next.js shell, product data loads
+  client-side via the redsky API); B&H / Best Buy / Newegg /
+  Adorama / Walmart all bot-block raw fetches (Cloudflare
+  challenge, DataDome, timeout). Live-browser check of 22 URLs
+  verified exactly ONE JSON-LD Product block: Walmart Logitech
+  MX Vertical (gtin13 097855144461, $94, InStock); the other 21
+  were unverifiable either way (validator fetches blocked, the
+  browser cannot expose script tags).
+- Verdict: no generic parser built — no reliable input exists. A
+  Walmart-only collector was evaluated and rejected too: curl and
+  the text-fetch route both return Walmart's "Robot or human?"
+  bot-check page (text-fetch re-confirmed 2026-11-07), the W3C
+  validator fetched 1 of 3 Walmart pages, there is no public
+  product JSON endpoint, and the affiliate/Open API needs a key +
+  registration. No code, catalog, or snapshot changes; only the
+  DECISIONS 060 + BUILD_LOG 077 record.
+- MX Vertical (logitech-mx-vertical-graphite) is a candidate 12th
+  verified ranking, NOT counted: its gtin13 + model match the
+  catalog's verified UPC 097855144461 / MPN 910-005447 exactly,
+  but the seller was never verified and the page is now
+  bot-blocked to every fetch route. It enters a ranking only after
+  a live-browser check confirms "Sold and shipped by Walmart" at
+  $94 with the same gtin13 — the same bar that kept the Target
+  AirPods Pro 3 row out in DECISIONS 059.
+- Coverage unchanged: 11 of 200 models with a verified ranking;
+  98 verified / 102 pending identifiers. Next coverage step is
+  Shopify expansion (more pinned stores), not a new parser.

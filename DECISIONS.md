@@ -3540,3 +3540,69 @@ written as "superseded by" with the original text kept.
   source covers all 200 — rejected; a partial, honestly labeled
   verified ranking (11 of 200) is strictly more truthful than an
   empty one, and the suspected table is unchanged for the rest.
+
+## 060 (2026-11-07): Generic retailer JSON-LD parser — NOT VIABLE, no parser built
+
+- Verdict: do NOT build a generic JSON-LD parser. The hypothesis
+  (retailer product pages carry machine-readable JSON-LD with
+  gtin/mpn that a single parser could harvest at scale) is refuted
+  by the evidence below. No parser was built, no code changed, no
+  snapshot added. The working sources stay what DECISIONS 059
+  established: Shopify public product JSON (tier 1) + hand-verified
+  retailer spec-page rows (tier 4). Next coverage step is Shopify
+  expansion, not a new parser.
+- Evidence — raw HTML (27 retailer pages, curl): ZERO JSON-LD
+  blocks anywhere. Target is genuinely negative: Next.js shells,
+  zero ld+json / gtin / mpn hits in raw HTML, product data loads
+  client-side via the redsky API. B&H, Best Buy, Newegg, Adorama
+  and Walmart all bot-block raw fetches (Cloudflare "Just a
+  moment..." 403, DataDome captcha page, connection timeout).
+- Evidence — live browser (22 URLs, all pages loaded): only ONE
+  JSON-LD Product block verified — Walmart Logitech MX Vertical
+  (https://www.walmart.com/ip/321255745): gtin13 "097855144461",
+  sku "321255745", price 94 USD, InStock, mpn absent (uses
+  "model" "910-005447"). The other 21 could NOT be verified either
+  way: this browser cannot expose script tags or View
+  Source/DevTools, and the W3C validator's fetches are blocked
+  (B&H 403, Best Buy IO error, Newegg 403, Adorama 403, Walmart
+  bot-check page on 2 of 3). A blocked validator fetch is NOT
+  evidence of absence — but it is also not a collection method.
+  Rendered pages DO show identifiers as visible text (B&H UPC +
+  MFR#, Best Buy Model + SKU, Newegg Item#, Adorama SKU + MFR#),
+  but visible text is not JSON-LD and cannot be parsed generically.
+- Why no Walmart-only collector either: every automatable
+  collection route is dead or flaky. Raw curl returns the "Robot
+  or human?" bot-check page; the text-fetch route returns the same
+  bot-check page (re-confirmed 2026-11-07); the W3C validator
+  fetched 1 of 3 Walmart pages; Walmart has no public product JSON
+  endpoint (unlike Shopify); the affiliate/Open API needs a key +
+  registration (forbidden — no new registrations); the live browser
+  works but is not automatable inside the daily cron's CLI
+  environment, and bulk collection of dozens of pages per run is
+  materially heavier than the cron's verification-only browser use.
+  A parser with no reliable input is not a parser.
+- MX Vertical candidate (NOT counted): the Walmart JSON-LD gtin13
+  097855144461 + model 910-005447 match the catalog entry
+  logitech-mx-vertical-graphite exactly (verified UPC
+  097855144461, MPN 910-005447, four independent identifier
+  sources). But the seller was never verified — the live-browser
+  check recorded the JSON-LD block, not who sells the item, and
+  the seller cannot be re-checked now (the page is bot-blocked to
+  every fetch route). Per DECISIONS 059's own standard (hand rows
+  re-verified personally; worker evidence alone is not enough —
+  the same bar that kept the Target AirPods Pro 3 row out), the
+  row is NOT added. It becomes a 12th verified ranking only after
+  a live-browser check confirms "Sold and shipped by Walmart" at
+  $94 with the same gtin13. Until then the model keeps its
+  empty-ranking warning.
+- What did NOT change: identifier rules (98 verified / 102
+  pending, 11 models with a verified ranking — unchanged);
+  seller-direct / US-goods only (DECISIONS 021); no Amazon in any
+  form (DECISIONS 018); no spending, no paid tools, no new
+  registrations. No code, catalog, or snapshot changes in this
+  run; only this record.
+- Not evaluated here: Target's redsky API (the client-side data
+  source behind Target PDPs) — a different source design, not
+  JSON-LD parsing; it would need its own tier/terms evaluation
+  before any use. Per-retailer visible-text parsers (~10 parsers
+  for the brand-DTC ceiling) remain deferred as in DECISIONS 059.
