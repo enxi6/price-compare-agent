@@ -97,6 +97,17 @@ releases; breaking changes are called out in the release notes.
   — but unattainable via this route. Target hand rows need a fresh
   compliance call and are not cleared here.
 
+- Coverage round 2 (Shopify + hand rows): verified ranking 55 → 73
+  of 200 models, matched offers 61 → 80. Four new JustPressPlay
+  pins (Switch 2 Pro Controller $89.99, Switch Pro Controller
+  $79.99, Switch OLED Neon $399.99, Switch Lite Turquoise $229.99)
+  and 16 hand-verified rows across 14 models (14 B&H + 2 Adorama).
+  A full-sweep overwrite dropped 2 rankings while 28 pins were
+  rate-limited; a 30 s-pace retry recovered all but Edge 850 @
+  Incycle (still 429). No catalog identifier changes (99/101).
+  Identifier evidence collected as proposals only (strongest:
+  WF-C510, InZone H5).
+
 - Phase 2 website v1 (DECISIONS 058, ROADMAP §3.2 M1.3): pure static
   site — home + search across the 200 models, one compare page per
   model, a method-and-principles page, and a coverage-and-gaps page.

@@ -6351,3 +6351,60 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   via this route. Target hand rows need a fresh compliance call —
   not cleared here.
 - No code, catalog, or snapshot changes; record only.
+## 083 — 2026-11-07: Coverage round 2 — verified ranking 55 → 73 models
+
+- Lane A (Shopify): 4 new JustPressPlay pins (all "New" variant ids;
+  Used variants share the same barcode and were NOT pinned):
+  Switch 2 Pro Controller $89.99 (UPC 045496885861), Switch Pro
+  Controller $79.99 (045496590161), Switch OLED Neon $399.99
+  (045496883409), Switch Lite Turquoise $229.99 (045496882266).
+  All verified at the .js endpoint by the coordinator before
+  ingest. shopify_handles.json 81 → 85 entries.
+- Lane B (hand rows): 16 tier-4 rows across 14 models, all fresh
+  browser reads 2026-11-07 22:25–22:27 UTC, price + UPC on the same
+  page: 14 B&H rows (MX Keys S $129.99, Pixel Buds Pro 2 $229.99,
+  iPad A16 $419.00, MX Anywhere 3S $89.99, MX Keys Mini $89.99,
+  G502 X Plus $159.99, MX Vertical $74.99, QC Earbuds $129.00, MX
+  Mechanical $179.99, Ergo K860 $149.99, ULT WEAR $148.00, G915 X
+  $259.99, Legion Tab Gen 5 $799.99, PA279CRV $429.00) + 2 Adorama
+  rows (MX Keys Mini $96.49, Ergo K860 $149.99 — second merchants
+  for those models; Ergo K860 Adorama page notes Ships from
+  Manufacturer). All 16 rows verified against the catalog with
+  identity.normalize_identifier before ingest; 0 mismatches.
+- Result: verified ranking 55 → 73 of 200 models; matched offers
+  61 → 80; total offers 651 → 668. No catalog identifier changes
+  (99 verified / 101 pending).
+- Process incident — full-sweep overwrite lost rows, recovered by
+  retry: the round-2 collector sweep overwrote the day's main
+  identified file while 28 pins were rate-limited (429), dropping
+  2 rankings (WF-1000XM6 @ Moon Audio, JBL Xtreme 4 @ Rock & Soul)
+  and 4 second-merchant rows. A 30 s-pace retry (retry3 file,
+  30 offers) recovered all but one: Edge 850 @ Incycle still 429
+  after two attempts (model keeps its ranking via Contender
+  Bicycles). Lesson: run the retry before rebuilding when a sweep
+  has skips; never rebuild on a partial sweep without diffing
+  before/after.
+- Held, not ingested: K8 hot-swappable red @ Keychron (barcode
+  617748997921 confirmed at the .js, available false — restock
+  recheck); Anker Boom 2 @ B&H (UPC confirmed, Temporarily Out of
+  Stock); Bose QC Headphones @ Adorama $359 (UPC confirmed, stock
+  not confirmed in text fetch); 2 B&H partials + 9 other near-misses
+  (price confirmed, UPC not visible in text fetch — live-browser
+  SPECS-check jobs, listed in the round report).
+- Not covered: Teds Electronics is Shopify-confirmed but no
+  non-bundle target stock found (XM5 handle absent); ThinkEdu no
+  new pins proposed (DECISIONS 021 call on its HP listings not
+  returned — no action taken); Samy's Camera / Antonline not
+  attempted. PS5 consoles, Logitech MX Master 4 graphite, Razer
+  DeathAdder V4 Pro, Dell S3225QS, HP 920, Alienware Pro mouse
+  still uncovered — no qualifying Shopify store or hand row found.
+- Identifier evidence collected (proposals only, NOT applied):
+  InZone H5, WF-C510, DualSense Edge (US), Watch Series 12,
+  Watch Ultra 4 (box barcode), Pulse Explore, Elite Core white
+  (US), DEX (US), Wave Keys, WH-1000XM4, Pulse Elite, Access
+  Controller — graded in the round report; strongest is WF-C510
+  (B&H + Abt agree) and InZone H5 (Datavision + Focus Camera
+  .js agree on UPC 027242927919). Pop Keys Cosmos + Pro X TKL US
+  UPC still unfound; DualSense White deliberately not attempted.
+- Tests 52 pass. No Amazon, no Target, no spending, no
+  registrations, no purchases.

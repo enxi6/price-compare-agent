@@ -567,6 +567,34 @@
       "store": "expercom.com",
       "handle": "ipad-pro-13-inch-with-apple-m5",
       "variant_id": 44398644002850
+    },
+    {
+      "product_key": "nintendo-switch-2-pro-controller",
+      "merchant": "JustPressPlay",
+      "store": "justpressplayonline.com",
+      "handle": "nintendo-switch-2-pro-controller",
+      "variant_id": 51231992381754
+    },
+    {
+      "product_key": "nintendo-switch-pro-controller",
+      "merchant": "JustPressPlay",
+      "store": "justpressplayonline.com",
+      "handle": "nintendo-switch-pro-controller",
+      "variant_id": 51057750278458
+    },
+    {
+      "product_key": "nintendo-switch-oled-neon",
+      "merchant": "JustPressPlay",
+      "store": "justpressplayonline.com",
+      "handle": "nintendo-switch-oled-console-neon-joy-con",
+      "variant_id": 51057840947514
+    },
+    {
+      "product_key": "nintendo-switch-lite-turquoise",
+      "merchant": "JustPressPlay",
+      "store": "justpressplayonline.com",
+      "handle": "nintendo-switch-lite-turquoise",
+      "variant_id": 51057838915898
     }
   ]
 }

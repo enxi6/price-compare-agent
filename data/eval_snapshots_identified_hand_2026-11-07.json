@@ -38,6 +38,254 @@
           "in_stock": true
         }
       ]
+    },
+    "logitech-mx-keys-s-pale-grey": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 129.99,
+          "title": "Logitech MX Keys S Wireless Keyboard (Pale Gray)",
+          "url": "https://www.bhphotovideo.com/c/product/1760697-REG/logitech_920_011559_mx_keys_s_wireless.html",
+          "collected_at": "2026-11-07T22:25:00Z",
+          "identifier": "097855187857",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "google-pixel-buds-pro-2-porcelain": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 229.99,
+          "title": "Google Pixel Buds Pro 2 Wireless Noise-Canceling Earbuds (Porcelain)",
+          "url": "https://www.bhphotovideo.com/c/product/1860986-REG/google_ga05760_us_pixel_buds_pro2_porcelain.html",
+          "collected_at": "2026-11-07T22:25:00Z",
+          "identifier": "840244604448",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-ipad-a16-11": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 419.00,
+          "title": "Apple 11\" iPad A16 Chip (128GB, Wi-Fi Only, Silver)",
+          "url": "https://www.bhphotovideo.com/c/product/1883625-REG/apple_md3y4ll_a_11_ipad_a16_chip.html",
+          "collected_at": "2026-11-07T22:25:00Z",
+          "identifier": "195950086232",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "logitech-mx-anywhere-3s-graphite": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 89.99,
+          "title": "Logitech MX Anywhere 3S Wireless Mouse (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1760693-REG/logitech_910_006928_mx_anywhere_3s_wireless.html",
+          "collected_at": "2026-11-07T22:25:00Z",
+          "identifier": "097855184030",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "logitech-mx-keys-mini-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 89.99,
+          "title": "Logitech MX Keys Mini Wireless Keyboard (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1662677-REG/logitech_920_010475_mx_keys_mini_wireless.html",
+          "collected_at": "2026-11-07T22:25:00Z",
+          "identifier": "097855169617",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        },
+        {
+          "merchant": "Adorama",
+          "price": 96.49,
+          "title": "Logitech MX Keys Mini Wireless Keyboard (Black)",
+          "url": "https://www.adorama.com/logitech-mx-keys-mini-wireless-keyboard-bluetooth-backlit/p/lo9210475",
+          "collected_at": "2026-11-07T22:25:00Z",
+          "identifier": "097855169617",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "adorama.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "logitech-g502-x-plus-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 159.99,
+          "title": "Logitech G G502 X Plus LIGHTSPEED Wireless RGB Gaming Mouse (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1722686-REG/logitech_g_910_006160_g502_x_plus_wireless.html",
+          "collected_at": "2026-11-07T22:26:00Z",
+          "identifier": "097855166951",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "logitech-mx-vertical-graphite": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 74.99,
+          "title": "Logitech MX Vertical Advanced Ergonomic Mouse",
+          "url": "https://www.bhphotovideo.com/c/product/1431406-REG/logitech_910_005447_mx_vertical_advanced_ergonomic.html",
+          "collected_at": "2026-11-07T22:26:00Z",
+          "identifier": "097855144461",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "bose-qc-earbuds-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 129.00,
+          "title": "Bose QuietComfort Wireless Noise-Canceling Earbuds (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1847745-REG/bose_888507_0100_quietcomfort_wireless_noise_canceling_earbuds.html",
+          "collected_at": "2026-11-07T22:26:00Z",
+          "identifier": "017817853460",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "logitech-mx-mechanical-tactile-quiet-graphite": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 179.99,
+          "title": "Logitech MX Mechanical Wireless Keyboard (Tactile Quiet Switches)",
+          "url": "https://www.bhphotovideo.com/c/product/1703337-REG/logitech_920_010547_mx_mechanical_wireless_keyboard.html",
+          "collected_at": "2026-11-07T22:26:00Z",
+          "identifier": "097855174659",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "logitech-ergo-k860-graphite": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 149.99,
+          "title": "Logitech ERGO K860 Wireless Split Ergonomic Keyboard",
+          "url": "https://www.bhphotovideo.com/c/product/1540505-REG/logitech_920_009166_ergo_k860_ergonomic_split.html",
+          "collected_at": "2026-11-07T22:26:00Z",
+          "identifier": "097855151667",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        },
+        {
+          "merchant": "Adorama",
+          "price": 149.99,
+          "title": "Logitech ERGO K860 Wireless Split Ergonomic Keyboard (Black)",
+          "url": "https://www.adorama.com/logitech-ergo-k860-wireless-split-ergonomic-keyboard-black/p/logergok860",
+          "collected_at": "2026-11-07T22:26:00Z",
+          "identifier": "097855151667",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "adorama.com spec page (browser-verified 2026-11-07; page also notes Ships from Manufacturer)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-ult-wear-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 148.00,
+          "title": "Sony ULT WEAR Wireless Over-Ear Noise-Canceling Headphones (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1824830-REG/sony_whult900n_b_ult_wear_wireless_noise.html",
+          "collected_at": "2026-11-07T22:26:00Z",
+          "identifier": "027242928688",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "logitech-g915-x-lightspeed-tactile-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 259.99,
+          "title": "Logitech G G915 X LIGHTSPEED Low-Profile Wireless RGB Mechanical Gaming Keyboard (Carbon, GL Tactile)",
+          "url": "https://www.bhphotovideo.com/c/product/1851732-REG/logitech_g_920_012670_g915_x_lightspeed_low_profile.html",
+          "collected_at": "2026-11-07T22:26:00Z",
+          "identifier": "097855195005",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "lenovo-legion-tab-gen-5-eclipse-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 799.99,
+          "title": "Lenovo 8.8\" Legion Tab Multi-Touch Tablet",
+          "url": "https://www.bhphotovideo.com/c/product/1959307-REG/lenovo_zah20126us_8_8_legion_tab_gen.html",
+          "collected_at": "2026-11-07T22:26:00Z",
+          "identifier": "199275342448",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
+    },
+    "asus-proart-display-pa279crv": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 429.00,
+          "title": "ASUS ProArt PA279CRV 27\" 4K HDR Monitor",
+          "url": "https://www.bhphotovideo.com/c/product/1762484-REG/asus_pa279crv_27_4k_hdr_uhd.html",
+          "collected_at": "2026-11-07T22:27:00Z",
+          "identifier": "195553951531",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }
