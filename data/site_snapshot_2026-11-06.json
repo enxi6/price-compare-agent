@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T03:16:27.491913+00:00",
+    "generated_at": "2026-11-08T03:50:59.778050+00:00",
     "snapshot_date": "2026-11-07",
     "source_files": 47,
     "identified_source_files": 5,
@@ -3601,12 +3601,12 @@
       "key": "nintendo-switch-neon",
       "brand": "Nintendo",
       "model": "Switch (original, HAC-001(-01))",
-      "variant": "Neon Blue/Neon Red set (HADSKABAA; SKU 117972)",
+      "variant": "Neon Blue/Neon Red set (HADSKABAH; SKU 117972)",
       "category": "consoles",
       "status": "verified",
       "identifiers": {
         "UPC": "045496883775",
-        "MPN": "HADSKABAA"
+        "MPN": "HADSKABAH"
       },
       "offers": [
         {

@@ -111,6 +111,11 @@ releases; breaking changes are called out in the release notes.
   ingest) added to the hand-identified file. Verified ranking
   74 → 75 of 200 models, matched offers 82 → 83.
 
+- Switch neon MPN corrected HADSKABAA → HADSKABAH (DECISIONS 065):
+  UPC 045496883775 belongs to HADSKABAH per Abt, Amazon and Best
+  Buy; the old HADSKABAA barcode 045496882174 is the 2017
+  revision. UPC unchanged; no ranking change.
+
 - Coverage round 4 — Abt hand rows (1 new ranking, 75 → 76):
   Logitech G Pro X Superlight 2 Black @ Abt $159.99 (UPC
   097855177797, InStock, price + UPC on the same page,

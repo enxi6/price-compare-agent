@@ -1050,23 +1050,25 @@ EVAL_SET: list[EvalProduct] = [
         key="nintendo-switch-neon",
         brand="Nintendo",
         model="Switch (original, HAC-001(-01))",
-        variant="Neon Blue/Neon Red set (HADSKABAA; SKU 117972)",
+        variant="Neon Blue/Neon Red set (HADSKABAH; SKU 117972)",
         category="consoles",
-        identifiers={"UPC": "045496883775", "MPN": "HADSKABAA"},
+        identifiers={"UPC": "045496883775", "MPN": "HADSKABAH"},
         identifier_sources={
             "UPC": "Nintendo US official store page itself (SKU 117972, "
             "UPC 00045496883775, $339.99 InStock) + Amazon B0BFJWCYTL "
-            "(Model HADSKABAH, UPC 045496883775) agree. The older "
-            "HADSKABAA UPC 045496882174 (ASIN B07VGRJDFY, 2019 "
-            "red-box listing) conflicts with Nintendo's current page "
-            "and was not pinned."
+            "(Model HADSKABAH, UPC 045496883775) + Abt (HADSKABAH, "
+            "UPC 045496883775) agree. MPN corrected 2026-11-07 from "
+            "HADSKABAA to HADSKABAH (DECISIONS 065): the UPC belongs "
+            "to HADSKABAH per Abt, Amazon and Best Buy; the older "
+            "HADSKABAA barcode 045496882174 (ASIN B07VGRJDFY, 2019 "
+            "red-box listing) is a different revision and was not pinned."
         },
         notes="Nintendo direct $339.99 (JSON-LD InStock); NFM $339.99; "
         "Best Buy $334.00 (Model HADSKABAH, SKU 10951790, "
-        "search-index read, below MSRP). HACSKABAA is the 2017 "
-        "original revision, a different SKU. Best Buy/Amazon spell "
-        "the current model HADSKABAH; HADSKABAA is the retail part "
-        "number used by BuyDig/Amazon B07VGRJDFY. Distinct from "
+        "search-index read, below MSRP). MPN corrected 2026-11-07 "
+        "(HADSKABAA -> HADSKABAH): HADSKABAA is the 2017 original "
+        "revision with barcode 045496882174, a different SKU; the "
+        "current neon set is HADSKABAH. Distinct from "
         "Switch OLED Neon (HEGSKABAA, UPC 045496883409) and from the "
         "Joy-Con pair alone (HACAJAEAA, UPC 045496590130).",
         status="verified",

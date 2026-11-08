@@ -6554,3 +6554,11 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   hand-row lane is nearly exhausted for this set — the remaining
   24 are mostly not carried, discontinued, or have UPCs that do
   not surface in extractable page text.
+## 088 — 2026-11-07: Switch neon MPN corrected (DECISIONS 065)
+
+- MPN HADSKABAA → HADSKABAH; UPC 045496883775 unchanged. Evidence:
+  Abt (HADSKABAH + UPC 045496883775) + Amazon B0BFJWCYTL (Model
+  HADSKABAH + same UPC) + Best Buy (Model HADSKABAH) + Nintendo
+  store (SKU 117972, same UPC). The old HADSKABAA barcode
+  045496882174 is the 2017 revision, a different SKU.
+- Tests 52 pass; site rebuilt; no ranking change (UPC unchanged).

@@ -3779,3 +3779,26 @@ written as "superseded by" with the original text kept.
   seller-direct / US-goods only (DECISIONS 021); no Amazon in any
   form (DECISIONS 018); no models added; no spending, no
   registrations, no purchases.
+## 065 (2026-11-07): Switch neon MPN corrected HADSKABAA → HADSKABAH
+
+- The catalog paired UPC 045496883775 with MPN HADSKABAA. Three
+  independent sources tie that UPC to HADSKABAH instead: Amazon
+  B0BFJWCYTL (Model HADSKABAH, UPC 045496883775), Abt (title
+  "Nintendo Switch with Neon Joy-Con Controllers – HADSKABAH",
+  UPC 045496883775), Best Buy (Model HADSKABAH, SKU 10951790).
+  Nintendo's own store page (SKU 117972) gives the same UPC.
+- HADSKABAA is the 2017 original revision; its barcode is
+  045496882174 (ASIN B07VGRJDFY, 2019 red-box listing) — a
+  different SKU, not the set's model. That barcode was already
+  rejected once (JustPressPlay pin, coverage round 2) for not
+  matching the catalog UPC; the rejection was correct for the
+  wrong reason — the catalog MPN, not the UPC, was the wrong half
+  of the pair.
+- Change: MPN HADSKABAA → HADSKABAH; variant label and notes
+  updated; UPC 045496883775 unchanged. Approved by the user
+  2026-11-07 19:50 PT. No ranking change (UPC unchanged, still
+  no identifier-bearing quote for this model).
+- Lesson: when a UPC and an MPN come from different sources, the
+  pair itself needs a second source that shows both together.
+  Amazon B0BFJWCYTL and Abt both show MPN + UPC together — that
+  is the bar for a pair.
