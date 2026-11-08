@@ -446,6 +446,38 @@
           "in_stock": true
         }
       ]
+    },
+    "xbox-stereo-headset-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 59.99,
+          "title": "Microsoft Xbox Stereo Gaming Over-The-Ear Wired Headset for Xbox Series X|S, Xbox One and Windows - Black",
+          "url": "https://www.bestbuy.com/product/microsoft-xbox-stereo-gaming-over-the-ear-wired-headset-for-xbox-series-xs-xbox-one-and-windows-black/J3ZKK5P448/sku/6474763",
+          "collected_at": "2026-11-08T18:55:00Z",
+          "identifier": "889842748031",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-08; price + UPC + MPN on the spec page; Add to Cart available, same-day pickup 1 left at the default store; Best Buy first-party; snapshot feed price was $74.99, live price $59.99)",
+          "in_stock": true
+        }
+      ]
+    },
+    "google-pixel-buds-2a-hazel": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 129.0,
+          "title": "Google Pixel Buds 2a Wireless Earbuds with Active Noise Cancellation Bluetooth Headphones - Hazel",
+          "url": "https://www.bestbuy.com/product/google-pixel-buds-2a-wireless-earbuds-with-active-noise-cancellation-bluetooth-headphones-hazel/J39TC8J6Z8/sku/6642707",
+          "collected_at": "2026-11-08T18:55:00Z",
+          "identifier": "840353930506",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-08; price + UPC + MPN on the spec page; Add to Cart available, same-day pickup 3 left; Best Buy first-party; Hazel page SKU 6642707, not the Iris page 6642709)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

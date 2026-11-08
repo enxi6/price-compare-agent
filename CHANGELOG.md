@@ -165,6 +165,16 @@ releases; breaking changes are called out in the release notes.
   Camera $198.00 and Xbox Series X 1TB @ ShopCGX $799.99. Counts
   unchanged; rows stay ranked, now labeled.
 
+- Two Best Buy hand rows (live-browser verified 2026-11-08, spec
+  pages carry UPC): Xbox Stereo Headset Black @ Best Buy $59.99
+  (UPC 889842748031; snapshot feed price was $74.99) and Pixel
+  Buds 2a Hazel @ Best Buy $129.00 (UPC 840353930506; Hazel page
+  SKU 6642707). Verified ranking 84 → 86 of 200, matched offers
+  93 → 95. Not added: WF-1000XM5 (marketplace seller),
+  MX Master 4 graphite (no Best Buy listing found), Kindle
+  Paperwhite (clean page but the "Amazon exclusive, skip" note
+  needs a separate user decision).
+
 - Coverage round 4 — Abt hand rows (1 new ranking, 75 → 76):
   Logitech G Pro X Superlight 2 Black @ Abt $159.99 (UPC
   097855177797, InStock, price + UPC on the same page,

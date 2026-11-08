@@ -6684,3 +6684,21 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   ShopCGX $799.99. Counts unchanged (84 ranked, 93 matched, 676
   total); the rows stay ranked, now labeled. Test added
   (test_offer_rows_label_stock_status). 54 tests pass.
+## 097 — 2026-11-08: Two Best Buy hand rows (Xbox headset, Pixel Buds 2a Hazel)
+
+- Rows added on user approval (live-browser verified 2026-11-08,
+  Best Buy spec pages carry UPC under "See all specifications" >
+  Other): Xbox Stereo Headset Black @ Best Buy $59.99 (UPC
+  889842748031, MPN 8LI-00001; Add to Cart, same-day pickup 1 left;
+  snapshot feed price was $74.99) and Pixel Buds 2a Hazel @ Best
+  Buy $129.00 (UPC 840353930506, MPN GA06155-US; Add to Cart,
+  same-day pickup 3 left; Hazel page SKU 6642707, not Iris 6642709).
+- Not added in this round: WF-1000XM5 (Best Buy listing is a
+  marketplace seller, 17th Street Photo Supply — violates the
+  seller-direct rule); MX Master 4 graphite (no Best Buy listing
+  found for MPN 910-007558 / UPC 097855207623; closest Pale Gray is
+  a different MPN/UPC); Kindle Paperwhite (page is clean but the
+  "Amazon exclusive, skip" note needs a separate user decision).
+- Result: verified ranking 84 → 86 of 200; matched offers 93 → 95;
+  total 676 → 677 (the Hazel identified row supersedes the suspected
+  Meta Best Buy $129 row). Tests 54 pass.
