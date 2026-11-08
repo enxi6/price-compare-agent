@@ -318,6 +318,118 @@
           "in_stock": true
         }
       ]
+    },
+    "nintendo-joy-con-pair-neon-red-neon-blue": {
+      "offers": [
+        {
+          "merchant": "Micro Center",
+          "price": 89.99,
+          "title": "Nintendo Joy-Con Pair Neon Red / Neon Blue",
+          "url": "https://www.microcenter.com/product/674408/nintendo-joy-con-pair-neon-red-neon-blue",
+          "collected_at": "2026-11-08T05:18:00Z",
+          "identifier": "045496590130",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 2 NEW IN STOCK at Tustin Store)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-playstation-portal": {
+      "offers": [
+        {
+          "merchant": "Micro Center",
+          "price": 249.99,
+          "title": "Sony PlayStation Portal Remote Player for PlayStation 5",
+          "url": "https://www.microcenter.com/product/675124/sony-playstation-portal-remote-player-for-playstation-5",
+          "collected_at": "2026-11-08T05:18:00Z",
+          "identifier": "711719579779",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 2 NEW IN STOCK at Tustin Store)",
+          "in_stock": true
+        }
+      ]
+    },
+    "nintendo-switch-neon": {
+      "offers": [
+        {
+          "merchant": "Micro Center",
+          "price": 339.99,
+          "title": "Nintendo Switch with Neon Blue / Red Controllers",
+          "url": "https://www.microcenter.com/product/674400/nintendo-switch-with-neon-blue-red-controllers",
+          "collected_at": "2026-11-08T05:18:00Z",
+          "identifier": "045496883775",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 3 NEW IN STOCK at Tustin Store)",
+          "in_stock": true
+        }
+      ]
+    },
+    "dell-32-plus-4k-monitor-s3225qs": {
+      "offers": [
+        {
+          "merchant": "Micro Center",
+          "price": 329.99,
+          "title": "Dell 32 Plus 4K Monitor S3225QS",
+          "url": "https://www.microcenter.com/product/693762/dell-32-plus-4k-monitor-s3225qs",
+          "collected_at": "2026-11-08T05:18:00Z",
+          "identifier": "884116485131",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 21 NEW IN STOCK at Tustin Store)",
+          "in_stock": true
+        }
+      ]
+    },
+    "samsung-galaxy-tab-s10-fe-plus-128gb-gray": {
+      "offers": [
+        {
+          "merchant": "Micro Center",
+          "price": 699.99,
+          "title": "Samsung Galaxy Tab S10 FE+ Gray",
+          "url": "https://www.microcenter.com/product/690865/samsung-galaxy-tab-s10-fe-gray",
+          "collected_at": "2026-11-08T05:18:00Z",
+          "identifier": "887276992563",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 3 NEW IN STOCK at Tustin Store)",
+          "in_stock": true
+        }
+      ]
+    },
+    "nintendo-switch-oled-white": {
+      "offers": [
+        {
+          "merchant": "Micro Center",
+          "price": 399.99,
+          "title": "Nintendo Switch OLED Model with White Controllers",
+          "url": "https://www.microcenter.com/product/674398/nintendo-switch-oled-model-with-white-controllers",
+          "collected_at": "2026-11-08T05:18:00Z",
+          "identifier": "045496883386",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 2 NEW IN STOCK at Tustin Store)",
+          "in_stock": true
+        }
+      ]
+    },
+    "nintendo-switch-2": {
+      "offers": [
+        {
+          "merchant": "Micro Center",
+          "price": 499.99,
+          "title": "Nintendo Switch 2 Console",
+          "url": "https://www.microcenter.com/product/695288/nintendo-switch-2-console",
+          "collected_at": "2026-11-08T05:18:00Z",
+          "identifier": "045496885816",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 14 NEW IN STOCK at Tustin Store)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

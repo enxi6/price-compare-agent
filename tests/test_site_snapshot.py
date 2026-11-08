@@ -211,6 +211,48 @@ def test_identified_dedupe_same_merchant_identifier_price(tmp_path):
     assert result["meta"]["matched_offers"] == 1
 
 
+def test_identified_union_across_files_same_model(tmp_path):
+    # Regression test for DECISIONS 066: identified files union per
+    # model. A matched hand row in the OLDER file and a mismatched
+    # collector row in the NEWER file must BOTH survive — latest-
+    # per-model on this stream silently dropped the hand row (it
+    # dropped the Switch 2 Micro Center row in favour of a
+    # BrandsMart row).
+    older = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Dell", 379.99, "027242923232",
+                      url="https://example.com/dell-id"),
+        ]},
+    }, name="identified-hand.json",
+        collected_at="2026-11-07T10:00:00Z")
+    newer = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("BrandsMart", 379.99, "027242923249",
+                      url="https://example.com/bm-id"),
+        ]},
+    }, name="identified-retry.json",
+        collected_at="2026-11-07T12:00:00Z")
+    result = build_site_snapshot(_files(tmp_path), older + newer)
+    xm5 = _xm5(result)
+    matched = [o for o in xm5["offers"] if not o["suspected"]]
+    assert len(matched) == 1
+    assert matched[0]["merchant"] == "Dell"
+    assert matched[0]["identifier"] == "027242923232"
+    # The mismatched newer row survives as suspected and supersedes
+    # nothing (no Meta BrandsMart row exists in the fixture).
+    bm_rows = [o for o in xm5["offers"]
+               if o["merchant"] == "BrandsMart"]
+    assert len(bm_rows) == 1
+    assert bm_rows[0]["suspected"] is True
+    assert bm_rows[0]["identifier"] == "027242923249"
+    assert len(xm5["offers"]) == 3  # Dell matched + Best Buy + BrandsMart
+    assert result["meta"]["matched_offers"] == 1
+    assert result["meta"]["verified_ranking_models"] == 1
+    assert result["meta"]["identified_source_files"] == 2
+    assert xm5["identified_source_file"] == "identified-retry.json"
+    assert xm5["identified_collected_at"] == "2026-11-07T12:00:00+00:00"
+
+
 def test_pending_model_never_has_verified_ranking(tmp_path):
     identified = _identified(tmp_path, {
         "sony-dualsense-white": {"offers": [

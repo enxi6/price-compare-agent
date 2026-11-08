@@ -128,6 +128,21 @@ releases; breaking changes are called out in the release notes.
   Buy; the old HADSKABAA barcode 045496882174 is the 2017
   revision. UPC unchanged; no ranking change.
 
+- Identified-stream merge bug fixed (DECISIONS 066): the identified
+  stream now unions across files per model instead of taking the
+  latest file per model. Latest-per-model had silently dropped the
+  Switch 2 Micro Center hand row (the hand file's meta timestamp
+  is stale, so retry3's mismatched BrandsMart row won) and the
+  Edge 850 Incycle row lost to a 429 in round 2. Live-browser
+  verification of the 10 Micro Center/Abt pages confirmed 7 rows
+  (Joy-Con $89.99, Portal $249.99, Switch Neon $339.99, Dell
+  S3225QS $329.99, Tab S10 FE+ $699.99, Switch OLED White $399.99,
+  Switch 2 $499.99, all Micro Center, Tustin in stock); Xbox Elite
+  2 has no Micro Center listing at all and Watch SE 3's Micro
+  Center page is the Midnight variant (different UPC/MPN), so
+  neither got a row. Ranking 76 → 83, matched offers 84 → 92.
+  Regression test added.
+
 - Coverage round 4 — Abt hand rows (1 new ranking, 75 → 76):
   Logitech G Pro X Superlight 2 Black @ Abt $159.99 (UPC
   097855177797, InStock, price + UPC on the same page,

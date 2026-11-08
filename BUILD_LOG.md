@@ -6610,3 +6610,21 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   decision is unchanged.
 - Tests 52 pass. No hand-file, snapshot, or site change; ranking
   stays 76/200. No catalog changes, no Amazon touch, no spending.
+## 091 — 2026-11-07: Identified-stream merge bug fixed (DECISIONS 066)
+
+- Root cause: _latest_per_model was applied to the identified
+  stream. The hand file's meta.collected_at is stale (11:32Z), so
+  retry3's BrandsMart Switch 2 row (BEESKB6AA, mismatched) won and
+  the live-browser-verified Micro Center Switch 2 row
+  (UPC 045496885816, $499.99, in stock) never reached the merge.
+  Only Switch 2 was affected among hand-file models.
+- Fix: identified stream now unions across files per model
+  (_union_identified); Meta stream stays latest-wins. Regression
+  test added: two identified files, same model, both rows survive.
+- Result: 53 tests pass. Ranking 82 → 83 (Switch 2 ranks);
+  matched 90 → 92; total 674 → 676. The union also restored the
+  Edge 850 Incycle $599.99 row that round 2 lost to a 429 — a
+  second matched merchant for that model. No other rows changed.
+- Lesson: the hand file's stale meta timestamp was the tell — a
+  cumulative file must never compete on recency with incremental
+  collector files.

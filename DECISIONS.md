@@ -3802,3 +3802,27 @@ written as "superseded by" with the original text kept.
   pair itself needs a second source that shows both together.
   Amazon B0BFJWCYTL and Abt both show MPN + UPC together — that
   is the bar for a pair.
+## 066 (2026-11-07): Identified stream unions across files (merge bug fix)
+
+- Bug: build_site_snapshot applied latest-per-model to BOTH streams.
+  For the Meta stream that is correct (each snapshot is a full
+  refresh). For the identified stream it is wrong: each identified
+  file is an incremental collection covering different merchants
+  (Shopify pins, retries, hand-verified rows). The hand file's
+  meta.collected_at is stale (2026-11-07T11:32Z, from its creation),
+  so whenever a newer collector file mentioned the same model, the
+  hand rows were silently discarded.
+- Caught live 2026-11-08: the Switch 2 Micro Center hand row
+  (UPC 045496885816, live-browser verified) did not rank because
+  retry3 (23:50Z) carries a BrandsMart Switch 2 row (BEESKB6AA,
+  mismatched) and won latest-per-model. Only Switch 2 was affected
+  among hand-file models — but the same bug had also dropped the
+  Edge 850 Incycle row (retry had it, retry3 429'd it).
+- Fix: identified stream is now UNIONED per model across files
+  (deduped by _identified_dedupe on merchant + identifier +
+  price, as before); Meta stream stays latest-wins. Regression
+  test added (two identified files, same model, both rows survive).
+- Result: Switch 2 ranks (Micro Center $499.99); Edge 850 regains
+  Incycle $599.99 as a second matched merchant. Ranking 82 → 83;
+  matched 90 → 92; total 674 → 676. No other model's rows changed;
+  no ranking lost.

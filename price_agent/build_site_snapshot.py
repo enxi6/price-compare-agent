@@ -8,8 +8,15 @@ one offer list. Snapshot keys that are not in the current catalog
 (retired entries, e.g. ``keychron-k8-pro``) are ignored, never added:
 the output is exactly the 200 catalog models.
 
-Merge rules (DECISIONS 002/021/059):
-- Within each stream, latest ``meta.collected_at`` per model wins.
+Merge rules (DECISIONS 002/021/059/066):
+- Meta stream: latest ``meta.collected_at`` per model wins (each Meta
+  snapshot is a full refresh).
+- Identified stream: UNION across files per model (each identified
+  file is an incremental collection covering different merchants —
+  Shopify pins, retries, hand-verified rows). Latest-per-model on
+  this stream was a bug: it silently dropped hand rows whenever a
+  newer collector file mentioned the same model (it dropped the
+  Switch 2 Micro Center row in favour of a BrandsMart row).
 - The two streams union; an identified file never wholesale-replaces
   a model's Meta rows.
 - An identified row supersedes a Meta row only when it is MATCHED
@@ -88,6 +95,43 @@ def _latest_per_model(files: list[dict]) -> dict[str, tuple[datetime, str, list[
             if key not in latest or collected_at > latest[key][0]:
                 latest[key] = (collected_at, path, offers)
     return latest
+
+
+def _union_identified(files: list[dict]) -> dict[str, tuple[datetime, str, list[dict]]]:
+    """Union of identified rows per model key across files.
+
+    Returns the same (collected_at, source_path, offers) shape as
+    ``_latest_per_model``: collected_at / source_path are the newest
+    contributing file's, offers are the concatenation of every file's
+    rows (deduped downstream by ``_identified_dedupe``).
+
+    Identified files are incremental collections covering different
+    merchants, so they complement each other — unioning is the only
+    correct semantic. Latest-per-model here was a bug (DECISIONS
+    066): the hand file's ``meta.collected_at`` is stale (from its
+    creation), so a newer collector file mentioning the same model
+    silently discarded its hand-verified rows.
+    """
+    union: dict[str, tuple[datetime, str, list[dict]]] = {}
+    for entry in files:
+        path = entry["path"]
+        data = entry["data"]
+        collected_at = _parse_collected_at(data["meta"]["collected_at"])
+        for key, model_data in data.get("models", {}).items():
+            offers = list(model_data.get("offers", []))
+            if key not in union:
+                union[key] = (collected_at, path, offers)
+            else:
+                prev_at, prev_path, prev_offers = union[key]
+                if collected_at > prev_at:
+                    union[key] = (
+                        collected_at, path, prev_offers + offers,
+                    )
+                else:
+                    union[key] = (
+                        prev_at, prev_path, prev_offers + offers,
+                    )
+    return union
 
 
 def _exact_dedupe(rows: list[dict]) -> list[dict]:
@@ -186,7 +230,7 @@ def build_site_snapshot(snapshot_files: list[dict] | None = None,
             )
 
     meta_latest = _latest_per_model(snapshot_files)
-    identified_latest = _latest_per_model(identified_files)
+    identified_latest = _union_identified(identified_files)
 
     all_dates = [
         _parse_collected_at(entry["data"]["meta"]["collected_at"])
