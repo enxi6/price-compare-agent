@@ -6491,3 +6491,66 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   to HADSKABAH, while HADSKABAA's barcode is 045496882174 (the
   previously rejected one). Needs a catalog review before any
   further Switch neon work.
+## 087 — 2026-11-07: Coverage round 4 — Abt hand rows, 1 new ranking (75 → 76)
+
+- Scope: the 25 verified-but-unranked models (Kindle excluded per
+  rule), checked at Abt only (user-approved lane, 2026-11-07
+  19:13 PT). Three workers in parallel, fresh Abt page reads
+  2026-11-08 ~03:14-03:16 UTC. No blocking in the Abt lane.
+- One HIT, independently re-verified by the coordinator before
+  ingest: Logitech G Pro X Superlight 2 Black @ Abt $159.99, UPC
+  097855177797, InStock (price + "UPC # 097855177797" + JSON-LD
+  InStock on the same page, crawled 2026-11-08 03:14 UTC). Row
+  appended to the hand file
+  (eval_snapshots_identified_hand_2026-11-07.json).
+- Result: verified ranking 75 → 76 of 200 models; matched offers
+  83 → 84; total offers 667 → 668 (the Abt row is genuinely new —
+  no suspected row was superseded). Identifiers unchanged
+  (101/99). No ranking lost. Tests 52 pass.
+- Why the other 24 failed:
+  - No Abt page: MX Master 4 graphite (Abt has Space Black
+    910-007560 + White Silver 910-007559, no Graphite 910-007558),
+    Anker Prime 100W (Abt lists the 200W 6-port instead), Lift
+    graphite, Pixel Buds 2a, K8 (Abt carries no Keychron), Dell
+    S3225QS, Alienware Pro mouse, HP 920, Xbox Stereo Headset
+    (Abt has the Wireless version only, also discontinued), Boom 2.
+  - Discontinued at Abt: Switch OLED White, WF-1000XM5 (UPC on
+    page matches catalog — corroboration only), Watch SE 3 40mm
+    (Model MEH94LW/A + UPC 195950387070 match catalog —
+    corroboration only; other SE 3 variants in stock are different
+    MPNs), Joy-Con pair neon (UPC matches, no price), Xbox Elite
+    Series 2 (UPC matches, no price), PS5 Pro (a different MPN
+    1000050805 lists at $899.99 SoldOut — not a substitute), Tab
+    S10 FE+ (128GB and 256GB both discontinued), Bose QC
+    Headphones (no price for Black; UPC 017817848961 appears only
+    on Q&A/Reviews subpages).
+  - In stock and priced but UPC not in the fetched page text:
+    PS5 Digital $599.99 InStock (page also says CFI-2100 group /
+    Abt model 1000049898, not catalog CFI-2015) and PlayStation
+    Portal $249.99 InStock. PS5 1TB $649.99 is SoldOut, no UPC.
+    Pattern: Abt's newer Sony pages do not expose the "Model # /
+    Abt # / UPC #" header block in fetched text; older
+    Nintendo/Microsoft pages do.
+  - Switch 2: $499.99 InStock, but no "UPC #" line on the page and
+    Abt's MPN for the base console is BEESKB6AA, not catalog
+    BEE-001 — MISS per the stated rule. The UPC 045496885816
+    appears only in the URL slug and JSON-LD product name.
+  - DeathAdder V4 Pro: no standalone Abt page located; a
+    related-product tile on the Razer Naga V2 Pro page shows it at
+    $169.99 — needs a live-browser click-through to close.
+- Evidence recorded, catalog untouched: Switch neon — Abt's page
+  title is "Nintendo Switch with Neon Joy-Con Controllers –
+  HADSKABAH", heading "Nintendo 045496883775 Gaming Console
+  Switch…", and the search snippet reads "Abt Model: HADSKABAH
+  UPC: 045496883775". This confirms UPC 045496883775 belongs to
+  HADSKABAH, not HADSKABAA — the catalog pairing is wrong. The
+  Abt page is discontinued anyway, so no row either way. Catalog
+  review still open.
+- Bose QC Headphones: Abt does NOT resolve it (discontinued at
+  Abt). The open Adorama "Add to Cart" decision is unchanged and
+  was not touched.
+- Lane finding: Abt yielded 1 of 25. Between B&H/Adorama (round
+  3: 0 of 25) and Abt (round 4: 1 of 25), the single-retailer
+  hand-row lane is nearly exhausted for this set — the remaining
+  24 are mostly not carried, discontinued, or have UPCs that do
+  not surface in extractable page text.

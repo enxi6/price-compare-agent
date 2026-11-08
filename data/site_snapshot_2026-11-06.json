@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T00:32:42.006629+00:00",
+    "generated_at": "2026-11-08T03:16:27.491913+00:00",
     "snapshot_date": "2026-11-07",
     "source_files": 47,
     "identified_source_files": 5,
     "models": 200,
     "verified_identifiers": 101,
     "pending_identifiers": 99,
-    "total_offers": 667,
-    "matched_offers": 83,
+    "total_offers": 668,
+    "matched_offers": 84,
     "suspected_offers": 584,
-    "verified_ranking_models": 75,
+    "verified_ranking_models": 76,
     "models_with_offers": 176,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -1282,6 +1282,19 @@
       },
       "offers": [
         {
+          "merchant": "Abt",
+          "price": 159.99,
+          "title": "Logitech G Pro X Superlight 2 Lightspeed Wireless Gaming Mouse in Black - 910-006628",
+          "url": "https://www.abt.com/Logitech-G-Pro-X-Superlight-2-Lightspeed-Wireless-Gaming-Mouse-in-Black-910006628/p/197839.html",
+          "collected_at": "2026-11-08T03:16:21Z",
+          "identifier": "097855177797",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "abt.com listing (browser-verified 2026-11-08; price + UPC on the same page)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Lenovo",
           "price": 159.99,
           "title": "Lenovo Logitech G PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse - Black",
@@ -1323,8 +1336,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-07.json",
       "source_collected_at": "2026-11-07T20:32:23.346397+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "google-pixel-buds-pro-2-porcelain",

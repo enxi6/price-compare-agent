@@ -111,6 +111,18 @@ releases; breaking changes are called out in the release notes.
   ingest) added to the hand-identified file. Verified ranking
   74 → 75 of 200 models, matched offers 82 → 83.
 
+- Coverage round 4 — Abt hand rows (1 new ranking, 75 → 76):
+  Logitech G Pro X Superlight 2 Black @ Abt $159.99 (UPC
+  097855177797, InStock, price + UPC on the same page,
+  re-verified 2026-11-08 before ingest) added to the
+  hand-identified file. The other 24 models failed at Abt: mostly
+  not carried or discontinued; PS5 Digital ($599.99) and
+  PlayStation Portal ($249.99) are in stock and priced but their
+  UPCs do not surface in the fetched page text; Switch 2 ($499.99
+  InStock) fails the MPN rule (Abt's MPN is BEESKB6AA, not
+  BEE-001). Switch neon evidence recorded (Abt page shows
+  HADSKABAH + UPC 045496883775) — catalog pairing still open.
+
 - Coverage round 3 (2026-11-07, BUILD_LOG 086): the 26
   verified-but-unranked models were re-checked against fresh
   B&H/Adorama pages — 0 new hand rows. The models are mostly not

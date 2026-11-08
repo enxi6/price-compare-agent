@@ -302,6 +302,22 @@
           "in_stock": true
         }
       ]
+    },
+    "logitech-g-pro-x-superlight-2-black": {
+      "offers": [
+        {
+          "merchant": "Abt",
+          "price": 159.99,
+          "title": "Logitech G Pro X Superlight 2 Lightspeed Wireless Gaming Mouse in Black - 910-006628",
+          "url": "https://www.abt.com/Logitech-G-Pro-X-Superlight-2-Lightspeed-Wireless-Gaming-Mouse-in-Black-910006628/p/197839.html",
+          "collected_at": "2026-11-08T03:16:21Z",
+          "identifier": "097855177797",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "abt.com listing (browser-verified 2026-11-08; price + UPC on the same page)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }
