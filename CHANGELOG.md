@@ -143,6 +143,14 @@ releases; breaking changes are called out in the release notes.
   neither got a row. Ranking 76 → 83, matched offers 84 → 92.
   Regression test added.
 
+- DeathAdder V4 Pro first verified ranking (hand row, DECISIONS 059
+  mechanism): Abt $169.99 for the Razer DeathAdder V4 Pro Black
+  (UPC 840272920718, MPN RZ01-05330100-R3U1, price + UPC + MPN on
+  the product page, live-browser verified 2026-11-08). Stock
+  evidence is ADD TO CART available plus Abt's search listing
+  showing "In Stock"; added on user approval. Verified ranking
+  83 → 84 of 200 models, matched offers 92 → 93.
+
 - Coverage round 4 — Abt hand rows (1 new ranking, 75 → 76):
   Logitech G Pro X Superlight 2 Black @ Abt $159.99 (UPC
   097855177797, InStock, price + UPC on the same page,

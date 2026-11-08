@@ -6628,3 +6628,19 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Lesson: the hand file's stale meta timestamp was the tell — a
   cumulative file must never compete on recency with incremental
   collector files.
+## 092 — 2026-11-07: DeathAdder V4 Pro first verified ranking (Abt hand row)
+
+- Row added on user approval: Razer DeathAdder V4 Pro Black @ Abt
+  $169.99, UPC 840272920718, MPN RZ01-05330100-R3U1 — price + UPC
+  + MPN on the Abt product page (live-browser verified
+  2026-11-08). Stock evidence is ADD TO CART available on the
+  product page plus Abt's search listing showing "In Stock" (no
+  "In Stock" wording on the product page itself); the evidence
+  note is recorded verbatim in the row's source field. This is a
+  narrower call than the open Bose Adorama question (ADD TO CART
+  only, no "In Stock" anywhere) — Bose stays open.
+- Result: verified ranking 83 → 84 of 200; matched offers
+  92 → 93; total offers unchanged at 676 (the identified Abt row
+  supersedes the suspected Meta Abt row at the same price). NFM
+  $166.99 stays suspected (identifier-null, correctly unmatched).
+- Tests 53 pass. No catalog changes, no DECISIONS changes.

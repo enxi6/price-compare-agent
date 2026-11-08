@@ -430,6 +430,22 @@
           "in_stock": true
         }
       ]
+    },
+    "razer-deathadder-v4-pro-black": {
+      "offers": [
+        {
+          "merchant": "Abt",
+          "price": 169.99,
+          "title": "Razer DeathAdder V4 Pro Ultra-Lightweight Wireless Ergonomic Gaming Mouse in Black - RZ01-05330100-R3U1",
+          "url": "https://www.abt.com/Razer-DeathAdder-V4-Pro-Ultra-Lightweight-Wireless-Ergonomic-Gaming-Mouse-in-Black-RZ0105330100R3U1/p/248750.html",
+          "collected_at": "2026-11-08T05:18:00Z",
+          "identifier": "840272920718",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "abt.com listing (live-browser verified 2026-11-08; price + UPC + MPN on the product page; ADD TO CART available and Abt search listing shows In Stock — no 'In Stock' wording on the product page itself; added on user approval 2026-11-07)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }
