@@ -16,6 +16,7 @@ th,td{border:1px solid #ddd;padding:8px;text-align:left;vertical-align:top}
 th{background:#f2f2f2}tr:nth-child(even){background:#fafafa}
 .tag{display:inline-block;padding:1px 8px;border-radius:10px;font-size:.85em;
 background:#e8f0fe}.tag.pending{background:#fef3c7}.tag.stale{background:#fdecea}
+.oos{color:#b3261e;font-weight:700}
 input[type=search]{width:100%;padding:10px;font-size:1.05em;margin:12px 0}
 .stat{font-size:1.4em;font-weight:700}footer{border-top:1px solid #ddd;
 margin-top:40px;padding-top:12px;color:#555;font-size:.9em}
@@ -36,10 +37,10 @@ identifier-matched quotes exist in the latest snapshot, because the
 quote source we use does not return identifiers. Until an
 identifier-returning source is connected, this page shows
 title-matched offers only, clearly labeled as such.</p></div>
-<h2>Title-matched offers (suspected same product)</h2><p>These offers matched by title only. They are a price signal, not a verified same-product ranking: our quote source does not return identifiers, so no offer can enter the verified ranking yet.</p><table><tr><th>Merchant</th><th>Price</th><th>Landed total</th><th>Listing title</th><th>Source</th><th>Fetched</th></tr><tr><td>Best Buy</td><td>$159.99</td><td>$159.99 + shipping unknown (not included)</td><td>Microsoft - Elite Series 2 Wireless Controller for Xbox One, Xbox Series X, and Xbox Series S - Black</td><td><a href="https://www.bestbuy.com/site/microsoft-elite-series-2-wireless-controller-for-xbox-one-xbox-series-x-and-xbox-series-s-black/6352703.p?skuId=6352703&amp;campaign=%7B%7Bcampaign.id%7D%7D&amp;adset=%7B%7Badset.id%7D%7D&amp;ad=%7B%7Bad.id%7D%7D" rel="nofollow">Source</a></td><td>2026-11-07 20:32<br><span class="tag">Current</span></td></tr>
-<tr><td>Target</td><td>$167.99</td><td>$167.99 + shipping unknown (not included)</td><td>XBOX Elite Wireless Controller Series 2 – XBOX Series X|S, XBOX One, and Windows Devices - Black</td><td><a href="https://www.target.com/p/xbox-one-wireless-controller-elite-series-2/-/A-76439797" rel="nofollow">Source</a></td><td>2026-11-07 20:32<br><span class="tag">Current</span></td></tr>
-<tr><td>CDW</td><td>$183.99</td><td>$183.99 + shipping unknown (not included)</td><td>Microsoft xbox elite wireless controller series 2 - gamepad - wir</td><td><a href="https://www.cdw.com/product/microsoft-xbox-elite-wireless-controller-series-2-gamepad-wireless/6535948" rel="nofollow">Source</a></td><td>2026-11-07 20:32<br><span class="tag">Current</span></td></tr>
-<tr><td>J&amp;L Game</td><td>$199.99</td><td>$199.99 + shipping unknown (not included)</td><td>Microsoft Xbox One Wireless Elite Series 2 Controller (Black) - (XB1) Xbox One</td><td><a href="https://www.jnlgame.com/products/microsoft-xbox-one-wireless-elite-series-2-controller-black-xb1-xbox-one?variant=31865597329523" rel="nofollow">Source</a></td><td>2026-11-07 20:32<br><span class="tag">Current</span></td></tr></table>
+<h2>Title-matched offers (suspected same product)</h2><p>These offers matched by title only. They are a price signal, not a verified same-product ranking: our quote source does not return identifiers, so no offer can enter the verified ranking yet.</p><table><tr><th>Merchant</th><th>Price</th><th>Stock</th><th>Landed total</th><th>Listing title</th><th>Source</th><th>Fetched</th></tr><tr><td>Best Buy</td><td>$159.99</td><td>In stock</td><td>$159.99 + shipping unknown (not included)</td><td>Microsoft - Elite Series 2 Wireless Controller for Xbox One, Xbox Series X, and Xbox Series S - Black</td><td><a href="https://www.bestbuy.com/site/microsoft-elite-series-2-wireless-controller-for-xbox-one-xbox-series-x-and-xbox-series-s-black/6352703.p?skuId=6352703&amp;campaign=%7B%7Bcampaign.id%7D%7D&amp;adset=%7B%7Badset.id%7D%7D&amp;ad=%7B%7Bad.id%7D%7D" rel="nofollow">Source</a></td><td>2026-11-07 20:32<br><span class="tag">Current</span></td></tr>
+<tr><td>Target</td><td>$167.99</td><td>In stock</td><td>$167.99 + shipping unknown (not included)</td><td>XBOX Elite Wireless Controller Series 2 – XBOX Series X|S, XBOX One, and Windows Devices - Black</td><td><a href="https://www.target.com/p/xbox-one-wireless-controller-elite-series-2/-/A-76439797" rel="nofollow">Source</a></td><td>2026-11-07 20:32<br><span class="tag">Current</span></td></tr>
+<tr><td>CDW</td><td>$183.99</td><td>In stock</td><td>$183.99 + shipping unknown (not included)</td><td>Microsoft xbox elite wireless controller series 2 - gamepad - wir</td><td><a href="https://www.cdw.com/product/microsoft-xbox-elite-wireless-controller-series-2-gamepad-wireless/6535948" rel="nofollow">Source</a></td><td>2026-11-07 20:32<br><span class="tag">Current</span></td></tr>
+<tr><td>J&amp;L Game</td><td>$199.99</td><td>In stock</td><td>$199.99 + shipping unknown (not included)</td><td>Microsoft Xbox One Wireless Elite Series 2 Controller (Black) - (XB1) Xbox One</td><td><a href="https://www.jnlgame.com/products/microsoft-xbox-one-wireless-elite-series-2-controller-black-xb1-xbox-one?variant=31865597329523" rel="nofollow">Source</a></td><td>2026-11-07 20:32<br><span class="tag">Current</span></td></tr></table>
 <p class="muted">Source snapshot: eval_snapshots_2026-11-07.json
 &middot; fetched 2026-11-07 20:32 UTC.
 Shipping is unknown for every offer above, so the landed total is a
@@ -49,5 +50,5 @@ at $0.00. Check the merchant page before buying.</p>
 than 24 hours are labeled "Needs re-check". This site earns no commission
 from any quote shown, runs no ads, and collects no data. See
 <a href="../method.html">Method &amp; principles</a>.</p>
-<p>Generated 2026-11-08T14:45:14.393329+00:00 from site_snapshot_2026-11-06.json.</p></footer>
+<p>Generated 2026-11-08T16:37:03.483379+00:00 from site_snapshot_2026-11-06.json.</p></footer>
 </body></html>

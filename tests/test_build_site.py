@@ -208,3 +208,21 @@ def test_method_page_mentions_identified_sources(tmp_path):
     method = ((tmp_path / "site") / "method.html").read_text()
     assert "identifier-matched and appear in verified rankings" in method
     assert "Shopify public product JSON (tier 1)" in method
+
+
+def test_offer_rows_label_stock_status(tmp_path):
+    data = _snapshot_matched(tmp_path)
+    snapshot = json.loads(open(data, encoding="utf-8").read())
+    by_key = {m["key"]: m for m in snapshot["models"]}
+    offers = by_key["sony-wh1000xm5-black"]["offers"]
+    offers[0]["in_stock"] = False  # Dell, identifier-matched
+    offers[1]["in_stock"] = True  # Adorama, suspected
+    offers[2]["in_stock"] = True  # Best Buy, suspected
+    with open(data, "w", encoding="utf-8") as handle:
+        json.dump(snapshot, handle)
+    build_site(data, tmp_path / "site")
+    page = ((tmp_path / "site") / "products" / "sony-wh1000xm5-black.html").read_text()
+    assert "<th>Stock</th>" in page
+    assert page.count("Out of stock") == 1  # only the Dell row
+    assert "In stock" in page
+    assert 'class="oos"' in page

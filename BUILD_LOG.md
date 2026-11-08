@@ -6667,3 +6667,20 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Verified identifiers 101 → 100; verified ranking unchanged at 84
   (model was never ranked; zero offers in the snapshot). Tests
   updated (101 → 100, pending set + this key). 53 tests pass.
+## 095 — 2026-11-08: Expansion path decided (DECISIONS 068)
+
+- User approved: hold at 200, then batches of 50 to 250; 500 is a
+  long-term target only. Stabilization first: daily refresh +
+  Black Friday recheck + close the 16 verified-unranked gap +
+  out-of-stock table annotation.
+## 096 — 2026-11-08: Out-of-stock annotation on offer tables (stabilization, DECISIONS 068)
+
+- Both product-page tables (verified ranking and title-matched)
+  gained a Stock column: "In stock" normally, "Out of stock" in
+  red bold (.oos) when the offer's in_stock is false. Missing
+  in_stock (older fixtures) defaults to in stock.
+- The fix surfaced two rows that were silently out of stock in the
+  ranking: XM5 @ Focus Camera $198.00 and Xbox Series X 1TB @
+  ShopCGX $799.99. Counts unchanged (84 ranked, 93 matched, 676
+  total); the rows stay ranked, now labeled. Test added
+  (test_offer_rows_label_stock_status). 54 tests pass.

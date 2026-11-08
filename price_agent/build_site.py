@@ -53,6 +53,7 @@ th,td{border:1px solid #ddd;padding:8px;text-align:left;vertical-align:top}
 th{background:#f2f2f2}tr:nth-child(even){background:#fafafa}
 .tag{display:inline-block;padding:1px 8px;border-radius:10px;font-size:.85em;
 background:#e8f0fe}.tag.pending{background:#fef3c7}.tag.stale{background:#fdecea}
+.oos{color:#b3261e;font-weight:700}
 input[type=search]{width:100%;padding:10px;font-size:1.05em;margin:12px 0}
 .stat{font-size:1.4em;font-weight:700}footer{border-top:1px solid #ddd;
 margin-top:40px;padding-top:12px;color:#555;font-size:.9em}
@@ -106,16 +107,26 @@ def render_page(title: str, body: str, root: str, snapshot_date: str,
     )
 
 
+def stock_cell(offer: dict) -> str:
+    """Availability label for one offer row. Missing in_stock means
+    in stock (older snapshots predate the field)."""
+    if offer.get("in_stock", True):
+        return "<td>In stock</td>"
+    return '<td class="oos">Out of stock</td>'
+
+
 def offer_rows(model: dict, now: datetime) -> str:
     rows = []
     for offer in model["offers"]:
         rows.append(
             "<tr><td>{merchant}</td><td>{price}</td>"
+            "{stock}"
             "<td>{total}</td><td>{title}</td>"
             "<td><a href=\"{url}\" rel=\"nofollow\">Source</a></td>"
             "<td>{fetched}<br>{fresh}</td></tr>".format(
                 merchant=esc(offer["merchant"]),
                 price=money(offer["price"]),
+                stock=stock_cell(offer),
                 total=(
                     f"{money(offer['price'])} + shipping unknown"
                     " (not included)"
@@ -139,12 +150,14 @@ def verified_rows(model: dict, now: datetime) -> str:
         kind = offer.get("identifier_kind") or ""
         rows.append(
             "<tr><td>{rank}</td><td>{merchant}</td><td>{price}</td>"
+            "{stock}"
             "<td>{total}</td><td>{title}</td>"
             "<td>{identifier}</td><td>{source}</td>"
             "<td>{fetched}<br>{fresh}</td></tr>".format(
                 rank=rank,
                 merchant=esc(offer["merchant"]),
                 price=money(offer["price"]),
+                stock=stock_cell(offer),
                 total=(
                     f"{money(offer['price'])} + shipping unknown"
                     " (not included)"
@@ -187,6 +200,7 @@ def product_page(model: dict, now: datetime, snapshot_date: str,
             "Shipping is unknown unless shown.</p></div>"
             "<h2>Verified ranking (identifier-matched)</h2>"
             "<table><tr><th>Rank</th><th>Merchant</th><th>Price</th>"
+            "<th>Stock</th>"
             "<th>Landed total</th><th>Listing title</th>"
             "<th>Identifier</th><th>Source</th><th>Fetched</th></tr>"
             + verified_rows(model, now)
@@ -219,6 +233,7 @@ def product_page(model: dict, now: datetime, snapshot_date: str,
                 "<h2>Title-matched offers (suspected same product)</h2>"
                 f"<p>{suspected_intro}</p>"
                 "<table><tr><th>Merchant</th><th>Price</th>"
+                "<th>Stock</th>"
                 "<th>Landed total</th><th>Listing title</th>"
                 "<th>Source</th><th>Fetched</th></tr>"
                 + offer_rows(

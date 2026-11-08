@@ -158,6 +158,13 @@ releases; breaking changes are called out in the release notes.
   Model name and prices unchanged. Verified identifiers 101 → 100;
   verified ranking unchanged (model was never ranked).
 
+- Out-of-stock annotation on offer tables (stabilization,
+  DECISIONS 068): both product-page tables gained a Stock column
+  ("In stock", or "Out of stock" in red bold). It surfaced two
+  rows that were silently out of stock in the ranking: XM5 @ Focus
+  Camera $198.00 and Xbox Series X 1TB @ ShopCGX $799.99. Counts
+  unchanged; rows stay ranked, now labeled.
+
 - Coverage round 4 — Abt hand rows (1 new ranking, 75 → 76):
   Logitech G Pro X Superlight 2 Black @ Abt $159.99 (UPC
   097855177797, InStock, price + UPC on the same page,

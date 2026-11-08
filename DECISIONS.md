@@ -3860,3 +3860,17 @@ written as "superseded by" with the original text kept.
 - Result: verified identifiers 101 → 100; verified ranking
   unchanged (this model was never ranked; its quotes are suspected).
   Tests updated to the new counts (test_site_snapshot, test_eval_set).
+## 068 (2026-11-08): Expansion path — hold at 200, batches of 50 to 250; 500 as long-term target
+
+- User approved 2026-11-08: stabilize the 200 first (daily refresh,
+  Black Friday promo recheck, close the 16 verified-but-unranked
+  gap), ship the out-of-stock table annotation, then expand in
+  batches of 50 with per-batch approval; next stop 250.
+- 500 is a long-term target, not committed scope. No 300-model jump.
+  Batch discipline from the 200 expansion (approved batches,
+  identifiers never loosened, DECISIONS 021/057) carries over.
+- Rationale: the first 200 are the mainstream models; beyond that is
+  long-tail with rising verification difficulty, and the
+  verified-identifier ratio (100/200) would fall. The site's value is
+  verified prices, not model count. Amazon layer and price-history
+  priority are still undecided and come before mass breadth.
