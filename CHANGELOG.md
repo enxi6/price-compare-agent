@@ -111,6 +111,18 @@ releases; breaking changes are called out in the release notes.
   ingest) added to the hand-identified file. Verified ranking
   74 → 75 of 200 models, matched offers 82 → 83.
 
+- Coverage round 5 (Micro Center): 0 new rows — the strict same-page
+  bar (price + catalog UPC + In Stock on one page) cannot be met
+  through text reads at Micro Center: /product/ pages show price +
+  availability but never the specs table, while quickView pages show
+  the specs (UPC/MPN) but never price or stock. Split evidence
+  (same product ID) exists for 6 models and is held pending a
+  decision on whether it counts: Joy-Con Neon $89.99, Portal
+  $249.99, Switch Neon $339.99, Xbox Elite 2 $199.99, Dell S3225QS
+  $329.99, Tab S10 FE+ $699.99 (accepting them would take the
+  ranking 76 → 82; a live-browser check of the specs tab is the
+  alternative that keeps the bar intact). Ranking stays 76/200.
+
 - Switch neon MPN corrected HADSKABAA → HADSKABAH (DECISIONS 065):
   UPC 045496883775 belongs to HADSKABAH per Abt, Amazon and Best
   Buy; the old HADSKABAA barcode 045496882174 is the 2017

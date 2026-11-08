@@ -6562,3 +6562,51 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   store (SKU 117972, same UPC). The old HADSKABAA barcode
   045496882174 is the 2017 revision, a different SKU.
 - Tests 52 pass; site rebuilt; no ranking change (UPC unchanged).
+## 089 — 2026-11-07: Coverage round 5 — Micro Center, 0 new rows (strict bar unmeetable via text reads)
+
+- 24 models checked at Micro Center (3 workers, fresh browser.open
+  reads 2026-11-08 ~03:52–03:54 UTC). 0 hand rows added: the strict
+  same-page bar (price + catalog UPC + In Stock on one page) cannot
+  be met through browser.open text reads at Micro Center. Verified
+  by the coordinator on both sides: /product/ pages render price +
+  JSON-LD availability but never the specs table (Joy-Con 674408:
+  $89.99 InStock, no UPC in text); quickView pages render the specs
+  (UPC/MPN) but never price or stock (Dell 693762: UPC 884116485131,
+  no price/stock in text). No blocking/captcha/429 in the lane.
+- Split evidence exists for 6 models (same product ID: UPC from
+  quickView + price/stock from /product/) — NOT added, pending a
+  parent/user decision on whether split evidence counts: Joy-Con
+  Neon $89.99 (045496590130, InStock Mayfield Heights), Portal
+  $249.99 (711719579779, InStock Mayfield Heights), Switch Neon
+  $339.99 (045496883775, InStock Mayfield Heights), Xbox Elite 2
+  $199.99 (889842196344, InStock Parkville), Dell S3225QS $329.99
+  (884116485131, 25+ In Stock Overland Park), Tab S10 FE+ $699.99
+  (887276992563, 4 In Stock Chicago). Accepting them would take the
+  ranking 76 → 82. Alternative: live-browser check of the /product/
+  pages, where the specs tab renders — keeps the same-page bar
+  intact. Coordinator recommends the live-browser route.
+- Other findings: Switch OLED White $399.99 InStock and Switch 2
+  $499.99 InStock at Micro Center, but UPC never surfaced in any
+  text read (quickView unchecked — could close either way); Watch
+  SE 3 exists at Micro Center (id 716339, $249.99, in stock per
+  listings) but no /product/ URL surfaced for a fresh read; PS5
+  Pro $615.57 OutOfStock (below $749.99 MSRP, possible clearance);
+  WF-1000XM5 $329.99 OutOfStock (was $199.99 in a 31-day-old crawl);
+  PS5 Digital Slim $599.99 InStock at Indianapolis only, UPC not
+  in any page text and CFI-2015 vs CFI-2100 unconfirmable — flag:
+  other retailers associate UPC 711719541035 with CFI-1015B, so
+  the catalog UPC/revision pairing may need a second look; PS5
+  1TB disc at Micro Center is the CFI-2000 group (MPN 1000039671,
+  UPC 711719573364), not catalog CFI-2100 group; Lift page is the
+  Left Handed variant (910-006467), not the catalog right-handed
+  910-006466; MX Master 4 Graphite not carried (Black/Pale Gray
+  only); Anker Prime 100W, Pixel Buds 2a, K8, Alienware Pro mouse,
+  Xbox Stereo Headset, Boom 2 — no Micro Center page found.
+- Bose QC Headphones (verbatim): two Micro Center listings both
+  show $169.00 InStock on fresh reads (older crawls showed
+  $359.00), but neither page's text contains UPC 017817848961 or
+  MPN 884367-0100, so the listing cannot be tied to the catalog
+  model. No Adorama checked; the open Adorama "Add to Cart"
+  decision is unchanged.
+- Tests 52 pass. No hand-file, snapshot, or site change; ranking
+  stays 76/200. No catalog changes, no Amazon touch, no spending.
