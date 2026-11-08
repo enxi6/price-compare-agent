@@ -6419,3 +6419,18 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   ranking still empty — no identifier-bearing quote yet; B&H hand
   row proposed as next step.
 - Tests 52 pass; count guard 99 → 101; both keys out of pending set.
+## 085 — 2026-11-07: WF-C510 first verified ranking via B&H hand row
+
+- Hand-verified tier-4 row added (DECISIONS 059 mechanism): Sony
+  WF-C510 @ B&H Photo $58.00, UPC 027242930339, in stock — price +
+  UPC on the same B&H spec page, re-verified 2026-11-08 00:32 UTC
+  before ingest. Row appended to the hand file
+  (eval_snapshots_identified_hand_2026-11-07.json), which the
+  collector never overwrites.
+- Result: verified ranking 74 → 75 of 200 models; matched offers
+  82 → 83; total offers unchanged at 667 (the identified B&H row
+  supersedes the suspected Meta B&H row for the same merchant and
+  price). Abt, Electronic Express and Focus Camera $58.00 rows stay
+  suspected (identifier-null Meta rows, correctly unmatched).
+- Tests 52 pass. No catalog identifier changes, no DECISIONS
+  changes, no models added, no Amazon touch, no spending.

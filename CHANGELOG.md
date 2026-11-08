@@ -105,6 +105,12 @@ releases; breaking changes are called out in the release notes.
   (InZone H5 gains Datavision + Focus Camera $128). WF-C510 has no
   identifier-bearing quote yet, so its ranking stays empty.
 
+- WF-C510 first verified ranking (hand row, DECISIONS 059 mechanism):
+  B&H Photo $58.00 for the Sony WF-C510 (UPC 027242930339, in stock,
+  price + UPC on the same spec page, re-verified 2026-11-08 before
+  ingest) added to the hand-identified file. Verified ranking
+  74 → 75 of 200 models, matched offers 82 → 83.
+
 - Coverage round 2 (Shopify + hand rows): verified ranking 55 → 73
   of 200 models, matched offers 61 → 80. Four new JustPressPlay
   pins (Switch 2 Pro Controller $89.99, Switch Pro Controller

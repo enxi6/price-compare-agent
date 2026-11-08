@@ -286,6 +286,22 @@
           "in_stock": true
         }
       ]
+    },
+    "sony-wf-c510-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 58.00,
+          "title": "Sony WF-C510 True Wireless Earbuds (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1850117-REG/sony_wfc510_b_wf_c510_true_wireless_earbuds.html",
+          "collected_at": "2026-11-08T00:32:21Z",
+          "identifier": "027242930339",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-08; price + UPC on the same page)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

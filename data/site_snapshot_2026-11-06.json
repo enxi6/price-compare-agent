@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T00:13:38.392584+00:00",
+    "generated_at": "2026-11-08T00:32:42.006629+00:00",
     "snapshot_date": "2026-11-07",
     "source_files": 47,
     "identified_source_files": 5,
@@ -8,9 +8,9 @@
     "verified_identifiers": 101,
     "pending_identifiers": 99,
     "total_offers": 667,
-    "matched_offers": 82,
-    "suspected_offers": 585,
-    "verified_ranking_models": 74,
+    "matched_offers": 83,
+    "suspected_offers": 584,
+    "verified_ranking_models": 75,
     "models_with_offers": 176,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -5580,23 +5580,23 @@
       },
       "offers": [
         {
+          "merchant": "B&H Photo",
+          "price": 58.0,
+          "title": "Sony WF-C510 True Wireless Earbuds (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1850117-REG/sony_wfc510_b_wf_c510_true_wireless_earbuds.html",
+          "collected_at": "2026-11-08T00:32:21Z",
+          "identifier": "027242930339",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com spec page (browser-verified 2026-11-08; price + UPC on the same page)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Abt",
           "price": 58.0,
           "title": "Sony WF-C510 Earbuds Truly Wireless in Black",
           "url": "https://www.abt.com/Sony-WF-C510-Earbuds-Truly-Wireless-in-Black-WFC510B/p/212831.html",
-          "collected_at": "2026-11-07T20:32:23.346397+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
-        },
-        {
-          "merchant": "B&H Photo",
-          "price": 58.0,
-          "title": "Sony WF-C510 True Wireless Earbuds (Black)",
-          "url": "https://www.bhphotovideo.com/c/product/1850117-REG/sony_wfc510_b_wf_c510_true_wireless_earbuds.html?BI=20177",
           "collected_at": "2026-11-07T20:32:23.346397+00:00",
           "identifier": null,
           "identifier_kind": null,
@@ -5634,8 +5634,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-07.json",
       "source_collected_at": "2026-11-07T20:32:23.346397+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "sony-inzone-h5-black",
