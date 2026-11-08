@@ -27,7 +27,7 @@
       "offers": [
         {
           "merchant": "B&H Photo",
-          "price": 1999.00,
+          "price": 1999.0,
           "title": "Apple 14\" MacBook Pro (M6, Space Black)",
           "url": "https://www.bhphotovideo.com/c/product/2010245-REG/apple_mhwt4ll_a_14_inch_macbook_pro_apple.html",
           "collected_at": "2026-11-07T21:05:43Z",
@@ -75,7 +75,7 @@
       "offers": [
         {
           "merchant": "B&H Photo",
-          "price": 419.00,
+          "price": 419.0,
           "title": "Apple 11\" iPad A16 Chip (128GB, Wi-Fi Only, Silver)",
           "url": "https://www.bhphotovideo.com/c/product/1883625-REG/apple_md3y4ll_a_11_ipad_a16_chip.html",
           "collected_at": "2026-11-07T22:25:00Z",
@@ -151,14 +151,14 @@
       "offers": [
         {
           "merchant": "B&H Photo",
-          "price": 74.99,
+          "price": 119.99,
           "title": "Logitech MX Vertical Advanced Ergonomic Mouse",
           "url": "https://www.bhphotovideo.com/c/product/1431406-REG/logitech_910_005447_mx_vertical_advanced_ergonomic.html",
-          "collected_at": "2026-11-07T22:26:00Z",
+          "collected_at": "2026-11-08T19:08:00Z",
           "identifier": "097855144461",
           "identifier_kind": "UPC",
           "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+          "source": "bhphotovideo.com product page (browser-verified 2026-11-08 daily refresh; price + UPC 097855144461 + In Stock on the same page; $74.99 hand row from 2026-11-07 was stale)",
           "in_stock": true
         }
       ]
@@ -167,7 +167,7 @@
       "offers": [
         {
           "merchant": "B&H Photo",
-          "price": 129.00,
+          "price": 129.0,
           "title": "Bose QuietComfort Wireless Noise-Canceling Earbuds (Black)",
           "url": "https://www.bhphotovideo.com/c/product/1847745-REG/bose_888507_0100_quietcomfort_wireless_noise_canceling_earbuds.html",
           "collected_at": "2026-11-07T22:26:00Z",
@@ -227,7 +227,7 @@
       "offers": [
         {
           "merchant": "B&H Photo",
-          "price": 148.00,
+          "price": 148.0,
           "title": "Sony ULT WEAR Wireless Over-Ear Noise-Canceling Headphones (Black)",
           "url": "https://www.bhphotovideo.com/c/product/1824830-REG/sony_whult900n_b_ult_wear_wireless_noise.html",
           "collected_at": "2026-11-07T22:26:00Z",
@@ -275,7 +275,7 @@
       "offers": [
         {
           "merchant": "B&H Photo",
-          "price": 429.00,
+          "price": 429.0,
           "title": "ASUS ProArt PA279CRV 27\" 4K HDR Monitor",
           "url": "https://www.bhphotovideo.com/c/product/1762484-REG/asus_pa279crv_27_4k_hdr_uhd.html",
           "collected_at": "2026-11-07T22:27:00Z",
@@ -291,7 +291,7 @@
       "offers": [
         {
           "merchant": "B&H Photo",
-          "price": 58.00,
+          "price": 58.0,
           "title": "Sony WF-C510 True Wireless Earbuds (Black)",
           "url": "https://www.bhphotovideo.com/c/product/1850117-REG/sony_wfc510_b_wf_c510_true_wireless_earbuds.html",
           "collected_at": "2026-11-08T00:32:21Z",

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "collected_at": "2026-11-08T19:06:24.800377Z",
+    "collected_at": "2026-11-08T19:10:47.746987Z",
     "source": "Meta Catalog search (200 models, 3966 raw listings, 2026-11-08) + browser page checks for price moves (see sources_note)",
-    "sources_note": "Identifier-bearing quotes come from the Shopify identified stream, not this file. Exclusions: known-bad 5, marketplace 32, non-us/blocked 872, prev-median-sanity 32, title-mismatch 2384. Carried browser-verified rows are flagged in their titles. KNOWN_BAD marketplace rows excluded."
+    "sources_note": "Identifier-bearing quotes come from the Shopify identified stream, not this file. Exclusions: known-bad 12, marketplace 32, non-us/blocked 872, prev-median-sanity 32, title-mismatch 2385. Carried browser-verified rows are flagged in their titles. KNOWN_BAD marketplace rows excluded."
   },
   "models": {
     "sony-wh1000xm5-black": {
@@ -297,12 +297,6 @@
           "price": 136.99,
           "title": "MX Keys S for Mac Wireless Keyboard - Space Gray",
           "url": "https://www.electronicexpress.com/catalog/574226/logitech-920011621-mx-keys-s-for-mac-wireless-keyboard-space-gray"
-        },
-        {
-          "merchant": "B&H Photo",
-          "price": 223.98,
-          "title": "Logitech MX Keys S Wireless Keyboard for Mac & MX Master 4",
-          "url": "https://www.bhphotovideo.com/c/product/1923308-REG/logitech_mx_keys_s_wireless.html?BI=20177"
         }
       ]
     },
@@ -864,12 +858,6 @@
           "price": 399.99,
           "title": "Nintendo Switch™ - OLED Model Neon Blue/Neon Red set",
           "url": "https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-neon-blue-neon-red-set/"
-        },
-        {
-          "merchant": "Best Buy",
-          "price": 411.38,
-          "title": "Switch – OLED Model w/Joy-Con",
-          "url": "https://www.bestbuy.com/product/switch-oled-model-w-joy-con/J7GSL576PS/sku/12702706?fs=to5kj8"
         }
       ]
     },
@@ -1147,12 +1135,6 @@
       "offers": [
         {
           "merchant": "Bose",
-          "price": 129.0,
-          "title": "Bose QuietComfort Earbuds",
-          "url": "https://www.bose.com/p/service/bose-quietcomfort-headphones/QCEARB24-HEADPHONEIN-BLK-WW.html"
-        },
-        {
-          "merchant": "Bose",
           "price": 179.0,
           "title": "Bose QuietComfort Earbuds",
           "url": "https://www.bose.com/p/earbuds/bose-quietcomfort-headphones/QCEARB24-HEADPHONEIN.html"
@@ -1286,12 +1268,6 @@
           "url": "https://www.bhphotovideo.com/c/product/2001094-REG/bose_897806_0010_ultra_open_true_wireless.html?BI=20177"
         },
         {
-          "merchant": "Target",
-          "price": 299.99,
-          "title": "Bose Ultra Open Earbuds (2nd Gen) - Melted Chocolate",
-          "url": "https://www.target.com/p/bose-ultra-open-earbuds-2nd-gen-melted-chocolate/-/A-95009028"
-        },
-        {
           "merchant": "Bose",
           "price": 349.0,
           "title": "Bose Ultra Open Earbuds",
@@ -1312,12 +1288,6 @@
           "price": 24.99,
           "title": "Pro Controller for Nintendo Switch",
           "url": "https://marsback.com/products/marsback-pro-controller-for-nintendo-switch?variant=35965346775191"
-        },
-        {
-          "merchant": "Dell",
-          "price": 59.99,
-          "title": "Zen pro wireless controller for switch - black",
-          "url": "https://www.dell.com/en-us/shop/gaming-controllers/apd/ad083446/gaming-gaming-accessories?tfcid=53216079"
         },
         {
           "merchant": "Nintendo",
@@ -1467,12 +1437,6 @@
           "price": 149.99,
           "title": "Logitech ERGO K860 Split Ergonomic Keyboard, Wireless Connectivity, Graphite - Wireless Connectivity - Bluetooth/RF - 32.81 ft - 2.40 GHz - USB Interface - Windows, Mac OS - AAA Battery Size Supported",
           "url": "https://www.antonline.com/Logitech/1389113"
-        },
-        {
-          "merchant": "B&H Photo",
-          "price": 245.98,
-          "title": "Logitech Wireless ERGO K860 Keyboard & MX Vertical Ergonomic",
-          "url": "https://www.bhphotovideo.com/c/product/1688383-REG/logitech_wireless_ergo_k860_keyboard.html?BI=20177"
         }
       ]
     },
@@ -2160,12 +2124,6 @@
     },
     "apple-studio-display-xdr-standard-tilt-height": {
       "offers": [
-        {
-          "merchant": "MelroseMac",
-          "price": 1599.0,
-          "title": "Apple 27\" Studio Display",
-          "url": "https://melrosemac.com/products/apple-studio-display-27-inch-5k-retina-standard-glass-standard-glass-tilt-adjustable-stand2026?variant=47681759150292"
-        },
         {
           "merchant": "Universitysupplystore",
           "price": 3199.0,
@@ -3518,14 +3476,7 @@
       ]
     },
     "samsung-galaxy-tab-a11-plus-128gb-gray": {
-      "offers": [
-        {
-          "merchant": "CDW",
-          "price": 329.99,
-          "title": "Samsung Galaxy Tab A11+ - Tablet - Android - 128 Gb - 11 - 3g, 4g, 5g - At",
-          "url": "https://www.cdw.com/product/samsung-galaxy-tab-a11-tablet-android-128-gb-11-3g-4g-5g-at/9020722"
-        }
-      ]
+      "offers": []
     },
     "samsung-galaxy-tab-s10-fe-plus-128gb-gray": {
       "offers": [

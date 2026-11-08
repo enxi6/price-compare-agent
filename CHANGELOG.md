@@ -1275,6 +1275,25 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-08: full 200-model Meta Catalog sweep (3,966
+  raw listings, 200/200 calls OK) + Shopify identified sweep (84
+  offers, 73 models; Datavision Tab S10 FE+ 404 skipped, same as
+  2026-11-07). Seven feed rows proven wrong on merchant pages and
+  excluded via KNOWN_BAD (MelroseMac XDR $1,599 is the 2026 standard
+  display, not the XDR tilt-height; Bose QC Earbuds $129 is a
+  /p/service/ replacement page; B&H MX Keys S $223.98 and Ergo K860
+  $245.98 are combo kits, not the standalone models; Dell Switch Pro
+  Controller $59.99 is a Zen PRO third-party controller; Best Buy
+  Switch OLED $411.38 is a marketplace seller's White model; CDW Tab
+  A11+ $329.99 is the AT&T 5G variant, catalog pins Wi-Fi). Builder
+  also gains "chocolate" as a color word (Melted/Cherry Chocolate
+  rows no longer pass as Black). Confirmed moves: Corsair K65 Plus
+  $129.99, HyperX Alloy Rise 75 $169.99, MX Vertical @ B&H $119.99,
+  HyperX Cloud III S $139.99, LinkBuds Fit @ Bloomingdale's $228.00,
+  HyperX QuadCast 2 S $159.99, Keychron K2 HE @ Byok $139.99 (sold
+  out). Stale B&H MX Vertical hand row refreshed $74.99 -> $119.99.
+  Snapshot 567 offers / 163 models with quotes; site 668 offers,
+  96 matched, 86 verified rankings (unchanged). Tests 54 pass.
 - Corrected the G Pro X Superlight 2 Black eval identifier from the
   European reference (910-006630 / EAN 5099206104525) to the US reference
   (910-006628 / UPC 097855177797), agreed by Abt (US), DirectDial,

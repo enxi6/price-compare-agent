@@ -6702,3 +6702,60 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Result: verified ranking 84 → 86 of 200; matched offers 93 → 95;
   total 676 → 677 (the Hazel identified row supersedes the suspected
   Meta Best Buy $129 row). Tests 54 pass.
+## 098 — 2026-11-08: Daily refresh (Meta sweep + identified sweep + merchant-page verification)
+
+- Full 200-model Meta Catalog sweep, 200/200 calls OK (3,966 raw
+  listings; driver saved to goal hidden_files `sweep.py`). Snapshot
+  `data/eval_snapshots_2026-11-08.json`: 567 offers, 163/200 models
+  with quotes (prev 580/165), 36 zero-quote models. Eval: 200 models,
+  100 verified identifiers, 567 total, 0 identifier-matched (all
+  suspected, by design). 54 tests pass.
+- Identified stream: full Shopify sweep, 84 offers across 73 models,
+  1 skipped (Datavision Tab S10 FE+ 404 — handle resolves on www,
+  not the bare domain; same as 2026-11-07, logged not worked around).
+  Site rebuilt (203 pages): 668 offers, 96 matched, 86 verified
+  rankings (unchanged from the 00df36f hand-row commit, which landed
+  mid-run and already carried this run's first-build snapshot).
+- Confirmed moves (merchant-page verified): Corsair K65 Plus @
+  Corsair $29.99 -> $129.99 (In Stock; the $29.99 was a bad feed row);
+  HyperX Alloy Rise 75 $84.99 -> $169.99 (In Stock, Black/US layout);
+  MX Vertical @ B&H $74.99 -> $119.99 (In Stock, UPC 097855144461;
+  $24 coupon in cart noted); HyperX Cloud III S $179.99 -> $139.99
+  (In Stock, all colors); LinkBuds Fit @ Bloomingdale's $208.00 ->
+  $228.00 (JSON-LD InStock, WFLS910N/B; page's returns text mentions
+  a third-party seller — caveat, row kept); HyperX QuadCast 2 S
+  $149.99 -> $159.99 (sale, was $199.99, In Stock); Keychron K2 HE @
+  Byok $129.99 -> $139.99 (page price confirmed, variant sold out —
+  stock change). Trivial: Bose SoundLink Plus @ Macy's $272.99 ->
+  $269.00 (<$5, no page check).
+- Feed rows proven wrong and excluded (KNOWN_BAD, builder hardened):
+  MelroseMac Studio Display XDR $1,599 (merged page; that variant is
+  the 2026 standard display — XDR tilt-height is $3,299); Bose QC
+  Earbuds $129 (a /p/service/ replacement-parts page, not the retail
+  product — Bose stays $179); B&H MX Keys S Pale Grey $223.98 (MX
+  Keys S for Mac + MX Master 4 combo kit, Space Gray) and Ergo K860
+  $245.98 (K860 + MX Vertical productivity kit) — both kit rows, not
+  the standalone models; Dell Switch Pro Controller $59.99 (Zen PRO
+  third-party controller; the real Dell row $79.99 stays); Best Buy
+  Switch OLED neon $411.38 (marketplace seller Michael Electronics 2,
+  White model); CDW Tab A11+ $329.99 (AT&T 5G SM-X238; catalog pins
+  Wi-Fi SM-X230 — model now has zero quotes, honestly). Builder also
+  gains "chocolate" as a color word (Target Ultra Open Earbuds
+  "Melted Chocolate" row excluded). Unverified (feed-only): CDW Tab
+  A11+ price (page renders no price; row excluded anyway as the wrong
+  variant).
+- Hand-row maintenance: stale B&H MX Vertical hand row refreshed
+  $74.99 -> $119.99 in the tier-4 hand file (same B&H page verified
+  today, UPC matches); it now supersedes the Meta B&H row instead of
+  double-listing. Other hand rows untouched (not re-verified today).
+- Rotation: pending items — M6 Pro UPC closed (user-confirmed
+  195951080291, catalog verified); MX Master 4 retailer hunt closed
+  (Target $119.99, browser-verified 2026-11-07); DualSense White UPC
+  — no new evidence, not re-searched. Apple patrol: MacBook Pro 14
+  M6 $1,999 at Apple, available from Nov 6 (Apple press release);
+  iPad Air M4 13" $949 at Apple (Store configurator, retrieved
+  2026-10-31; June 25 price rise corroborated by EveryMac); Abt
+  shows MH5N4LL/A as PreOrder — possible stock note, not confirmed.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
+  no DECISIONS.md changes, no models added, no Amazon touch, no
+  spending, no registrations, no purchases.
