@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T05:30:52.998253+00:00",
+    "generated_at": "2026-11-08T14:45:14.302085+00:00",
     "snapshot_date": "2026-11-07",
     "source_files": 47,
     "identified_source_files": 5,
     "models": 200,
-    "verified_identifiers": 101,
-    "pending_identifiers": 99,
+    "verified_identifiers": 100,
+    "pending_identifiers": 100,
     "total_offers": 676,
     "matched_offers": 93,
     "suspected_offers": 583,
@@ -2900,13 +2900,10 @@
       "key": "sony-ps5-digital-825gb",
       "brand": "Sony",
       "model": "PlayStation 5 Slim Digital Edition (825GB)",
-      "variant": "825GB, White, all-digital (CFI-2015)",
+      "variant": "825GB, White, all-digital (CFI-2100 model group)",
       "category": "consoles",
-      "status": "verified",
-      "identifiers": {
-        "UPC": "711719541035",
-        "MPN": "CFI-2015"
-      },
+      "status": "pending",
+      "identifiers": {},
       "offers": [],
       "source_file": "eval_snapshots_2026-11-07.json",
       "source_collected_at": "2026-11-07T20:32:23.346397+00:00",

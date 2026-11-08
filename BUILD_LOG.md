@@ -6644,3 +6644,26 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   supersedes the suspected Meta Abt row at the same price). NFM
   $166.99 stays suspected (identifier-null, correctly unmatched).
 - Tests 53 pass. No catalog changes, no DECISIONS changes.
+## 093 — 2026-11-07: Adorama search listing check for Bose QC (no row)
+
+- Live-browser check of Adorama search results for "Bose QuietComfort
+  Headphones": the 2023 model listing (SKU BO884367000) shows NO stock
+  wording — only a "SELECT OPTIONS" button; "Starting at $359.00".
+  Other listings on the same page DO state stock ("On Backorder",
+  "1 Available", "5+ Available"), so the absence is specific to
+  this listing.
+- The old product URL boqcblkak.html now returns 404; the listing
+  links to the new /p/bo884367010u page (Black with stand & wall
+  charger $369; base kit $359).
+- Decision: Bose stays pending — the two-signal standard from
+  DeathAdder (product-page button + search-listing "In Stock") is
+  not met. No standard change.
+## 094 — 2026-11-08: PS5 Digital 825GB corrected per DECISIONS 067 (option B)
+
+- Catalog: sony-ps5-digital-825gb variant MPN CFI-2015 → "CFI-2100
+  model group"; identifiers emptied (UPC 711719541035 returned to
+  pending — evidence points to the 2020 launch CFI-1015B, not the
+  Slim); status verified → pending. Model name and prices unchanged.
+- Verified identifiers 101 → 100; verified ranking unchanged at 84
+  (model was never ranked; zero offers in the snapshot). Tests
+  updated (101 → 100, pending set + this key). 53 tests pass.

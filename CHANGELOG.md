@@ -151,6 +151,13 @@ releases; breaking changes are called out in the release notes.
   showing "In Stock"; added on user approval. Verified ranking
   83 → 84 of 200 models, matched offers 92 → 93.
 
+- PS5 Digital 825GB corrected per DECISIONS 067 (user approved
+  option B): variant MPN CFI-2015 → "CFI-2100 model group";
+  UPC 711719541035 returned to pending (evidence points to the
+  2020 launch CFI-1015B, not the Slim); status verified → pending.
+  Model name and prices unchanged. Verified identifiers 101 → 100;
+  verified ranking unchanged (model was never ranked).
+
 - Coverage round 4 — Abt hand rows (1 new ranking, 75 → 76):
   Logitech G Pro X Superlight 2 Black @ Abt $159.99 (UPC
   097855177797, InStock, price + UPC on the same page,

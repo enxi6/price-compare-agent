@@ -3826,3 +3826,37 @@ written as "superseded by" with the original text kept.
   Incycle $599.99 as a second matched merchant. Ranking 82 → 83;
   matched 90 → 92; total 674 → 676. No other model's rows changed;
   no ranking lost.
+## 067 (2026-11-08): PS5 Digital 825GB — MPN corrected to CFI-2100 model group, UPC returned to pending
+
+- The catalog entry mixed three generations into one row: model name
+  Slim Digital 825GB, MPN CFI-2015, UPC 711719541035. Those three
+  cannot all be true at once. The entry's own comment already
+  admitted the contradiction (the 1TB CFI-2015 revision carries UPC
+  711719548539; CFI-1015B is the launch non-Slim digital model).
+- Evidence review 2026-11-08 (user approved option B): UPC
+  711719541035 belongs to the 2020 launch 825GB, not the Slim.
+  GameStop's launch Digital page FAQ says 825GB, ©2020; the launch
+  disc UPC 711719541028 pairs with CFI-1015A, so 711719541035 is its
+  digital sequential number; Notebookcheck/GameLuster confirm
+  CFI-1015A/B are 2020 launch 825GB. No clean source ties the UPC to
+  CFI-2015 (GameStop Slim Digital 1TB: UPC 711719573371, CFI-2000
+  group; eBay CFI-2015: UPC 711719548539). The two original sources
+  for the pairing (PayMore spec table, eBay catalog) are therefore
+  discounted, not refuted by a Sony primary source — none was found.
+- The currently sold 825GB Slim is the CFI-2100 group: Abt Model
+  1000049898 page says "(CFI-2100 group – slim)", 825GB, $599.99;
+  Cowtown and ShopCGX agree; Best Buy same model/SKU 6646420
+  $599.99. Counter-evidence recorded: Walmart's same 825GB Slim
+  page lists Model CFI-2015, but that page is marked unverified.
+- Change: variant MPN CFI-2015 → "CFI-2100 model group"; identifiers
+  emptied (UPC pending, MPN not carried — per the standing rule the
+  UPC is the only matching gate and MPN alone verifies nothing);
+  status verified → pending. Model name and prices unchanged.
+  CFI-2100's real UPC is still unknown and needs another retailer
+  spec page to re-verify.
+- Rejected alternative A (revert the entry to launch CFI-1015B):
+  it would orphan all $599.99 quotes and turn the entry into a
+  discontinued launch unit.
+- Result: verified identifiers 101 → 100; verified ranking
+  unchanged (this model was never ranked; its quotes are suspected).
+  Tests updated to the new counts (test_site_snapshot, test_eval_set).

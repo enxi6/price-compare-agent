@@ -781,17 +781,27 @@ EVAL_SET: list[EvalProduct] = [
         key="sony-ps5-digital-825gb",
         brand="Sony",
         model="PlayStation 5 Slim Digital Edition (825GB)",
-        variant="825GB, White, all-digital (CFI-2015)",
+        variant="825GB, White, all-digital (CFI-2100 model group)",
         category="consoles",
-        identifiers={"UPC": "711719541035", "MPN": "CFI-2015"},
+        identifiers={},
         identifier_sources={
-            "UPC": "PayMore US spec table (Slim Digital Edition "
-            "825GB, MPN CFI-2015, UPC 711719541035) + eBay product "
-            "catalog (GTIN 0711719541035, 825GB, CFI-2015) agree. "
-            "Best Buy's page (Model 1000049898, SKU 6646420) states "
-            "no UPC. The 1TB CFI-2015 revision carries a different "
-            "UPC (711719548539) and was excluded; CFI-1015B is the "
-            "launch (non-Slim) digital model."
+            "UPC": "UPC 711719541035 returned to pending 2026-11-08 "
+            "(DECISIONS 067): the code points to the 2020 launch "
+            "825GB, not the Slim — GameStop's launch Digital page FAQ "
+            "says 825GB, ©2020; the launch disc UPC 711719541028 "
+            "pairs with CFI-1015A, so 711719541035 is its digital "
+            "sequential number; Notebookcheck/GameLuster confirm "
+            "CFI-1015A/B are 2020 launch 825GB. No clean source ties "
+            "it to CFI-2015 (GameStop Slim Digital 1TB: UPC "
+            "711719573371, CFI-2000 group; eBay CFI-2015: UPC "
+            "711719548539). The currently sold 825GB Slim is the "
+            "CFI-2100 group: Abt Model 1000049898 page says "
+            "'(CFI-2100 group – slim)', 825GB, $599.99; Cowtown and "
+            "ShopCGX agree; Best Buy same model/SKU 6646420 $599.99. "
+            "Counter-evidence: Walmart's same 825GB Slim page lists "
+            "Model CFI-2015, but that page is marked unverified. "
+            "CFI-2100's real UPC is still unknown; no Sony official "
+            "UPC-to-model page was found."
         },
         notes="Slim Digital 825GB bare console only: bundles "
         "(Fortnite, Marvel's Wolverine) and the 1TB revision are "
@@ -801,7 +811,7 @@ EVAL_SET: list[EvalProduct] = [
         "signals were mixed); Sam's Club $599.00 (feed, "
         "authorized_retailer). Candidate price $599 corrected to "
         "$599.99.",
-        status="verified",
+        status="pending",
     ),
     EvalProduct(
         key="nintendo-joy-con-2-pair-light-blue-light-red",
