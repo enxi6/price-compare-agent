@@ -111,6 +111,16 @@ releases; breaking changes are called out in the release notes.
   ingest) added to the hand-identified file. Verified ranking
   74 → 75 of 200 models, matched offers 82 → 83.
 
+- Coverage round 3 (2026-11-07, BUILD_LOG 086): the 26
+  verified-but-unranked models were re-checked against fresh
+  B&H/Adorama pages — 0 new hand rows. The models are mostly not
+  carried or discontinued at those two retailers; where in stock,
+  the UPC does not surface in the page text (G Pro X Superlight 2,
+  Lift). Closest near-misses: Bose QC Headphones @ Adorama $359
+  (UPC confirmed, no "In Stock" wording) and Boom 2 @ B&H (UPC
+  confirmed, still out of stock). Ranking stays 75/200, matched
+  offers 83. No snapshot or site change.
+
 - Coverage round 2 (Shopify + hand rows): verified ranking 55 → 73
   of 200 models, matched offers 61 → 80. Four new JustPressPlay
   pins (Switch 2 Pro Controller $89.99, Switch Pro Controller

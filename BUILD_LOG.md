@@ -6434,3 +6434,60 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   suspected (identifier-null Meta rows, correctly unmatched).
 - Tests 52 pass. No catalog identifier changes, no DECISIONS
   changes, no models added, no Amazon touch, no spending.
+## 086 — 2026-11-07: Coverage round 3 — B&H/Adorama re-check, 0 new rows (ranking stays 75)
+
+- Scope: the 26 verified-but-unranked models (direction B, user-approved
+  2026-11-07). Kindle skipped per rule (Amazon-exclusive, no compliant
+  quote). The other 25 were checked with fresh B&H/Adorama page reads
+  2026-11-08 ~03:06-03:10 UTC, three workers in parallel. No rows met
+  the price + catalog UPC + In Stock on the same page bar.
+- Result: verified ranking stays 75/200; matched offers 83; total
+  offers 667; identifiers unchanged (101/99). No hand-file, snapshot
+  or site change — no rebuild, no ranking lost. Tests 52 pass.
+- Why each model failed:
+  - Not carried at either retailer: MX Master 4 graphite (B&H has
+    only Business 910-007616; Adorama only Pale Gray 910-007559 and
+    Mac 910-007575 BackOrder), PS5 Pro, PS5 1TB (disc), PlayStation
+    Portal, Pixel Buds 2a Hazel, Dell S3225QS, Alienware Pro mouse,
+    DeathAdder V4 Pro, Tab S10 FE+ (B&H has only S9 FE+ / S10 Ultra,
+    discontinued).
+  - Discontinued: Switch OLED White (Adorama $399.99), WF-1000XM5
+    (B&H "No Longer Available", replaced by XM6), Joy-Con pair neon
+    (Adorama $79.99), Switch neon HACSKABAA (B&H $289 / Adorama
+    $299.99), HP 920 (B&H $99.99), Xbox Stereo Headset (Adorama
+    $46.99), Bose QC Headphones (B&H 884367-0100; in-stock 2nd Gen
+    is a variant mismatch), PS5 Digital (Adorama only a discontinued
+    Horizon bundle), Switch 2 (Adorama only a discontinued bundle,
+    no BEE-001).
+  - Out of stock / backordered on re-check: K8 hot-swappable red
+    (Keychron.com: Red still Out of stock, $69.99; no B&H/Adorama
+    K8 page), Boom 2 (B&H correct variant, UPC confirmed, $99.99,
+    still Temporarily Out of Stock), Xbox Elite Series 2 (Adorama
+    $179.99, Temporarily On Backorder, expected 01/2027).
+  - In stock but UPC not in the page text: G Pro X Superlight 2
+    (B&H $159.99 InStock, /specs read too; Adorama $159.99 InStock)
+    and Lift graphite (B&H $74.99 In Stock, overview + /specs;
+    Adorama $65.49/$69.99 listings) — no UPC string surfaced in
+    either retailer's extracted text. Watch SE 3 (Adorama page is
+    marketing copy only: no price/UPC/stock in text; no B&H page).
+  - Variant / UPC mismatch: Anker Prime 100W (B&H page UPC is
+    194644289638 for variant A2688J41-1, not catalog 194644040635;
+    Adorama discontinued, MFR NJ4311); Switch neon Adorama
+    HADSKABAH $399 InStock is the wrong MPN (catalog HADSKABAA).
+  - Bose QC Headphones @ Adorama ($359.00, UPC 017817848961
+    confirmed) is the closest near-miss: full 842-line page text
+    has no "In Stock" wording anywhere (only "Add to Cart"), so no
+    row per the strict rule. If "Add to Cart" is ever accepted as
+    stock evidence, this becomes a row — not decided here.
+- Lane finding: the B&H/Adorama hand-row lane is effectively
+  exhausted for this set. The remaining unranked models are mostly
+  not carried or discontinued at these two retailers, and where a
+  model is in stock the UPC often does not surface in extractable
+  page text (Adorama text never shows UPCs; B&H omits them for the
+  two Logitech mice). Next levers need a different source or a
+  different verification method — not decided here.
+- Flag (no action taken, catalog untouched): Switch neon catalog
+  pairing may be inconsistent — UPC 045496883775 appears to belong
+  to HADSKABAH, while HADSKABAA's barcode is 045496882174 (the
+  previously rejected one). Needs a catalog review before any
+  further Switch neon work.
