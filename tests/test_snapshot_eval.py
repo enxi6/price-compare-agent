@@ -42,7 +42,7 @@ def test_snapshot_staleness(tmp_path):
 def test_eval_set_shape():
     assert len(EVAL_SET) == 200
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 99
+    assert len(verified) == 101
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
@@ -66,8 +66,6 @@ def test_eval_set_shape():
         "logitech-pro-x-tkl-lightspeed-tactile-black",
         "keychron-q1-knob-navy-blue-red",
         "apple-macbook-pro-14-proled-xdr",
-        "sony-wf-c510-black",
-        "sony-inzone-h5-black",
         "logitech-pro-x2-superstrike-lunar-eclipse",
         "keychron-b40-deep-black",
         "sony-mdr-7506",

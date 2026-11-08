@@ -97,6 +97,14 @@ releases; breaking changes are called out in the release notes.
   — but unattainable via this route. Target hand rows need a fresh
   compliance call and are not cleared here.
 
+- WF-C510 + InZone H5 identifiers verified (DECISIONS 064):
+  WF-C510 UPC 027242930339 (B&H spec page + Abt agree); InZone H5
+  UPC 027242927919 (Datavision + Focus Camera public product JSON
+  agree at $128). Both upgraded to verified on user confirmation;
+  identifiers 99 → 101 verified / 99 pending. Rankings 73 → 74
+  (InZone H5 gains Datavision + Focus Camera $128). WF-C510 has no
+  identifier-bearing quote yet, so its ranking stays empty.
+
 - Coverage round 2 (Shopify + hand rows): verified ranking 55 → 73
   of 200 models, matched offers 61 → 80. Four new JustPressPlay
   pins (Switch 2 Pro Controller $89.99, Switch Pro Controller

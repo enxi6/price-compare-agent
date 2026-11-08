@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T00:07:09.728944+00:00",
+    "generated_at": "2026-11-08T00:13:38.392584+00:00",
     "snapshot_date": "2026-11-07",
     "source_files": 47,
     "identified_source_files": 5,
     "models": 200,
-    "verified_identifiers": 99,
-    "pending_identifiers": 101,
-    "total_offers": 668,
-    "matched_offers": 80,
-    "suspected_offers": 588,
-    "verified_ranking_models": 73,
+    "verified_identifiers": 101,
+    "pending_identifiers": 99,
+    "total_offers": 667,
+    "matched_offers": 82,
+    "suspected_offers": 585,
+    "verified_ranking_models": 74,
     "models_with_offers": 176,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -5573,8 +5573,11 @@
       "model": "WF-C510",
       "variant": "Black (WFC510/B)",
       "category": "earbuds",
-      "status": "pending",
-      "identifiers": {},
+      "status": "verified",
+      "identifiers": {
+        "UPC": "027242930339",
+        "MPN": "WFC510/B"
+      },
       "offers": [
         {
           "merchant": "Abt",
@@ -5640,8 +5643,11 @@
       "model": "INZONE H5",
       "variant": "Black (WHG500/B)",
       "category": "headphones",
-      "status": "pending",
-      "identifiers": {},
+      "status": "verified",
+      "identifiers": {
+        "UPC": "027242927919",
+        "MPN": "WHG500/B"
+      },
       "offers": [
         {
           "merchant": "Datavision",
@@ -5654,20 +5660,7 @@
           "source_tier": 1,
           "source": "shopify:datavision.com",
           "in_stock": true,
-          "suspected": true
-        },
-        {
-          "merchant": "Focus Camera",
-          "price": 128.0,
-          "title": "Sony INZONE H5",
-          "url": "https://focuscamera.com/products/sony-whg500w-knhs-gaming-gaming-accessories?variant=42164891942960",
-          "collected_at": "2026-11-07T20:32:23.346397+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
+          "suspected": false
         },
         {
           "merchant": "Focus Camera",
@@ -5680,7 +5673,7 @@
           "source_tier": 1,
           "source": "shopify:focuscamera.com",
           "in_stock": true,
-          "suspected": true
+          "suspected": false
         }
       ],
       "source_file": "eval_snapshots_2026-11-07.json",

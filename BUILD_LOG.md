@@ -6408,3 +6408,14 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   UPC still unfound; DualSense White deliberately not attempted.
 - Tests 52 pass. No Amazon, no Target, no spending, no
   registrations, no purchases.
+## 084 — 2026-11-07: WF-C510 + InZone H5 identifiers verified (DECISIONS 064)
+
+- WF-C510: UPC 027242930339 verified (B&H spec page + Abt agree);
+  MPN WFC510/B. InZone H5: UPC 027242927919 verified (Datavision
+  + Focus Camera public product JSON agree at $128); MPN WHG500/B.
+  Both upgraded to verified on user confirmation.
+- Identifiers 99 → 101 verified / 99 pending. Rankings 73 → 74
+  (InZone H5: Datavision + Focus Camera $128 matched). WF-C510
+  ranking still empty — no identifier-bearing quote yet; B&H hand
+  row proposed as next step.
+- Tests 52 pass; count guard 99 → 101; both keys out of pending set.

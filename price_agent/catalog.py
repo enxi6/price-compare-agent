@@ -2174,6 +2174,12 @@ EVAL_SET: list[EvalProduct] = [
         model="WF-C510",
         variant="Black (WFC510/B)",
         category="earbuds",
+        identifiers={"UPC": "027242930339", "MPN": "WFC510/B"},
+        identifier_sources={
+            "UPC": "B&H Photo spec page (UPC 027242930339, $58.00, "
+            "In Stock) + Abt listing (Model WFC510/B, UPC "
+            "027242930339, $58.00) agree, 2026-11-07"
+        },
         notes="Best Buy $59.99 (Model WFC510/B, SKU 6594425, JSON-LD "
         "InStock, page-verified 2026-11-06); B&H Photo $58.00 (In "
         "Stock, was $68.00, page-verified); Abt $58.00 (feed row; "
@@ -2181,17 +2187,16 @@ EVAL_SET: list[EvalProduct] = [
         "Electronic Express $58.00 and Focus Camera $58.00 (feed rows, "
         "Black); Fred Meyer $69.99 (JSON-LD InStock, page-verified — "
         "the list price). MPN WFC510/B confirmed (Best Buy US Model + "
-        "B&H + Sony AU Model WFC510B agree), but UPC 027242930339 is "
-        "stated on the B&H spec page only — no second non-Amazon US "
-        "source surfaced, so identifiers stay empty per the Adaptive "
-        "Controller / DualSense / PULSE Elite precedent; re-check next "
-        "refresh. Correction vs the 2026-10-31 candidate price $69.99: "
+        "B&H + Sony AU Model WFC510B agree). UPC verified 2026-11-07 "
+        "(B&H + Abt agree) and upgraded to verified on user "
+        "confirmation (DECISIONS 064). Correction vs the 2026-10-31 candidate price $69.99: "
         "that is the list price — the current street price is $58 at "
         "B&H, Abt, Electronic Express and Focus Camera and $59.99 at "
         "Best Buy. White (UPC 027242930346), Blue and Yellow are "
         "different colorways. Distinct from the set's WF-C710N Black "
         "(WFC710N/B) and WF-1000XM5/XM6 Black — the C510 (2024) is "
         "Sony's compact everyday budget line, no noise cancelling.",
+        status="verified",
     ),
     EvalProduct(
         key="sony-inzone-h5-black",
@@ -2199,6 +2204,13 @@ EVAL_SET: list[EvalProduct] = [
         model="INZONE H5",
         variant="Black (WHG500/B)",
         category="headphones",
+        identifiers={"UPC": "027242927919", "MPN": "WHG500/B"},
+        identifier_sources={
+            "UPC": "Datavision + Focus Camera public product JSON "
+            "agree on UPC 027242927919 at $128.00 (identified "
+            "snapshots 2026-11-07 retry/retry3, fresh from coverage "
+            "round 2)"
+        },
         notes="Focus Camera $128.00 (Black, $128 vs $178, page-verified "
         "2026-11-06 — the Meta Catalog feed row for the same URL was "
         "$178, so the price has dropped since the feed was cut); "
@@ -2207,11 +2219,9 @@ EVAL_SET: list[EvalProduct] = [
         "available', PreOrder; manufacturer rebate ends 11/22/2026, "
         "comp. value $178). MPN WHG500/B confirmed (Best Buy US Model "
         "WHG500/B, SKU 6562125 + Crutchfield MFR # WHG500/B + Abt "
-        "agree), but UPC 027242927919 appears in the Sony spec sheet "
-        "via manuals.plus only — no second non-Amazon US source "
-        "surfaced, so identifiers stay empty per the Adaptive "
-        "Controller / DualSense / PULSE Elite precedent; re-check next "
-        "refresh. Correction vs the 2026-10-31 candidate price "
+        "agree). UPC verified 2026-11-07 (Datavision + Focus Camera "
+        "public product JSON agree) and upgraded to verified on user "
+        "confirmation (DECISIONS 064). Correction vs the 2026-10-31 candidate price "
         "~$249.99: that matches no current US price — the current US "
         "street price is $128 at Focus Camera, Datavision and Abt "
         "(comp. value $178); Sony direct lists the White at $159.99 "
@@ -2223,6 +2233,7 @@ EVAL_SET: list[EvalProduct] = [
         "2023) is the first INZONE headset in the set, Sony's "
         "mid-range wireless gaming headset (360 Spatial Sound, 28-hour "
         "battery, no active noise cancelling).",
+        status="verified",
     ),
     EvalProduct(
         key="logitech-pro-x2-superstrike-lunar-eclipse",

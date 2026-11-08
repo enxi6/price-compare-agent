@@ -3754,3 +3754,28 @@ written as "superseded by" with the original text kept.
   only (DECISIONS 021); no Amazon in any form (DECISIONS 018); no
   code, catalog, or snapshot changes; record only. Fallback stands:
   hand-verified rows + Shopify expansion (DECISIONS 059/061).
+## 064 (2026-11-07): WF-C510 + InZone H5 identifiers verified (Tier A, user-confirmed)
+
+- WF-C510 Black (WFC510/B): UPC 027242930339 verified — B&H Photo
+  spec page (UPC 027242930339, $58.00, In Stock) + Abt listing
+  (Model WFC510/B, UPC 027242930339, $58.00) agree, 2026-11-07.
+  MPN confirmed by Best Buy US + B&H + Sony AU. Upgraded to
+  verified on user confirmation (2026-11-07 16:12 PT).
+- INZONE H5 Black (WHG500/B): UPC 027242927919 verified —
+  Datavision + Focus Camera public product JSON agree on the UPC
+  at $128.00 (identified snapshots 2026-11-07 retry/retry3, fresh
+  from coverage round 2). MPN confirmed by Best Buy US + Crutchfield
+  + Abt. Upgraded to verified on user confirmation.
+- Result: identifiers 99 → 101 verified / 99 pending. Verified
+  rankings 73 → 74 (InZone H5 gains Datavision + Focus Camera
+  $128.00, both matched); matched offers 80 → 82. WF-C510 has no
+  identifier-bearing quote yet — its 4 offers stay suspected, so
+  its ranking is still empty; a B&H hand row is the next step
+  (proposed to the user, not yet done).
+- Test maintenance: hardcoded verified-count guard 99 → 101 in
+  test_snapshot_eval.py and test_site_snapshot.py; both keys
+  removed from the pending-set literal. 52 tests pass.
+- What did NOT change: identifier rules (no relaxation);
+  seller-direct / US-goods only (DECISIONS 021); no Amazon in any
+  form (DECISIONS 018); no models added; no spending, no
+  registrations, no purchases.
