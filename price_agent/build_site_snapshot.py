@@ -35,7 +35,7 @@ Merge rules (DECISIONS 002/021/059/066):
 
 Usage:
     python3 -m price_agent.build_site_snapshot
-    python3 -m price_agent.build_site_snapshot --out data/site_snapshot_2026-11-06.json
+    python3 -m price_agent.build_site_snapshot --out data/site_snapshot.json
 """
 
 from __future__ import annotations
@@ -53,7 +53,7 @@ from .ranking import rank_offers
 
 SNAPSHOT_GLOB = "data/eval_snapshots*.json"
 IDENTIFIED_GLOB = "data/eval_snapshots_identified_*.json"
-DEFAULT_OUT = "data/site_snapshot_2026-11-06.json"
+DEFAULT_OUT = "data/site_snapshot.json"
 
 
 def _parse_collected_at(value: str) -> datetime:

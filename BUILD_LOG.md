@@ -6759,3 +6759,12 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
+## 099 — 2026-11-08: Price history deferred (DECISIONS 069); merged snapshot renamed
+
+- Price history page deferred to early December (~30 daily
+  snapshots); the dated snapshots in git already are the complete
+  record. Build spec recorded in DECISIONS 069 (verified rows only,
+  promo annotations, gaps as breaks).
+- Merged snapshot renamed data/site_snapshot_2026-11-06.json →
+  data/site_snapshot.json (git mv); DEFAULT_OUT / DEFAULT_INPUT
+  updated in both generators. No data change; counts unchanged.

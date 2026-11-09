@@ -21,7 +21,7 @@ Honesty rules enforced by this generator (DECISIONS 001/002):
 
 Usage:
     python3 -m price_agent.build_site
-    python3 -m price_agent.build_site --input data/site_snapshot_2026-11-06.json --out site
+    python3 -m price_agent.build_site --input data/site_snapshot.json --out site
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ import shutil
 import tempfile
 from datetime import datetime, timezone
 
-DEFAULT_INPUT = "data/site_snapshot_2026-11-06.json"
+DEFAULT_INPUT = "data/site_snapshot.json"
 DEFAULT_OUT = "site"
 STALE_AFTER_HOURS = 24.0
 

@@ -3874,3 +3874,22 @@ written as "superseded by" with the original text kept.
   verified-identifier ratio (100/200) would fall. The site's value is
   verified prices, not model count. Amazon layer and price-history
   priority are still undecided and come before mass breadth.
+## 069 (2026-11-08): Price history page deferred until ~30 days of snapshots; merged snapshot renamed
+
+- Price history page deferred (user approved 2026-11-08): only 3
+  days of daily snapshots exist, which cannot answer "is this price
+  high or low" — the page's value comes from data length, not from
+  the page itself. Build it in early December (~30 daily snapshots),
+  and build it properly: verified-ranking rows only, promo periods
+  annotated, missing days shown as breaks, never as zero.
+- The record itself is already complete: one dated snapshot per day
+  (Meta + identified), append-only, never overwritten, all in git —
+  any day's quotes can be recovered exactly. The page is a
+  convenience layer, not the record. Drawing raw snapshots now would
+  mislead (promo-end jumps like K65 Plus $29.99 → $129.99 read as
+  price rises; feed errors and gaps mixed in).
+- Hygiene fix in the same change: the merged snapshot was
+  `data/site_snapshot_2026-11-06.json` — a stale date on a file
+  overwritten every rebuild. Renamed to the rolling
+  `data/site_snapshot.json` (git mv, history preserved). Dated
+  per-day snapshots are untouched; they remain the audit trail.

@@ -175,6 +175,12 @@ releases; breaking changes are called out in the release notes.
   Paperwhite (clean page but the "Amazon exclusive, skip" note
   needs a separate user decision).
 
+- Price history page deferred to early December (DECISIONS 069):
+  only 3 days of daily snapshots exist; the dated snapshots in git
+  already are the complete record. Merged snapshot renamed to the
+  rolling `data/site_snapshot.json` (was dated 2026-11-06 but
+  overwritten every rebuild).
+
 - Coverage round 4 — Abt hand rows (1 new ranking, 75 → 76):
   Logitech G Pro X Superlight 2 Black @ Abt $159.99 (UPC
   097855177797, InStock, price + UPC on the same page,
