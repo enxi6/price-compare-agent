@@ -1281,6 +1281,39 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-09: full 200-model Meta Catalog sweep (3,963
+  raw listings, 200/200 calls OK) + Shopify identified sweep (84
+  offers, 73 models; Datavision Tab S10 FE+ 404 skipped, same as
+  2026-11-07/08). Eighteen feed rows proven wrong on merchant pages
+  and excluded via KNOWN_BAD (B&H Mac mini M6 $1,199 is the 24GB/512GB
+  MHQM4LL/A and $1,699 the M6 Pro config, catalog pins MHQK4LL/A;
+  Lenovo Legion Tab $899.99 — Lenovo's own page still shows $699.99;
+  Target Pixel Buds Pro 2 $229.99 is Hazel, not Porcelain; Best Buy
+  and Crutchfield Xtreme 4 $379.95 are Camouflage/Camo; Abt SoundLink
+  Plus $269 — page still $179; Best Buy MX Master 4 $144.46 is the
+  Black 910-007560 from marketplace seller IPC-STORE; T-Mobile Tab
+  A11+ $339.99 is the 5G variant; NFM DualSense $79.99 is Chroma
+  Pearl; Focus Camera QC Earbuds $179 is Rosewood Mauve; Target/NFM
+  SoundLink Flex 2nd Gen are Sandstone/Rosewood Mauve; Best Buy
+  Switch Lite $324.10 is the Pokémon edition; MelroseMac XDR $2,899
+  sits on a merged standard/XDR page; Clemson Mac mini $799 is a
+  campus-store education price; BrandsMart Flip 7 $149.95 is Squad;
+  Bloomingdale's Tour Pro 3 $229.95 is a Live Beam 3 page; HP Cloud
+  III Black-Red $69.99 points at the Black PDP). Builder hardened:
+  nine color words (hazel, sandstone, rosewood, mauve, pearl, chroma,
+  camo, camouflage, squad), a 5G-variant check, and host blocks for
+  clemsontigertechshop.com (campus store) and mikesrenttoown.com
+  (lease pricing). Confirmed moves: Bose SoundLink Plus @ Best Buy
+  and Lenovo $179 -> $269, JBL Xtreme 4 @ JBL $309.95 -> $379.95,
+  ASUS ROG Azoth 96 HE $359.99 -> $299.99, Pixel Buds Pro 2 @ Best
+  Buy $169 -> $229, JBL Charge 6 @ JBL $149.95 -> $199.95, Dell
+  S3225QS @ Best Buy $369.99 -> $329.99, HyperX Cloud III S @ HP
+  $179.99 -> $139.99 (page shows $139.38), HyperX Cloud III @ HP
+  $99.99 -> $69.99, JBL Flip 7 @ Sweetwater $129.95 -> $149.95,
+  Sony LinkBuds Open @ Beach Camera $239.99 -> $228, HyperX
+  QuadCast 2 S @ HyperX $159.99 -> $149.99. Snapshot 549 offers /
+  162 models with quotes; site 651 offers, 98 matched, 86 verified
+  rankings (unchanged). Tests 54 pass.
 - Daily refresh 2026-11-08: full 200-model Meta Catalog sweep (3,966
   raw listings, 200/200 calls OK) + Shopify identified sweep (84
   offers, 73 models; Datavision Tab S10 FE+ 404 skipped, same as

@@ -6768,3 +6768,92 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Merged snapshot renamed data/site_snapshot_2026-11-06.json →
   data/site_snapshot.json (git mv); DEFAULT_OUT / DEFAULT_INPUT
   updated in both generators. No data change; counts unchanged.
+## 100 — 2026-11-09: Daily refresh (Meta sweep + identified sweep + merchant-page verification)
+
+- Full 200-model Meta Catalog sweep, 200/200 calls OK (3,963 raw
+  listings; sweep driver saved in goal hidden_files). Snapshot
+  `data/eval_snapshots_2026-11-09.json`: 549 offers, 162/200 models
+  with quotes (prev 567/163). Eval: 200 models, 100 verified
+  identifiers, 549 total, 0 identifier-matched (all suspected, by
+  design). 54 tests pass.
+- Identified stream: full Shopify sweep, 84 offers across 73 models,
+  1 skipped (Datavision Tab S10 FE+ 404 — handle resolves on www,
+  not the bare domain; same as 2026-11-07/08, logged not worked
+  around). Site rebuilt (203 pages): 651 offers, 98 matched, 86
+  verified rankings (unchanged). New matched rows: Mac mini M6 @
+  Expercom $854 (UPC 195951021089), Studio Display 2026 standard @
+  Expercom $1,499, WH-1000XM6 @ Audio46 $379.99.
+- Confirmed moves (merchant-page verified): Bose SoundLink Plus @
+  Best Buy $179 -> $269 (In Stock, sold by Best Buy) and @ Lenovo
+  $179 -> $269 (In Stock); JBL Xtreme 4 @ JBL $309.95 -> $379.95
+  (In Stock, JBLXTREME4BLKAM); ASUS ROG Azoth 96 HE $359.99 ->
+  $299.99 (In Stock, ROG page); Pixel Buds Pro 2 @ Best Buy $169 ->
+  $229 (In Stock, Porcelain GA05760-US, sold by Best Buy); JBL
+  Charge 6 @ JBL $149.95 -> $199.95 (In Stock); Dell S3225QS @ Best
+  Buy $369.99 -> $329.99 (In Stock, Save $50, comp $379.99); HyperX
+  Cloud III S @ HP $179.99 -> $139.99 (page shows $139.38, In
+  Stock); HyperX Cloud III @ HP $99.99 -> $69.99 (In Stock, Black
+  Friday Top deal); JBL Flip 7 @ Sweetwater $129.95 -> $149.95
+  (In Stock, Black); Sony LinkBuds Open @ Beach Camera $239.99 ->
+  $228 (In Stock, Black); HyperX QuadCast 2 S @ HyperX $159.99 ->
+  $149.99 (was $199.99, Black Available). All twelve are promo ends
+  except the ASUS/HP/Beach Camera/HyperX cuts. Trivial: Bose
+  SoundLink Plus @ Macy's $269.00 -> $272.99 (+$3.99, no page check);
+  Sony MDR-MV1 @ Macy's $419.99 -> $418.00 (-$1.99, no page check).
+  JBL pages were read from same-day crawls (Charge 6 05:28 PT,
+  Xtreme 4 07:28 PT); the live-browser task for them stayed open
+  with no result by commit time — prices confirmed from the crawls,
+  task left running, not re-dispatched.
+- Feed rows proven wrong and excluded (KNOWN_BAD, 18 rows; builder
+  hardened): B&H Mac mini M6 $1,199 is the MHQM4LL/A 24GB/512GB
+  (UPC 195951021867) and $1,699 the M6 Pro config — catalog pins
+  MHQK4LL/A 16GB/256GB (the correct B&H $899 row also left the
+  feed; ranking now carried by Expercom $854 identified); Lenovo
+  Legion Tab $899.99 — Lenovo's own page still $699.99; Target
+  Pixel Buds Pro 2 $229.99 is the Hazel page; Best Buy Xtreme 4
+  $379.95 is Camouflage (JBLXTREME4CAMOAM) and Crutchfield $379.95
+  is Camo; Abt SoundLink Plus $269 — page still $179 (rebate ended
+  11/08, price unchanged); Best Buy MX Master 4 $144.46 is the Black
+  910-007560 sold by marketplace seller IPC-STORE, not the pinned
+  Graphite 910-007558 (reinforces the 2026-11-07 hunt closure:
+  Target $119.99 is the only verified graphite row); T-Mobile Tab
+  A11+ $339.99 is the 5G SM-X238; NFM DualSense $79.99 is Chroma
+  Pearl; Focus Camera QC Earbuds $179 is Rosewood Mauve; Target
+  SoundLink Flex 2nd Gen $159.99 is Sandstone and NFM $159 is
+  Rosewood Mauve; Best Buy Switch Lite $324.10 is the Pokémon
+  special edition; MelroseMac XDR $2,899 sits on a merged
+  standard/XDR page whose variant is unprovable (XDR tilt-height
+  is $3,299); Clemson Mac mini $799 is a campus-store education
+  price; BrandsMart Flip 7 $149.95 is the Squad colorway;
+  Bloomingdale's Tour Pro 3 $229.95 is a Live Beam 3 page whose
+  description wrongly carries Tour Pro 3 copy (description-trust
+  gap noted, no code change); HP Cloud III Black-Red $69.99 points
+  at the Black PDP (same URL as the Black row, feed title says
+  Black). Builder gains nine color words (hazel, sandstone,
+  rosewood, mauve, pearl, chroma, camo, camouflage, squad), a 5G
+  connectivity check, and host blocks for clemsontigertechshop.com
+  (campus store) and mikesrenttoown.com (lease pricing — the $65
+  Buds4 Pro installment row is gone with it).
+- New quotes kept (suspected, not ranked): Nintendo Switch 2 @
+  Nintendo $499.99 (page-verified base system, UPC 00045496885816,
+  In Stock — the console's list price is now $499.99) and @ BJ's
+  $499.99; PS5 Pro @ PlayStation $899 list row (feed carries no
+  stock; patrol says sold out — see below); PS5 1TB only Macy's
+  $769.99 (above $649.99 MSRP) and PS5 Digital only Drtechpr
+  $699.99 (unknown merchant, above $599.99 MSRP) — both left in
+  suspected, flagged not verified; Mac mini M6 Meta row now only
+  ar-lb.com $1,099 (unknown merchant, exact pinned config) — ranking
+  covered by Expercom identified.
+- Rotation: pending items — M6 Pro UPC closed (user-confirmed);
+  MX Master 4 hunt closed (Target $119.99 still present); DualSense
+  White UPC — no new evidence, not re-searched. Sony patrol:
+  WH-1000XM6 Black @ Sony $379.99 (Nov 3 check; page shows an
+  availability-alert button — possible stock note, not confirmed);
+  PS5 Pro $899.99 sold out at PlayStation Direct and all five major
+  US retailers (Nov 3 stock check; IGN corroborates); PS5 disc
+  $649.99 in stock at most retailers, Digital $599.99. List-only
+  candidates for a future batch (no catalog change): Sony WH-CH520,
+  Sony WF-C700N.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
+  no DECISIONS.md changes, no models added, no Amazon touch, no
+  spending, no registrations, no purchases.
