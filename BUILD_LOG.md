@@ -6857,3 +6857,33 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
+
+## 101 — 2026-11-09: B&H/Adorama re-probe of the 10 verified-unranked models; Lift hand row added
+
+- User-approved 2026-11-09 (second of the two parallel items):
+  re-probe the 10 verified-unranked models with no Best Buy row on
+  B&H Photo first, Adorama second (B&H only for Bose QC, per the
+  earlier Adorama check). Live-browser, read-only, no blocks.
+- ADD (1): Logitech Lift Graphite @ B&H Photo $74.99, In Stock with
+  Add to Cart, UPC 097855170927 and MPN 910-006466 on the product
+  page, first-party. Hand row added to
+  `data/eval_snapshots_identified_hand_2026-11-07.json` (models
+  28→29); site rebuilt: offers 651→652, matched 98→99, verified
+  rankings 86→87; verified-unranked 14→13. 54 tests pass.
+- NO (9): PS5 Pro, PS5 1TB disc, Keychron K8 red, Alienware Pro
+  mouse, HP 920 — not listed at either merchant (B&H: no exact
+  match; Adorama UPC search: no results). Watch SE 3: B&H does not
+  carry Apple Watches; Adorama's GPS 40mm Midnight is MFR
+  MJKY4LW/A (Navy Blue Sport Band), $299, Ships from Manufacturer,
+  no In Stock wording, catalog UPC not on the page. Anker Prime
+  100W: B&H $69.99 In Stock, but the page (MFR A2688J41-1) shows
+  UPC 194644289638, not the catalog 194644040635 — catalog UPC
+  flag open, needs a second source; Adorama UPC search no results.
+  Bose QC: B&H shows 884367-0100 discontinued; the in-stock $359
+  QC on B&H is the 2nd Gen (MFR 895491-0100), a different model.
+  Boom 2: B&H UPC matches, $99.99 (was $129.99, Holiday Savings
+  $30), but Temporarily Out of Stock — no row; watch for restock.
+- No catalog identifier changes, no DECISIONS.md changes, no
+  models added, no Amazon touch, no spending. First-batch-50
+  candidate list prep (the other parallel item) still running
+  separately; not part of this entry.

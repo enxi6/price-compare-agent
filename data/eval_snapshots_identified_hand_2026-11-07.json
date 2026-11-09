@@ -478,6 +478,22 @@
           "in_stock": true
         }
       ]
+    },
+    "logitech-lift-graphite": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 74.99,
+          "title": "Logitech Lift Vertical Ergonomic Wireless Mouse (Graphite)",
+          "url": "https://www.bhphotovideo.com/c/product/1699704-REG/logitech_910_006466_lift_vertical_ergonomic_wireless.html",
+          "collected_at": "2026-11-09T23:20:00Z",
+          "identifier": "097855170927",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live-browser verified 2026-11-09; price + UPC + MPN on the product page; In Stock with Add to Cart; B&H first-party; added on user approval 2026-11-09)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

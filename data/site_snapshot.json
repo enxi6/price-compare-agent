@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-11-09T19:19:38.723267+00:00",
+    "generated_at": "2026-11-09T23:25:14.090313+00:00",
     "snapshot_date": "2026-11-09",
     "source_files": 49,
     "identified_source_files": 7,
     "models": 200,
     "verified_identifiers": 100,
     "pending_identifiers": 100,
-    "total_offers": 651,
-    "matched_offers": 98,
+    "total_offers": 652,
+    "matched_offers": 99,
     "suspected_offers": 553,
-    "verified_ranking_models": 86,
+    "verified_ranking_models": 87,
     "models_with_offers": 175,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -2608,6 +2608,19 @@
       },
       "offers": [
         {
+          "merchant": "B&H Photo",
+          "price": 74.99,
+          "title": "Logitech Lift Vertical Ergonomic Wireless Mouse (Graphite)",
+          "url": "https://www.bhphotovideo.com/c/product/1699704-REG/logitech_910_006466_lift_vertical_ergonomic_wireless.html",
+          "collected_at": "2026-11-09T23:20:00Z",
+          "identifier": "097855170927",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live-browser verified 2026-11-09; price + UPC + MPN on the product page; In Stock with Add to Cart; B&H first-party; added on user approval 2026-11-09)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Dell",
           "price": 69.99,
           "title": "Logitech Lift Ergo Mouse - graphite",
@@ -2675,8 +2688,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-09.json",
       "source_collected_at": "2026-11-09T19:18:20.706707+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "meta-quest-3-512gb",

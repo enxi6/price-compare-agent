@@ -1165,6 +1165,15 @@ releases; breaking changes are called out in the release notes.
   corrected (list $179.00); MX Vertical $99.99 is the sale price,
   list $119.99.
 
+- Logitech Lift Graphite hand row (B&H Photo $74.99, In Stock, UPC
+  097855170927, live-browser verified 2026-11-09, user-approved):
+  matched offers 98→99, verified rankings 86→87. B&H/Adorama
+  re-probe of the other 9 verified-unranked models found no addable
+  row (5 not listed at either merchant; Watch SE 3 wrong MPN at
+  Adorama; Anker Prime 100W page UPC 194644289638 conflicts with
+  catalog 194644040635 — flag open; Bose QC 884367-0100
+  discontinued at B&H; Boom 2 out of stock at B&H).
+
 ### Changed
 
 - Daily price refresh 2026-11-07: full 200-model Meta Catalog sweep
