@@ -3,10 +3,10 @@
 Reads every ``data/eval_snapshots*.json`` file (Meta Catalog stream,
 no identifiers) and every ``data/eval_snapshots_identified_*.json``
 file (identifier-bearing quotes, e.g. Shopify public product JSON)
-and, for each of the 200 catalog models, merges the two streams into
+and, for each of the 250 catalog models, merges the two streams into
 one offer list. Snapshot keys that are not in the current catalog
 (retired entries, e.g. ``keychron-k8-pro``) are ignored, never added:
-the output is exactly the 200 catalog models.
+the output is exactly the 250 catalog models.
 
 Merge rules (DECISIONS 002/021/059/066):
 - Meta stream: latest ``meta.collected_at`` per model wins (each Meta

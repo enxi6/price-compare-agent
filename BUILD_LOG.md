@@ -6887,3 +6887,28 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   models added, no Amazon touch, no spending. First-batch-50
   candidate list prep (the other parallel item) still running
   separately; not part of this entry.
+
+## 102 — 2026-11-09: Expansion batch 32 — first 50-model batch added (200 → 250)
+
+- User approved all 50 at 2026-11-09 17:11 PT ("50 款全批"), per
+  DECISIONS 068/070. Added as catalog section "Expansion batch 32":
+  200 → 250 models, 100 → 122 verified identifiers, 100 → 128
+  pending. Source: data/candidates_batch1_250.md (list-only prep;
+  reserve Corsair HS80 v2 MAX held out; 7 flagged items kept in
+  for add-time row verification).
+- Identifier honesty: 22 UPC verified with sources (19 with MPN,
+  3 MPN-pending: ULT FIELD 1, Go 4, Clip 5 — UPC-only); 28 pending
+  with identifiers empty and leads/conflicts recorded in
+  identifier_sources/notes (incl. Tune 770NC and Prime 140W
+  conflicting leads, Cloud Alpha's two circulating UPCs). No
+  identifier invented; all 50 cross-checked against the candidate
+  file (UPC/MPN/status) after insertion.
+- Counts: site rebuilt (253 pages: 250 models + home/method/
+  coverage); total offers unchanged at 652 (new models have no
+  quotes yet), matched 99, verified rankings 87 — unchanged, as
+  expected. New category "handheld-consoles" (Legion Go S). Site
+  copy updated 200 → 250. 54 tests pass.
+- Tests updated: test_snapshot_eval.py (250 models, 122 verified,
+  pending set +28 keys) and test_site_snapshot.py (250 models,
+  122 verified / 128 pending). Working tree left dirty for review;
+  NOT committed or pushed.

@@ -3893,3 +3893,25 @@ written as "superseded by" with the original text kept.
   overwritten every rebuild. Renamed to the rolling
   `data/site_snapshot.json` (git mv, history preserved). Dated
   per-day snapshots are untouched; they remain the audit trail.
+
+## 070 (2026-11-09): Expansion batch 1 to 250 — first 50-model batch, user-approved
+
+- First batch of 50 added (200 → 250 models, user approved
+  2026-11-09, per DECISIONS 068's batches-of-50 path): 22 UPC
+  verified, 28 UPC pending. Pending identifiers stay empty, with
+  leads and conflicts recorded in identifier_sources/notes — no
+  rule change, no identifier invented. Source:
+  data/candidates_batch1_250.md (list-only prep; nothing added
+  until the user's approval).
+- The 7 flagged items (MX Brio patchy US retail, Seiren V3 Chroma
+  Best Buy clearance, Cloud Alpha HP marketplace seller, Pixel
+  Watch 4 45mm stock conflict, V1 Max Red OOS, K3 Max stock
+  unclear, INZONE H9 previous generation) stay IN — the flags are
+  for add-time row verification, not exclusion. Reserve (Corsair
+  HS80 v2 MAX) stays OUT, first replacement if any of the 50 fails
+  re-check at add time.
+- New category value "handheld-consoles" (Legion Go S); the site
+  builds its category list dynamically, so no allowlist change was
+  needed. Site copy updated 200 → 250 (build_site.py,
+  build_site_snapshot.py). Tests updated to 250 models / 122
+  verified / 128 pending. No Amazon touch, no spending.

@@ -40,9 +40,9 @@ def test_snapshot_staleness(tmp_path):
 
 
 def test_eval_set_shape():
-    assert len(EVAL_SET) == 200
+    assert len(EVAL_SET) == 250
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 100
+    assert len(verified) == 122
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
@@ -146,12 +146,40 @@ def test_eval_set_shape():
         "razer-basilisk-v3-pro-35k-black",
         "garmin-forerunner-265-black",
         "corsair-k70-core-rgb-black",
-        "asus-rog-keris-ii-ace-black"}
+        "asus-rog-keris-ii-ace-black",
+        "amazon-kindle-colorsoft-16gb-black",
+        "anker-liberty-5-black",
+        "anker-prime-charger-140w",
+        "bose-smart-soundbar-600-black",
+        "bose-soundlink-home-cool-gray",
+        "bose-soundlink-micro-2nd-gen-black",
+        "corsair-m75-air-wireless-black",
+        "dell-s3425dw-ash-white",
+        "google-pixel-watch-4-45mm-matte-black",
+        "hp-omen-32x-black",
+        "hyperx-alloy-origins-65-aqua",
+        "hyperx-cloud-alpha-black-red",
+        "hyperx-pulsefire-haste-2-black",
+        "hyperx-solocast-2-black",
+        "jbl-live-680nc-black",
+        "jbl-tune-770nc-black",
+        "keychron-k3-max",
+        "keychron-q3-max",
+        "keychron-v1-max",
+        "logitech-g502-x-black",
+        "logitech-k380-dark-grey",
+        "logitech-mx-brio-graphite",
+        "logitech-signature-m650-graphite",
+        "razer-blackwidow-v4-x-green",
+        "razer-cobra-pro-black",
+        "razer-huntsman-v3-pro-black",
+        "razer-seiren-v3-chroma-black",
+        "sony-inzone-h9-white"}
 
 
 def test_evaluate_counts_fixture_snapshot(tmp_path):
     result = evaluate(_snapshot(tmp_path))
-    assert result["models"] == 200
+    assert result["models"] == 250
     assert result["total_offers"] == 1
     # No UPC in snapshots -> everything lands in "suspected", by design.
     assert result["matched"] == 0 and result["suspected"] == 1

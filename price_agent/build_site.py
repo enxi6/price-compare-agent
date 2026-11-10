@@ -2,7 +2,7 @@
 
 Renders ``data/site_snapshot_*.json`` into a multi-page static site
 (``site/`` by default): a home page with client-side search, one
-compare page per model (200), a method-and-principles page, and a
+compare page per model (250), a method-and-principles page, and a
 coverage-and-gaps page. Stdlib only; re-runnable after every daily
 refresh -- a failed render never publishes a half-finished page
 (output goes to a temporary directory and is moved into place only
@@ -316,7 +316,7 @@ def home_page(data: dict, now: datetime, snapshot_date: str,
             '<a href="method.html">Method &amp; principles</a>.</p>'
         )
     body = f"""<h1>Buyer-side price comparison</h1>
-<p>Compare prices for 200 standardized electronics models sold in the
+<p>Compare prices for 250 standardized electronics models sold in the
 US. Ranking is by delivered total price only. We earn no commission
 from any quote shown, and commissions never affect ranking.</p>
 <p><span class="stat">{meta['models']}</span> models &middot;
@@ -328,7 +328,7 @@ latest snapshot (<strong>{esc(snapshot_date)}</strong>) &middot;
 (<span class="stat">{matched_count}</span> matched offers)</p>
 <div class="notice">{notice}</div>
 <input type="search" id="q" placeholder="Search by product name, UPC or MPN&hellip;" autocomplete="off">
-<div id="results"><p class="muted">Type to search all 200 models.</p></div>
+<div id="results"><p class="muted">Type to search all 250 models.</p></div>
 <h2>Browse by category</h2><ul>{cat_list}</ul>
 <script type="application/json" id="search-index">
 {json.dumps(index, ensure_ascii=False)}
@@ -339,14 +339,14 @@ const box = document.getElementById('q');
 const out = document.getElementById('results');
 box.addEventListener('input', () => {{
   const q = box.value.trim().toLowerCase();
-  if (!q) {{ out.innerHTML = '<p class="muted">Type to search all 200 models.</p>'; return; }}
+  if (!q) {{ out.innerHTML = '<p class="muted">Type to search all 250 models.</p>'; return; }}
   const hits = INDEX.filter(m => (m.brand + ' ' + m.model + ' ' + m.variant + ' ' + m.category + ' ' + m.identifiers).toLowerCase().includes(q));
   if (!hits.length) {{ out.innerHTML = '<p><strong>Not indexed.</strong> We do not track this model yet. We never invent results.</p>'; return; }}
   out.innerHTML = '<ul>' + hits.map(m => '<li><a href="products/' + m.key + '.html">' + m.brand + ' ' + m.model + ' &mdash; ' + m.variant + '</a> <span class="muted">' + m.category + '</span></li>').join('') + '</ul>';
 }});
 </script>"""
     return render_page(
-        "Price comparison — 200 electronics models (US)",
+        "Price comparison — 250 electronics models (US)",
         body, "", snapshot_date, generated_at, source_file,
     )
 

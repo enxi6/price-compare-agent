@@ -1174,6 +1174,14 @@ releases; breaking changes are called out in the release notes.
   catalog 194644040635 — flag open; Bose QC 884367-0100
   discontinued at B&H; Boom 2 out of stock at B&H).
 
+- First 50-model expansion batch added (200 → 250 models, DECISIONS
+  070, user-approved 2026-11-09): 22 UPC verified / 28 UPC pending
+  (identifiers stay empty for pending, leads recorded); reserve
+  Corsair HS80 v2 MAX held out; 7 flagged items kept in for
+  add-time row verification. New category "handheld-consoles".
+  Site copy and tests updated to 250 models / 122 verified / 128
+  pending.
+
 ### Changed
 
 - Daily price refresh 2026-11-07: full 200-model Meta Catalog sweep
