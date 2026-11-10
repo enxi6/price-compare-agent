@@ -135,8 +135,17 @@ def _union_identified(files: list[dict]) -> dict[str, tuple[datetime, str, list[
 
 
 def _exact_dedupe(rows: list[dict]) -> list[dict]:
-    seen = set()
-    out = []
+    """Dedupe on (merchant, price, title, url).
+
+    When the same row was collected more than once, keep the newest
+    read: the first-seen occurrence pins the oldest collected_at,
+    which made a reverted price lose to a stale one (QuadCast 2 S
+    $149.99 -> $159.99 -> $149.99 kept the $159.99 row, because the
+    $149.99 duplicate kept was the 11-07 read, older than the 11-08
+    $159.99 read). Order is first-seen; ties keep the first row.
+    """
+    best: dict[tuple, dict] = {}
+    order: list[tuple] = []
     for row in rows:
         key = (
             row["merchant"],
@@ -144,42 +153,53 @@ def _exact_dedupe(rows: list[dict]) -> list[dict]:
             row.get("title", ""),
             row.get("url", ""),
         )
-        if key in seen:
-            continue
-        seen.add(key)
-        out.append(row)
-    return out
+        current = best.get(key)
+        if current is None:
+            best[key] = row
+            order.append(key)
+        elif (row.get("collected_at") or "") > (
+            current.get("collected_at") or ""
+        ):
+            best[key] = row
+    return [best[key] for key in order]
 
 
 def _identified_dedupe(rows: list[dict]) -> list[dict]:
-    """Collapse identified rows on (merchant, normalized identifier, price).
+    """Collapse identified rows on (merchant, normalized identifier).
 
-    Keeps the lowest source_tier, then earliest collected_at, then
-    shortest url — the same merchant selling the same identified
-    product at the same price is one offer, however often collected.
+    The same merchant selling the same identified product is one
+    offer: the newest read wins, so a price change supersedes the
+    stale price instead of listing both (Beach Camera QC Ultra 2
+    $399 -> $449, 2026-11-10: the old row lingered as a second
+    matched offer and the ranking showed a price that no longer
+    exists). Ties break on lowest source_tier, then shortest url.
+    Per-merchant granularity preserves DECISIONS 066: a hand row
+    for a merchant the collector does not cover still survives,
+    because only rows for the same merchant collapse.
     """
     best: dict[tuple, dict] = {}
     for row in rows:
         key = (
             row["merchant"].strip().casefold(),
             normalize_identifier(row["identifier"]),
-            round(float(row["price"]), 2),
         )
         current = best.get(key)
         if current is None:
             best[key] = row
             continue
+        # Higher is better: latest collected_at, then lowest
+        # source_tier, then shortest url.
         candidate_rank = (
-            row.get("source_tier") or 99,
             row.get("collected_at") or "",
-            len(row.get("url") or ""),
+            -(row.get("source_tier") or 99),
+            -len(row.get("url") or ""),
         )
         current_rank = (
-            current.get("source_tier") or 99,
             current.get("collected_at") or "",
-            len(current.get("url") or ""),
+            -(current.get("source_tier") or 99),
+            -len(current.get("url") or ""),
         )
-        if candidate_rank < current_rank:
+        if candidate_rank > current_rank:
             best[key] = row
     return list(best.values())
 

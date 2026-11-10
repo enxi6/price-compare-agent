@@ -6977,3 +6977,85 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   rows). Spec-page route now exhausted across CDW, Newegg, Best
   Buy (all checked); Adorama alone remains unprobed due to the
   block. No catalog/snapshot change.
+
+## 106 — 2026-11-10: Daily refresh (first full 250-model Meta sweep + identified sweep + merchant-page verification + merge fix)
+
+- Full 250-model Meta Catalog sweep, 250/250 calls OK (4,951 raw
+  listings; sweep driver saved in goal hidden_files). Snapshot
+  `data/eval_snapshots_2026-11-10.json`: 679 offers, 205/250 models
+  with quotes (prev 549/162 on 200 models). Eval: 250 models, 122
+  verified identifiers, 679 total, 0 identifier-matched (all
+  suspected, by design). 56 tests pass (2 new).
+- Identified stream: full Shopify sweep, 84 offers across 73 models,
+  1 skipped (Datavision Tab S10 FE+ 404 — handle resolves on www,
+  not the bare domain; same as 2026-11-07/08/09, logged not worked
+  around). One move: Bose QC Ultra 2 @ Beach Camera $399 -> $449
+  (page-verified $449.00, InStock, pinned variant 64020822851955).
+- Confirmed moves (live-browser verified, read-only, no blocks):
+  JBL Flip 7 @ JBL $129.95 -> $149.95 (Black, In Stock, JBL direct
+  — promo end; Datavision identified row agrees $149.95); Logitech
+  MX Vertical @ Sweetwater $119.99 -> $99.99 (In Stock, only 1
+  left); HyperX Cloud III S @ HyperX $139.99 -> $129.99 (Black-Red,
+  In Stock; page MSRP is $179.99, not the feed's $139.99 was-price;
+  identified stream agrees $129.99, UPC 198415435569); Keychron K2
+  HE @ Byok $139.99 -> $129.99 (Black, Standard version, In Stock;
+  other variants sold out). Trivial: MX Vertical @ Walmart $94.00
+  -> $90.12 (-$3.88, no page check); Sony MDR-MV1 @ Macy's $418.00
+  -> $419.99 (+$1.99, no page check).
+- Feed rows proven wrong and excluded (KNOWN_BAD, 25 tuples; builder
+  gains a beirutcart.com host block for Lebanon): accessories —
+  Keychron Folio Case $29.99, V1 MAX PE Foam $12.00, Legion Go S
+  Carry Case $24.99, silicone cover $8.04; wrong variant — Corsair
+  M75 AIR (EU) $14.99 (corsair.com/ww), Alienware AW3425DWM $349.99,
+  Forerunner 965 Whitestone/Powder Grey $599.99, Studio Display XDR
+  nano glass $3,599; non-Sony access hardware — Covisec ST902-MEK
+  $94.99, Proteccontrols EMX TRES-400 $369.50, Uslocksupply
+  Seco-Larm $177/$303, Homecontrols Seco-Larm $168.95; AT&T Galaxy
+  Watch8 $11.12/$11.95 monthly installments; MelroseMac standard
+  display $2,899 (merged-page variants table: $1,599 standard vs
+  $2,899/$3,299 XDR, page copy describes the XDR mini-LED panel);
+  Bose SoundLink Max $279 is Citrus (CSYEL, page image
+  SLMPSLE-Citrus), not Black; JBL Flip 7 $134.96 is White WHTAM on
+  jbl.pr/es. Marketplace rows confirmed on their pages and excluded
+  per DECISIONS 021 even when the price itself was confirmed:
+  Macy's PS5 $869.99 is Velztorm; Macy's XM5 $326.00 (was $398.00,
+  same listing) is Adorama; Best Buy Watch9 $446.54 is SpaceBound;
+  Macy's SoundLink Plus page shows $269.00 from Offer Express, not
+  the feed's $179.00; Bose QC Earbuds $119.00 is the Chilled Lilac
+  page ($179.00), not Black. Consequences: PS5 1TB now has zero
+  quotes (its only row was marketplace); Watch9 40mm keeps only
+  Samsung direct $379.99; QC Earbuds keeps Bose $179 Black.
+- Merge fix (price_agent/build_site_snapshot.py): `_identified_dedupe`
+  collapsed on (merchant, identifier, price), so an identified price
+  change left the stale price as a second matched row — the ranking
+  showed prices that no longer exist. Now collapses on (merchant,
+  identifier) keeping the newest read. Stale rows removed by the fix
+  (audited across all identified files): QC Ultra 2 Beach Camera
+  $399, Flip 7 Datavision $129.95, Cloud III S HyperX $179.99 and
+  $139.99, QuadCast 2 S HyperX $159.99, Alloy Rise 75 HyperX $84.99.
+  Companion fix: `_exact_dedupe` kept the first-seen duplicate,
+  pinning the oldest collected_at — QuadCast $149.99 -> $159.99 ->
+  $149.99 kept the $159.99 row; it now keeps the newest read.
+  Per-merchant granularity preserves DECISIONS 066 (hand rows for
+  merchants the collector does not cover still survive). Two new
+  regression tests; 56 pass. Site rebuilt (253 pages): 776 offers,
+  96 matched, 87 verified rankings (unchanged).
+- Rotation: pending items — M6 Pro UPC closed (user-confirmed);
+  MX Master 4 hunt closed; Target graphite row re-verified today
+  ($119.99, InStock, A-95007381; the separate Target Business
+  variant 910007-616 at $122.24, Out of Stock, is a different
+  listing and was not confused with it); DualSense White UPC — no
+  new evidence, not re-searched. Nintendo patrol: Switch 2 system
+  @ Nintendo $499.99, InStock, UPC 00045496885816 (fresh crawl
+  2026-11-10 18:54 UTC) — unchanged; Choose Your Game bundle
+  OutOfStock. List-only candidates carried: Sony WH-CH520, WF-C700N.
+- Measurement note: the day's first snapshot build (before the
+  KNOWN_BAD rounds) measured known-bad 17 / 701 offers; rebuilding
+  from the pre-edit builder gives 14 / 703, and the final snapshot
+  is verified consistent with the current builder by a replica
+  experiment (exact 14-row difference, all 25 KNOWN_BAD tuples
+  accounted for). The 2-offer / 3-tally gap on the superseded first
+  build is unexplained and is recorded here, not smoothed over.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
+  no DECISIONS.md changes, no models added, no Amazon touch, no
+  spending, no registrations, no purchases.

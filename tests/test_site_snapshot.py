@@ -211,6 +211,83 @@ def test_identified_dedupe_same_merchant_identifier_price(tmp_path):
     assert result["meta"]["matched_offers"] == 1
 
 
+def test_identified_price_change_supersedes_stale_row(tmp_path):
+    # Regression: the same merchant + identifier at a new price in a
+    # newer file must supersede the stale price, not list both as
+    # matched offers (Beach Camera QC Ultra 2 $399 -> $449,
+    # 2026-11-10 — the ranking showed a price that no longer exists).
+    older = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Dell", 379.99, "027242923232",
+                      url="https://example.com/dell-id",
+                      collected_at="2026-11-07T10:00:00Z"),
+        ]},
+    }, name="identified-older.json",
+        collected_at="2026-11-07T10:00:00Z")
+    newer = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Dell", 399.99, "027242923232",
+                      url="https://example.com/dell-id",
+                      collected_at="2026-11-08T10:00:00Z"),
+        ]},
+    }, name="identified-newer.json",
+        collected_at="2026-11-08T10:00:00Z")
+    result = build_site_snapshot(_files(tmp_path), older + newer)
+    xm5 = _xm5(result)
+    dell_rows = [o for o in xm5["offers"] if o["merchant"] == "Dell"]
+    # The stale identified $379.99 row is gone. The Meta $379.99 row
+    # survives as suspected: supersede only replaces a Meta row at
+    # the SAME price as the matched row, and the matched row is now
+    # $399.99.
+    assert len(dell_rows) == 2
+    identified_dell = [o for o in dell_rows
+                       if o["source"] != "meta-catalog"]
+    assert len(identified_dell) == 1
+    assert identified_dell[0]["price"] == 399.99
+    assert identified_dell[0]["suspected"] is False
+    assert result["meta"]["matched_offers"] == 1
+
+
+def test_identified_price_reverts_to_earlier_value(tmp_path):
+    # QuadCast 2 S pattern: $149.99 (old) -> $159.99 (mid) -> $149.99
+    # (new). The newest read wins even though its price equals the
+    # oldest read's: the duplicate $149.99 rows must keep the newest
+    # collected_at, or the stale $159.99 row wins the dedupe.
+    old = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Dell", 149.99, "027242923232",
+                      url="https://example.com/dell-id",
+                      collected_at="2026-11-07T10:00:00Z"),
+        ]},
+    }, name="identified-old.json",
+        collected_at="2026-11-07T10:00:00Z")
+    mid = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Dell", 159.99, "027242923232",
+                      url="https://example.com/dell-id",
+                      collected_at="2026-11-08T10:00:00Z"),
+        ]},
+    }, name="identified-mid.json",
+        collected_at="2026-11-08T10:00:00Z")
+    new = _identified(tmp_path, {
+        "sony-wh1000xm5-black": {"offers": [
+            _id_offer("Dell", 149.99, "027242923232",
+                      url="https://example.com/dell-id",
+                      collected_at="2026-11-09T10:00:00Z"),
+        ]},
+    }, name="identified-new.json",
+        collected_at="2026-11-09T10:00:00Z")
+    result = build_site_snapshot(_files(tmp_path), old + mid + new)
+    xm5 = _xm5(result)
+    identified_dell = [o for o in xm5["offers"]
+                       if o["merchant"] == "Dell"
+                       and o["source"] != "meta-catalog"]
+    assert len(identified_dell) == 1
+    assert identified_dell[0]["price"] == 149.99
+    assert identified_dell[0]["suspected"] is False
+    assert result["meta"]["matched_offers"] == 1
+
+
 def test_identified_union_across_files_same_model(tmp_path):
     # Regression test for DECISIONS 066: identified files union per
     # model. A matched hand row in the OLDER file and a mismatched

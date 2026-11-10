@@ -1298,6 +1298,42 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-10: first full 250-model Meta Catalog sweep
+  (4,951 raw listings, 250/250 calls OK) + Shopify identified sweep
+  (84 offers, 73 models; Datavision Tab S10 FE+ 404 skipped, same as
+  2026-11-07/08/09). Twenty-five feed rows proven wrong and excluded
+  via KNOWN_BAD, plus a beirutcart.com host block (Lebanon):
+  accessories (Keychron Folio Case $29.99, V1 MAX PE Foam $12.00,
+  Legion Go S Carry Case $24.99, silicone cover $8.04); wrong
+  variant (Corsair M75 AIR (EU) $14.99, Alienware AW3425DWM $349.99,
+  Forerunner 965 Whitestone/Powder Grey $599.99, Studio Display XDR
+  nano glass $3,599); non-Sony access hardware (Covisec $94.99,
+  Proteccontrols $369.50, Uslocksupply $177/$303, Homecontrols
+  $168.95 — all Seco-Larm door-access gear); AT&T Galaxy Watch8
+  $11.12/$11.95 monthly installments; MelroseMac standard display
+  $2,899 is an XDR-priced variant on the merged page; Bose
+  SoundLink Max $279 is Citrus, not Black; JBL Flip 7 $134.96 is
+  White on jbl.pr/es; marketplace rows confirmed on their pages
+  and excluded per DECISIONS 021 (Macy's PS5 $869.99 is Velztorm,
+  Macy's XM5 $326.00 is Adorama, Best Buy Watch9 $446.54 is
+  SpaceBound; Macy's SoundLink Plus page shows $269.00 from Offer
+  Express, not the feed's $179.00; Bose QC Earbuds $119.00 is the
+  Chilled Lilac page at $179.00). Confirmed moves (live-browser
+  verified): JBL Flip 7 @ JBL $129.95 -> $149.95, Logitech MX
+  Vertical @ Sweetwater $119.99 -> $99.99 (only 1 left), HyperX
+  Cloud III S @ HyperX $139.99 -> $129.99, Keychron K2 HE @ Byok
+  $139.99 -> $129.99. Identified stream: one move, Bose QC Ultra 2
+  @ Beach Camera $399 -> $449 (page-verified). Merge fix:
+  identified dedupe now collapses on (merchant, identifier)
+  keeping the newest read, so stale prices no longer linger as
+  second matched rows (QC Ultra 2, Flip 7 Datavision, Cloud III S,
+  QuadCast 2 S, Alloy Rise 75); exact dedupe keeps the newest
+  read for identical rows (QuadCast $149.99 -> $159.99 -> $149.99).
+  Snapshot 679 offers / 205 models with quotes; site 776 offers,
+  96 matched, 87 verified rankings (unchanged). PS5 1TB now has
+  zero quotes — its only row was a marketplace listing. Tests 56
+  pass (2 new regression tests).
+
 - Anker Prime 100W first-row probe, Best Buy / Adorama
   (BUILD_LOG 105): Best Buy spec page matches UPC
   194644040635 and MPN A2688 at $69.99, but the offer is
