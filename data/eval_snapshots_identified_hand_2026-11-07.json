@@ -494,6 +494,22 @@
           "in_stock": true
         }
       ]
+    },
+    "sony-ps5-1tb": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 649.99,
+          "title": "PlayStation 5 Slim Console 1TB - White",
+          "url": "https://www.bestbuy.com/product/playstation-5-slim-console-1tb/JXHQ37TYLC",
+          "collected_at": "2026-11-10T20:45:00Z",
+          "identifier": "711719021452",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; price + UPC + MPN on the spec page; Add to Cart available with green Pickup/Shipping ticks — no literal 'In Stock' wording, same evidence shape as the Pixel Buds 2a Hazel row; Best Buy first-party; added on user approval 2026-11-10)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

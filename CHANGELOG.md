@@ -1182,6 +1182,12 @@ releases; breaking changes are called out in the release notes.
   Site copy and tests updated to 250 models / 122 verified / 128
   pending.
 
+- PS5 1TB disc hand row (Best Buy $649.99, UPC 711719021452 /
+  MPN 1000049888, live-browser verified 2026-11-10,
+  user-approved): matched offers 96→97, verified rankings
+  87→88. GameStop lists a different SKU (UPC 711719573364)
+  — no row, no catalog change.
+
 ### Changed
 
 - Daily price refresh 2026-11-07: full 200-model Meta Catalog sweep

@@ -7059,3 +7059,29 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
+
+## 107 — 2026-11-10: PS5 1TB disc hand row added (Best Buy $649.99)
+
+- User-approved 2026-11-10: PS5 1TB disc was at 0 quotes after
+  today's refresh (only Macy's $869.99 Velztorm marketplace row,
+  excluded per DECISIONS 021). Best Buy spec page probed
+  2026-11-10 12:38–12:48 PT (read-only): UPC 711719021452 + MPN
+  1000049888 match the catalog exactly; $649.99; Best Buy
+  first-party; Add to Cart available with green Pickup/Shipping
+  ticks (no literal 'In Stock' wording — same evidence shape as
+  the Pixel Buds 2a Hazel row, user-approved 2026-11-08).
+- Hand row added to
+  data/eval_snapshots_identified_hand_2026-11-07.json (models
+  29→30); site rebuilt: offers 776→777, matched 96→97, verified
+  rankings 87→88. 56 tests pass.
+- Corroboration / discrepancies: PlayStation Direct $649.00 and
+  GameStop new $649.99 corroborate the price. GameStop's listing
+  is a different SKU (UPC 711719573364 / VPN 1000039671) — no row,
+  no catalog MPN change. Target was bot-blocked (unverified, not
+  out of stock); Walmart not probed (Best Buy row already
+  qualified).
+- Caveats: green ticks were for the browser default Miami Beach
+  store, not Irvine; shipping tick is the more useful signal.
+  Black Friday week + 'High Demand' warning — the row may drop at
+  tomorrow's refresh if sold out. No catalog identifier changes,
+  no DECISIONS.md changes, no Amazon touch, no spending.

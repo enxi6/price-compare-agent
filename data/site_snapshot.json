@@ -1,17 +1,17 @@
 {
   "meta": {
-    "generated_at": "2026-11-10T19:41:48.046583+00:00",
+    "generated_at": "2026-11-10T21:33:02.524139+00:00",
     "snapshot_date": "2026-11-10",
     "source_files": 50,
     "identified_source_files": 8,
     "models": 250,
     "verified_identifiers": 122,
     "pending_identifiers": 128,
-    "total_offers": 776,
-    "matched_offers": 96,
+    "total_offers": 777,
+    "matched_offers": 97,
     "suspected_offers": 680,
-    "verified_ranking_models": 87,
-    "models_with_offers": 217,
+    "verified_ranking_models": 88,
+    "models_with_offers": 218,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
   "models": [
@@ -3787,11 +3787,25 @@
         "UPC": "711719021452",
         "MPN": "1000049888"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 649.99,
+          "title": "PlayStation 5 Slim Console 1TB - White",
+          "url": "https://www.bestbuy.com/product/playstation-5-slim-console-1tb/JXHQ37TYLC",
+          "collected_at": "2026-11-10T20:45:00Z",
+          "identifier": "711719021452",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; price + UPC + MPN on the spec page; Add to Cart available with green Pickup/Shipping ticks — no literal 'In Stock' wording, same evidence shape as the Pixel Buds 2a Hazel row; Best Buy first-party; added on user approval 2026-11-10)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": "eval_snapshots_2026-11-10.json",
       "source_collected_at": "2026-11-10T19:38:35.256212+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "nintendo-switch-pro-controller",
