@@ -1298,6 +1298,12 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Anker Prime 100W first-row probe (BUILD_LOG 104): CDW and
+  Newegg spec pages both fail — CDW lists variant A2688141
+  with no UPC shown; Newegg shows MPN A2688 but no UPC and
+  is an Anker Official Store marketplace listing. Model
+  stays unranked; Best Buy / Adorama spec pages unprobed.
+
 - Anker Prime 100W UPC flag closed (BUILD_LOG 103): catalog UPC
   194644040635 vindicated by a fourth source (Amazon AnkerDirect,
   ASIN B0CZ6LXL8R); B&H A2688J41-1 (UPC 194644289638) is a

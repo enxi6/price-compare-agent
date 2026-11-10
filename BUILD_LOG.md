@@ -6935,3 +6935,22 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   claimed.
 - No catalog/snapshot change. Model stays unranked (0 matched
   rows).
+
+## 104 — 2026-11-09: Anker Prime 100W first-row probe — CDW and Newegg spec pages, both NO
+
+- User-approved follow-up to BUILD_LOG 103: probe CDW then Newegg
+  spec pages for UPC 194644040635 (plain A2688) to give the model
+  its first ranked row. Live-browser, read-only.
+- CDW (CDW #8208814): $69.99, In Stock, 312 units, Add to Cart —
+  but MPN shown is A2688141 (another A2688 variant), and no UPC
+  anywhere on the page (full Tech Specs expanded; site search for
+  the UPC: zero results). Fails: no UPC + wrong variant.
+- Newegg (Item 9SIACCUKU68582): MPN A2688 matches, $69.99, Add to
+  Cart — but no UPC in the Specifications table, no explicit In
+  Stock wording, and the listing is sold/shipped by Anker Official
+  Store (marketplace), not Newegg first-party. Fails: no UPC + not
+  first-party.
+- Outcome: model still has no qualifying spec-page row (0 matched
+  rows). CDW/Newegg route closed. Remaining unprobed spec-page
+  lever: Best Buy / Adorama (not yet checked for this model). No
+  catalog/snapshot change.
