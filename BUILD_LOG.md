@@ -6954,3 +6954,26 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   rows). CDW/Newegg route closed. Remaining unprobed spec-page
   lever: Best Buy / Adorama (not yet checked for this model). No
   catalog/snapshot change.
+
+## 105 — 2026-11-09: Anker Prime 100W first-row probe — Best Buy and Adorama, both NO
+
+- Follow-up to BUILD_LOG 104: probe Best Buy then Adorama spec
+  pages for UPC 194644040635 (plain A2688) to give the model its
+  first ranked row. Live-browser, read-only, 2026-11-09 ~18:38–18:43 PT.
+- Best Buy (SKU 10466977, BSIN JJ8586WQ7P): UPC 194644040635 exact
+  match in expanded "See all specifications" > Other, MPN A2688,
+  $69.99, Add to Cart enabled, free shipping — but sold & shipped
+  by AnkerDirect, a marketplace seller, not Best Buy first-party.
+  No Best Buy first-party new offer on the page. Fails: not
+  first-party. (Text-fetch crawl 2026-11-02 independently confirms
+  Model A2688, $69.99, InStock, AnkerDirect seller.)
+- Adorama: search page never loaded — DataDome device check
+  escalated to "Access is temporarily restricted" (bot activity),
+  persisted across reloads; no workaround, login, or CAPTCHA
+  solve attempted. No UPC, price, stock, or seller obtained.
+  Unverifiable, not evidence Adorama lacks the product; a retry
+  later or from a different network might succeed.
+- Outcome: model still has no qualifying spec-page row (0 matched
+  rows). Spec-page route now exhausted across CDW, Newegg, Best
+  Buy (all checked); Adorama alone remains unprobed due to the
+  block. No catalog/snapshot change.

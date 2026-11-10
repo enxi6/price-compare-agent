@@ -1298,6 +1298,13 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Anker Prime 100W first-row probe, Best Buy / Adorama
+  (BUILD_LOG 105): Best Buy spec page matches UPC
+  194644040635 and MPN A2688 at $69.99, but the offer is
+  sold/shipped by marketplace seller AnkerDirect, so no
+  row added; Adorama was bot-blocked and unverifiable.
+  Spec-page route exhausted except Adorama.
+
 - Anker Prime 100W first-row probe (BUILD_LOG 104): CDW and
   Newegg spec pages both fail — CDW lists variant A2688141
   with no UPC shown; Newegg shows MPN A2688 but no UPC and
