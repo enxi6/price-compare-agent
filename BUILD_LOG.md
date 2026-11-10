@@ -6912,3 +6912,26 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   pending set +28 keys) and test_site_snapshot.py (250 models,
   122 verified / 128 pending). Working tree left dirty for review;
   NOT committed or pushed.
+
+## 103 — 2026-11-09: Anker Prime 100W UPC flag closed — catalog code vindicated, B&H row not added
+
+- Flag from BUILD_LOG 101 (B&H page UPC 194644289638 for variant
+  A2688J41-1 vs catalog 194644040635) closed by second-source
+  check 2026-11-09: Amazon US AnkerDirect ASIN B0CZ6LXL8R lists
+  Model A2688, UPC 194644040635, GTIN 00194644040635 — a fourth
+  corroboration alongside Ubuy, Desertcart, CamelCamelCamel
+  (DECISIONS 012). Anker US official page confirms Model A2688,
+  $69.99, InStock, no UPC listed.
+- Conclusion: catalog UPC kept as-is; B&H $69.99 row NOT added —
+  A2688J41-1 is a different SKU/packaging (J41 suffix matches
+  Anker bundle SKUs, e.g. bundle-a2688t41-1), not the plain A2688.
+  A2688341 (UPC 194644041021) remains a different variant
+  (DECISIONS 012).
+- Uncertainties: B&H code 194644289638 has no other indexed
+  source; Amazon page text crawled 2026-04-13 (UPC stable per
+  model, not relied on for price/stock). No CDW/Newegg spec page
+  surfacing 194644040635 found — a live-browser spec-page probe
+  for a first ranked row remains an open optional lever, not
+  claimed.
+- No catalog/snapshot change. Model stays unranked (0 matched
+  rows).

@@ -1298,6 +1298,12 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Anker Prime 100W UPC flag closed (BUILD_LOG 103): catalog UPC
+  194644040635 vindicated by a fourth source (Amazon AnkerDirect,
+  ASIN B0CZ6LXL8R); B&H A2688J41-1 (UPC 194644289638) is a
+  different SKU/packaging, so its $69.99 row was not added. No
+  catalog change; the model stays unranked.
+
 - Daily refresh 2026-11-09: full 200-model Meta Catalog sweep (3,963
   raw listings, 200/200 calls OK) + Shopify identified sweep (84
   offers, 73 models; Datavision Tab S10 FE+ 404 skipped, same as
