@@ -1,17 +1,17 @@
 {
   "meta": {
-    "generated_at": "2026-11-11T21:05:52.902380+00:00",
+    "generated_at": "2026-11-11T23:07:56.952648+00:00",
     "snapshot_date": "2026-11-11",
     "source_files": 51,
     "identified_source_files": 9,
     "models": 250,
     "verified_identifiers": 123,
     "pending_identifiers": 127,
-    "total_offers": 1111,
-    "matched_offers": 107,
+    "total_offers": 1119,
+    "matched_offers": 115,
     "suspected_offers": 1004,
-    "verified_ranking_models": 97,
-    "models_with_offers": 220,
+    "verified_ranking_models": 104,
+    "models_with_offers": 223,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
   "models": [
@@ -16587,11 +16587,25 @@
         "UPC": "198957101786",
         "MPN": "SM-L320NDAAXAA"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 299.99,
+          "title": "Samsung Galaxy Watch8 Aluminum Smartwatch 40mm BT Graphite (2025)",
+          "url": "https://www.bestbuy.com/product/samsung-galaxy-watch8-aluminum-smartwatch-40mm-bt-graphite-2025/JJGRF3X94S/sku/6635084",
+          "collected_at": "2026-11-11T23:07:50Z",
+          "identifier": "198957101786",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 198957101786 + Model SM-L320NDAAXAA on spec page, $299.99, sold by Best Buy, Add to Cart clickable, Shipping FREE Tomorrow (green); Pickup at Orange 'Not in stock - Ready Tue Nov 17' — in stock per Hazel precedent (Add to Cart + delivery green tick); marketplace variants on the page (Esquared Trading / WackyJacky) not used; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": "eval_snapshots_2026-11-11.json",
       "source_collected_at": "2026-11-11T19:31:59.211185+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "samsung-galaxy-tab-s10-lite-128gb-gray",
@@ -16893,6 +16907,19 @@
       },
       "offers": [
         {
+          "merchant": "Best Buy",
+          "price": 249.99,
+          "title": "Garmin Lily 2 Smartwatch 34 mm Anodized Aluminum Cream Gold with Coconut Silicone Band",
+          "url": "https://www.bestbuy.com/product/garmin-lily-2-smartwatch-34-mm-anodized-aluminum-cream-gold-with-coconut-silicone-band-2024/JXF9YF4K6S/sku/6574617",
+          "collected_at": "2026-11-11T23:07:50Z",
+          "identifier": "753759324711",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 753759324711 + Model 010-02839-00 on spec page, $249.99, sold by Best Buy, Add to Cart clickable, Shipping FREE Tomorrow (green); Pickup at Orange 'Not in stock - Ready Tue, Nov 17' — in stock per Hazel precedent (Add to Cart + delivery green tick); marketplace variants on the page (6ave Electronics / FrontRow Tech) not used; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Ascentoutdoors",
           "price": 249.99,
           "title": "Garmin Lily 2",
@@ -16986,8 +17013,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-11.json",
       "source_collected_at": "2026-11-11T19:31:59.211185+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "garmin-vivosmart-5-black-sm",
@@ -17123,6 +17150,19 @@
         "MPN": "010-02694-00"
       },
       "offers": [
+        {
+          "merchant": "Excel Sports",
+          "price": 349.99,
+          "title": "Garmin Edge 540 GPS Computer",
+          "url": "https://www.excelsports.com/garmin-edge-540-gps-computer",
+          "collected_at": "2026-11-11T23:07:50Z",
+          "identifier": "753759299804",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "excelsports.com product page (live-browser verified 2026-11-11; $349.99 + Garmin Part # 010-02694-00 + UPC/EAN 753759299804 on the same page, 'Only 4 in stock', Add to Cart present and not disabled; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        },
         {
           "merchant": "A2Bikes",
           "price": 349.99,
@@ -17334,8 +17374,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-11.json",
       "source_collected_at": "2026-11-11T19:31:59.211185+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "keychron-q3-max",
@@ -17432,11 +17472,25 @@
         "UPC": "196388550555",
         "MPN": "EP2-33670"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 1049.99,
+          "title": "Microsoft Surface Pro Copilot+ PC 12\" Touch-Screen Snapdragon X Plus 16GB Memory 256GB UFS Device Only Latest Model Platinum",
+          "url": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touch-screen-snapdragon-x-plus-16gb-memory-256gb-ufs-device-only-latest-model-platinum/6623676",
+          "collected_at": "2026-11-11T23:07:50Z",
+          "identifier": "196388550555",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 196388550555 + Model EP2-33670 on spec page, $1,049.99, sold by Best Buy, Add to Cart clickable, pickup at Orange 'Only 2 left!', Shipping FREE Tomorrow; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": "eval_snapshots_2026-11-11.json",
       "source_collected_at": "2026-11-11T19:31:59.211185+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "lenovo-legion-go-s-steamos",
@@ -18155,11 +18209,25 @@
         "UPC": "198957098482",
         "MPN": "SM-L330NDAAXAA"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 329.99,
+          "title": "Samsung Galaxy Watch8 Aluminum Smartwatch 44mm BT Graphite (2025)",
+          "url": "https://www.bestbuy.com/product/samsung-galaxy-watch8-aluminum-smartwatch-44mm-bt-graphite-2025/JJGRF3XGRG/sku/6635080",
+          "collected_at": "2026-11-11T23:07:50Z",
+          "identifier": "198957098482",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 198957098482 + Model SM-L330NDAAXAA on spec page, $329.99, sold by Best Buy, Add to Cart clickable, pickup at Orange ready in 1 hour, Shipping FREE Tomorrow; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": "eval_snapshots_2026-11-11.json",
       "source_collected_at": "2026-11-11T19:31:59.211185+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "jbl-live-beam-3-black",
@@ -18173,6 +18241,32 @@
         "MPN": "JBLLIVEBEAM3BLKAM"
       },
       "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 199.99,
+          "title": "JBL Live Beam 3 Noise-Canceling True Wireless Earbuds (Black)",
+          "url": "https://www.bestbuy.com/product/jbl-live-beam-3-true-wireless-noise-cancelling-earbuds-2024-black/J7LXFWXHFP/sku/6582671",
+          "collected_at": "2026-11-11T23:07:50Z",
+          "identifier": "050036401210",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 050036401210 + Model JBLLIVEBEAM3BLKAM on spec page, $199.99, Save $29.96 comp $229.95, sold by Best Buy, Add to Cart clickable, pickup at Orange 'Only 1 left!', Shipping FREE Tomorrow; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
+          "merchant": "B&H Photo",
+          "price": 229.95,
+          "title": "JBL Live Beam 3 Noise-Canceling True Wireless Earbuds (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1808929-REG/jbl_jbllivebeam3blkam_live_beam_3_noise_canceling.html",
+          "collected_at": "2026-11-11T23:07:50Z",
+          "identifier": "050036401210",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (verified 2026-11-11 via direct page read; UPC 050036401210 + MPN JBLLIVEBEAM3BLKAM on page, $229.95, 'In Stock, No Store Display', JSON-LD InStock, B&H first-party; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        },
         {
           "merchant": "Best Buy",
           "price": 229.95,
@@ -18254,8 +18348,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-11.json",
       "source_collected_at": "2026-11-11T19:31:59.211185+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "anker-space-one-pro-black",
@@ -18269,6 +18363,19 @@
         "MPN": "A3062Z11"
       },
       "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 169.99,
+          "title": "Soundcore by Anker Space One Pro Wireless Over-Ear Closed-Back Headphones (Jet Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1863101-REG/soundcore_by_anker_a3062z11_space_one_pro.html",
+          "collected_at": "2026-11-11T23:07:50Z",
+          "identifier": "194644042479",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (verified 2026-11-11 via direct page read; UPC 194644042479 + MPN A3062Z11 on page, $169.99, 'In Stock, No Store Display', Holiday Savings $30 off $199.99, JSON-LD InStock, B&H first-party; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        },
         {
           "merchant": "Abt",
           "price": 169.99,
@@ -18324,8 +18431,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-11.json",
       "source_collected_at": "2026-11-11T19:31:59.211185+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "google-pixel-watch-4-45mm-matte-black",

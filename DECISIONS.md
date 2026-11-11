@@ -3932,3 +3932,38 @@ written as "superseded by" with the original text kept.
   Corroboration: Abt/Cowtown/ShopCGX $599.99 for the same model.
   GameStop lists a different SKU (UPC 711719573364) — no row, no
   MPN change.
+
+## 072 (2026-11-11): Garmin Vivosmart 5 (Black, S-M) UPC conflict — catalog code unchanged
+
+- Best Buy live-browser verified 2026-11-11: SKU 6505387 spec
+  page ("See all specifications" > Other) lists UPC
+  753759295066, Model 010-02645-00, $139.99, Sold by Best Buy —
+  but the row is Sold Out (greyed-out Sold Out button, Notify
+  Me only). The FrontRow Tech marketplace variant (SKU
+  12239083, $149.99) is in stock but excluded per DECISIONS
+  021.
+- Catalog UPC stays 753759279776 on the single-source rule
+  (PS5 Pro precedent, DECISIONS 071): one retailer's spec page
+  does not overrule the catalog identifier. Model stays
+  unranked. A second independent source showing 753759295066
+  for this exact variant (010-02645-00, S-M) reopens the
+  question; a second source confirming 753759279776 closes it
+  the other way.
+
+## 073 (2026-11-11): Logitech MX Master 4 Graphite (910-007558) — retailer route closed
+
+- The last open route was Logitech's own spec page:
+  logitech.com search returns only MX Master 4 for Business
+  (910-007617 / 910-007619), MX Master 4 Special Edition
+  (Canada), and MX Master 4 for Mac (910-007578). The consumer
+  version (910-007558) has no product/spec page on logitech.com
+  at all, and no page shows UPC 097855207623. Earlier routes
+  already closed: Target (business version only, out of stock),
+  Costco.com (not listed online), Best Buy / B&H / Adorama /
+  Walmart (no Graphite row).
+- No further routes will be opened for this model unless the
+  catalog MPN itself is proven wrong. Note (not a row): Best
+  Buy currently lists MX Master 4 Light Gray 910-007559 (Best
+  Buy first-party, $119.99, in stock) and Black 910-007560
+  (Staples marketplace) — different MPNs, different models, no
+  row, no identifier change. The model stays unranked.

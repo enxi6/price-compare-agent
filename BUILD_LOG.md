@@ -7305,3 +7305,63 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   4 Graphite @ Costco.com (not listed online; only Logitech's own
   spec page remains unverified for its UPC). No catalog identifier
   changes, no DECISIONS.md changes, no Amazon touch, no spending.
+
+## 114 — 2026-11-11: Eight hand rows added (user-approved, rankings 97→104)
+
+- User-approved 2026-11-11 ("8 行全加"). Third backlog round:
+  20 verified-unranked models probed in 3 parallel groups, then
+  2 live-browser passes (11 pages) the same day; 8 rows verified,
+  13 models NO.
+- Anker Space One Pro black @ B&H Photo $169.99 (UPC
+  194644042479, MPN A3062Z11; $30 Holiday Savings off $199.99;
+  "In Stock, No Store Display", JSON-LD InStock; page-read
+  verified). Caveat: the probe draft gave a wrong B&H URL
+  (product 1823533 resolves to an Eclipse screwdriver); the hand
+  file uses the correct URL, product 1863101.
+- JBL Live Beam 3 black @ Best Buy $199.99 (UPC 050036401210,
+  MPN JBLLIVEBEAM3BLKAM, SKU 6582671; Save $29.96, comp $229.95;
+  sold by Best Buy; pickup at Orange "Only 1 left!", Shipping
+  FREE Tomorrow) + @ B&H Photo $229.95 (same UPC, In Stock).
+  The short Best Buy URL /jbllivebeam3blkam 404s — the hand file
+  uses the /J7LXFWXHFP/sku/6582671 URL found via Best Buy search.
+- Garmin Edge 540 @ Excel Sports $349.99 (UPC 753759299804,
+  MPN 010-02694-00; "Only 4 in stock", Add to Cart present and
+  not disabled; no pickup/delivery section on this retailer's
+  page).
+- Garmin Lily 2 Cream Gold @ Best Buy $249.99 (UPC 753759324711,
+  MPN 010-02839-00, SKU 6574617; sold by Best Buy; Shipping FREE
+  Tomorrow (green); pickup at Orange "Not in stock - Ready Tue,
+  Nov 17" — in stock per the Hazel precedent, Add to Cart +
+  delivery green tick; marketplace variants on the page (6ave
+  Electronics / FrontRow Tech) not used).
+- Microsoft Surface Pro 12 Platinum @ Best Buy $1,049.99 (UPC
+  196388550555, MPN EP2-33670, SKU 6623676; sold by Best Buy;
+  pickup at Orange "Only 2 left!", Shipping FREE Tomorrow).
+- Samsung Galaxy Watch8 40mm Graphite @ Best Buy $299.99 (UPC
+  198957101786, MPN SM-L320NDAAXAA, SKU 6635084; sold by Best
+  Buy; Shipping FREE Tomorrow (green); pickup at Orange "Not in
+  stock - Ready Tue Nov 17" — in stock per the Hazel precedent;
+  marketplace variants Esquared Trading $271 / WackyJacky $273
+  not used).
+- Samsung Galaxy Watch8 44mm Graphite @ Best Buy $329.99 (UPC
+  198957098482, MPN SM-L330NDAAXAA, SKU 6635080; sold by Best
+  Buy; pickup at Orange ready in 1 hour, Shipping FREE
+  Tomorrow).
+- Hand models 40→47, hand offers 42→50; matched 107→115,
+  verified rankings 97→104 (7 newly ranked models — Live Beam
+  3's two rows count as one model), verified-unranked 26→19,
+  models with offers 220→223. 56 tests pass.
+- Not added (13): HP 920 (HP page has no UPC field); JBL Go 4
+  (B&H discontinued, replaced by Go 5); Liberty 4 Pro Glossy
+  Black (B&H carries Matte only; soundcore page has no UPC);
+  Boom 2 (no verifiable row source); Alienware Pro mouse (Dell
+  page has no price/UPC, B&H doesn't carry it); AW3425DW /
+  AW2524HF (Dell pages structurally show no UPC); Vivosmart 5
+  (Best Buy sold out + UPC conflict — DECISIONS 072); Legion Go
+  S (Best Buy main offer is marketplace seller Back in the Box);
+  Pixel Watch 4 41mm (Google Store out of stock + no UPC on the
+  page); Watch SE3 40mm (Best Buy Unavailable); GameCube
+  controller (Nintendo page shows the UPC but Add to Cart needs
+  sign-in, so stock is unverifiable); MX Master 4 Graphite
+  (route closed — DECISIONS 073).
+- No catalog identifier changes, no Amazon touch, no spending.

@@ -1214,6 +1214,15 @@ releases; breaking changes are called out in the release notes.
   $99.99, Forerunner 965 $599.99; verified rankings
   94→97 (WH-1000XM5 upgrades an out-of-stock row).
 
+- Eight hand rows added (live-browser / page-read verified
+  2026-11-11, user-approved): Anker Space One Pro $169.99
+  @ B&H Photo; JBL Live Beam 3 $199.99 @ Best Buy +
+  $229.95 @ B&H Photo; Garmin Edge 540 $349.99 @ Excel
+  Sports; Garmin Lily 2 $249.99 @ Best Buy; Surface Pro 12
+  $1,049.99 @ Best Buy; Galaxy Watch8 40mm $299.99 +
+  44mm $329.99 @ Best Buy; verified rankings 97→104
+  (7 newly ranked models).
+
 ### Changed
 
 - Daily price refresh 2026-11-07: full 200-model Meta Catalog sweep
