@@ -1324,6 +1324,62 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-11: full 250-model Meta Catalog sweep
+  (4,980 raw listings, 250/250 calls OK) + Shopify identified sweep
+  (84 offers, 73 models; Datavision Tab S10 FE+ 404 skipped, same as
+  2026-11-07/08/09/10). Snapshot `data/eval_snapshots_2026-11-11.json`
+  holds 1,013 quotes across 209 of 250 models (prev 679/205 — the
+  jump is feed breadth, not price moves: the feed returned a much
+  wider merchant set today, including first-time Target/Best Buy/B&H
+  rows for the 2026-11-09 batch models). Site rebuilt (1,108 offers,
+  103 matched, 94 verified rankings — unchanged). Builder replica
+  check: rebuilding 2026-11-10 from its raw files reproduces the
+  snapshot (680 vs 679 offers, 1 diff line), so the jump is a feed
+  change, not a builder regression.
+- Forty-five feed rows proven wrong and excluded via KNOWN_BAD, plus
+  host blocks for aliexpress.com (+ s.click.aliexpress.com,
+  marketplace), mundomac.com (Spain), ufostorekh.com (Cambodia) and
+  jbl.pr (Puerto Rico storefront — its $149.96/$119.96 prices differ
+  from jbl.com US $199.95/$149.95, verified on the pages): AT&T
+  installments (iPad Air 13 $30.56, iPad Pro 11 $38.89, Watch8
+  40/44mm $15.28 — the last two poisoned yesterday's prev-median
+  anchor, so the Watch8 Best Buy $298 row was dropped by the sanity
+  check today; the anchor heals tomorrow); B&H for-Mac variants (MX
+  Master 4 910-007575, MX Keys S 920-011621, Magic Keyboard MJLY4LL/A
+  with Touch ID); ShopMyExchange K860 Business BOLT $198; Nexoltic
+  AW3425DWM $475.59; Sam's Club nano-glass Studio Display $1,999;
+  CDW Portuguese Magic Keyboard $179; Gamingcomputerfinancing Cloud
+  III rows link to Cloud II pages; Lenovo Superlight 2 $149.99 is
+  the 2c; Soundbar 600 bundle rows (Macy's $1,098/$1,298.79, Best Buy
+  $948/$1,098, BuyDig $1,358.30 — the builder's bundle-word filter
+  misses "with Bass Module" titles); live-browser-proven: Macy's
+  Soundbar $948 is Adorama marketplace, Meijer Elite 2 $149.99 page
+  shows $199.99 out of stock, Bose Micro $99 page shows $129,
+  Staples MX Keys Mini $100.99 is the comp value (final $89.99),
+  Dell POP Keys $79.99 is a dead Yellow URL (Cosmos $99.99).
+- Confirmed moves (live-browser verified): Pixel Watch 4 41mm @ CDW
+  $341.99 -> $439.99; SoundLink Plus @ Staples $179 -> $269; Studio
+  Display XDR @ B&H $3,239 -> $3,299; SoundLink Micro 2nd Gen @ Bose
+  $79 -> $129; Switch neon @ Nintendo $299.99 -> $339.99 (Gray
+  $299.99 sold out); Pulsefire Haste 2 @ HyperX $59.99 -> $89.99;
+  Pixel Buds Pro 2 Porcelain @ Best Buy $229 -> $209.99 (only 2 left,
+  Costa Mesa); Cloud III Black-Red @ HP $69.99 -> $57.99; Buds3 FE @
+  Silarius $169.99 -> $195.99 (identified stream, page-verified,
+  MPN/UPC match). Price confirmed but out of stock: Pixel Watch 4
+  41mm @ Best Buy $349.99 and 45mm @ Best Buy $399.99 (both
+  Unavailable). Not confirmed: Silarius webcam $235.99 is special
+  order (10-14 business days). Zero-quote models now: Galaxy Watch8
+  40mm/44mm and iPad Pro M5 11 (their only rows were the excluded
+  AT&T installments — honest gap). Rotation: Logitech patrol — MX
+  Master 4 Graphite $119.99 InStock at logitech.com (unchanged), MX
+  Vertical $99.99 sale; MX Master 4 retailer hunt — Newegg shows
+  only the Black variant, no Graphite row (next: Costco); DualSense
+  White UPC — no new evidence, not re-searched. Four low-stock Best
+  Buy hand rows rechecked and still live (Scribe $399.99, Tab S10
+  Lite $399.99, WF-1000XM5 $199.99, WH-CH520 $57.99). 56 tests pass.
+  No catalog identifier changes, no DECISIONS.md changes, no models
+  added, no Amazon touch, no spending.
+
 - Daily refresh 2026-11-10: first full 250-model Meta Catalog sweep
   (4,951 raw listings, 250/250 calls OK) + Shopify identified sweep
   (84 offers, 73 models; Datavision Tab S10 FE+ 404 skipped, same as
