@@ -67,8 +67,8 @@ def test_merge_output_is_exactly_the_catalog(tmp_path):
     }
     # Retired snapshot keys never enter the output.
     assert "keychron-k8-pro" not in {m["key"] for m in result["models"]}
-    assert result["meta"]["verified_identifiers"] == 122
-    assert result["meta"]["pending_identifiers"] == 128
+    assert result["meta"]["verified_identifiers"] == 123
+    assert result["meta"]["pending_identifiers"] == 127
 
 
 def test_merge_invents_nothing_meta_only(tmp_path):

@@ -1188,6 +1188,13 @@ releases; breaking changes are called out in the release notes.
   87→88. GameStop lists a different SKU (UPC 711719573364)
   — no row, no catalog change.
 
+- PS5 Digital Slim 825GB UPC found (711719021483, MPN
+  1000049898, Best Buy spec page, live-browser verified
+  2026-11-10, user-approved): pending→verified, Best Buy
+  $599.99 hand row added; verified identifiers 122→123,
+  verified rankings 88→89. Closes the DECISIONS 067 open
+  item.
+
 ### Changed
 
 - Daily price refresh 2026-11-07: full 200-model Meta Catalog sweep

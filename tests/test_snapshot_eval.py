@@ -42,12 +42,11 @@ def test_snapshot_staleness(tmp_path):
 def test_eval_set_shape():
     assert len(EVAL_SET) == 250
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 122
+    assert len(verified) == 123
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
     assert {p.key for p in pending} == {
-        "sony-ps5-digital-825gb",
         "sony-dualsense-white",
         "apple-watch-series-12-42mm-gps-black",
         "apple-watch-ultra-4-49mm-gps-cellular-natural",

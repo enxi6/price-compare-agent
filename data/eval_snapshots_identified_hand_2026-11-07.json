@@ -510,6 +510,22 @@
           "in_stock": true
         }
       ]
+    },
+    "sony-ps5-digital-825gb": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 599.99,
+          "title": "PlayStation 5 Slim Digital Edition Console 825GB",
+          "url": "https://www.bestbuy.com/product/playstation-5-slim-digital-edition-console-825gb/JXHQ37TYYL/sku/6646420",
+          "collected_at": "2026-11-11T02:40:00Z",
+          "identifier": "711719021483",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; price + UPC + MPN on the spec page; Add to Cart available with green Pickup/Shipping ticks — no literal 'In Stock' wording, same evidence shape as the PS5 1TB disc row; Best Buy first-party; added on user approval 2026-11-10)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

@@ -3915,3 +3915,20 @@ written as "superseded by" with the original text kept.
   needed. Site copy updated 200 → 250 (build_site.py,
   build_site_snapshot.py). Tests updated to 250 models / 122
   verified / 128 pending. No Amazon touch, no spending.
+
+## 071 (2026-11-10): PS5 Digital Slim 825GB — CFI-2100 true UPC found, pending→verified
+
+- Closes the DECISIONS 067 open item: the CFI-2100 group's real UPC
+  is UPC 711719021483 (Best Buy spec page, SKU 6646420, live-browser
+  verified 2026-11-10; Model Number 1000049898, $599.99, sold by
+  Best Buy). UPC 711719541035 remains the 2020 launch code
+  (CFI-1015B), not this model; it stays out of the identifiers.
+- Catalog: sony-ps5-digital-825gb pending→verified (UPC 711719021483
+  + MPN 1000049898); identifier_sources updated with the resolution,
+  history kept. Best Buy $599.99 hand row added (BUILD_LOG 109).
+  Verified identifiers 122→123, pending 128→127; rankings 88→89.
+- Evidence standard: same as the PS5 1TB disc row (Add to Cart +
+  green Pickup/Shipping ticks, no literal 'In Stock' wording).
+  Corroboration: Abt/Cowtown/ShopCGX $599.99 for the same model.
+  GameStop lists a different SKU (UPC 711719573364) — no row, no
+  MPN change.

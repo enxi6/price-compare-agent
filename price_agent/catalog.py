@@ -783,7 +783,7 @@ EVAL_SET: list[EvalProduct] = [
         model="PlayStation 5 Slim Digital Edition (825GB)",
         variant="825GB, White, all-digital (CFI-2100 model group)",
         category="consoles",
-        identifiers={},
+        identifiers={"UPC": "711719021483", "MPN": "1000049898"},
         identifier_sources={
             "UPC": "UPC 711719541035 returned to pending 2026-11-08 "
             "(DECISIONS 067): the code points to the 2020 launch "
@@ -801,7 +801,11 @@ EVAL_SET: list[EvalProduct] = [
             "Counter-evidence: Walmart's same 825GB Slim page lists "
             "Model CFI-2015, but that page is marked unverified. "
             "CFI-2100's real UPC is still unknown; no Sony official "
-            "UPC-to-model page was found."
+            "UPC-to-model page was found. Resolved 2026-11-10: Best Buy "
+            "spec page (SKU 6646420, live-browser verified) shows UPC "
+            "711719021483 and Model Number 1000049898 for this 825GB Slim "
+            "Digital, $599.99, sold by Best Buy; 711719541035 remains the "
+            "2020 launch code, not this model."
         },
         notes="Slim Digital 825GB bare console only: bundles "
         "(Fortnite, Marvel's Wolverine) and the 1TB revision are "
@@ -811,7 +815,7 @@ EVAL_SET: list[EvalProduct] = [
         "signals were mixed); Sam's Club $599.00 (feed, "
         "authorized_retailer). Candidate price $599 corrected to "
         "$599.99.",
-        status="pending",
+        status="verified",
     ),
     EvalProduct(
         key="nintendo-joy-con-2-pair-light-blue-light-red",

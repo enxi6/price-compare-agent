@@ -7110,3 +7110,30 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (no UPC shown), and Adorama (blocked twice — the only route
   never actually probed). Model still has no qualifying row and
   stays unranked. No catalog/snapshot change.
+
+## 109 — 2026-11-10: PS5 Digital Slim 825GB UPC found (711719021483); pending→verified, Best Buy $599.99 row added
+
+- User-approved 2026-11-10. Closes the DECISIONS 067 open item
+  (CFI-2100 true UPC was unknown; UPC 711719541035 had been
+  returned to pending as the 2020 launch code).
+- Evidence: Best Buy spec page (SKU 6646420, live-browser verified
+  2026-11-10 ~18:40 PT): UPC 711719021483 + MPN 1000049898,
+  $599.99, sold by Best Buy, Add to Cart available with green
+  Pickup/Shipping ticks (no literal 'In Stock' wording — same
+  evidence shape as the PS5 1TB disc row). MPN matches Abt's
+  '(CFI-2100 group – slim)' page; UPC is in the same block as the
+  disc version's 711719021452 and does not conflict with
+  711719541035. Independent text-fetch of the Best Buy page
+  corroborated Model 1000049898, $599.99, InStock, Add to Cart
+  (UPC and seller rest on the live probe's expanded spec section).
+- Changes: catalog sony-ps5-digital-825gb pending→verified (UPC +
+  MPN written in, sources updated with the resolution); Best Buy
+  $599.99 hand row added (hand models 30→31); site rebuilt: offers
+  777→778, matched 97→98, verified rankings 88→89, verified
+  identifiers 122→123, pending 128→127. 56 tests pass.
+- Caveats: green ticks were for the browser default Lake Worth
+  store, not Irvine; shipping tick is the more useful signal. High
+  Demand warning — the row may drop at tomorrow's refresh if sold
+  out. GameStop's different SKU (UPC 711719573364) noted, no row.
+  DECISIONS 071 records the promotion; no other DECISIONS.md
+  changes, no Amazon touch, no spending.
