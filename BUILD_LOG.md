@@ -7137,3 +7137,43 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   out. GameStop's different SKU (UPC 711719573364) noted, no row.
   DECISIONS 071 records the promotion; no other DECISIONS.md
   changes, no Amazon touch, no spending.
+
+## 110 — 2026-11-10: JBL Clip 5 black @ B&H Photo $79.95 row added (rankings 89→90); 6 Best Buy pages live-verified, 4 addable
+
+- User-approved 2026-11-10 (JBL row). B&H page live-verified
+  2026-11-10 ~21:05 PT: UPC 050036400077 on page, $79.95,
+  "In Stock, No Store Display", green Add to Cart clickable,
+  B&H first-party. JBL's own site has the same $79.95/InStock
+  but no UPC field, so it cannot carry the row. Hand models
+  31→32; offers 778→779, matched 98→99, rankings 89→90.
+  56 tests pass.
+- Same live pass verified 4 more Best Buy rows (all UPC + price
+  + self-operated seller + clickable Add to Cart; pickup defaults
+  to the Orange store, not Irvine — shipping tick is the more
+  useful signal): Kindle Scribe 16GB Tungsten $399.99 (UPC
+  840414615816, SKU 6603848, "Only 1 left!"); Galaxy Tab S10
+  Lite 128GB Gray $399.99 (UPC 198957219764, SKU 6639132, $399.99
+  row confirmed Best Buy, not the DataVision variant); Sony
+  WF-1000XM5 black $199.99 Holiday Deal (UPC 027242925601, SKU
+  6546812, "Only 2 left!"); Sony WH-CH520 black $57.99 clearance
+  (UPC 027242925205, SKU 6533161, "Only 1 left!"). All four
+  await the user's nod; none added yet. Low-stock flags mean
+  they may drop at the next refresh.
+- 3 NOs from the same pass: Xbox Elite Series 2 black (UPC
+  889842196344 + $171.99 match, but main item out of stock,
+  button disabled); Pixel Watch 4 41mm Wi-Fi (UPC 840353931503
+  + $349.99 match, but "Unavailable", Notify Me only — resolves
+  the conflicting stock signals); PS5 Pro @ Best Buy (UPC
+  mismatch: Best Buy spec page shows 711719024538, not the
+  catalog's 711719595946, and the item is sold out; Best Buy
+  search for 711719595946 returns no results). Catalog UPC for
+  PS5 Pro is NOT changed on one source — flagged as an open
+  identifier question.
+- Earlier text-probe NOs (same evening, BUILD_LOG scope): MX
+  Master 4 @ Target (only the Business version, MPN 910007-616,
+  out of stock); PS5 Pro @ PlayStation Direct (stock flags not
+  attributable + no UPC/MPN); Bose QC gen 1 (discontinued, no
+  page ties MPN 884367-0100 to an in-stock offer); K8
+  hot-swappable red @ Keychron (white-light variants all out of
+  stock, page has no UPC); HP 920 (no Best Buy product page).
+  No DECISIONS.md changes, no Amazon touch, no spending.

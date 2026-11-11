@@ -526,6 +526,22 @@
           "in_stock": true
         }
       ]
+    },
+    "jbl-clip-5-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 79.95,
+          "title": "JBL Clip 5 Portable Waterproof Wireless Speaker (Black)",
+          "url": "https://www.Bhphotovideo.com/c/product/1808901-REG/jbl_jblclip5blkam_clip_5_portable_waterproof.html",
+          "collected_at": "2026-11-11T05:05:00Z",
+          "identifier": "050036400077",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live-browser verified 2026-11-10; UPC 050036400077 on page, $79.95, 'In Stock, No Store Display', green Add to Cart clickable, B&H first-party; added on user approval 2026-11-10)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

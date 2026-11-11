@@ -1195,6 +1195,13 @@ releases; breaking changes are called out in the release notes.
   verified rankings 88→89. Closes the DECISIONS 067 open
   item.
 
+- JBL Clip 5 black @ B&H Photo $79.95 hand row added
+  (UPC 050036400077, live-browser verified 2026-11-10,
+  user-approved): verified rankings 89→90. Four more
+  Best Buy rows live-verified the same evening (Kindle
+  Scribe $399.99, Tab S10 Lite $399.99, WF-1000XM5
+  $199.99, WH-CH520 $57.99) await user approval.
+
 ### Changed
 
 - Daily price refresh 2026-11-07: full 200-model Meta Catalog sweep
