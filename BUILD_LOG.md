@@ -7177,3 +7177,22 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   hot-swappable red @ Keychron (white-light variants all out of
   stock, page has no UPC); HP 920 (no Best Buy product page).
   No DECISIONS.md changes, no Amazon touch, no spending.
+
+## 111 — 2026-11-11: Four Best Buy hand rows added (user-approved, rankings 90→94)
+
+- User-approved 2026-11-11 ("4 行全加"). All four live-verified
+  2026-11-10 ~21:05 PT (BUILD_LOG 110): UPC + price + Best Buy
+  self-operated seller + clickable Add to Cart on each spec page.
+- Kindle Scribe 16GB Tungsten @ Best Buy $399.99 (UPC
+  840414615816, SKU 6603848); Galaxy Tab S10 Lite 128GB Gray @
+  Best Buy $399.99 (UPC 198957219764, SKU 6639132); Sony
+  WF-1000XM5 black @ Best Buy $199.99 Holiday Deal (UPC
+  027242925601, SKU 6546812); Sony WH-CH520 black @ Best Buy
+  $57.99 clearance (UPC 027242925205, SKU 6533161).
+- Hand models 32→36; offers 779→783, matched 99→103, verified
+  rankings 90→94. 56 tests pass.
+- Caveat: three rows were flagged "Only 1 left!" (Scribe,
+  WH-CH520) or "Only 2 left!" (WF-1000XM5) at verification; the
+  2026-11-11 10:52 PT daily refresh rechecks and drops any that
+  sold out. No catalog identifier changes, no DECISIONS.md
+  changes, no Amazon touch, no spending.

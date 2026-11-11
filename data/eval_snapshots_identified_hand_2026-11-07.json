@@ -542,6 +542,70 @@
           "in_stock": true
         }
       ]
+    },
+    "amazon-kindle-scribe-16gb-tungsten": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 399.99,
+          "title": "Amazon Kindle Scribe (16GB, 2024) Tungsten",
+          "url": "https://www.bestbuy.com/product/amazon-kindle-scribe-16gb-2024-tungsten/J39TLSPPGH/sku/6603848",
+          "collected_at": "2026-11-11T05:05:00Z",
+          "identifier": "840414615816",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 840414615816 + MPN B0CZ9VFQ2P on spec page, $399.99, sold by Best Buy, Add to Cart clickable, pickup 'Only 1 left!'; added on user approval 2026-11-11)",
+          "in_stock": true
+        }
+      ]
+    },
+    "samsung-galaxy-tab-s10-lite-128gb-gray": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 399.99,
+          "title": "Samsung Galaxy Tab S10 Lite 10.9\" 128GB Wi-Fi with S Pen, Lite Gray",
+          "url": "https://www.bestbuy.com/product/samsung-galaxy-tab-s10-lite-10-9-128gb-wi-fi-with-s-pen-lite-gray/JJGRF39JQR/sku/6639132",
+          "collected_at": "2026-11-11T05:05:00Z",
+          "identifier": "198957219764",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 198957219764 + MPN SM-X400NZAAXAR on spec page, $399.99 row confirmed Best Buy self-operated, not the DataVision marketplace variant, Add to Cart clickable; added on user approval 2026-11-11)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-wf1000xm5-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 199.99,
+          "title": "Sony WF-1000XM5 True Wireless Noise Cancelling Earbuds (Black)",
+          "url": "https://www.bestbuy.com/site/sony-wf1000xm5-true-wireless-noise-cancelling-earbuds-black/6546812.p?skuId=6546812",
+          "collected_at": "2026-11-11T05:05:00Z",
+          "identifier": "027242925601",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 027242925601 + Model WF1000XM5/B on spec page, $199.99 Holiday Deal, comp $328.00, sold by Best Buy, Add to Cart clickable, pickup 'Only 2 left!'; added on user approval 2026-11-11)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-wh-ch520-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 57.99,
+          "title": "Sony WH-CH520 Wireless Headphone with Microphone (Black)",
+          "url": "https://www.bestbuy.com/product/sony-wh-ch520-wireless-headphone-with-microphone-black/J7XSRH53L3/sku/6533161",
+          "collected_at": "2026-11-11T05:05:00Z",
+          "identifier": "027242925205",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 027242925205 + Model WHCH520/B on spec page, $57.99 Clearance, comp $68.00, sold by Best Buy, Add to Cart clickable, pickup 'Only 1 left!'; added on user approval 2026-11-11)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-11-11T05:07:29.184937+00:00",
+    "generated_at": "2026-11-11T16:59:22.690462+00:00",
     "snapshot_date": "2026-11-10",
     "source_files": 50,
     "identified_source_files": 8,
     "models": 250,
     "verified_identifiers": 123,
     "pending_identifiers": 127,
-    "total_offers": 779,
-    "matched_offers": 99,
-    "suspected_offers": 680,
-    "verified_ranking_models": 90,
+    "total_offers": 781,
+    "matched_offers": 103,
+    "suspected_offers": 678,
+    "verified_ranking_models": 94,
     "models_with_offers": 218,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -498,6 +498,19 @@
       },
       "offers": [
         {
+          "merchant": "Best Buy",
+          "price": 199.99,
+          "title": "Sony WF-1000XM5 True Wireless Noise Cancelling Earbuds (Black)",
+          "url": "https://www.bestbuy.com/site/sony-wf1000xm5-true-wireless-noise-cancelling-earbuds-black/6546812.p?skuId=6546812",
+          "collected_at": "2026-11-11T05:05:00Z",
+          "identifier": "027242925601",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 027242925601 + Model WF1000XM5/B on spec page, $199.99 Holiday Deal, comp $328.00, sold by Best Buy, Add to Cart clickable, pickup 'Only 2 left!'; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Focus Camera",
           "price": 199.99,
           "title": "Sony WF-1000XM5 Truly Wireless Noise Canceling Earbuds (Black)",
@@ -552,8 +565,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-10.json",
       "source_collected_at": "2026-11-10T19:38:35.256212+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "apple-airpods-5-usbc",
@@ -11559,6 +11572,19 @@
       },
       "offers": [
         {
+          "merchant": "Best Buy",
+          "price": 57.99,
+          "title": "Sony WH-CH520 Wireless Headphone with Microphone (Black)",
+          "url": "https://www.bestbuy.com/product/sony-wh-ch520-wireless-headphone-with-microphone-black/J7XSRH53L3/sku/6533161",
+          "collected_at": "2026-11-11T05:05:00Z",
+          "identifier": "027242925205",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 027242925205 + Model WHCH520/B on spec page, $57.99 Clearance, comp $68.00, sold by Best Buy, Add to Cart clickable, pickup 'Only 1 left!'; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Macktechs",
           "price": 49.0,
           "title": "Sony Headphones (WH-CH520) Black New",
@@ -11626,8 +11652,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-10.json",
       "source_collected_at": "2026-11-10T19:38:35.256212+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "sony-ult-field-1-black",
@@ -12677,23 +12703,23 @@
       },
       "offers": [
         {
+          "merchant": "Best Buy",
+          "price": 399.99,
+          "title": "Samsung Galaxy Tab S10 Lite 10.9\" 128GB Wi-Fi with S Pen, Lite Gray",
+          "url": "https://www.bestbuy.com/product/samsung-galaxy-tab-s10-lite-10-9-128gb-wi-fi-with-s-pen-lite-gray/JJGRF39JQR/sku/6639132",
+          "collected_at": "2026-11-11T05:05:00Z",
+          "identifier": "198957219764",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 198957219764 + MPN SM-X400NZAAXAR on spec page, $399.99 row confirmed Best Buy self-operated, not the DataVision marketplace variant, Add to Cart clickable; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "NFM",
           "price": 394.99,
           "title": "Samsung Galaxy Tab S10 Lite 10.9\" 128GB Wi-Fi with S-Pen in Gray",
           "url": "https://www.nfm.com/samsung-galaxy-tab-s10-lite-10-9-128gb-wi-fi-with-s-pen-in-gray-68840784/68840784.html",
-          "collected_at": "2026-11-10T19:38:35.256212+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
-        },
-        {
-          "merchant": "Best Buy",
-          "price": 399.99,
-          "title": "Samsung - Galaxy Tab S10 Lite - 10.9\" 128GB - Wi-Fi - with S-Pen - Lite Gray",
-          "url": "https://www.bestbuy.com/product/samsung-galaxy-tab-s10-lite-10-9-128gb-wi-fi-with-s-pen-lite-gray/JJGRF39JQR/sku/6639132?fs=toa2ic",
           "collected_at": "2026-11-10T19:38:35.256212+00:00",
           "identifier": null,
           "identifier_kind": null,
@@ -12731,8 +12757,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-10.json",
       "source_collected_at": "2026-11-10T19:38:35.256212+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "nintendo-switch-2-gamecube-controller",
@@ -13517,23 +13543,23 @@
       },
       "offers": [
         {
+          "merchant": "Best Buy",
+          "price": 399.99,
+          "title": "Amazon Kindle Scribe (16GB, 2024) Tungsten",
+          "url": "https://www.bestbuy.com/product/amazon-kindle-scribe-16gb-2024-tungsten/J39TLSPPGH/sku/6603848",
+          "collected_at": "2026-11-11T05:05:00Z",
+          "identifier": "840414615816",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 840414615816 + MPN B0CZ9VFQ2P on spec page, $399.99, sold by Best Buy, Add to Cart clickable, pickup 'Only 1 left!'; added on user approval 2026-11-11)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "BJ's",
           "price": 399.99,
           "title": "Amazon Kindle Scribe 16GB (2024 Release), 16GB, Tungsten, includes Premium Pen, Black",
           "url": "https://www.bjs.com/product/kindle-scribe-16gb-2024-release-16gb-tungsten-includes-premium-pen/3000000000005724263/?trc=pdso%7Cfbad%7Cdpa%7Comni%7Coeg%7Ctvsandelectronics%7Cfb_%7B%7Bcampaign.id%7D%7D_%7B%7Badset.id%7D%7D_%7B%7Bad.id%7D%7D%7Clocal%7Cna",
-          "collected_at": "2026-11-10T19:38:35.256212+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
-        },
-        {
-          "merchant": "Best Buy",
-          "price": 399.99,
-          "title": "Amazon - Kindle Scribe (16GB) - 2024 - Tungsten",
-          "url": "https://www.bestbuy.com/product/amazon-kindle-scribe-16gb-2024-tungsten/J39TLSPPGH/sku/6603848?fs=to9mvo",
           "collected_at": "2026-11-10T19:38:35.256212+00:00",
           "identifier": null,
           "identifier_kind": null,
@@ -13571,8 +13597,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-10.json",
       "source_collected_at": "2026-11-10T19:38:35.256212+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "amazon-kindle-colorsoft-16gb-black",

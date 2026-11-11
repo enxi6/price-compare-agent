@@ -1202,6 +1202,12 @@ releases; breaking changes are called out in the release notes.
   Scribe $399.99, Tab S10 Lite $399.99, WF-1000XM5
   $199.99, WH-CH520 $57.99) await user approval.
 
+- Four Best Buy hand rows added (live-browser verified
+  2026-11-10, user-approved 2026-11-11): Kindle Scribe
+  $399.99, Tab S10 Lite $399.99, WF-1000XM5 $199.99
+  Holiday Deal, WH-CH520 $57.99 clearance; verified
+  rankings 90→94.
+
 ### Changed
 
 - Daily price refresh 2026-11-07: full 200-model Meta Catalog sweep
