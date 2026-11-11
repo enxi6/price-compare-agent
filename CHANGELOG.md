@@ -1208,6 +1208,12 @@ releases; breaking changes are called out in the release notes.
   Holiday Deal, WH-CH520 $57.99 clearance; verified
   rankings 90→94.
 
+- Four more Best Buy hand rows added (live-browser
+  verified 2026-11-11, user-approved): WH-1000XM5
+  $198.00, ULT FIELD 1 $139.99, Magic Keyboard (USB-C)
+  $99.99, Forerunner 965 $599.99; verified rankings
+  94→97 (WH-1000XM5 upgrades an out-of-stock row).
+
 ### Changed
 
 - Daily price refresh 2026-11-07: full 200-model Meta Catalog sweep

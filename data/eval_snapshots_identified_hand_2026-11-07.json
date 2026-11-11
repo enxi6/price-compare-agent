@@ -606,6 +606,70 @@
           "in_stock": true
         }
       ]
+    },
+    "sony-wh1000xm5-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 198.0,
+          "title": "Sony WH-1000XM5 Wireless Noise Cancelling Over-the-Ear Headphones (Black)",
+          "url": "https://www.bestbuy.com/product/sony-wh-1000xm5-wireless-noise-cancelling-over-the-ear-headphones-black/J7XSRH5CXG/sku/6505727",
+          "collected_at": "2026-11-11T20:45:00Z",
+          "identifier": "027242923232",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 027242923232 + Model WH1000XM5/B on spec page, $198.00, sold by Best Buy, Add to Cart clickable, pickup today 1 hour; Focus Camera $198 row is out of stock — this Best Buy row is the in-stock one; added on user approval 2026-11-11)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-ult-field-1-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 139.99,
+          "title": "Sony ULT FIELD 1 Wireless Portable Bluetooth Speaker (Black)",
+          "url": "https://www.bestbuy.com/site/sony-ult-field-1-wireless-portable-bluetooth-speaker-black/6577658.p?skuId=6577658",
+          "collected_at": "2026-11-11T20:45:00Z",
+          "identifier": "027242928923",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 027242928923 + Model SRSULT10/B on spec page, $139.99, sold by Best Buy, Add to Cart clickable, 'Only 3 left'; added on user approval 2026-11-11)",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-magic-keyboard-usb-c-white": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 99.99,
+          "title": "Apple Magic Keyboard (USB-C) (2026) White",
+          "url": "https://www.bestbuy.com/product/apple-magic-keyboard-usb-c-2026-white/JJGCQP36PS/sku/6556936",
+          "collected_at": "2026-11-11T20:45:00Z",
+          "identifier": "195951258386",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 195951258386 + MPN MJLX4LL/A on spec page, $99.99, sold by Best Buy, Add to Cart clickable; 2026 model page, old MXCL3LL/A is a different model; added on user approval 2026-11-11)",
+          "in_stock": true
+        }
+      ]
+    },
+    "garmin-forerunner-965-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 599.99,
+          "title": "Garmin Forerunner 965 GPS Smartwatch 47mm (Carbon Gray TLC/Titanium)",
+          "url": "https://www.bestbuy.com/product/garmin-forerunner-965-gps-smartwatch-47-mm-fiber-reinforced-polymer-carbon-gray-tlc-titanium-2023/JXF9YF4C26/sku/6544443",
+          "collected_at": "2026-11-11T20:45:00Z",
+          "identifier": "753759313838",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 753759313838 + Model 010-02809-00 on spec page, $599.99, sold by Best Buy, Add to Cart clickable; titanium black 010-02809-02 is a different model; added on user approval 2026-11-11)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

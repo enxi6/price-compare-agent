@@ -7279,3 +7279,29 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
+
+## 113 — 2026-11-11: Four more Best Buy hand rows added (user-approved, rankings 94→97)
+
+- User-approved 2026-11-11 ("4 行全加"). All four live-verified
+  2026-11-11 ~12:39–12:50 PT: UPC + price + Best Buy
+  self-operated seller + clickable Add to Cart on each spec page.
+- Sony WH-1000XM5 black @ Best Buy $198.00 (UPC 027242923232,
+  SKU 6505727; the existing Focus Camera $198 row is out of
+  stock — this row makes the ranking in-stock); Sony ULT FIELD 1
+  black @ Best Buy $139.99 (UPC 027242928923, SKU 6577658, "Only
+  3 left"); Apple Magic Keyboard (USB-C) (2026) white @ Best Buy
+  $99.99 (UPC 195951258386, MPN MJLX4LL/A, SKU 6556936; old
+  MXCL3LL/A is a different model); Garmin Forerunner 965 black @
+  Best Buy $599.99 (UPC 753759313838, MPN 010-02809-00, SKU
+  6544443; titanium black 010-02809-02 is a different model).
+- Hand models 36→40; matched 103→107, verified rankings 94→97
+  (not 98: WH-1000XM5 already had a matched out-of-stock row,
+  so its Best Buy row upgrades the ranking rather than adding
+  one), verified-unranked 29→26. 56 tests pass.
+- Caveat: ULT FIELD 1 "Only 3 left" — the 2026-11-12 10:52 PT
+  refresh rechecks and drops it if sold out. Not added: JBL Go 4
+  black (Fulfillio marketplace seller, DECISIONS 021), Switch 2
+  GameCube controller (no Best Buy product page found), MX Master
+  4 Graphite @ Costco.com (not listed online; only Logitech's own
+  spec page remains unverified for its UPC). No catalog identifier
+  changes, no DECISIONS.md changes, no Amazon touch, no spending.
