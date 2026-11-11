@@ -7085,3 +7085,28 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   Black Friday week + 'High Demand' warning — the row may drop at
   tomorrow's refresh if sold out. No catalog identifier changes,
   no DECISIONS.md changes, no Amazon touch, no spending.
+
+## 108 — 2026-11-10: Anker Prime 100W — Adorama retry still blocked; Anker direct has no UPC on page
+
+- Adorama retry, live-browser read-only, 2026-11-10 ~17:38 PT:
+  search for "Anker Prime Charger 100W A2688" and direct search by
+  UPC 194644040635 both hit the DataDome device check
+  ("Verification Required", bot activity) — blank page, no product
+  data. Same block as 2026-11-09 (BUILD_LOG 105). No workaround,
+  login, or CAPTCHA solve attempted. Still unverifiable, not
+  evidence Adorama lacks the product.
+- Anker direct (anker.com), live-browser read-only, 2026-11-10
+  ~17:44–17:45 PT: standalone gray A2688 page
+  https://www.anker.com/products/a2688-anker-prime-charger-100w-3-ports-gan
+  — $69.99 (auto $10 code, ending in ~5 days), "In Stock —
+  Estimated delivery in 3 - 7 business days", Add to Cart enabled,
+  sold by Anker itself. Overview confirms Model Number A2688.
+  But UPC 194644040635 appears nowhere on the page: two searches
+  for "UPC" and the code, before and after expanding the
+  Specifications panel, returned no matches. So Anker direct
+  cannot supply a visible first-party row tying A2688 to this UPC.
+- Outcome: spec-page route now exhausted across CDW, Newegg, Best
+  Buy (all checked, each fails on its own grounds), Anker direct
+  (no UPC shown), and Adorama (blocked twice — the only route
+  never actually probed). Model still has no qualifying row and
+  stays unranked. No catalog/snapshot change.
