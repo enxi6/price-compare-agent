@@ -5737,13 +5737,18 @@ EVAL_SET: list[EvalProduct] = [
         model="INZONE H9",
         variant="White (WH-G900)",
         category="headphones",
-        identifiers={},
+        identifiers={"UPC": "027242923522"},
         identifier_sources={
-            "UPC": "UPC pending — no UPC found in batch-1 verification 2026-11-09 "
-            "(data/candidates_batch1_250.md). The H9 II successor has launched, but the H9 is still "
-            "sold new.",
+            "UPC": "UPC 027242923522 verified 2026-11-12 (white only; "
+            "black is a different code 027242928343, kept separate): "
+            "ListenUp Shopify public product JSON (barcode 027242923522, "
+            "SKU SON-WH-G900N-WHI, $178.00) + Best Buy US spec page (UPC "
+            "027242923522, Model WHG900N/W, SKU 6510363) + Kawartha TV "
+            "JSON-LD + Amazon white ASIN B0B1TDHLPT + Tanotis/Volza "
+            "(WH-G900N-WZ) agree. Upgraded to verified on user approval "
+            "2026-11-12 (DECISIONS 074).",
         },
-        status="pending",
+        status="verified",
         notes="Sony INZONE flagship gaming headset (ANC, 360 Spatial Sound); previous generation — H9 "
         "II has launched — but still sold new in the US at ~$178. MPN WH-G900. Flag: previous- "
         "generation model; watch for clearance drift at add time.",

@@ -42,7 +42,7 @@ def test_snapshot_staleness(tmp_path):
 def test_eval_set_shape():
     assert len(EVAL_SET) == 250
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 123
+    assert len(verified) == 124
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
@@ -172,8 +172,7 @@ def test_eval_set_shape():
         "razer-blackwidow-v4-x-green",
         "razer-cobra-pro-black",
         "razer-huntsman-v3-pro-black",
-        "razer-seiren-v3-chroma-black",
-        "sony-inzone-h9-white"}
+        "razer-seiren-v3-chroma-black"}
 
 
 def test_evaluate_counts_fixture_snapshot(tmp_path):

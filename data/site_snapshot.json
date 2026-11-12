@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-11-12T19:44:46.413042+00:00",
+    "generated_at": "2026-11-12T23:32:36.152649+00:00",
     "snapshot_date": "2026-11-12",
     "source_files": 52,
     "identified_source_files": 10,
     "models": 250,
-    "verified_identifiers": 123,
-    "pending_identifiers": 127,
-    "total_offers": 1142,
-    "matched_offers": 115,
-    "suspected_offers": 1027,
-    "verified_ranking_models": 104,
+    "verified_identifiers": 124,
+    "pending_identifiers": 126,
+    "total_offers": 1143,
+    "matched_offers": 117,
+    "suspected_offers": 1026,
+    "verified_ranking_models": 105,
     "models_with_offers": 223,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -15698,27 +15698,42 @@
       "model": "INZONE H9",
       "variant": "White (WH-G900)",
       "category": "headphones",
-      "status": "pending",
-      "identifiers": {},
+      "status": "verified",
+      "identifiers": {
+        "UPC": "027242923522"
+      },
       "offers": [
+        {
+          "merchant": "ListenUp",
+          "price": 178.0,
+          "title": "Sony INZONE H9 Wireless Gaming Headset",
+          "url": "https://listenup.com/products/sony-inzone-h9-wireless-gaming-headset",
+          "collected_at": "2026-11-12T23:32:17Z",
+          "identifier": "027242923522",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "listenup.com Shopify public product JSON (verified 2026-11-12 via direct read; price 17800, compare_at 32800, barcode 027242923522, SKU SON-WH-G900N-WHI, available true; ListenUp first-party; added on user approval 2026-11-12)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
+          "merchant": "Best Buy",
+          "price": 179.99,
+          "title": "Sony - INZONE H9 Wireless Noise Cancelling Gaming Headset, Perfect for PS5, PS4, PC - White",
+          "url": "https://www.bestbuy.com/product/sony-inzone-h9-wireless-noise-cancelling-gaming-headset-perfect-for-ps5-ps4-pc-white/J7XSRH5CQ5/sku/6510363",
+          "collected_at": "2026-11-12T23:32:17Z",
+          "identifier": "027242923522",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live-browser verified 2026-11-12 15:16-15:18 PT; UPC 027242923522 in expanded Specifications > Other, Model WHG900N/W, SKU 6510363, $179.99, Sold by Best Buy, Add to Cart clickable, free delivery Sat 2026-11-14; text-fetch re-check confirms $179.99, Sold by Best Buy, JSON-LD InStock, no contradiction; added on user approval 2026-11-12)",
+          "in_stock": true,
+          "suspected": false
+        },
         {
           "merchant": "Crutchfield",
           "price": 178.0,
           "title": "Sony INZONE H9",
           "url": "https://www.crutchfield.com/I-rFBFc1EZJ/p_158WHG900/Sony-INZONE-H9-White.html",
-          "collected_at": "2026-11-12T19:15:01.140194+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
-        },
-        {
-          "merchant": "ListenUp",
-          "price": 178.0,
-          "title": "Sony INZONE H9 Wireless Noise Cancelling Gaming Headset",
-          "url": "https://listenup.com/products/sony-inzone-h9-wireless-gaming-headset?variant=42640458940575",
           "collected_at": "2026-11-12T19:15:01.140194+00:00",
           "identifier": null,
           "identifier_kind": null,
@@ -15769,8 +15784,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-12.json",
       "source_collected_at": "2026-11-12T19:15:01.140194+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "bose-smart-soundbar-600-black",

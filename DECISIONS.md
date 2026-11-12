@@ -3967,3 +3967,23 @@ written as "superseded by" with the original text kept.
   Buy first-party, $119.99, in stock) and Black 910-007560
   (Staples marketplace) — different MPNs, different models, no
   row, no identifier change. The model stays unranked.
+
+## 074 (2026-11-12): Sony INZONE H9 white UPC verified (027242923522) — black kept separate
+
+- White UPC 027242923522 verified from five agreeing sources:
+  ListenUp Shopify public product JSON (barcode 027242923522, SKU
+  SON-WH-G900N-WHI, $178.00, available true); Best Buy US spec
+  page (UPC 027242923522 in expanded Specifications > Other, Model
+  WHG900N/W, SKU 6510363, $179.99, Sold by Best Buy); Kawartha TV
+  JSON-LD (WHG900N/W, same UPC); Amazon white ASIN B0B1TDHLPT
+  (same UPC — identifier evidence only, not a price/stock/ranking
+  source per DECISIONS 018); Tanotis white page + Volza export
+  data (WH-G900N-WZ, same UPC).
+- Black is a different code, 027242928343 (Amazon black ASIN
+  B0CJH3DJ36) — never mixed with white, per the Pixel Buds 2a
+  Iris/Hazel lesson. The catalog entry is white-only (WH-G900).
+- Catalog `sony-inzone-h9-white` flipped pending→verified on user
+  approval 2026-11-12; two hand rows added the same day (BUILD_LOG
+  116): ListenUp $178.00 + Best Buy $179.99. Crutchfield and
+  Sweetwater $178 rows stay suspected (identifier-empty) until a
+  refresh matches them against the now-verified UPC.

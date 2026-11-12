@@ -7465,3 +7465,40 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
+
+## 116 — 2026-11-12: INZONE H9 white UPC verified (027242923522); two hand rows added (rankings 104→105)
+
+- User-approved 2026-11-12 ("两行都加"). Catalog
+  `sony-inzone-h9-white` flipped pending→verified: white UPC
+  027242923522 from five agreeing sources (ListenUp Shopify JSON
+  barcode + SKU SON-WH-G900N-WHI; Best Buy spec page UPC +
+  Model WHG900N/W, SKU 6510363; Kawartha TV JSON-LD; Amazon
+  white ASIN B0B1TDHLPT as identifier evidence only; Tanotis /
+  Volza WH-G900N-WZ). Black is a different code 027242928343,
+  kept separate (DECISIONS 074).
+- Rows added to the hand file (both in_stock true):
+  ListenUp $178.00 (Shopify JSON re-verified before writing:
+  price 17800, compare_at 32800, barcode 027242923522, available
+  true) and Best Buy $179.99 (live-browser verified 2026-11-12
+  15:16–15:18 PT: UPC in expanded specs, Add to Cart clickable,
+  free delivery Sat 2026-11-14; text-fetch re-check confirms
+  $179.99, Sold by Best Buy, JSON-LD InStock, no contradiction).
+  The $178 drop was already reported in today's refresh (BUILD_LOG
+  115) but the rows were identifier-empty/suspected then; this
+  round makes them matched.
+- Verified numbers from the rebuilt merged snapshot: verified
+  identifiers 123→124, pending 127→126, verified rankings
+  104→105, matched offers 115→117, total offers 1,142→1,143
+  (the hand ListenUp row supersedes the feed's suspected ListenUp
+  row for the same merchant, per the matched-supersede merge rule;
+  Crutchfield / Sweetwater $178 rows stay suspected until a
+  refresh matches them). Hand models 47→48, offers 50→52.
+  Tests 56 pass (two hardcoded count assertions updated
+  123→124 / 127→126 plus the pending-keys set, same precedent
+  as the PS5 Digital flip in 083fd4b).
+- Caveat: H9 is previous-generation (H9 II out) and $178 is a
+  clearance price — tomorrow's 10:52 PT refresh re-checks it;
+  Black Friday may move it. No catalog identifier changes
+  besides the H9 UPC, no Kindle pin change, no models added,
+  no Amazon touch (Amazon cited only as UPC identifier
+  evidence), no spending.

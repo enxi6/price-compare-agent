@@ -1,799 +1,827 @@
 {
-  "meta": {
-    "collected_at": "2026-11-07T11:32:16.629832Z",
-    "source": "hand-verified retailer spec pages (browser, tier 4) — separated from collector output so re-runs cannot clobber hand rows (DECISIONS 061)",
-    "source_tier": 4,
-    "identified": true,
-    "generated_by": "manual extraction from 3bc92c8 snapshot"
-  },
-  "models": {
-    "apple-airpods-pro-3": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 224.99,
-          "title": "Apple AirPods Pro with Wireless MagSafe Charging Case (USB-C, 3rd Generation)",
-          "url": "https://www.bhphotovideo.com/c/product/1920300-REG/apple_mfhp4ll_a_airpods_pro_with_wireless.html",
-          "collected_at": "2026-11-07T11:39:56.896097Z",
-          "identifier": "195950543698",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "apple-macbook-pro-14-m6": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 1999.0,
-          "title": "Apple 14\" MacBook Pro (M6, Space Black)",
-          "url": "https://www.bhphotovideo.com/c/product/2010245-REG/apple_mhwt4ll_a_14_inch_macbook_pro_apple.html",
-          "collected_at": "2026-11-07T21:05:43Z",
-          "identifier": "195951080291",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07; price + UPC on the same page)",
-          "in_stock": true
-        }
-      ]
-    },
-    "logitech-mx-keys-s-pale-grey": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 129.99,
-          "title": "Logitech MX Keys S Wireless Keyboard (Pale Gray)",
-          "url": "https://www.bhphotovideo.com/c/product/1760697-REG/logitech_920_011559_mx_keys_s_wireless.html",
-          "collected_at": "2026-11-07T22:25:00Z",
-          "identifier": "097855187857",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "google-pixel-buds-pro-2-porcelain": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 229.99,
-          "title": "Google Pixel Buds Pro 2 Wireless Noise-Canceling Earbuds (Porcelain)",
-          "url": "https://www.bhphotovideo.com/c/product/1860986-REG/google_ga05760_us_pixel_buds_pro2_porcelain.html",
-          "collected_at": "2026-11-07T22:25:00Z",
-          "identifier": "840244604448",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "apple-ipad-a16-11": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 419.0,
-          "title": "Apple 11\" iPad A16 Chip (128GB, Wi-Fi Only, Silver)",
-          "url": "https://www.bhphotovideo.com/c/product/1883625-REG/apple_md3y4ll_a_11_ipad_a16_chip.html",
-          "collected_at": "2026-11-07T22:25:00Z",
-          "identifier": "195950086232",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "logitech-mx-anywhere-3s-graphite": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 89.99,
-          "title": "Logitech MX Anywhere 3S Wireless Mouse (Black)",
-          "url": "https://www.bhphotovideo.com/c/product/1760693-REG/logitech_910_006928_mx_anywhere_3s_wireless.html",
-          "collected_at": "2026-11-07T22:25:00Z",
-          "identifier": "097855184030",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "logitech-mx-keys-mini-black": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 89.99,
-          "title": "Logitech MX Keys Mini Wireless Keyboard (Black)",
-          "url": "https://www.bhphotovideo.com/c/product/1662677-REG/logitech_920_010475_mx_keys_mini_wireless.html",
-          "collected_at": "2026-11-07T22:25:00Z",
-          "identifier": "097855169617",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        },
-        {
-          "merchant": "Adorama",
-          "price": 96.49,
-          "title": "Logitech MX Keys Mini Wireless Keyboard (Black)",
-          "url": "https://www.adorama.com/logitech-mx-keys-mini-wireless-keyboard-bluetooth-backlit/p/lo9210475",
-          "collected_at": "2026-11-07T22:25:00Z",
-          "identifier": "097855169617",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "adorama.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "logitech-g502-x-plus-black": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 159.99,
-          "title": "Logitech G G502 X Plus LIGHTSPEED Wireless RGB Gaming Mouse (Black)",
-          "url": "https://www.bhphotovideo.com/c/product/1722686-REG/logitech_g_910_006160_g502_x_plus_wireless.html",
-          "collected_at": "2026-11-07T22:26:00Z",
-          "identifier": "097855166951",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "logitech-mx-vertical-graphite": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 119.99,
-          "title": "Logitech MX Vertical Advanced Ergonomic Mouse",
-          "url": "https://www.bhphotovideo.com/c/product/1431406-REG/logitech_910_005447_mx_vertical_advanced_ergonomic.html",
-          "collected_at": "2026-11-08T19:08:00Z",
-          "identifier": "097855144461",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com product page (browser-verified 2026-11-08 daily refresh; price + UPC 097855144461 + In Stock on the same page; $74.99 hand row from 2026-11-07 was stale)",
-          "in_stock": true
-        }
-      ]
-    },
-    "bose-qc-earbuds-black": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 129.0,
-          "title": "Bose QuietComfort Wireless Noise-Canceling Earbuds (Black)",
-          "url": "https://www.bhphotovideo.com/c/product/1847745-REG/bose_888507_0100_quietcomfort_wireless_noise_canceling_earbuds.html",
-          "collected_at": "2026-11-07T22:26:00Z",
-          "identifier": "017817853460",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "logitech-mx-mechanical-tactile-quiet-graphite": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 179.99,
-          "title": "Logitech MX Mechanical Wireless Keyboard (Tactile Quiet Switches)",
-          "url": "https://www.bhphotovideo.com/c/product/1703337-REG/logitech_920_010547_mx_mechanical_wireless_keyboard.html",
-          "collected_at": "2026-11-07T22:26:00Z",
-          "identifier": "097855174659",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "logitech-ergo-k860-graphite": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 149.99,
-          "title": "Logitech ERGO K860 Wireless Split Ergonomic Keyboard",
-          "url": "https://www.bhphotovideo.com/c/product/1540505-REG/logitech_920_009166_ergo_k860_ergonomic_split.html",
-          "collected_at": "2026-11-07T22:26:00Z",
-          "identifier": "097855151667",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        },
-        {
-          "merchant": "Adorama",
-          "price": 149.99,
-          "title": "Logitech ERGO K860 Wireless Split Ergonomic Keyboard (Black)",
-          "url": "https://www.adorama.com/logitech-ergo-k860-wireless-split-ergonomic-keyboard-black/p/logergok860",
-          "collected_at": "2026-11-07T22:26:00Z",
-          "identifier": "097855151667",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "adorama.com spec page (browser-verified 2026-11-07; page also notes Ships from Manufacturer)",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-ult-wear-black": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 148.0,
-          "title": "Sony ULT WEAR Wireless Over-Ear Noise-Canceling Headphones (Black)",
-          "url": "https://www.bhphotovideo.com/c/product/1824830-REG/sony_whult900n_b_ult_wear_wireless_noise.html",
-          "collected_at": "2026-11-07T22:26:00Z",
-          "identifier": "027242928688",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "logitech-g915-x-lightspeed-tactile-black": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 259.99,
-          "title": "Logitech G G915 X LIGHTSPEED Low-Profile Wireless RGB Mechanical Gaming Keyboard (Carbon, GL Tactile)",
-          "url": "https://www.bhphotovideo.com/c/product/1851732-REG/logitech_g_920_012670_g915_x_lightspeed_low_profile.html",
-          "collected_at": "2026-11-07T22:26:00Z",
-          "identifier": "097855195005",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "lenovo-legion-tab-gen-5-eclipse-black": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 799.99,
-          "title": "Lenovo 8.8\" Legion Tab Multi-Touch Tablet",
-          "url": "https://www.bhphotovideo.com/c/product/1959307-REG/lenovo_zah20126us_8_8_legion_tab_gen.html",
-          "collected_at": "2026-11-07T22:26:00Z",
-          "identifier": "199275342448",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "asus-proart-display-pa279crv": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 429.0,
-          "title": "ASUS ProArt PA279CRV 27\" 4K HDR Monitor",
-          "url": "https://www.bhphotovideo.com/c/product/1762484-REG/asus_pa279crv_27_4k_hdr_uhd.html",
-          "collected_at": "2026-11-07T22:27:00Z",
-          "identifier": "195553951531",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-wf-c510-black": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 58.0,
-          "title": "Sony WF-C510 True Wireless Earbuds (Black)",
-          "url": "https://www.bhphotovideo.com/c/product/1850117-REG/sony_wfc510_b_wf_c510_true_wireless_earbuds.html",
-          "collected_at": "2026-11-08T00:32:21Z",
-          "identifier": "027242930339",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com spec page (browser-verified 2026-11-08; price + UPC on the same page)",
-          "in_stock": true
-        }
-      ]
-    },
-    "logitech-g-pro-x-superlight-2-black": {
-      "offers": [
-        {
-          "merchant": "Abt",
-          "price": 159.99,
-          "title": "Logitech G Pro X Superlight 2 Lightspeed Wireless Gaming Mouse in Black - 910-006628",
-          "url": "https://www.abt.com/Logitech-G-Pro-X-Superlight-2-Lightspeed-Wireless-Gaming-Mouse-in-Black-910006628/p/197839.html",
-          "collected_at": "2026-11-08T03:16:21Z",
-          "identifier": "097855177797",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "abt.com listing (browser-verified 2026-11-08; price + UPC on the same page)",
-          "in_stock": true
-        }
-      ]
-    },
-    "nintendo-joy-con-pair-neon-red-neon-blue": {
-      "offers": [
-        {
-          "merchant": "Micro Center",
-          "price": 89.99,
-          "title": "Nintendo Joy-Con Pair Neon Red / Neon Blue",
-          "url": "https://www.microcenter.com/product/674408/nintendo-joy-con-pair-neon-red-neon-blue",
-          "collected_at": "2026-11-08T05:18:00Z",
-          "identifier": "045496590130",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 2 NEW IN STOCK at Tustin Store)",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-playstation-portal": {
-      "offers": [
-        {
-          "merchant": "Micro Center",
-          "price": 249.99,
-          "title": "Sony PlayStation Portal Remote Player for PlayStation 5",
-          "url": "https://www.microcenter.com/product/675124/sony-playstation-portal-remote-player-for-playstation-5",
-          "collected_at": "2026-11-08T05:18:00Z",
-          "identifier": "711719579779",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 2 NEW IN STOCK at Tustin Store)",
-          "in_stock": true
-        }
-      ]
-    },
-    "nintendo-switch-neon": {
-      "offers": [
-        {
-          "merchant": "Micro Center",
-          "price": 339.99,
-          "title": "Nintendo Switch with Neon Blue / Red Controllers",
-          "url": "https://www.microcenter.com/product/674400/nintendo-switch-with-neon-blue-red-controllers",
-          "collected_at": "2026-11-08T05:18:00Z",
-          "identifier": "045496883775",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 3 NEW IN STOCK at Tustin Store)",
-          "in_stock": true
-        }
-      ]
-    },
-    "dell-32-plus-4k-monitor-s3225qs": {
-      "offers": [
-        {
-          "merchant": "Micro Center",
-          "price": 329.99,
-          "title": "Dell 32 Plus 4K Monitor S3225QS",
-          "url": "https://www.microcenter.com/product/693762/dell-32-plus-4k-monitor-s3225qs",
-          "collected_at": "2026-11-08T05:18:00Z",
-          "identifier": "884116485131",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 21 NEW IN STOCK at Tustin Store)",
-          "in_stock": true
-        }
-      ]
-    },
-    "samsung-galaxy-tab-s10-fe-plus-128gb-gray": {
-      "offers": [
-        {
-          "merchant": "Micro Center",
-          "price": 699.99,
-          "title": "Samsung Galaxy Tab S10 FE+ Gray",
-          "url": "https://www.microcenter.com/product/690865/samsung-galaxy-tab-s10-fe-gray",
-          "collected_at": "2026-11-08T05:18:00Z",
-          "identifier": "887276992563",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 3 NEW IN STOCK at Tustin Store)",
-          "in_stock": true
-        }
-      ]
-    },
-    "nintendo-switch-oled-white": {
-      "offers": [
-        {
-          "merchant": "Micro Center",
-          "price": 399.99,
-          "title": "Nintendo Switch OLED Model with White Controllers",
-          "url": "https://www.microcenter.com/product/674398/nintendo-switch-oled-model-with-white-controllers",
-          "collected_at": "2026-11-08T05:18:00Z",
-          "identifier": "045496883386",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 2 NEW IN STOCK at Tustin Store)",
-          "in_stock": true
-        }
-      ]
-    },
-    "nintendo-switch-2": {
-      "offers": [
-        {
-          "merchant": "Micro Center",
-          "price": 499.99,
-          "title": "Nintendo Switch 2 Console",
-          "url": "https://www.microcenter.com/product/695288/nintendo-switch-2-console",
-          "collected_at": "2026-11-08T05:18:00Z",
-          "identifier": "045496885816",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 14 NEW IN STOCK at Tustin Store)",
-          "in_stock": true
-        }
-      ]
-    },
-    "razer-deathadder-v4-pro-black": {
-      "offers": [
-        {
-          "merchant": "Abt",
-          "price": 169.99,
-          "title": "Razer DeathAdder V4 Pro Ultra-Lightweight Wireless Ergonomic Gaming Mouse in Black - RZ01-05330100-R3U1",
-          "url": "https://www.abt.com/Razer-DeathAdder-V4-Pro-Ultra-Lightweight-Wireless-Ergonomic-Gaming-Mouse-in-Black-RZ0105330100R3U1/p/248750.html",
-          "collected_at": "2026-11-08T05:18:00Z",
-          "identifier": "840272920718",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "abt.com listing (live-browser verified 2026-11-08; price + UPC + MPN on the product page; ADD TO CART available and Abt search listing shows In Stock — no 'In Stock' wording on the product page itself; added on user approval 2026-11-07)",
-          "in_stock": true
-        }
-      ]
-    },
-    "xbox-stereo-headset-black": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 59.99,
-          "title": "Microsoft Xbox Stereo Gaming Over-The-Ear Wired Headset for Xbox Series X|S, Xbox One and Windows - Black",
-          "url": "https://www.bestbuy.com/product/microsoft-xbox-stereo-gaming-over-the-ear-wired-headset-for-xbox-series-xs-xbox-one-and-windows-black/J3ZKK5P448/sku/6474763",
-          "collected_at": "2026-11-08T18:55:00Z",
-          "identifier": "889842748031",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-08; price + UPC + MPN on the spec page; Add to Cart available, same-day pickup 1 left at the default store; Best Buy first-party; snapshot feed price was $74.99, live price $59.99)",
-          "in_stock": true
-        }
-      ]
-    },
-    "google-pixel-buds-2a-hazel": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 129.0,
-          "title": "Google Pixel Buds 2a Wireless Earbuds with Active Noise Cancellation Bluetooth Headphones - Hazel",
-          "url": "https://www.bestbuy.com/product/google-pixel-buds-2a-wireless-earbuds-with-active-noise-cancellation-bluetooth-headphones-hazel/J39TC8J6Z8/sku/6642707",
-          "collected_at": "2026-11-08T18:55:00Z",
-          "identifier": "840353930506",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-08; price + UPC + MPN on the spec page; Add to Cart available, same-day pickup 3 left; Best Buy first-party; Hazel page SKU 6642707, not the Iris page 6642709)",
-          "in_stock": true
-        }
-      ]
-    },
-    "logitech-lift-graphite": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 74.99,
-          "title": "Logitech Lift Vertical Ergonomic Wireless Mouse (Graphite)",
-          "url": "https://www.bhphotovideo.com/c/product/1699704-REG/logitech_910_006466_lift_vertical_ergonomic_wireless.html",
-          "collected_at": "2026-11-09T23:20:00Z",
-          "identifier": "097855170927",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com product page (live-browser verified 2026-11-09; price + UPC + MPN on the product page; In Stock with Add to Cart; B&H first-party; added on user approval 2026-11-09)",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-ps5-1tb": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 649.99,
-          "title": "PlayStation 5 Slim Console 1TB - White",
-          "url": "https://www.bestbuy.com/product/playstation-5-slim-console-1tb/JXHQ37TYLC",
-          "collected_at": "2026-11-10T20:45:00Z",
-          "identifier": "711719021452",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-10; price + UPC + MPN on the spec page; Add to Cart available with green Pickup/Shipping ticks — no literal 'In Stock' wording, same evidence shape as the Pixel Buds 2a Hazel row; Best Buy first-party; added on user approval 2026-11-10)",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-ps5-digital-825gb": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 599.99,
-          "title": "PlayStation 5 Slim Digital Edition Console 825GB",
-          "url": "https://www.bestbuy.com/product/playstation-5-slim-digital-edition-console-825gb/JXHQ37TYYL/sku/6646420",
-          "collected_at": "2026-11-11T02:40:00Z",
-          "identifier": "711719021483",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-10; price + UPC + MPN on the spec page; Add to Cart available with green Pickup/Shipping ticks — no literal 'In Stock' wording, same evidence shape as the PS5 1TB disc row; Best Buy first-party; added on user approval 2026-11-10)",
-          "in_stock": true
-        }
-      ]
-    },
-    "jbl-clip-5-black": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 79.95,
-          "title": "JBL Clip 5 Portable Waterproof Wireless Speaker (Black)",
-          "url": "https://www.Bhphotovideo.com/c/product/1808901-REG/jbl_jblclip5blkam_clip_5_portable_waterproof.html",
-          "collected_at": "2026-11-11T05:05:00Z",
-          "identifier": "050036400077",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com product page (live-browser verified 2026-11-10; UPC 050036400077 on page, $79.95, 'In Stock, No Store Display', green Add to Cart clickable, B&H first-party; added on user approval 2026-11-10)",
-          "in_stock": true
-        }
-      ]
-    },
-    "amazon-kindle-scribe-16gb-tungsten": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 399.99,
-          "title": "Amazon Kindle Scribe (16GB, 2024) Tungsten",
-          "url": "https://www.bestbuy.com/product/amazon-kindle-scribe-16gb-2024-tungsten/J39TLSPPGH/sku/6603848",
-          "collected_at": "2026-11-11T05:05:00Z",
-          "identifier": "840414615816",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 840414615816 + MPN B0CZ9VFQ2P on spec page, $399.99, sold by Best Buy, Add to Cart clickable, pickup 'Only 1 left!'; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "samsung-galaxy-tab-s10-lite-128gb-gray": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 399.99,
-          "title": "Samsung Galaxy Tab S10 Lite 10.9\" 128GB Wi-Fi with S Pen, Lite Gray",
-          "url": "https://www.bestbuy.com/product/samsung-galaxy-tab-s10-lite-10-9-128gb-wi-fi-with-s-pen-lite-gray/JJGRF39JQR/sku/6639132",
-          "collected_at": "2026-11-11T05:05:00Z",
-          "identifier": "198957219764",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 198957219764 + MPN SM-X400NZAAXAR on spec page, $399.99 row confirmed Best Buy self-operated, not the DataVision marketplace variant, Add to Cart clickable; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-wf1000xm5-black": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 199.99,
-          "title": "Sony WF-1000XM5 True Wireless Noise Cancelling Earbuds (Black)",
-          "url": "https://www.bestbuy.com/site/sony-wf1000xm5-true-wireless-noise-cancelling-earbuds-black/6546812.p?skuId=6546812",
-          "collected_at": "2026-11-11T05:05:00Z",
-          "identifier": "027242925601",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 027242925601 + Model WF1000XM5/B on spec page, $199.99 Holiday Deal, comp $328.00, sold by Best Buy, Add to Cart clickable, pickup 'Only 2 left!'; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-wh-ch520-black": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 57.99,
-          "title": "Sony WH-CH520 Wireless Headphone with Microphone (Black)",
-          "url": "https://www.bestbuy.com/product/sony-wh-ch520-wireless-headphone-with-microphone-black/J7XSRH53L3/sku/6533161",
-          "collected_at": "2026-11-11T05:05:00Z",
-          "identifier": "027242925205",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 027242925205 + Model WHCH520/B on spec page, $57.99 Clearance, comp $68.00, sold by Best Buy, Add to Cart clickable, pickup 'Only 1 left!'; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-wh1000xm5-black": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 198.0,
-          "title": "Sony WH-1000XM5 Wireless Noise Cancelling Over-the-Ear Headphones (Black)",
-          "url": "https://www.bestbuy.com/product/sony-wh-1000xm5-wireless-noise-cancelling-over-the-ear-headphones-black/J7XSRH5CXG/sku/6505727",
-          "collected_at": "2026-11-11T20:45:00Z",
-          "identifier": "027242923232",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 027242923232 + Model WH1000XM5/B on spec page, $198.00, sold by Best Buy, Add to Cart clickable, pickup today 1 hour; Focus Camera $198 row is out of stock — this Best Buy row is the in-stock one; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "sony-ult-field-1-black": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 139.99,
-          "title": "Sony ULT FIELD 1 Wireless Portable Bluetooth Speaker (Black)",
-          "url": "https://www.bestbuy.com/site/sony-ult-field-1-wireless-portable-bluetooth-speaker-black/6577658.p?skuId=6577658",
-          "collected_at": "2026-11-11T20:45:00Z",
-          "identifier": "027242928923",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 027242928923 + Model SRSULT10/B on spec page, $139.99, sold by Best Buy, Add to Cart clickable, 'Only 3 left'; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "apple-magic-keyboard-usb-c-white": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 99.99,
-          "title": "Apple Magic Keyboard (USB-C) (2026) White",
-          "url": "https://www.bestbuy.com/product/apple-magic-keyboard-usb-c-2026-white/JJGCQP36PS/sku/6556936",
-          "collected_at": "2026-11-11T20:45:00Z",
-          "identifier": "195951258386",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 195951258386 + MPN MJLX4LL/A on spec page, $99.99, sold by Best Buy, Add to Cart clickable; 2026 model page, old MXCL3LL/A is a different model; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "garmin-forerunner-965-black": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 599.99,
-          "title": "Garmin Forerunner 965 GPS Smartwatch 47mm (Carbon Gray TLC/Titanium)",
-          "url": "https://www.bestbuy.com/product/garmin-forerunner-965-gps-smartwatch-47-mm-fiber-reinforced-polymer-carbon-gray-tlc-titanium-2023/JXF9YF4C26/sku/6544443",
-          "collected_at": "2026-11-11T20:45:00Z",
-          "identifier": "753759313838",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 753759313838 + Model 010-02809-00 on spec page, $599.99, sold by Best Buy, Add to Cart clickable; titanium black 010-02809-02 is a different model; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "anker-space-one-pro-black": {
-      "offers": [
-        {
-          "merchant": "B&H Photo",
-          "price": 169.99,
-          "title": "Soundcore by Anker Space One Pro Wireless Over-Ear Closed-Back Headphones (Jet Black)",
-          "url": "https://www.bhphotovideo.com/c/product/1863101-REG/soundcore_by_anker_a3062z11_space_one_pro.html",
-          "collected_at": "2026-11-11T23:07:50Z",
-          "identifier": "194644042479",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com product page (verified 2026-11-11 via direct page read; UPC 194644042479 + MPN A3062Z11 on page, $169.99, 'In Stock, No Store Display', Holiday Savings $30 off $199.99, JSON-LD InStock, B&H first-party; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "jbl-live-beam-3-black": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 199.99,
-          "title": "JBL Live Beam 3 Noise-Canceling True Wireless Earbuds (Black)",
-          "url": "https://www.bestbuy.com/product/jbl-live-beam-3-true-wireless-noise-cancelling-earbuds-2024-black/J7LXFWXHFP/sku/6582671",
-          "collected_at": "2026-11-11T23:07:50Z",
-          "identifier": "050036401210",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 050036401210 + Model JBLLIVEBEAM3BLKAM on spec page, $199.99, Save $29.96 comp $229.95, sold by Best Buy, Add to Cart clickable, pickup at Orange 'Only 1 left!', Shipping FREE Tomorrow; added on user approval 2026-11-11)",
-          "in_stock": true
-        },
-        {
-          "merchant": "B&H Photo",
-          "price": 229.95,
-          "title": "JBL Live Beam 3 Noise-Canceling True Wireless Earbuds (Black)",
-          "url": "https://www.bhphotovideo.com/c/product/1808929-REG/jbl_jbllivebeam3blkam_live_beam_3_noise_canceling.html",
-          "collected_at": "2026-11-11T23:07:50Z",
-          "identifier": "050036401210",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bhphotovideo.com product page (verified 2026-11-11 via direct page read; UPC 050036401210 + MPN JBLLIVEBEAM3BLKAM on page, $229.95, 'In Stock, No Store Display', JSON-LD InStock, B&H first-party; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "garmin-edge-540": {
-      "offers": [
-        {
-          "merchant": "Excel Sports",
-          "price": 349.99,
-          "title": "Garmin Edge 540 GPS Computer",
-          "url": "https://www.excelsports.com/garmin-edge-540-gps-computer",
-          "collected_at": "2026-11-11T23:07:50Z",
-          "identifier": "753759299804",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "excelsports.com product page (live-browser verified 2026-11-11; $349.99 + Garmin Part # 010-02694-00 + UPC/EAN 753759299804 on the same page, 'Only 4 in stock', Add to Cart present and not disabled; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "garmin-lily-2-cream-gold": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 249.99,
-          "title": "Garmin Lily 2 Smartwatch 34 mm Anodized Aluminum Cream Gold with Coconut Silicone Band",
-          "url": "https://www.bestbuy.com/product/garmin-lily-2-smartwatch-34-mm-anodized-aluminum-cream-gold-with-coconut-silicone-band-2024/JXF9YF4K6S/sku/6574617",
-          "collected_at": "2026-11-11T23:07:50Z",
-          "identifier": "753759324711",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 753759324711 + Model 010-02839-00 on spec page, $249.99, sold by Best Buy, Add to Cart clickable, Shipping FREE Tomorrow (green); Pickup at Orange 'Not in stock - Ready Tue, Nov 17' — in stock per Hazel precedent (Add to Cart + delivery green tick); marketplace variants on the page (6ave Electronics / FrontRow Tech) not used; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "microsoft-surface-pro-12-2025-platinum": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 1049.99,
-          "title": "Microsoft Surface Pro Copilot+ PC 12\" Touch-Screen Snapdragon X Plus 16GB Memory 256GB UFS Device Only Latest Model Platinum",
-          "url": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touch-screen-snapdragon-x-plus-16gb-memory-256gb-ufs-device-only-latest-model-platinum/6623676",
-          "collected_at": "2026-11-11T23:07:50Z",
-          "identifier": "196388550555",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 196388550555 + Model EP2-33670 on spec page, $1,049.99, sold by Best Buy, Add to Cart clickable, pickup at Orange 'Only 2 left!', Shipping FREE Tomorrow; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "samsung-galaxy-watch8-40mm-graphite": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 299.99,
-          "title": "Samsung Galaxy Watch8 Aluminum Smartwatch 40mm BT Graphite (2025)",
-          "url": "https://www.bestbuy.com/product/samsung-galaxy-watch8-aluminum-smartwatch-40mm-bt-graphite-2025/JJGRF3X94S/sku/6635084",
-          "collected_at": "2026-11-11T23:07:50Z",
-          "identifier": "198957101786",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 198957101786 + Model SM-L320NDAAXAA on spec page, $299.99, sold by Best Buy, Add to Cart clickable, Shipping FREE Tomorrow (green); Pickup at Orange 'Not in stock - Ready Tue Nov 17' — in stock per Hazel precedent (Add to Cart + delivery green tick); marketplace variants on the page (Esquared Trading / WackyJacky) not used; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
-    },
-    "samsung-galaxy-watch8-44mm-graphite": {
-      "offers": [
-        {
-          "merchant": "Best Buy",
-          "price": 329.99,
-          "title": "Samsung Galaxy Watch8 Aluminum Smartwatch 44mm BT Graphite (2025)",
-          "url": "https://www.bestbuy.com/product/samsung-galaxy-watch8-aluminum-smartwatch-44mm-bt-graphite-2025/JJGRF3XGRG/sku/6635080",
-          "collected_at": "2026-11-11T23:07:50Z",
-          "identifier": "198957098482",
-          "identifier_kind": "UPC",
-          "source_tier": 4,
-          "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 198957098482 + Model SM-L330NDAAXAA on spec page, $329.99, sold by Best Buy, Add to Cart clickable, pickup at Orange ready in 1 hour, Shipping FREE Tomorrow; added on user approval 2026-11-11)",
-          "in_stock": true
-        }
-      ]
+ "meta": {
+  "collected_at": "2026-11-07T11:32:16.629832Z",
+  "source": "hand-verified retailer spec pages (browser, tier 4) \u2014 separated from collector output so re-runs cannot clobber hand rows (DECISIONS 061)",
+  "source_tier": 4,
+  "identified": true,
+  "generated_by": "manual extraction from 3bc92c8 snapshot"
+ },
+ "models": {
+  "apple-airpods-pro-3": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 224.99,
+     "title": "Apple AirPods Pro with Wireless MagSafe Charging Case (USB-C, 3rd Generation)",
+     "url": "https://www.bhphotovideo.com/c/product/1920300-REG/apple_mfhp4ll_a_airpods_pro_with_wireless.html",
+     "collected_at": "2026-11-07T11:39:56.896097Z",
+     "identifier": "195950543698",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
     }
+   ]
+  },
+  "apple-macbook-pro-14-m6": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 1999.0,
+     "title": "Apple 14\" MacBook Pro (M6, Space Black)",
+     "url": "https://www.bhphotovideo.com/c/product/2010245-REG/apple_mhwt4ll_a_14_inch_macbook_pro_apple.html",
+     "collected_at": "2026-11-07T21:05:43Z",
+     "identifier": "195951080291",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07; price + UPC on the same page)",
+     "in_stock": true
+    }
+   ]
+  },
+  "logitech-mx-keys-s-pale-grey": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 129.99,
+     "title": "Logitech MX Keys S Wireless Keyboard (Pale Gray)",
+     "url": "https://www.bhphotovideo.com/c/product/1760697-REG/logitech_920_011559_mx_keys_s_wireless.html",
+     "collected_at": "2026-11-07T22:25:00Z",
+     "identifier": "097855187857",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "google-pixel-buds-pro-2-porcelain": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 229.99,
+     "title": "Google Pixel Buds Pro 2 Wireless Noise-Canceling Earbuds (Porcelain)",
+     "url": "https://www.bhphotovideo.com/c/product/1860986-REG/google_ga05760_us_pixel_buds_pro2_porcelain.html",
+     "collected_at": "2026-11-07T22:25:00Z",
+     "identifier": "840244604448",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "apple-ipad-a16-11": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 419.0,
+     "title": "Apple 11\" iPad A16 Chip (128GB, Wi-Fi Only, Silver)",
+     "url": "https://www.bhphotovideo.com/c/product/1883625-REG/apple_md3y4ll_a_11_ipad_a16_chip.html",
+     "collected_at": "2026-11-07T22:25:00Z",
+     "identifier": "195950086232",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "logitech-mx-anywhere-3s-graphite": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 89.99,
+     "title": "Logitech MX Anywhere 3S Wireless Mouse (Black)",
+     "url": "https://www.bhphotovideo.com/c/product/1760693-REG/logitech_910_006928_mx_anywhere_3s_wireless.html",
+     "collected_at": "2026-11-07T22:25:00Z",
+     "identifier": "097855184030",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "logitech-mx-keys-mini-black": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 89.99,
+     "title": "Logitech MX Keys Mini Wireless Keyboard (Black)",
+     "url": "https://www.bhphotovideo.com/c/product/1662677-REG/logitech_920_010475_mx_keys_mini_wireless.html",
+     "collected_at": "2026-11-07T22:25:00Z",
+     "identifier": "097855169617",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    },
+    {
+     "merchant": "Adorama",
+     "price": 96.49,
+     "title": "Logitech MX Keys Mini Wireless Keyboard (Black)",
+     "url": "https://www.adorama.com/logitech-mx-keys-mini-wireless-keyboard-bluetooth-backlit/p/lo9210475",
+     "collected_at": "2026-11-07T22:25:00Z",
+     "identifier": "097855169617",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "adorama.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "logitech-g502-x-plus-black": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 159.99,
+     "title": "Logitech G G502 X Plus LIGHTSPEED Wireless RGB Gaming Mouse (Black)",
+     "url": "https://www.bhphotovideo.com/c/product/1722686-REG/logitech_g_910_006160_g502_x_plus_wireless.html",
+     "collected_at": "2026-11-07T22:26:00Z",
+     "identifier": "097855166951",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "logitech-mx-vertical-graphite": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 119.99,
+     "title": "Logitech MX Vertical Advanced Ergonomic Mouse",
+     "url": "https://www.bhphotovideo.com/c/product/1431406-REG/logitech_910_005447_mx_vertical_advanced_ergonomic.html",
+     "collected_at": "2026-11-08T19:08:00Z",
+     "identifier": "097855144461",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com product page (browser-verified 2026-11-08 daily refresh; price + UPC 097855144461 + In Stock on the same page; $74.99 hand row from 2026-11-07 was stale)",
+     "in_stock": true
+    }
+   ]
+  },
+  "bose-qc-earbuds-black": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 129.0,
+     "title": "Bose QuietComfort Wireless Noise-Canceling Earbuds (Black)",
+     "url": "https://www.bhphotovideo.com/c/product/1847745-REG/bose_888507_0100_quietcomfort_wireless_noise_canceling_earbuds.html",
+     "collected_at": "2026-11-07T22:26:00Z",
+     "identifier": "017817853460",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "logitech-mx-mechanical-tactile-quiet-graphite": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 179.99,
+     "title": "Logitech MX Mechanical Wireless Keyboard (Tactile Quiet Switches)",
+     "url": "https://www.bhphotovideo.com/c/product/1703337-REG/logitech_920_010547_mx_mechanical_wireless_keyboard.html",
+     "collected_at": "2026-11-07T22:26:00Z",
+     "identifier": "097855174659",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "logitech-ergo-k860-graphite": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 149.99,
+     "title": "Logitech ERGO K860 Wireless Split Ergonomic Keyboard",
+     "url": "https://www.bhphotovideo.com/c/product/1540505-REG/logitech_920_009166_ergo_k860_ergonomic_split.html",
+     "collected_at": "2026-11-07T22:26:00Z",
+     "identifier": "097855151667",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    },
+    {
+     "merchant": "Adorama",
+     "price": 149.99,
+     "title": "Logitech ERGO K860 Wireless Split Ergonomic Keyboard (Black)",
+     "url": "https://www.adorama.com/logitech-ergo-k860-wireless-split-ergonomic-keyboard-black/p/logergok860",
+     "collected_at": "2026-11-07T22:26:00Z",
+     "identifier": "097855151667",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "adorama.com spec page (browser-verified 2026-11-07; page also notes Ships from Manufacturer)",
+     "in_stock": true
+    }
+   ]
+  },
+  "sony-ult-wear-black": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 148.0,
+     "title": "Sony ULT WEAR Wireless Over-Ear Noise-Canceling Headphones (Black)",
+     "url": "https://www.bhphotovideo.com/c/product/1824830-REG/sony_whult900n_b_ult_wear_wireless_noise.html",
+     "collected_at": "2026-11-07T22:26:00Z",
+     "identifier": "027242928688",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "logitech-g915-x-lightspeed-tactile-black": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 259.99,
+     "title": "Logitech G G915 X LIGHTSPEED Low-Profile Wireless RGB Mechanical Gaming Keyboard (Carbon, GL Tactile)",
+     "url": "https://www.bhphotovideo.com/c/product/1851732-REG/logitech_g_920_012670_g915_x_lightspeed_low_profile.html",
+     "collected_at": "2026-11-07T22:26:00Z",
+     "identifier": "097855195005",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "lenovo-legion-tab-gen-5-eclipse-black": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 799.99,
+     "title": "Lenovo 8.8\" Legion Tab Multi-Touch Tablet",
+     "url": "https://www.bhphotovideo.com/c/product/1959307-REG/lenovo_zah20126us_8_8_legion_tab_gen.html",
+     "collected_at": "2026-11-07T22:26:00Z",
+     "identifier": "199275342448",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "asus-proart-display-pa279crv": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 429.0,
+     "title": "ASUS ProArt PA279CRV 27\" 4K HDR Monitor",
+     "url": "https://www.bhphotovideo.com/c/product/1762484-REG/asus_pa279crv_27_4k_hdr_uhd.html",
+     "collected_at": "2026-11-07T22:27:00Z",
+     "identifier": "195553951531",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "sony-wf-c510-black": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 58.0,
+     "title": "Sony WF-C510 True Wireless Earbuds (Black)",
+     "url": "https://www.bhphotovideo.com/c/product/1850117-REG/sony_wfc510_b_wf_c510_true_wireless_earbuds.html",
+     "collected_at": "2026-11-08T00:32:21Z",
+     "identifier": "027242930339",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com spec page (browser-verified 2026-11-08; price + UPC on the same page)",
+     "in_stock": true
+    }
+   ]
+  },
+  "logitech-g-pro-x-superlight-2-black": {
+   "offers": [
+    {
+     "merchant": "Abt",
+     "price": 159.99,
+     "title": "Logitech G Pro X Superlight 2 Lightspeed Wireless Gaming Mouse in Black - 910-006628",
+     "url": "https://www.abt.com/Logitech-G-Pro-X-Superlight-2-Lightspeed-Wireless-Gaming-Mouse-in-Black-910006628/p/197839.html",
+     "collected_at": "2026-11-08T03:16:21Z",
+     "identifier": "097855177797",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "abt.com listing (browser-verified 2026-11-08; price + UPC on the same page)",
+     "in_stock": true
+    }
+   ]
+  },
+  "nintendo-joy-con-pair-neon-red-neon-blue": {
+   "offers": [
+    {
+     "merchant": "Micro Center",
+     "price": 89.99,
+     "title": "Nintendo Joy-Con Pair Neon Red / Neon Blue",
+     "url": "https://www.microcenter.com/product/674408/nintendo-joy-con-pair-neon-red-neon-blue",
+     "collected_at": "2026-11-08T05:18:00Z",
+     "identifier": "045496590130",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 2 NEW IN STOCK at Tustin Store)",
+     "in_stock": true
+    }
+   ]
+  },
+  "sony-playstation-portal": {
+   "offers": [
+    {
+     "merchant": "Micro Center",
+     "price": 249.99,
+     "title": "Sony PlayStation Portal Remote Player for PlayStation 5",
+     "url": "https://www.microcenter.com/product/675124/sony-playstation-portal-remote-player-for-playstation-5",
+     "collected_at": "2026-11-08T05:18:00Z",
+     "identifier": "711719579779",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 2 NEW IN STOCK at Tustin Store)",
+     "in_stock": true
+    }
+   ]
+  },
+  "nintendo-switch-neon": {
+   "offers": [
+    {
+     "merchant": "Micro Center",
+     "price": 339.99,
+     "title": "Nintendo Switch with Neon Blue / Red Controllers",
+     "url": "https://www.microcenter.com/product/674400/nintendo-switch-with-neon-blue-red-controllers",
+     "collected_at": "2026-11-08T05:18:00Z",
+     "identifier": "045496883775",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 3 NEW IN STOCK at Tustin Store)",
+     "in_stock": true
+    }
+   ]
+  },
+  "dell-32-plus-4k-monitor-s3225qs": {
+   "offers": [
+    {
+     "merchant": "Micro Center",
+     "price": 329.99,
+     "title": "Dell 32 Plus 4K Monitor S3225QS",
+     "url": "https://www.microcenter.com/product/693762/dell-32-plus-4k-monitor-s3225qs",
+     "collected_at": "2026-11-08T05:18:00Z",
+     "identifier": "884116485131",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 21 NEW IN STOCK at Tustin Store)",
+     "in_stock": true
+    }
+   ]
+  },
+  "samsung-galaxy-tab-s10-fe-plus-128gb-gray": {
+   "offers": [
+    {
+     "merchant": "Micro Center",
+     "price": 699.99,
+     "title": "Samsung Galaxy Tab S10 FE+ Gray",
+     "url": "https://www.microcenter.com/product/690865/samsung-galaxy-tab-s10-fe-gray",
+     "collected_at": "2026-11-08T05:18:00Z",
+     "identifier": "887276992563",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 3 NEW IN STOCK at Tustin Store)",
+     "in_stock": true
+    }
+   ]
+  },
+  "nintendo-switch-oled-white": {
+   "offers": [
+    {
+     "merchant": "Micro Center",
+     "price": 399.99,
+     "title": "Nintendo Switch OLED Model with White Controllers",
+     "url": "https://www.microcenter.com/product/674398/nintendo-switch-oled-model-with-white-controllers",
+     "collected_at": "2026-11-08T05:18:00Z",
+     "identifier": "045496883386",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 2 NEW IN STOCK at Tustin Store)",
+     "in_stock": true
+    }
+   ]
+  },
+  "nintendo-switch-2": {
+   "offers": [
+    {
+     "merchant": "Micro Center",
+     "price": 499.99,
+     "title": "Nintendo Switch 2 Console",
+     "url": "https://www.microcenter.com/product/695288/nintendo-switch-2-console",
+     "collected_at": "2026-11-08T05:18:00Z",
+     "identifier": "045496885816",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "microcenter.com product page (live-browser verified 2026-11-08; price + UPC + in stock on the same page; 14 NEW IN STOCK at Tustin Store)",
+     "in_stock": true
+    }
+   ]
+  },
+  "razer-deathadder-v4-pro-black": {
+   "offers": [
+    {
+     "merchant": "Abt",
+     "price": 169.99,
+     "title": "Razer DeathAdder V4 Pro Ultra-Lightweight Wireless Ergonomic Gaming Mouse in Black - RZ01-05330100-R3U1",
+     "url": "https://www.abt.com/Razer-DeathAdder-V4-Pro-Ultra-Lightweight-Wireless-Ergonomic-Gaming-Mouse-in-Black-RZ0105330100R3U1/p/248750.html",
+     "collected_at": "2026-11-08T05:18:00Z",
+     "identifier": "840272920718",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "abt.com listing (live-browser verified 2026-11-08; price + UPC + MPN on the product page; ADD TO CART available and Abt search listing shows In Stock \u2014 no 'In Stock' wording on the product page itself; added on user approval 2026-11-07)",
+     "in_stock": true
+    }
+   ]
+  },
+  "xbox-stereo-headset-black": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 59.99,
+     "title": "Microsoft Xbox Stereo Gaming Over-The-Ear Wired Headset for Xbox Series X|S, Xbox One and Windows - Black",
+     "url": "https://www.bestbuy.com/product/microsoft-xbox-stereo-gaming-over-the-ear-wired-headset-for-xbox-series-xs-xbox-one-and-windows-black/J3ZKK5P448/sku/6474763",
+     "collected_at": "2026-11-08T18:55:00Z",
+     "identifier": "889842748031",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-08; price + UPC + MPN on the spec page; Add to Cart available, same-day pickup 1 left at the default store; Best Buy first-party; snapshot feed price was $74.99, live price $59.99)",
+     "in_stock": true
+    }
+   ]
+  },
+  "google-pixel-buds-2a-hazel": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 129.0,
+     "title": "Google Pixel Buds 2a Wireless Earbuds with Active Noise Cancellation Bluetooth Headphones - Hazel",
+     "url": "https://www.bestbuy.com/product/google-pixel-buds-2a-wireless-earbuds-with-active-noise-cancellation-bluetooth-headphones-hazel/J39TC8J6Z8/sku/6642707",
+     "collected_at": "2026-11-08T18:55:00Z",
+     "identifier": "840353930506",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-08; price + UPC + MPN on the spec page; Add to Cart available, same-day pickup 3 left; Best Buy first-party; Hazel page SKU 6642707, not the Iris page 6642709)",
+     "in_stock": true
+    }
+   ]
+  },
+  "logitech-lift-graphite": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 74.99,
+     "title": "Logitech Lift Vertical Ergonomic Wireless Mouse (Graphite)",
+     "url": "https://www.bhphotovideo.com/c/product/1699704-REG/logitech_910_006466_lift_vertical_ergonomic_wireless.html",
+     "collected_at": "2026-11-09T23:20:00Z",
+     "identifier": "097855170927",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com product page (live-browser verified 2026-11-09; price + UPC + MPN on the product page; In Stock with Add to Cart; B&H first-party; added on user approval 2026-11-09)",
+     "in_stock": true
+    }
+   ]
+  },
+  "sony-ps5-1tb": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 649.99,
+     "title": "PlayStation 5 Slim Console 1TB - White",
+     "url": "https://www.bestbuy.com/product/playstation-5-slim-console-1tb/JXHQ37TYLC",
+     "collected_at": "2026-11-10T20:45:00Z",
+     "identifier": "711719021452",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-10; price + UPC + MPN on the spec page; Add to Cart available with green Pickup/Shipping ticks \u2014 no literal 'In Stock' wording, same evidence shape as the Pixel Buds 2a Hazel row; Best Buy first-party; added on user approval 2026-11-10)",
+     "in_stock": true
+    }
+   ]
+  },
+  "sony-ps5-digital-825gb": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 599.99,
+     "title": "PlayStation 5 Slim Digital Edition Console 825GB",
+     "url": "https://www.bestbuy.com/product/playstation-5-slim-digital-edition-console-825gb/JXHQ37TYYL/sku/6646420",
+     "collected_at": "2026-11-11T02:40:00Z",
+     "identifier": "711719021483",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-10; price + UPC + MPN on the spec page; Add to Cart available with green Pickup/Shipping ticks \u2014 no literal 'In Stock' wording, same evidence shape as the PS5 1TB disc row; Best Buy first-party; added on user approval 2026-11-10)",
+     "in_stock": true
+    }
+   ]
+  },
+  "jbl-clip-5-black": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 79.95,
+     "title": "JBL Clip 5 Portable Waterproof Wireless Speaker (Black)",
+     "url": "https://www.Bhphotovideo.com/c/product/1808901-REG/jbl_jblclip5blkam_clip_5_portable_waterproof.html",
+     "collected_at": "2026-11-11T05:05:00Z",
+     "identifier": "050036400077",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com product page (live-browser verified 2026-11-10; UPC 050036400077 on page, $79.95, 'In Stock, No Store Display', green Add to Cart clickable, B&H first-party; added on user approval 2026-11-10)",
+     "in_stock": true
+    }
+   ]
+  },
+  "amazon-kindle-scribe-16gb-tungsten": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 399.99,
+     "title": "Amazon Kindle Scribe (16GB, 2024) Tungsten",
+     "url": "https://www.bestbuy.com/product/amazon-kindle-scribe-16gb-2024-tungsten/J39TLSPPGH/sku/6603848",
+     "collected_at": "2026-11-11T05:05:00Z",
+     "identifier": "840414615816",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 840414615816 + MPN B0CZ9VFQ2P on spec page, $399.99, sold by Best Buy, Add to Cart clickable, pickup 'Only 1 left!'; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "samsung-galaxy-tab-s10-lite-128gb-gray": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 399.99,
+     "title": "Samsung Galaxy Tab S10 Lite 10.9\" 128GB Wi-Fi with S Pen, Lite Gray",
+     "url": "https://www.bestbuy.com/product/samsung-galaxy-tab-s10-lite-10-9-128gb-wi-fi-with-s-pen-lite-gray/JJGRF39JQR/sku/6639132",
+     "collected_at": "2026-11-11T05:05:00Z",
+     "identifier": "198957219764",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 198957219764 + MPN SM-X400NZAAXAR on spec page, $399.99 row confirmed Best Buy self-operated, not the DataVision marketplace variant, Add to Cart clickable; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "sony-wf1000xm5-black": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 199.99,
+     "title": "Sony WF-1000XM5 True Wireless Noise Cancelling Earbuds (Black)",
+     "url": "https://www.bestbuy.com/site/sony-wf1000xm5-true-wireless-noise-cancelling-earbuds-black/6546812.p?skuId=6546812",
+     "collected_at": "2026-11-11T05:05:00Z",
+     "identifier": "027242925601",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 027242925601 + Model WF1000XM5/B on spec page, $199.99 Holiday Deal, comp $328.00, sold by Best Buy, Add to Cart clickable, pickup 'Only 2 left!'; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "sony-wh-ch520-black": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 57.99,
+     "title": "Sony WH-CH520 Wireless Headphone with Microphone (Black)",
+     "url": "https://www.bestbuy.com/product/sony-wh-ch520-wireless-headphone-with-microphone-black/J7XSRH53L3/sku/6533161",
+     "collected_at": "2026-11-11T05:05:00Z",
+     "identifier": "027242925205",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-10; UPC 027242925205 + Model WHCH520/B on spec page, $57.99 Clearance, comp $68.00, sold by Best Buy, Add to Cart clickable, pickup 'Only 1 left!'; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "sony-wh1000xm5-black": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 198.0,
+     "title": "Sony WH-1000XM5 Wireless Noise Cancelling Over-the-Ear Headphones (Black)",
+     "url": "https://www.bestbuy.com/product/sony-wh-1000xm5-wireless-noise-cancelling-over-the-ear-headphones-black/J7XSRH5CXG/sku/6505727",
+     "collected_at": "2026-11-11T20:45:00Z",
+     "identifier": "027242923232",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 027242923232 + Model WH1000XM5/B on spec page, $198.00, sold by Best Buy, Add to Cart clickable, pickup today 1 hour; Focus Camera $198 row is out of stock \u2014 this Best Buy row is the in-stock one; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "sony-ult-field-1-black": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 139.99,
+     "title": "Sony ULT FIELD 1 Wireless Portable Bluetooth Speaker (Black)",
+     "url": "https://www.bestbuy.com/site/sony-ult-field-1-wireless-portable-bluetooth-speaker-black/6577658.p?skuId=6577658",
+     "collected_at": "2026-11-11T20:45:00Z",
+     "identifier": "027242928923",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 027242928923 + Model SRSULT10/B on spec page, $139.99, sold by Best Buy, Add to Cart clickable, 'Only 3 left'; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "apple-magic-keyboard-usb-c-white": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 99.99,
+     "title": "Apple Magic Keyboard (USB-C) (2026) White",
+     "url": "https://www.bestbuy.com/product/apple-magic-keyboard-usb-c-2026-white/JJGCQP36PS/sku/6556936",
+     "collected_at": "2026-11-11T20:45:00Z",
+     "identifier": "195951258386",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 195951258386 + MPN MJLX4LL/A on spec page, $99.99, sold by Best Buy, Add to Cart clickable; 2026 model page, old MXCL3LL/A is a different model; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "garmin-forerunner-965-black": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 599.99,
+     "title": "Garmin Forerunner 965 GPS Smartwatch 47mm (Carbon Gray TLC/Titanium)",
+     "url": "https://www.bestbuy.com/product/garmin-forerunner-965-gps-smartwatch-47-mm-fiber-reinforced-polymer-carbon-gray-tlc-titanium-2023/JXF9YF4C26/sku/6544443",
+     "collected_at": "2026-11-11T20:45:00Z",
+     "identifier": "753759313838",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 753759313838 + Model 010-02809-00 on spec page, $599.99, sold by Best Buy, Add to Cart clickable; titanium black 010-02809-02 is a different model; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "anker-space-one-pro-black": {
+   "offers": [
+    {
+     "merchant": "B&H Photo",
+     "price": 169.99,
+     "title": "Soundcore by Anker Space One Pro Wireless Over-Ear Closed-Back Headphones (Jet Black)",
+     "url": "https://www.bhphotovideo.com/c/product/1863101-REG/soundcore_by_anker_a3062z11_space_one_pro.html",
+     "collected_at": "2026-11-11T23:07:50Z",
+     "identifier": "194644042479",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com product page (verified 2026-11-11 via direct page read; UPC 194644042479 + MPN A3062Z11 on page, $169.99, 'In Stock, No Store Display', Holiday Savings $30 off $199.99, JSON-LD InStock, B&H first-party; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "jbl-live-beam-3-black": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 199.99,
+     "title": "JBL Live Beam 3 Noise-Canceling True Wireless Earbuds (Black)",
+     "url": "https://www.bestbuy.com/product/jbl-live-beam-3-true-wireless-noise-cancelling-earbuds-2024-black/J7LXFWXHFP/sku/6582671",
+     "collected_at": "2026-11-11T23:07:50Z",
+     "identifier": "050036401210",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 050036401210 + Model JBLLIVEBEAM3BLKAM on spec page, $199.99, Save $29.96 comp $229.95, sold by Best Buy, Add to Cart clickable, pickup at Orange 'Only 1 left!', Shipping FREE Tomorrow; added on user approval 2026-11-11)",
+     "in_stock": true
+    },
+    {
+     "merchant": "B&H Photo",
+     "price": 229.95,
+     "title": "JBL Live Beam 3 Noise-Canceling True Wireless Earbuds (Black)",
+     "url": "https://www.bhphotovideo.com/c/product/1808929-REG/jbl_jbllivebeam3blkam_live_beam_3_noise_canceling.html",
+     "collected_at": "2026-11-11T23:07:50Z",
+     "identifier": "050036401210",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bhphotovideo.com product page (verified 2026-11-11 via direct page read; UPC 050036401210 + MPN JBLLIVEBEAM3BLKAM on page, $229.95, 'In Stock, No Store Display', JSON-LD InStock, B&H first-party; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "garmin-edge-540": {
+   "offers": [
+    {
+     "merchant": "Excel Sports",
+     "price": 349.99,
+     "title": "Garmin Edge 540 GPS Computer",
+     "url": "https://www.excelsports.com/garmin-edge-540-gps-computer",
+     "collected_at": "2026-11-11T23:07:50Z",
+     "identifier": "753759299804",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "excelsports.com product page (live-browser verified 2026-11-11; $349.99 + Garmin Part # 010-02694-00 + UPC/EAN 753759299804 on the same page, 'Only 4 in stock', Add to Cart present and not disabled; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "garmin-lily-2-cream-gold": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 249.99,
+     "title": "Garmin Lily 2 Smartwatch 34 mm Anodized Aluminum Cream Gold with Coconut Silicone Band",
+     "url": "https://www.bestbuy.com/product/garmin-lily-2-smartwatch-34-mm-anodized-aluminum-cream-gold-with-coconut-silicone-band-2024/JXF9YF4K6S/sku/6574617",
+     "collected_at": "2026-11-11T23:07:50Z",
+     "identifier": "753759324711",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 753759324711 + Model 010-02839-00 on spec page, $249.99, sold by Best Buy, Add to Cart clickable, Shipping FREE Tomorrow (green); Pickup at Orange 'Not in stock - Ready Tue, Nov 17' \u2014 in stock per Hazel precedent (Add to Cart + delivery green tick); marketplace variants on the page (6ave Electronics / FrontRow Tech) not used; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "microsoft-surface-pro-12-2025-platinum": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 1049.99,
+     "title": "Microsoft Surface Pro Copilot+ PC 12\" Touch-Screen Snapdragon X Plus 16GB Memory 256GB UFS Device Only Latest Model Platinum",
+     "url": "https://www.bestbuy.com/product/microsoft-surface-pro-copilot-pc-12-touch-screen-snapdragon-x-plus-16gb-memory-256gb-ufs-device-only-latest-model-platinum/6623676",
+     "collected_at": "2026-11-11T23:07:50Z",
+     "identifier": "196388550555",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 196388550555 + Model EP2-33670 on spec page, $1,049.99, sold by Best Buy, Add to Cart clickable, pickup at Orange 'Only 2 left!', Shipping FREE Tomorrow; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "samsung-galaxy-watch8-40mm-graphite": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 299.99,
+     "title": "Samsung Galaxy Watch8 Aluminum Smartwatch 40mm BT Graphite (2025)",
+     "url": "https://www.bestbuy.com/product/samsung-galaxy-watch8-aluminum-smartwatch-40mm-bt-graphite-2025/JJGRF3X94S/sku/6635084",
+     "collected_at": "2026-11-11T23:07:50Z",
+     "identifier": "198957101786",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 198957101786 + Model SM-L320NDAAXAA on spec page, $299.99, sold by Best Buy, Add to Cart clickable, Shipping FREE Tomorrow (green); Pickup at Orange 'Not in stock - Ready Tue Nov 17' \u2014 in stock per Hazel precedent (Add to Cart + delivery green tick); marketplace variants on the page (Esquared Trading / WackyJacky) not used; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "samsung-galaxy-watch8-44mm-graphite": {
+   "offers": [
+    {
+     "merchant": "Best Buy",
+     "price": 329.99,
+     "title": "Samsung Galaxy Watch8 Aluminum Smartwatch 44mm BT Graphite (2025)",
+     "url": "https://www.bestbuy.com/product/samsung-galaxy-watch8-aluminum-smartwatch-44mm-bt-graphite-2025/JJGRF3XGRG/sku/6635080",
+     "collected_at": "2026-11-11T23:07:50Z",
+     "identifier": "198957098482",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-11; UPC 198957098482 + Model SM-L330NDAAXAA on spec page, $329.99, sold by Best Buy, Add to Cart clickable, pickup at Orange ready in 1 hour, Shipping FREE Tomorrow; added on user approval 2026-11-11)",
+     "in_stock": true
+    }
+   ]
+  },
+  "sony-inzone-h9-white": {
+   "offers": [
+    {
+     "merchant": "ListenUp",
+     "price": 178.0,
+     "title": "Sony INZONE H9 Wireless Gaming Headset",
+     "url": "https://listenup.com/products/sony-inzone-h9-wireless-gaming-headset",
+     "collected_at": "2026-11-12T23:32:17Z",
+     "identifier": "027242923522",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "listenup.com Shopify public product JSON (verified 2026-11-12 via direct read; price 17800, compare_at 32800, barcode 027242923522, SKU SON-WH-G900N-WHI, available true; ListenUp first-party; added on user approval 2026-11-12)",
+     "in_stock": true
+    },
+    {
+     "merchant": "Best Buy",
+     "price": 179.99,
+     "title": "Sony - INZONE H9 Wireless Noise Cancelling Gaming Headset, Perfect for PS5, PS4, PC - White",
+     "url": "https://www.bestbuy.com/product/sony-inzone-h9-wireless-noise-cancelling-gaming-headset-perfect-for-ps5-ps4-pc-white/J7XSRH5CQ5/sku/6510363",
+     "collected_at": "2026-11-12T23:32:17Z",
+     "identifier": "027242923522",
+     "identifier_kind": "UPC",
+     "source_tier": 4,
+     "source": "bestbuy.com product page (live-browser verified 2026-11-12 15:16-15:18 PT; UPC 027242923522 in expanded Specifications > Other, Model WHG900N/W, SKU 6510363, $179.99, Sold by Best Buy, Add to Cart clickable, free delivery Sat 2026-11-14; text-fetch re-check confirms $179.99, Sold by Best Buy, JSON-LD InStock, no contradiction; added on user approval 2026-11-12)",
+     "in_stock": true
+    }
+   ]
   }
+ }
 }

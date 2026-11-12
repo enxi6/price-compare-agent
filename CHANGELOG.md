@@ -1223,6 +1223,12 @@ releases; breaking changes are called out in the release notes.
   44mm $329.99 @ Best Buy; verified rankings 97→104
   (7 newly ranked models).
 
+- Sony INZONE H9 white UPC verified (027242923522) and two hand
+  rows added (user-approved 2026-11-12, BUILD_LOG 116): ListenUp
+  $178.00 + Best Buy $179.99; verified rankings 104→105, verified
+  identifiers 123→124. White only — black is a different code
+  (027242928343), kept separate.
+
 ### Changed
 
 - Daily price refresh 2026-11-07: full 200-model Meta Catalog sweep
