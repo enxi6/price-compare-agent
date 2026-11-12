@@ -7365,3 +7365,103 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   sign-in, so stock is unverifiable); MX Master 4 Graphite
   (route closed — DECISIONS 073).
 - No catalog identifier changes, no Amazon touch, no spending.
+
+## 115 — 2026-11-12: Daily refresh — Meta sweep 250/250, identified 84 offers, 9 KNOWN_BAD rows, rankings unchanged at 104
+
+- Full 250-model Meta Catalog sweep, 250/250 calls OK (4,992 raw
+  listings). Snapshot `data/eval_snapshots_2026-11-12.json`: 1,035
+  offers, 210/250 models with quotes (prev 1,013/209). Eval: 250
+  models, 123 verified identifiers, 1,035 total, 0 identifier-matched
+  (all suspected, by design). Excluded: title-mismatch 2,735,
+  known-bad 46, non-us/blocked 941, marketplace 67,
+  prev-median-sanity 23. Identified sweep: 84 offers, 73 models, 0
+  moves, 0 added, 0 gone; Datavision Tab S10 FE+ 404 skipped (same as
+  11-07/08/09/10/11 — handle resolves on www, not the bare domain;
+  logged, not worked around). Site rebuilt (253 pages): 1,142 offers,
+  115 matched, 104 verified rankings (unchanged), 223 models with
+  offers. Tests 56 pass.
+- Service restart mid-run: the first identified collection was killed
+  at ~11:21 PT (service restart; /tmp wiped, scratch diffs lost).
+  Re-ran collect_identified from scratch at 11:22 PT; completed
+  19:40 PT with the same 84 offers. The Meta snapshot and all page
+  verifications were done before the restart and survived (data/ is
+  persistent); the diffs were re-derived from the rebuilt snapshots,
+  not re-typed from memory.
+- Confirmed moves (merchant-page verified, read-only crawls,
+  2026-11-12 11:11-11:16 PT): Sony INZONE H9 @ ListenUp $328 ->
+  $178 (Open Graph $178, in stock); Apple Magic Keyboard (USB-C) @
+  MelroseMac $199 -> $99 (JSON-LD $99 InStock; the $199 was the Touch
+  ID variant 46348329320660 on the merged page — variant correction,
+  not a price cut); Garmin Venu 3 @ Thefeed $349.99 -> $449.99 (page
+  $449.99, og price; stock not explicitly stated on the crawl); Apple
+  Mac Studio M5 Max @ B&H Photo $2,369 -> $2,299 (In Stock, $200
+  Holiday Savings off $2,499; MHL64LL/A 36GB/512GB, UPC 195951078564);
+  Samsung Galaxy Tab S10 Lite @ P.C. Richard $349.99 -> $399.99
+  (JSON-LD $399.99 InStock); Samsung Galaxy Watch9 40mm @ Best Buy
+  $409.26 -> $429.99 (InStock, Sold by Best Buy, Graphite LTE 40mm);
+  Keychron Q1 knob Navy Blue/Red @ Keychron $69.99 -> $89.99 (page
+  $89.99 sale, was $189.99; stock not explicitly stated); Corsair M65
+  RGB Ultra @ Corsair $59.99 -> $79.99 (og $79.99 InStock, Corsair
+  Atelier direct); HyperX Cloud III Black @ HyperX $57.99 -> $69.99
+  (variants table: Black $69.99 Available). Trivial (<$5, no page
+  check): Xbox Series S @ Macy's $568.99 -> $564.99; Magic Keyboard
+  Touch ID @ NFM $180 -> $176.40; SoundLink Max @ Macy's $399 ->
+  $401.95; MDR-7506 @ Macy's $114.99 -> $113; Mac Studio @ NFM $2,499
+  -> $2,498; Wolverine V3 Pro @ Best Buy $149.99 -> $149.69.
+- Feed rows proven wrong and excluded (9 rows: 8 KNOWN_BAD + 1 new
+  title filter "weekly price"): PS5 Pro @ Best Buy $1,829 is
+  marketplace seller EZ Tech (page: "Sold & shipped by EZ Tech";
+  yesterday's $1,694 row added to KNOWN_BAD too); Switch Lite
+  Turquoise @ Best Buy $349 is marketplace seller Ultra Discounts
+  Corp and the Coral colorway (model HDHSPAZAA, color selector
+  Coral), not pinned Turquoise; JBL Live 680NC @ Kohl's $159.99
+  resolves to the White variant page (skuid 61603147, Color: White,
+  JSON-LD OutOfStock), not Black; HyperX Cloud III Black-Red @ HyperX
+  $69.99 is a feed variant conflation — the page's variants table
+  still lists Black-Red at $57.99 (only Black rose to $69.99);
+  Logitech G502 X Plus @ Macy's $179.99 is marketplace seller Focus
+  Camera and the page price is $159.99; Xbox Stereo Headset @ Macy's
+  $81.19 is a feed error, the page shows $87.11; MacBook Pro 14
+  PROLED XDR @ Apple $3,699 is the wrong config — URL product
+  MMF64LL/A (48GB/1TB) vs pinned MJ2K4LL/A (24GB/1TB, $2,899);
+  MacBook Neo Blush @ Gomajik $29.99 is a "(weekly price)" lease row
+  (title filter "weekly price" added to the builder). Builder gap
+  noted, not fixed today: a different MPN in the URL is not checked
+  when the model token matches the title (the PROLED XDR case — the
+  builder's MPN check only runs as a positive hit when the token is
+  absent).
+- Unverified, left in suspected: JBL Tune 770NC @ Walmart $149.95 ->
+  $99.95 — the Walmart page shows a bot check ("Robot or human?");
+  stopped, marked unverified, no workaround. Walmart rows also carry
+  marketplace-seller risk, so this one is doubly unconfirmed.
+- Zero-quote models, recorded not smoothed over: Samsung Galaxy
+  Watch8 40mm has zero Meta quotes again — the feed returned only
+  AT&T installments ($11.12, known-bad), a Silver T-Mobile row
+  ($349.99, wrong color), Lebanon 961souq ($210, blocked host) and a
+  T-Mobile store-locator row ($9.73); no legit Graphite row. The
+  44mm has only BrandsMart USA $289.99. Yesterday's poisoned
+  prev-median ($15.28 AT&T) is gone from today's snapshot, so the
+  sanity anchor heals at the next refresh. Apple iPad Pro M5 11 has
+  zero quotes again — the feed returned only higher configs (1TB/2TB
+  nano-texture, cellular) plus AT&T installments ($38.89, known-bad);
+  the pinned 256GB Wi-Fi standard-glass config has no row. Rankings
+  for the Watch8 40/44mm still come from the hand rows in the
+  identified stream.
+- Flagged, left in suspected (unchanged): ShopMyExchange Quest 3S
+  $149 (vs $349-349.99 everywhere else — implausibly low, unproven);
+  Target Liberty 4 Pro $109.99 (vs Anker $149.99 — possible sale,
+  unproven). Tab S10 Lite ShopMyExchange $159 row is gone from the
+  feed today (was flagged yesterday).
+- Rotation: pending items — MX Master 4 retailer hunt, Costco: no
+  standalone MX Master 4 at Costco; the only MX listing is the MX
+  Keyboard and Mouse Combo (Item 1939040, Model 920-013372, $99.99,
+  OutOfStock), a different product. Next retailer: Walmart.
+  DualSense White UPC — no new evidence, not re-searched. M6 Pro UPC
+  closed. Small-brands patrol (Anker): Anker Prime 100W (A2688) @
+  anker.com $69.99, InStock (JSON-LD), Model Number A2688 on the
+  page matches the pinned MPN; the model stays unranked in the Meta
+  stream (identifier-null by design) and the identified stream is
+  unchanged.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
+  no DECISIONS.md changes, no models added, no Amazon touch, no
+  spending, no registrations, no purchases.

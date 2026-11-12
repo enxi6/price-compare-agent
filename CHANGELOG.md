@@ -1339,6 +1339,52 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-12: full 250-model Meta Catalog sweep
+  (4,992 raw listings, 250/250 calls OK) + Shopify identified sweep
+  (84 offers, 73 models, 0 moves; Datavision Tab S10 FE+ 404 skipped,
+  same as 2026-11-07/08/09/10/11). Snapshot
+  `data/eval_snapshots_2026-11-12.json` holds 1,035 quotes across 210
+  of 250 models (prev 1,013/209). Site rebuilt (1,142 offers, 115
+  matched, 104 verified rankings — unchanged). 56 tests pass.
+  Service restart mid-run killed the first identified collection
+  (~11:21 PT); it was re-run from scratch and completed, and the
+  /tmp scratch diffs lost in the restart were re-derived from the
+  rebuilt snapshots.
+- Nine price moves confirmed on merchant pages (read-only crawls,
+  2026-11-12): Sony INZONE H9 @ ListenUp $328 -> $178 (in stock);
+  Apple Magic Keyboard (USB-C) @ MelroseMac $199 -> $99 (InStock —
+  the $199 was the Touch ID variant on the merged page, the feed row
+  now points at the $99 base variant); Garmin Venu 3 @ Thefeed
+  $349.99 -> $449.99 (price confirmed, stock not explicitly stated);
+  Apple Mac Studio M5 Max @ B&H Photo $2,369 -> $2,299 (InStock,
+  $200 Holiday Savings off $2,499); Samsung Galaxy Tab S10 Lite @
+  P.C. Richard $349.99 -> $399.99 (InStock); Samsung Galaxy Watch9
+  40mm @ Best Buy $409.26 -> $429.99 (InStock, sold by Best Buy);
+  Keychron Q1 knob @ Keychron $69.99 -> $89.99 (sale price, was
+  $189.99); Corsair M65 RGB Ultra @ Corsair $59.99 -> $79.99
+  (InStock); HyperX Cloud III Black @ HyperX $57.99 -> $69.99
+  (Available — the Black-Red variant is still $57.99, see below).
+  One move unverified: JBL Tune 770NC @ Walmart $149.95 -> $99.95 —
+  the Walmart page shows a bot check, so the row stays in suspected
+  unconfirmed and was not worked around.
+- Nine feed rows proven wrong and excluded (8 KNOWN_BAD + 1 new
+  title filter): PS5 Pro @ Best Buy $1,829 is marketplace seller EZ
+  Tech, not Best Buy (yesterday's $1,694 marketplace row added too);
+  Switch Lite Turquoise @ Best Buy $349 is marketplace seller Ultra
+  Discounts Corp AND the Coral colorway, not pinned Turquoise; JBL
+  Live 680NC @ Kohl's $159.99 resolves to the White variant page
+  (skuid 61603147, JSON-LD OutOfStock), not Black; HyperX Cloud III
+  Black-Red @ HyperX $69.99 is a feed variant conflation — the page's
+  variants table still lists Black-Red at $57.99; Logitech G502 X
+  Plus @ Macy's $179.99 is marketplace seller Focus Camera and the
+  page price is $159.99; Xbox Stereo Headset @ Macy's $81.19 is a
+  feed error, the page shows $87.11; MacBook Pro 14 PROLED XDR @
+  Apple $3,699 is the wrong config — URL product MMF64LL/A (48GB/1TB)
+  vs pinned MJ2K4LL/A (24GB/1TB, $2,899); MacBook Neo Blush @
+  Gomajik $29.99 is a "(weekly price)" lease row, not a purchase
+  price — the builder now excludes "weekly price" titles. Builder gap
+  noted: a different MPN in the URL is not checked when the model
+  token matches the title (the PROLED XDR case).
 - Daily refresh 2026-11-11: full 250-model Meta Catalog sweep
   (4,980 raw listings, 250/250 calls OK) + Shopify identified sweep
   (84 offers, 73 models; Datavision Tab S10 FE+ 404 skipped, same as
