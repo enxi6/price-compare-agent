@@ -7625,3 +7625,33 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
+## 118 — 2026-11-13: Two more INZONE H9 white hand rows added (Crutchfield + Sweetwater $178.00; matched 117→119, rankings stay 105)
+
+- User-approved 2026-11-13 ("继续"). Rows added to the hand file
+  (both in_stock true): Crutchfield $178.00 and Sweetwater $178.00.
+- Verification: live-browser verified 2026-11-13 15:24–15:25 PT
+  (read-only). Crutchfield: $178.00, was $328.00 ($150 off), Low
+  stock, Item #158WHG900, MFR #WHG900N/W, Add to Cart clickable.
+  Sweetwater: $178.00, was $328.00, savings through 11/22/2026,
+  In Stock! Only 1 left in stock, Item ID WHG900NWht, MPN
+  WHG900N/W in Tech Specs, green Add to Cart clickable.
+  Text-fetch re-check before writing confirms both ($178.00, Low
+  stock, MFR #WHG900N/W, JSON-LD LimitedAvailability for
+  Crutchfield; $178.00 InStock for Sweetwater, fresh crawl).
+- Model tie for these two rows is MPN WHG900N/W, not a page-shown
+  UPC — neither page displays a UPC. The catalog UPC 027242923522
+  was already verified in BUILD_LOG 116 (DECISIONS 074); no
+  identifier change, no new DECISIONS entry, no Kindle pin change,
+  no models added, no Amazon touch, no spending.
+- Verified numbers from the rebuilt merged snapshot: matched
+  offers 117→119, verified rankings stay 105 (H9 was already
+  ranked), total offers unchanged at 1,123 (both hand rows
+  supersede the feed's suspected rows for the same merchants, per
+  the matched-supersede merge rule). Hand models 48, offers
+  52→54. H9 now has 4 matched rows (ListenUp $178.00, Crutchfield
+  $178.00, Sweetwater $178.00, Best Buy $179.99); only Datavision
+  $215 stays suspected. Tests 56 pass.
+- Caveat: Sweetwater has only 1 left and the $150-off ends
+  11/22/2026; Crutchfield is Low stock — tomorrow's 10:52 PT
+  refresh re-checks both. H9 is previous-generation (H9 II out),
+  $178 is a clearance price.

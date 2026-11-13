@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-13T19:16:23.387977+00:00",
+    "generated_at": "2026-11-13T23:26:09.475966+00:00",
     "snapshot_date": "2026-11-13",
     "source_files": 53,
     "identified_source_files": 11,
@@ -8,8 +8,8 @@
     "verified_identifiers": 124,
     "pending_identifiers": 126,
     "total_offers": 1123,
-    "matched_offers": 117,
-    "suspected_offers": 1006,
+    "matched_offers": 119,
+    "suspected_offers": 1004,
     "verified_ranking_models": 105,
     "models_with_offers": 223,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
@@ -15496,6 +15496,32 @@
           "suspected": false
         },
         {
+          "merchant": "Crutchfield",
+          "price": 178.0,
+          "title": "Sony INZONE H9 Over-ear, noise-canceling wireless gaming headset with Bluetooth®, for PlayStation® 5 and PC (White)",
+          "url": "https://www.crutchfield.com/I-rFBFc1EZJ/p_158WHG900/Sony-INZONE-H9-White.html",
+          "collected_at": "2026-11-13T23:26:06Z",
+          "identifier": "027242923522",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "crutchfield.com product page (live-browser verified 2026-11-13 15:24-15:25 PT; $178.00, was $328.00, $150 off, Low stock, Item #158WHG900, MFR #WHG900N/W, Add to Cart clickable; UPC not shown on page - model tie is MPN WHG900N/W, the white variant's part number, same as the Best Buy white row; catalog UPC 027242923522 already verified; text-fetch re-check confirms $178.00, Low stock, MFR #WHG900N/W, JSON-LD InStock/LimitedAvailability; added on user approval 2026-11-13)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
+          "merchant": "Sweetwater",
+          "price": 178.0,
+          "title": "Sony INZONE H9 Wireless Gaming Headset - White",
+          "url": "https://www.sweetwater.com/store/detail/WHG900NWht--sony-inzone-h9-wireless-gaming-headset-white",
+          "collected_at": "2026-11-13T23:26:06Z",
+          "identifier": "027242923522",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "sweetwater.com product page (live-browser verified 2026-11-13 15:24-15:25 PT; $178.00, was $328.00, savings through 11/22/2026, In Stock! Only 1 left in stock, Item ID WHG900NWht, MPN WHG900N/W in Tech Specs, green Add to Cart clickable; UPC not shown on page - model tie is MPN WHG900N/W, same as the Best Buy white row; catalog UPC 027242923522 already verified; text-fetch re-check confirms $178.00 InStock; added on user approval 2026-11-13)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Best Buy",
           "price": 179.99,
           "title": "Sony - INZONE H9 Wireless Noise Cancelling Gaming Headset, Perfect for PS5, PS4, PC - White",
@@ -15507,32 +15533,6 @@
           "source": "bestbuy.com product page (live-browser verified 2026-11-12 15:16-15:18 PT; UPC 027242923522 in expanded Specifications > Other, Model WHG900N/W, SKU 6510363, $179.99, Sold by Best Buy, Add to Cart clickable, free delivery Sat 2026-11-14; text-fetch re-check confirms $179.99, Sold by Best Buy, JSON-LD InStock, no contradiction; added on user approval 2026-11-12)",
           "in_stock": true,
           "suspected": false
-        },
-        {
-          "merchant": "Crutchfield",
-          "price": 178.0,
-          "title": "Sony INZONE H9",
-          "url": "https://www.crutchfield.com/I-rFBFc1EZJ/p_158WHG900/Sony-INZONE-H9-White.html",
-          "collected_at": "2026-11-13T19:16:11.700640+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
-        },
-        {
-          "merchant": "Sweetwater",
-          "price": 178.0,
-          "title": "Sony INZONE H9 Wireless Gaming Headset - White",
-          "url": "https://www.sweetwater.com/store/detail/WHG900NWht--sony-inzone-h9-wireless-gaming-headset-white",
-          "collected_at": "2026-11-13T19:16:11.700640+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
         },
         {
           "merchant": "Datavision",

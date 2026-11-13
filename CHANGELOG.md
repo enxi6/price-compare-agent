@@ -11,6 +11,12 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Two hand-verified rows for the Sony INZONE H9 white (user-approved
+  2026-11-13): Crutchfield $178.00 and Sweetwater $178.00, both
+  in_stock, matched offers 117→119, rankings unchanged at 105
+  (BUILD_LOG 118). Model tie is MPN WHG900N/W (neither page shows a
+  UPC); the catalog UPC 027242923522 was already verified
+  (BUILD_LOG 116, DECISIONS 074), so no identifier change.
 - Identifier-bearing quote source (DECISIONS 059): Shopify public
   product JSON (tier 1) via new `price_agent/collect_identified.py`
   + `data/shopify_handles.json` (31 pinned-variant entries), and
