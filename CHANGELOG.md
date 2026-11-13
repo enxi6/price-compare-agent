@@ -1345,6 +1345,84 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-13: full 250-model Meta Catalog sweep
+  (4,992 raw listings, 250/250 calls OK) + Shopify identified sweep
+  (83 offers, 72 models, 10 moves — all Garmin; Datavision Tab S10
+  FE+ 404 skipped, same as 2026-11-07/08/09/10/11/12, plus Heart
+  Rate Monitors USA vivoactive-6 handle now 301s, so that model
+  drops out of the identified stream until the handle is fixed —
+  the site merge still carries its 2026-11-12 row). Snapshot
+  `data/eval_snapshots_2026-11-13.json` holds 1,011 quotes across
+  213 of 250 models (prev 1,035/210). Site rebuilt (1,123 offers,
+  117 matched, 105 verified rankings — unchanged). 56 tests pass.
+- Big day: a Garmin-wide sale (-$150 on Forerunner 265 / Venu 3 /
+  Forerunner 965, -$100 on Edge 1050 / 850, Forerunner 570,
+  Instinct 3 and Venu 4, -$50 on Edge 540 / Forerunner 165 /
+  Lily 2 / Vivoactive 6) confirmed at Garmin direct (Forerunner
+  265 $299.99, JSON-LD)
+  and by identifier-matched Shopify rows (Edge 1050 $599.99 at
+  Beach Camera / Focus Camera, Venu 3 $299.99 at Focus Camera /
+  Heart Rate Monitors USA, Forerunner 165 $199.99, Instinct 3
+  $249.99, Venu 4 $449.99). Other confirmed moves (read-only page
+  checks, 2026-11-13): Mac mini M6 @ NFM $1,398 -> $898 (InStock,
+  pre-order, still $299 over Apple's $599); Surface Laptop 13 @
+  Best Buy $1,499 -> $1,169.99 (InStock, Early Black Friday, save
+  $430); Corsair Virtuoso Max @ Corsair $147.99 -> $299.99
+  (InStock — the $147.99 promo ended); Bose Soundbar 600 @ Beach
+  Camera $549 -> $399 (sale, regular $549; BuyDig same price);
+  Bose SoundLink Flex 2nd Gen @ B&H $159 -> $99 (InStock, Holiday
+  Savings $60; Bose direct page 403-blocked, Abt also $99);
+  Logitech K860 @ Dell $119.99 -> $149.99 (Dell direct, MPN
+  920-009166); Pixel Watch 4 41mm @ CDW $439.99 -> $341.99
+  (expected in stock in 1-3 days); ASUS Keris II Ace @ ASUS
+  $109.99 -> $159.99 (InStock — promo ended); G502 X Plus @ B&H
+  $159.99 -> $149.99 (InStock, Holiday Savings $40); ROG Pelta @
+  ThinkEdu $129.99 -> $148.99 (InStock); Magic Keyboard Touch ID
+  + Numeric Keypad @ Best Buy $179.99 -> $161.99 (clearance, sold
+  by Best Buy); K2 HE @ Byok $139.99 -> $129.99 (price confirmed,
+  but the page shows that variant sold out). One row unverified at
+  its own page but confirmed at a retailer: Bose Flex 2nd Gen @
+  Bose $99 (bose.com 403, no workaround).
+- Thirteen feed rows proven wrong and excluded (KNOWN_BAD): Anker
+  Prime 26K @ Anker $329.99 is the with-charging-base bundle
+  (SKU B110A), catalog explicitly excludes it; Macy's PS5 Pro
+  $1,945.99 is marketplace ("will not ship in Macy's packaging")
+  and the page shows $1,897.99 (yesterday's $1,874.99 same
+  listing); J&L Game Switch 2 Pro Controller $199.99 is the
+  Resident Evil Requiem Edition; GameStop Xbox Wireless Headset
+  $64.99 URL is the wired stereo headset; B&H G915 X $199.99 /
+  $259.99 is the Clicky 920-012704, catalog pins Tactile
+  920-012670; Walmart Switch Pro Controller $43.79 is marketplace
+  seller ID EXPRESS TRADING and the page says "First Copy";
+  MelroseMac Magic Keyboard $149 is the Touch ID variant
+  MXCK3LL/A, catalog pins no-Touch-ID MJLX4LL/A; CDW Watch8
+  40mm $399.99 is the 4G LTE variant, catalog pins Bluetooth;
+  NFM Colorsoft page shows $269.99, feed says $284.99; J2Games
+  N64 $19.99 is the Old Skool third-party controller (genuine
+  gray still $29.99); MelroseMac Magic Mouse $99 is the Black
+  variant, catalog pins White MXK53AM/A ($79). PS5 Pro UPC note:
+  the Macy's listing states UPC 711719024538, a second source
+  agreeing with the Best Buy spec page against the catalog's
+  711719595946 — catalog unchanged, needs a user decision (the
+  Macy's listing is a marketplace seller's copy, so weak
+  evidence).
+- Rotation: MX Master 4 retailer hunt, Walmart — no listing found
+  (search returns no walmart.com row; the feed has no Walmart row
+  either; the 2026-11-06 attempt was bot-blocked). Next retailer:
+  Micro Center. DualSense White UPC — no new evidence, not
+  re-searched. Apple patrol: iPad Air M4 13 @ apple.com $949
+  confirmed (its feed row disappearing was churn, not a
+  delisting); AirPods Max 2 @ apple.com $549 confirmed. Zero-quote
+  models, recorded not smoothed over: iPad Pro M5 11 has zero Meta
+  quotes again (ranking still comes from the Expercom identified
+  row, $1,139); Watch8 40mm has only an unverified Heyupnow $299
+  row in Meta (ranking still from the hand rows); iPad Air M4 13
+  has zero Meta quotes again (apple.com $949 confirmed above).
+  Anker Prime 100W's Anker-direct row is gone from the feed (was
+  $69.99; anker.com confirmed $69.99 InStock on 2026-11-12, so
+  feed churn). Kindle pin unchanged (B0CFPL6CFY). No catalog
+  identifier changes, no DECISIONS.md changes, no models added,
+  no Amazon touch, no spending, no registrations, no purchases.
 - Daily refresh 2026-11-12: full 250-model Meta Catalog sweep
   (4,992 raw listings, 250/250 calls OK) + Shopify identified sweep
   (84 offers, 73 models, 0 moves; Datavision Tab S10 FE+ 404 skipped,
