@@ -7764,3 +7764,29 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
+
+## 120 — 2026-11-14: Two Bose SoundLink Flex 2nd Gen black hand rows added (B&H Photo + Abt $99.00; matched 119→121, rankings stay 105)
+
+- Both rows text-fetch verified 2026-11-14 (fresh crawls, no
+  contradiction with the parent's morning verification; Abt $99 was
+  also re-confirmed by the 10:52 PT daily refresh): B&H Photo
+  $99.00 — In Stock, No Store Display, $159.00 struck through,
+  Holiday Savings $60.00, Add to Cart, free delivery Wed Nov 18,
+  spec column prints UPC 017817852470, Color Black, JSON-LD $99.00 /
+  InStock; Abt $99.00 — PRICE DROP $99, Save $60, manufacturer
+  rebate ends 12/27/2026, Comp. Value $159, Limit 2 per customer,
+  JSON-LD $99.00 / InStock, model 887612-0100 in title and JSON-LD.
+  Added on user approval 2026-11-14 ("继续").
+- Effect: Flex 2nd Gen black lowest matched price $159.00 (Beach
+  Camera) → $99.00; matched offers 119→121, verified rankings stay
+  105 (model already ranked), total offers unchanged at 1,133 (both
+  hand rows supersede the feed's suspected Abt/B&H rows for the same
+  merchants). Hand file: 48→49 models (Flex is a new hand-file
+  entry), 54→56 offers. Bose's own $99 row NOT added — its page is
+  still blocked, not verified; it stays suspected.
+- Both are promo prices (B&H Holiday Savings $60; Abt manufacturer
+  rebate to 12/27/2026), so the daily refresh re-checks them; they
+  may move again in the Black Friday period. No catalog identifier
+  change (Flex black UPC 017817852470 / MPN 887612-0100 already
+  verified), no DECISIONS.md change, no models added, no Amazon
+  touch, no spending, no registrations, no purchases. Tests 56 pass.

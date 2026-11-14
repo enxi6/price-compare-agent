@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T19:31:37.501541+00:00",
+    "generated_at": "2026-11-14T23:55:17.298088+00:00",
     "snapshot_date": "2026-11-14",
     "source_files": 54,
     "identified_source_files": 12,
@@ -8,8 +8,8 @@
     "verified_identifiers": 124,
     "pending_identifiers": 126,
     "total_offers": 1133,
-    "matched_offers": 119,
-    "suspected_offers": 1014,
+    "matched_offers": 121,
+    "suspected_offers": 1012,
     "verified_ranking_models": 105,
     "models_with_offers": 222,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
@@ -13681,6 +13681,32 @@
       },
       "offers": [
         {
+          "merchant": "B&H Photo",
+          "price": 99.0,
+          "title": "Bose SoundLink Flex Portable Bluetooth Speaker (2nd Gen, Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1847843-REG/bose_887612_0100_soundlink_flex_portable_bluetooth.html?BI=20177",
+          "collected_at": "2026-11-14T23:55:15Z",
+          "identifier": "017817852470",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (text-fetch verified 2026-11-14; In Stock, No Store Display, $99.00, $159.00 struck through, Holiday Savings $60.00, Add to Cart, free delivery Wed Nov 18, spec column prints UPC 017817852470, Color Black, JSON-LD $99.00 / InStock; Holiday Savings $60 promo price; added on user approval 2026-11-14)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
+          "merchant": "Abt",
+          "price": 99.0,
+          "title": "Bose SoundLink Flex Portable Bluetooth Speaker (2nd Gen) in Black - 887612-0100",
+          "url": "https://www.abt.com/Bose-SoundLink-Flex-Portable-Bluetooth-Speaker-2nd-Gen-in-Black-8876120100/p/211187.html",
+          "collected_at": "2026-11-14T23:55:15Z",
+          "identifier": "017817852470",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "abt.com product page (text-fetch verified 2026-11-14; PRICE DROP $99, Save $60, manufacturer rebate ends 12/27/2026, Comp. Value $159, Limit 2 per customer, JSON-LD $99.00 / InStock, model 887612-0100 in title and JSON-LD; manufacturer rebate to 12/27/2026 promo price; added on user approval 2026-11-14)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Beach Camera",
           "price": 159.0,
           "title": "Bose SoundLink Flex II - Black",
@@ -13692,32 +13718,6 @@
           "source": "shopify:beachcamera.com",
           "in_stock": true,
           "suspected": false
-        },
-        {
-          "merchant": "Abt",
-          "price": 99.0,
-          "title": "Bose SoundLink Flex Portable Bluetooth Speaker (2nd Gen) in Black",
-          "url": "https://www.abt.com/Bose-SoundLink-Flex-Portable-Bluetooth-Speaker-2nd-Gen-in-Black-8876120100/p/211187.html",
-          "collected_at": "2026-11-14T19:31:37.205358+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
-        },
-        {
-          "merchant": "B&H Photo",
-          "price": 99.0,
-          "title": "Bose SoundLink Flex Portable Bluetooth Speaker (2nd Gen,",
-          "url": "https://www.bhphotovideo.com/c/product/1847843-REG/bose_887612_0100_soundlink_flex_portable_bluetooth.html?BI=20177",
-          "collected_at": "2026-11-14T19:31:37.205358+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
         },
         {
           "merchant": "Bose",

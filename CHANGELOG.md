@@ -11,6 +11,14 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Two hand-verified rows for the Bose SoundLink Flex 2nd Gen black
+  (user-approved 2026-11-14): B&H Photo $99.00 and Abt $99.00, both
+  in_stock, lowest matched price $159.00→$99.00, matched offers
+  119→121, rankings unchanged at 105 (BUILD_LOG 120). B&H spec
+  column prints UPC 017817852470; Abt ties via MPN 887612-0100 in
+  title and JSON-LD. Both are promo prices (B&H Holiday Savings $60;
+  Abt manufacturer rebate to 12/27/2026). Bose's own $99 row not
+  added — its page is still blocked. No identifier change.
 - Two hand-verified rows for the Sony INZONE H9 white (user-approved
   2026-11-13): Crutchfield $178.00 and Sweetwater $178.00, both
   in_stock, matched offers 117→119, rankings unchanged at 105
