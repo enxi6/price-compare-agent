@@ -1351,6 +1351,16 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-14: full 250-model Meta Catalog sweep
+  (4,992 raw listings, 250/250 calls OK) + Shopify identified sweep
+  (83 offers, 72 models, 0 moves; Datavision Tab S10 FE+ 404
+  skipped, same as 2026-11-07–11-13, plus Heart Rate Monitors USA
+  vivoactive-6 handle now 404s — was a 301 on 11-13 — so that model
+  stays out of the identified stream until the handle is fixed).
+  Snapshot `data/eval_snapshots_2026-11-14.json` holds 1,021 quotes
+  across 210 of 250 models (prev 1,011/213). Site rebuilt (1,133
+  offers, 119 matched, 105 verified rankings — unchanged). 56 tests
+  pass.
 - Daily refresh 2026-11-13: full 250-model Meta Catalog sweep
   (4,992 raw listings, 250/250 calls OK) + Shopify identified sweep
   (83 offers, 72 models, 10 moves — all Garmin; Datavision Tab S10

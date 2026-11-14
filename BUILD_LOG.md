@@ -7655,3 +7655,112 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   11/22/2026; Crutchfield is Low stock — tomorrow's 10:52 PT
   refresh re-checks both. H9 is previous-generation (H9 II out),
   $178 is a clearance price.
+
+## 119 — 2026-11-14: Daily refresh — Meta sweep 250/250, identified 83 offers (0 moves), 13 wrong rows excluded + 3 builder fixes, rankings unchanged at 105
+
+- Full 250-model Meta Catalog sweep (4,992 raw listings, 250/250
+  calls OK) + Shopify identified sweep (83 offers, 72 models, 0
+  moves; Datavision Tab S10 FE+ 404 skipped, same as
+  2026-11-07/08/09/10/11/12/13; Heart Rate Monitors USA
+  vivoactive-6 handle now 404s — was a 301 on 11-13 — so that model
+  stays out of the identified stream until the handle is fixed; the
+  site merge still carries its 2026-11-12 row). Snapshot
+  `data/eval_snapshots_2026-11-14.json`: 1,021 quotes / 210 models
+  (prev 1,011/213). Site rebuilt (1,133 offers, 119 matched, 105
+  verified rankings — unchanged). Tests 56 pass.
+- Confirmed moves (read-only page checks): Garmin sale propagation
+  from 11-13 — Forerunner 265 / Venu 3 / 965 -$150, Edge 1050 / 850
+  -$100, Edge 540 / 165 / Vivoactive 6 -$50, now at BrandsMart,
+  NFM, Kohl's, Target, Als, Eriksbikeshop, Excelsports, Trekbikes,
+  Cabelas, Mackspw, Ascentoutdoors; NFM Forerunner 265 $299.99
+  live-browser confirmed (On Sale, comp $449.99, Add to Cart);
+  Forerunner 965 @ Miyaradventures $444.99 (JSON-LD InStock, all
+  variants $444.99 — $5 under the Garmin sale price) and Vivosmart
+  5 @ Miyaradventures $134.99 (S/M variant) confirmed; HyperX
+  Pulsefire Haste 2 (wired) @ HyperX $89.99 -> $59.99 (og metadata,
+  Black Available); ROG Pelta @ ThinkEdu $148.99 -> $129.99
+  (og metadata InStock, MPN A501 ROG PELTA/BLK); SoloCast 2 @ Best
+  Buy $44.99 -> $59.99 (Sold by Best Buy, JSON-LD InStock); MX
+  Vertical @ Jestik $137.99 -> $152.99 (og metadata InStock, SKU
+  910-005447, above-list small-retailer markup); Dell U3225QE @
+  Tekswork $1,278.81 -> $1,029.99 — price confirmed on the page but
+  stock is contradictory (page text "Sale Sold out" vs JSON-LD
+  InStock), reported as price-confirmed / stock-unclear. WF-1000XM6
+  $298 confirmed as a real sale (ListenUp page: Black $298.00
+  Available; 8 merchants at $298.00; matched Moon Audio $298).
+  SoundLink Flex 2nd Gen $99 re-confirmed at Abt (PRICE DROP, save
+  $60, manufacturer rebate ends 12/27/2026, limit 2, JSON-LD
+  InStock) — corroborates this morning's B&H + Abt verification;
+  the B&H/Abt hand rows are NOT added (recommendation pending the
+  user's nod since this morning); Bose direct $99 still unverified
+  (bose.com page carries no price in its 21-day-old crawl).
+- Feed rows proven wrong and excluded (13 pairs + 2 host blocks):
+  Bose QC Earbuds @ Bose $149 (live-browser check: page shows
+  $179.00, no $149 sale price); Best Buy H9 White $178 is Adorama
+  marketplace on the Best Buy page — Best Buy's own listing is
+  still $179.99 (live-browser verified, SKU 6510363, Sold by Best
+  Buy), so the $179.99 hand row holds; Macy's PS5 Pro $1,842.99
+  and Series S $580.99 are marketplace ("will not ship in Macy's
+  packaging"; page $1,845.99 / $580.99 vs $749.99 / $379.99 MSRP) —
+  the PS5 Pro page also restates UPC 711719024538, the same
+  marketplace copy as the $1,945.99 row, not a new independent
+  source for the UPC decision (still awaiting the user's nod);
+  Surface Laptop 13 Best Buy $1,499.00 (Dune colorway, sold by PC
+  Heaven marketplace) and $1,499.99 (X2 Elite 12-core Dune) and
+  NFM $1,339.99 (X2 Elite) — catalog pins the X2 Plus 10-core
+  Platinum, whose own Best Buy page is still $1,169.99 (JSON-LD
+  InStock, SKU 12740896), so the diff's "$1,169.99 -> $1,499.00"
+  move was a feed-composition artifact, not a price rise; G915 X
+  Lenovo $199.99 is the Clicky switch and NFM $199.99 is Linear —
+  catalog pins Tactile 920-012670; Mainevintagetoys N64 $19.99 is
+  the Old Skool third-party controller (same pattern as J2Games);
+  Dkhardware Access Controller $194.87 is Altronix access-control
+  hardware; Focus Camera LinkBuds Clip $198 is the Greige colorway;
+  Myshopify PartyBox Stage 320 $599.95 is an unnamed myshopify
+  storefront (host blocked) and Bodeguitadelahorro $543.47 is a
+  Spanish-language LatAm store (host blocked); Corsair K65 Plus
+  Wireless @ Corsair $129.99 is the TACTILE variant (CH-91D441F-NA),
+  catalog pins the MLX Red linear CH-91D401L-NA.
+- Builder fixes (validated by rebuilding 2026-11-13 from its raw
+  files: 6 quotes removed, each verified correct): (a) keyboard
+  switch type (tactile/clicky/linear) is now compared on its own,
+  ungated — the old check only ran when the title contained
+  "switch" and compared only the first switch word, so "Brown
+  Clicky Switch" passed against pinned "GL Tactile (Brown)" and
+  "Linear" titles with no "switch" word were never checked;
+  (b) config_pairs now reads hyphenated counts ("10-core") — the
+  Surface Laptop's pinned 10-core never entered the variant pairs,
+  so the X2 Elite 12-core title passed; (c) COLOR_WORDS gains
+  "dune" (Surface color) and "greige" (LinkBuds Clip colorway).
+  KNOWN_BAD gains the 12 tuples above; BLOCKED_HOSTS gains
+  sc0m4g-fq.myshopify.com and bodeguitadelahorro.com.
+- Surface Laptop 13 Platinum added to CARRIED: the feed dropped
+  the Platinum row today and the only remaining rows were the
+  excluded Dune/Elite ones, so the model would show zero offers.
+  Carried Best Buy $1,169.99 (browser-verified 2026-11-14). Early
+  Black Friday price ends Nov 15 — the next refresh must re-check
+  the Platinum page before trusting the carry.
+- Unverified: G502 X Plus @ NFM $146.99 (page shows "See Price in
+  Checkout", no numeric price; in stock in Omaha store); Xbox
+  Series X @ Walmart $899.99 (bot check "Robot or human?", no
+  workaround); Bose Flex 2nd Gen $99 at Bose direct (see above).
+  Zero-quote models: 41 (incl. Surface Laptop 13, G915 X, K65 Plus
+  — all due to today's exclusions, not delistings; iPad Pro M5 11
+  and iPad Air M4 13 still zero; Watch8 40mm only unverified
+  Heyupnow $299; Watch8 44mm Best Buy $298.00 is back in the feed).
+  Datavision rows vanished from the Meta feed wholesale (incl. the
+  H9 $215 suspect row — H9 white now has only the 4 matched rows
+  plus Focus Camera $178 suspected). AirPods Pro 3: yesterday's
+  unproven Walmart $199 / Govauctions $250 / Peblswagstore $300
+  rows are gone; new unproven rows BJ's $199.99 and Plug $199.99
+  (Plug is a refurb seller) stay suspected, not page-checked.
+- Rotation: pending items — MX Master 4 Micro Center hunt: no
+  standard Graphite 910-007558 listing (only the for-Mac Black
+  910-007575, $119.99 InStock); next retailer Staples. Sony
+  patrol: WH-1000XM6 Black $379.99 at Sony direct (save $80 vs
+  $459.99), unchanged from the Nov 3 check; latest page copy
+  crawled 2026-11-02, no explicit stock wording. DualSense White
+  UPC — no new evidence, not re-searched.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
+  no DECISIONS.md changes, no models added, no Amazon touch, no
+  spending, no registrations, no purchases.
