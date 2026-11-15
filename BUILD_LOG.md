@@ -7815,3 +7815,66 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   (new models have no quotes yet, batch-1 precedent). Total offers
   unchanged at 1,133. Site rebuilt (303 pages). Tests 56 pass.
   No Amazon touch, no spending, no registrations, no purchases.
+
+## 122 — 2026-11-15: Daily refresh — first full sweep of 300 models; builder hardened against wrong-variant rows
+
+- Meta sweep 300/300 calls OK. Snapshot 2026-11-15: 300 models, 255
+  with quotes, 1,219 offers; 37 price moves, 300 new quotes, 125
+  disappeared quotes (diff vs 2026-11-14). Identified stream:
+  72 models, 83 offers, 2 skipped (known 404s: Heart Rate Monitors
+  USA vivoactive-6, Datavision Tab S10 FE+). Site rebuilt:
+  1,331 offers, 121 matched, 105 verified rankings, 303 pages.
+  Eval 1,219 quotes, 0 identifier matches (by design). Tests 56 pass.
+- Black Friday week: JBL cuts confirmed on merchant pages — Bar
+  1300X MK2 $1,699.95→$1,199.95 (JBL + 4 merchants), Tour One M3
+  Smart Tx $449.95→$149.95 (JBL), Xtreme 4 $379.95→$269.95 (JBL,
+  Electronicsexpo), Charge 6 $199.95→$139.95 (JBL), Flip 7
+  $149.95→$99.95 (JBL), Clip 5 $79.95→$49.95 (JBL), PartyBox Stage
+  320 $629.95→$439.95 (RC Willey), Live 680NC $159.95→$79.95
+  (Sweetwater, $80 rebate to 12/05). Also confirmed: HyperX Alloy
+  Rise 75 $169.99→$84.99, QuadCast 2 S $149.99→$199.99 (sale ended),
+  Cloud III S $129.99→$139.99 (sale ended), HP OMEN 32x $503.99→
+  $839.99 (yesterday's row was a bad feed row), Forerunner 965
+  $599.99→$449.99 (Confluence Running, Garmin sale), Instinct 3
+  AMOLED 45mm $349.99→$249.99 (Kohl's), Flex 2nd Gen $159→$99
+  (Lenovo, matches B&H/Abt), BlackWidow V4 Pro Green $199.99→
+  $179.99 (B&H), G502 X $79.99→$99.99 (BrandsMart), G502 X Plus
+  $188.99→$178.99 (Staples), Wolverine V3 Pro $149.69→$199.99
+  (Best Buy, sale ended), LinkBuds Clip $198→$228 and WF-1000XM6
+  $298→$328 (ListenUp, sales ended). Identified stream agrees on
+  all four HyperX/Sony moves. Garmin sale propagation continues.
+- Builder hardening (hidden_files/build_snapshot.py): 27 new
+  KNOWN_BAD tuples; COLOR_WORDS + matcha/quartz/camoflage;
+  BLOCKED_HOSTS + lacuracaonline.com (El Salvador) and
+  spinneyslebanon.com (Lebanon); TITLE_EXCLUDE_WORDS + "japanese
+  import"; new title_matches checks — LTE, Scribe, Paperwhite,
+  Touch ID, numeric keypad. Validation: rebuilding 2026-11-14
+  with the new builder changes only 7 rows, all correct
+  wrong-variant exclusions (MelroseMac Magic Keyboard $199; Best
+  Buy Touch ID keyboards $134.99/$149.99 vs the no-Touch-ID model;
+  Pixel Watch 4 LTE $449.95/$449.99/$469.98; Watch9 LTE $429.99).
+  A first-draft Touch ID check falsely dropped the numeric-keypad
+  model's rows (its variant does not name Touch ID); caught by the
+  same validation and narrowed to "no touch id" before use. The
+  rebuild also caught two Paperwhite rows ($199.99, Best Buy +
+  Target) matched to the base Kindle 16GB 2024 — excluded, leaving
+  three correct $149.99 rows.
+- Unverified, left in suspected (not excluded): Walmart Switch Pro
+  Controller $37.50 (Walmart page bot-blocked); Electronic Express
+  BlackShark V3 Pro $219.99 (page shows no price); CDW Pixel Watch
+  4 41mm $439.99 (title silent on LTE); Quill Origins 65 Aqua
+  $114.99 (likely Red switch, title silent); Ar Lb Origins 65 $85
+  (unproven merchant). Tour Pro 3 black now has zero Meta quotes
+  (feed churn — JBL/Best Buy rows gone, not a delisting).
+- Rotation: MX Master 4 Graphite — Staples has no standard
+  Graphite 910-007558 (for-Mac Black 910-007575 $120.11, White
+  Silver 910-007574 $123.09, Pale Gray 910-007559 $120.08); next
+  retailer Office Depot. Nintendo patrol: Switch 2 $499.99 regular,
+  Mario Kart World bundle $549.99 regular / $499.99 promo Nov 22–
+  Dec 5, no delistings. Surface Laptop 13 Best Buy carried row
+  re-checked $1,169.99 InStock — holds; watch item: page also shows
+  "Sold & shipped by antonline" (ambiguous, may attach to another
+  config on the merged page).
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
+  no DECISIONS.md changes, no models added, no Amazon touch, no
+  spending, no registrations, no purchases.

@@ -9,6 +9,21 @@ releases; breaking changes are called out in the release notes.
 
 ## [Unreleased]
 
+### Fixed
+
+- Snapshot builder (2026-11-15): new variant guards in `title_matches`
+  — LTE (Pixel Watch 4 / Watch9 LTE rows), Scribe and Paperwhite
+  titles vs non-Scribe / non-Paperwhite models, Touch ID and numeric
+  keypad vs models pinning neither — plus 27 known-bad rows, two
+  non-US hosts blocked, and three color words (`matcha`, `quartz`,
+  `camoflage`). Removes wrong-variant rows that had been matching
+  (e.g. Best Buy Pixel Watch 4 LTE $449.99, Kindle Paperwhite $199.99
+  on the base Kindle, Magic Keyboard Touch ID $149 on the no-Touch-ID
+  model). Rebuilding 2026-11-14 with the new builder changes only
+  those 7 rows, all correct exclusions; a first-draft Touch ID check
+  that falsely dropped the numeric-keypad model's rows was caught by
+  the same validation and narrowed before use.
+
 ### Added
 
 - Second 50-model expansion batch (user-approved 2026-11-14):
