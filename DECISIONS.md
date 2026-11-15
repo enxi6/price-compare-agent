@@ -3987,3 +3987,52 @@ written as "superseded by" with the original text kept.
   116): ListenUp $178.00 + Best Buy $179.99. Crutchfield and
   Sweetwater $178 rows stay suspected (identifier-empty) until a
   refresh matches them against the now-verified UPC.
+
+## 075 (2026-11-14): Expansion batch 2 to 300 — second 50-model batch, user-approved
+
+- Second batch of 50 added (250 → 300 models, user approved
+  2026-11-14 by tapping "先开第二批 50", per DECISIONS 068's
+  batches-of-50 path and the 500-model electronics-only target the
+  user set the same day): 11 UPC verified, 39 UPC pending. Pending
+  identifiers stay empty, with leads and conflicts recorded in
+  identifier_sources/notes — no rule change, no identifier invented.
+  Source: data/candidates_batch2_300.md (list-only prep, 2026-11-11;
+  nothing added until the user's approval).
+- Overlap re-verified at add time by script against the 250-model
+  snapshot (keys + verified UPCs + MPNs): 0 collisions. All 11
+  verified UPCs re-verified with a second agreeing source
+  (Adorama/B&H/Abt/PBTech specs); AW2725Q's UPC 884116493297 now
+  has PBTech + distributor spec PDFs agreeing, stronger than the
+  draft's single source.
+- Kindle 16GB 2024 (#47) ADDED as drafted — no Reserve swap. The
+  variant pinned cleanly at add time: B0CNV9F72P is the ad-supported
+  2024 11th-gen model (Best Buy Q&A + Kohl's: "ad supported device
+  that displays sponsored screensavers on the device's lockscreen").
+  Price resolution: $149.99 is the CURRENT price (Abt $149.99
+  InStock, Best Buy $149.99 sold-by-Best-Buy SKU 6599466, re-checked
+  2026-11-14) — the Aug 2026 hike from the $109.99 launch MSRP;
+  $109.99 is stale, not a variant mix-up. UPC stays pending (no UPC
+  surfaced on Target/Abt spec pages).
+- Flagged items re-checked at add time: ULT FIELD 7 B&H stock
+  conflict persists (crawls still split "Temporarily Out of Stock"
+  vs "In Stock") — no B&H row added; Best Buy $499.99 InStock
+  (SKU 6577677) is the solid channel. ULT FIELD 5: Best Buy
+  sold-by-Best-Buy $349.99 InStock (SKU 6620181) confirmed as the
+  live in-stock channel (Adorama still backorder, expected
+  11/23/2026). Tune Beam 2 Black: JBL.com US page confirmed
+  (Item# JBLTBEAM2BLKAM, $109.95, InStock). Q5 Max Red: keychron.com
+  US Available ($239.99) confirmed. AW2725DM: Dell US $199.99
+  (list $269.99), MPN FC46N confirmed. U4025QW: Dell US $1,749.99
+  (list $2,399.99); MPN corrected to K1VW5 per Dell spec page (the
+  draft's "U4025QW" as MPN is the model name, not the manufacturer
+  part). No model was dropped; the flags were for row verification,
+  not exclusion (batch-1 precedent, DECISIONS 070). Reserve (Bose
+  TV Speaker 2nd Gen) stays OUT, first replacement if any of the 50
+  fails re-check later.
+- New category values "accessories", "cameras", "docks" (Apple
+  Pencils, Joy-Con 2 Charging Grip, Switch 2 Camera, Switch 2 Dock
+  Set); the site builds its category list dynamically, so no
+  allowlist change was needed. Site copy updated 250 → 300
+  (build_site.py, build_site_snapshot.py). Tests updated to 300
+  models / 135 verified / 165 pending. No Amazon touch, no
+  spending.

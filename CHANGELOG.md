@@ -11,6 +11,21 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Second 50-model expansion batch (user-approved 2026-11-14):
+  catalog 250→300 models, 11 UPC verified / 39 pending, 18 brands,
+  new categories accessories / cameras / docks (DECISIONS 075,
+  BUILD_LOG 121). Overlap re-verified by script (0 collisions);
+  all 11 verified UPCs re-verified with a second source. Kindle
+  16GB 2024 added as drafted (UPC pending, MPN B0CNV9F72P):
+  ad-supported variant pinned, $149.99 confirmed as the current
+  price (Aug 2026 hike from the $109.99 launch MSRP) — no Reserve
+  swap. Flag re-checks: ULT FIELD 7 B&H stock conflict unresolved
+  (no B&H row); ULT FIELD 5 Best Buy $349.99 InStock, Tune Beam 2
+  Black JBL.com $109.95 InStock, Q5 Max Red keychron.com Available,
+  AW2725DM Dell US $199.99, U4025QW Dell US $1,749.99 (MPN
+  corrected to K1VW5) all confirmed. Matched offers 121 and
+  verified rankings 105 unchanged (new models have no quotes yet);
+  total offers 1,133. Site rebuilt (303 pages). Tests 56 pass.
 - Two hand-verified rows for the Bose SoundLink Flex 2nd Gen black
   (user-approved 2026-11-14): B&H Photo $99.00 and Abt $99.00, both
   in_stock, lowest matched price $159.00→$99.00, matched offers

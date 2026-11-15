@@ -40,9 +40,9 @@ def test_snapshot_staleness(tmp_path):
 
 
 def test_eval_set_shape():
-    assert len(EVAL_SET) == 250
+    assert len(EVAL_SET) == 300
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 124
+    assert len(verified) == 135
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
@@ -172,12 +172,52 @@ def test_eval_set_shape():
         "razer-blackwidow-v4-x-green",
         "razer-cobra-pro-black",
         "razer-huntsman-v3-pro-black",
-        "razer-seiren-v3-chroma-black"}
+        "razer-seiren-v3-chroma-black",
+        "sony-inzone-buds-black",
+        "sony-bravia-theatre-bar-6-black",
+        "bose-qc-ultra-earbuds-2nd-gen-black",
+        "jbl-partybox-130-black",
+        "jbl-tune-beam-2-black",
+        "logitech-g-pro-x-superlight-2c-black",
+        "logitech-mx-master-3s-bluetooth-black",
+        "razer-deathadder-v3-hyperspeed-black",
+        "razer-kraken-v4-black",
+        "razer-seiren-v3-mini-black",
+        "razer-viper-v3-hyperspeed-black",
+        "hyperx-cloud-stinger-2-black",
+        "hyperx-pulsefire-haste-2-wireless-black",
+        "hyperx-quadcast-2-black",
+        "corsair-scimitar-elite-wireless-se-gun-metal",
+        "apple-pencil-pro-white",
+        "apple-magic-keyboard-touch-id-usb-c-white",
+        "apple-watch-se3-44mm-gps-starlight",
+        "apple-watch-series-12-46mm-gps-dark-bronze",
+        "samsung-galaxy-buds3-pro-silver",
+        "nintendo-switch-2-camera",
+        "nintendo-switch-2-dock-set",
+        "nintendo-joy-con-2-charging-grip",
+        "garmin-forerunner-970-black",
+        "garmin-forerunner-570-47mm-slate-gray",
+        "garmin-fenix-8-47mm-carbon-gray",
+        "keychron-q1-he-carbon-black",
+        "keychron-q6-max-carbon-black",
+        "keychron-q5-max-carbon-black",
+        "anker-prime-power-bank-20k-220w-black",
+        "alienware-aw2725dm",
+        "alienware-aw2725d",
+        "dell-u4025qw",
+        "hp-omen-27qs-g2-black",
+        "hp-omen-transcend-32-black",
+        "amazon-kindle-16gb-2024-black",
+        "asus-rog-strix-scope-ii-96-wireless-black",
+        "asus-rog-azoth-black",
+        "asus-rog-xbox-ally-x-black",
+}
 
 
 def test_evaluate_counts_fixture_snapshot(tmp_path):
     result = evaluate(_snapshot(tmp_path))
-    assert result["models"] == 250
+    assert result["models"] == 300
     assert result["total_offers"] == 1
     # No UPC in snapshots -> everything lands in "suspected", by design.
     assert result["matched"] == 0 and result["suspected"] == 1

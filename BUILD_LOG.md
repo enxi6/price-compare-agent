@@ -7790,3 +7790,28 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   change (Flex black UPC 017817852470 / MPN 887612-0100 already
   verified), no DECISIONS.md change, no models added, no Amazon
   touch, no spending, no registrations, no purchases. Tests 56 pass.
+
+## 121 — 2026-11-14: Expansion batch 2 added — catalog 250 → 300 (DECISIONS 075)
+
+- User-approved 2026-11-14 17:25 PT ("先开第二批 50"). 50 models
+  added from data/candidates_batch2_300.md (drafted 2026-11-11):
+  11 UPC verified, 39 pending; 18 brands; new categories
+  accessories / cameras / docks. Overlap re-verified by script
+  (keys + verified UPCs + MPNs vs the 250-model snapshot): 0
+  collisions. All 11 verified UPCs re-verified with a second
+  agreeing source at add time.
+- Kindle 16GB 2024 added as drafted (UPC pending, MPN B0CNV9F72P):
+  variant pinned to the 2024 ad-supported model; $149.99 confirmed
+  as the current price (Abt InStock, Best Buy sold-by-Best-Buy),
+  the Aug 2026 hike from the $109.99 launch MSRP. No Reserve swap.
+  Flag re-checks: ULT FIELD 7 B&H stock conflict unresolved (no
+  B&H row); ULT FIELD 5 Best Buy $349.99 InStock confirmed; Tune
+  Beam 2 Black JBL.com US $109.95 InStock confirmed; Q5 Max Red
+  keychron.com US Available confirmed; AW2725DM Dell US $199.99
+  confirmed; U4025QW Dell US $1,749.99 confirmed, MPN corrected to
+  K1VW5. Reserve (Bose TV Speaker 2nd Gen) stays out.
+- Effect: models 250→300, verified identifiers 124→135, pending
+  126→165; matched offers 121 and verified rankings 105 unchanged
+  (new models have no quotes yet, batch-1 precedent). Total offers
+  unchanged at 1,133. Site rebuilt (303 pages). Tests 56 pass.
+  No Amazon touch, no spending, no registrations, no purchases.
