@@ -7878,3 +7878,95 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
+
+## 123 — 2026-11-16: Daily refresh — Black Friday cuts deepen; four Best Buy marketplace rows excluded
+
+- Meta sweep 300/300 calls OK. Snapshot 2026-11-16: 300 models, 260
+  with quotes, 1,187 offers; 57 price moves, 153 new quotes, 179
+  disappeared quotes (diff vs 2026-11-15). Identified stream:
+  72 models, 83 offers, 2 skipped (same known 404s: Heart Rate
+  Monitors USA vivoactive-6, Datavision Tab S10 FE+). Site rebuilt:
+  1,300 offers, 121 matched, 105 verified rankings, 303 pages.
+  Eval 1,187 quotes, 0 identifier matches (by design). Tests 56 pass.
+- Black Friday week, second wave — page-confirmed cuts: JBL Tour
+  One M3 Smart Tx $449.95→$149.95 (Wellbots; JBL direct $149.95
+  confirmed), Boombox 4 $549.95→$399.95 (JBL direct confirmed),
+  PartyBox 330 $629.95→$499.95 (Target $499.99 confirmed; Macy's
+  $499.95 / NFM $499.95 corroborated), Live Buds 3 $229.99→$99.99
+  (Kohl's confirmed; P.C. Richard $99.95 confirmed), Xtreme 4
+  $379.95→$279.95 (Rockandsoul confirmed), Live 680NC $159.95→
+  $79.95 (JBL direct confirmed, live browser), Tab S10 Lite
+  $399.99→$299.99 (Best Buy confirmed), Stage 320 $499.95→$439.95
+  (P.C. Richard confirmed). Sony sale: MDR-M1 $269.99→$199.99
+  (Sony direct confirmed, live browser; Sweetwater $198, B&H /
+  Guitar Center / Musician's Friend $199.99), LinkBuds Fit
+  $199.99→$179.99 (Sony direct confirmed, live browser; Abt /
+  Crutchfield $178), WF-C710N $98→$78 at four merchants (Beach
+  Camera confirmed), WF-1000XM5 $248→$328 and WH-1000XM6 $378→
+  $458 at B&H (sales ended, confirmed), WF-1000XM6 $298→$328
+  (B&H confirmed), MDR-MV1 $418→$328/$329.99 (B&H confirmed),
+  MDR-7506 $113→$98 (Sweetwater confirmed), WF-C510 $58→$48
+  (B&H confirmed), Pelta $104.99→$129.99 (Best Buy confirmed),
+  Dell S3225QS $329.99→$379.99 (Best Buy confirmed, sale ended),
+  Forerunner 165 $249.99→$199.99 (RoadRunner Sports confirmed),
+  DeathAdder V3 HyperSpeed $99.99→$59.99 (P.C. Richard confirmed,
+  now OutOfStock), ULT Wear $249.99→$149.99 (RC Willey confirmed;
+  Focus Camera $148→$248 is yesterday's bad row vanishing, not a
+  rise), LinkBuds Fit Audio46 $199.99→$229.99 (price UP, confirmed).
+- Builder hardening (hidden_files/build_snapshot.py): 19 new
+  KNOWN_BAD tuples — 13 wrong-variant rows (ASUS Japan yen row,
+  Legion Go S 32GB/1TB, Vivosmart 5 Large band x2, Mac mini 1TB,
+  Studio Display nano-glass, Kindle Paperwhite-on-base-Kindle,
+  MX Keys S for-Mac, Access-controller hardware x2, N64 Old Skool,
+  G502 X wireless, two unnamed myshopify storefronts), 4 Best Buy
+  feed rows proven to be marketplace sellers on their own pages
+  (G915 X $199.99 EP Holdings, Switch 2 Camera $64.99 Electronic
+  Express, Pulse Elite $109.99 Newegg Official, OMEN 27QS G2
+  $249.99 Pryced LLC — page JSON-LD shows $229.99), HP Haste 2
+  $59.99 (wired PDP, catalog pins wireless), Beach Camera ULT
+  FIELD 7 $996 (2-pack bundle). BLOCKED_HOSTS +3 (two unnamed
+  myshopify storefronts, tecnocostoec.com Ecuador);
+  TITLE_EXCLUDE_WORDS + "old skool", "prox reader"; new checks —
+  bare country-code first path segment (non-US), "t" as TB alias,
+  "nano glass" / "nano-glass", "kindle paper", Logitech-only
+  for-Mac, wired/wireless; prev-median anchor now skips KNOWN_BAD
+  rows (the ASUS Japan row had poisoned Ally X's prev median to
+  $85,399.99 and dropped the good $999.99 US row). Validation:
+  rebuilding 2026-11-15 with the fixed builder changes only 11
+  rows, all correct exclusions; total 1,208 vs committed 1,219.
+  A first-draft for-Mac check falsely dropped the Apple numpad
+  keyboard's Best Buy rows; caught by the same validation and
+  scoped to Logitech before use. G915 X now has zero Meta quotes
+  (its only row was the excluded marketplace row).
+- Unverified, left in suspected (not excluded): Bose Smart Ultra
+  Soundbar $679→$649 (bose.com 403 CloudFront in the live browser);
+  BJ's PartyBox Stage 320 $569.99→$379.99 (BJ's price is member-only
+  behind sign-in — read-only, no sign-in); Macy's Boombox 4
+  $399.95 (Macy's page JSON-LD shows $0.00 / OutOfStock, no usable
+  price); Best Buy WF-1000XM5 $328 (corroborated by B&H same price,
+  not separately page-checked); Office Depot MX Vertical $99.99
+  (corroborated by Logitech direct $99.99 sale). Still unproven
+  from earlier days: Threadfellows Anker Prime 20K $187.43,
+  Switch 2 Camera RC Willey $25 / P.C. Richard $29, Bitjumpgames
+  Switch neon $199.99, Tecisoft Tab S11 Ultra $1,982.81,
+  Magiccellularpr PS5 Pro $1,000, Martly21 MX Master 3S $161.98,
+  Mavybdirect soundbar $1,134.99, Pens WH-CH520 $196.40, Target
+  Liberty 4 Pro $109.99, AirPods Pro 3 BJ's $199.99, Walmart
+  Switch Pro $37.50 (bot-blocked).
+- Rotation: MX Master 4 Graphite — Office Depot has no standalone
+  910-007558 listing (site search returns only MX Vertical / older
+  mice); Sweetwater carries MX Master 4 at $119.99 InStock but the
+  page text pins neither color nor part number (URL slug suggests
+  Black 910-007560), so the Graphite hunt continues — next
+  P.C. Richard (Black 910-007560 $119.99 InStock seen in search).
+  Logitech patrol: MX Master 4 Graphite $119.99 InStock at
+  logitech.com, MX Vertical $99.99 sale; new list-only products
+  spotted (MX Master 4 Special Edition $119.99, MX Keypad $99.99)
+  — not adding without approval. The 11-row overnight probe
+  proposal (ULT FIELD 7/3/5, Bose soundbar, Boombox 4, PartyBox
+  330, Apple Pencil USB-C, Live Buds 3, G915 X TKL, Liberty 5 Pro,
+  AW2725Q) is still awaiting the user's nod; ranking stays 105.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
+  no DECISIONS.md changes, no models added, no Amazon touch, no
+  spending, no registrations, no purchases.
+

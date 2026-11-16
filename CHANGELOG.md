@@ -11,6 +11,22 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Snapshot builder (2026-11-16): 19 new known-bad rows — 13
+  wrong-variant rows (ASUS Japan ¥169,800 read as USD, Legion Go S
+  32GB/1TB, Vivosmart 5 Large band, Mac mini 1TB, Studio Display
+  nano-glass, Kindle Paperwhite on the base Kindle, MX Keys S
+  for-Mac, door-access hardware, Old Skool N64 controller, G502 X
+  wireless, two unnamed myshopify storefronts), 4 Best Buy feed rows
+  proven to be marketplace sellers on their own pages (G915 X,
+  Switch 2 Camera, Pulse Elite, OMEN 27QS G2), the wired HP Haste 2
+  $59.99 row, and a 2-pack ULT FIELD 7 bundle. The prev-median
+  sanity anchor now skips known-bad rows — the ASUS Japan row had
+  poisoned Ally X's prev median and dropped the good $999.99 US
+  row. New title guards: bare country-code path segment, "t" as a
+  TB alias, "nano glass", "kindle paper", Logitech-only for-Mac,
+  wired/wireless. Validation: rebuilding 2026-11-15 changes only
+  11 rows, all correct exclusions.
+
 - Snapshot builder (2026-11-15): new variant guards in `title_matches`
   — LTE (Pixel Watch 4 / Watch9 LTE rows), Scribe and Paperwhite
   titles vs non-Scribe / non-Paperwhite models, Touch ID and numeric
