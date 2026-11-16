@@ -874,6 +874,150 @@
           "in_stock": true
         }
       ]
+    },
+    "sony-ult-field-7-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 499.99,
+          "title": "Sony ULT FIELD 7 Wireless Speaker - Black",
+          "url": "https://www.bestbuy.com/site/sony-ult-field-7-wireless-speaker-black/6577677.p",
+          "collected_at": "2026-11-16T20:31:00Z",
+          "identifier": "027242928961",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-16; Model SRSULT70, SKU 6577677, Sold by Best Buy, $499.99, Add to Cart, JSON-LD $499.99 / InStock; added on user approval 2026-11-16)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-ult-field-3-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 209.99,
+          "title": "Sony ULT FIELD 3 Wireless Speaker - Black",
+          "url": "https://www.bestbuy.com/product/sony-ult-field-3-wireless-speaker-black/J7XSRH5H7S/sku/6620180",
+          "collected_at": "2026-11-16T20:31:00Z",
+          "identifier": "027242931886",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-16; Model SRSULT30/B, SKU 6620180, Sold by Best Buy, $209.99, JSON-LD $209.99 / InStock; Add to Cart verified by 2026-11-15 probe, buy-box button text not in 2026-11-16 text extraction; added on user approval 2026-11-16)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-ult-field-5-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 349.99,
+          "title": "Sony ULT FIELD 5 Wireless Speaker - Black",
+          "url": "https://www.bestbuy.com/product/sony-ult-field-5-wireless-speaker-black/J7XSRH5HC5/sku/6620181",
+          "collected_at": "2026-11-16T20:31:00Z",
+          "identifier": "027242931947",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-16; Model SRSULT50/B, SKU 6620181, Sold by Best Buy, $349.99, JSON-LD $349.99 / InStock; Add to Cart verified by 2026-11-15 probe, buy-box button text not in 2026-11-16 text extraction; added on user approval 2026-11-16)",
+          "in_stock": true
+        }
+      ]
+    },
+    "jbl-boombox-4-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 399.95,
+          "title": "JBL Boombox 4 portable waterproof speaker - 2025 - Black",
+          "url": "https://www.bestbuy.com/product/jbl-boombox-4-portable-waterproof-speaker-2025-black/J7LXFW3S2Z/sku/6644592",
+          "collected_at": "2026-11-16T20:31:00Z",
+          "identifier": "050036413220",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-16; Model JBLBOOMBOX4BLKAM, SKU 6644592, Sold by Best Buy, Holiday Deal $399.95, Save $150, Comp. Value $549.95, JSON-LD $399.95 / InStock; Add to Cart verified by 2026-11-15 probe, buy-box button text not in 2026-11-16 text extraction; added on user approval 2026-11-16)",
+          "in_stock": true
+        }
+      ]
+    },
+    "jbl-partybox-330-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 499.95,
+          "title": "JBL PartyBox 330 280W Wireless Party Speaker (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1952981-REG/jbl_jblpb330blkam_partybox_330_280w_wireless.html?BI=20177",
+          "collected_at": "2026-11-16T20:31:00Z",
+          "identifier": "050036422154",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (text-fetch verified 2026-11-16; In Stock, No Store Display, $499.95, $629.95 struck through, Holiday Savings $130.00, free delivery Nov 17, spec prints UPC 050036422154, JSON-LD $499.95 / InStock; Holiday Savings $130 promo price; added on user approval 2026-11-16)",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-pencil-usb-c-white": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 79.0,
+          "title": "Apple Pencil (USB-C)",
+          "url": "https://www.bhphotovideo.com/c/product/1791228-REG/apple_muwa3am_a_pencil_usb_c.html",
+          "collected_at": "2026-11-16T20:31:00Z",
+          "identifier": "195949133626",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (text-fetch verified 2026-11-16; MFR # MUWA3AM/A, In Stock, $79.00, free delivery Nov 17, JSON-LD $79.00 / InStock; added on user approval 2026-11-16)",
+          "in_stock": true
+        }
+      ]
+    },
+    "jbl-live-buds-3-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 99.95,
+          "title": "JBL Live Buds 3 True Wireless Noise-Canceling Earbuds (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1808931-REG/jbl_jbllivebuds3blkam_live_buds_3_true.html",
+          "collected_at": "2026-11-16T20:31:00Z",
+          "identifier": "050036401661",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (text-fetch verified 2026-11-16; In Stock, No Store Display, $99.95, $229.95 struck through, Holiday Savings $130.00, free delivery Nov 17, spec prints UPC 050036401661, Color Black, JSON-LD $99.95 / InStock; Holiday Savings $130 promo price; added on user approval 2026-11-16)",
+          "in_stock": true
+        }
+      ]
+    },
+    "anker-liberty-5-pro-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 169.99,
+          "title": "Anker Soundcore Liberty 5 Pro Noise Cancelling Earbuds - with Guinness World Records-Certified Call Quality - Black",
+          "url": "https://www.bestbuy.com/product/anker-soundcore-liberty-5-pro-noise-cancelling-earbuds-with-guinness-world-records-certified-call-quality-black/JJ858RP5T6/sku/6673214",
+          "collected_at": "2026-11-16T20:31:00Z",
+          "identifier": "194644311063",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-16; Model D1203Z11, SKU 6673214, Sold by Best Buy, New $169.99, Add to Cart, JSON-LD $169.99 / InStock; added on user approval 2026-11-16)",
+          "in_stock": true
+        }
+      ]
+    },
+    "alienware-aw2725q": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 899.99,
+          "title": "Alienware AW2725Q 26.7\" QD-OLED 4K UHD 240Hz 0.03-ms FreeSync Premium Pro G-SYNC Gaming Monitor with HDR (HDMI, DisplayPort, USB) - Interstellar Indigo",
+          "url": "https://www.bestbuy.com/product/alienware-aw2725q-26-7-qd-oled-4k-uhd-240hz-0-03-ms-freesync-premium-pro-g-sync-gaming-monitor-with-hdr-hdmi-displayport-usb-interstellar-indigo/J3K4L63R85/sku/6640501",
+          "collected_at": "2026-11-16T20:31:00Z",
+          "identifier": "884116493297",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-16; Model AW2725Q, SKU 6640501, Sold by Best Buy, $899.99, Add to Cart, JSON-LD $899.99 / InStock; added on user approval 2026-11-16)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

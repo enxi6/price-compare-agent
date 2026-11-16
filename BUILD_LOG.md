@@ -7970,3 +7970,35 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
 
+## 124 — 2026-11-16: 11-row hand-row proposal executed (9 landed, 2 dropped on price moves)
+
+- User approved all 11 rows 2026-11-16 12:27 PT ("继续"). Each row
+  re-verified on the live merchant page at add time (text-fetch,
+  2026-11-16 20:29 UTC). 9 landed in the hand file (49→58 models):
+  ULT FIELD 7 Best Buy $499.99 (SRSULT70, SKU 6577677), ULT FIELD 3
+  Best Buy $209.99 (SRSULT30/B, SKU 6620180), ULT FIELD 5 Best Buy
+  $349.99 (SRSULT50/B, SKU 6620181), Boombox 4 Best Buy $399.95
+  (JBLBOOMBOX4BLKAM, SKU 6644592), PartyBox 330 B&H $499.95 (UPC
+  050036422154 on spec page), Apple Pencil USB-C B&H $79.00
+  (MUWA3AM/A), Live Buds 3 B&H $99.95 (UPC 050036401661 on spec
+  page), Liberty 5 Pro Best Buy $169.99 (D1203Z11, SKU 6673214),
+  AW2725Q Best Buy $899.99 (SKU 6640501). Verified rankings 105→114,
+  matched offers 121→130, total offers 1,300→1,308 (PartyBox 330's
+  suspected B&H sweep row was superseded by the identified hand
+  row). Tests 56 pass. Site rebuilt (303 pages).
+- 2 dropped on price moves since the 2026-11-15 probe: Bose Smart
+  Ultra Soundbar Best Buy $649.00 — live page now $999.00 new
+  self-operated ($649 is the open-box/marketplace range low);
+  Logitech G915 X TKL Best Buy $209.99 — deal ended, live price
+  $229.99. Neither row added; both models stay unranked and can be
+  re-proposed at the new prices.
+- Caveat: on the 2026-11-16 text extraction the buy-box "Add to
+  Cart" button text did not surface for ULT FIELD 3, ULT FIELD 5
+  and Boombox 4 (only accessory buttons); Add to Cart was verified
+  by the 2026-11-15 probe and price/seller/JSON-LD InStock were
+  confirmed live today. Recorded in each row's hand-file source
+  string. ULT FIELD 3's .p URL resolves to marketplace SKU 13262517
+  (Back in the Box, $179) — the hand row uses the
+  /product/.../sku/6620180 self-operated URL.
+- No catalog identifier changes, no DECISIONS.md changes, no models
+  added, no Amazon touch, no spending.

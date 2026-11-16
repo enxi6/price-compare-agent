@@ -42,6 +42,15 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Nine hand-verified rows for the 11 newly verified batch-2 models
+  (user-approved 2026-11-16): ULT FIELD 7 Best Buy $499.99, ULT
+  FIELD 3 Best Buy $209.99, ULT FIELD 5 Best Buy $349.99, Boombox 4
+  Best Buy $399.95, PartyBox 330 B&H $499.95, Apple Pencil USB-C
+  B&H $79.00, Live Buds 3 B&H $99.95, Liberty 5 Pro Best Buy
+  $169.99, AW2725Q Best Buy $899.99 — all in_stock, verified
+  rankings 105→114, matched offers 121→130. Two rows dropped on
+  price moves since the probe: Bose Smart Ultra Soundbar ($649→$999
+  new) and Logitech G915 X TKL ($209.99→$229.99). Tests 56 pass.
 - Second 50-model expansion batch (user-approved 2026-11-14):
   catalog 250→300 models, 11 UPC verified / 39 pending, 18 brands,
   new categories accessories / cameras / docks (DECISIONS 075,
