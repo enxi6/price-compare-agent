@@ -38,6 +38,21 @@ releases; breaking changes are called out in the release notes.
   wired/wireless. Validation: rebuilding 2026-11-15 changes only
   11 rows, all correct exclusions.
 
+- Snapshot builder (2026-11-17): 9 new known-bad rows — Target
+  MDR-M1 $198 (sold by Focus Camera), Macy's DualSense Edge
+  $169.99 and MDR-MV1 $328 (both "will not ship in Macy's
+  packaging"), Bose SoundLink Micro 2nd Gen $79 Twilight Blue /
+  $129 Sandstone / $232 2-pack set (catalog pins Black), HyperX
+  Cloud III S $129.99 Black-Blue (catalog pins Black-Red),
+  Macy's Lifestyle Ultra $1,798 (marketplace, 2x list), Apple
+  HomePod mini 2 $129 (1st-gen MTJT3LL/A; mini 2 Midnight is
+  MGHJ4AM/A, $149 confirmed). threadfellows.com blocked as a
+  promo/corporate-gift channel (6-piece minimum). Validation:
+  rebuilding 2026-11-16 changes 7 rows, all correct exclusions.
+  First full 350-model sweep: 1,414 offers, 301 models with
+  quotes, 38 price moves; site 1,536 offers, 130 matched, 114
+  verified rankings. Tests 56 pass.
+
 - Snapshot builder (2026-11-15): new variant guards in `title_matches`
   — LTE (Pixel Watch 4 / Watch9 LTE rows), Scribe and Paperwhite
   titles vs non-Scribe / non-Paperwhite models, Touch ID and numeric

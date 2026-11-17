@@ -8037,3 +8037,76 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   drops out with Echo Show 8. ULT TOWER 9 UPC conflict stays
   pending; Bose TV Speaker MPN corrected to 901067-1100. No model
   dropped. No Amazon touch, no spending.
+
+## 126 — 2026-11-17: Daily refresh — first full 350-model sweep; Sony/Garmin cuts, nine bad rows excluded
+
+- Meta sweep 350/350 calls OK (first full sweep of the 350-model
+  catalogue). Snapshot 2026-11-17: 350 models, 301 with quotes,
+  1,414 offers; 38 price moves, 365 new quotes, 147 disappeared
+  quotes (diff vs 2026-11-16). Identified stream: 72 models, 83
+  offers, 2 skipped (same known 404s: Heart Rate Monitors USA
+  vivoactive-6, Datavision Tab S10 FE+). Identified moves: Garmin
+  Edge 1050 $699.99→$599.99 and Edge 850 $599.99→$499.99 (Contender
+  Bicycles — Garmin sale propagation), Cloud III S $139.99→$129.90
+  (HyperX). Site rebuilt: 1,536 offers, 130 matched, 114 verified
+  rankings, 353 pages. Eval 1,414 quotes, 0 identifier matches (by
+  design). Tests 56 pass.
+- Page-confirmed cuts: JBL PartyBox 330 $629.95→$499.95 (Abt,
+  manufacturer rebate ends 2026-12-05); Garmin Edge 850
+  $599.99→$499.99 (Wheel & Sprocket); Samsung Tab S10 Lite
+  $399.99→$299.99 (P.C. Richard) and Tab A11+ $294.99→$198.99
+  (NFM); Sony MDR-MV1 $418→$328 (Focus Camera), MDR-M1 $268→$198
+  (Focus Camera; the Target $198 row is sold by Focus Camera),
+  PULSE Explore $199.99→$119.99 (P.C. Richard, now OutOfStock),
+  PULSE Elite $149.99→$109.99 (Target/GameStop/P.C. Richard),
+  WH-1000XM6 $458→$378 and WF-1000XM6 $328→$298 (B&H, Holiday
+  Savings), WF-C510 $58→$48 (Focus Camera); HyperX Cloud III
+  $69.99→$57.99 (Black-Red variant) and Cloud III S
+  $139.99→$129.90 (Black-Red, pinned), SoloCast 2 $59.99→$44.99
+  (Best Buy); Razer Wolverine V3 Pro $199.99→$149.99 (Best Buy);
+  DualSense White $74.99→$54.99 (Kohl's); DualSense Edge
+  $199.99→$169.99 (GameStop/Lenovo — the Macy's $169.99 row carries
+  the marketplace marker). Rises confirmed: WF-1000XM5 $248→$329.95
+  (P.C. Richard, sale ended), G502 X $79.99→$99.99 (P.C. Richard),
+  Buds4 Pro $219.99→$259.99 (Target — the $219.99 row was the
+  non-US Global Model). HomePod mini 2 Midnight $149 confirmed on
+  apple.com (MGHJ4AM/A); the $129 Apple row is the 1st-gen
+  MTJT3LL/A. Tour One M3 $149.95 stands (JBL page + Macy's /
+  Walmart / Electronic Express; the JBL feed row's absence is feed
+  churn, not a delisting).
+- Non-moves (feed artifacts, excluded): JBL Bar 1300X Walt's
+  $1,939.90 (soundbar + 5-year protection-plan bundle; standalone
+  $1,199.95); Mac Studio B&H $2,649 (1TB config) and $8,899
+  (maxed config — catalog pins 36GB/512GB, $2,499); Haste 2 $59.99
+  rows at Best Buy / HyperX (wired variant; wireless stays
+  $89.99 — the diff's HyperX $59.99→$89.99 line is the wired row
+  being replaced, not a rise); Bose SoundLink Micro 2nd Gen $79
+  (Twilight Blue) / $129 (Sandstone) / $232 (2-pack set) — catalog
+  pins Black, $129 at Best Buy / Abt / Electronic Express.
+- Builder (hidden_files/build_snapshot.py): +9 KNOWN_BAD tuples
+  (Target MDR-M1 marketplace; Macy's DualSense Edge + MDR-MV1
+  marketplace markers; Bose Micro color/set rows; HyperX Cloud
+  III S $129.99 Black-Blue; Macy's Lifestyle Ultra $1,798
+  marketplace, 2x list; Apple HomePod mini 2 $129 1st-gen) and
+  threadfellows.com added to BLOCKED_HOSTS (promo/corporate-gift
+  channel — 6-piece minimum, logo customization; Prime 20K
+  $229.50 / Boom 2 $183.50 page-verified, both excluded).
+  Validation: rebuilding 2026-11-16 with the new builder changes
+  7 rows, all correct exclusions (2 Mac Studio configs, Bose
+  Micro, Haste 2 HyperX, Razer $300 sanity drop, 2
+  Threadfellows). Watch item: Bose Lifestyle Ultra $1,099 Bose
+  row (LSULT-SOUNDBAR-BLK-120V-AST) — config unresolved, standing.
+- Unverified, left suspected: Tab S11 NFM $698.99 (page carries no
+  price) and Macy's $769.00 (merged multi-variant page, JSON-LD
+  $1,079.00); Forerunner 165 RoadRunner $249.99 (price range across
+  variants, Black not isolated); K860 Dell $119.99 and Live Beam 3
+  AT&T $299.95 (no price renders on either page, per Dell
+  precedent); Target Colorsoft $169.99 (page $289.99).
+- Rotation: MX Master 4 Graphite — P.C. Richard carries only the
+  Black variant 910-007560, $119.99 InStock, no standalone
+  Graphite listing; next retailer Abt. Small-brands patrol:
+  Keychron Q1 Max $229.99 and K2 HE $129.99 in stock at
+  keychron.com and Best Buy; no delistings, no models added.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
+  no DECISIONS.md changes, no models added, no Amazon touch, no
+  spending, no registrations, no purchases.
