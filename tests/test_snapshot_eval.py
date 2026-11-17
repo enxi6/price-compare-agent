@@ -40,9 +40,9 @@ def test_snapshot_staleness(tmp_path):
 
 
 def test_eval_set_shape():
-    assert len(EVAL_SET) == 300
+    assert len(EVAL_SET) == 350
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 135
+    assert len(verified) == 150
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
@@ -212,12 +212,47 @@ def test_eval_set_shape():
         "asus-rog-strix-scope-ii-96-wireless-black",
         "asus-rog-azoth-black",
         "asus-rog-xbox-ally-x-black",
+        "sony-ult-tower-9-black",
+        "sony-ult-tower-5-black",
+        "sony-ult-tower-max-black",
+        "sony-playstation-gaming-monitor-27-black",
+        "bose-tv-speaker-2nd-gen-black",
+        "logitech-pro-x3-lightspeed-black",
+        "logitech-g309-lightspeed-black",
+        "razer-huntsman-v3-pro-tkl-black",
+        "razer-kraken-v4-x-black",
+        "razer-basilisk-v3-x-hyperspeed-black",
+        "razer-barracuda-x-chroma-black",
+        "razer-hammerhead-v3-x-hyperspeed-black",
+        "hyperx-cloud-alpha-2-wireless-black",
+        "hyperx-cloud-ii-black-red",
+        "corsair-hs80-v2-max-steel-gray",
+        "corsair-hs80-max-steel-gray",
+        "apple-homepod-mini-2nd-gen-midnight",
+        "apple-homepod-2nd-gen-midnight",
+        "samsung-hw-q990f-black",
+        "samsung-odyssey-g70f-27-black",
+        "nintendo-alarmo-black",
+        "garmin-venu-4-41mm-black",
+        "garmin-approach-s72-black",
+        "keychron-q6-he-black",
+        "anker-soundcore-sleep-a30-black",
+        "anker-soundcore-liberty-5-pro-max-black",
+        "alienware-aw3225qf-lunar-light",
+        "hp-960-ergonomic-wireless-keyboard-black",
+        "ray-ban-meta-gen-2-wayfarer-black",
+        "jbl-live-flex-3-black",
+        "asus-rog-azoth-x-black",
+        "asus-rog-harpe-ace-extreme-black",
+        "asus-rog-falchion-rx-low-profile-black",
+        "asus-rog-cetra-speednova-white",
+        "asus-proart-pa32ucdm-black",
 }
 
 
 def test_evaluate_counts_fixture_snapshot(tmp_path):
     result = evaluate(_snapshot(tmp_path))
-    assert result["models"] == 300
+    assert result["models"] == 350
     assert result["total_offers"] == 1
     # No UPC in snapshots -> everything lands in "suspected", by design.
     assert result["matched"] == 0 and result["suspected"] == 1

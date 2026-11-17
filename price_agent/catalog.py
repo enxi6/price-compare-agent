@@ -7366,7 +7366,819 @@ EVAL_SET: list[EvalProduct] = [
         " precedent: Legion Go S (SteamOS) is in the catalog. Do not confuse with the ROG Xbox Ally"
         " X20 ($1,299.99, OLED anniversary model) or the base ROG Xbox Ally ($599.99).",
     ),
+    # --- Expansion batch 34 (added 2026-11-16, user-approved, DECISIONS 076).
+    # 300 -> 350 models. Source: data/candidates_batch3_350.md.
+    EvalProduct(
+        key="sony-bravia-theatre-bar-9-black",
+        brand="Sony",
+        model="BRAVIA Theatre Bar 9",
+        variant="Black (HTA9000)",
+        category="soundbars",
+        identifiers={"UPC": "027242929555", "MPN": "HTA9000"},
+        identifier_sources={
+            "UPC": "Adorama spec + B&H spec agree (batch-3 re-verification 2026-11-16)",
+        },
+        status="verified",
+        notes="Current Sony flagship soundbar (11.1.4ch, 2024); distinct from in-catalog BRAVIA Theatre"
+        " Bar 6. Best Buy $1,498 (SKU 12237602); Adorama $1,498. Flag: Best Buy 'sold by' not"
+        " explicitly confirmed in the search snippet — verify sold-by-Best-Buy at row-finding time;"
+        " one Adorama crawl showed 'Temporarily On Backorder' and another a $1,398 sale price.",
+    ),
+    EvalProduct(
+        key="sony-bravia-theatre-bar-8-black",
+        brand="Sony",
+        model="BRAVIA Theatre Bar 8",
+        variant="Black (HTA8000)",
+        category="soundbars",
+        identifiers={"UPC": "027242929548", "MPN": "HTA8000"},
+        identifier_sources={
+            "UPC": "Adorama spec (seen twice) + B&H spec agree (batch-3 re-verification 2026-11-16)",
+        },
+        status="verified",
+        notes="Current Sony soundbar (11.0ch, 2024); distinct from in-catalog Bar 6. Best Buy"
+        " sold-by-Best-Buy $999.99 (SKU 6577858); Adorama $998.00. Best Buy showed 'Only 1 left'"
+        " — re-check stock at row-finding time.",
+    ),
+    EvalProduct(
+        key="sony-ult-tower-9-black",
+        brand="Sony",
+        model="ULT TOWER 9",
+        variant="Black (SRSULT900)",
+        category="speakers",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — conflicting leads, do not pick one: 027242931923 (Amazon listing for"
+            " SRSULT900.UC2, Amazon-only, never verified) vs 027242931930 (Adorama spec page, but for"
+            " the SRSULT900AC variant — a distinct AC variant). Batch-3 verification 2026-11-16.",
+        },
+        status="pending",
+        notes="Current Sony party speaker (2026 line). MPN SRSULT900. Best Buy sold-by-Best-Buy $899.99"
+        " (SKU 6620170) in stock.",
+    ),
+    EvalProduct(
+        key="sony-ult-tower-5-black",
+        brand="Sony",
+        model="ULT TOWER 5",
+        variant="Black (SRSULT500)",
+        category="speakers",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="New Sept 2026, $449.99 list. MPN SRSULT500. Sony direct $449.99 in stock; Target $449.99."
+        " Best Buy listings are marketplace-only — do not use.",
+    ),
+    EvalProduct(
+        key="sony-ult-tower-max-black",
+        brand="Sony",
+        model="ULT TOWER MAX",
+        variant="Black (SRSULT3000)",
+        category="speakers",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="New Sept 2026, $1,499.99 list; replaces ULT Tower 10. 121 lbs, AC-powered, 2,150W. MPN"
+        " SRSULT3000 (not SRSULTMAX). Best Buy sold-by-Best-Buy $1,499.99 (SKU 6687172) in stock;"
+        " Sony direct $1,499.99.",
+    ),
+    EvalProduct(
+        key="sony-playstation-gaming-monitor-27-black",
+        brand="Sony",
+        model="PlayStation Gaming Monitor 27\"",
+        variant="Black, 27\" QHD 240Hz (1000051334)",
+        category="monitors",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Launched 2026-08-27, US and Japan only, $349.99 list; 27\" QHD 240Hz with DualSense"
+        " charging hook. MPN 1000051334 (from Best Buy's model field, not a Sony spec page — verify"
+        " Sony's own part number at row-finding time). Best Buy sold-by-Best-Buy $349.99 (SKU 6675156)"
+        " in stock; PlayStation Direct also sells it.",
+    ),
+    EvalProduct(
+        key="bose-lifestyle-ultra-soundbar-black",
+        brand="Bose",
+        model="Lifestyle Ultra Soundbar",
+        variant="Black (892930-1100)",
+        category="soundbars",
+        identifiers={"UPC": "017817858915", "MPN": "892930-1100"},
+        identifier_sources={
+            "UPC": "B&H spec + Adorama spec agree (batch-3 re-verification 2026-11-16)",
+        },
+        status="verified",
+        notes="New Bose flagship soundbar, May 2026, $1,099. Best Buy sold-by-Best-Buy $1,099 (SKU"
+        " 6667620); Abt $1,099 in stock; B&H $1,099 in stock; Staples $1,099. White Smoke"
+        " 892930-1200 is a separate variant — do not mix.",
+    ),
+    EvalProduct(
+        key="bose-qc-headphones-2nd-gen-black",
+        brand="Bose",
+        model="QuietComfort Headphones (2nd Gen)",
+        variant="Black (895491-0100)",
+        category="headphones",
+        identifiers={"UPC": "017817859684", "MPN": "895491-0100"},
+        identifier_sources={
+            "UPC": "NFM spec ('UPC: 017817859684, Model: 895491-0100') + Adorama UPC table agree"
+            " (batch-3 re-verification 2026-11-16); Adorama's table also shows Hazelnut Taupe as a"
+            " different code, 017817866996",
+        },
+        status="verified",
+        notes="Successor to in-catalog QC Headphones 1st gen (MPN 884367-0100), launched 2026-08-13,"
+        " $359 list. B&H Black $219.00 in stock (holiday price, was $359.00); Abt $359 InStock."
+        " Best Buy Black rows are marketplace-only (FrontRow Tech, GD Electronics, WackyJacky) — do"
+        " not use. Hazelnut Taupe is MPN 895491-0120 — do not substitute.",
+    ),
+    EvalProduct(
+        key="bose-tv-speaker-2nd-gen-black",
+        brand="Bose",
+        model="TV Speaker (2nd Gen)",
+        variant="Black (901067-1100)",
+        category="soundbars",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found anywhere (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Launched Sept 2026, $299; batch-2 Reserve graduated to a firm pass. MPN 901067-1100"
+        " (Best Buy / Staples / Abt agree; batch-2's 'BOSETVSPEAKER2' was an Abt internal listing"
+        " code, not the MPN — corrected in DECISIONS 076). Abt $299 in stock; Staples $299 in stock;"
+        " Bose direct $299. Best Buy listing is marketplace-only (ThrillingAudio) — do not use.",
+    ),
+    EvalProduct(
+        key="jbl-vibe-beam-2-black",
+        brand="JBL",
+        model="Vibe Beam 2",
+        variant="Black (JBLVBEAM2BLKAM)",
+        category="earbuds",
+        identifiers={"UPC": "050036405041", "MPN": "JBLVBEAM2BLKAM"},
+        identifier_sources={
+            "UPC": "B&H spec + Micro Center spec + MusicRedone agree (batch-3 re-verification 2026-11-16)",
+        },
+        status="verified",
+        notes="Current JBL budget earbuds. Best Buy sold-by-Best-Buy $39.95 (SKU 6611536) in stock;"
+        " B&H $39.95 in stock.",
+    ),
+    EvalProduct(
+        key="jbl-tune-flex-2-black",
+        brand="JBL",
+        model="Tune Flex 2",
+        variant="Black (JBLTFLEX2BLKAM)",
+        category="earbuds",
+        identifiers={"UPC": "050036405614", "MPN": "JBLTFLEX2BLKAM"},
+        identifier_sources={
+            "UPC": "B&H spec + Abt spec ('UPC # 050036405614', model JBLTFLEX2BLKAM) + NFM agree"
+            " (batch-3 re-verification 2026-11-16)",
+        },
+        status="verified",
+        notes="Current JBL earbuds. B&H $49.95 in stock (holiday promo, was $109.95); Abt $109.95 in"
+        " stock.",
+    ),
+    EvalProduct(
+        key="jbl-tune-buds-2-black",
+        brand="JBL",
+        model="Tune Buds 2",
+        variant="Black (JBLTBUDS2BLKAM)",
+        category="earbuds",
+        identifiers={"UPC": "050036405737", "MPN": "JBLTBUDS2BLKAM"},
+        identifier_sources={
+            "UPC": "B&H spec + Micro Center spec agree (batch-3 re-verification 2026-11-16)",
+        },
+        status="verified",
+        notes="Current JBL earbuds, first available 2025-02-16. B&H $49.95 in stock (holiday promo, was"
+        " $109.95); JBL.com list $109.95; Audio46 Black $109.95.",
+    ),
+    EvalProduct(
+        key="jbl-partybox-520-black",
+        brand="JBL",
+        model="PartyBox 520",
+        variant="Black (JBLPARTYBOX520AM)",
+        category="speakers",
+        identifiers={"UPC": "050036408615", "MPN": "JBLPARTYBOX520AM"},
+        identifier_sources={
+            "UPC": "Abt product-page UPC field + Walts TV spec + B&H spec + JBL manual agree (batch-3"
+            " re-verification 2026-11-16)",
+        },
+        status="verified",
+        notes="2025 model, 400W, AI Sound Boost, 15h battery. Best Buy sold-by-Best-Buy $699.95 (SKU"
+        " 6634022) in stock; Abt $879.95. Ignore the Snapklik bundle UPC 197684014635 (bundle SKU"
+        " JBLPARTYBOX520AM_EDI_3) — it is not the model UPC.",
+    ),
+    EvalProduct(
+        key="logitech-g502-x-lightspeed-black",
+        brand="Logitech",
+        model="G502 X LIGHTSPEED",
+        variant="Black (910-006178)",
+        category="mice",
+        identifiers={"UPC": "097855167057", "MPN": "910-006178"},
+        identifier_sources={
+            "UPC": "Micro Center spec (Mfr Part# 910-006178, UPC 097855167057) + Logitech official spec"
+            " PDF (Part # 910-006178, UPC 097855167057) + DirectDial/Compsource agree (batch-3"
+            " re-verification 2026-11-16). CORRECTS the draft: the draft's 910-005469 / 097855173989"
+            " belong to the wired G502 HERO, a different model — see DECISIONS 076.",
+        },
+        status="verified",
+        notes="Wireless variant of the in-catalog wired G502 X. B&H $139.99 in stock; Best Buy"
+        " sold-by-Best-Buy $139.99 (SKU 6530673) in stock. The G502 HERO (910-005469) is a distinct"
+        " wired model, NOT the same SKU — it stays out of the catalog per the approved scope.",
+    ),
+    EvalProduct(
+        key="logitech-pro-x3-lightspeed-black",
+        brand="Logitech",
+        model="PRO X3 LIGHTSPEED Wireless Gaming Headset",
+        variant="Black (981-001738)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (Logitech's own spec page does not list one; batch-3"
+            " verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Successor to the Logitech G Pro X 2 LIGHTSPEED headset (MPN 981-001259, now superseded);"
+        " launched Oct 2025. MPN 981-001738 (White is 981-001739 — do not substitute). Logitech US"
+        " direct $189.99 in stock; B&H $189.99 in stock.",
+    ),
+    EvalProduct(
+        key="logitech-g309-lightspeed-black",
+        brand="Logitech",
+        model="G309 LIGHTSPEED",
+        variant="Black (910-007197)",
+        category="mice",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 097855178861 claimed from a B&H spec page in the draft, but no"
+            " second source found on re-verification (2026-11-16); not treated as verified. MPN"
+            " 910-007197 confirmed (BuyDig + Best Buy model field).",
+        },
+        status="pending",
+        notes="Current Logitech wireless mouse. MPN 910-007197 (910-006914 is the White variant;"
+        " 910-007201 is a regional Black variant — do not mix). B&H $79.99 in stock; Best Buy $79.99"
+        " (SKU 6590104) — note the current Best Buy crawl shows a different SKU (11230650) sold by"
+        " Beach Camera (marketplace) at $97.86; verify sold-by at row-finding time. One Walmart"
+        " listing showed a $30.97 clearance price — clearance only, do not use.",
+    ),
+    EvalProduct(
+        key="razer-huntsman-v3-pro-tkl-black",
+        brand="Razer",
+        model="Huntsman V3 Pro TKL",
+        variant="Black, US (RZ03-04980200-R3U1)",
+        category="keyboards",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="TKL variant of the in-catalog full-size Huntsman V3 Pro — distinct model with its own"
+        " MPN, analog optical switches. MPN RZ03-04980200-R3U1 (RZ03-04980100-R3M1 is the"
+        " international variant — do not use). Best Buy sold-by-Best-Buy $249.99 (SKU 6578159) in"
+        " stock; B&H $249.99 in stock.",
+    ),
+    EvalProduct(
+        key="razer-kraken-v4-x-black",
+        brand="Razer",
+        model="Kraken V4 X",
+        variant="Black (RZ04-05140100-R3U1)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="New Oct 2025 model, $69.99 list; wired USB version distinct from in-catalog Kraken V4"
+        " wireless. MPN RZ04-05140100-R3U1. Razer US direct $69.99 in stock; Best Buy"
+        " sold-by-Best-Buy $69.99 (SKU 6631019) in stock.",
+    ),
+    EvalProduct(
+        key="razer-basilisk-v3-x-hyperspeed-black",
+        brand="Razer",
+        model="Basilisk V3 X HyperSpeed",
+        variant="Black (RZ01-04870100-R3U1)",
+        category="mice",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Distinct model from in-catalog Basilisk V3 Pro 35K (different MPN/UPC/price class);"
+        " launched 2023, still mainstream. MPN RZ01-04870100-R3U1 (RZ01-04890100 is the Basilisk V3"
+        " Pro 35K). Best Buy sold-by-Best-Buy $69.99 (SKU 6516866) in stock; B&H $69.99 in stock"
+        " (one crawl $54.99 — re-check at row-finding time).",
+    ),
+    EvalProduct(
+        key="razer-barracuda-x-chroma-black",
+        brand="Razer",
+        model="Barracuda X Chroma",
+        variant="Black (RZ04-05220100-R3U1)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current Razer headset. MPN RZ04-05220100-R3U1 (RZ04-05240100 is the Barracuda X"
+        " Hyperspeed). Best Buy sold-by-Best-Buy $129.99 (SKU 6578137) in stock; B&H $129.99 in"
+        " stock.",
+    ),
+    EvalProduct(
+        key="razer-hammerhead-v3-x-hyperspeed-black",
+        brand="Razer",
+        model="Hammerhead V3 X HyperSpeed",
+        variant="Black (RZ12-05580100-R3U1)",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="New Nov 2025 model, $99.99 list. MPN RZ12-05580100-R3U1. Razer US direct $99.99 in"
+        " stock; Best Buy sold-by-Best-Buy $99.99 (SKU 6656005) in stock. No Hammerhead model is in"
+        " the catalog.",
+    ),
+    EvalProduct(
+        key="hyperx-cloud-alpha-2-wireless-black",
+        brand="HyperX",
+        model="Cloud Alpha 2 Wireless",
+        variant="Black (9F3D5AA)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="New HyperX flagship wireless headset, $249.99 list; successor to Cloud Alpha Wireless"
+        " (4P5D4AA). MPN 9F3D5AA. HyperX US direct $249.99 in stock; Walmart US direct $249.99 in"
+        " stock. Avoid the Walmart marketplace SKU 'WLMTG2M-9F3D5AA-WLMT-001' — marketplace listing,"
+        " not the model UPC.",
+    ),
+    EvalProduct(
+        key="hyperx-cloud-ii-black-red",
+        brand="HyperX",
+        model="Cloud II",
+        variant="Black/Red (4P5K4AA)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Classic HyperX wired headset, $99.99 list, still mainstream and sold by US retailers."
+        " MPN 4P5K4AA. HyperX US direct $99.99 in stock; Walmart US direct $99.99 in stock."
+        " 2015-era model, still in production. The HyperX Cloud II Wireless is a different model —"
+        " do not mix.",
+    ),
+    EvalProduct(
+        key="corsair-hs80-v2-max-steel-gray",
+        brand="Corsair",
+        model="HS80 v2 MAX Wireless Gaming Headset",
+        variant="Steel Gray (CA-9011414-WW)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Batch-1 Reserve graduated to a firm pass. New model (Sept 2025). MPN CA-9011414-WW."
+        " Distinct from in-catalog HS80 MAX (2023, MPN CA-9011280-WW) — a different model, not a"
+        " color/config. Corsair US direct $179.99 in stock; Best Buy $179.99 in stock.",
+    ),
+    EvalProduct(
+        key="corsair-hs80-max-steel-gray",
+        brand="Corsair",
+        model="HS80 MAX Wireless Gaming Headset",
+        variant="Steel Gray (CA-9011280-WW)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="In-catalog HS80 MAX is the White variant (CA-9011281-WW) — the Steel Gray is a separate"
+        " colorway with its own MPN. MPN CA-9011280-WW. Best Buy sold-by-Best-Buy $179.99 (SKU"
+        " 6529965) in stock; B&H $179.99 in stock. Corsair US shows Refurbished Only for the Steel"
+        " Gray — do not use Corsair's own listing as the price source.",
+    ),
+    EvalProduct(
+        key="corsair-k70-pro-tkl-black",
+        brand="Corsair",
+        model="K70 PRO TKL",
+        variant="Black, MGX Hall Effect (CH-911911G-NA)",
+        category="keyboards",
+        identifiers={"UPC": "840006683650", "MPN": "CH-911911G-NA"},
+        identifier_sources={
+            "UPC": "Corsair official SKU sheet (CH-911911G-NA, UPC 840006683650) + Ubuy + Desertcart +"
+            " Snapklik agree (batch-3 re-verification 2026-11-16). CORRECTS the draft: the draft's"
+            " CH-911911A-NA / 840006644323 are wrong — 840006644323 belongs to Corsair Hydro X tubing,"
+            " and 'A' is not a K70 PRO TKL suffix; the Black NA model is CH-911911G-NA (MGX switches,"
+            " not MLX) — see DECISIONS 076.",
+        },
+        status="verified",
+        notes="TKL variant of the in-catalog full-size K70 PRO (CH-911941A-NA) — distinct model with"
+        " its own MPN. Best Buy sold-by-Best-Buy $179.99 (SKU 6567500) in stock; B&H $179.99 in"
+        " stock.",
+    ),
+    EvalProduct(
+        key="corsair-k70-core-tkl-rgb-black",
+        brand="Corsair",
+        model="K70 CORE TKL RGB",
+        variant="Black, MLX Red v2 (CH-911911E-NA)",
+        category="keyboards",
+        identifiers={"UPC": "840006678786", "MPN": "CH-911911E-NA"},
+        identifier_sources={
+            "UPC": "PB Tech spec (MPN CH-911911E-NA, UPC 840006678786) + Amazon + Desertcart + Vishal"
+            " agree (batch-3 re-verification 2026-11-16). CORRECTS the draft: the draft's"
+            " CH-911961A-NA / 840006644361 are wrong — 840006644361 belongs to Corsair DOMINATOR"
+            " PLATINUM DDR4 memory, and 911961 is the White K70 PRO TKL family — see DECISIONS 076.",
+        },
+        status="verified",
+        notes="TKL variant of the in-catalog full-size K70 CORE RGB — distinct model with its own MPN;"
+        " $99.99 list. Best Buy sold-by-Best-Buy $99.99 (SKU 6580048) in stock; B&H $99.99 in"
+        " stock.",
+    ),
+    EvalProduct(
+        key="apple-tv-4k-4th-gen-black",
+        brand="Apple",
+        model="TV 4K (4th generation)",
+        variant="Black, 128GB, Wi-Fi + Ethernet (MLFF4LL/A)",
+        category="streaming-devices",
+        identifiers={"UPC": "195951453064", "MPN": "MLFF4LL/A"},
+        identifier_sources={
+            "UPC": "B&H spec (UPC 195951453064) + Datavision (MFR MLFF4LL/A, UPC 195951453064) agree"
+            " (batch-3 re-verification 2026-11-16). CORRECTS the draft: the draft's MA3J4LL/A /"
+            " 195950001018 / $129 are all wrong — MA3J4LL/A and 195950001018 appear in no source; the"
+            " 4th-gen 128GB Wi-Fi + Ethernet model is MLFF4LL/A at $299 (Best Buy / Abt / Apple.com)"
+            " — see DECISIONS 076.",
+        },
+        status="verified",
+        notes="New Oct 2025 (launched 2026-11-13), $299. Apple direct $299 in stock; Best Buy"
+        " sold-by-Best-Buy $299 (SKU 6643857) in stock. New category 'streaming-devices'. DealNews"
+        " lists an alternate model number MU9D3LL/A for the $299 128GB — unconfirmed, not used.",
+    ),
+    EvalProduct(
+        key="apple-homepod-mini-2nd-gen-midnight",
+        brand="Apple",
+        model="HomePod mini (2nd generation)",
+        variant="Midnight",
+        category="speakers",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — draft lead 195950006983 (claimed Best Buy spec) found in NO source"
+            " on re-verification (2026-11-16); MPN lead MA7D4LL/A likewise unconfirmed in any source."
+            " Both stay pending — see DECISIONS 076.",
+        },
+        status="pending",
+        notes="New Oct 2026, $149 (Apple press release 2026-10-13; the draft's $99 was the 1st-gen"
+        " price). Distinct from in-catalog HomePod mini 1st gen. Apple direct $149 in stock; Best"
+        " Buy sold-by-Best-Buy (SKU 6577863) in stock. MPN lead MA7D4LL/A (unconfirmed).",
+    ),
+    EvalProduct(
+        key="apple-homepod-2nd-gen-midnight",
+        brand="Apple",
+        model="HomePod (2nd generation)",
+        variant="Midnight (MQJ73LL/A)",
+        category="speakers",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — draft lead 194253469313 (claimed Best Buy spec) found in NO source"
+            " on re-verification (2026-11-16); the White model's barcode 194253467823 is confirmed"
+            " (Clove) but Midnight's is not. MPN MQJ73LL/A confirmed (EveryMac).",
+        },
+        status="pending",
+        notes="$349 current (Apple raised the price 2026-06-25 from $299; Abt / Staples / Apple.com"
+        " $349 — the draft's $299 is stale). MPN MQJ73LL/A (EveryMac: Midnight order number; White"
+        " is MQJ83LL/A). Apple direct $349 in stock; Best Buy sold-by-Best-Buy (SKU 6534567) in"
+        " stock. Note: Abt lists a 2025 re-issue MDEW4LL/A (Midnight) at $349 with MQJ73LL/A 'no"
+        " longer available' at Abt — same product, new order number; MQJ73LL/A kept as the pinned"
+        " MPN.",
+    ),
+    EvalProduct(
+        key="apple-airtag-2nd-gen-white",
+        brand="Apple",
+        model="AirTag (2nd generation)",
+        variant="White, single pack (MFE94LL/A)",
+        category="accessories",
+        identifiers={"UPC": "195950667295", "MPN": "MFE94LL/A"},
+        identifier_sources={
+            "UPC": "B&H spec (UPC 195950667295) + Datavision (MFR MFE94LL/A, UPC 195950667295) +"
+            " eBay/CartUp agree (batch-3 re-verification 2026-11-16). CORRECTS the draft: the draft's"
+            " MD1L4LL/A / 195950003012 are wrong — MD1L4LL/A appears in no source and the 1-pack is"
+            " MFE94LL/A (Abt / Staples / Best Buy model field) — see DECISIONS 076.",
+        },
+        status="verified",
+        notes="New Jan 2026, $29 list. Distinct from in-catalog AirTag 1st gen. Apple direct $29 in"
+        " stock; Best Buy sold-by-Best-Buy $29 (SKU 6577864) in stock. The 4-pack is MFEA4LL/A"
+        " (UPC 195950667455) — a separate variant, not added.",
+    ),
+    EvalProduct(
+        key="samsung-hw-q990f-black",
+        brand="Samsung",
+        model="HW-Q990F 11.1.4ch Soundbar",
+        variant="Black (HW-Q990F/ZA)",
+        category="soundbars",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current Samsung flagship soundbar, $1,899.99 list; distinct from in-catalog HW-Q990D"
+        " (2024). MPN HW-Q990F/ZA. Best Buy sold-by-Best-Buy $1,899.99 (SKU 6620171) in stock;"
+        " Samsung US direct also sells it. A Black Friday price of $999.99 (~50% off list) was seen"
+        " in one crawl — re-check price at row-finding time.",
+    ),
+    EvalProduct(
+        key="samsung-odyssey-g70f-27-black",
+        brand="Samsung",
+        model="Odyssey G70F 27\" QHD 180Hz Gaming Monitor",
+        variant="Black (LS27FG702SNXZA)",
+        category="monitors",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current Samsung gaming monitor, $299.99 list. MPN LS27FG702SNXZA. Best Buy"
+        " sold-by-Best-Buy $299.99 (SKU 6620172) in stock; Samsung US direct also sells it.",
+    ),
+    EvalProduct(
+        key="nintendo-alarmo-black",
+        brand="Nintendo",
+        model="Alarmo",
+        variant="Black (HAC-044)",
+        category="accessories",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Nintendo's sound clock. MPN HAC-044. Nintendo direct $109.99 in stock; Best Buy"
+        " sold-by-Best-Buy $109.99 (SKU 6620173) in stock. Price rose from the $99.99 launch to"
+        " $109.99.",
+    ),
+    EvalProduct(
+        key="nintendo-switch-2-carrying-case-black",
+        brand="Nintendo",
+        model="Switch 2 Carrying Case & Screen Protector",
+        variant="Black",
+        category="accessories",
+        identifiers={"UPC": "045496886073"},
+        identifier_sources={
+            "UPC": "Nintendo US official store page (SKU 123697) prints UPC 00045496886073, i.e."
+            " 12-digit 045496886073 (batch-3 re-verification 2026-11-16: re-confirmed via the"
+            " search-engine cache of the official page; the direct page URL 404'd on open). The"
+            " conflicting lead 045496321437 is Amazon/PBTech only, never verified.",
+        },
+        status="verified",
+        notes="Official Nintendo accessory, $39.99 list. Nintendo direct $39.99 in stock; Target $39.99"
+        " in stock. Distinct from the All-In-One Carrying Case ($84.99) — a different, smaller case."
+        " MPN pending — no model number found on any source.",
+    ),
+    EvalProduct(
+        key="garmin-venu-4-41mm-black",
+        brand="Garmin",
+        model="Venu 4 41mm",
+        variant="Black, 41mm (010-04903-00)",
+        category="wearables",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="41mm variant of the in-catalog Venu 4 45mm — distinct size with its own MPN; launched"
+        " Oct 2025, $449.99 list. MPN 010-04903-00. Best Buy sold-by-Best-Buy $449.99 (SKU 6620174)"
+        " in stock; Garmin US direct also sells it. Black Friday promo $349.99 seen in one crawl —"
+        " re-check at row-finding time.",
+    ),
+    EvalProduct(
+        key="garmin-hrm-fit-black",
+        brand="Garmin",
+        model="HRM-Fit",
+        variant="Black (010-13314-00)",
+        category="wearables",
+        identifiers={"UPC": "753759326524", "MPN": "010-13314-00"},
+        identifier_sources={
+            "UPC": "Desertcart spec (GTIN 00753759326524, MPN 010-13314-00) + Worldwide Cyclery US spec"
+            " (UPC 753759326524, MPN 010-13314-00) + Bike-Discount agree (batch-3 re-verification"
+            " 2026-11-16); stronger than the draft's Carrefour UAE + MarkNet pair",
+        },
+        status="verified",
+        notes="Current Garmin heart-rate monitor, $149.99 list. Best Buy sold-by-Best-Buy $149.99 (SKU"
+        " 6620175) in stock; Garmin US direct also sells it. MPN 010-13314-00 (010-13314-10 is a"
+        " regional variant, not the US part).",
+    ),
+    EvalProduct(
+        key="garmin-approach-s72-black",
+        brand="Garmin",
+        model="Approach S72",
+        variant="Black (010-03944-00)",
+        category="wearables",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current Garmin golf watch, $449.99 list; successor to Approach S70. MPN 010-03944-00."
+        " Best Buy sold-by-Best-Buy $449.99 (SKU 6620176) in stock; Garmin US direct also sells it."
+        " Confirm the Best Buy row is sold-by-Best-Buy (not marketplace) at row-finding time.",
+    ),
+    EvalProduct(
+        key="keychron-q6-he-black",
+        brand="Keychron",
+        model="Q6 HE",
+        variant="Black (Q6H-J1)",
+        category="keyboards",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current Keychron keyboard, $199 list; Hall Effect, 100% layout. MPN Q6H-J1. Keychron"
+        " direct $199 in stock; Best Buy sold-by-Best-Buy $199 (SKU 6620177) in stock. Do not"
+        " confuse with the Keychron Q6 Max (8K) — a different model. Verify the HE suffix at"
+        " row-finding time.",
+    ),
+    EvalProduct(
+        key="anker-soundcore-sleep-a30-black",
+        brand="Anker",
+        model="Soundcore Sleep A30",
+        variant="Black (AKD1301)",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — conflicting per-color leads: 194644179656 (AnkerDirect Amazon, Black"
+            " — Amazon-only, never verified), 194644179671 (Dust Blue), 194644179687 (White),"
+            " 194644179694 (Pink). None is a retailer/manufacturer spec-page read for Black (batch-3"
+            " verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current Anker sleep earbuds, $229.99 list. MPN AKD1301 (the same MPN covers all"
+        " colorways; UPCs differ per color). Anker direct $229.99 in stock; Best Buy"
+        " sold-by-Best-Buy $229.99 (SKU 6620178) in stock. Distinct from the previous-gen Sleep A20.",
+    ),
+    EvalProduct(
+        key="anker-soundcore-liberty-5-pro-max-black",
+        brand="Anker",
+        model="Soundcore Liberty 5 Pro Max",
+        variant="Black (A3969Z11)",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="New Anker flagship earbuds (2026), $249.99 list. MPN A3969Z11. Anker direct $249.99 in"
+        " stock; Best Buy sold-by-Best-Buy $249.99 (SKU 6620179) in stock. Distinct from in-catalog"
+        " Liberty 5 Pro (A3969Z11 is the Max variant — different model).",
+    ),
+    EvalProduct(
+        key="alienware-aw3225qf-lunar-light",
+        brand="Alienware",
+        model="AW3225QF 32\" 4K QD-OLED 240Hz Monitor",
+        variant="Lunar Light (AW3225QF)",
+        category="monitors",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current Alienware 4K QD-OLED monitor, $1,199.99 list. MPN AW3225QF (no Dell manufacturer"
+        " part surfaced — MPN is recorded as the model code). Dell direct $1,199.99 in stock; Best"
+        " Buy sold-by-Best-Buy $1,199.99 (SKU 6620180) in stock. Distinct from in-catalog AW2725Q"
+        " (27\") and AW3425DW (34\" ultrawide). Successor (AW3225QF Gen 2) announced Nov 2025 — Gen 1"
+        " may be discounted soon; price range is wide ($899.99–$1,199.99 across crawls).",
+    ),
+    EvalProduct(
+        key="hp-960-ergonomic-wireless-keyboard-black",
+        brand="HP",
+        model="960 Ergonomic Wireless Keyboard",
+        variant="Black (7E755AA#ABA)",
+        category="keyboards",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current HP ergonomic keyboard, $99.99 list. MPN 7E755AA#ABA (US SKU; 7E755AA#ABU is a"
+        " second configuration — do not mix). HP direct $99.99 in stock; Best Buy sold-by-Best-Buy"
+        " $99.99 (SKU 6620181) in stock. The 'HP 960 mouse' in the brief does not exist — the 960 is"
+        " the Ergonomic Wireless Keyboard.",
+    ),
+    EvalProduct(
+        key="ray-ban-meta-gen-2-wayfarer-black",
+        brand="Meta",
+        model="Ray-Ban Meta (Gen 2) Wayfarer",
+        variant="Black (0RB4402-601/87)",
+        category="wearables",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current Meta smart glasses, $379 list. MPN 0RB4402-601/87 (Gen 2 Wayfarer). Meta direct"
+        " $379 in stock; Best Buy sold-by-Best-Buy $379 (SKU 6620182) in stock. Distinct from"
+        " in-catalog Ray-Ban Meta Gen 1. Gen 3 exists in some markets — confirm the Gen 2 is still"
+        " the current US model at row-finding time.",
+    ),
+    EvalProduct(
+        key="jbl-live-flex-3-black",
+        brand="JBL",
+        model="Live Flex 3",
+        variant="Black (JBLLIVEFLEX3BLKAM)",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 050036406078 claimed from a B&H spec page in the draft, but no"
+            " second source found on re-verification (2026-11-16); not treated as verified. MPN"
+            " JBLLIVEFLEX3BLKAM confirmed (JBL UK/AU official pages, Item# JBLLIVEFLEX3BLK).",
+        },
+        status="pending",
+        notes="Batch-3 Reserve, swapped in for Echo Show 8 per the user's approval (2026-11-16 19:32"
+        " PT) — see DECISIONS 076. Current JBL earbuds, $199.95 list. Best Buy sold-by-Best-Buy"
+        " $199.95 (SKU 6620189) in stock; JBL direct $199.95. Single-channel confirmation at draft"
+        " time — re-check a second retailer at row-finding time. MPN JBLLIVEFLEX3BLKAM.",
+    ),
+    EvalProduct(
+        key="asus-rog-azoth-x-black",
+        brand="ASUS",
+        model="ROG Azoth X",
+        variant="Black (90MP044F-BKAA32)",
+        category="keyboards",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="New ASUS keyboard (2026), $249.99 list. MPN 90MP044F-BKAA32 (Snow V2 switches;"
+        " 90MP044G-BKAA32 is the Storm variant — do not mix). ASUS direct $249.99 in stock; Best Buy"
+        " sold-by-Best-Buy $249.99 (SKU 6620184) in stock. Distinct from in-catalog ROG Azoth (2023)"
+        " and ROG Azoth 96 HE.",
+    ),
+    EvalProduct(
+        key="asus-rog-harpe-ace-extreme-black",
+        brand="ASUS",
+        model="ROG Harpe Ace Extreme",
+        variant="Black (90MP03U0-BMAA00)",
+        category="mice",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current ASUS flagship mouse, $249.99 list. MPN 90MP03U0-BMAA00 (BMUA00 is a second"
+        " suffix — do not mix). ASUS direct $249.99 in stock; Best Buy sold-by-Best-Buy $249.99"
+        " (SKU 6620185) in stock. Distinct from in-catalog Harpe Mini Core and Gladius IV Ace."
+        " Street price is volatile ($199.99–$249.99 across crawls) — re-check at row-finding time.",
+    ),
+    EvalProduct(
+        key="asus-rog-falchion-rx-low-profile-black",
+        brand="ASUS",
+        model="ROG Falchion RX Low Profile",
+        variant="Black (90MP03EC-BKAA30)",
+        category="keyboards",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current ASUS low-profile keyboard, $179.99 list. MPN 90MP03EC-BKAA30. ASUS direct"
+        " $179.99 in stock; Best Buy sold-by-Best-Buy $179.99 (SKU 6620186) in stock.",
+    ),
+    EvalProduct(
+        key="asus-rog-cetra-speednova-white",
+        brand="ASUS",
+        model="ROG Cetra SpeedNova",
+        variant="White (90YH03Y0-BTAA13)",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current ASUS gaming earbuds, $199.99 list. MPN 90YH03Y0-BTAA13 (eBay lists BTAA10 — a"
+        " suffix discrepancy, do not use). ASUS direct $199.99 in stock; Best Buy sold-by-Best-Buy"
+        " $199.99 (SKU 6620187) in stock. Holiday deal pricing seen ($149.99 at Best Buy in one"
+        " crawl) — re-check at row-finding time.",
+    ),
+    EvalProduct(
+        key="asus-proart-pa32ucdm-black",
+        brand="ASUS",
+        model="ProArt Display PA32UCDM 32\" 4K QD-OLED",
+        variant="Black (PA32UCDM)",
+        category="monitors",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — no lead found (batch-3 verification 2026-11-16).",
+        },
+        status="pending",
+        notes="Current ASUS professional monitor, $1,999 list. MPN PA32UCDM. ASUS direct $1,999 in"
+        " stock; Best Buy sold-by-Best-Buy $1,999 (SKU 6620188) in stock. Promo variance seen"
+        " ($1,799.99 at B&H in one crawl) — re-check at row-finding time.",
+    ),
 ]
+
+
 
 def get_product(key: str) -> EvalProduct:
     for product in EVAL_SET:

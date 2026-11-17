@@ -8002,3 +8002,38 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   /product/.../sku/6620180 self-operated URL.
 - No catalog identifier changes, no DECISIONS.md changes, no models
   added, no Amazon touch, no spending.
+
+## 125 — 2026-11-16: Expansion batch 3 executed (300 → 350 models)
+
+- User approved the third batch of 50 2026-11-16 19:32 PT ("按推荐批
+  50 款"), with the two adjustments from the recommendation: Echo
+  Show 8 out, JBL Live Flex 3 in from Reserve; Switch 2 Carrying
+  Case UPC re-checked at add time. Catalog 300 → 350, verified
+  identifiers 135 → 150, pending 165 → 200. Tests 56 pass. Site
+  rebuilt (353 pages — 350 models + method/principles + index).
+- Overlap re-verified at add time by script against the 300-model
+  snapshot (keys + verified UPCs + MPNs, intra-batch included):
+  0 collisions.
+- Add-time re-verification corrected the draft on 9 of its 19
+  "verified" identifiers — full detail in DECISIONS 076. Corrected
+  and kept verified (5): G502 X LIGHTSPEED → 910-006178 /
+  097855167057 (the draft's numbers belong to the wired G502 HERO,
+  a different model — the draft's "same SKU" claim is wrong);
+  K70 PRO TKL → CH-911911G-NA / 840006683650 (draft UPC was Hydro X
+  tubing); K70 CORE TKL → CH-911911E-NA / 840006678786 (draft UPC
+  was Dominator Platinum DDR4); Apple TV 4K 4th gen → MLFF4LL/A /
+  195951453064 / $299 (draft MPN/UPC/price all wrong); AirTag 2nd
+  gen → MFE94LL/A / 195950667295 (draft MPN/UPC both wrong).
+  Demoted to pending (4): HomePod mini 2 (MPN + UPC both found in
+  no source; price $99 → $149), HomePod 2nd gen UPC (no source;
+  MPN confirmed; price $299 → $349), G309 UPC (claimed B&H spec,
+  no second source), Live Flex 3 UPC (claimed B&H spec, no second
+  source). Confirmed as drafted (10): Bar 9, Bar 8, Lifestyle
+  Ultra, QC 2nd Gen, Vibe Beam 2, Tune Flex 2, Tune Buds 2,
+  PartyBox 520, HRM-Fit, Switch 2 Case (re-confirmed via the
+  search-engine cache of Nintendo's official page, SKU 123697;
+  direct URL 404'd).
+- New category "streaming-devices" (Apple TV 4K); smart-displays
+  drops out with Echo Show 8. ULT TOWER 9 UPC conflict stays
+  pending; Bose TV Speaker MPN corrected to 901067-1100. No model
+  dropped. No Amazon touch, no spending.

@@ -4036,3 +4036,108 @@ written as "superseded by" with the original text kept.
   (build_site.py, build_site_snapshot.py). Tests updated to 300
   models / 135 verified / 165 pending. No Amazon touch, no
   spending.
+
+## 076 (2026-11-16): Expansion batch 3 to 350 — third 50-model batch, user-approved
+
+- Third batch of 50 added (300 → 350 models, user approved
+  2026-11-16 19:32 PT by tapping "按推荐批 50 款", per DECISIONS
+  068's batches-of-50 path and the 500-model electronics-only
+  target the user set 2026-11-14): 15 UPC verified, 35 UPC pending.
+  The draft claimed 19 verified / 31 pending after the swap; the
+  add-time re-verification corrected that to 15 / 35 (see below).
+  Pending identifiers stay empty, with leads and conflicts recorded
+  in identifier_sources/notes — no rule change, no identifier
+  invented. Source: data/candidates_batch3_350.md (list-only prep,
+  2026-11-16; nothing added until the user's approval).
+- The approved swap: Echo Show 8 OUT (both identifiers pending —
+  the weakest entry in the batch) and JBL Live Flex 3 IN from
+  Reserve. The smart-displays category drops out with Echo Show 8
+  (no model in that category now); the streaming-devices category
+  is approved (Apple TV 4K is a mainstream product). Live Flex 3's
+  UPC ends up PENDING after re-verification (below), so the swap
+  adds 0 verified identifiers.
+- Overlap re-verified at add time by script (/tmp/overlap_batch3.py)
+  against the 300-model snapshot (keys + verified UPCs + MPNs,
+  including intra-batch): 0 collisions. The four demoted UPC leads
+  were also checked against the catalog: no collisions.
+- Re-verification corrections — the draft's "VERIFIED" labels were
+  not all sound. Five entries were CORRECTED and stay verified:
+  (1) G502 X LIGHTSPEED: the draft's 910-005469 / 097855173989
+  belong to the wired G502 HERO, a different model; the correct
+  identifiers are 910-006178 / 097855167057 (Micro Center spec +
+  Logitech official spec PDF + DirectDial/Compsource agree). The
+  draft's "same SKU" claim for HERO vs X LIGHTSPEED is wrong; the
+  HERO stays out of the catalog per the approved scope (it is a
+  distinct wired model, not a duplicate of the X LIGHTSPEED).
+  (2) K70 PRO TKL: the draft's CH-911911A-NA / 840006644323 are
+  wrong — 840006644323 belongs to Corsair Hydro X tubing, and 'A'
+  is not a K70 PRO TKL suffix; correct is CH-911911G-NA /
+  840006683650 (Corsair official SKU sheet + Ubuy + Desertcart +
+  Snapklik). The switches are MGX Hall Effect, not MLX.
+  (3) K70 CORE TKL: the draft's CH-911961A-NA / 840006644361 are
+  wrong — 840006644361 belongs to Corsair DOMINATOR PLATINUM DDR4
+  memory, and 911961 is the White K70 PRO TKL family; correct is
+  CH-911911E-NA / 840006678786 (PB Tech + Amazon + Desertcart +
+  Vishal agree).
+  (4) Apple TV 4K 4th gen: the draft's MA3J4LL/A / 195950001018 /
+  $129 are all wrong — MA3J4LL/A and 195950001018 appear in no
+  source; correct is MLFF4LL/A / 195951453064 / $299 (B&H spec +
+  Datavision + Best Buy / Abt / Apple.com). The pinned variant is
+  the 128GB Wi-Fi + Ethernet model, not the Wi-Fi-only model the
+  draft described.
+  (5) AirTag 2nd gen: the draft's MD1L4LL/A / 195950003012 are wrong
+  — MD1L4LL/A appears in no source; correct is MFE94LL/A /
+  195950667295 (B&H spec + Datavision + Abt / Staples / Best Buy
+  model field).
+- Four entries DEMOTED to pending (draft value kept as an
+  unconfirmed lead, never entered as verified):
+  (6) HomePod mini 2: MPN MA7D4LL/A and UPC 195950006983 were found
+  in NO source on re-verification; price corrected $99 → $149
+  (Apple press release 2026-10-13; $99 was the 1st-gen price).
+  (7) HomePod 2nd gen: UPC 194253469313 found in NO source (the
+  White model's barcode 194253467823 is confirmed by Clove, but
+  Midnight's is not); MPN MQJ73LL/A confirmed (EveryMac). Price
+  corrected $299 → $349 (Apple raised it 2026-06-25). Note: Abt
+  lists a 2025 re-issue MDEW4LL/A (Midnight) at $349 with MQJ73LL/A
+  "no longer available" at Abt — same product, new order number;
+  MQJ73LL/A kept as the pinned MPN.
+  (8) G309: UPC lead 097855178861 (claimed B&H spec) — no second
+  source found; MPN 910-007197 confirmed (BuyDig + Best Buy model
+  field). Flag: the current Best Buy crawl shows SKU 11230650 sold
+  by Beach Camera (marketplace) at $97.86, not the draft's
+  sold-by-Best-Buy SKU 6590104 at $79.99 — verify sold-by at
+  row-finding time.
+  (9) Live Flex 3 (the swap-in): UPC lead 050036406078 (claimed B&H
+  spec) — no second source found; MPN JBLLIVEFLEX3BLKAM confirmed
+  (JBL UK/AU official pages, Item# JBLLIVEFLEX3BLK).
+- Confirmed as drafted (10): BRAVIA Theatre Bar 9 (027242929555,
+  Adorama + B&H), BRAVIA Theatre Bar 8 (027242929548, Adorama +
+  B&H), Lifestyle Ultra Soundbar (017817858915, B&H + Adorama), QC
+  Headphones 2nd Gen (017817859684, NFM + Adorama), Vibe Beam 2
+  (050036405041, B&H + Micro Center + MusicRedone), Tune Flex 2
+  (050036405614, B&H + Abt + NFM), Tune Buds 2 (050036405737, B&H +
+  Micro Center), PartyBox 520 (050036408615, Abt + Walts + B&H +
+  JBL manual), HRM-Fit (753759326524, Desertcart GTIN + Worldwide
+  Cyclery US + Bike-Discount — stronger than the draft's Carrefour
+  UAE + MarkNet pair), Switch 2 Carrying Case (045496886073,
+  Nintendo US official store page SKU 123697, re-confirmed via the
+  search-engine cache of the official page; the direct page URL
+  404'd on open — recorded in the catalog entry).
+- Other draft items carried as written: ULT TOWER 9 UPC conflict
+  stays PENDING (027242931923 vs 027242931930 across two variants);
+  Bose TV Speaker 2nd Gen MPN corrected to 901067-1100 (batch-2's
+  "BOSETVSPEAKER2" was an Abt internal code, not the MPN). No model
+  was dropped; the corrections were identifier-level, not
+  exclusion-level.
+- New category value "streaming-devices" (Apple TV 4K); the site
+  builds its category list dynamically, so no allowlist change was
+  needed. Site copy updated 300 → 350 (build_site.py,
+  build_site_snapshot.py). Tests updated to 350 models / 150
+  verified / 200 pending. No Amazon touch, no spending.
+- Lesson recorded: the batch-3 draft (group reports) produced wrong
+  identifiers on 5 of 19 "verified" entries and uncorroborated
+  single-source claims on 4 more; the add-time re-verification
+  caught all 9 before anything was written. The skill already
+  requires a second agreeing source for a verified identifier —
+  this batch is the proof that rule matters, and it was applied at
+  add time, not waived.

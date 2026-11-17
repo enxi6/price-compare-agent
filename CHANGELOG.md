@@ -9,6 +9,17 @@ releases; breaking changes are called out in the release notes.
 
 ## [Unreleased]
 
+### Added
+
+- Catalog batch 3 (2026-11-16): 50 models added (300 → 350),
+  user-approved; 15 UPC verified, 35 pending. Echo Show 8 swapped
+  out for Reserve JBL Live Flex 3; new category streaming-devices
+  (Apple TV 4K). Add-time re-verification corrected 5 draft
+  identifiers (G502 X LIGHTSPEED, K70 PRO TKL, K70 CORE TKL, Apple
+  TV 4K 4th gen, AirTag 2nd gen) and demoted 4 to pending (HomePod
+  mini 2, HomePod 2nd gen UPC, G309 UPC, Live Flex 3 UPC) — see
+  DECISIONS 076.
+
 ### Fixed
 
 - Snapshot builder (2026-11-16): 19 new known-bad rows — 13
