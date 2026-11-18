@@ -8169,3 +8169,22 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Next: live-browser check of the Crutchfield page; if In stock
   + Add to cart + $359.00 confirm, add the row (expected ranking
   127 → 128, matched 143 → 144).
+
+## 129 — 2026-11-17: QC 2nd Gen Crutchfield row added at live $219.00 (DECISIONS 079)
+
+- Trigger: user said "继续" (2026-11-17 22:46 PT) after the
+  recommendation to add the Crutchfield row; the live-browser check
+  completed ~22:49 PT.
+- Done: live verification of the Crutchfield page (Item #
+  018QCHG2BK, MFR # 895491-0100, Black): price $219.00 (former
+  $359.00 struck through, Save $140.00), In stock + Add to cart,
+  sold by Crutchfield, free 2-day shipping to California. Row
+  written to the hand file at $219.00 with the live evidence in
+  the source string.
+- Price correction: the 2026-11-15 crawl's $359.00 was already
+  stale; DECISIONS 078's "$359.00" expectation is superseded.
+  The row is written at the live price and the correction is
+  recorded in DECISIONS 079.
+- Result: ranking 127 → 128, matched 143 → 144, total offers
+  1,545 → 1,546. Tests 56 passed. No catalog identifier changes,
+  no models added, no Amazon touch, no spending.

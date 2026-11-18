@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-11-18T06:48:20.200314+00:00",
+    "generated_at": "2026-11-18T06:50:31.799322+00:00",
     "snapshot_date": "2026-11-17",
     "source_files": 57,
     "identified_source_files": 15,
     "models": 350,
     "verified_identifiers": 150,
     "pending_identifiers": 200,
-    "total_offers": 1545,
-    "matched_offers": 143,
+    "total_offers": 1546,
+    "matched_offers": 144,
     "suspected_offers": 1402,
-    "verified_ranking_models": 127,
+    "verified_ranking_models": 128,
     "models_with_offers": 313,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -22572,6 +22572,19 @@
       },
       "offers": [
         {
+          "merchant": "Crutchfield",
+          "price": 219.0,
+          "title": "Bose QuietComfort Headphones (2nd Gen) - Black",
+          "url": "https://www.crutchfield.com/p_018QCHG2BK/Bose-QuietComfort-Headphones-2nd-Gen-Black.html",
+          "collected_at": "2026-11-18T06:49:49Z",
+          "identifier": "895491-0100",
+          "identifier_kind": "MPN",
+          "source_tier": 4,
+          "source": "crutchfield.com product page (live browser verified 2026-11-17 ~22:49 PT; Item # 018QCHG2BK, MFR # 895491-0100, Black selected, $219.00, former price $359.00 struck through, Save $140.00, In stock + Add to cart, sold by Crutchfield, free 2-day shipping to California; page carries no UPC — MPN pins model per H9 precedent; the 2026-11-15 crawl's $359.00 was already stale; added on user approval 2026-11-17)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Bose",
           "price": 199.0,
           "title": "Bose QuietComfort Headphones (2nd Gen)",
@@ -22613,8 +22626,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-17.json",
       "source_collected_at": "2026-11-17T19:38:24.610247+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "bose-tv-speaker-2nd-gen-black",

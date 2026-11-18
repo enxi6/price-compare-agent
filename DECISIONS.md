@@ -4219,3 +4219,29 @@ written as "superseded by" with the original text kept.
   confirms In stock + Add to cart + $359.00, the row can be added
   in one small step (expected ranking 127 → 128, matched
   143 → 144).
+
+## 079 (2026-11-17): QC 2nd Gen Crutchfield row added at live $219.00 — DECISIONS 078 hold resolved
+
+- Decision: Add the Crutchfield row for Bose QC Headphones 2nd Gen
+  (bose-qc-headphones-2nd-gen-black, MPN 895491-0100) at the live
+  price $219.00. The model is now ranked.
+- Why: the live-browser check completed 2026-11-17 ~22:49 PT
+  resolved the DECISIONS 078 hold with fresh evidence: the
+  Crutchfield page (Item # 018QCHG2BK, MFR # 895491-0100, Black
+  selected) shows $219.00 with "In stock" and an enabled "Add to
+  cart" — the two-signal standard met, sold by Crutchfield itself,
+  free 2-day shipping to California. The page carries no UPC; MPN
+  pins the model per the H9 precedent.
+- Price correction: $359.00 was already stale. The live page shows
+  $219.00 with the former $359.00 struck through ("Amount was
+  $359.00", "Save $140.00"). The 2026-11-15 crawl's $359.00 and
+  the DECISIONS 078 "if it confirms ... $359.00" expectation are
+  superseded — the row is written at the live $219.00, and the
+  correction is recorded here rather than silently replacing the
+  figure.
+- Alternative (not chosen): hold again for a $359.00 confirmation.
+  Rejected: $359.00 is the former price, not the current one;
+  waiting for it would block a verified in-stock row at its real
+  price.
+- Result: ranking 127 → 128, matched 143 → 144 (verified from the
+  rebuilt snapshot).

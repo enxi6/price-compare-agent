@@ -32,6 +32,14 @@ releases; breaking changes are called out in the release notes.
   2026-11-15 crawl, In stock + Add to cart, $359.00). Row not
   written; model stays unranked. See DECISIONS 078.
 
+- QC 2nd Gen Crutchfield row added at live $219.00
+  (2026-11-17): live browser verification ~22:49 PT (In stock +
+  Add to cart, MFR # 895491-0100, Item # 018QCHG2BK) resolved
+  the DECISIONS 078 hold; ranking 127 → 128, matched 143 → 144.
+  Price correction: the 2026-11-15 crawl's $359.00 was already
+  stale — the live page shows $219.00 with $359.00 struck
+  through (Save $140.00). See DECISIONS 079.
+
 ### Fixed
 
 - Snapshot builder (2026-11-16): 19 new known-bad rows — 13

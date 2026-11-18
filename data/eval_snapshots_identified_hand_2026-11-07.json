@@ -1226,6 +1226,22 @@
           "in_stock": true
         }
       ]
+    },
+    "bose-qc-headphones-2nd-gen-black": {
+      "offers": [
+        {
+          "merchant": "Crutchfield",
+          "price": 219.0,
+          "title": "Bose QuietComfort Headphones (2nd Gen) - Black",
+          "url": "https://www.crutchfield.com/p_018QCHG2BK/Bose-QuietComfort-Headphones-2nd-Gen-Black.html",
+          "collected_at": "2026-11-18T06:49:49Z",
+          "identifier": "895491-0100",
+          "identifier_kind": "MPN",
+          "source_tier": 4,
+          "source": "crutchfield.com product page (live browser verified 2026-11-17 ~22:49 PT; Item # 018QCHG2BK, MFR # 895491-0100, Black selected, $219.00, former price $359.00 struck through, Save $140.00, In stock + Add to cart, sold by Crutchfield, free 2-day shipping to California; page carries no UPC — MPN pins model per H9 precedent; the 2026-11-15 crawl's $359.00 was already stale; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }
