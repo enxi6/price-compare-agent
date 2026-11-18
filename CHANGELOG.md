@@ -74,6 +74,16 @@ releases; breaking changes are called out in the release notes.
   Silarius row because the identified stream unions across files
   with no expiry — watch item, not a live price. Tests 56 pass.
 
+- Snapshot builder (2026-11-18): stale Silarius Galaxy Buds3 FE
+  $195.99 matched row removed. Silarius now sells only a 10-pack
+  ($1,499.90), so the 11-17 single-unit row was unbuyable; the
+  identified stream unions across files with no expiry, so the
+  merge gains EXCLUDED_IDENTIFIED (model, merchant, normalized
+  identifier) as its exclusion path — KNOWN_BAD only filters Meta
+  rows. The Best Buy $125.99 replacement row is NOT added yet:
+  it still needs live-browser verification (spec-panel UPC,
+  sold-by, main buy box). See DECISIONS 080.
+
 - Snapshot builder (2026-11-16): 19 new known-bad rows — 13
   wrong-variant rows (ASUS Japan ¥169,800 read as USD, Legion Go S
   32GB/1TB, Vivosmart 5 Large band, Mac mini 1TB, Studio Display

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-11-18T20:14:50.555824+00:00",
+    "generated_at": "2026-11-18T22:34:23.033164+00:00",
     "snapshot_date": "2026-11-18",
     "source_files": 58,
     "identified_source_files": 16,
     "models": 350,
     "verified_identifiers": 150,
     "pending_identifiers": 200,
-    "total_offers": 1534,
-    "matched_offers": 144,
+    "total_offers": 1533,
+    "matched_offers": 143,
     "suspected_offers": 1390,
-    "verified_ranking_models": 128,
+    "verified_ranking_models": 127,
     "models_with_offers": 311,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -3164,19 +3164,6 @@
         "MPN": "SM-R420NZKAXAR"
       },
       "offers": [
-        {
-          "merchant": "Silarius",
-          "price": 195.99,
-          "title": "Samsung SM-R420NZKAXAR Galaxy Buds3 FE - Black",
-          "url": "https://silarius.com/products/samsung-sm-r420nzkaxar-galaxy-buds3-fe-black?variant=50667417534567",
-          "collected_at": "2026-11-17T19:23:46.315099+00:00",
-          "identifier": "SM-R420NZKAXAR",
-          "identifier_kind": "SKU",
-          "source_tier": 1,
-          "source": "shopify:silarius.com",
-          "in_stock": true,
-          "suspected": false
-        },
         {
           "merchant": "Best Buy",
           "price": 125.99,

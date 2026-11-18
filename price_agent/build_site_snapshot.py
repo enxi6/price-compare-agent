@@ -55,6 +55,19 @@ SNAPSHOT_GLOB = "data/eval_snapshots*.json"
 IDENTIFIED_GLOB = "data/eval_snapshots_identified_*.json"
 DEFAULT_OUT = "data/site_snapshot.json"
 
+# Identified-stream rows proven wrong by merchant-page checks:
+# (model key, merchant, normalized identifier). The identified
+# stream dedupes on (merchant, identifier) and unions across files
+# with no expiry, so a stale row can only be removed by an explicit
+# exclusion here — the Meta stream's KNOWN_BAD (keyed on price, in
+# the sweep script) never touches identified rows. First use:
+# Silarius Buds3 FE — the $195.99 single-unit row was captured
+# 2026-11-17; Silarius now sells only a 10-pack ($1,499.90), so no
+# single-unit Silarius row exists (DECISIONS 080).
+EXCLUDED_IDENTIFIED = {
+    ("samsung-buds3-fe-black", "silarius", "SMR420NZKAXAR"),
+}
+
 
 def _parse_collected_at(value: str) -> datetime:
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
@@ -305,6 +318,12 @@ def build_site_snapshot(snapshot_files: list[dict] | None = None,
             }
             for offer in _identified_dedupe(_exact_dedupe(id_offers))
             if offer.get("identifier")
+            and (
+                product.key,
+                offer["merchant"].strip().casefold(),
+                normalize_identifier(offer["identifier"]),
+            )
+            not in EXCLUDED_IDENTIFIED
         ]
 
         # Match gate: only identity.match_offers decides the ranking.

@@ -4245,3 +4245,53 @@ written as "superseded by" with the original text kept.
   price.
 - Result: ranking 127 → 128, matched 143 → 144 (verified from the
   rebuilt snapshot).
+
+## 080 (2026-11-18): Buds3 FE Silarius row removed via new merge exclusion; Best Buy replacement row NOT yet added — live-browser verification pending
+
+- Decision: Remove the stale Silarius $195.99 matched row for
+  Samsung Galaxy Buds3 FE (samsung-buds3-fe-black) and hold the
+  Best Buy $125.99 replacement row until it is live-verified in
+  the real browser. The user approved the swap ("按推荐换行");
+  the deletion half is executed here, the addition half waits for
+  the verification gate.
+- Why the row is stale: Silarius now sells this item only as a
+  pack of 10 ($1,499.90, "Sold as a pack of 10. The distributor
+  sells this item only in packs of 10, so the price shown is for
+  10 units.", tag moq-pack-2026-11) while keeping the standalone
+  MPN/SKU SM-R420NZKAXAR. Per-unit $149.99 equals the Samsung
+  direct price — it is not a cheap single unit. The $195.99 row
+  was captured 2026-11-17 as a single-unit price and is now
+  unbuyable as a single unit.
+- Why a new mechanism: no established exclusion exists for the
+  identified stream. The Meta stream's KNOWN_BAD (model, merchant,
+  price) lives in the sweep script and only filters Meta feed rows;
+  the repo merge (price_agent/build_site_snapshot.py) had no
+  exclusion hook at all, and the identified stream unions across
+  files with no expiry — the 2026-11-18 bundle-guard fix stops
+  future Silarius reads but cannot remove the 11-17 row, and dated
+  snapshot files are never hand-edited. So the merge gains
+  EXCLUDED_IDENTIFIED, keyed on (model key, merchant, normalized
+  identifier) — the same pair the identified dedupe keys on —
+  with its first entry ("samsung-buds3-fe-black", "silarius",
+  "SMR420NZKAXAR"). A regression test covers it
+  (test_excluded_identified_row_removed). Future proven-wrong
+  identified rows go here, not into KNOWN_BAD.
+- Best Buy replacement row (NOT added): Best Buy $125.99, SKU
+  12088602, model SM-R420NZKAXAR, Save $24 vs $149.99 comp
+  value; Samsung direct, CDW and NFM are all $149.99, so Best
+  Buy is the lowest single-unit price. A text fetch (crawled
+  2026-11-18 22:15 UTC) confirms model SM-R420NZKAXAR, price
+  $125.99, and JSON-LD InStock — but it does NOT confirm the
+  spec-panel UPC print, the main quote's sold-by-Best-Buy status,
+  or the main Add to Cart buy box (the Add to Cart wording in
+  the extract sits in the "More options" area; the "Sold &
+  shipped by SpaceBound, Inc." lines belong to featured products,
+  not the main product). Per the task gate, the row is NOT
+  written until the real browser confirms (a) spec-panel UPC
+  0198957213090, (b) sold/shipped by Best Buy, (c) In Stock,
+  (d) clickable main Add to Cart, (e) price $125.99. If any
+  fails, only the deletion stands and Buds3 FE returns to
+  unranked (ranking 127, matched 143). Live-browser check
+  handed to the parent agent (subagents cannot run browser.browse).
+- Result: ranking 128 → 127, matched 144 → 143, total offers
+  1,534 → 1,533 (verified from the rebuilt snapshot).

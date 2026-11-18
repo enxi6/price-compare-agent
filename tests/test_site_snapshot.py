@@ -405,3 +405,29 @@ def test_merge_dedupes_exact_duplicate_rows(tmp_path):
             (o["merchant"], o["price"], o["url"]) for o in model["offers"]
         ]
         assert len(rows) == len(set(rows))
+
+
+def test_excluded_identified_row_removed(tmp_path):
+    """EXCLUDED_IDENTIFIED drops a proven-wrong identified row.
+
+    Regression: Silarius Buds3 FE $195.99 single-unit row was captured
+    2026-11-17; Silarius now sells only a 10-pack, so the row must
+    not rank (DECISIONS 080). A different merchant's row for the
+    same model survives the exclusion.
+    """
+    identified = _identified(tmp_path, {
+        "samsung-buds3-fe-black": {"offers": [
+            _id_offer("Silarius", 195.99, "SM-R420NZKAXAR",
+                      url="https://example.com/silarius"),
+            _id_offer("Best Buy", 125.99, "SM-R420NZKAXAR",
+                      url="https://example.com/bb"),
+        ]},
+    })
+    result = build_site_snapshot(_files(tmp_path), identified)
+    buds = {m["key"]: m for m in result["models"]}["samsung-buds3-fe-black"]
+    merchants = [o["merchant"] for o in buds["offers"]]
+    assert "Silarius" not in merchants
+    matched = [o for o in buds["offers"] if not o["suspected"]]
+    assert len(matched) == 1
+    assert matched[0]["merchant"] == "Best Buy"
+    assert matched[0]["price"] == 125.99

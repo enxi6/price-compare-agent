@@ -8269,3 +8269,22 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   identifier changes, no DECISIONS.md changes, no models
   added, no Amazon touch, no spending, no registrations, no
   purchases. Kindle pin unchanged (B0CFPL6CFY).
+
+## 131 — 2026-11-18: Buds3 FE Silarius row removed via merge exclusion (DECISIONS 080)
+
+- Trigger: user-approved swap ("按推荐换行").
+- Silarius $195.99 matched row removed: Silarius now sells Buds3
+  FE only as a 10-pack ($1,499.90); the 11-17 single-unit row is
+  stale. Removal via new EXCLUDED_IDENTIFIED in
+  price_agent/build_site_snapshot.py (model, merchant, normalized
+  identifier) — KNOWN_BAD only filters Meta rows and cannot touch
+  the identified stream; dated files never hand-edited.
+  Regression test test_excluded_identified_row_removed added.
+- Best Buy $125.99 replacement row NOT added: text fetch
+  confirms model, price, JSON-LD InStock, but not spec-panel UPC,
+  sold-by, or main buy box. Live-browser verification handed to
+  the parent agent; if it fails, the deletion stands alone.
+- Result: ranking 128 → 127, matched 144 → 143, total offers
+  1,534 → 1,533 (verified from the rebuilt snapshot). Tests 57
+  passed. No catalog identifier changes, no models added, no
+  Amazon touch, no spending, no registrations, no purchases.
