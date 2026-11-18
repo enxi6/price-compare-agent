@@ -8110,3 +8110,37 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier changes,
   no DECISIONS.md changes, no models added, no Amazon touch, no
   spending, no registrations, no purchases.
+
+## 127 — 2026-11-17: Batch-3 verified-unranked hand rows executed (13 landed, 1 dropped)
+
+- Probe of the 15 verified-unranked batch-3 models found 14
+  addable rows; user approved all 14 ("按推荐加 14 行",
+  2026-11-17 15:59 PT). 13 landed: Bar 9 B&H $1,398.00, Bar 8
+  B&H $998.00, Lifestyle Ultra Best Buy $1,099.00, Vibe Beam 2
+  B&H $39.95, Tune Flex 2 Best Buy $49.95, Tune Buds 2 B&H
+  $49.95, PartyBox 520 Best Buy $699.95, G502 X LIGHTSPEED Best
+  Buy $139.99, K70 PRO TKL Best Buy $169.99, K70 CORE TKL Best
+  Buy $99.99, Apple TV 4K Best Buy $299.00, AirTag 2nd gen Best
+  Buy $23.00 (holiday deal, ends within ~6 hours), HRM-Fit
+  BikeTiresDirect $149.99 (approved backup; Garmin direct showed
+  price only). Hand file 58 models / 65 rows → 71 / 78.
+- Dropped: Bose QC Headphones 2nd Gen. Abt $359.00 Add to Cart
+  never verified live (probe, add-time fetch, search); Best Buy
+  $299.00 backup (SKU 13242104) confirmed sold & shipped by
+  WackyJacky (marketplace) — excluded. Model stays unranked.
+  Lead, not added: Crutchfield $359.00 InStock + Add to Cart.
+- Live re-verification at add time, all 2026-11-17: B&H Bar 9 /
+  Bar 8 / Vibe Beam 2 / Tune Buds 2 clean two-signal (In Stock +
+  Add to Cart + JSON-LD InStock, UPC on page); K70 PRO and G502 X
+  Add to Cart in buy-box position; Tune Flex 2, PartyBox 520,
+  K70 CORE, Apple TV 4K, Lifestyle Ultra — price, sold-by and
+  JSON-LD InStock live, buy-box button text not in extraction,
+  caveat recorded in source string (ULT FIELD 3/5 precedent).
+  Apple TV 4K InStock today overrides the 2026-11-16
+  "Unavailable" snippet. AirTag 2 $23.00 deal countdown seen on
+  page. HRM-Fit backup JSON-LD $149.99 / InStock live.
+- Result: ranking 114 → 127, matched 130 → 143, total offers
+  1,536 → 1,545 (+9, not +13: 4 hand rows superseded
+  same-merchant same-price suspected rows via (merchant,
+  identifier) dedupe). Tests 56 passed. No catalog identifier
+  changes, no models added, no Amazon touch, no spending.

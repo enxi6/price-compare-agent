@@ -1018,6 +1018,214 @@
           "in_stock": true
         }
       ]
+    },
+    "sony-bravia-theatre-bar-9-black": {
+      "offers": [
+        {
+          "merchant": "B&H",
+          "price": 1398.0,
+          "title": "Sony HT-A9000 BRAVIA Theater Bar 9 585W 13-Channel Dolby Atmos Soundbar",
+          "url": "https://www.bhphotovideo.com/c/product/1821419-REG/sony_ht_a9000_bravia_theater_bar_9.html",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "027242929555",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (text-fetch verified 2026-11-17; UPC 027242929555, In Stock, $1,398.00, Holiday Savings $100 off $1,498.00, Add to Cart + JSON-LD $1,398.00 / InStock; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-bravia-theatre-bar-8-black": {
+      "offers": [
+        {
+          "merchant": "B&H",
+          "price": 998.0,
+          "title": "Sony HT-A8000 BRAVIA Theater Bar 8 495W 11-Channel Dolby Atmos Soundbar",
+          "url": "https://www.bhphotovideo.com/c/product/1821418-REG/sony_ht_a8000_bravia_theater_bar_8.html",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "027242929548",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (text-fetch verified 2026-11-17; UPC 027242929548, In Stock, $998.00, Add to Cart + JSON-LD $998.00 / InStock; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "bose-lifestyle-ultra-soundbar-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 1099.0,
+          "title": "Bose - Lifestyle Ultra 5.1.2 Soundbar with Dolby Atmos, TrueSpatial Audio, AirPlay & Google Cast - Black",
+          "url": "https://www.bestbuy.com/product/6667620",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "017817858915",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-17; Model 892930-1100, SKU 6667620, Sold by Best Buy, $1,099.00, JSON-LD $1,099.00 / InStock; Add to Cart verified by 2026-11-17 probe, buy-box button text not clearly attributable in 2026-11-17 text extraction; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "jbl-vibe-beam-2-black": {
+      "offers": [
+        {
+          "merchant": "B&H",
+          "price": 39.95,
+          "title": "JBL Vibe Beam 2 True Wireless Noise-Canceling Earbuds (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1897245-REG/jbl_jblvbeam2blkam_vibe_beam_2_noise.html",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "050036405041",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (text-fetch verified 2026-11-17; UPC 050036405041, In Stock, $39.95, Holiday Savings $25 off $64.95, Add to Cart + JSON-LD $39.95 / InStock; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "jbl-tune-flex-2-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 49.95,
+          "title": "JBL - Tune Flex 2 True Wireless Noise Cancelling Earbuds - 2025 - Black",
+          "url": "https://www.bestbuy.com/product/6611535",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "050036405614",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-17; Model JBLTFLEX2BLKAM, SKU 6611535, Sold by Best Buy, $49.95, Save $60, Comp. Value $109.95, JSON-LD $49.95 / InStock; Add to Cart verified by 2026-11-17 probe (search snippet), buy-box button text not in 2026-11-17 text extraction; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "jbl-tune-buds-2-black": {
+      "offers": [
+        {
+          "merchant": "B&H",
+          "price": 49.95,
+          "title": "JBL Tune Buds 2 Wireless Noise-Canceling Earbuds (Black)",
+          "url": "https://www.bhphotovideo.com/c/product/1897239-REG/jbl_jbltbuds2blkam_tune_buds_2_true.html",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "050036405737",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (text-fetch verified 2026-11-17; UPC 050036405737, In Stock, $49.95, Holiday Savings $60 off $109.95, Add to Cart + JSON-LD $49.95 / InStock; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "jbl-partybox-520-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 699.95,
+          "title": "JBL - Partybox 520 Portable Wireless Party Speaker - 2025 - Black",
+          "url": "https://www.bestbuy.com/product/6634022",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "050036408615",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-17; Model JBLPARTYBOX520AM, SKU 6634022, Sold by Best Buy, $699.95, Save $180, Comp. Value $879.95, JSON-LD $699.95 / InStock; Add to Cart verified by 2026-11-17 probe (search snippet), buy-box button text not in 2026-11-17 text extraction; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "logitech-g502-x-lightspeed-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 139.99,
+          "title": "Logitech - G502 X LIGHTSPEED Wireless Optical Gaming Mouse for Desktop with 44K Sensor - Wireless - Black",
+          "url": "https://www.bestbuy.com/product/6512120",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "097855167057",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-17; Model 910-006178, SKU 6512120, Sold by Best Buy, $139.99, Save $20, Comp. Value $159.99, JSON-LD $139.99 / InStock, Add to Cart in buy-box position in 2026-11-17 text extraction; correct G502 X LIGHTSPEED code, not the HERO's 910-005469; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "corsair-k70-pro-tkl-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 169.99,
+          "title": "CORSAIR - K70 PRO TKL Wired Magnetic Hall Effect Programmable Gaming Keyboard with Rapid Trigger - Black",
+          "url": "https://www.bestbuy.com/product/6596942",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "840006683650",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-17; Model CH-911911G-NA, SKU 6596942, Sold by Best Buy, $169.99, Add to Cart + JSON-LD $169.99 / InStock; correct code, not the draft's 840006644323 (Hydro X tubing); added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "corsair-k70-core-tkl-rgb-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 99.99,
+          "title": "CORSAIR - K70 CORE TKL Compact Wired RGB Pre-Lubed Linear Mechanical Switches Gaming Keyboard with Sound - Black",
+          "url": "https://www.bestbuy.com/product/6589582",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "840006678786",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-17; Model CH-911911E-NA, SKU 6589582, Sold by Best Buy, $99.99, JSON-LD $99.99 / InStock; Add to Cart verified by 2026-11-17 probe (search snippet), buy-box button text not in 2026-11-17 text extraction; correct code, not the draft's 840006644361 (Dominator Platinum DDR4); Corsair direct lists the same model at $99.99 In Stock; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-tv-4k-4th-gen-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 299.0,
+          "title": "Apple - TV 4K (4th generation) - Black",
+          "url": "https://www.bestbuy.com/product/6643857",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "195951453064",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-17; Model MLFF4LL/A, SKU 6643857, Sold by Best Buy, $299.00, 128GB, Ethernet confirmed in Q&A, JSON-LD $299.00 / InStock today — overrides the 2026-11-16 search snippet showing Unavailable; Add to Cart verified by 2026-11-17 probe (search snippet), buy-box button text not in 2026-11-17 text extraction; B&H BackOrder excluded; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-airtag-2nd-gen-white": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 23.0,
+          "title": "Apple - AirTag 1 pack (2nd generation) - 2026 - White",
+          "url": "https://www.bestbuy.com/product/6377585",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "195950667295",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (text-fetch verified 2026-11-17; Model MFE94LL/A, SKU 6377585, Sold by Best Buy, $23.00, Save $6, Comp. Value $29.00, deal ends in ~6 hours, Add to Cart + JSON-LD $23.00 / InStock; holiday deal price, may move at next refresh; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
+    },
+    "garmin-hrm-fit-black": {
+      "offers": [
+        {
+          "merchant": "BikeTiresDirect",
+          "price": 149.99,
+          "title": "Garmin HRM-Fit Heart Rate Monitor [010-13314-00]",
+          "url": "https://www.biketiresdirect.com/product/garmin-hrm-fit-heart-rate-monitor",
+          "collected_at": "2026-11-18T00:02:36Z",
+          "identifier": "753759326524",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "biketiresdirect.com product page (text-fetch verified 2026-11-17; Mfg PartNum 010-13314-00, $149.99, JSON-LD $149.99 / InStock; Add to Cart wording not in text extraction; Garmin direct page showed $149.99 only with no availability in the extract, so the approved backup row is used; B-Stock units also listed at a discount, $149.99 is the new-unit JSON-LD price; added on user approval 2026-11-17)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

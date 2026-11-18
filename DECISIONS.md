@@ -4141,3 +4141,55 @@ written as "superseded by" with the original text kept.
   requires a second agreeing source for a verified identifier —
   this batch is the proof that rule matters, and it was applied at
   add time, not waived.
+
+## 077 (2026-11-17): Batch-3 verified-unranked hand rows — 13 of 14 landed, QC 2nd Gen dropped on failed live verification
+
+- Probe of the 15 verified-but-unranked batch-3 models (2026-11-17)
+  found 14 addable hand rows; the user approved all 14 by tapping
+  "按推荐加 14 行" (2026-11-17 15:59 PT). 13 landed. The one drop
+  is Bose QC Headphones 2nd Gen: the Abt $359.00 row's Add to Cart
+  was never verified live — not in the probe extract, not in the
+  add-time Abt fetch (price $359.00, MPN 895491-0100, JSON-LD
+  InStock all confirmed, but no Add to Cart wording), not in a
+  follow-up search — and the Best Buy $299.00 backup (SKU 13242104)
+  was confirmed on the live page as sold & shipped by WackyJacky,
+  a marketplace seller, so it was excluded too. QC 2nd Gen stays
+  unranked. Lead for a later round, not added: Crutchfield lists
+  it at $359.00 In Stock with Add to Cart (crawled 2 days ago).
+- The 13 landed rows (hand file 58 models / 65 rows → 71 / 78):
+  Bar 9 B&H $1,398.00, Bar 8 B&H $998.00, Lifestyle Ultra Best
+  Buy $1,099.00, Vibe Beam 2 B&H $39.95, Tune Flex 2 Best Buy
+  $49.95, Tune Buds 2 B&H $49.95, PartyBox 520 Best Buy $699.95,
+  G502 X LIGHTSPEED Best Buy $139.99 (MPN 910-006178, the correct
+  code — not the HERO's 910-005469), K70 PRO TKL Best Buy $169.99
+  (CH-911911G-NA), K70 CORE TKL Best Buy $99.99 (CH-911911E-NA),
+  Apple TV 4K Best Buy $299.00 (MLFF4LL/A, 128GB Wi-Fi +
+  Ethernet), AirTag 2nd gen Best Buy $23.00 (MFE94LL/A, holiday
+  deal price, deal ends within ~6 hours — expect it to move at
+  the next refresh), HRM-Fit BikeTiresDirect $149.99 (approved
+  backup: Garmin direct showed $149.99 only, no availability in
+  the extract, so the backup row was used).
+- Apple TV 4K stock re-verified live InStock at add time, which
+  overrides the 2026-11-16 search snippet showing Unavailable;
+  B&H BackOrder excluded. Switch 2 Carrying Case stays unranked
+  (Nintendo direct sold out, Best Buy SKU 6625926 no stock
+  signal) — not part of this execution.
+- Caveats recorded honestly in the source strings, per the ULT
+  FIELD 3/5 precedent (BUILD_LOG 124): for Tune Flex 2, PartyBox
+  520, K70 CORE, Apple TV 4K and Lifestyle Ultra, the buy-box
+  Add to Cart text was not in the add-time extraction while
+  price, sold-by and JSON-LD InStock verified live; Add to Cart
+  rests on the 2026-11-17 probe's search snippet. G502 X and K70
+  PRO had Add to Cart in the buy-box position in the live
+  extraction. HRM-Fit backup: Add to Cart wording not in the
+  BikeTiresDirect extraction; B-Stock units also listed at a
+  discount, $149.99 is the new-unit JSON-LD price.
+- Result (rebuilt snapshot 2026-11-17): ranking 114 → 127,
+  matched 130 → 143, total offers 1,536 → 1,545. Total rose by
+  9, not 13, because 4 hand rows superseded same-merchant,
+  same-price suspected rows already in the snapshot (PartyBox 520
+  Best Buy $699.95, G502 X Best Buy $139.99, K70 PRO Best Buy
+  $169.99, HRM-Fit BikeTiresDirect $149.99) — the (merchant,
+  identifier) dedupe promoted them to matched rather than
+  duplicating them. No catalog identifier changes, no models
+  added, no Amazon touch, no spending.

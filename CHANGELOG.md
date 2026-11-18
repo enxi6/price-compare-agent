@@ -20,6 +20,12 @@ releases; breaking changes are called out in the release notes.
   mini 2, HomePod 2nd gen UPC, G309 UPC, Live Flex 3 UPC) — see
   DECISIONS 076.
 
+- Batch-3 verified-unranked hand rows (2026-11-17): 13 of 14
+  approved rows landed, ranking 114 → 127, matched 130 → 143.
+  Bose QC Headphones 2nd Gen dropped — Abt $359.00 Add to Cart
+  never verified live, Best Buy $299.00 backup confirmed
+  marketplace (WackyJacky). See DECISIONS 077.
+
 ### Fixed
 
 - Snapshot builder (2026-11-16): 19 new known-bad rows — 13
