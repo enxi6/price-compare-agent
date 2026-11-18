@@ -8288,3 +8288,18 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   1,534 → 1,533 (verified from the rebuilt snapshot). Tests 57
   passed. No catalog identifier changes, no models added, no
   Amazon touch, no spending, no registrations, no purchases.
+
+## 132 — 2026-11-18: Buds3 FE Best Buy $125.99 row fails live check — marketplace seller (DECISIONS 080 follow-up)
+- Live browser, Best Buy SKU 12088602, 2026-11-18 ~14:35 PT:
+  price $125.99 (Save $24, comp $149.99), model SM-R420NZKAXAR,
+  Black selected. Spec panel prints UPC 198957213090 (12 digits —
+  same digits as the catalog's 0198957213090, leading zero only).
+  Main buy box has an enabled yellow Add to cart; no "In Stock"
+  wording on the page (Pickup Unavailable, shipping free Fri
+  Nov 27).
+- Decisive fail: the main quote is "Sold & shipped by
+  SpaceBound, Inc." (4.37, 150 ratings) — a marketplace seller,
+  not Best Buy. Excluded per DECISIONS 021, however cheap. The
+  Best Buy $125.99 row is NOT added; the deletion stands alone
+  and Buds3 FE stays unranked (ranking 127, matched 143). Do not
+  re-probe this SKU as a Best Buy self-operated row.
