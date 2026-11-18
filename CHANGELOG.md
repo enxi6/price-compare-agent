@@ -11,6 +11,14 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Catalog batch 4 (2026-11-18): 50 models added (350 → 400),
+  user-approved as drafted, no swaps; 23 UPC/EAN verified, 27
+  pending. Add-time re-verification 23/23 clean (0 corrections,
+  0 downgrades); thin cases resolved at add time (Enduro 3 UPC
+  gains Botach, Inspire 3 UPC gains eWirelessGear as second
+  sources). Models only — no price rows; ranking 127 / matched
+  143 unchanged. See DECISIONS 081.
+
 - Catalog batch 3 (2026-11-16): 50 models added (300 → 350),
   user-approved; 15 UPC verified, 35 pending. Echo Show 8 swapped
   out for Reserve JBL Live Flex 3; new category streaming-devices

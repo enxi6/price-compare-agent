@@ -4295,3 +4295,42 @@ written as "superseded by" with the original text kept.
   handed to the parent agent (subagents cannot run browser.browse).
 - Result: ranking 128 → 127, matched 144 → 143, total offers
   1,534 → 1,533 (verified from the rebuilt snapshot).
+
+## 081 (2026-11-18): Expansion batch 4 — 50 models added (350 → 400), user-approved, no swaps; add-time re-verification 23/23 clean
+
+- Decision: Add all 50 models from
+  `data/candidates_batch4_400.md` to the catalog. The user approved
+  the batch as drafted ("按推荐批 50 款", 2026-11-18) — no swaps,
+  Reserve items (INZONE E9, Apple Watch Ultra 3, JBL Charge 5) not
+  included. Models only, no price rows in this turn; the new models
+  enter the snapshot with 0 offers until the daily refresh sweeps
+  them.
+- Membership check (own, before writing): 50 draft keys, 0
+  collisions on key, UPC, or MPN against the 350-model catalog
+  (script `/tmp/batch4_check.py` + independent re-check of the
+  draft against `price_agent/catalog.py`).
+- Add-time re-verification (mandatory gate, DECISIONS 076 lesson):
+  all 23 claimed-verified UPC/EAN re-proved on brand/retailer
+  pages by four parallel checkers — **23/23 PASS, 0 corrections, 0
+  downgrades**. The two flagged thin cases were resolved at add
+  time rather than demoted: Enduro 3's UPC 753759339296 gained a
+  second source (Botach spec table pairs it with MPN 010-02751-00,
+  so it is no longer single-source), and Inspire 3's UPC
+  810073611573 gained a second source (eWirelessGear names the
+  same MPN + UPC). G502 HERO's corrected UPC 097855141996 held
+  (BJ's + B&H + Logitech spec sheet agree). No identifier that
+  failed re-verification was written as verified — none failed.
+- Price note (no rows written, log only): G PRO X 2 LIGHTSPEED at
+  B&H fetched $229.99 at re-verification vs the draft's $219.99
+  promo — the promo had ended; re-check at row-finding time.
+- Category mapping: the draft's 4 "accessories" entries are filed
+  under the catalog's existing specific categories — Joy-Con 2
+  Wheel → controllers, 555 Hub → hubs, Prime Dock → docks, MagGo
+  → power-banks. The draft's parenthetical subcategories are
+  descriptive only. No new category. Streaming-devices gains its
+  2nd model (Fire TV Stick 4K Max); tablets +1; the four mapped
+  categories gain one each.
+- Result: 400 models, verified identifiers 150 → 173, pending 200
+  → 227 (verified from the rebuilt snapshot). Ranking 127 and
+  matched 143 unchanged — expected, since no rows were added;
+  total offers 1,533 unchanged. Tests 57 passed.

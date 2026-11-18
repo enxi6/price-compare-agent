@@ -40,9 +40,9 @@ def test_snapshot_staleness(tmp_path):
 
 
 def test_eval_set_shape():
-    assert len(EVAL_SET) == 350
+    assert len(EVAL_SET) == 400
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 150
+    assert len(verified) == 173
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
@@ -247,12 +247,39 @@ def test_eval_set_shape():
         "asus-rog-falchion-rx-low-profile-black",
         "asus-rog-cetra-speednova-white",
         "asus-proart-pa32ucdm-black",
+        "sony-inzone-h9-ii-black",
+        "jbl-endurance-race-2-black",
+        "sony-ult-tower-7-black",
+        "sony-bravia-theatre-bar-7-black",
+        "razer-blackwidow-v4-low-profile-tkl-green-black",
+        "garmin-descent-x10-black",
+        "garmin-descent-g2-black",
+        "samsung-odyssey-g9-g91f-49-black",
+        "keychron-v6-max-carbon-black-brown",
+        "samsung-galaxy-ring-size-9-titanium-black",
+        "google-fitbit-charge-6-obsidian-black",
+        "amazon-fire-tv-stick-4k-max-2nd-gen-black",
+        "asus-rog-strix-scope-ii-96-rx-wireless-black",
+        "asus-tuf-gaming-k3-gen-ii-black",
+        "hp-e27-g5-fhd-monitor-black",
+        "anker-555-usb-c-hub-8-in-1-gray",
+        "anker-prime-docking-station-14-in-1-displaylink-gray",
+        "anker-maggo-power-bank-10k-qi2-black-stone",
+        "anker-soundcore-v30i-black",
+        "asus-rog-harpe-ii-ace-black",
+        "sony-inzone-mouse-a-black",
+        "sony-inzone-kbd-h75-black",
+        "logitech-g335-black",
+        "razer-leviathan-v2-black",
+        "razer-nommo-v2-black",
+        "anker-soundcore-space-a40-black",
+        "apple-ipad-mini-a17-pro-128gb-wifi-space-gray",
 }
 
 
 def test_evaluate_counts_fixture_snapshot(tmp_path):
     result = evaluate(_snapshot(tmp_path))
-    assert result["models"] == 350
+    assert result["models"] == 400
     assert result["total_offers"] == 1
     # No UPC in snapshots -> everything lands in "suspected", by design.
     assert result["matched"] == 0 and result["suspected"] == 1

@@ -61,14 +61,14 @@ def test_merge_takes_latest_per_model(tmp_path):
 
 def test_merge_output_is_exactly_the_catalog(tmp_path):
     result = build_site_snapshot(_files(tmp_path))
-    assert len(result["models"]) == 350
+    assert len(result["models"]) == 400
     assert {m["key"] for m in result["models"]} == {
         p.key for p in EVAL_SET
     }
     # Retired snapshot keys never enter the output.
     assert "keychron-k8-pro" not in {m["key"] for m in result["models"]}
-    assert result["meta"]["verified_identifiers"] == 150
-    assert result["meta"]["pending_identifiers"] == 200
+    assert result["meta"]["verified_identifiers"] == 173
+    assert result["meta"]["pending_identifiers"] == 227
 
 
 def test_merge_invents_nothing_meta_only(tmp_path):
@@ -378,7 +378,7 @@ def test_identified_unknown_key_ignored(tmp_path):
         ]},
     })
     result = build_site_snapshot(_files(tmp_path), identified)
-    assert len(result["models"]) == 350
+    assert len(result["models"]) == 400
     assert "keychron-k8-pro" not in {m["key"] for m in result["models"]}
 
 

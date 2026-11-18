@@ -8303,3 +8303,29 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   Best Buy $125.99 row is NOT added; the deletion stands alone
   and Buds3 FE stays unranked (ranking 127, matched 143). Do not
   re-probe this SKU as a Best Buy self-operated row.
+
+## 133 — 2026-11-18: Expansion batch 4 added — 50 models (350 → 400), 23 UPC/EAN verified, user-approved (DECISIONS 081)
+- Source: data/candidates_batch4_400.md (commit 308b539). User
+  approval: "按推荐批 50 款", 2026-11-18, no swaps; Reserve items
+  not included.
+- Add-time re-verification: 23/23 claimed verified confirmed on
+  brand/retailer pages by four parallel checkers (JBL/Sony/
+  Samsung/Nintendo/Anker 6/6; Logitech 7/7; Razer/Corsair/HyperX/
+  Keychron 4/4; ASUS/Dell/Fitbit/Garmin 6/6). 0 corrections, 0
+  downgrades. Thin cases resolved at add time: Enduro 3 UPC gains
+  Botach as second source; Inspire 3 UPC gains eWirelessGear.
+  G PRO X 2 B&H price fetched $229.99 vs draft $219.99 promo —
+  noted, no rows written.
+- Membership check: 0 collisions (keys, UPCs, MPNs) — draft check
+  script + independent re-check.
+- Files: price_agent/catalog.py (+50 EvalProduct entries, batch-4
+  block), tests/test_snapshot_eval.py + tests/test_site_snapshot.py
+  (counts 350 → 400, verified 150 → 173, pending 200 → 227;
+  pending-keys literal +27 batch-4 keys), price_agent/build_site.py
+  + price_agent/build_site_snapshot.py (hardcoded 350 → 400).
+  Draft's 4 "accessories" filed under existing categories
+  (controllers/hubs/docks/power-banks); no new category.
+- Result: 400 models, 173 verified / 227 pending, ranking 127,
+  matched 143, total offers 1,533 (verified from the rebuilt
+  snapshot). All 50 new models present with 0 offers — the daily
+  refresh sweeps them next. Tests 57 passed.
