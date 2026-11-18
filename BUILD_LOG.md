@@ -8144,3 +8144,28 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   same-merchant same-price suspected rows via (merchant,
   identifier) dedupe). Tests 56 passed. No catalog identifier
   changes, no models added, no Amazon touch, no spending.
+
+## 128 — 2026-11-17: QC 2nd Gen Crutchfield row held — live verification not completed
+
+- Trigger: user said "继续" (2026-11-17 22:46 PT) after the
+  recommendation to add the Crutchfield $359.00 row for Bose QC
+  Headphones 2nd Gen — the one row dropped from the 13-row
+  execution (DECISIONS 077).
+- Done: attempted live re-verification of the Crutchfield page
+  (Item # 018QCHG2BK, MFR # 895491-0100): browser.open returned
+  only the 2026-11-15 16:32 UTC crawl (In stock + Add to cart +
+  $359.00); a fresh-copy request (max_age 30 min) failed with
+  page_too_old; a direct fetch failed (HTTP 000, blocked). A web
+  search returned the same 2026-11-15 crawl plus a 7-day-old
+  crawl, both showing identical signals and price, no
+  contradiction — but no fresher copy. The 2026-11-17 Meta sweep
+  and identified snapshot carry no Crutchfield quote for this
+  model.
+- Result: row NOT written. Hand file unchanged (71 models /
+  78 rows). Model stays unranked; ranking stays 127, matched
+  143, total offers 1,545. Tests 56 passed. No catalog
+  identifier changes, no models added, no Amazon touch, no
+  spending.
+- Next: live-browser check of the Crutchfield page; if In stock
+  + Add to cart + $359.00 confirm, add the row (expected ranking
+  127 → 128, matched 143 → 144).

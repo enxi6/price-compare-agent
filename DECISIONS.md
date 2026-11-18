@@ -4193,3 +4193,29 @@ written as "superseded by" with the original text kept.
   identifier) dedupe promoted them to matched rather than
   duplicating them. No catalog identifier changes, no models
   added, no Amazon touch, no spending.
+
+## 078 (2026-11-17): QC 2nd Gen Crutchfield row NOT added — live verification could not be completed
+
+- Decision: Do not add the Crutchfield $359.00 row for Bose QC
+  Headphones 2nd Gen (bose-qc-headphones-2nd-gen-black, MPN
+  895491-0100). The model stays unranked.
+- Why: the only available evidence is the 2026-11-15 16:32 UTC
+  crawl of the Crutchfield page (Item # 018QCHG2BK, MFR #
+  895491-0100, In stock + Add to cart, $359.00), corroborated by
+  a 7-day-old crawl showing the same signals and price. A fresh
+  live copy could not be obtained at add time: browser.open with
+  max_age_minutes=30 failed (page_too_old), and a direct fetch
+  was blocked (HTTP 000). The 2026-11-17 Meta sweep and
+  identified snapshot carry no Crutchfield quote for this model,
+  so there is no same-day corroboration. The hard gate from the
+  2026-11-17 execution applies: live re-verification at add time,
+  and if it cannot be completed the row is not written — the same
+  standard that dropped the Abt row (DECISIONS 077).
+- Alternative (not chosen): write the row on the 2-day-old crawl.
+  Rejected: it would present 2-day-old evidence as add-time live
+  verification, and the crawl's delivery estimate ("get it by
+  Tuesday, November 17") is already stale as of today.
+- Next: a live-browser check of the Crutchfield page; if it
+  confirms In stock + Add to cart + $359.00, the row can be added
+  in one small step (expected ranking 127 → 128, matched
+  143 → 144).

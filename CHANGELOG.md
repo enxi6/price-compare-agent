@@ -26,6 +26,12 @@ releases; breaking changes are called out in the release notes.
   never verified live, Best Buy $299.00 backup confirmed
   marketplace (WackyJacky). See DECISIONS 077.
 
+- QC 2nd Gen Crutchfield row held (2026-11-17): live
+  re-verification could not be completed — no fresh copy of the
+  Crutchfield page was obtainable at add time (only the
+  2026-11-15 crawl, In stock + Add to cart, $359.00). Row not
+  written; model stays unranked. See DECISIONS 078.
+
 ### Fixed
 
 - Snapshot builder (2026-11-16): 19 new known-bad rows — 13
