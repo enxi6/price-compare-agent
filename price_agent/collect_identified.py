@@ -18,9 +18,12 @@ Safety rules enforced here, not downstream:
 - Only the pinned variant (by ``variant_id``, or the single variant
   when a product has exactly one) is ever written. A multi-variant
   product with no pinned id is skipped, never guessed.
-- Variants whose title or handle contains "bundle" are skipped:
-  a bundle's barcode must never be recorded against the standalone
-  model (DECISIONS 021).
+- Product titles, variant titles, or handles containing "bundle"
+  are skipped: a bundle's barcode must never be recorded against
+  the standalone model (DECISIONS 021). The same applies to
+  quantity packs ("pack of N"): a pack's barcode is the standalone
+  model's, but its price is for N units, so it must never be
+  recorded either.
 - The identifier is recorded exactly as the store states it
   (``barcode`` preferred, else ``sku``); normalization happens at
   merge time. Whether it matches the catalog is decided by the merge
@@ -46,7 +49,7 @@ from .adapters_shopify import USER_AGENT
 from .catalog import EVAL_SET
 
 DEFAULT_CONFIG = "data/shopify_handles.json"
-BUNDLE_WORDS = ("bundle",)
+BUNDLE_WORDS = ("bundle", "pack of")
 
 
 class CollectError(Exception):
@@ -148,6 +151,11 @@ def collect_entry(entry: dict, opener, now: datetime) -> dict:
     if any(word in variant_title.lower() for word in BUNDLE_WORDS):
         raise CollectError(
             f"variant title looks like a bundle: {variant_title!r}"
+        )
+    product_title = (product.get("title") or "").strip()
+    if any(word in product_title.lower() for word in BUNDLE_WORDS):
+        raise CollectError(
+            f"product title looks like a bundle: {product_title!r}"
         )
     identified = _identifier_from_variant(variant)
     if identified is None:

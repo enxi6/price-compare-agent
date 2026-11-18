@@ -42,6 +42,38 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Snapshot builder (2026-11-18): 13 new known-bad rows — iPad
+  Pro M5 AT&T $47.23 (monthly installment; the >=3 price-sanity
+  check never ran because the model had only 2 candidates),
+  JBL Live Beam 3 $49.99 (single replacement earbud, not the
+  full earbuds), Studio Display B&H $1,939 (tilt-&-height stand
+  config; catalog pins tilt-only $1,549), Venu 4 RoadRunner
+  $549.99 (page JSON-LD $449.99), ROG Azoth ASUS $162.99 (White
+  BKAA32), $189.99 / $219.99 (stale feed prices for the
+  rog.asus.com model page, live $249.99) and $228.99 (Azoth X, a
+  different model), Keris II Ace ThinkEdu $181.99 (White variant),
+  Wolverine V3 Pro Razer $199.99 and Best Buy $199.99 (8K PC
+  variant RZ06-05540100-R3U1; catalog pins RZ06-05200100-R3U1),
+  Boom 2 Target $91.98 (Target Plus marketplace bundle), Idea
+  Tab Luna Abt $257.67 (page JSON-LD $289.99), Huntsman V3 Pro
+  Electronic Express $179.99 (live page $149.99), Alarmo Walmart
+  $79.99 (marketplace seller Rare Games Worldwide). Carried row:
+  Dell U4025QW $1,749.99 (live-browser verified; feed $2,399.99
+  was wrong). Validation: 37 price moves remain, all page-checked
+  or feed corrections; snapshot 1,401 offers, 300 models with
+  quotes.
+
+- Identified collector (2026-11-18): the bundle guard now also
+  checks the product title, and "pack of" joins BUNDLE_WORDS.
+  Silarius had converted its Galaxy Buds3 FE listing to a 10-pack
+  ($1,499.90, "Sold as a pack of 10", tag moq-pack-2026-11) while
+  keeping the standalone MPN/SKU, so the old guard — handle and
+  variant title only — let the pack price through as a matched
+  quote. The row is now skipped (3 skips today, incl. the 2 known
+  404s); the site snapshot still shows the 2026-11-17 $195.99
+  Silarius row because the identified stream unions across files
+  with no expiry — watch item, not a live price. Tests 56 pass.
+
 - Snapshot builder (2026-11-16): 19 new known-bad rows — 13
   wrong-variant rows (ASUS Japan ¥169,800 read as USD, Legion Go S
   32GB/1TB, Vivosmart 5 Large band, Mac mini 1TB, Studio Display

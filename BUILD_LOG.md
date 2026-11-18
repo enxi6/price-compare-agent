@@ -8188,3 +8188,84 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Result: ranking 127 → 128, matched 143 → 144, total offers
   1,545 → 1,546. Tests 56 passed. No catalog identifier changes,
   no models added, no Amazon touch, no spending.
+
+## 130 — 2026-11-18: Daily refresh (DECISIONS 021 / 059)
+
+- Trigger: scheduled daily refresh 10:52 PT.
+- Meta sweep: 350/350 OK; snapshot 1,401 offers, 300 models
+  with quotes (prev 1,414 / 301). 37 price moves, 165 new
+  quotes, 179 disappeared — mostly feed churn.
+- Page-confirmed cuts: Dell U4025QW $2,399.99 → $1,749.99
+  (Dell, live browser; feed price was wrong — carried at
+  $1,749.99), MDR-M1 $269.99 → $199.99 and MDR-7506 $114.99 →
+  $99.99 (Samys, live browser; instant rebates expiring
+  2026-12-13), Wolverine V3 Pro $199.99 → $159.99 (Razer, live
+  browser; pinned RZ06-05200100-R3U1), ROG Pelta $129.99 →
+  $104.99 (Best Buy), Frame 4000D $94.99 → $119.99 (B&H, rise),
+  Pro X TKL $234.99 → $209.99 (ThinkEdu), WF-C510 $69.99 →
+  $48.00 (NFM), Magic Keyboard Touch ID numpad $199 → $179
+  (B&H), K70 Core $99.99 → $79.99 (Corsair), Alloy Origins 65
+  Aqua $99.99 → $79.99 (HP), Magic Mouse $79.99 → $59.99
+  (Best Buy), Liberty 5 Pro $185.99 → $169.99 (Soundcore),
+  LinkBuds Fit $229.99 → $179.99 (Audio46), Elite Series 2 Core
+  $149.99 → $119.99 (P.C. Richard), Cloud Alpha 2 $299.99 →
+  $249.99 (HP), QuadCast 2 S $149.99 → $199.99 (HP, rise),
+  OMEN 32X $503.99 → $839.99 (HP, rise), OMEN 27QS G2 $309.27
+  → $499.99 (HP, rise), HP 960 keyboard $80.99 → $134.99 (HP,
+  rise), Nano 70W $25.99 → $39.99 (Anker, rise), Haste 2
+  Wireless $78.99 → $89.99 (HP, rise), G309 $75.99 → $69.99
+  (ThinkEdu), Falchion RX $169.99 → $192.99 (ThinkEdu, rise;
+  Black RLBL variant), Pelta ThinkEdu $129.99 → $148.99 (rise).
+- Feed corrections, not real moves: Kindle Colorsoft Target
+  $169.99 → $289.99 (page JSON-LD $289.99; the 11-17 $169.99
+  was already a known feed error), ROG Azoth ASUS $219.99 →
+  $249.99 (stale feed prices $189.99/$219.99 excluded; live
+  rog.asus.com model page $249.99 = eShop list).
+- Non-moves (feed artifacts / wrong-variant / marketplace,
+  excluded — 13 new KNOWN_BAD rows, see CHANGELOG): iPad Pro
+  M5 AT&T $47.23 (installment), Live Beam 3 JBL $49.99 (single
+  earbud), Studio Display B&H $1,939 (tilt-&-height stand),
+  Venu 4 RoadRunner $549.99 (page $449.99), Azoth ASUS $162.99
+  (White), $228.99 (Azoth X), Keris II Ace ThinkEdu $181.99
+  (White), Wolverine Razer/Best Buy $199.99 (8K variant), Boom 2
+  Target $91.98 (Target Plus bundle), Idea Tab Luna Abt $257.67
+  (page $289.99), Huntsman V3 Pro Electronic Express $179.99
+  (live page $149.99), Alarmo Walmart $79.99 (marketplace
+  seller Rare Games Worldwide).
+- Identified stream: 71 models, 82 offers, 3 skips (2 known
+  404s: Heart Rate Monitors USA vivoactive-6, Datavision Tab
+  S10 FE+). One move: WH-1000XM6 Audio46 $459.99 → $379.99,
+  page-verified (Black, pinned variant, Available). Silarius
+  Galaxy Buds3 FE: the merchant converted the listing to a
+  10-pack ($1,499.90, tag moq-pack-2026-11) while keeping the
+  standalone MPN/SKU; the bundle guard only checked handle and
+  variant title ("Default Title"), so the pack price came
+  through as a matched quote. Fixed collect_identified.py:
+  BUNDLE_WORDS now ("bundle", "pack of") and the guard also
+  checks the product title; the entry now skips with a clear
+  log line. Collection re-run twice (first re-run exposed the
+  gap — the guard never saw the product title). The site
+  snapshot still shows the 2026-11-17 Silarius $195.99 row
+  because the identified stream unions across files with no
+  expiry — watch item; the merchant no longer sells single
+  units, so no new row will replace it.
+- Watch items: PlayStation Portal ShopMyExchange $74.95
+  (login-gated exchange, unverified; 62% below $199.99 list);
+  Bose Lifestyle Ultra $1,099 Bose row (config unresolved,
+  standing); Switch 2 carrying case (sold out, restock wait);
+  Bose Smart Ultra / G915 X expired-promo rows (unranked).
+- Rotation: MX Master 4 Graphite — Abt carries White Silver
+  910-007559 and Space Black 910-007560 ($119.99, InStock), no
+  standalone Graphite 910-007558 listing (the "Graphite Finish"
+  bullet is generic copy); next retailer Newegg. Apple patrol:
+  16 → 15 Apple-direct rows; iPad Air M4 13 $949 and Watch SE 3
+  40mm $249 dropped from the feed but still listed at those
+  prices on apple.com (feed churn, no delistings); new iMac M6
+  24" 10-core Blue $1,499 appeared.
+- Result: site 1,534 offers, 144 matched, 128 verified
+  rankings (unchanged), 311 models with offers, 353 pages.
+  Eval: Meta 1,401 quotes / 300 models with quotes; identified
+  82 quotes / 71 models. Tests 56 passed. No catalog
+  identifier changes, no DECISIONS.md changes, no models
+  added, no Amazon touch, no spending, no registrations, no
+  purchases. Kindle pin unchanged (B0CFPL6CFY).
