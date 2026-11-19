@@ -4334,3 +4334,57 @@ written as "superseded by" with the original text kept.
   → 227 (verified from the rebuilt snapshot). Ranking 127 and
   matched 143 unchanged — expected, since no rows were added;
   total offers 1,533 unchanged. Tests 57 passed.
+
+## 082 (2026-11-18): Batch-4 verified hand rows — all 19 landed, ranking 127 → 146
+
+- Decision: Add 19 hand rows for batch-4 verified models, user
+  approved ("按推荐加 19 行", 2026-11-18) — the 13 text-verified
+  probe rows plus the 6 live-browser-verified rows, including the
+  three flagged items: Inspire 3 at list price $99.95 ($0 saving),
+  K8 Max on catalog evidence, DeathAdder V3 Pro on a Best Buy
+  clearance price $104.99. Not added: Music Frame (delivery/pickup
+  Not Available), Dell S2725QC (Unavailable, no price), BRAVIA
+  Theatre Rear 8 (P.C. Richard 403), Corsair M65 (discontinued as
+  new at Best Buy).
+- Key correction (brief vs catalog): 8 of the 19 keys in the
+  execution brief did not exist in the catalog; the real keys were
+  resolved from `price_agent/catalog.py` itself, nothing guessed:
+  G PRO X 2 → logitech-pro-x-2-lightspeed-black; Joy-Con 2 Wheel
+  → nintendo-joy-con-2-wheel-set; Enduro 3 → garmin-enduro-3-black;
+  AeroFit Pro → anker-soundcore-aerofit-pro-midnight-black;
+  ZenScreen MB16ACV → asus-zenscreen-mb16acv-black; Inspire 3 →
+  google-fitbit-inspire-3-midnight-zen-black; Haste 2 Core →
+  hyperx-pulsefire-haste-2-core-wireless-black; VG27AQ3A →
+  asus-tuf-gaming-vg27aq3a-black.
+- Add-time re-verification (2026-11-19 ~03:17 UTC, text fetch of
+  each live merchant page; live-browser evidence from 2026-11-18
+  ~16:28–16:32 PT where noted): **19/19 landed, 0 held**.
+  - Price corrections: PartyBox 720 live $899.95, not the probe's
+    $899.99 — $899.95 written. G PRO X 2 $229.99 (draft $219.99
+    already corrected at batch-4 add). Enduro 3 list price is
+    $799.99 (Save $100), not the draft's $899.99 — recorded.
+  - G515 and Zone Vibe 100 buy boxes re-verified at add time: Add
+    to Cart sits in the main buy block (before the Key Accessories
+    heading) — both confirmed, no hold.
+  - AeroFit Pro $179.99 was probe-verified 2026-11-18 ~16:25 PT;
+    today's text hides the price behind "Add to Cart for Price"
+    (MAP-hidden, no 179.99 string on the page) — In Stock (x2) +
+    UPC 194644153014 + Midnight Black re-confirmed today, $179.99
+    written with the caveat recorded in the row source.
+  - A50 X and Inspire 3: price, sold-by (Best Buy), and JSON-LD
+    InStock re-confirmed today; the main Add to Cart button was
+    confirmed in the probe's main buy box but is not isolable in
+    today's text rendering — written with the caveat recorded in
+    the row source.
+  - K8 Max Brown: today's page text itself shows "5 in Stock
+    Now" + SKU Keychron-K8M-J3 + $124.99 (Red/Banana sold out) —
+    stronger than the catalog-only evidence the approval carried;
+    live-page Add to Cart button still not observed, caveat kept
+    in the row source.
+  - DeathAdder V3 Pro: Best Buy clearance $104.99, Sold by Best
+    Buy, main Add to Cart in the buy box, JSON-LD InStock; Razer
+    direct Out of Stock — not used.
+- Result: 400 models, 173 verified / 227 pending, ranking 127 →
+  146, matched 143 → 162, total offers 1,533 → 1,552 (verified
+  from the rebuilt snapshot; all 19 rows present as matched).
+  Hand file now 91 models (72 + 19). Tests 57 passed.

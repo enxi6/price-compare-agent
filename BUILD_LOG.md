@@ -8329,3 +8329,38 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   matched 143, total offers 1,533 (verified from the rebuilt
   snapshot). All 50 new models present with 0 offers — the daily
   refresh sweeps them next. Tests 57 passed.
+
+## 134 — 2026-11-18: Batch-4 hand rows — all 19 landed, ranking 127 → 146 (DECISIONS 082)
+- Source: probe 2026-11-18 ~16:25 PT (13 text-verified rows) +
+  live-browser verification 2026-11-18 ~16:28–16:32 PT (6 rows).
+  User approval: "按推荐加 19 行", 2026-11-18, including the
+  flagged items (Inspire 3 at list $99.95, K8 Max on catalog
+  evidence, DeathAdder V3 Pro on clearance $104.99).
+- Rows (merchant / live price): PartyBox 720 B&H $899.95; Bar
+  1000 MK2 B&H $899.95; G502 HERO B&H $64.99; Astro A50 X Best
+  Buy $399.99; G515 Best Buy $159.99 (SKU 6586064); G PRO X 2
+  B&H $229.99; G733 B&H $129.99; Zone Vibe 100 Best Buy $99.99
+  (SKU 6520149); AeroFit Pro B&H $179.99; ZenScreen MB16ACV B&H
+  $189.00; Inspire 3 Best Buy $99.95; tactix 8 Best Buy
+  $1,049.99; VG27AQ3A B&H $219.00; Joy-Con 2 Wheel Nintendo
+  $24.99; Enduro 3 Garmin $699.99; K8 Max Brown
+  MechanicalKeyboards.com $124.99; DeathAdder V3 Pro Best Buy
+  $104.99 clearance; Haste 2 Core HP $49.99; A50 Gen 5 Abt
+  $299.99.
+- Add-time re-verification (2026-11-19 ~03:17 UTC): 19/19
+  landed, 0 held. Corrections: PartyBox 720 live $899.95 (not
+  probe's $899.99); Enduro 3 list $799.99 (not draft's $899.99).
+  G515 / Zone Vibe 100 buy boxes re-confirmed at add time. Caveats
+  recorded in row sources: AeroFit Pro price MAP-hidden in today's
+  text (probe-verified $179.99); A50 X / Inspire 3 main Add to
+  Cart probe-confirmed, not isolable in today's text rendering;
+  K8 Max page text now shows "5 in Stock Now" (stronger than
+  catalog-only). 8 brief keys did not match catalog keys — real
+  keys resolved from catalog.py, nothing guessed.
+- Files: data/eval_snapshots_identified_hand_2026-11-07.json (+19
+  rows, 72 → 91 models; insertions only, no existing row touched).
+  No catalog identifier changes, no models added, no Amazon touch.
+- Result: 400 models, 173 verified / 227 pending, ranking 127 →
+  146, matched 143 → 162, total offers 1,533 → 1,552 (verified
+  from the rebuilt snapshot; all 19 rows present as matched).
+  Site 403 pages. Tests 57 passed.

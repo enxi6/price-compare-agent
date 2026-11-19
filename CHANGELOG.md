@@ -19,6 +19,14 @@ releases; breaking changes are called out in the release notes.
   sources). Models only — no price rows; ranking 127 / matched
   143 unchanged. See DECISIONS 081.
 
+- Batch-4 hand rows (2026-11-18): 19 verified rows added for
+  batch-4 models, user-approved ("按推荐加 19 行"), all 19 landed,
+  0 held. Ranking 127 → 146, matched 143 → 162, total offers
+  1,533 → 1,552. Add-time re-verification corrected one price
+  (PartyBox 720 live $899.95, not probe's $899.99) and one list
+  price (Enduro 3 list $799.99, not draft's $899.99); G515 / Zone
+  Vibe 100 buy boxes re-confirmed at add time. See DECISIONS 082.
+
 - Catalog batch 3 (2026-11-16): 50 models added (300 → 350),
   user-approved; 15 UPC verified, 35 pending. Echo Show 8 swapped
   out for Reserve JBL Live Flex 3; new category streaming-devices
