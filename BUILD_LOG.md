@@ -8364,3 +8364,107 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   146, matched 143 → 162, total offers 1,533 → 1,552 (verified
   from the rebuilt snapshot; all 19 rows present as matched).
   Site 403 pages. Tests 57 passed.
+
+## 135 — 2026-11-19: Daily refresh — Black Friday week, 146 moves, ranking unchanged (146)
+
+- Meta sweep: 400/400 calls OK, 0 failed (7,993 raw listings).
+  First full 400-model sweep (batch-4 models quoted for the first
+  time). Snapshot `data/eval_snapshots_2026-11-19.json`: 1,639
+  offers, 346 models with quotes (prev 1,401 / 300). Diff vs
+  2026-11-18: 146 price moves, 400 new quotes (mostly batch-4
+  first quotes), 176 disappeared. Eval: 1,639 quotes (Meta) / 81
+  (identified), 0 identifier-matched in either stream by design.
+  Identified sweep: 81 offers, 71 models, 4 skips (Silarius
+  Buds3 FE 10-pack bundle guard; ListenUp WF1000XM6 HTTP 429
+  rate-limit — logged, not worked around; 2 known 404s: Heart
+  Rate Monitors USA vivoactive-6, Datavision Tab S10 FE+).
+  Site rebuilt (403 pages): 1,792 offers, 162 matched, 146
+  verified rankings (unchanged), 359 models with offers.
+  Tests 57 pass.
+- Page-confirmed cuts (Black Friday): ULT Tower Max $1,499.99 →
+  $999.99 (Sony direct, live browser; BuyDig/Sweetwater $998;
+  Sweetwater page OutOfStock at $998), WH-1000XM4C $299.99 →
+  $199.99 (Sony direct, live browser; Target/Crutchfield/B&H/
+  Sweetwater also ~$198–199.99, feed-reported), Bose Smart Ultra
+  $999 → $699 (Sweetwater, fresh crawl, InStock), WF-1000XM5
+  $328 → $248 (Best Buy, fresh crawl, Black Friday Deal, Save
+  $80, InStock), SoundLink Max $399 → $279 (B&H, fresh crawl,
+  Holiday Savings $120, In Stock), Kindle Paperwhite $199.99 →
+  $129.99 (Target, fresh crawl, InStock), ROG Pelta $104.99 →
+  $64.99 (Best Buy, fresh crawl, Black Friday Deal, Sold by Best
+  Buy), Anker Prime 26K $229.99 → $159.99 (Anker, fresh crawl,
+  $70 OFF, InStock), Logitech MX Master 4 $119.99 → $109.99
+  (Logitech direct, live browser, $10 off), Dell U2725QE $716.99
+  → $849.99 (CDW, live browser, In Stock 96 units — promo ended,
+  rise confirmed), ULT Tower 9 $648 → $748 (Abt, live browser,
+  plug-in variant; battery variant $798), Forerunner 265 $299.99
+  → $449.99 (Fleet Feet, 12-day-old crawl at $449.99 + list price
+  — promo ended, rise confirmed).
+- Feed corrections, not real moves: NFM Tab A11+ $294.99 is wrong
+  (live page $196.99 On Sale, comp $299.99; model SM-X230NZAIXAR
+  + UPC 198957270390 match the pinned Wi-Fi variant — carried at
+  $196.99); Electronic Express BRAVIA Bar 9 $1,498 is wrong
+  (live page $1,398, was $1,499.95, ends Nov 22; UPC 027242929555
+  matches — carried at $1,398); CDW Pixel Watch 4 41mm $439.99 is
+  the LTE GA06001-US (live browser), catalog pins Wi-Fi
+  GA09958-US — the $341.99 → $439.99 "rise" conflates two
+  different CDW products; Walmart Xbox Series X $1,039 is
+  marketplace seller Hooray Store (live browser); Walmart Switch
+  Pro Controller $69.99 is marketplace seller Piranha Performance
+  (live browser) — Walmart's own offer is $79.00, carried (MPN
+  not shown in page text, second-source check pending); Abt
+  Lifestyle Ultra $899 is wrong (fresh crawl $1,099) — the
+  Crutchfield/Focus/QVC $899 rows were not page-checked and stay
+  feed-reported; 460Estore Tab S10 Lite $402/$504 are the 256GB
+  variant (URL pins storage=256gb; raw title null, config check
+  blind — builder gap); CDW MX Keys S $129.99/$218.99 is MPN
+  920-011558, not pinned Pale Grey 920-011559.
+- Not page-confirmed (feed-reported only): WH-1000XM4C $199.99 at
+  Target/Crutchfield/B&H/Sweetwater (Sony direct confirmed; the
+  Crutchfield crawl is 11 days old at $298); ULT Field 7 $348 at
+  BuyDig/Crutchfield/EE (Crutchfield crawl 7 days old at $498;
+  three merchants agree at $348); Bose Lifestyle Ultra $899 at
+  Crutchfield/Focus/QVC; WH-1000XM4C Best Buy $230.82 (odd cents,
+  likely marketplace — unverified); Macy's Pulse Elite $109.99;
+  Walmart Space One Pro $113.99. ULT Field 7 Crutchfield carries
+  two rows ($348 tracking-URL + $498 plain URL) — duplicate-row
+  watch item.
+- Builder: +13 KNOWN_BAD (see CHANGELOG 2026-11-19) + 3 CARRIED
+  (NFM Tab A11+ $196.99, EE BRAVIA Bar 9 $1,398, Walmart Switch
+  Pro Controller $79.00). Galaxy Ring: Samsungpartsusa $99,999
+  placeholder excluded; it had poisoned the in-build median
+  ($99,999) and dropped the good Heyupnow $399.99 row — builder
+  gap: a single absurd outlier can poison the median (no
+  trimming/outlier guard on the median anchor). Samsungparts
+  $85.68 (charging cradle) and Walmart $214.44 (Size 5) also
+  excluded; model now has only Heyupnow $399.99 (list).
+- Identified-stream matched moves: Beach Camera Bose drops (QC
+  Ultra 2 $449 → $399, SoundLink Max $399 → $339, SoundLink Plus
+  $269 → $219, Ultra Open Earbuds 2nd Gen $299 → $289), Keychron
+  drops (K2 HE / K8 HE $139.99 → $111.99, Q1 Max $229.99 →
+  $203.99, K2 Max $114.99 → $86.24, B39 $54.99 → $46.74, B40
+  $49.99 → $42.49, K8 Ultra $119.99 → $107.99), Datavision
+  LinkBuds Clip $198 → $159 and WF1000XM6 $298 → $248, Audio46
+  WH1000XM6 $379.99 → $349.99. Watch item: Keychron K2 Max shows
+  $78.74 in the Meta feed vs $86.24 in the identified Shopify
+  stream for the same pinned variant — two Keychron-direct
+  sources disagree by $7.50.
+- Rotation: MX Master 4 Graphite hunt stays PAUSED (user-nodded
+  2026-11-18; 12 retailers exhausted). Sony patrol: Sony-direct
+  rows 8 → 11 models (new: BRAVIA Rear 8 $399.99, INZONE KBD-H75
+  $249.99, INZONE Mouse-A $109.99, ULT Tower 5 $299.99); ULT
+  Tower 9 Sony row dropped from feed (churn); no new Sony model
+  outside the catalog spotted — list-only, nothing added.
+  MacBook Pro 14 M6 UPC 195951080291 already confirmed three-way
+  (B&H/Adorama/Micro Center, 2026-11-07); catalog entry still
+  pending user confirmation. DualSense White: no new evidence.
+- Watch items: PlayStation Portal ShopMyExchange $74.95
+  (login-gated, unverified); Bose Lifestyle Ultra $1,099 Bose row
+  (config unresolved, standing); Switch 2 carrying case (sold
+  out, restock wait); Bose Smart Ultra / G915 X expired-promo rows
+  (unranked); ListenUp WF1000XM6 $328 row persists in the site
+  union (429 skip today; identified stream has no expiry);
+  Silarius Buds3 FE $195.99 stale row persists the same way.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
+  changes, no DECISIONS.md changes, no models added, no Amazon
+  touch, no spending, no registrations, no purchases.

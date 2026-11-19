@@ -58,6 +58,49 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Snapshot builder (2026-11-19): 13 new known-bad rows —
+  460Estore Tab S10 Lite $402 / $504 (both the 256GB variant;
+  feed URL pins attribute_pa_storage=256gb, catalog pins 128GB;
+  the raw title is null so the config check is blind to it),
+  CDW MX Keys S $129.99 / $218.99 (MPN 920-011558 on the CDW
+  page title, not the pinned Pale Grey 920-011559), Walmart
+  Xbox Series X $1,039 (marketplace seller Hooray Store, live
+  browser), Walmart Switch Pro Controller $69.99 (marketplace
+  seller Piranha Performance, Fulfilled by Walmart, live
+  browser), NFM Tab A11+ $294.99 (live page $196.99), Electronic
+  Express BRAVIA Theatre Bar 9 $1,498 (live page $1,398),
+  CDW Pixel Watch 4 41mm $439.99 (LTE model GA06001-US; catalog
+  pins the Wi-Fi GA09958-US), Abt Lifestyle Ultra $899 (page
+  $1,099; the Crutchfield / Focus Camera / QVC $899 rows were
+  not page-checked and stay feed-reported), Galaxy Ring
+  Samsungpartsusa $99,999 (placeholder price — it also poisoned
+  the in-build median and dropped the good Heyupnow $399.99
+  row; builder gap, see BUILD_LOG 135), Samsungparts $85.68
+  (Galaxy Ring charging cradle, not the ring) and Walmart
+  $214.44 (Size 5; catalog pins Size 9). Carried rows: NFM Tab
+  A11+ $196.99 (model SM-X230NZAIXAR / UPC 198957270390 match
+  the pinned Wi-Fi variant), Electronic Express BRAVIA Bar 9
+  $1,398 (UPC 027242929555 matches), Walmart Switch Pro
+  Controller $79.00 (Walmart's own offer on the product page;
+  MPN not shown in page text — second-source check pending).
+  Validation: 146 price moves; snapshot 1,639 offers, 346
+  models with quotes.
+
+- Identified collector (2026-11-19): 81 offers / 71 models, 4
+  skips — Silarius Buds3 FE 10-pack (bundle guard holds),
+  ListenUp WF1000XM6 HTTP 429 (rate-limit; logged, not worked
+  around — yesterday's $328 row persists in the site union),
+  and the 2 known 404s (Heart Rate Monitors USA vivoactive-6,
+  Datavision Tab S10 FE+). Matched-price moves: Beach Camera
+  Bose drops (QC Ultra 2 $449 → $399, SoundLink Max $399 →
+  $339, SoundLink Plus $269 → $219, Ultra Open Earbuds 2nd Gen
+  $299 → $289), Keychron drops (K2 HE / K8 HE $139.99 →
+  $111.99, Q1 Max $229.99 → $203.99, K2 Max $114.99 → $86.24),
+  Datavision LinkBuds Clip $198 → $159 and WF1000XM6 $298 →
+  $248, Audio46 WH1000XM6 $379.99 → $349.99. Site 1,792
+  offers, 162 matched, 146 verified rankings (unchanged).
+  Tests 57 pass.
+
 - Snapshot builder (2026-11-18): 13 new known-bad rows — iPad
   Pro M5 AT&T $47.23 (monthly installment; the >=3 price-sanity
   check never ran because the model had only 2 candidates),
