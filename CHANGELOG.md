@@ -11,6 +11,8 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Catalog batch 6 (2026-11-20): 50 models added (450 → 500), user-approved reworked draft; 17 UPC/EAN verified, 33 pending. Two add-time UPC downgrades: TUF Gaming M4 Air (distributor + distributor, user-approved) and ZenWiFi BT10 (Best Buy spec panel did not confirm). Models only — no price rows; ranking 148 / matched 164 unchanged. See DECISIONS 085.
+
 - Catalog batch 5 (2026-11-20): 50 models added (400 → 450),
   user-approved as drafted; 21 UPC/EAN verified, 29 pending. New
   category: routers (ASUS RT-BE58U). Both add-time weak items kept

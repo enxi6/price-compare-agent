@@ -8519,3 +8519,16 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   snapshot, 0 with offers. Site rebuilt (453 pages); router page
   live. The S2725QC / HP 920 two-row proposal was not approved
   and was not touched.
+
+## 138 — 2026-11-20: Batch 6 — 50 models added (450 → 500), user-approved reworked draft; M4 Air + BT10 UPCs downgraded at add time (DECISIONS 085)
+
+- User approved the reworked draft with the M4 Air UPC downgraded ("按推荐批 50 款（M4 Air 降级，18/50）", 2026-11-20). Keys copied verbatim from data/candidates_batch6_500.md; 17 verified / 33 pending as added (see downgrades below). No PENDING upgraded, no identifiers invented, no price rows added.
+- Downgrades:
+  - TUF Gaming M4 Air UPC 195553335454: VERIFIED → PENDING (user-approved; SHI + Zoro are both distributors, same shape as the Venu 3S UPC that stays pending).
+  - ZenWiFi BT10 UPC 197105429895: VERIFIED with caveat → PENDING (draft's confirm-or-downgrade rule; Best Buy spec panel for SKU 11870821 shows no UPC field; $760.69 BB listing is marketplace Beach Audio Inc).
+- Add-time re-verification (fetches 2026-11-20):
+  - Huntsman V3 Pro Mini: Micro Center quickView prints UPC 840272909409 cleanly — still a single qualifying source, stays PENDING; MPN still truncated on Micro Center, stays PENDING.
+  - HT-A5000 $499.99 HOLDS (SKU 6467455, Sold by Best Buy, InStock); Legion Pro 5 Gen 10 $1,579.99 → $1,774.99; Bar 500 JBL.com back to $399.99 InStock (flip reversed); HW-Q600F $399.99 and Encore Essential 2 $199.95 (SKU 6644260) confirmed live.
+  - G435 Best Buy row now reads "no longer available in new condition" — row needs a live-browser re-check; identifiers stay verified. M4 Air Best Buy live listing is marketplace (Newegg Official), SKU 12228723, not Best Buy direct. G16 Dell.com price NOT confirmed (page unfetchable; exact config "Not available" per laptopmedia); no retailer-direct row. X1 Carbon still lenovo.com-only. T16 CDW $1,483.99 holds on the 4-day-old crawl only.
+- Tests: 7 failed on hard-coded 450/194/256 counts after the catalog edit; updated the count assertions and the pending-keys set (+33) in tests/test_snapshot_eval.py and tests/test_site_snapshot.py; 57 passed.
+- Rebuilt snapshot verified from data/site_snapshot.json: 500 models, 211 verified / 289 pending, ranking 148, matched 164, total offers 1,792 (all unchanged — new models have no quotes yet), 359 models with offers. All 50 new models in the snapshot, 0 with offers. Site rebuilt (503 pages). The daily refresh (~10:52 PT) will be the first full sweep of 500.

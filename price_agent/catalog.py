@@ -10396,6 +10396,1061 @@ EVAL_SET: list[EvalProduct] = [
         "500 — 300 is the portable battery model, 500 is the "
         "flagship.",
     ),
+    EvalProduct(
+        key="samsung-hw-q600f-black",
+        brand="Samsung",
+        model="HW-Q600F",
+        variant="Black, Titan Black (HW-Q600F/ZA)",
+        category="soundbars",
+        identifiers={"UPC": "887276936895", "MPN": "HW-Q600F/ZA"},
+        identifier_sources={
+            "UPC": "B&H spec page + Walts TV + Worldwide Stereo spec "
+            "pages agree (batch-6 verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Current Samsung 2025 Q-series 3.1.2ch soundbar. Best "
+        "Buy $399.99 Black Friday (comp $699.99), sold by Best Buy; "
+        "B&H $397.99 In Stock. Flag: promo price (Black Friday ends "
+        "Nov 28, 2026). Amazon lists a conflicting UPC 887276835426 "
+        "— non-qualifying, disregarded. (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="lenovo-thinkpad-t14-gen-5-black",
+        brand="Lenovo",
+        model="ThinkPad T14 Gen 5",
+        variant="Black, 21MC000CUS — Ryzen 7 PRO 8840U, 16GB, 512GB, 14\" WUXGA",
+        category="laptops",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 198153286874 (B&H only; needs "
+            "a second qualifying source).",
+        },
+        status="pending",
+        notes="MPN 21MC000CUS confirmed (B&H spec page + CDW spec "
+        "page agree). B&H $1,499.00 In Stock; CDW In Stock, $1,486.99 "
+        "advertised (price varies across crawls, re-check at add "
+        "time). Distinct from backlog T14 Gen 6 (21QJ00CSUS) and "
+        "the 21ML0053US touchscreen config. (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="lenovo-thinkpad-x1-carbon-gen-13-aura-edition",
+        brand="Lenovo",
+        model="ThinkPad X1 Carbon Gen 13 Aura Edition",
+        variant="21NS0012US — Core Ultra 7 258V, 32GB, 1TB, 14\" 2.8K OLED, Eclipse Black",
+        category="laptops",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN 21NS0012US verified with caveat (lenovo.com "
+        "product page + Newegg listing page, search-fetch — the "
+        "Newegg direct open hit the bot wall, so the leg is one "
+        "step weaker than a direct open). UPC no qualifying lead — "
+        "B&H prints 828143670351 but that is a different config "
+        "(21NTSB8E00); do NOT attach it. Lenovo.com $1,248.99 "
+        "InStock (confirmed at add time 2026-11-20). Add-time "
+        "retailer check: no retailer-direct row — Best Buy only IST "
+        "Computers 'Upgraded' marketplace listings; a Newegg "
+        "listing for the exact config exists but price/seller/stock "
+        "are unverified behind the bot wall; CDW has no listing. "
+        "Flag: Lenovo-direct only, no clean retailer row "
+        "— DECISIONS 015 concern (the single flagged "
+        "brand-direct-only pick in batch 6). (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="sony-wf-c700n-black",
+        brand="Sony",
+        model="WF-C700N",
+        variant="Black (WFC700N/B)",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 027242925625 (Abt only; Amazon "
+            "agrees but is non-qualifying).",
+        },
+        status="pending",
+        notes="MPN WFC700N/B confirmed (Best Buy model field + "
+        "Crutchfield MFR # + Abt Model # agree). Best Buy $79.99 "
+        "Black Friday (comp $118) / $119.99 list. Flag: promo price "
+        "(Black Friday ends Nov 28, 2026). B&H 'No Longer "
+        "Available' — source only, not the row. (batch-6 "
+        "verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="sony-inzone-h3-white",
+        brand="Sony",
+        model="INZONE H3",
+        variant="White (MDR-G300 / MDRG300/W)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 027242923546 (B&H specs page "
+            "only; Amazon agrees, non-qualifying).",
+        },
+        status="pending",
+        notes="MPN MDR-G300 confirmed (Best Buy model field MDRG300/W "
+        "+ B&H MFR # + Crutchfield MFR # agree). Best Buy $69.99, "
+        "sold by Best Buy; B&H $68.00 In Stock (was $118.00). "
+        "Kawartha TV (Canadian, non-qualifying) lists UPC "
+        "027242923522 for MDRG300/W — disregarded; B&H + Amazon "
+        "agree on ...546. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="sony-ht-a5000-black",
+        brand="Sony",
+        model="HT-A5000",
+        variant="Black (HTA5000)",
+        category="soundbars",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 656942665540 is "
+            "non-qualifying only (manuals.plus); no qualifying "
+            "source prints it.",
+        },
+        status="pending",
+        notes="MPN HT-A5000 confirmed (Best Buy model field HTA5000 "
+        "+ Crutchfield MFR # agree). Best Buy $499.99, Sold by Best "
+        "Buy, InStock, SKU 6467455 (add-time re-check 2026-11-20); "
+        "$699.99 is a parallel listing, SKU 10917148 — not the BF "
+        "price. B&H no longer carries it "
+        "(replacement page for HT-A8000). (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="sony-ht-s400-black",
+        brand="Sony",
+        model="HT-S400",
+        variant="Black (HTS400)",
+        category="soundbars",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 027242923942 is "
+            "non-qualifying only (Amazon; a Best Buy-spec mirror "
+            "site also shows it, not qualifying).",
+        },
+        status="pending",
+        notes="MPN HT-S400 confirmed (Best Buy model field HTS400 + "
+        "B&H MFR # agree). Best Buy $199.99 InStock, Model HTS400, "
+        "SKU 6498905. Flag: promo price (Black Friday ends Nov 28, "
+        "2026). (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="logitech-g435-black",
+        brand="Logitech",
+        model="G435",
+        variant="Black (981-001049)",
+        category="headphones",
+        identifiers={"UPC": "097855165763", "MPN": "981-001049"},
+        identifier_sources={
+            "UPC": "Abt 'UPC # 097855165763' + Best Buy spec page "
+            "'Model Number: 981-001049 … UPC: 097855165763' agree "
+            "(batch-6 verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Current Logitech wireless gaming headset. Best Buy "
+        "$49.99 in a 1-day-old crawl (Black Friday banner ends Nov "
+        "28, 2026) — but the live Best Buy product page at add time "
+        "2026-11-20 reads 'no longer available in new condition', "
+        "with no price/seller/stock block; the row needs a "
+        "live-browser re-check. Abt 'no longer available' — source "
+        "only, not the row. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="logitech-brio-100-graphite",
+        brand="Logitech",
+        model="Brio 100",
+        variant="Graphite (960-001580)",
+        category="webcams",
+        identifiers={"UPC": "097855188588", "MPN": "960-001580"},
+        identifier_sources={
+            "UPC": "B&H spec page 'UPC: 097855188588' + Logitech's "
+            "own datasheet PDF ('Part # 960-001580 … Bar code "
+            "097855188588 (EAN-13)') agree — caveat: the datasheet "
+            "is hosted on Zoro's static CMS, not logitech.com; the "
+            "content is verbatim Logitech (batch-6 verification "
+            "2026-11-20).",
+        },
+        status="verified",
+        notes="Current Logitech 1080p webcam. Best Buy $39.99, sold "
+        "by Best Buy, InStock, SKU 6550199; B&H $24.99 In Stock "
+        "(was $39.99). (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="logitech-signature-m650-l-graphite",
+        brand="Logitech",
+        model="Signature M650 L",
+        variant="Graphite, consumer full-size L (910-006231)",
+        category="mice",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 097855167583 (B&H only; "
+            "Adorama agrees but is not on the qualifying list).",
+        },
+        status="pending",
+        notes="MPN 910-006231 confirmed (Best Buy model field + "
+        "Newegg Model # + NeweggBusiness Mfr. Part # agree). Best "
+        "Buy $24.99 Black Friday, sold by Best Buy, InStock, SKU "
+        "6491142 (list $39.99); B&H $29.99 In Stock. Distinct from "
+        "in-catalog Signature M650 (non-L, standard size). Do not "
+        "mix: 910-006347 is the for-Business Off-White variant. "
+        "(batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="logitech-zone-vibe-125-graphite",
+        brand="Logitech",
+        model="Zone Vibe 125",
+        variant="Graphite (981-001166)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 097855175113 (Logitech "
+            "datasheet PDF 'Part # 981-001166 … UPC 097855175113'; "
+            "Amazon agrees, non-qualifying).",
+        },
+        status="pending",
+        notes="MPN 981-001166 confirmed (Best Buy model field + B&H "
+        "page title agree). Best Buy $129.99; B&H 'No Longer "
+        "Available'. Distinct from in-catalog Zone Vibe 100. Zone "
+        "Vibe Wireless Teams (981-001440) is a different model. "
+        "Snapklik lists UPC 657768069680 for this part number "
+        "(non-qualifying, conflicts with datasheet + Amazon) — "
+        "disregarded. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="jbl-authentics-200-black",
+        brand="JBL",
+        model="Authentics 200",
+        variant="Black (JBLAUTH200BLKAM)",
+        category="speakers",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 050036396219 (B&H specs page "
+            "only; Amazon/manuals.plus/Snapklik agree, all "
+            "non-qualifying).",
+        },
+        status="pending",
+        notes="MPN JBLAUTH200BLKAM confirmed (JBL.com Item# + B&H "
+        "title + Crutchfield MFR # agree). Best Buy $189.95 Black "
+        "Friday (comp $379.95); B&H $189.95 In Stock; Abt $189.95 "
+        "InStock. Flag: promo price (Black Friday ends Nov 28, "
+        "2026). (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="jbl-partybox-encore-essential-2-black",
+        brand="JBL",
+        model="PartyBox Encore Essential 2",
+        variant="Black (JBLPBENCOREESS2AM)",
+        category="speakers",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 050036411059 (B&H only; "
+            "Walts/NFM agree, not qualifying).",
+        },
+        status="pending",
+        notes="MPN JBLPBENCOREESS2AM confirmed (B&H MFR # + Best Buy "
+        "model field + Abt title + Dell Manufacturer Part Number "
+        "agree). Best Buy $199.95 InStock, sold by Best Buy, SKU "
+        "6644260 (supersedes the draft's SKU 10209209 @ $329.99); "
+        "B&H $199.95 In Stock; Abt $199.95 InStock. Do NOT use "
+        "Best Buy SKU 12942222 — bundle with EASYSING mic, "
+        "marketplace. Premium Encore 2 with 2 mics is a different "
+        "$400 model (JBLPBENCORE22MICAM). (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="jbl-bar-500-black",
+        brand="JBL",
+        model="Bar 500",
+        variant="Black (JBLBAR500PROBLKAM)",
+        category="soundbars",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 050036387743 is "
+            "non-qualifying only (Amazon / Walts / Zoro agree; none "
+            "is qualifying).",
+        },
+        status="pending",
+        notes="MPN JBLBAR500PROBLKAM confirmed (JBL.com Item# + "
+        "Crutchfield MFR # + Best Buy model field agree) — the "
+        "draft's 'BAR-500' was a shortened display name, not the "
+        "full MPN. Best Buy $399.95 InStock, SKU 11113238; JBL.com "
+        "$399.99 InStock at add-time re-check 2026-11-20 — the "
+        "$349.95 OutOfStock same-day flip reversed (page Item# "
+        "BAR500PROBLKAM-Z). BAR500MK2 is the newer model — pin "
+        "the original Bar 500. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="jbl-tune-520bt-black",
+        brand="JBL",
+        model="Tune 520BT",
+        variant="Black (JBLT520BTBLKAM)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 050036394925 is "
+            "non-qualifying only (BJ's Wholesale; Amazon agrees, "
+            "non-qualifying).",
+        },
+        status="pending",
+        notes="MPN JBLT520BTBLKAM confirmed (JBL.com manufacturer "
+        "item# + Best Buy Canada model field agree). JBL.com "
+        "$34.95 InStock; Walmart $34.95 (was $59.95); Target "
+        "$59.99 OutOfStock. Flag: promo price. Do not mix with the "
+        "personalized variant T520BTBLKAMCSTM. (batch-6 "
+        "verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="lenovo-legion-pro-5-gen-10-eclipse-black",
+        brand="Lenovo",
+        model="Legion Pro 5 Gen 10",
+        variant="Eclipse Black, 83LT000MUS — Ryzen 7 8745HX, RTX 5060, 32GB, 1TB, 16\" WQXGA OLED",
+        category="laptops",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN 83LT000MUS confirmed (lenovo.com product page + "
+        "Best Buy model field agree). UPC no lead found. Successor "
+        "to the dropped Legion Pro 5 16IRX9 (its Best Buy row is "
+        "dead). Best Buy direct SKU 6619246 — $1,774.99, Sold by "
+        "Best Buy, InStock at add-time re-check 2026-11-20 (the "
+        "$1,579.99 was a 13-day-old crawl; the stale $1,179.99 "
+        "Slickdeals figure is Feb 2026 — do not carry either). "
+        "lenovo.com $2,360.15 InStock as the non-promo reference. "
+        "Do not mix with the kelaptop listing that "
+        "mislabels the CPU as Ryzen 9 7845HX. (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="razer-blackshark-v3-black",
+        brand="Razer",
+        model="BlackShark V3",
+        variant="Black, PC version (RZ04-05410100-R3U1)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN RZ04-05410100-R3U1 confirmed (Best Buy model field "
+        "+ Newegg Model # agree). UPC no qualifying lead — "
+        "840272919606 appears only on Amazon / eBay / HeadphoneTune "
+        "(non-qualifying). Best Buy $129.99 InStock — currently sold "
+        "& shipped by Electronic Express (marketplace); an older "
+        "crawl said 'Sold by Best Buy'. Not currently a direct row "
+        "at Best Buy. Newegg $129.99; Razer.com $149.99 InStock. "
+        "Distinct from in-catalog BlackShark V3 Pro. (batch-6 "
+        "verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="razer-cobra-black",
+        brand="Razer",
+        model="Cobra",
+        variant="Black, wired (RZ01-04650100-R3U1)",
+        category="mice",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 840272903049 (ChannelOnline "
+            "distributor listing only; eBay / Desertcart agree, "
+            "non-qualifying; B&H spec page prints no UPC).",
+        },
+        status="pending",
+        notes="MPN RZ01-04650100-R3U1 confirmed (Best Buy model field "
+        "+ B&H spec page MFR # agree). Best Buy $29.99 Black Friday "
+        "(comp $39.99), sold by Best Buy; B&H $29.99 live. Flag: "
+        "promo price (Black Friday ends Nov 28, 2026). Pokemon "
+        "edition RZ01-04650400-R3M1 ($44.99) is different — do not "
+        "mix. Distinct from in-catalog Cobra Pro (wireless). "
+        "(batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="razer-huntsman-v3-pro-mini-black",
+        brand="Razer",
+        model="Huntsman V3 Pro Mini",
+        variant="Black, 60% Mini standard (RZ03-04990200-R3U1)",
+        category="keyboards",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 840272909409 (Micro Center "
+            "quickView spec panel prints it cleanly, 2026-11-20 "
+            "add-time re-fetch; eBay / PayMore / Ubuy / Desertcart "
+            "agree, non-qualifying — still a single qualifying "
+            "source, needs a second).",
+        },
+        status="pending",
+        notes="MPN RZ03-04990200-R3U1 pending + lead (Best Buy full "
+        "print, SKU 6558755; Micro Center prints only the "
+        "truncated 'RZ03-04990200-R' — a truncated snippet cannot "
+        "carry a VERIFIED verdict). Best Buy $124.99 Black Friday "
+        "(comp $179.99), Sold by Best Buy, InStock; Micro Center "
+        "$139.99 InStoreOnly. A newer '8KHz' version is being "
+        "promoted by Razer — pin the standard Mini. Distinct from "
+        "in-catalog Huntsman V3 Pro (full-size). (batch-6 "
+        "verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="lenovo-thinkpad-t16-gen-4-black",
+        brand="Lenovo",
+        model="ThinkPad T16 Gen 4",
+        variant="Black, 21QN005XUS — Ryzen AI 7 PRO 350, 16GB, 512GB, 16\" WUXGA",
+        category="laptops",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN 21QN005XUS confirmed (CDW spec page MFG# + Newegg "
+        "listing page, search-fetch — the Newegg direct open hit "
+        "the bot wall; corroborated by SHI distributor listing). "
+        "UPC no lead found. CDW In Stock, $1,483.99 advertised — "
+        "add-time re-check 2026-11-20: the direct CDW page did not "
+        "reproduce the price/stock block, so $1,483.99/In Stock "
+        "holds on the 4-day-old CDW crawl only. Adorama "
+        "$1,649.00 'Ships from Manufacturer' (corroboration only). "
+        "Newegg $1,162.02–$1,257.93 seller attribution unclear — do "
+        "not use as the row. Distinct from the 21QN0045US config "
+        "(backlog sibling). (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="anker-soundcore-aerofit-2-black",
+        brand="Anker",
+        model="Soundcore AeroFit 2",
+        variant="Black, base model (A3874Z11)",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 194644036393 (B&H only; Micro "
+            "Center Black page fetch returned a support page with "
+            "no Mfr Part # / UPC).",
+        },
+        status="pending",
+        notes="MPN A3874Z11 confirmed (B&H spec page + Crutchfield "
+        "MFR # agree). B&H $79.99 InStock; Micro Center $69.99 "
+        "InStock; soundcore.com $129.99 list; Best Buy $79.99. AI "
+        "Assistant version is a different listing at $109.99 "
+        "(A3874Z12) — pin base Black only. (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="anker-prime-67w-gan-charger",
+        brand="Anker",
+        model="Prime 67W GaN Wall Charger",
+        variant="67W, 3-port GaN (A2669)",
+        category="chargers",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN A2669 confirmed (Anker.com Model Number + Newegg "
+        "spec page agree — caveat: the Newegg leg rests on the "
+        "search fetch of its spec page, not a direct open; the "
+        "direct open hit the Newegg bot wall). UPC no qualifying "
+        "lead — 194644137373 appears only on Amazon / eBay / Ubuy "
+        "(non-qualifying); the Rakuten product URL digits "
+        "00194644137373 are NOT a verified identifier. Anker.com "
+        "$49.99 InStock; AnkerDirect via Best Buy $34.99 "
+        "(Slickdeals 2026-11-02); Newegg $49.99. Flag: promo price "
+        "$34.99 vs $49.99 list. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="garmin-venu-3s-pebble-gray",
+        brand="Garmin",
+        model="Venu 3S",
+        variant="Pebble Gray, 41mm (010-02785-00)",
+        category="wearables",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 753759314774 (Petra + "
+            "CompSource distributors agree — distributor + "
+            "distributor is beyond the batch-5 precedent, so no "
+            "upgrade).",
+        },
+        status="pending",
+        notes="MPN 010-02785-00 confirmed (Best Buy model field + "
+        "Crutchfield agree). Best Buy $299.99 InStock, Sold by "
+        "Best Buy (comp $449.99). Distinct from in-catalog Venu 3 "
+        "(45mm; 3S is 41mm). Do not mix: Venu 3 45mm is a different "
+        "model (010-02784-00 / 010-02784-01). (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="garmin-approach-s44-black",
+        brand="Garmin",
+        model="Approach S44",
+        variant="Black (010-03009-00)",
+        category="wearables",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 753759350666 (Abt only; "
+            "Crutchfield search returned only the Twilight variant "
+            "010-03009-01; B&H search returned no listing).",
+        },
+        status="pending",
+        notes="MPN 010-03009-00 confirmed (Abt Model # + Garmin.com "
+        "product page agree). Best Buy $249.99 (comp $299.99), sold "
+        "by Best Buy. Flag: promo price (Black Friday ends Nov 28, "
+        "2026). Do not mix: Twilight variant is 010-03009-01, UPC "
+        "753759350673 — different model. (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="garmin-edge-1040-solar-black",
+        brand="Garmin",
+        model="Edge 1040 Solar",
+        variant="Black, Solar (010-02503-20)",
+        category="cycling-computers",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN 010-02503-20 confirmed (Best Buy model field + "
+        "buy.garmin.com cart page agree). UPC no qualifying lead — "
+        "753759279752 appears only at bike shops / Summit Racing / "
+        "Snapklik (non-qualifying). Garmin.com $649.99 (ships in "
+        "2–3 weeks). Best Buy $599.99 InStock — sold & shipped by "
+        "FrontRow Tech, an Authorized Dealer marketplace seller "
+        "(not a direct row). Pin Solar only; non-Solar Edge 1040 "
+        "is 010-02503-00 — different listing. Distinct from "
+        "in-catalog Edge 1050. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="samsung-galaxy-smarttag-2-black",
+        brand="Samsung",
+        model="Galaxy SmartTag 2",
+        variant="Black (EI-T5600BBEGUS)",
+        category="trackers",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 887276765358 (Micro Center "
+            "only qualifying; NFM agrees but is outside the "
+            "qualifying list).",
+        },
+        status="pending",
+        notes="MPN EI-T5600BBEGUS confirmed (Best Buy model field + "
+        "Micro Center spec page Mfr Part# agree). Best Buy $25.00 "
+        "(comp $29.99), sold by Best Buy. Price fluctuates "
+        "$25–$26.93 across crawls (promo) — re-check at add time. "
+        "(batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="samsung-hw-q800f-black",
+        brand="Samsung",
+        model="HW-Q800F",
+        variant="Black (HW-Q800F/ZA)",
+        category="soundbars",
+        identifiers={"UPC": "887276934242", "MPN": "HW-Q800F/ZA"},
+        identifier_sources={
+            "UPC": "B&H spec page + ADI Global Distribution "
+            "distributor spec agree — second source is a distributor "
+            "listing, not a core retailer (batch-6 verification "
+            "2026-11-20).",
+        },
+        status="verified",
+        notes="Current Samsung 5.1.2 Dolby Atmos soundbar (2025). "
+        "$1,097.99 (B&H, Crutchfield, In Stock); Best Buy list "
+        "$1,099.99. Some crawls show $537.99 marketplace rows / "
+        "'Sold Out' flags — not usable. Distinct from in-catalog "
+        "HW-Q990F. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="samsung-hw-qs700f-black",
+        brand="Samsung",
+        model="HW-QS700F",
+        variant="Black, 3.1.2ch convertible (HW-QS700F/ZA)",
+        category="soundbars",
+        identifiers={"UPC": "887276934273", "MPN": "HW-QS700F/ZA"},
+        identifier_sources={
+            "UPC": "B&H spec page + ADI Global Distribution "
+            "distributor spec agree — second source is a distributor "
+            "listing, not a core retailer (batch-6 verification "
+            "2026-11-20).",
+        },
+        status="verified",
+        notes="Current Samsung 2025 soundbar (Convertible Flip "
+        "design, Wireless Dolby Atmos, SpaceFit Sound Pro, "
+        "Q-Symphony). Best Buy $347.99 Black Friday (list $699.99); "
+        "Crutchfield $597.99 (list $697.99), InStock; $597.99 "
+        "(B&H, Abt, InStock). Flag: promo price (Black Friday ends "
+        "Nov 28, 2026). Abt notes a manufacturer rebate ending "
+        "11/22/2026. Distinct from in-catalog HW-Q990F and "
+        "in-batch HW-Q800F. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="microsoft-surface-laptop-13-2025-ocean-512gb",
+        brand="Microsoft",
+        model="Surface Laptop 13\" (2025)",
+        variant="Ocean, 512GB, Snapdragon X Plus (EP2-33432)",
+        category="laptops",
+        identifiers={"UPC": "196388548231", "MPN": "EP2-33432"},
+        identifier_sources={
+            "UPC": "B&H spec page UPC + Abt UPC # 196388548231 "
+            "agree (batch-6 verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Current Microsoft 13-inch Snapdragon X Plus laptop. "
+        "Best Buy Ocean 512GB $1,149.99 (comp $1,249.99), Add to "
+        "cart, InStock, SKU 10148535. Flag: promo price (Black "
+        "Friday ends Nov 28, 2026). Distinct from in-catalog "
+        "Surface Laptop 13.8\" 8th Edition (EP2-59028) and 15\" 8th "
+        "Edition — different MPN, size, and chip generation. "
+        "Target calls this model '8th Edition' — do not conflate. "
+        "(batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="apple-140w-usb-c-power-adapter-white",
+        brand="Apple",
+        model="140W USB-C Power Adapter",
+        variant="White (MKFQ4AM/A)",
+        category="chargers",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN MKFQ4AM/A confirmed (Best Buy model field + B&H "
+        "MFR # + Apple.com shop product agree). UPC no lead for "
+        "MKFQ4AM/A — no qualifying source prints a UPC for this "
+        "part. $99.00 (Apple.com, B&H, InStock); Adorama $129.00. "
+        "Two Best Buy SKUs exist (old 6485370 vs new MKFQ4AM/A "
+        "6530838); pin the new MKFQ4AM/A. Do NOT confuse with "
+        "MW2M3AM/A (B&H lists it as a 140W adapter with UPC "
+        "195949376955 — a different, newer part) or old MLYU3AM/A "
+        "(UPC 194252750629). (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="apple-35w-dual-usb-c-compact-power-adapter-white",
+        brand="Apple",
+        model="35W Dual USB-C Port Compact Power Adapter",
+        variant="White, compact (MW2H3AM/A)",
+        category="chargers",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 195949376535 (Micro Center "
+            "only qualifying; NFM + Datavision agree but are outside "
+            "the qualifying list).",
+        },
+        status="pending",
+        notes="MPN MW2H3AM/A confirmed (B&H MFR # + Apple.com shop "
+        "product + Micro Center Mfr Part# agree). $59.00 "
+        "(Apple.com, InStock); $59.99 (B&H). Some crawls show "
+        "$49.99 (promo-sensitive). UPC split — do not cross: "
+        "compact MW2H3AM/A = 195949376535; non-compact MW2K3AM/A = "
+        "195949376573. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="garmin-fenix-8-solar-sapphire-47mm-carbon-gray",
+        brand="Garmin",
+        model="Fenix 8 Solar Sapphire",
+        variant="47mm, Carbon Gray DLC Titanium (010-02906-10)",
+        category="wearables",
+        identifiers={"UPC": "753759339326", "MPN": "010-02906-10"},
+        identifier_sources={
+            "UPC": "Garmin official FENIX 8 SERIES price list PDF + "
+            "CompSource 'UPC EAN CODE: 753759339326' agree (batch-6 "
+            "verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Current Garmin solar smartwatch (MIP display). Best "
+        "Buy $749.99 (comp $999.99, Save $250), Sold by Best Buy, "
+        "Add to cart, InStock, SKU 6594318. Garmin price list MRP "
+        "$1,099.99. Distinct from in-catalog Fenix 8 AMOLED "
+        "Sapphire 47mm (010-02904-20) — Solar MIP vs AMOLED — and "
+        "from Fenix 9 47mm (010-04762-00). Correction: the initial "
+        "guess 010-02904-00 was WRONG — that is the AMOLED Slate "
+        "Gray. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="logitech-signature-slim-k950-graphite",
+        brand="Logitech",
+        model="Signature Slim K950",
+        variant="Graphite, US layout (920-012424)",
+        category="keyboards",
+        identifiers={"UPC": "097855192974", "MPN": "920-012424"},
+        identifier_sources={
+            "UPC": "B&H product page 'UPC: 097855192974' + "
+            "Tech-America distributor spec agree — caveat: "
+            "Tech-America and PC-Canada share the same data feed, "
+            "so the second source is a distributor listing, not a "
+            "second major retailer (batch-6 verification "
+            "2026-11-20).",
+        },
+        status="verified",
+        notes="Current Logitech slim wireless keyboard. B&H $69.99 "
+        "InStock (was $89.99) — the clean row; Staples $69.99 "
+        "InStock. Best Buy $89.99, but one listing (SKU 10201839) "
+        "is 'Sold & shipped by EP Holdings Inc' (marketplace — do "
+        "not use). Do not mix with K980 Solar+ or MK950 combo. "
+        "(batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="asus-zenwifi-axe7800-3-pack-white",
+        brand="ASUS",
+        model="ZenWiFi AXE7800",
+        variant="White, 3-pack (AXE7800 (W-3-PK))",
+        category="routers",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN ZenWiFi AXE7800 confirmed (ASUS official + Newegg "
+        "spec page 'Part Number 90IG07D0-MA1A2V, Model # ZenWiFi "
+        "AXE7800, 3-Pack' agree). UPC no qualifying lead; eBay "
+        "GTIN 0197105421790 is not qualifying. ASUS $299.99 "
+        "InStock; Newegg $329.99. Best Buy row dead: the current "
+        "listing is sold/shipped by Newegg Official (marketplace) "
+        "at $356.49 — NOT Best Buy direct. Category reconciled to "
+        "'routers' at add time (was 'networking' in the draft). "
+        "Flag: promo price (Black Friday ends Nov 28, 2026). The "
+        "hardware is also sold as ZenWiFi ET9 — the retail 3-pack "
+        "is AXE7800 (W-3-PK). (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="samsung-hw-s60d-black",
+        brand="Samsung",
+        model="HW-S60D",
+        variant="Black (HW-S60D/ZA)",
+        category="soundbars",
+        identifiers={"UPC": "887276823935", "MPN": "HW-S60D/ZA"},
+        identifier_sources={
+            "UPC": "B&H spec page + Samsung official HW-S60D spec "
+            "sheet ('UPC CODE: 887276823935') agree (batch-6 "
+            "verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Current Samsung all-in-one 5.0ch Dolby Atmos soundbar "
+        "(2024). Best Buy $279.99 Black Friday (comp $399.99), sold "
+        "by Best Buy, Add to cart. Flag: promo price (Black Friday "
+        "ends Nov 28, 2026). Canadian /ZC variant has a different "
+        "UPC 887276824543 — pin the US /ZA only. Distinct from the "
+        "in-catalog HW-LS60D Music Frame (different model). "
+        "(batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="dell-g16-7630-gray",
+        brand="Dell",
+        model="G16 7630",
+        variant="Gray, RTX 4070 / i9-13900HX / 32GB / 1TB (Dell-direct config)",
+        category="laptops",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN pending + lead (Dell order codes "
+        "useghbto7630glmf / useghbto7630fwmg — no single MPN; two "
+        "order codes seen for the same spec, likely differing in "
+        "minor config options; Icecat CN76154 is a different code "
+        "format and not a second source for the same code). UPC no "
+        "lead. Dell.com $1,949.99–$1,959.99 (crawls 88 and 135 days "
+        "old — stale; NOT confirmed at add time 2026-11-20: the "
+        "Dell.com page could not be fetched, no current listing "
+        "surfaced, and laptopmedia shows the exact 32GB config "
+        "'Not available'; no retailer-direct row found). "
+        "Correction to the "
+        "first draft: Dell.com DOES still list this config; the "
+        "'discontinued at Dell' conclusion is withdrawn. Flag: "
+        "Dell-direct only (DECISIONS 015 concern — the second "
+        "flagged brand-direct-only pick alongside the X1 Carbon). "
+        "Color naming unverified: Icecat shows Black ('Zwart') vs "
+        "the draft's Gray. Best Buy only shows an 'Upgraded' "
+        "third-party config at $2,879 — not usable. (batch-6 "
+        "verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="hp-victus-15-fb3093dx-mica-silver",
+        brand="HP",
+        model="Victus 15",
+        variant="Mica Silver, 15-fb3093dx (BM4X8UA#ABA)",
+        category="laptops",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 199251266874 (HP datasheet "
+            "only — needs a second qualifying source; eBay also "
+            "prints it, does not count).",
+        },
+        status="pending",
+        notes="MPN 15-fb3093dx / BM4X8UA#ABA confirmed (Best Buy "
+        "model field + HP datasheet Product number agree). Best Buy "
+        "$949.99 (Holiday Deal). One snippet mentions $639.99 for "
+        "the same specs (possibly an older deal price) — price "
+        "volatility, re-check at add time. (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="samsung-galaxy-buds3-silver",
+        brand="Samsung",
+        model="Galaxy Buds3",
+        variant="Silver (SM-R530NZAAXAR)",
+        category="earbuds",
+        identifiers={"UPC": "887276868059", "MPN": "SM-R530NZAAXAR"},
+        identifier_sources={
+            "UPC": "B&H spec page + Micro Center spec + Abt page "
+            "agree (batch-6 verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Current Samsung earbuds (2024). Best Buy $109.95 "
+        "InStock (new, SKU 12901715); B&H $124.95 In Stock (was "
+        "$174.95); Micro Center $49.99 but OutOfStock (do not use "
+        "as the row). Best Buy also lists a refurbished Excellent "
+        "unit ($84.99, Elite Tech LLC marketplace) under a "
+        "different SKU — pin the new SKU 12901715 only and confirm "
+        "sold-by-Best-Buy at add time. Distinct from in-catalog "
+        "Buds3 Pro, Buds3 FE, Buds4, Buds4 Pro. (batch-6 "
+        "verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="asus-rog-swift-oled-pg32ucdm-black",
+        brand="ASUS",
+        model="ROG Swift OLED PG32UCDM",
+        variant="Black, 32\" 4K 240Hz QD-OLED (PG32UCDM)",
+        category="monitors",
+        identifiers={"UPC": "197105413726", "MPN": "PG32UCDM"},
+        identifier_sources={
+            "UPC": "B&H spec page + Micro Center spec agree "
+            "(batch-6 verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Flagship 32-inch 4K QD-OLED ROG monitor. B&H $1,229.00 "
+        "InStock (retailer-direct row). Do NOT mix with PG32UCDM3 "
+        "Gen3 (UPC 199291274662, B&H $1,278.70) or PG32UCDMR (UPC "
+        "199291033863, B&H $899 Holiday / $1,299.99 list) — distinct "
+        "variants with their own UPCs. Distinct from in-catalog "
+        "PG32UCWM and PG27UCDM. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="asus-rt-be86u-black",
+        brand="ASUS",
+        model="RT-BE86U",
+        variant="Black, BE6800 Dual-Band Wi-Fi 7 (RT-BE86U)",
+        category="routers",
+        identifiers={"UPC": "197105581432", "MPN": "RT-BE86U"},
+        identifier_sources={
+            "UPC": "B&H spec page + Micro Center spec (SKU 792663) "
+            "agree (batch-6 verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Current Wi-Fi 7 router (successor to RT-AX86U). B&H "
+        "$239.99 InStock (row). Best Buy $255.99–$269.99, sold by "
+        "Best Buy (price varies across crawls; one crawl showed "
+        "$179.99 — likely open-box/clearance confusion, do not "
+        "use). ASUS list $249.99. Distinct from in-catalog "
+        "RT-BE58U. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="microsoft-surface-thunderbolt-4-dock-black",
+        brand="Microsoft",
+        model="Surface Thunderbolt 4 Dock",
+        variant="Black (T8I-00001)",
+        category="docks",
+        identifiers={"UPC": "196388142200", "MPN": "T8I-00001"},
+        identifier_sources={
+            "UPC": "B&H + Zoro distributor spec 'Mfr # T8I-00001, "
+            "UPC # 196388142200' agree (batch-6 verification "
+            "2026-11-20).",
+        },
+        status="verified",
+        notes="Current Microsoft dock. Best Buy $299.99 (one crawl "
+        "$214.99 — promo-sensitive), sold by Best Buy, Add to "
+        "cart; Newegg ~$251.99; Zoro $272.99. Replaces the Surface "
+        "Dock 2 (clearance-only). (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="asus-rt-be92u-black",
+        brand="ASUS",
+        model="RT-BE92U",
+        variant="Black, BE9700 Tri-Band Wi-Fi 7 (RT-BE92U)",
+        category="routers",
+        identifiers={"UPC": "197105580633", "MPN": "RT-BE92U"},
+        identifier_sources={
+            "UPC": "B&H spec page + Micro Center spec (SKU 800631) "
+            "agree (batch-6 verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Current tri-band Wi-Fi 7 router with 10G port. Best "
+        "Buy $265.51 InStock (list $289.99) — retailer-direct row; "
+        "B&H $285.99; ASUS US $289.99 InStock. Best Buy price is "
+        "promo-sensitive — re-verify at add time. Refurbished "
+        "RT-BE92U-RB (SKU 12760801, $166.24) is a different "
+        "listing — do not mix. Distinct from RT-BE86U and "
+        "in-catalog RT-BE58U. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="meta-ray-ban-skyler-gen-2-green-shiny-black",
+        brand="Meta",
+        model="Ray-Ban Meta Skyler (Gen 2)",
+        variant="Shiny Black, Green lenses (0RW4014_601/7152)",
+        category="smart-glasses",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN 0RW4014_601/7152 pending + lead (Best Buy product "
+        "page, SKU 6642578, 'Model: 0RW4014_601/7152', Sold by "
+        "Best Buy — single qualifying source; meta.com does not "
+        "print the code). UPC no lead. Best Buy $379.00 InStock, "
+        "Sold by Best Buy; meta.com $379 InStock. Transitions "
+        "variants $459 — pin Green only. The Transitions Green "
+        "variant is a DIFFERENT model: Best Buy Model "
+        "0RW4014_601/1M52, SKU 6642596, $459.00. (batch-6 "
+        "verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="google-nest-hub-2nd-gen-charcoal",
+        brand="Google",
+        model="Nest Hub (2nd Gen)",
+        variant="Charcoal (GA01892-US)",
+        category="smart-home",
+        identifiers={"UPC": "193575009223", "MPN": "GA01892-US"},
+        identifier_sources={
+            "UPC": "Ferguson distributor spec + Zoro distributor "
+            "spec agree — both UPC sources are distributor specs; "
+            "no core retailer printed the UPC (batch-6 verification "
+            "2026-11-20).",
+        },
+        status="verified",
+        notes="Google smart display (2021 hardware, 5 years old), "
+        "frequently discounted to $49.99–$59.99; $99.99 is list. "
+        "Best Buy $99.99 list; Google Store $99.99. Not "
+        "discontinued, but age noted. (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="asus-zenwifi-bt8-2-pack-white",
+        brand="ASUS",
+        model="ZenWiFi BT8",
+        variant="White, 2-pack (BT8(W-2-PK))",
+        category="routers",
+        identifiers={"UPC": "197105532045", "MPN": "BT8(W-2-PK)"},
+        identifier_sources={
+            "UPC": "B&H spec page + Micro Center spec (SKU 800656) "
+            "agree (batch-6 verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Current Wi-Fi 7 mesh system. B&H $449.99 InStock, "
+        "Holiday Savings $130 off (was $579.99) — retailer-direct "
+        "row. Micro Center $599.99 InStoreOnly (not the row); ASUS "
+        "2-pack list $599.99. Flag: promo price — re-verify at add "
+        "time. 1-pack (UPC 197105531987, B&H $329.99, OutOfStock) "
+        "and 3-pack (UPC 197105532090, B&H $699.99) are different "
+        "pack sizes — pin 2-pack only. Distinct from the in-batch "
+        "ZenWiFi AXE7800 3-pack. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="asus-zenwifi-bt10-2-pack-white",
+        brand="ASUS",
+        model="ZenWiFi BT10",
+        variant="White, 2-pack (BT10(W-2-PK))",
+        category="routers",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 197105429895 (B&H spec page "
+            "+ CompSource distributor spec; DOWNGRADED at add time "
+            "2026-11-20: the Best Buy spec panel for SKU 11870821 "
+            "as fetched shows no UPC field at all, so the "
+            "confirm-or-downgrade check did not confirm it; the "
+            "$760.69 Best Buy listing is marketplace, Beach Audio "
+            "Inc, not Best Buy direct).",
+        },
+        status="pending",
+        notes="MPN BT10(W-2-PK) confirmed (B&H spec page MFR # + "
+        "Best Buy model field, SKU 11870821, agree). Premium "
+        "current Wi-Fi 7 mesh. B&H $629.99 (row). Best Buy $760.69 "
+        "is sold & shipped by Beach Audio Inc (marketplace) — do "
+        "not use as the row. Do NOT use the 3-pack: Best Buy "
+        "3-pack (SKU 6578611) is Clearance $849.99 and 'no longer "
+        "available in new condition'. 1-pack (B&H UPC 197105429833, "
+        "$346.00 InStock) is a different pack size. Distinct from "
+        "BT8 (BE14000 vs BE18000). (batch-6 verification "
+        "2026-11-20).",
+    ),
+    EvalProduct(
+        key="hyperx-cloud-iii-wireless-black",
+        brand="HyperX",
+        model="Cloud III Wireless",
+        variant="Black (77Z45AA)",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 197029611727 has no "
+            "qualifying source at all yet (shipfreedefense, "
+            "shop.vb.net, PB Tech NZ, Desertcart print it; eBay "
+            "prints a conflicting UPC 786513757593 — ignore, likely "
+            "a different bundle).",
+        },
+        status="pending",
+        notes="MPN 77Z45AA confirmed (Best Buy model field + "
+        "HyperX.com press release 'Part Number 77Z45AA Black' "
+        "agree). HyperX US shop: 'Discontinued! Shop HyperX Cloud "
+        "III S Wireless Headset Instead', $149.99, OutOfStock — "
+        "Best Buy may be the only live row. Best Buy $149.99 (one "
+        "crawl $174.49 — price varies); price/stock not re-verified "
+        "this round. Distinct from in-catalog Cloud III S "
+        "Wireless. (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="hyperx-alloy-origins-60-black",
+        brand="HyperX",
+        model="Alloy Origins 60",
+        variant="Black (4P5N4AA#ABA)",
+        category="keyboards",
+        identifiers={"UPC": "196188048948", "MPN": "4P5N4AA#ABA"},
+        identifier_sources={
+            "UPC": "Newegg spec page + HP datasheet (via Icecat "
+            "hosting) 'HyperX Alloy Origins 60 (4P5N4AA), UPC "
+            "196188048948' agree (batch-6 verification 2026-11-20).",
+        },
+        status="verified",
+        notes="Current HyperX 60% gaming keyboard. HP.com $114.99 "
+        "InStock; Best Buy $77.99–$86.99 (comp $114.99); Newegg "
+        "$69.99–$114.99 (sold by Official HP Store). Flag: "
+        "promo-sensitive price — re-check at add time. HP datasheet "
+        "also lists 196188048955 / 5704174946502 for other variants "
+        "— do not mix. Distinct from in-catalog Alloy Origins 65. "
+        "(batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="corsair-k65-pro-mini-black",
+        brand="Corsair",
+        model="K65 PRO MINI",
+        variant="Black, OPX (CH-91A401A-NA)",
+        category="keyboards",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 840006698432 has no "
+            "qualifying source yet (aio.lv prints 'MPN "
+            "CH-91A401A-NA, EAN 840006698432'; camelcamelcamel / "
+            "Desertcart agree — none qualifying).",
+        },
+        status="pending",
+        notes="MPN CH-91A401A-NA confirmed (Best Buy model field + "
+        "Newegg Part Number agree). Correct US code is "
+        "CH-91A401A-NA (NA layout) — the guessed code CH-9199114 "
+        "was wrong, do NOT use it. CH-91A401A-ND is the Nordics "
+        "layout, a different variant. Best Buy $72.98 promo / "
+        "$149.99 list; Newegg $109.99+; Corsair direct $79.99. Pin "
+        "$79.99 (Corsair direct / Best Buy promo). Distinct from "
+        "in-catalog K65 Plus Wireless (wired optical OPX vs "
+        "wireless). (batch-6 verification 2026-11-20).",
+    ),
+    EvalProduct(
+        key="asus-tuf-gaming-m4-air-black",
+        brand="ASUS",
+        model="TUF Gaming M4 Air",
+        variant="Black (P307 TUF GAMING M4 AIR)",
+        category="mice",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 195553335454 (SHI + Zoro "
+            "distributor specs agree; DOWNGRADED at add time "
+            "2026-11-20, user-approved: both sources are "
+            "distributors, the same shape as the Venu 3S UPC that "
+            "stays pending).",
+        },
+        status="pending",
+        notes="MPN P307 TUF GAMING M4 AIR confirmed (SHI distributor "
+        "spec + Zoro spec + Best Buy model field agree). Current "
+        "ultralight TUF mouse (47g, 16,000 DPI). Best Buy $57.99 "
+        "InStock at add-time re-check 2026-11-20 — but the featured "
+        "seller is 'Sold & shipped by Newegg Official' "
+        "(marketplace), not Best Buy direct, and the live SKU is "
+        "12228723, not the draft's 11145905; no Best Buy-direct "
+        "row. ASUS US $49.99. Price moves ($44.99–$57.99). A Target "
+        "marketplace listing "
+        "shows UPC 196384006247 for the same model name "
+        "(marketplace-sourced, not qualifying) — do not treat as a "
+        "competing verified code. No TUF mouse is in the catalog. "
+        "(batch-6 verification 2026-11-20).",
+    ),
 ]
 
 

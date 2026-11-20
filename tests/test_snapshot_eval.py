@@ -40,13 +40,46 @@ def test_snapshot_staleness(tmp_path):
 
 
 def test_eval_set_shape():
-    assert len(EVAL_SET) == 450
+    assert len(EVAL_SET) == 500
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 194
+    assert len(verified) == 211
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
     assert {p.key for p in pending} == {
+        "lenovo-thinkpad-t14-gen-5-black",
+        "lenovo-thinkpad-x1-carbon-gen-13-aura-edition",
+        "sony-wf-c700n-black",
+        "sony-inzone-h3-white",
+        "sony-ht-a5000-black",
+        "sony-ht-s400-black",
+        "logitech-signature-m650-l-graphite",
+        "logitech-zone-vibe-125-graphite",
+        "jbl-authentics-200-black",
+        "jbl-partybox-encore-essential-2-black",
+        "jbl-bar-500-black",
+        "jbl-tune-520bt-black",
+        "lenovo-legion-pro-5-gen-10-eclipse-black",
+        "razer-blackshark-v3-black",
+        "razer-cobra-black",
+        "razer-huntsman-v3-pro-mini-black",
+        "lenovo-thinkpad-t16-gen-4-black",
+        "anker-soundcore-aerofit-2-black",
+        "anker-prime-67w-gan-charger",
+        "garmin-venu-3s-pebble-gray",
+        "garmin-approach-s44-black",
+        "garmin-edge-1040-solar-black",
+        "samsung-galaxy-smarttag-2-black",
+        "apple-140w-usb-c-power-adapter-white",
+        "apple-35w-dual-usb-c-compact-power-adapter-white",
+        "asus-zenwifi-axe7800-3-pack-white",
+        "dell-g16-7630-gray",
+        "hp-victus-15-fb3093dx-mica-silver",
+        "meta-ray-ban-skyler-gen-2-green-shiny-black",
+        "asus-zenwifi-bt10-2-pack-white",
+        "hyperx-cloud-iii-wireless-black",
+        "corsair-k65-pro-mini-black",
+        "asus-tuf-gaming-m4-air-black",
         "sony-dualsense-white",
         "apple-watch-series-12-42mm-gps-black",
         "apple-watch-ultra-4-49mm-gps-cellular-natural",
@@ -308,7 +341,7 @@ def test_eval_set_shape():
 
 def test_evaluate_counts_fixture_snapshot(tmp_path):
     result = evaluate(_snapshot(tmp_path))
-    assert result["models"] == 450
+    assert result["models"] == 500
     assert result["total_offers"] == 1
     # No UPC in snapshots -> everything lands in "suspected", by design.
     assert result["matched"] == 0 and result["suspected"] == 1

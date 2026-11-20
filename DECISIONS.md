@@ -4443,3 +4443,23 @@ written as "superseded by" with the original text kept.
   no quotes yet — first quotes land at the next daily refresh).
   Site rebuilt (453 pages). Tests 57 passed (4 count assertions
   updated 400 → 450, 173 → 194, 227 → 256; pending-keys set +29).
+
+## 085 (2026-11-20): Batch 6 — 50 models added (450 → 500), user-approved reworked draft with the M4 Air UPC downgraded; add-time re-verification downgraded the BT10 UPC as well
+
+- Decision: Add all 50 models in data/candidates_batch6_500.md (reworked draft, commit 1f45440), user approved ("按推荐批 50 款（M4 Air 降级，18/50）", 2026-11-20). Keys copied verbatim from the draft file; identifiers exactly as drafted as amended below. No PENDING upgraded to VERIFIED, no identifiers invented. Models only — no price rows added at add time.
+- Approved downgrade (user-directed): ASUS TUF Gaming M4 Air UPC 195553335454 VERIFIED → PENDING. Both sources are distributors (SHI + Zoro), the same shape as the Venu 3S UPC (Petra + CompSource) that stays pending; counting one and not the other would be inconsistent. The model still enters the catalog as PENDING; MPN stays verified.
+- Add-time re-verification downgrade (per the draft's own confirm-or-downgrade rule): ASUS ZenWiFi BT10 UPC 197105429895 VERIFIED with caveat → PENDING. The Best Buy spec panel for SKU 11870821 as fetched shows no UPC field at all, so the check did not confirm it; the $760.69 Best Buy listing is marketplace (Beach Audio Inc), not Best Buy direct. B&H $629.99 is the row.
+- Result of the two downgrades: UPC verified 18/50 as approved → 17/50 as added; verified identifiers 194 → 211 (not 212), pending 256 → 289.
+- Add-time re-verification, other items (fetches 2026-11-20):
+  - Razer Huntsman V3 Pro Mini: Micro Center quickView spec panel prints UPC 840272909409 cleanly (was snippet-only), but it remains a single qualifying source, so the UPC stays PENDING; MPN still prints truncated ("RZ03-04990200-R") on Micro Center, so it stays PENDING. No upgrade.
+  - Sony HT-A5000: $499.99 HOLDS (Sold by Best Buy, InStock, SKU 6467455); $699.99 is a parallel listing, SKU 10917148.
+  - Lenovo Legion Pro 5 Gen 10: price CHANGED $1,579.99 → $1,774.99 (Sold by Best Buy, InStock, SKU 6619246).
+  - Lenovo ThinkPad T16 Gen 4: CDW $1,483.99 / In Stock holds on the 4-day-old CDW crawl only — the direct CDW page did not reproduce the price/stock block.
+  - Dell G16 7630: Dell.com price NOT confirmed at add time (page unfetchable, no current listing surfaced; laptopmedia shows the exact 32GB config "Not available"); no retailer-direct row. Entry kept as pending with the unconfirmed price recorded in notes; needs a live-browser dell.com check.
+  - Lenovo ThinkPad X1 Carbon Gen 13: lenovo.com $1,248.99 InStock confirmed; no retailer-direct row (Best Buy only IST Computers marketplace; Newegg listing exists but price/seller/stock unverified behind the bot wall; CDW has no listing). DECISIONS 015 concern stands; entry kept as flagged.
+  - Logitech G435: live Best Buy page now reads "no longer available in new condition" ($49.99 only in a 1-day-old crawl); row needs a live-browser re-check. Identifiers stay verified (Best Buy spec page + Abt).
+  - ASUS TUF Gaming M4 Air: price $57.99 InStock holds, but the live Best Buy listing is marketplace (Newegg Official), not Best Buy direct, and the live SKU is 12228723, not the draft's 11145905.
+  - JBL Bar 500: JBL.com $399.99 InStock at add time — the $349.95 OutOfStock same-day flip reversed.
+  - Samsung HW-Q600F $399.99 and JBL PartyBox Encore Essential 2 $199.95 (SKU 6644260) confirmed live, Sold by Best Buy, InStock.
+  - Recorded corrections applied: Encore Essential 2 Best Buy SKU 6644260 @ $199.95 (supersedes 10209209 @ $329.99); Bar 500 MPN corrected to JBLBAR500PROBLKAM; ZenWiFi AXE7800 category reconciled networking → routers.
+- Result: 500 models, 211 verified / 289 pending, ranking 148 / matched 164 / total offers 1,792 all unchanged (new models have no quotes yet — first quotes land at the next daily refresh). Site rebuilt (503 pages). Tests 57 passed (7 count assertions updated 450 → 500, 194 → 211, 256 → 289; pending-keys set +33).

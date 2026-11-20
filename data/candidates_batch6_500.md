@@ -3,7 +3,7 @@
 - **Date:** 2026-11-20 (first draft); reworked 2026-11-20 (see "Rework 2026-11-20 — site-by-site" below).
 - **Catalog state at draft time:** 450 models in `price_agent/catalog.py`, verified identifiers 194 / pending 256, ranking 148, matched 164. Repo HEAD `04ed2bc` (`feat: batch 5 — add 50 models (400 → 450), verified 173 → 194 (DECISIONS 084)`).
 - **This batch:** 50 candidates, catalog 450 → 500. Final batch to the user's 500 target.
-- **Identifier tally (REWORKED): MPN VERIFIED 47 / 50. UPC/EAN VERIFIED 19 / 50 (38%). UPC PENDING 31 / 50.** Before the rework: MPN VERIFIED 1 / 50, UPC verified 0 / 50. Catalog "verified" = UPC/EAN verified (confirmed against the live catalog: all 194 verified models carry a UPC/EAN; 0 verified models lack one; 0 pending models carry one) — so this batch would lift verified identifiers 194 → 213 if added as drafted.
+- **Identifier tally (REWORKED, as approved 2026-11-20): MPN VERIFIED 47 / 50. UPC/EAN VERIFIED 18 / 50 (36%). UPC PENDING 32 / 50.** Before the rework: MPN VERIFIED 1 / 50, UPC verified 0 / 50. Catalog "verified" = UPC/EAN verified (confirmed against the live catalog: all 194 verified models carry a UPC/EAN; 0 verified models lack one; 0 pending models carry one) — so this batch lifts verified identifiers 194 → 212 as approved. (Rework draft said 19/50; the user approved with the TUF M4 Air UPC downgraded to PENDING — see entry 50 — so 18/50.)
 - **Brand counts (50):** Sony 4, Logitech 5, JBL 4, Razer 3, Samsung 6, Apple 2, Anker 2, Garmin 4, Lenovo 4, ASUS 7, Dell 1, HP 1, Meta 1, Google 1, HyperX 2, Microsoft 2, Corsair 1. (Bose, Keychron, Alienware: 0 — all three lost their only entries in the rework; see Swaps.)
 
 ## Rework 2026-11-20 — site-by-site
@@ -47,7 +47,7 @@
 | 42 | Meta Oakley Vanguard | MPN format conflict unresolved (Abt vs Best Buy vs EU) | ASUS RT-BE92U | UPC VERIFIED (B&H + Micro Center); BB $265.51 InStock |
 | 45 | Keychron K11 Max | Likely discontinued (successor K15 Max); no retailer-direct row; MPN Keychron-family only, UPC no lead | ASUS ZenWiFi BT8 2-pack | Both identifiers VERIFIED (B&H + Micro Center); B&H $449.99 InStock |
 | 46 | Keychron Q0 Max | Brand-direct-only; MPN Keychron-family only, UPC no lead | ASUS ZenWiFi BT10 2-pack | UPC VERIFIED (B&H + CompSource, caveat — confirm at add time); B&H $629.99 |
-| 50 | Alienware 18 Area-51 | MPN single-source, UPC no lead | ASUS TUF Gaming M4 Air | Both identifiers VERIFIED (SHI + Zoro); BB $57.99 |
+| 50 | Alienware 18 Area-51 | MPN single-source, UPC no lead | ASUS TUF Gaming M4 Air | MPN VERIFIED, UPC DOWNGRADED to PENDING at add time (SHI + Zoro, distributor + distributor — same shape as Venu 3S; user-approved); BB $57.99 |
 
 **Queued backlogs (for later batches — do not force into this one):**
 - Lenovo (track E, 7): B1 Legion Pro 7 Gen 10 AMD 83RU0002US (lenovo.com-only $2,799.99, single-source MPN — strongest backlog item); B2 Yoga Slim 7x 83QR000AUS (Best Buy direct $649.99 Holiday Deal, MPN single-source — one second source away from a pick); B3 T14 Gen 6 21QJ00CSUS (MPN VERIFIED, needs a direct price row); B4 T16 Gen 4 21QN0045US (MPN VERIFIED, sibling of the carried T16); B5 LOQ 83VA001PUS (Best Buy direct $1,049.99, single-source MPN + unresolved "2K" vs FHD spec conflict); B6 T14 Gen 5 Gray 21MC000NUS (single-source identifiers, supplier stock); B7 ThinkVision P27u-20 (weak, stale B&H price). Plus the 3 sweep picks not carried: E16 Gen 3 21ST0008US (MPN VERIFIED, CDW $1,212.99 InStock), Legion 5i 83LY0000US (MPN PENDING — needs a direct Walmart check), IdeaPad 5 83GH000AUS (MPN PENDING — Staples question).
@@ -498,7 +498,7 @@
 - **Category:** routers
 - **Variant pinned:** White, 2-pack BT10(W-2-PK)
 - **Why it qualifies:** Premium current Wi-Fi 7 mesh; B&H + Best Buy rows. Distinct from BT8 (BE14000 vs BE18000, 2.5G vs 10G ports).
-- **Identifiers:** MPN BT10(W-2-PK) — **VERIFIED** (B&H spec page "MFR # BT10(W-2-PK)" + Best Buy model field "BT10 (W-2-PK)", SKU 11870821). UPC 197105429895 — **VERIFIED with caveat** (B&H spec page + CompSource distributor spec "Mfr Part # ZenWiFi BT10 2PK, UPC EAN CODE 197105429895" — second source is a distributor listing, not a second big-retailer spec page; the weakest VERIFIED call in the ASUS sweep).
+- **Identifiers:** MPN BT10(W-2-PK) — **VERIFIED** (B&H spec page "MFR # BT10(W-2-PK)" + Best Buy model field "BT10 (W-2-PK)", SKU 11870821). UPC 197105429895 — **PENDING (DOWNGRADED at add time 2026-11-20)** — was VERIFIED with caveat (B&H spec page + CompSource distributor spec); the Best Buy spec panel for SKU 11870821 as fetched shows no UPC field at all, so the confirm-or-downgrade check did not confirm it. The $760.69 Best Buy listing is marketplace (Beach Audio Inc), not Best Buy direct.
 - **Price / stock:** B&H $629.99 (row). Best Buy $760.69 (seller not confirmed in-session — do not use as the row without a fresh seller check).
 - **Flag:** At add time, confirm the UPC on the Best Buy spec panel for SKU 11870821; if it does not agree, downgrade to PENDING. Do NOT use the 3-pack: Best Buy 3-pack (SKU 6578611) is Clearance $849.99 and "no longer available in new condition" — clearance-only fails the rule. 1-pack (B&H UPC 197105429833, $346.00 InStock) is a different pack size — see backlog.
 
@@ -534,7 +534,7 @@
 - **Category:** mice
 - **Variant pinned:** Black (P307 TUF GAMING M4 AIR)
 - **Why it qualifies:** Mainstream ultralight TUF mouse (47g, 16,000 DPI); Best Buy + ASUS rows. No TUF mouse is in the catalog.
-- **Identifiers:** MPN P307 TUF GAMING M4 AIR — **VERIFIED** (SHI distributor spec + Zoro spec, both "Mfr Part # P307 TUF GAMING M4 AIR"; CompSource and OfficeCrave print the same UPC; Best Buy model field reads P307-TUF-GAMING-M4-AIR, SKU 11145905). UPC 195553335454 — **VERIFIED** (SHI distributor spec + Zoro spec agree).
+- **Identifiers:** MPN P307 TUF GAMING M4 AIR — **VERIFIED** (SHI distributor spec + Zoro spec, both "Mfr Part # P307 TUF GAMING M4 AIR"; CompSource and OfficeCrave print the same UPC; Best Buy model field reads P307-TUF-GAMING-M4-AIR, SKU 11145905). UPC 195553335454 — **PENDING (DOWNGRADED at add time 2026-11-20, user-approved)** — was VERIFIED (SHI + Zoro agree); downgraded because both sources are distributors, the same shape as the Venu 3S UPC (Petra + CompSource) that stays pending — counting one and not the other would be inconsistent. If the catalog owner accepts distributor + distributor, it becomes VERIFIED.
 - **Price / stock:** Best Buy $57.99 (8-day crawl, Add to cart) — retailer-direct row; older crawls $44.99. ASUS US $49.99.
 - **Flag:** Price moves ($44.99–$57.99) — re-verify at add time. UPC conflict noted and set aside: a Target marketplace listing (sold by Ideal sales, not qualifying) shows UPC 196384006247 for the same model name — marketplace-sourced, do not treat as a competing verified code.
 
