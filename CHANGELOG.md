@@ -74,6 +74,37 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Snapshot builder (2026-11-20): 5 new known-bad rows —
+  Best Buy ULT Wear $248 (the WHULT900NB-CA1W bundle with
+  wireless audio adapter, sold & shipped by Focus Camera, not
+  Best Buy's own standalone ULT Wear; Nordstrom $148 is the
+  standalone price), Best Buy WF-1000XM6 $249.99 (the
+  WF1000XM6B-IC bundle with 3-in-1 portable accessory, sold &
+  shipped by Focus Camera, not Best Buy's own standalone XM6;
+  the standalone is $248 at Datavision / ListenUp in the
+  identified stream), HyperX Pulsefire Haste 2 Wireless $37.99
+  (the White variant — HyperX's variant table shows White
+  $37.99, Black $59.99) and $149.99 (the Haste 2 S, a different
+  model), Uncharted Tactix 8 $1,349.99 (the 51mm Solar AB Elite
+  variant; the pinned 47mm AMOLED is $1,049.99 — yesterday's
+  $1,349.99 row was the wrong variant, not a price the model
+  ever had). Carried row: HyperX Pulsefire Haste 2 Wireless
+  Black $59.99 (HyperX variant table, fresh crawl, InStock;
+  re-check next refresh). Validation: 98 price moves; snapshot
+  2,194 offers, 442 models with quotes (first full 500-model
+  sweep).
+
+- Identified collector (2026-11-20): 82 offers / 71 models, 3
+  skips — Silarius Buds3 FE 10-pack (bundle guard holds) and
+  the 2 known 404s (Heart Rate Monitors USA vivoactive-6,
+  Datavision Tab S10 FE+). ListenUp WF1000XM6 recovered from
+  yesterday's HTTP 429 and collected $248. Matched-price moves:
+  iMac M6 24" Expercom $1,499 → $1,429, Quest 3S Meta Store
+  Official $349.99 → $296.99, Buds4 Pro Datavision $249.99 →
+  $199.00, iPad mini A20 Expercom $699 → $669, Cloud III S
+  Wireless HyperX $129.90 → $109.99. Site 2,345 offers, 164
+  matched, 148 verified rankings (unchanged). Tests 57 pass.
+
 - Snapshot builder (2026-11-19): 13 new known-bad rows —
   460Estore Tab S10 Lite $402 / $504 (both the 256GB variant;
   feed URL pins attribute_pa_storage=256gb, catalog pins 128GB;

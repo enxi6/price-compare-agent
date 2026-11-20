@@ -8532,3 +8532,119 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   - G435 Best Buy row now reads "no longer available in new condition" — row needs a live-browser re-check; identifiers stay verified. M4 Air Best Buy live listing is marketplace (Newegg Official), SKU 12228723, not Best Buy direct. G16 Dell.com price NOT confirmed (page unfetchable; exact config "Not available" per laptopmedia); no retailer-direct row. X1 Carbon still lenovo.com-only. T16 CDW $1,483.99 holds on the 4-day-old crawl only.
 - Tests: 7 failed on hard-coded 450/194/256 counts after the catalog edit; updated the count assertions and the pending-keys set (+33) in tests/test_snapshot_eval.py and tests/test_site_snapshot.py; 57 passed.
 - Rebuilt snapshot verified from data/site_snapshot.json: 500 models, 211 verified / 289 pending, ranking 148, matched 164, total offers 1,792 (all unchanged — new models have no quotes yet), 359 models with offers. All 50 new models in the snapshot, 0 with offers. Site rebuilt (503 pages). The daily refresh (~10:52 PT) will be the first full sweep of 500.
+
+## 139 — 2026-11-20: Daily refresh — first full 500-model sweep, Black Friday cuts, ranking unchanged (148)
+
+- Meta sweep: 500/500 calls OK, 0 failed (~9,995 raw listings).
+  First full 500-model sweep (batch-5/6 models quoted for the
+  first time). Snapshot `data/eval_snapshots_2026-11-20.json`:
+  2,194 offers, 442 models with quotes (prev 1,639 / 346). Diff
+  vs 2026-11-19: 98 price moves, 681 new quotes (mostly
+  batch-5/6 first quotes), 180 disappeared. Eval: 2,194 quotes
+  (Meta) / 82 (identified), 0 identifier-matched in either
+  stream by design. Identified sweep: 82 offers, 71 models, 3
+  skips (Silarius Buds3 FE 10-pack bundle guard; 2 known 404s:
+  Heart Rate Monitors USA vivoactive-6, Datavision Tab S10
+  FE+). ListenUp WF1000XM6 recovered from yesterday's 429 and
+  collected $248. Site rebuilt (503 pages): 2,345 offers, 164
+  matched, 148 verified rankings (unchanged), 455 models with
+  offers. Tests 57 pass.
+- Page-confirmed cuts (Black Friday): ULT Tower Max $1,499.99 →
+  $998 (NFM, fresh crawl, Save $501.99, InStock; Sony direct
+  $999.99 confirmed yesterday), JBL Bar 1000 MK2 $1,199.95 →
+  $899.95 (Best Buy, fresh crawl, Black Friday Deal, Save $300,
+  Sold by Best Buy, InStock), Bose Smart Ultra $999 → $749
+  (Crutchfield, live browser, was $999, Save $250, In stock, Add
+  to cart; Sweetwater $699 unchanged), ULT Tower 7 $649.99 →
+  $448 (NFM, fresh crawl, InStock), ULT Tower 5 $449.99 → $298
+  (NFM, fresh crawl, InStock), Forerunner 265 $449.99 → $299.99
+  (Fleet Feet, live browser, sale $299.99 vs list $449.99, In
+  stock — the promo is back after yesterday's list-price
+  return), Kraken V4 Pro $399.99 → $299.99 (Razer direct, live
+  browser, 25% off, in stock at 9 RazerStores), Kindle
+  Colorsoft $289.99 → $169.99 (Target, fresh crawl, InStock),
+  Kindle Paperwhite $199.99 → $129.99 (Staples, fresh crawl,
+  InStock), G502 X $99.99 → $39.99 (Lenovo + P.C. Richard, both
+  fresh crawls, MPN 910-006136 at P.C. Richard, InStock), G502 X
+  LIGHTSPEED $159.99 → $99.99 (Best Buy, fresh crawl, Sold by
+  Best Buy, Save $60, InStock), G502 X PLUS $179.99 → $119.99
+  (Lenovo, fresh crawl, InStock), G915 X $259.99 → $159.99
+  (Lenovo, fresh crawl, brown tactile = pinned variant, InStock
+  — new Lenovo row, still suspected-table only, model stays
+  unranked), Huntsman V3 Pro $249.99 → $189.99 (Best Buy, fresh
+  crawl, Sold by Best Buy, Save $60, InStock), Anker Prime 20K
+  $179.99 → $119.99 (Anker direct, fresh crawl, $60 OFF,
+  InStock), Quest 3S $349.99 → $296.99 (Meta Store Official,
+  identified Shopify stream; Meta feed agrees at 6 merchants
+  ~$297).
+- Feed corrections, not real moves: Tactix 8 $1,349.99 →
+  $1,049.99 is a variant correction — Uncharted's variant table
+  shows 47mm AMOLED $1,049.99 (pinned), 51mm Solar $1,149.99,
+  51mm Solar AB Elite $1,349.99; yesterday's row was the AB
+  Elite price (guard added to KNOWN_BAD). ULT Wear Best Buy $148
+  → $248 is not a rise — the $248 row is the WHULT900NB-CA1W
+  bundle (with wireless audio adapter) sold & shipped by Focus
+  Camera (marketplace), not Best Buy's own standalone; excluded
+  via KNOWN_BAD. Nordstrom $148 is the standalone price
+  (feed-reported). Focus Camera's own standalone WHULT900NB
+  listing is $248 (fresh crawl) — a legitimate direct row, it
+  stays. WF-1000XM6 Best Buy $328 → $249.99 is not a drop — the
+  $249.99 row is the WF1000XM6B-IC bundle (with 3-in-1 portable
+  accessory) sold & shipped by Focus Camera; excluded via
+  KNOWN_BAD. Standalone XM6 is $248 at Datavision / ListenUp
+  (identified stream). HyperX Pulsefire Haste 2 Wireless $89.99
+  → $37.99 conflates colors — $37.99 is White (HyperX variant
+  table), Black is $59.99; $37.99 excluded and Black carried at
+  $59.99 (fresh crawl, InStock). The $149.99 HyperX row is the
+  Haste 2 S, a different model — excluded.
+- Not page-confirmed (feed-reported only): Forerunner 965 Fleet
+  Feet $599.99 → $449.99 — the Fleet Feet page returned 403
+  Forbidden in the live browser; stopped, not worked around.
+  ULT Tower 7 Macy's $648 → $448, ULT Tower 5 Sweetwater $348 →
+  $188, ULT Field 7 $498 → $348 at BuyDig/Crutchfield/EE,
+  Boombox 4 Crutchfield $549.95 → $399.95, Watch8 Classic
+  BrandsMart $499.99 → $349.99, G502 X PLUS NFM $146.99 →
+  $117.99. Small rises feed-reported: Instinct 3 Uncharted
+  $249.99 → $299.99 (+$50), WH-CH520 Pens +$11.54, HyperX Cloud
+  III +$11.51, Magic Trackpad MelroseMac $129 → $149 (+$20).
+  ULT Field 7 Crutchfield still carries two rows ($348
+  tracking-URL + $498) — duplicate-row watch item, standing.
+- Builder: +5 KNOWN_BAD (Best Buy ULT Wear $248 + XM6 $249.99
+  Focus Camera bundles; HyperX Haste 2 Wireless $37.99 White +
+  $149.99 Haste 2 S; Uncharted Tactix 8 $1,349.99 AB Elite guard)
+  + 1 CARRIED (HyperX Haste 2 Wireless Black $59.99, re-check
+  next refresh). Best Buy keeps surfacing Focus Camera
+  marketplace bundles as its own rows — the feed does not
+  distinguish the seller, so KNOWN_BAD stays the backstop for
+  this pattern.
+- Identified-stream matched moves: iMac M6 24" Expercom $1,499
+  → $1,429 (-$70), Quest 3S Meta Store Official $349.99 →
+  $296.99 (-$53), Buds4 Pro Datavision $249.99 → $199.00
+  (-$50.99), iPad mini A20 Expercom $699 → $669 (-$30), Cloud
+  III S Wireless HyperX $129.90 → $109.99 (-$19.91). New:
+  ListenUp WF1000XM6 $248. Watch item: Keychron K2 Max shows
+  $78.74 in the Meta feed vs $86.24 in the identified Shopify
+  stream for the same pinned variant — still disagreeing.
+- Rotation: MX Master 4 Graphite hunt stays PAUSED (user-nodded
+  2026-11-18). Nintendo patrol: Nintendo-direct rows 14 → 13
+  models — Switch 2 Camera $54.99 Nintendo row dropped from the
+  feed (churn; Target/BJ's/NFM/HSN still $54.99); Joy-Con 2 pair
+  title refined, price unchanged $99.99; everything else
+  unchanged (Switch 2 $499.99, OLED $399.99, Lite $229.99, Pro
+  Controller $89.99). No new Nintendo model outside the catalog
+  — list-only, nothing added. MacBook Pro 14 M6 UPC 195951080291
+  already confirmed three-way (2026-11-07); catalog entry still
+  pending user confirmation. DualSense White: no new evidence.
+- Watch items: PlayStation Portal ShopMyExchange $74.95
+  (login-gated, unverified); Bose Lifestyle Ultra $1,099 Bose row
+  (config unresolved, standing); Switch 2 carrying case (sold
+  out, restock wait); G915 X Lenovo $159.99 page-confirmed but
+  suspected-table only (no identifier in feed) — still unranked;
+  Dell S2725QC Best Buy $249.99 hand row still awaiting user nod
+  (no Best Buy row in the feed; Dell direct $349.99); HP 920 HP
+  direct $68.99 unchanged (Walmart $64.99); Silarius Buds3 FE
+  $195.99 stale row persists in the site union (identified
+  stream has no expiry).
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
+  changes, no DECISIONS.md changes, no models added, no Amazon
+  touch, no spending, no registrations, no purchases.
