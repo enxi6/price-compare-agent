@@ -4388,3 +4388,27 @@ written as "superseded by" with the original text kept.
   146, matched 143 → 162, total offers 1,533 → 1,552 (verified
   from the rebuilt snapshot; all 19 rows present as matched).
   Hand file now 91 models (72 + 19). Tests 57 passed.
+
+## 083 (2026-11-19): Two verified hand rows — Bose Smart Ultra $699 (Sweetwater) + BRAVIA Theatre Rear 8 $399.99 (Sony direct), ranking 146 → 148
+
+- Decision: Add 2 hand rows, user approved ("两行都加", 2026-11-19
+  evening) — both live-browser verified minutes before the add, price +
+  stock + Add to Cart + self-operated seller all confirmed.
+  - Bose Smart Ultra Soundbar, Black (882963-1100): Sweetwater $699.00,
+    struck-through $999.00, Instant Savings $300, "In Stock!" +
+    green Add to Cart, limited quantity; MPN in Tech Specs. Page
+    shows MPN but not UPC — MPN pins model per H9 precedent. The
+    Bose $649 feed row is a confirmed open-box interval low, not
+    used. Resolves the batch-2 expired-promo leftover (was $999
+    self-operated, unranked since 2026-11-16).
+  - Sony BRAVIA Theatre Rear 8, Black (SA-RS8): Sony direct $399.99,
+    Sale Price, was $499.99, Save $100; Model: SA-RS8 on page,
+    orange ADD TO CART, free delivery est. Nov 23–24, free pickup
+    ready Nov 22, 2026; sold by Sony. Page shows model but not UPC
+    — MPN pins model per H9 precedent. Resolves the batch-4 probe
+    leftover (P.C. Richard page 403 on 2026-11-18); Sony-direct is
+    the new route.
+- Result: ranking 146 → 148, matched 162 → 164, total offers 1,792
+  unchanged (both hand rows upgraded the existing same-merchant
+  suspected feed rows rather than adding new offers). Hand file now
+  93 models (91 + 2). Tests 57 passed.

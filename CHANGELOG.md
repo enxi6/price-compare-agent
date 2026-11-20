@@ -11,6 +11,12 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Two verified hand rows (2026-11-19): Bose Smart Ultra Soundbar
+  $699.00 (Sweetwater) + Sony BRAVIA Theatre Rear 8 $399.99 (Sony
+  direct), user-approved ("两行都加"), both live-browser verified
+  minutes before the add. Ranking 146 → 148, matched 162 → 164.
+  See DECISIONS 083.
+
 - Catalog batch 4 (2026-11-18): 50 models added (350 → 400),
   user-approved as drafted, no swaps; 23 UPC/EAN verified, 27
   pending. Add-time re-verification 23/23 clean (0 corrections,

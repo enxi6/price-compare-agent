@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-19T19:36:46.344291+00:00",
+    "generated_at": "2026-11-20T01:25:15.372994+00:00",
     "snapshot_date": "2026-11-19",
     "source_files": 59,
     "identified_source_files": 17,
@@ -8,9 +8,9 @@
     "verified_identifiers": 173,
     "pending_identifiers": 227,
     "total_offers": 1792,
-    "matched_offers": 162,
-    "suspected_offers": 1630,
-    "verified_ranking_models": 146,
+    "matched_offers": 164,
+    "suspected_offers": 1628,
+    "verified_ranking_models": 148,
     "models_with_offers": 359,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -18473,6 +18473,19 @@
       },
       "offers": [
         {
+          "merchant": "Sweetwater",
+          "price": 699.0,
+          "title": "Bose Smart Ultra Soundbar - Black",
+          "url": "https://www.sweetwater.com/store/detail/UltraBarBk--bose-smart-ultra-soundbar-black",
+          "collected_at": "2026-11-20T01:24:00Z",
+          "identifier": "882963-1100",
+          "identifier_kind": "MPN",
+          "source_tier": 4,
+          "source": "sweetwater.com product page (live browser verified 2026-11-19 ~17:23 PT; price $699.00, struck-through $999.00, Instant Savings $300, limited-time offer; \"In Stock!\" + green Add to Cart clickable, limited quantity; MPN 882963-1100 in Tech Specs, sold by Sweetwater; page shows MPN but not UPC — MPN pins model per H9 precedent; the Bose $649 feed row is a confirmed open-box interval low, not used; added on user approval 2026-11-19)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Dolby",
           "price": 429.0,
           "title": "Bose Smart Ultra Soundbar Black",
@@ -18538,19 +18551,6 @@
           "suspected": true
         },
         {
-          "merchant": "Sweetwater",
-          "price": 699.0,
-          "title": "Bose Smart Ultra Soundbar - Black",
-          "url": "https://www.sweetwater.com/store/detail/UltraBarBk--bose-smart-ultra-soundbar-black",
-          "collected_at": "2026-11-19T19:36:45.752875+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
-        },
-        {
           "merchant": "Best Buy",
           "price": 712.66,
           "title": "Bose - Smart Ultra Dolby Atmos Soundbar, Black",
@@ -18605,8 +18605,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-19.json",
       "source_collected_at": "2026-11-19T19:36:45.752875+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "jbl-live-buds-3-black",
@@ -25972,6 +25972,19 @@
       },
       "offers": [
         {
+          "merchant": "Sony",
+          "price": 399.99,
+          "title": "Sony BRAVIA Theatre Rear 8 - Black",
+          "url": "https://electronics.sony.com/audio/soundbars/all-soundbars/p/sars8?cid=sco-na-3354",
+          "collected_at": "2026-11-20T01:24:00Z",
+          "identifier": "SA-RS8",
+          "identifier_kind": "MPN",
+          "source_tier": 4,
+          "source": "electronics.sony.com product page (live browser verified 2026-11-19 ~17:24 PT; Sale Price $399.99, was $499.99, Save $100; Model: SA-RS8 on page, orange ADD TO CART clickable, free delivery est. Nov 23–24, free pickup ready Nov 22, 2026; sold by Sony; page shows model but not UPC — MPN pins model per H9 precedent; added on user approval 2026-11-19)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Target",
           "price": 398.0,
           "title": "Sony SA-RS8 BRAVIA Theater Rear 8 Wireless Rear Speakers - Pair",
@@ -25998,19 +26011,6 @@
           "suspected": true
         },
         {
-          "merchant": "Sony",
-          "price": 399.99,
-          "title": "BRAVIA Theater Rear 8 Wireless Rear Speakers For Trio/Bar 9/Bar 8/Bar 7/HT-A7000/HT-A5000/HT-A3000 | SA-RS8",
-          "url": "https://electronics.sony.com/audio/soundbars/all-soundbars/p/sars8?cid=sco-na-3354",
-          "collected_at": "2026-11-19T19:36:45.752875+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
-        },
-        {
           "merchant": "Impulse Cameras",
           "price": 499.99,
           "title": "Sony BRAVIA Theatre Rear 8 | Total 100W Additional Wireless Rear Speakers",
@@ -26026,8 +26026,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-19.json",
       "source_collected_at": "2026-11-19T19:36:45.752875+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "sony-inzone-h9-ii-black",

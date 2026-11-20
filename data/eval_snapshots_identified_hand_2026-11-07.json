@@ -1546,6 +1546,38 @@
           "in_stock": true
         }
       ]
+    },
+    "bose-smart-ultra-soundbar-black": {
+      "offers": [
+        {
+          "merchant": "Sweetwater",
+          "price": 699.0,
+          "title": "Bose Smart Ultra Soundbar - Black",
+          "url": "https://www.sweetwater.com/store/detail/UltraBarBk--bose-smart-ultra-soundbar-black",
+          "collected_at": "2026-11-20T01:24:00Z",
+          "identifier": "882963-1100",
+          "identifier_kind": "MPN",
+          "source_tier": 4,
+          "source": "sweetwater.com product page (live browser verified 2026-11-19 ~17:23 PT; price $699.00, struck-through $999.00, Instant Savings $300, limited-time offer; \"In Stock!\" + green Add to Cart clickable, limited quantity; MPN 882963-1100 in Tech Specs, sold by Sweetwater; page shows MPN but not UPC — MPN pins model per H9 precedent; the Bose $649 feed row is a confirmed open-box interval low, not used; added on user approval 2026-11-19)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sony-bravia-theatre-rear-8-black": {
+      "offers": [
+        {
+          "merchant": "Sony",
+          "price": 399.99,
+          "title": "Sony BRAVIA Theatre Rear 8 - Black",
+          "url": "https://electronics.sony.com/audio/soundbars/all-soundbars/p/sars8?cid=sco-na-3354",
+          "collected_at": "2026-11-20T01:24:00Z",
+          "identifier": "SA-RS8",
+          "identifier_kind": "MPN",
+          "source_tier": 4,
+          "source": "electronics.sony.com product page (live browser verified 2026-11-19 ~17:24 PT; Sale Price $399.99, was $499.99, Save $100; Model: SA-RS8 on page, orange ADD TO CART clickable, free delivery est. Nov 23–24, free pickup ready Nov 22, 2026; sold by Sony; page shows model but not UPC — MPN pins model per H9 precedent; added on user approval 2026-11-19)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

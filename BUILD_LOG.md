@@ -8468,3 +8468,26 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
   changes, no DECISIONS.md changes, no models added, no Amazon
   touch, no spending, no registrations, no purchases.
+
+## 136 — 2026-11-19: Two verified hand rows — Smart Ultra $699 + Rear 8 $399.99, ranking 146 → 148 (DECISIONS 083)
+
+- User approved both rows ("两行都加", 2026-11-19 evening); both
+  merchant pages live-browser verified 17:23–17:24 PT the same
+  evening, minutes before the add — no re-probe needed.
+  - Bose Smart Ultra Soundbar (Black): Sweetwater $699.00 (struck
+    $999.00, Instant Savings $300, limited-time offer), "In Stock!"
+    + green Add to Cart, limited quantity, MPN 882963-1100 in Tech
+    Specs, sold by Sweetwater.
+  - Sony BRAVIA Theatre Rear 8 (Black): Sony direct $399.99 (Sale
+    Price, was $499.99, Save $100), Model: SA-RS8 on page, orange
+    ADD TO CART, free delivery est. Nov 23–24, free pickup ready
+    Nov 22, 2026, sold by Sony.
+- Both rows written with identifier_kind MPN (pages show MPN, not
+  UPC) per the H9 precedent; catalog UPCs already verified for both
+  models. The Bose $649 feed row stays excluded — confirmed
+  open-box interval low.
+- Rebuilt snapshot verified from data/site_snapshot.json: 400 models,
+  173 verified / 227 pending, ranking 146 → 148, matched 162 → 164,
+  total offers 1,792 (unchanged — hand rows upgraded the existing
+  same-merchant suspected feed rows), 359 models with offers. Site
+  rebuilt (403 pages). Tests 57 passed.
