@@ -4412,3 +4412,34 @@ written as "superseded by" with the original text kept.
   unchanged (both hand rows upgraded the existing same-merchant
   suspected feed rows rather than adding new offers). Hand file now
   93 models (91 + 2). Tests 57 passed.
+
+## 084 (2026-11-20): Batch 5 — 50 models added (400 → 450), user-approved as drafted; new routers category; both add-time weak items kept on fresh live evidence
+
+- Decision: Add all 50 models in data/candidates_batch5_450.md,
+  user approved ("按推荐批 50 款", 2026-11-20 morning) including
+  the new routers category (ASUS RT-BE58U, the first router in the
+  set). Keys copied verbatim from the draft file; identifiers
+  exactly as the draft marks them (21 VERIFIED / 29 PENDING). No
+  PENDING upgraded to VERIFIED, no identifiers invented. Models
+  only — no price rows added at add time; the separate S2725QC /
+  HP 920 two-row proposal was never approved and was not touched.
+- Add-time re-verification of the two weak items (both KEPT):
+  - Razer Nommo V2 Pro (draft HOLD): Razer US PDP fresh fetch
+    2026-11-20 15:33 UTC — JSON-LD Product.offers $449.99
+    InStock. The draft's "no buy box/stock signal" is superseded
+    by the JSON-LD offer block; HOLD lifted on this direct row.
+    Best Buy new row still dead ("no longer available in new
+    condition") — not used. MPN RZ05-04740100-R3U1 confirmed;
+    UPC stays pending (lead 840272904794, single-source Best Buy
+    spec panel).
+  - Dell U3425WE (draft weakest): Dell.com PDP fresh fetch
+    2026-11-20 15:33 UTC — JSON-LD Product.offers $984.99
+    InStock. Dell direct row confirmed, resolving the Adorama
+    conflict (snippets InStock $769 vs page JSON-LD
+    "Discontinued" — Adorama row not used). UPC stays pending
+    (lead 884116452034, weak single source, refurb listing).
+- Result: 450 models, 194 verified / 256 pending, ranking 148 /
+  matched 164 / total offers 1,792 all unchanged (new models have
+  no quotes yet — first quotes land at the next daily refresh).
+  Site rebuilt (453 pages). Tests 57 passed (4 count assertions
+  updated 400 → 450, 173 → 194, 227 → 256; pending-keys set +29).

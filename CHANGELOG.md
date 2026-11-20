@@ -11,6 +11,14 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Catalog batch 5 (2026-11-20): 50 models added (400 → 450),
+  user-approved as drafted; 21 UPC/EAN verified, 29 pending. New
+  category: routers (ASUS RT-BE58U). Both add-time weak items kept
+  on fresh live evidence (Razer Nommo V2 Pro — Razer US InStock
+  $449.99; Dell U3425WE — Dell.com InStock $984.99). Models only —
+  no price rows; ranking 148 / matched 164 unchanged. See
+  DECISIONS 084.
+
 - Two verified hand rows (2026-11-19): Bose Smart Ultra Soundbar
   $699.00 (Sweetwater) + Sony BRAVIA Theatre Rear 8 $399.99 (Sony
   direct), user-approved ("两行都加"), both live-browser verified

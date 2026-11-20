@@ -40,9 +40,9 @@ def test_snapshot_staleness(tmp_path):
 
 
 def test_eval_set_shape():
-    assert len(EVAL_SET) == 400
+    assert len(EVAL_SET) == 450
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 173
+    assert len(verified) == 194
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
@@ -274,12 +274,41 @@ def test_eval_set_shape():
         "razer-nommo-v2-black",
         "anker-soundcore-space-a40-black",
         "apple-ipad-mini-a17-pro-128gb-wifi-space-gray",
+        "razer-nommo-v2-pro-black",
+        "razer-nommo-v2-x-black",
+        "jbl-charge-5-black",
+        "dell-ultrasharp-34-curved-u3425we-silver",
+        "dell-pro-32-plus-4k-p3225qe-black",
+        "hp-710-rechargeable-silent-mouse-black",
+        "hyperx-cloud-alpha-wireless-black-red",
+        "hyperx-alloy-rise-black",
+        "corsair-void-wireless-v2-carbon",
+        "corsair-darkstar-wireless-black",
+        "corsair-sabre-v2-pro-wireless-white",
+        "keychron-q2-max-carbon-black-brown",
+        "bose-bass-module-700-black",
+        "microsoft-surface-slim-pen-2-matte-black",
+        "microsoft-surface-laptop-15-8th-edition-platinum",
+        "lenovo-legion-go-2-32gb-1tb-eclipse-black",
+        "alienware-16-area-51-rtx-5070-ti-2tb-liquid-teal",
+        "alienware-aw2725qf-black",
+        "meta-oakley-meta-hstn-clear-black",
+        "meta-quest-3s-256gb",
+        "google-tv-streamer-4k-porcelain",
+        "apple-airpods-4-anc-white",
+        "nintendo-switch-2-all-in-one-carrying-case-black",
+        "sony-inzone-m10s-black",
+        "razer-viper-v3-pro-black",
+        "razer-blackwidow-v4-75-black",
+        "razer-wolverine-v3-tournament-edition-black",
+        "anker-soundcore-space-q45-black",
+        "jbl-authentics-300-black",
 }
 
 
 def test_evaluate_counts_fixture_snapshot(tmp_path):
     result = evaluate(_snapshot(tmp_path))
-    assert result["models"] == 400
+    assert result["models"] == 450
     assert result["total_offers"] == 1
     # No UPC in snapshots -> everything lands in "suspected", by design.
     assert result["matched"] == 0 and result["suspected"] == 1

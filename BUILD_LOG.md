@@ -8491,3 +8491,31 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   total offers 1,792 (unchanged — hand rows upgraded the existing
   same-merchant suspected feed rows), 359 models with offers. Site
   rebuilt (403 pages). Tests 57 passed.
+
+## 137 — 2026-11-20: Batch 5 — 50 models added (400 → 450), user-approved as drafted (DECISIONS 084)
+
+- User approved all 50 ("按推荐批 50 款", 2026-11-20 morning),
+  including the new routers category (ASUS RT-BE58U). Keys copied
+  verbatim from data/candidates_batch5_450.md; 21 verified / 29
+  pending identifiers exactly as drafted. No PENDING upgraded, no
+  identifiers invented, no price rows added.
+- Add-time re-verification, both weak items KEPT on fresh live
+  evidence (fetches 2026-11-20 15:33 UTC):
+  - Razer Nommo V2 Pro: Razer US PDP JSON-LD $449.99 InStock —
+    draft HOLD lifted on this direct row; Best Buy new row still
+    dead, not used. UPC stays pending (lead 840272904794).
+  - Dell U3425WE: Dell.com PDP JSON-LD $984.99 InStock — Dell
+    direct row confirmed, resolving the Adorama conflict
+    (snippets InStock $769 vs page JSON-LD "Discontinued");
+    Adorama row not used. UPC stays pending (lead 884116452034).
+- Tests: 4 failed on hard-coded 400/173/227 counts after the
+  catalog edit; updated the count assertions and the pending-keys
+  set (+29) in tests/test_snapshot_eval.py and
+  tests/test_site_snapshot.py; 57 passed.
+- Rebuilt snapshot verified from data/site_snapshot.json: 450
+  models, 194 verified / 256 pending, ranking 148, matched 164,
+  total offers 1,792 (all unchanged — new models have no quotes
+  yet), 359 models with offers. All 50 new models in the
+  snapshot, 0 with offers. Site rebuilt (453 pages); router page
+  live. The S2725QC / HP 920 two-row proposal was not approved
+  and was not touched.
