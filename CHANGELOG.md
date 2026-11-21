@@ -11,6 +11,15 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Four verified hand rows (2026-11-21): Dell S2725QC $249.99 (Best
+  Buy) + HP 920 $64.99 (HP direct) + Logitech G915 X $159.99
+  (Lenovo, eCoupon LOGIDEAL shown alongside price) + Samsung Music
+  Frame $399.99 (Samsung direct), user-approved ("四行都加"), all
+  live-browser verified minutes before the add. Ranking 148 → 151,
+  matched 164 → 168. Music Frame's $299.99 feed row is a confirmed
+  bad quote and clears at the next refresh via KNOWN_BAD. See
+  DECISIONS 086.
+
 - Catalog batch 6 (2026-11-20): 50 models added (450 → 500), user-approved reworked draft; 17 UPC/EAN verified, 33 pending. Two add-time UPC downgrades: TUF Gaming M4 Air (distributor + distributor, user-approved) and ZenWiFi BT10 (Best Buy spec panel did not confirm). Models only — no price rows; ranking 148 / matched 164 unchanged. See DECISIONS 085.
 
 - Catalog batch 5 (2026-11-20): 50 models added (400 → 450),

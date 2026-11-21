@@ -8648,3 +8648,35 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
   changes, no DECISIONS.md changes, no models added, no Amazon
   touch, no spending, no registrations, no purchases.
+
+## 140 — 2026-11-21: Four verified hand rows — S2725QC $249.99 + HP 920 $64.99 + G915 X Lenovo $159.99 + Music Frame $399.99, ranking 148 → 151 (DECISIONS 086)
+
+- User approved all four rows ("四行都加", 2026-11-21 10:08 PT);
+  merchant pages live-browser verified ~10:13–10:15 PT the same
+  morning, minutes before the add.
+  - Dell S2725QC: Best Buy $249.99 (Black Friday Deal, Save $120,
+    Comp $369.99), Sold by Best Buy, Add to cart, same-day pickup
+    / next-day delivery, Model S2725QC / SKU 6619486.
+  - HP 920: HP direct $64.99 (MSRP $114.99), ADD TO CART, est.
+    delivery Nov 26–Dec 1, free shipping, Product # 6H1A4AA#ABA.
+  - Logitech G915 X: Lenovo $159.99 (38% off, Est Value $259.99,
+    eCoupon LOGIDEAL shown alongside price), Add To Cart, free
+    delivery by Nov 27; title matches the catalogue variant
+    exactly; Lenovo prints no MPN/UPC (known limitation).
+  - Samsung Music Frame: Samsung direct $399.99 (HW-LS60D/ZA),
+    delivery to ZIP 92618 free by Nov 24, Add to Cart enabled;
+    in-store pickup not available; default ZIP 10001
+    "unavailable" was a ZIP artifact — held until the 92618
+    re-check confirmed delivery.
+- All four rows written with identifier_kind UPC (catalog UPCs
+  already verified for all four models). The G915 X Lenovo row
+  superseded the existing same-merchant same-price Meta suspected
+  row; the other three moved their models from unranked to ranked.
+- Rebuilt snapshot verified from data/site_snapshot.json: 500
+  models, 211 verified / 289 pending, ranking 148 → 151, matched
+  164 → 168, total offers 2,345 → 2,348 (+3), 455 models with
+  offers. Site rebuilt (503 pages). Tests 57 passed.
+- Music Frame $299.99 bad feed row still shows in the suspected
+  table on the rendered model page (verified ranking correctly
+  shows $399.99); the KNOWN_BAD exclusion takes effect at the
+  next daily refresh.

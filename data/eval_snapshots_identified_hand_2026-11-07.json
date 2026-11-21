@@ -252,6 +252,18 @@
           "source_tier": 4,
           "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
           "in_stock": true
+        },
+        {
+          "merchant": "Lenovo",
+          "price": 159.99,
+          "title": "Logitech G G915 X LIGHTSPEED Full-Size Wireless Mechanical GL Gaming Keyboard with RGB Backlighting, Brown Tactile Switch - Black",
+          "url": "https://www.lenovo.com/us/en/p/accessories-and-software/keyboards-and-mice/keyboards/78807224",
+          "collected_at": "2026-11-21T18:17:16Z",
+          "identifier": "097855195005",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "lenovo.com product page (live browser verified 2026-11-21 ~10:13 PT; $159.99, 38% off, Est Value $259.99, eCoupon LOGIDEAL shown alongside price; Add To Cart clickable; free delivery by Nov 27; page title matches catalogue variant exactly — Full-Size, GL Tactile Brown, Black; Lenovo page prints no MPN/UPC — known limitation, UPC 097855195005 / MPN 920-012670 verified via B&H + Abt + Amazon + Desertcart; added on user approval 2026-11-21)",
+          "in_stock": true
         }
       ]
     },
@@ -1575,6 +1587,54 @@
           "identifier_kind": "MPN",
           "source_tier": 4,
           "source": "electronics.sony.com product page (live browser verified 2026-11-19 ~17:24 PT; Sale Price $399.99, was $499.99, Save $100; Model: SA-RS8 on page, orange ADD TO CART clickable, free delivery est. Nov 23–24, free pickup ready Nov 22, 2026; sold by Sony; page shows model but not UPC — MPN pins model per H9 precedent; added on user approval 2026-11-19)",
+          "in_stock": true
+        }
+      ]
+    },
+    "dell-27-plus-4k-monitor-s2725qc": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 249.99,
+          "title": "Dell 27 Plus 4K USB-C Monitor - S2725QC",
+          "url": "https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-8ms-freesync-premium-monitor-with-hdr-hdmi-displayport-usb-ash-white/J3K4L63JXV/sku/6619486",
+          "collected_at": "2026-11-21T18:17:16Z",
+          "identifier": "884116485124",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 ~10:13 PT; Black Friday Deal $249.99, Save $120, Comp Value $369.99; Sold by Best Buy; Add to cart clickable; same-day pickup, next-day delivery; Model S2725QC / SKU 6619486; UPC 884116485124; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "hp-920-ergonomic-vertical-mouse-black": {
+      "offers": [
+        {
+          "merchant": "HP",
+          "price": 64.99,
+          "title": "HP 920 Ergonomic Vertical Mouse",
+          "url": "https://www.hp.com/us-en/shop/pdp/hp-920-ergonomic-wireless-mouse",
+          "collected_at": "2026-11-21T18:17:16Z",
+          "identifier": "197029640277",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "hp.com product page (live browser verified 2026-11-21 ~10:13 PT; $64.99, MSRP $114.99; ADD TO CART clickable; est. delivery Nov 26-Dec 1, free shipping; Product # 6H1A4AA#ABA; UPC 197029640277; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "samsung-music-frame-black": {
+      "offers": [
+        {
+          "merchant": "Samsung",
+          "price": 399.99,
+          "title": "Music Frame LS60D WiFi-Bluetooth Wireless Speaker (2024)",
+          "url": "https://www.samsung.com/us/audio-devices/music-frame/music-frame-sku-hw-ls60d-za/",
+          "collected_at": "2026-11-21T18:17:16Z",
+          "identifier": "887276824321",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "samsung.com product page (live verified 2026-11-21; $399.99, HW-LS60D/ZA; delivery to ZIP 92618 free by Nov 24, Add to Cart enabled; in-store pickup not available; default ZIP 10001 showed unavailable — ZIP artifact, not a stock signal; UPC 887276824321 verified in batch 4 via Walts spec table + eBay GTIN; the $299.99 Samsung feed row is a confirmed bad quote, excluded via KNOWN_BAD at next refresh; added on user approval 2026-11-21)",
           "in_stock": true
         }
       ]

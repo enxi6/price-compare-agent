@@ -4463,3 +4463,47 @@ written as "superseded by" with the original text kept.
   - Samsung HW-Q600F $399.99 and JBL PartyBox Encore Essential 2 $199.95 (SKU 6644260) confirmed live, Sold by Best Buy, InStock.
   - Recorded corrections applied: Encore Essential 2 Best Buy SKU 6644260 @ $199.95 (supersedes 10209209 @ $329.99); Bar 500 MPN corrected to JBLBAR500PROBLKAM; ZenWiFi AXE7800 category reconciled networking → routers.
 - Result: 500 models, 211 verified / 289 pending, ranking 148 / matched 164 / total offers 1,792 all unchanged (new models have no quotes yet — first quotes land at the next daily refresh). Site rebuilt (503 pages). Tests 57 passed (7 count assertions updated 450 → 500, 194 → 211, 256 → 289; pending-keys set +33).
+
+## 086 (2026-11-21): Four verified hand rows — S2725QC Best Buy $249.99 + HP 920 HP direct $64.99 + G915 X Lenovo $159.99 + Music Frame Samsung direct $399.99, ranking 148 → 151
+
+- Decision: Add 4 hand rows, user approved ("四行都加", 2026-11-21
+  10:08 PT) — all four live-browser verified minutes before the
+  add, price + stock + Add to Cart + self-operated seller all
+  confirmed.
+  - Dell 27 Plus 4K Monitor S2725QC (UPC 884116485124): Best Buy
+    $249.99, Black Friday Deal, Save $120, Comp Value $369.99;
+    Sold by Best Buy; Add to cart clickable; same-day pickup,
+    next-day delivery; Model S2725QC / SKU 6619486.
+  - HP 920 Ergonomic Vertical Mouse, Black (UPC 197029640277): HP
+    direct $64.99, MSRP $114.99; ADD TO CART clickable; est.
+    delivery Nov 26–Dec 1, free shipping; Product # 6H1A4AA#ABA.
+  - Logitech G915 X LIGHTSPEED, Full-size GL Tactile Black (UPC
+    097855195005, MPN 920-012670): Lenovo $159.99, 38% off, Est
+    Value $259.99; eCoupon LOGIDEAL shown alongside price (noted
+    in source field, price written as $159.99); Add To Cart
+    clickable; free delivery by Nov 27; page title matches the
+    catalogue variant exactly. Lenovo page prints no MPN/UPC —
+    known limitation; identifiers verified via B&H + Abt + Amazon
+    + Desertcart.
+  - Samsung Music Frame, Black (UPC 887276824321): Samsung direct
+    $399.99, HW-LS60D/ZA; delivery to Irvine ZIP 92618 free by
+    Nov 24, Add to Cart enabled; in-store pickup not available.
+    Default ZIP 10001 showed unavailable — a ZIP artifact, not a
+    stock signal; the row was held until the 92618 re-check
+    confirmed delivery (2026-11-21 10:15 PT).
+- Music Frame $299.99 feed row: the 2026-11-20 snapshot's Samsung
+  $299.99 row is a confirmed bad quote ($100 below every other
+  merchant); it is NOT in the verified ranking — the ranked price
+  is $399.99 — but it still appears in the rebuilt snapshot's
+  suspected table and on the rendered model page under
+  "Title-matched offers". The KNOWN_BAD entry for
+  (samsung-music-frame-black, Samsung, 299.99) already sits in the
+  sweep script (goal hidden_files/build_snapshot.py); it clears at
+  the next daily refresh when the Meta snapshot is rebuilt. Not
+  touched here.
+- Result: ranking 148 → 151, matched 164 → 168, total offers
+  2,345 → 2,348 (+3, not +4: the Lenovo G915 X identified row
+  superseded the existing same-merchant same-price Meta suspected
+  row instead of adding a new offer). Hand file now 96 model
+  entries (93 + 3 new; G915 X appended to its existing entry).
+  Tests 57 passed.

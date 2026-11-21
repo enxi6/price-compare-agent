@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-11-20T19:34:32.007016+00:00",
+    "generated_at": "2026-11-21T18:17:22.879289+00:00",
     "snapshot_date": "2026-11-20",
     "source_files": 60,
     "identified_source_files": 18,
     "models": 500,
     "verified_identifiers": 211,
     "pending_identifiers": 289,
-    "total_offers": 2345,
-    "matched_offers": 164,
-    "suspected_offers": 2181,
-    "verified_ranking_models": 148,
+    "total_offers": 2348,
+    "matched_offers": 168,
+    "suspected_offers": 2180,
+    "verified_ranking_models": 151,
     "models_with_offers": 455,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
@@ -6852,6 +6852,19 @@
       },
       "offers": [
         {
+          "merchant": "Lenovo",
+          "price": 159.99,
+          "title": "Logitech G G915 X LIGHTSPEED Full-Size Wireless Mechanical GL Gaming Keyboard with RGB Backlighting, Brown Tactile Switch - Black",
+          "url": "https://www.lenovo.com/us/en/p/accessories-and-software/keyboards-and-mice/keyboards/78807224",
+          "collected_at": "2026-11-21T18:17:16Z",
+          "identifier": "097855195005",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "lenovo.com product page (live browser verified 2026-11-21 ~10:13 PT; $159.99, 38% off, Est Value $259.99, eCoupon LOGIDEAL shown alongside price; Add To Cart clickable; free delivery by Nov 27; page title matches catalogue variant exactly — Full-Size, GL Tactile Brown, Black; Lenovo page prints no MPN/UPC — known limitation, UPC 097855195005 / MPN 920-012670 verified via B&H + Abt + Amazon + Desertcart; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "B&H Photo",
           "price": 259.99,
           "title": "Logitech G G915 X LIGHTSPEED Low-Profile Wireless RGB Mechanical Gaming Keyboard (Carbon, GL Tactile)",
@@ -6863,19 +6876,6 @@
           "source": "bhphotovideo.com spec page (browser-verified 2026-11-07)",
           "in_stock": true,
           "suspected": false
-        },
-        {
-          "merchant": "Lenovo",
-          "price": 159.99,
-          "title": "Lenovo Logitech G G915 X LIGHTSPEED Full-Size Wireless Mechanical GL Gaming Keyboard with RGB Backlighting, Brown Tactile Switch - Black",
-          "url": "https://www.lenovo.com/us/en/p/accessories-and-software/keyboards-and-mice/keyboards/78807224",
-          "collected_at": "2026-11-20T19:33:32.831104+00:00",
-          "identifier": null,
-          "identifier_kind": null,
-          "source_tier": null,
-          "source": "meta-catalog",
-          "in_stock": true,
-          "suspected": true
         }
       ],
       "source_file": "eval_snapshots_2026-11-20.json",
@@ -10325,6 +10325,19 @@
       },
       "offers": [
         {
+          "merchant": "HP",
+          "price": 64.99,
+          "title": "HP 920 Ergonomic Vertical Mouse",
+          "url": "https://www.hp.com/us-en/shop/pdp/hp-920-ergonomic-wireless-mouse",
+          "collected_at": "2026-11-21T18:17:16Z",
+          "identifier": "197029640277",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "hp.com product page (live browser verified 2026-11-21 ~10:13 PT; $64.99, MSRP $114.99; ADD TO CART clickable; est. delivery Nov 26-Dec 1, free shipping; Product # 6H1A4AA#ABA; UPC 197029640277; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Walmart",
           "price": 64.99,
           "title": "Hp 920 Ergonomic Vertical Mouse",
@@ -10366,8 +10379,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-20.json",
       "source_collected_at": "2026-11-20T19:33:32.831104+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "hp-omen-27q-g2-black",
@@ -27904,6 +27917,19 @@
       "offers": [
         {
           "merchant": "Samsung",
+          "price": 399.99,
+          "title": "Music Frame LS60D WiFi-Bluetooth Wireless Speaker (2024)",
+          "url": "https://www.samsung.com/us/audio-devices/music-frame/music-frame-sku-hw-ls60d-za/",
+          "collected_at": "2026-11-21T18:17:16Z",
+          "identifier": "887276824321",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "samsung.com product page (live verified 2026-11-21; $399.99, HW-LS60D/ZA; delivery to ZIP 92618 free by Nov 24, Add to Cart enabled; in-store pickup not available; default ZIP 10001 showed unavailable — ZIP artifact, not a stock signal; UPC 887276824321 verified in batch 4 via Walts spec table + eBay GTIN; the $299.99 Samsung feed row is a confirmed bad quote, excluded via KNOWN_BAD at next refresh; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
+          "merchant": "Samsung",
           "price": 299.99,
           "title": "Samsung Music Frame LS60D Wi Fi-Bluetooth Wireless Speaker in Black (2024)",
           "url": "https://www.samsung.com/us/audio-devices/music-frame/music-frame-sku-hw-ls60d-za/",
@@ -28022,8 +28048,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-20.json",
       "source_collected_at": "2026-11-20T19:33:32.831104+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "samsung-odyssey-g9-g91f-49-black",
@@ -29330,6 +29356,19 @@
       },
       "offers": [
         {
+          "merchant": "Best Buy",
+          "price": 249.99,
+          "title": "Dell 27 Plus 4K USB-C Monitor - S2725QC",
+          "url": "https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-8ms-freesync-premium-monitor-with-hdr-hdmi-displayport-usb-ash-white/J3K4L63JXV/sku/6619486",
+          "collected_at": "2026-11-21T18:17:16Z",
+          "identifier": "884116485124",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 ~10:13 PT; Black Friday Deal $249.99, Save $120, Comp Value $369.99; Sold by Best Buy; Add to cart clickable; same-day pickup, next-day delivery; Model S2725QC / SKU 6619486; UPC 884116485124; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        },
+        {
           "merchant": "Dell",
           "price": 349.99,
           "title": "Dell 27 plus 4k usb-c monitor - s2725qc",
@@ -29358,8 +29397,8 @@
       ],
       "source_file": "eval_snapshots_2026-11-20.json",
       "source_collected_at": "2026-11-20T19:33:32.831104+00:00",
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "google-fitbit-inspire-3-midnight-zen-black",
