@@ -1,0 +1,51 @@
+key	brand	model	variant	category	mpn	mpn_status	upc	upc_status	price_row	source	track
+shokz-openfit-2-se-black	Shokz	OpenFit 2 SE	Black (Costco exclusive)	earbuds	T920-ST-CB-US-326-COS	PENDING		PENDING	Costco $109.99 (11/16-11/30; stock conflicted)	deal	A
+shokz-openrun-air-2-black	Shokz	OpenRun Air 2	Black Standard	headphones	S610-ST-BK-US	VERIFIED	810202689213	VERIFIED-caveat	B&H $99.95 / Best Buy $99.99 InStock	deal	A
+shokz-opendots-air-black	Shokz	OpenDots Air	Black	earbuds	E210-ST-BK-US	VERIFIED	810202687417	VERIFIED	Sam's Club $89 / Best Buy $89.99 InStock	deal	A
+shokz-openrun-gray-standard	Shokz	OpenRun	Gray Standard	headphones	S803-ST-GY-US	VERIFIED	850033806229	VERIFIED	Shokz direct $64.95 w/ code SDopenrun	deal	A
+sonos-era-100-black	Sonos	Era 100	Black	speakers	E10G1US1BLK	VERIFIED	840136805830	VERIFIED	B&H $219.00 / Micro Center $219.00 InStock	deal	A
+sonos-arc-ultra-black	Sonos	Arc Ultra	Black	soundbars	ARCG2US1BLK	VERIFIED	840136811336	VERIFIED	Costco $849.99 / Best Buy $849.00 InStock	deal	A
+marshall-monitor-iii-anc-cream	Marshall	Monitor III ANC	Cream	headphones	1009077	VERIFIED	7340055411479	VERIFIED-EAN	Best Buy $199.99 BF / B&H $199.99	deal	B
+skullcandy-crusher-evo-matte-black	Skullcandy	Crusher Evo	Matte Black	headphones	S6EVW-S978	PENDING		PENDING	Best Buy $89.99 BF	deal	B
+turtle-beach-stealth-pro-ii-xbox-black	Turtle Beach	Stealth Pro II	Xbox Black	headphones	TBS-2104-05	VERIFIED	840454400755	VERIFIED	Best Buy $249.99 BF	deal	B
+technics-eah-az100-black	Technics	EAH-AZ100	Black	earbuds	EAH-AZ100-K	VERIFIED		CONFLICT	us.technics.com $149.99 InStock	deal	B
+sennheiser-momentum-true-wireless-4-black-graphite	Sennheiser	MOMENTUM True Wireless 4	Black Graphite	earbuds	700365	VERIFIED	810091272466	VERIFIED	Best Buy $249.95	deal	B
+anker-soundcore-space-2-pro-jet-black	Anker	Soundcore Space 2 Pro	Jet Black	headphones	D1406Z11	PENDING		PENDING	Best Buy $199.99 / Target $169.99	deal	B
+beats-solo-buds-orange	Beats	Solo Buds	Orange	earbuds	MJKQ4LL/A	PENDING		PENDING	Best Buy $49.99 BF	deal	B
+beats-studio-buds-plus-ivory	Beats	Studio Buds+	Ivory	earbuds	MQLJ3LL/A	VERIFIED		PENDING	Best Buy $89.99 BF	deal	B
+google-pixel-10a-128gb-obsidian	Google	Pixel 10a	Obsidian 128GB	phones	GA09561-US	PENDING-lead	840353949768	PENDING-lead	Best Buy $549.00 BF SKU 6668565	deal	C
+motorola-moto-g-stylus-2025-256gb-gibraltar-sea	Motorola	moto g stylus 2025	PANTONE Gibraltar Sea 256GB	phones	PB6V0014US	VERIFIED	840023282829	PENDING-lead	Best Buy $199.99 BF SKU 6617940	deal	C
+motorola-moto-g-power-2025-128gb-leaf-green	Motorola	moto g power 2025	Leaf Green 128GB	phones	PB640007US	PENDING-lead		CONFLICT	Best Buy $199.99 BF SKU 6611546	deal	C
+motorola-edge-2026-128gb-martini-olive	Motorola	edge 2026	PANTONE Martini Olive 128GB	phones	PBC70002US	VERIFIED		PENDING	Best Buy $399.99 BF SKU 6677356	deal	C
+apple-iphone-17-pro-256gb-silver	Apple	iPhone 17 Pro	Silver 256GB	phones	MG7K4LL/A	VERIFIED	195950626162	PENDING-lead	Best Buy $999.99 BF SKU 6418044	deal	C
+apple-airtag-2nd-gen-4-pack-white	Apple	AirTag 2nd Gen 4-Pack	White	accessories	MFEA4LL/A	VERIFIED	195950667455	VERIFIED	Walmart $69.99 (volatile) / B&H $95.99	deal	C
+hisense-m7sr-75	Hisense	M7 75	75M7SR Roku	tvs	75M7SR	PENDING-lead		PENDING	Best Buy $499.99 BF	deal	D
+samsung-u7900h-75	Samsung	U7900H 75	UN75U7900HFXZA	tvs	UN75U7900HFXZA	VERIFIED	198957409578	PENDING-lead	Best Buy $399.99 BF / Costco $399.99	deal	D
+samsung-s84h-65	Samsung	S84H 65	QN65S84HAEXZA	tvs	QN65S84HAEXZA	VERIFIED-caveat		PENDING	Best Buy $899.99 BF	deal	D
+tcl-q6ch-black	TCL	Q6CH	Black	soundbars	Q6CH	VERIFIED		PENDING	Costco warehouse $199.99 thru 11-30; online OOS	deal	D
+samsung-hw-b650f-black	Samsung	HW-B650F	Black	soundbars	HW-B650F/ZA	VERIFIED		CONFLICT	Best Buy $199.99 BF	deal	D
+samsung-music-studio-5-black	Samsung	Music Studio 5	Black HW-LS50H/ZA	speakers	HW-LS50H/ZA	VERIFIED	198957266393	VERIFIED	Best Buy $299.99 BF	deal	D
+harman-kardon-onyx-studio-8-black	Harman Kardon	Onyx Studio 8	Black	speakers	HKOS8BLKAM	VERIFIED		CONFLICT	harmankardon.com $99.99 InStock	deal	D
+dji-osmo-action-4-essential-combo-black	DJI	Osmo Action 4 Essential Combo	Black	action-cameras		PENDING		PENDING-lead	DJI US $169.00	deal	E
+gopro-lit-hero-4k60-black	GoPro	LIT Hero	Black	action-cameras	CHDHF-132-AT	VERIFIED	810116384129	VERIFIED	Best Buy $269.99 / B&H $269.99	deal	E
+dji-osmo-action-6-essential-combo-black	DJI	Osmo Action 6 Essential Combo	Black	action-cameras		PENDING		PENDING-lead	DJI US $426.00	deal	E
+dji-osmo-pocket-3-creator-combo-black	DJI	Osmo Pocket 3 Creator Combo	Black	cameras	CP.OS.00000302.01	VERIFIED	190021095007	VERIFIED	B&H $466.00 InStock	deal	E
+insta360-ace-pro-2-xplorer-bundle-costco-black	Insta360	Ace Pro 2 Xplorer Bundle	Black (Costco)	action-cameras		PENDING		PENDING-lead	Costco $389.99	deal	E
+lenovo-yoga-7i-2-in-1-16-gen-10-luna-grey	Lenovo	Yoga 7i 2-in-1 16	Luna Grey 83JT0000US	laptops	83JT0000US	VERIFIED	198155420948	PENDING-lead	Best Buy $649.99 BF	deal	E
+lenovo-legion-5a-15-3-eclipse-black	Lenovo	Legion 5a	Eclipse Black 83Q70068US	laptops	83Q70068US	VERIFIED	199276132093	VERIFIED	B&H $1,249.99 InStock	deal	E
+asus-zenbook-a14-ux3407qa-ps76-iceland-gray	ASUS	Zenbook A14	Iceland Gray UX3407QA-PS76	laptops	UX3407QA-PS76	VERIFIED	197105832077	PENDING-lead	Best Buy $1,199.99 InStock	queue	E
+hp-omnibook-3-14-hz0788dx-nouvelle-silver	HP	OmniBook 3 14	Nouvelle Silver 14-hz0788dx	laptops	14-hz0788dx	VERIFIED-caveat		PENDING	Best Buy $599.99 BF	queue	E
+msi-mag-321up-qd-oled-black	MSI	MAG 321UP	Black 165Hz	monitors	MAG321UPQDOLED	VERIFIED	824142363720	VERIFIED	B&H $569.99 InStock	deal	F
+logitech-g-yeti-gx-black	Logitech	G Yeti GX	Black	microphones	988-000567	VERIFIED	097855190994	VERIFIED	Best Buy $89.99 BF	deal	F
+amazon-echo-show-8-2025-glacier-white	Amazon	Echo Show 8 (2025)	Glacier White	smart-home	B0DC93K4NW	VERIFIED	840414682108	PENDING-lead	Best Buy $129.99 BF	deal	F
+amazon-echo-hub-white	Amazon	Echo Hub	White	smart-home	B0BCR7M9KX	VERIFIED	840268960544	PENDING-lead	Best Buy $74.99 BF	deal	F
+sony-ult-tower-10-black	Sony	ULT Tower 10	Black	speakers	SRSULT1000	VERIFIED	027242928978	PENDING-lead	Best Buy $799.99	queue	F
+asus-rog-strix-g16-g614pr-rtx-5070-ti-eclipse-gray	ASUS	ROG Strix G16	G614PR Eclipse Gray	laptops	G614PR-G16.R95070TI	VERIFIED		PENDING	Best Buy $1,749.99 BF	queue	F
+samsung-galaxy-watch7-40mm-green	Samsung	Galaxy Watch7 40mm	Green	wearables	SM-L300NZGAXAA	VERIFIED	887276868905	PENDING-lead	Best Buy $249.99	queue	F
+lenovo-thinkpad-e16-gen-3-black	Lenovo	ThinkPad E16 Gen 3	Black 21ST0008US	laptops	21ST0008US	VERIFIED	198157339941	VERIFIED	B&H $1,217.50 InStock	queue	F
+asus-rog-strix-xg27ucg-black	ASUS	ROG Swift OLED XG27UCG	Black	monitors	XG27UCG	VERIFIED	197105564633	VERIFIED-caveat	Adorama $464.99 / Micro Center $349.96 in-store-only	queue	F
+lenovo-yoga-slim-7x-14-cosmic-blue	Lenovo	Yoga Slim 7x	Cosmic Blue 83QR000AUS	laptops	83QR000AUS	PENDING		PENDING	Best Buy $649.99 Holiday Deal (may have moved)	queue	F
+lenovo-thinkpad-t14-gen-6-black	Lenovo	ThinkPad T14 Gen 6	Black 21QJ00CSUS	laptops	21QJ00CSUS	VERIFIED		PENDING	CDW $1,811.99 InStock	queue	F
+dji-osmo-360-standard-combo-black	DJI	Osmo 360 Standard Combo	Black	action-cameras	CP.OS.00000441.02	VERIFIED-caveat	190021135994	VERIFIED-caveat	B&H $417.99 / Abt $417.99 InStock	deal-sub	E
+samsung-smart-monitor-m70f-32-white	Samsung	Smart Monitor M70F	White 32" LS32FM703UNXZA	monitors	LS32FM703UNXZA	VERIFIED-caveat	198957027796	PENDING-lead	B&H $299.99 / Abt $299.99 / Samsung.com $299.99 InStock	queue	G
+lenovo-ideapad-5-2-in-1-14-luna-grey	Lenovo	IdeaPad 5 2-in-1 14	Luna Grey 83GH000AUS	laptops	83GH000AUS	VERIFIED	198154657529	PENDING-lead	B&H $699.00 InStock	queue	G
