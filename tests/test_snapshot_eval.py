@@ -40,9 +40,9 @@ def test_snapshot_staleness(tmp_path):
 
 
 def test_eval_set_shape():
-    assert len(EVAL_SET) == 500
+    assert len(EVAL_SET) == 550
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 211
+    assert len(verified) == 229
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
@@ -336,12 +336,44 @@ def test_eval_set_shape():
         "razer-wolverine-v3-tournament-edition-black",
         "anker-soundcore-space-q45-black",
         "jbl-authentics-300-black",
+        "shokz-openfit-2-se-black",
+        "shokz-openrun-air-2-black",
+        "skullcandy-crusher-evo-matte-black",
+        "technics-eah-az100-black",
+        "anker-soundcore-space-2-pro-jet-black",
+        "beats-solo-buds-orange",
+        "beats-studio-buds-plus-ivory",
+        "google-pixel-10a-128gb-obsidian",
+        "motorola-moto-g-stylus-2025-256gb-gibraltar-sea",
+        "motorola-moto-g-power-2025-128gb-leaf-green",
+        "motorola-edge-2026-128gb-martini-olive",
+        "apple-iphone-17-pro-256gb-silver",
+        "hisense-m7sr-75",
+        "samsung-u7900h-75",
+        "samsung-s84h-65",
+        "tcl-q6ch-black",
+        "samsung-hw-b650f-black",
+        "harman-kardon-onyx-studio-8-black",
+        "dji-osmo-action-4-essential-combo-black",
+        "dji-osmo-action-6-essential-combo-black",
+        "insta360-ace-pro-2-xplorer-bundle-costco-black",
+        "lenovo-yoga-7i-2-in-1-16-gen-10-luna-grey",
+        "asus-zenbook-a14-ux3407qa-ps76-iceland-gray",
+        "hp-omnibook-3-14-hz0788dx-nouvelle-silver",
+        "amazon-echo-show-8-2025-glacier-white",
+        "amazon-echo-hub-white",
+        "sony-ult-tower-10-black",
+        "asus-rog-strix-g16-g614pr-rtx-5070-ti-eclipse-gray",
+        "samsung-galaxy-watch7-40mm-green",
+        "asus-rog-strix-xg27ucg-black",
+        "lenovo-yoga-slim-7x-14-cosmic-blue",
+        "lenovo-thinkpad-t14-gen-6-black",
 }
 
 
 def test_evaluate_counts_fixture_snapshot(tmp_path):
     result = evaluate(_snapshot(tmp_path))
-    assert result["models"] == 500
+    assert result["models"] == 550
     assert result["total_offers"] == 1
     # No UPC in snapshots -> everything lands in "suspected", by design.
     assert result["matched"] == 0 and result["suspected"] == 1

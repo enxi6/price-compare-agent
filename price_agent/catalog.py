@@ -11451,6 +11451,817 @@ EVAL_SET: list[EvalProduct] = [
         "competing verified code. No TUF mouse is in the catalog. "
         "(batch-6 verification 2026-11-20).",
     ),
+    # --- Batch 7 (2026-11-21, deal-site gap-check, user-approved) ---
+    EvalProduct(
+        key="shokz-openfit-2-se-black",
+        brand="Shokz",
+        model="OpenFit 2 SE",
+        variant="Black (Costco exclusive)",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN T920-ST-CB-US-326-COS single-source (Costco only). UPC no lead. Costco.com "
+        "OutOfStock at add-time re-check 2026-11-21; $109.99 is warehouse-only (Holiday Savings "
+        "thru 11/30) — no online row. Weakest entry in batch 7; carried as pending only. (batch-7 "
+        "verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="shokz-openrun-air-2-black",
+        brand="Shokz",
+        model="OpenRun Air 2",
+        variant="Black Standard",
+        category="headphones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — 810202689213 printed by non-US retailers (PBTech NZ, MobileCiti AU) but "
+            "NOT on the Best Buy spec panel (SKU 6680820); downgraded from VERIFIED-caveat at add "
+            "time 2026-11-21.",
+        },
+        status="pending",
+        notes="MPN S610-ST-BK-US confirmed (B&H MFR # + Best Buy model field, SKU 6680820). B&H $99.95 "
+        "/ Best Buy $99.99 InStock at add time. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="shokz-opendots-air-black",
+        brand="Shokz",
+        model="OpenDots Air",
+        variant="Black",
+        category="earbuds",
+        identifiers={
+            "UPC": "810202687417",
+            "MPN": "E210-ST-BK-US",
+        },
+        identifier_sources={
+            "UPC": "Target spec page (TCIN 95002590) + NFM spec page agree (batch-7 verification "
+            "2026-11-21).",
+        },
+        status="verified",
+        notes="Clip-on open-ear earbuds. Best Buy $89.99 InStock; Sam's Club $89 thru 11/30 (Black & "
+        "Purple; $15 Sam's Cash is a rebate, not a price cut). (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="shokz-openrun-gray-standard",
+        brand="Shokz",
+        model="OpenRun",
+        variant="Gray Standard",
+        category="headphones",
+        identifiers={
+            "UPC": "850033806229",
+            "MPN": "S803-ST-GY-US",
+        },
+        identifier_sources={
+            "UPC": "Abt UPC # + RunUnited UPC agree (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="Bone-conduction endurance headphones. Shokz.com $64.95 with code SDopenrun "
+        "(grey/standard only; shelf $77.95) — row must carry the code. Best Buy row dead. "
+        "(batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="sonos-era-100-black",
+        brand="Sonos",
+        model="Era 100",
+        variant="Black",
+        category="speakers",
+        identifiers={
+            "UPC": "840136805830",
+            "MPN": "E10G1US1BLK",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + Micro Center spec page agree (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="Single unit. B&H $179.00 live at add time (corrected from draft $219.00); Micro Center "
+        "$219.00. Costco $329.99 is the 2-pack — do not attach as a single-unit price. (batch-7 "
+        "verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="sonos-arc-ultra-black",
+        brand="Sonos",
+        model="Arc Ultra",
+        variant="Black",
+        category="soundbars",
+        identifiers={
+            "UPC": "840136811336",
+            "MPN": "ARCG2US1BLK",
+        },
+        identifier_sources={
+            "UPC": "Micro Center + NFM + Adorama + Walts agree (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="Best Buy $849.00 Black Friday InStock. Costco $849.99 row HELD at add time: Costco.com "
+        "OutOfStock and Costco model field is bundle code ARCG2US1BKHB, not ARCG2US1BLK. (batch-7 "
+        "verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="marshall-monitor-iii-anc-cream",
+        brand="Marshall",
+        model="Monitor III ANC",
+        variant="Cream",
+        category="headphones",
+        identifiers={
+            "EAN": "7340055411479",
+            "MPN": "1009077",
+        },
+        identifier_sources={
+            "EAN": "B&H spec page prints EAN + Aqipa distributor PDF agree; EAN not a 12-digit US UPC — "
+            "counts per the Keychron EAN+SKU precedent (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="Cream variant. Best Buy $199.99 Black Friday InStock; B&H $199.99. B&H spec table "
+        "mislabels color as Black — title, variant selector and MPN all say Cream. (batch-7 "
+        "verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="skullcandy-crusher-evo-matte-black",
+        brand="Skullcandy",
+        model="Crusher Evo",
+        variant="Matte Black",
+        category="headphones",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN S6EVW-S978 single-source (Best Buy model field only). UPC 810145320815 pending (eBay "
+        "+ layupshop only, non-qualifying). Best Buy $89.99 Black Friday InStock (SKU 6580350). "
+        "(batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="turtle-beach-stealth-pro-ii-xbox-black",
+        brand="Turtle Beach",
+        model="Stealth Pro II",
+        variant="Xbox Black",
+        category="headphones",
+        identifiers={
+            "UPC": "840454400755",
+            "MPN": "TBS-2104-05",
+        },
+        identifier_sources={
+            "UPC": "GameStop US spec page + CLD Distribution agree (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="Xbox/PS5/PC multiplatform Black. Best Buy $249.99 Black Friday InStock (SKU 6672065). Do "
+        "not mix with PS/PC-only TBS-5105-05 or White TBS-2104-15. (batch-7 verification "
+        "2026-11-21).",
+    ),
+    EvalProduct(
+        key="technics-eah-az100-black",
+        brand="Technics",
+        model="EAH-AZ100",
+        variant="Black",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN EAH-AZ100-K confirmed (B&H + Crutchfield MFR #). UPC CONFLICT unresolved: B&H prints "
+        "885170433021, Amazon/eBay/Snapklik print 885170441613 — do not attach either. "
+        "us.technics.com $149.99 InStock (brand direct). B&H $149.99 Temporarily Out of Stock, "
+        "restock ~Nov 30. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="sennheiser-momentum-true-wireless-4-black-graphite",
+        brand="Sennheiser",
+        model="MOMENTUM True Wireless 4",
+        variant="Black Graphite",
+        category="earbuds",
+        identifiers={
+            "UPC": "810091272466",
+            "MPN": "700365",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + Abt + Sennheiser official spec-sheet PDF agree (batch-7 verification "
+            "2026-11-21).",
+        },
+        status="verified",
+        notes="Black Graphite. Best Buy SKU 10904810 $249.95 HELD at add time: sold & shipped by Video "
+        "& Audio Center (marketplace). Alternate Best Buy SKU 6575080 $299.99 Sold by Best Buy, "
+        "InStock — Add to Cart unconfirmed in text fetch, needs live browser check. (batch-7 "
+        "verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="anker-soundcore-space-2-pro-jet-black",
+        brand="Anker",
+        model="Soundcore Space 2 Pro",
+        variant="Jet Black",
+        category="headphones",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN D1406Z11 single-source (Best Buy model field only). UPC no lead; do not attach "
+        "Target UPCs 194644380014/194644379674 (Space 2 non-Pro bundles) or 'A3068' (wrong). Best "
+        "Buy $169.99 live (corrected from draft $199.99); Target $169.99 sold by Anker; "
+        "soundcore.com $169.99 Black Friday thru 11/30. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="beats-solo-buds-orange",
+        brand="Beats",
+        model="Solo Buds",
+        variant="Orange",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN MJKQ4LL/A single-source (Best Buy model field only). UPC no lead; do not attach "
+        "Matte Black MUVW3LL/A. Best Buy $49.99 Black Friday InStock (SKU 6677082). Best "
+        "Buy-exclusive Orange. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="beats-studio-buds-plus-ivory",
+        brand="Beats",
+        model="Studio Buds+",
+        variant="Ivory",
+        category="earbuds",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN MQLJ3LL/A confirmed (Best Buy model field + Apple.com + Adorama). UPC no lead. Best "
+        "Buy $89.99 Black Friday InStock (SKU 6501046); Apple.com $169.99. (batch-7 verification "
+        "2026-11-21).",
+    ),
+    EvalProduct(
+        key="google-pixel-10a-128gb-obsidian",
+        brand="Google",
+        model="Pixel 10a",
+        variant="Obsidian 128GB",
+        category="phones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 840353949768 (Best Buy mirror spec table only, non-qualifying). Do "
+            "not use EAN 840353949737 (UK variant GA09561-GB).",
+        },
+        status="pending",
+        notes="MPN GA09561-US single-source (Best Buy model field, SKU 6668565). Best Buy $549.00 Black "
+        "Friday InStock, Sold by Best Buy. $499.99 SKU 13239207 is marketplace (YY Wireless) — "
+        "excluded. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="motorola-moto-g-stylus-2025-256gb-gibraltar-sea",
+        brand="Motorola",
+        model="moto g stylus 2025",
+        variant="PANTONE Gibraltar Sea 256GB",
+        category="phones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 840023282829 (LakeshoreIT distributor spec only; conflicting eBay UPC "
+            "609921770100 for XT2517-1 disregarded).",
+        },
+        status="pending",
+        notes="MPN PB6V0014US confirmed (Best Buy model field + SHI distributor + Newegg). Best Buy "
+        "$199.99 Black Friday InStock (SKU 6617940); motorola.com $199.99. (batch-7 verification "
+        "2026-11-21).",
+    ),
+    EvalProduct(
+        key="motorola-moto-g-power-2025-128gb-leaf-green",
+        brand="Motorola",
+        model="moto g power 2025",
+        variant="Leaf Green 128GB",
+        category="phones",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN PB640007US single-source (Best Buy model field only); motorola.com uses PB640006US "
+        "for Slate Gray — not a second source for Leaf Green. UPC conflict: 840023277283 "
+        "(Amazon/Snapklik) ties to PB640003US — do not attach. Best Buy $199.99 Black Friday "
+        "InStock (SKU 6611546). $99.99 is a carrier-activation price — excluded. (batch-7 "
+        "verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="motorola-edge-2026-128gb-martini-olive",
+        brand="Motorola",
+        model="edge 2026",
+        variant="PANTONE Martini Olive 128GB",
+        category="phones",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN PBC70002US confirmed (Best Buy model field + motorola.com + Lenovo.com). UPC no "
+        "lead. Best Buy $399.99 Black Friday InStock (SKU 6677356); motorola.com $399.99. SKU "
+        "12901739 $707.17 is marketplace — excluded. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="apple-iphone-17-pro-256gb-silver",
+        brand="Apple",
+        model="iPhone 17 Pro",
+        variant="Silver 256GB",
+        category="phones",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 195950626162 (BarcodesInc + shopabunda + Venezuelan retailer lists; "
+            "no core retailer spec page).",
+        },
+        status="pending",
+        notes="MPN MG7K4LL/A confirmed (Best Buy model field + Abt + CDW). Best Buy $999.99 Black "
+        "Friday InStock (SKU 6418044). $30.55/mo installment + $500 gift card and $899.99 "
+        "carrier-activation prices excluded; refurbished excluded. MG7L4LL/A is not Silver. "
+        "(batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="apple-airtag-2nd-gen-4-pack-white",
+        brand="Apple",
+        model="AirTag 2nd Gen 4-Pack",
+        variant="White",
+        category="accessories",
+        identifiers={
+            "UPC": "195950667455",
+            "MPN": "MFEA4LL/A",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + Datavision reseller listing agree (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="2nd-gen 4-pack. B&H $95.99 In Stock (clean row). Walmart $79.99 live-corrected from "
+        "draft $69.99 (crawl price; live page bot-walled at add time). Apple.com $99.00. Do not "
+        "mix with 1st-gen 4-pack MX542AM/A. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="hisense-m7sr-75",
+        brand="Hisense",
+        model="M7 75",
+        variant="75M7SR Roku",
+        category="tvs",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN 75M7SR single-source (Best Buy model field, SKU 6686979); Hisense support answers on "
+        "Best Buy Q&A name it but same page — not a second source. UPC no lead; do not attach "
+        "Canadian 75M7SG UPC 888143026817. Best Buy $499.99 Black Friday InStock. Native 60Hz "
+        "(not 144Hz). (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="samsung-u7900h-75",
+        brand="Samsung",
+        model="U7900H 75",
+        variant="UN75U7900HFXZA",
+        category="tvs",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 198957409578 (P&C Richard spec-sheet PDF only). Do not confuse with "
+            "U7900F UPCs (887276951904 / 887276951997).",
+        },
+        status="pending",
+        notes="MPN UN75U7900HFXZA confirmed (samsung.com + Best Buy model field, SKU 6688397). Best Buy "
+        "$399.99 Black Friday InStock; Costco $399.99; Abt $397.99. (batch-7 verification "
+        "2026-11-21).",
+    ),
+    EvalProduct(
+        key="samsung-s84h-65",
+        brand="Samsung",
+        model="S84H 65",
+        variant="QN65S84HAEXZA",
+        category="tvs",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN QN65S84HAEXZA verified with caveat (Best Buy model field + Samsung Parts USA "
+        "compatibility list — parts page, not a product spec page; strict product-page reading "
+        "would leave it PENDING + strong lead). UPC no lead. Best Buy $899.99 Black Friday "
+        "InStock (SKU 6689681), 'Only at Best Buy'. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="tcl-q6ch-black",
+        brand="TCL",
+        model="Q6CH",
+        variant="Black",
+        category="soundbars",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN Q6CH confirmed (Costco.com model field + TCL US support Q Series manuals). UPC no "
+        "lead (Costco.com spec table has no UPC field). NO online row at add time: Costco.com "
+        "OutOfStock at $299.99; $199.99 is warehouse-only (Holiday Savings thru 11/30) and "
+        "unverifiable online. Model in as pending; row held. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="samsung-hw-b650f-black",
+        brand="Samsung",
+        model="HW-B650F",
+        variant="Black",
+        category="soundbars",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN HW-B650F/ZA confirmed (Best Buy model field + Samsung user guide + Samsung Canada "
+        "list; /ZA suffix pinned by Best Buy only). UPC conflict: 887276936956 / 887276864211 / "
+        "Canadian 887276950938 — do not attach any. Best Buy $199.99 Black Friday InStock (SKU "
+        "6619391). Distinct from 2023 HW-B650. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="samsung-music-studio-5-black",
+        brand="Samsung",
+        model="Music Studio 5",
+        variant="Black HW-LS50H/ZA",
+        category="speakers",
+        identifiers={
+            "UPC": "198957266393",
+            "MPN": "HW-LS50H/ZA",
+        },
+        identifier_sources={
+            "UPC": "Walts TV spec page + Precision distributor agree (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="Best Buy $299.99 Black Friday InStock (SKU 6670424). Woot $214.99 is NOT a qualifying "
+        "row (Amazon subsidiary, 90-day warranty, title/box mismatch). Marketplace SKU 12696700 "
+        "excluded. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="harman-kardon-onyx-studio-8-black",
+        brand="Harman Kardon",
+        model="Onyx Studio 8",
+        variant="Black",
+        category="speakers",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN HKOS8BLKAM confirmed (harmankardon.com Item # + Best Buy model field). UPC conflict: "
+        "028292289859 / 028292289873 (Blue) / 657768329135 / 094148666167 — do not attach any. "
+        "harmankardon.com $99.99 InStock (brand direct, list $499.95). Best Buy $99.99 row is JBL "
+        "Store marketplace — excluded. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="dji-osmo-action-4-essential-combo-black",
+        brand="DJI",
+        model="Osmo Action 4 Essential Combo",
+        variant="Black",
+        category="action-cameras",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 190021133402 (Sharaf DG UAE only, non-qualifying). Do not attach "
+            "Standard Combo MPN CP.OS.00000269.01.",
+        },
+        status="pending",
+        notes="MPN no qualifying lead. NO row at add time: DJI US $169.00 but 'Sold out' on the live "
+        "collection page. Best Buy listing is marketplace (Focus Camera) — excluded. (batch-7 "
+        "verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="gopro-lit-hero-4k60-black",
+        brand="GoPro",
+        model="LIT Hero",
+        variant="Black",
+        category="action-cameras",
+        identifiers={
+            "UPC": "810116384129",
+            "MPN": "CHDHF-132-AT",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + GoPro LIT HERO sell-sheet PDF agree (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="B&H $199.00 live (corrected from draft $269.99; Holiday Savings $70.99, limited supply); "
+        "Best Buy $269.99 InStock (SKU 6642404). Do not attach bundle UPC 197684015847 or NZ "
+        "variant CHDHF-132-AS. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="dji-osmo-action-6-essential-combo-black",
+        brand="DJI",
+        model="Osmo Action 6 Essential Combo",
+        variant="Black",
+        category="action-cameras",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 190021161696 (Amazon + TradeKorea + Ubuy agree, all non-qualifying). "
+            "Do not attach 190021997370 / 190021998407 (bundle kits).",
+        },
+        status="pending",
+        notes="MPN no qualifying lead (eBay UK 'CPOS0000037701' unconfirmed, does not fit the "
+        "sequence). DJI US $426.00, in-stock signal via collection page (no 'Sold out' tag, "
+        "unlike Action 4/5 Pro). (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="dji-osmo-pocket-3-creator-combo-black",
+        brand="DJI",
+        model="Osmo Pocket 3 Creator Combo",
+        variant="Black",
+        category="cameras",
+        identifiers={
+            "UPC": "190021095007",
+            "MPN": "CP.OS.00000302.01",
+        },
+        identifier_sources={
+            "UPC": "Micro Center spec panel + Target UPC field + Nelson Photo agree (batch-7 verification "
+            "2026-11-21).",
+        },
+        status="verified",
+        notes="Creator Combo. B&H $466.00 In Stock (was $549.00). Do not attach component UPCs "
+        "(190021094970 etc.) — kit UPC is 190021095007 only. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="insta360-ace-pro-2-xplorer-bundle-costco-black",
+        brand="Insta360",
+        model="Ace Pro 2 Xplorer Bundle",
+        variant="Black (Costco)",
+        category="action-cameras",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — weak lead 6977644766460 (13-digit EAN; Newegg third-party-seller bundle "
+            "only). Do not attach base-camera MPN CINSBBGA.",
+        },
+        status="pending",
+        notes="MPN no lead (Costco item 9536006 is a Costco number, not a manufacturer MPN). NO row at "
+        "add time: Costco OutOfStock; live JSON-LD $309.99 OOS vs $389.99 8 days ago — neither "
+        "usable. Distinct from Best Buy Octa Edition (ACEPRO2140) and Target Xplorer Pro Bundle. "
+        "(batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="lenovo-yoga-7i-2-in-1-16-gen-10-luna-grey",
+        brand="Lenovo",
+        model="Yoga 7i 2-in-1 16",
+        variant="Luna Grey 83JT0000US",
+        category="laptops",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 198155420948 (Slickdeals thread + eBay only, non-qualifying; Best Buy "
+            "spec panel does not print it).",
+        },
+        status="pending",
+        notes="MPN 83JT0000US confirmed (lenovo.com + Best Buy model field + Newegg). Best Buy $649.99 "
+        "Doorbuster InStock (SKU 6615769). Twin-config trap: 83TE0004US ($1,649.99 list) is a "
+        "different generation — do not mix. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="lenovo-legion-5a-15-3-eclipse-black",
+        brand="Lenovo",
+        model="Legion 5a",
+        variant="Eclipse Black 83Q70068US",
+        category="laptops",
+        identifiers={
+            "UPC": "199276132093",
+            "MPN": "83Q70068US",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + Target UPC field + MyNavyExchange agree (batch-7 verification "
+            "2026-11-21).",
+        },
+        status="verified",
+        notes="B&H $1,249.99 In Stock (was $1,799.99; limited supply at this price). Do not mix with "
+        "sibling 83Q70003US (1TB). (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="asus-zenbook-a14-ux3407qa-ps76-iceland-gray",
+        brand="ASUS",
+        model="Zenbook A14",
+        variant="Iceland Gray UX3407QA-PS76",
+        category="laptops",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 197105832077 (laptoparena.net only, non-qualifying).",
+        },
+        status="pending",
+        notes="MPN UX3407QA-PS76 confirmed (ASUS press release + ASUS Store + Best Buy model field). "
+        "Best Buy $1,199.99 (latest crawl; a 3-day-old crawl showed $1,599.99 — price conflict "
+        "flagged, re-verify before writing the row). Do not mix with Beige sibling "
+        "UX3407QA-X1P512. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="hp-omnibook-3-14-hz0788dx-nouvelle-silver",
+        brand="HP",
+        model="OmniBook 3 14",
+        variant="Nouvelle Silver 14-hz0788dx",
+        category="laptops",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN 14-hz0788dx / DM2Z9UA#ABA verified with caveat (Best Buy model field + HP datasheet "
+        "PDF hosted on Best Buy static files.bbystatic.com — hp.com has no page for this config, "
+        "so the caveat stands). UPC no lead. Best Buy $599.99 Black Friday InStock (SKU 6679357). "
+        "(batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="msi-mag-321up-qd-oled-black",
+        brand="MSI",
+        model="MAG 321UP",
+        variant="Black 165Hz",
+        category="monitors",
+        identifiers={
+            "UPC": "824142363720",
+            "MPN": "MAG321UPQDOLED",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + Micro Center spec agree (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="165Hz original. B&H $569.99 In Stock (was $699.99). Do not mix with X24 240Hz "
+        "(MAG321UPQDOLEDX24). First MSI model in the catalog. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="logitech-g-yeti-gx-black",
+        brand="Logitech",
+        model="G Yeti GX",
+        variant="Black",
+        category="microphones",
+        identifiers={
+            "UPC": "097855190994",
+            "MPN": "988-000567",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + CompSource + Logitech package-spec datasheet agree (batch-7 verification "
+            "2026-11-21).",
+        },
+        status="verified",
+        notes="Black. Best Buy $89.99 Black Friday InStock (SKU 6556755); B&H $89.99 (was $169.99). Do "
+        "not use 988-000570 (does not exist); White is 988-000574. (batch-7 verification "
+        "2026-11-21).",
+    ),
+    EvalProduct(
+        key="amazon-echo-show-8-2025-glacier-white",
+        brand="Amazon",
+        model="Echo Show 8 (2025)",
+        variant="Glacier White",
+        category="smart-home",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 840414682108 (camelcamelcamel + eBay + wholesale post, all "
+            "non-qualifying). Do not use Graphite UPC 840414684003 (B0DC8ZMR1P).",
+        },
+        status="pending",
+        notes="MPN B0DC93K4NW confirmed (Best Buy model field + Staples + Abt + Dell). Best Buy $129.99 "
+        "Black Friday InStock (SKU 6642846; draft $99.99 was wrong); Abt $129.99. Smart-home "
+        "category flag (carried per approval; Nest Hub precedent). Distinct from batch-3 3rd-gen "
+        "(8 in HD). (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="amazon-echo-hub-white",
+        brand="Amazon",
+        model="Echo Hub",
+        variant="White",
+        category="smart-home",
+        identifiers={},
+        identifier_sources={"UPC": "UPC pending — lead 840268960544 (B&H spec page only)."},
+        status="pending",
+        notes="MPN B0BCR7M9KX confirmed (Best Buy model field + B&H slug). Best Buy $74.99 Black Friday "
+        "InStock (SKU 6562248); B&H $109.99. Smart-home category flag (carried per approval). "
+        "Walmart clearance $45 (Aug 2026) is chatter, not a row. (batch-7 verification "
+        "2026-11-21).",
+    ),
+    EvalProduct(
+        key="sony-ult-tower-10-black",
+        brand="Sony",
+        model="ULT Tower 10",
+        variant="Black",
+        category="speakers",
+        identifiers={},
+        identifier_sources={"UPC": "UPC pending — lead 027242928978 (Adorama spec page only)."},
+        status="pending",
+        notes="MPN SRSULT1000 confirmed (B&H + Crutchfield + Best Buy model field). Best Buy $799.99 "
+        "InStock (SKU 6577679). B&H discontinued — Best Buy is the row. (batch-7 verification "
+        "2026-11-21).",
+    ),
+    EvalProduct(
+        key="asus-rog-strix-g16-g614pr-rtx-5070-ti-eclipse-gray",
+        brand="ASUS",
+        model="ROG Strix G16",
+        variant="G614PR Eclipse Gray",
+        category="laptops",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN G614PR-G16.R95070TI confirmed (Best Buy model field + ROG official spec page). UPC "
+        "no lead; do not attach 197105821606 (regional config G614PR-RV003W). Best Buy $1,749.99 "
+        "Black Friday InStock (SKU 6613956). (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="samsung-galaxy-watch7-40mm-green",
+        brand="Samsung",
+        model="Galaxy Watch7 40mm",
+        variant="Green",
+        category="wearables",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 887276868905 (Samsung MSRP price list only).",
+        },
+        status="pending",
+        notes="MPN SM-L300NZGAXAA confirmed (Best Buy model field + Samsung MSRP price lists). Best Buy "
+        "$149.99 live (corrected from draft $249.99 — Black Friday extended to Green). Cream "
+        "sibling also $149.99. Prior generation (2024) but sold new, not clearance. (batch-7 "
+        "verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="lenovo-thinkpad-e16-gen-3-black",
+        brand="Lenovo",
+        model="ThinkPad E16 Gen 3",
+        variant="Black 21ST0008US",
+        category="laptops",
+        identifiers={
+            "UPC": "198157339941",
+            "MPN": "21ST0008US",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + Lenovo official PSREF (Ingram Micro host) agree (batch-7 verification "
+            "2026-11-21).",
+        },
+        status="verified",
+        notes="B&H $1,217.50 In Stock; CDW $1,212.99 advertised. Best Buy listing is Merchant Expo "
+        "marketplace — not usable. Pin Ryzen 7 250 / 512GB / Multi-Touch config only. (batch-7 "
+        "verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="asus-rog-strix-xg27ucg-black",
+        brand="ASUS",
+        model="ROG Swift OLED XG27UCG",
+        variant="Black",
+        category="monitors",
+        identifiers={},
+        identifier_sources={
+            "UPC": "UPC pending — lead 197105564633 (CompSource + Adorama agree; ASUS brochure leg not live "
+            "re-opened at add time — downgraded from VERIFIED-caveat on strict leg-counting, "
+            "2026-11-21).",
+        },
+        status="pending",
+        notes="MPN XG27UCG confirmed (Micro Center + CompSource + Adorama). Best Buy row HELD at add "
+        "time: main offer is Adorama marketplace ($464.99–$469.99). Alternate: ASUS eShop "
+        "brand-direct $449.00 InStock (needs coordinator confirmation as price row); Adorama "
+        "direct $469.99 backup; Micro Center $349.96 in-store only. Gen2 XG27UCGR superseding "
+        "($399.00 at ROG US). Do not mix with XG27UCSR (UPC conflicted). (batch-7 verification "
+        "2026-11-21).",
+    ),
+    EvalProduct(
+        key="lenovo-yoga-slim-7x-14-cosmic-blue",
+        brand="Lenovo",
+        model="Yoga Slim 7x",
+        variant="Cosmic Blue 83QR000AUS",
+        category="laptops",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN 83QR000AUS single-source (Best Buy model field only). UPC no lead. Best Buy "
+        "$1,299.99 live (corrected from draft $649.99 — Holiday Deal ended); Sold by Best Buy, "
+        "InStock. Do not mix with 2024 X Elite version (83ED0001US etc.) or 1TB config "
+        "83QR0002US. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="lenovo-thinkpad-t14-gen-6-black",
+        brand="Lenovo",
+        model="ThinkPad T14 Gen 6",
+        variant="Black 21QJ00CSUS",
+        category="laptops",
+        identifiers={},
+        identifier_sources={},
+        status="pending",
+        notes="MPN 21QJ00CSUS confirmed (CDW spec page + Best Buy model field). UPC no lead; do not "
+        "attach B&H 199272842804 (belongs to config 21QDS2VV00). NO row at add time: CDW live "
+        "page unopenable and crawls conflict ($1,811.99 vs $1,799.00/$1,594.99) — held. Best Buy "
+        "new listings are marketplace / refurbished. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="dji-osmo-360-standard-combo-black",
+        brand="DJI",
+        model="Osmo 360 Standard Combo",
+        variant="Black",
+        category="action-cameras",
+        identifiers={
+            "UPC": "190021135994",
+            "MPN": "CP.OS.00000441.02",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + DroneNerds spec table agree (batch-7 verification 2026-11-21).",
+            "MPN": "Abt page body + Abt blog + B&H slug + DroneNerds agree on .02; Best Buy model field "
+            "prints .01 and one tracker printed .04 — suffix conflict adjudicated by weight of "
+            "evidence, caveat recorded (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="Standard Combo. B&H $417.99 / Abt $417.99 In Stock (draft $404.77 was the Nov 16 price — "
+        "stale, not adopted; B&H $404.77 snippet not trusted — page slug says adventure_combo). "
+        "Do not mix with Adventure/Essential/Skiing combos. (batch-7 verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="samsung-smart-monitor-m70f-32-white",
+        brand="Samsung",
+        model="Smart Monitor M70F",
+        variant="White 32\" LS32FM703UNXZA",
+        category="monitors",
+        identifiers={
+            "UPC": "198957027796",
+            "MPN": "LS32FM703UNXZA",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + DataVision reseller listing agree (batch-7 verification 2026-11-21).",
+            "MPN": "Abt page body + Best Buy page body ('Model: LS32FM703UNXZA', SKU 6632212) agree — caveat "
+            "eliminated at add time (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="White 32 in. B&H $299.99 / Abt $299.99 / Samsung.com $299.99, all InStock. Best Buy 32 "
+        "in row now exists at $399.99 (SKU 6632212, list). Do not mix with 43 in M70F "
+        "(LS43FM702UNXZA), M70B, M70D; Woot $239.99 is reconditioned — excluded. (batch-7 "
+        "verification 2026-11-21).",
+    ),
+    EvalProduct(
+        key="lenovo-ideapad-5-2-in-1-14-luna-grey",
+        brand="Lenovo",
+        model="IdeaPad 5 2-in-1 14",
+        variant="Luna Grey 83GH000AUS",
+        category="laptops",
+        identifiers={
+            "UPC": "198154657529",
+            "MPN": "83GH000AUS",
+        },
+        identifier_sources={
+            "UPC": "B&H spec page + SHI distributor agree (batch-7 verification 2026-11-21).",
+        },
+        status="verified",
+        notes="Luna Grey. B&H $699.00 In Stock (was $999.00). MPN confirmed (B&H + Target + Newegg). "
+        "'IdeaPad 5x' (Target/Staples) is the same part/config as 'IdeaPad 5 2-in-1' (B&H). Do "
+        "not mix with 83GH0008US/0000US/0009US. (batch-7 verification 2026-11-21).",
+    ),
 ]
 
 

@@ -11,6 +11,17 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Batch 7: 50 models added (500 → 550), user-approved draft
+  (data/candidates_batch7_550.md, commit 7398d32); 3 new categories
+  (tvs, phones, action-cameras). Add-time re-verification downgraded
+  2 UPCs (OpenRun Air 2, XG27UCG) and upgraded 2 (Smart Monitor M70F,
+  IdeaPad 5); UPC/EAN verified 18/50 as added, MPN verified 39/50.
+  Verified identifiers 211 → 229, pending 289 → 321. No hand rows
+  written this round (live-browser Add to Cart check is a separate
+  step); ranking 151, matched 168, total offers 2,381 unchanged.
+  8 rows held (4 out of stock / warehouse-only, 1 CDW unopenable,
+  3 marketplace). See DECISIONS 087, BUILD_LOG 142.
+
 - Daily refresh 2026-11-21: 65 price moves (after KNOWN_BAD
   rebuild), 291 new quotes, 265 disappeared; page-confirmed
   cuts Bose Smart Ultra $999 → $629 (P.C. Richard), JBL
