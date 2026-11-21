@@ -1638,6 +1638,294 @@
           "in_stock": true
         }
       ]
+    },
+    "shokz-opendots-air-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 89.99,
+          "title": "Shokz OpenDots Air Open-Ear Clip-On True Wireless Bluetooth Earbuds - Black",
+          "url": "https://www.bestbuy.com/product/shokz-opendots-air-open-ear-clip-on-true-wireless-bluetooth-earbuds-black/J3GWRW4V4T",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "810202687417",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $89.99; Add to Cart clickable; pickup Nov 24, free next-day delivery; Sold by Best Buy; UPC 810202687417 / MPN E210-ST-BK-US; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "shokz-openrun-gray-standard": {
+      "offers": [
+        {
+          "merchant": "Shokz",
+          "price": 77.95,
+          "title": "Shokz OpenRun Open-Ear Headphones - Grey, Standard",
+          "url": "https://shokz.com/products/openrun?variant=41378978398408",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "850033806229",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "shokz.com product page (live browser verified 2026-11-21 14:14-14:22 PT; live price $77.95, list $129.95 - the $64.95 + code SDopenrun price from the draft was NOT confirmed: the code does not appear anywhere on the page; variant Grey/Standard/Magnetic Induction, SKU S803-ST-GY-US, In Stock; Add to cart clickable; sold by Shokz direct; UPC 850033806229 / MPN S803-ST-GY-US; price corrected to live $77.95 per the live-price rule; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sonos-era-100-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 179.0,
+          "title": "Sonos Era 100 Speaker - Black",
+          "url": "https://www.bhphotovideo.com/c/product/1754561-REG/sonos_e10g1us1blk_era_100_speaker.html",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "840136805830",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $179.00 - draft price $219.00 corrected to live price; Add to Cart clickable (green); In Stock; free delivery Nov 25; B&H direct; UPC 840136805830 / MPN E10G1US1BLK; B&H showed a site-wide Sabbath notice - checkout resumes after 14:50 PT Saturday - Add to Cart was clickable and the item could be added pending checkout; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sonos-arc-ultra-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 849.0,
+          "title": "Sonos Arc Ultra 9.1.4-Channel Smart Soundbar with Dolby Atmos - Black",
+          "url": "https://www.bestbuy.com/product/sonos-arc-ultra-9-1-4-channel-smart-soundbar-with-dolby-atmos-black/J39H373F2S",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "840136811336",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $849.00; Add to Cart clickable (yellow, visually confirmed); Sold by Best Buy; delivery dates still loading at crawl time, no specific date recorded; UPC 840136811336 / MPN ARCG2US1BLK; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "marshall-monitor-iii-anc-cream": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 199.99,
+          "title": "Marshall Monitor III A.N.C. Wireless Active Noise Cancelling Over-the-Ear Bluetooth Headphones with Microphone for Calls - Cream",
+          "url": "https://www.bestbuy.com/product/marshall-monitor-iii-a-n-c-wireless-active-noise-cancelling-over-the-ear-bluetooth-headphones-with-microphone-for-calls-cream/CFCR4H4LYX",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "7340055411479",
+          "identifier_kind": "EAN",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $199.99; Cream variant selected, SKU 6670036, Model 1009077; Add to Cart clickable; 1-hour pickup, free delivery by Nov 23; Sold by Best Buy; EAN 7340055411479 / MPN 1009077; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "turtle-beach-stealth-pro-ii-xbox-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 249.99,
+          "title": "Turtle Beach Stealth Pro II Multiplatform Wireless Over-Ear Gaming Headset for Xbox Series X|S, Xbox One, PS5, PS4, Windows & Mobile - Black",
+          "url": "https://www.bestbuy.com/product/turtle-beach-stealth-pro-ii-multiplatform-wireless-over-ear-gaming-headset-for-xbox-series-xs-xbox-one-ps5-ps4-windows-mobile-black/J39T968H33/sku/6672065",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "840454400755",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $249.99; Add to Cart clickable; Sold by Best Buy; delivery dates still loading at crawl time, no specific date recorded; UPC 840454400755 / MPN TBS-2104-05; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "sennheiser-momentum-true-wireless-4-black-graphite": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 299.99,
+          "title": "Sennheiser MOMENTUM True Wireless 4 Earbuds - Black",
+          "url": "https://www.bestbuy.com/product/sennheiser-momentum-true-wireless-4-earbuds-black/J3GW2LHPFH/sku/6575080",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "810091272466",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $299.99, SKU 6575080 pinned; Add to Cart present and clickable (yellow, visually verified); Sold by Best Buy; UPC 810091272466 / MPN 700365; the other listing SKU 10904810 at $249.95 is a marketplace seller row and was held, not written; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-airtag-2nd-gen-4-pack-white": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 95.99,
+          "title": "Apple AirTag (2nd Generation) 4-Pack - White",
+          "url": "https://www.bhphotovideo.com/c/product/1947232-REG/apple_mfea4ll_a_airtag_2nd_generation_4.html",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "195950667455",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $95.99, MFR MFEA4LL/A; Add to Cart clickable; In Stock; free delivery Nov 25; B&H direct; UPC 195950667455 / MPN MFEA4LL/A; B&H showed a site-wide Sabbath notice - checkout resumes after 14:50 PT Saturday - Add to Cart was clickable and the item could be added pending checkout; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "samsung-music-studio-5-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 299.99,
+          "title": "Samsung Music Studio 5 Smart Speaker 2.0 ch Q-Symphony WiFi and Bluetooth (2026) - Black",
+          "url": "https://www.bestbuy.com/product/samsung-music-studio-5-smart-speaker-2-0-ch-q-symphony-wifi-and-bluetooth-2026-black/JJGRF3QJ3W",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "198957266393",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $299.99; Add to Cart clickable; Orange store pickup in 1 hour, only 1 left; free next-day delivery; Sold by Best Buy; UPC 198957266393 / MPN HW-LS50H/ZA; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "gopro-lit-hero-4k60-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 199.0,
+          "title": "GoPro LIT Hero Action Camera - Black",
+          "url": "https://www.bhphotovideo.com/c/product/1917699-REG/gopro_chdhf_132_at_lit_hero_action_camera.html",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "810116384129",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $199.00 - draft price $269.99 corrected to live price; Add to Cart clickable; In Stock; free delivery Nov 25; B&H direct; UPC 810116384129 / MPN CHDHF-132-AT; B&H showed a site-wide Sabbath notice - checkout resumes after 14:50 PT Saturday - Add to Cart was clickable and the item could be added pending checkout; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "dji-osmo-pocket-3-creator-combo-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 466.0,
+          "title": "DJI Osmo Pocket 3 Creator Combo - Black",
+          "url": "https://www.bhphotovideo.com/c/product/1788804-REG/dji_cp_os_00000302_01_osmo_pocket_3_creator.html",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "190021095007",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $466.00; Add to Cart clickable; In Stock; free delivery Nov 25; B&H direct; UPC 190021095007 / MPN CP.OS.00000302.01; B&H showed a site-wide Sabbath notice - checkout resumes after 14:50 PT Saturday - Add to Cart was clickable and the item could be added pending checkout; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "lenovo-legion-5a-15-3-eclipse-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 1249.99,
+          "title": "Lenovo Legion 5a 15.3\" Laptop - Eclipse Black (83Q70068US)",
+          "url": "https://www.bhphotovideo.com/c/product/1985625-REG/lenovo_83q70068us_legion_5a_r7_250_16gb_512gb_rtx_5060_wifi7_w11h_15_3.html",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "199276132093",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $1,249.99, MPN 83Q70068US confirmed on page; Add to Cart clickable; In Stock; free delivery Nov 25; B&H direct; UPC 199276132093 / MPN 83Q70068US; B&H showed a site-wide Sabbath notice - checkout resumes after 14:50 PT Saturday - Add to Cart was clickable and the item could be added pending checkout; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "dji-osmo-360-standard-combo-black": {
+      "offers": [
+        {
+          "merchant": "Abt",
+          "price": 417.99,
+          "title": "DJI Osmo 360 Camera Standard Combo - Black",
+          "url": "https://www.abt.com/DJI-Osmo-360-Camera-Standard-Combo-CP.OS.00000441.02/p/229439.html",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "190021135994",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "abt.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $417.99, MPN CP.OS.00000441.02 confirmed via the Abt link; ADD TO CART clickable (blue); free shipping; search listing shows In Stock; sold by Abt direct; UPC 190021135994 / MPN CP.OS.00000441.02; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "msi-mag-321up-qd-oled-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 569.99,
+          "title": "MSI MAG 321UP QD-OLED 32\" Ultra HD Monitor - Black",
+          "url": "https://www.bhphotovideo.com/c/product/1862526-REG/msi_mag321upqdoled_32_qd_oled_ultra_hd.html",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "824142363720",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $569.99, 31.5\" 4K 165Hz, MFR MAG321UPQDOLED - the X24 240Hz listing at $719.99 is a different model and was not mixed in; Add to Cart clickable; In Stock; free delivery Nov 25; B&H direct; UPC 824142363720 / MPN MAG321UPQDOLED; B&H showed a site-wide Sabbath notice - checkout resumes after 14:50 PT Saturday - Add to Cart was clickable and the item could be added pending checkout; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "logitech-g-yeti-gx-black": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 89.99,
+          "title": "Logitech G Yeti GX Wired Supercardioid Dynamic Gaming Microphone with LIGHTSYNC RGB Lights - Black",
+          "url": "https://www.bestbuy.com/product/logitech-yeti-gx-wired-supercardioid-dynamic-gaming-microphone-with-lightsync-rgb-lights-black/J7H7ZYG3RK",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "097855190994",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $89.99; Add to Cart clickable; Orange store pickup unavailable, free next-day delivery; Sold by Best Buy; UPC 097855190994 / MPN 988-000567; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "lenovo-thinkpad-e16-gen-3-black": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 1217.5,
+          "title": "Lenovo ThinkPad E16 Gen 3 16\" Laptop - Black (21ST0008US)",
+          "url": "https://www.bhphotovideo.com/c/product/2002049-REG/lenovo_21st0008us_16_thinkpad_e16_gen.html",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "198157339941",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $1,217.50, MFR 21ST0008US, Ryzen 7 250 / 16GB / 512GB confirmed on page; Add to Cart clickable; In Stock; free delivery Nov 25; B&H direct; UPC 198157339941 / MPN 21ST0008US; B&H showed a site-wide Sabbath notice - checkout resumes after 14:50 PT Saturday - Add to Cart was clickable and the item could be added pending checkout; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "samsung-smart-monitor-m70f-32-white": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 299.99,
+          "title": "Samsung M70F 32\" 4K HDR Smart Monitor - White",
+          "url": "https://www.bhphotovideo.com/c/product/1883345-REG/samsung_ls32fm703unxza_m70f_32_4k_hdr.html",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "198957027796",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $299.99, MPN LS32FM703UNXZA confirmed on page; B&H labels the listing White; Add to Cart clickable; In Stock; free delivery Nov 25; B&H direct; UPC 198957027796 / MPN LS32FM703UNXZA; B&H showed a site-wide Sabbath notice - checkout resumes after 14:50 PT Saturday - Add to Cart was clickable and the item could be added pending checkout; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "lenovo-ideapad-5-2-in-1-14-luna-grey": {
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 699.0,
+          "title": "Lenovo IdeaPad 5 2-in-1 14\" Laptop - Luna Grey (83GH000AUS)",
+          "url": "https://www.bhphotovideo.com/c/product/1995452-REG/lenovo_83gh000aus_14_ideapad_5_2_in_1.html",
+          "collected_at": "2026-11-21T22:25:52Z",
+          "identifier": "198154657529",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 14:14-14:22 PT; $699.00, MPN 83GH000AUS confirmed on page; Add to Cart clickable; In Stock; free delivery Nov 25; B&H direct; UPC 198154657529 / MPN 83GH000AUS; B&H showed a site-wide Sabbath notice - checkout resumes after 14:50 PT Saturday - Add to Cart was clickable and the item could be added pending checkout; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

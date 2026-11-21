@@ -22,6 +22,16 @@ releases; breaking changes are called out in the release notes.
   8 rows held (4 out of stock / warehouse-only, 1 CDW unopenable,
   3 marketplace). See DECISIONS 087, BUILD_LOG 142.
 
+- Batch 7 hand rows: 18 live-browser-verified rows written
+  (2026-11-21 14:14–14:22 PT, read-only Add to Cart check), all 18
+  models confirmed status=verified in the catalog first. Ranking
+  151 → 169, matched 168 → 186, total offers 2,381 → 2,399.
+  Price corrections: OpenRun Gray $64.95 code price unconfirmed
+  (code absent from the page) → live $77.95 written; Era 100 B&H
+  $219.00 → $179.00; LIT Hero B&H $269.99 → $199.00. B&H Sabbath
+  notice recorded on all 11 B&H rows (Add to Cart clickable).
+  See DECISIONS 088, BUILD_LOG 143.
+
 - Daily refresh 2026-11-21: 65 price moves (after KNOWN_BAD
   rebuild), 291 new quotes, 265 disappeared; page-confirmed
   cuts Bose Smart Ultra $999 → $629 (P.C. Richard), JBL
