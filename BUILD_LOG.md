@@ -8680,3 +8680,102 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
   table on the rendered model page (verified ranking correctly
   shows $399.99); the KNOWN_BAD exclusion takes effect at the
   next daily refresh.
+
+## 141 — 2026-11-21: Daily refresh — 65 moves, 5 page-confirmed cuts, ranking unchanged (151)
+
+- Meta sweep: 500/500 calls OK, 0 failed (~9,995 raw listings).
+  Snapshot `data/eval_snapshots_2026-11-21.json`: 2,224 offers,
+  436 models with quotes (prev 2,194 / 442). Corrected diff vs
+  2026-11-20 (after KNOWN_BAD rebuild; raw diff was 72 moves):
+  65 price moves, 291 new quotes, 265 disappeared. Eval: 2,224
+  quotes (Meta) / 82 (identified). Identified sweep: 82 offers,
+  71 models, 3 skips (same as yesterday: Silarius Buds3 FE
+  10-pack bundle guard; Heart Rate Monitors USA vivoactive-6
+  404; Datavision Tab S10 FE+ 404). Site rebuilt (503 pages):
+  2,381 offers, 168 matched, 151 verified rankings (unchanged),
+  450 models with offers. Tests 57 pass.
+- Page-confirmed cuts: Bose Smart Ultra $999 → $629 (P.C.
+  Richard, fresh crawl, JSON-LD InStock), JBL PartyBox Club 120
+  $449 → $279.95 (Best Buy, fresh crawl, sold & shipped by JBL
+  Store, Save $170, comp $449.95, InStock), Logitech G915 X TKL
+  $209.99 → $139.99 (Staples, fresh crawl, LimitedAvailability).
+  Page-confirmed rises (promos ended): ULT Tower 7 $448 → $548
+  (Macy's, fresh crawl, InStock), Pixel Buds Pro 2 $99 → $169
+  (Best Buy, fresh crawl, Sold by Best Buy, Save $60, comp
+  $229, InStock).
+- Feed corrections, not real moves: AW2725Q Dell $499.99 →
+  $899.99 (the $499.99 row was the AW2725QF, wrong model);
+  Mac Studio B&H $2,299 → $4,299 and Mac mini B&H $779 →
+  $2,099 (the pinned-config rows dropped from the feed; the
+  remaining rows are higher configs — both KNOWN_BAD; other
+  merchants still $2,498-$2,499 / $779-$899); Bar 1000 MK2 Best
+  Buy $899.95 → $1,199.95 (Best Buy's own row dropped; the
+  remaining $1,199.95 is sold by marketplace Acoustic Sound
+  Design — KNOWN_BAD); Lifestyle Ultra Best Buy $1,798 →
+  $2,496 (sold by marketplace Adorama, comp $2,696 — KNOWN_BAD;
+  standalone $899 elsewhere); Tab A11+ Best Buy $265.64 →
+  $308.87 (sold by marketplace antonline — KNOWN_BAD); Tactix 8
+  Uncharted $1,049.99 → $1,149.99 (51mm Solar variant, not the
+  pinned 47mm AMOLED — KNOWN_BAD); Virtuoso Max Corsair
+  $299.99 → $189.99 (the $299.99 was a checkout-URL row; the
+  direct page and Best Buy are $189.99; the $169.99 Xbox
+  version is a different SKU — KNOWN_BAD); Haste 2 Wireless
+  HyperX $59.99 → $89.99 (yesterday's $59.99 carry was the
+  WIRED price — carry removed, wired row KNOWN_BAD; the
+  wireless model is $89.99 at HyperX/HP/Best Buy); Haste 2
+  wired $37.99 → $59.99 (White sale ended; Black $59.99 per
+  HyperX variant table, InStock); WH-CH720N Focus Camera $88 →
+  $178 (the $88 was wrong; the identified stream has $178 with
+  UPC at Beach Camera).
+- Not page-confirmed (feed-reported only): Forerunner 570 Fleet
+  Feet $449.99 → $549.99 (list price return), SoundLink Max
+  Bose $329 → $399 (Bose page crawl shows no price), Venu 3S
+  Fleet Feet $449.99 → $299.99 (only a stale Nov 18 crawl
+  shows $299.99; variant color unconfirmed), Bravia Bar 9
+  Audioadvice $1,498 → $1,398 (matches the carried Electronic
+  Express $1,398), plus niche-merchant moves (ThinkPad T16
+  Techtoschool -$246, Descent Mk3 +$200, Venu 3 Vitaloutdoors
+  -$90, Oakley HSTN -$89.80, Fenix 8 +$88). G16 Nemixram
+  $149.99 → $289.99 and Xbox Series S Macy's $588.99 → $632.99
+  are both implausible (feed noise). Switch OLED Best Buy
+  $399.99 → $394.13 (sale price in the feed).
+- Identified-stream matched moves: Mac Studio Expercom $2,374
+  → $2,299 (-$75), WF-1000XM6 Moon Audio $298 → $248 (-$50,
+  agrees with the Meta feed at Moon Audio/Walt's), Tab S10 FE
+  Datavision $419 → $429 (+$10). Watch item: Keychron K2 Max
+  still disagrees — Meta $78.74 vs identified $86.24 for the
+  same pinned variant.
+- Builder: +13 KNOWN_BAD (B&H Mac Studio $4,299 + Mac mini
+  $2,099 higher configs; B&H 140W $48.99 Rocstor + Staples
+  $97.39 Plugable wrong brands; B&H ZenWiFi BT8 $699.99 3-pack;
+  Uncharted Tactix 8 $1,149.99 51mm Solar; Corsair Virtuoso
+  Max $169.99 Xbox version; Best Buy Bar 1000 MK2 $1,199.95 +
+  Lifestyle Ultra $2,496 + Tab A11+ $308.87 marketplace rows;
+  Cgdj Hi MacBook Neo $42.99 spoof; Macy's QC Ultra Earbuds
+  $240.33 Plum; HyperX Haste 2 Wireless $59.99 wired-page row)
+  and −1 CARRIED (HyperX Haste 2 Wireless Black $59.99 — that
+  price belongs to the wired model). The Music Frame $299.99
+  bad row cleared as expected. HP 920's feed row now $64.99 at
+  HP direct, agreeing with yesterday's hand-added row.
+- Rotation: Logitech patrol — MX Master 4 Graphite $109.99
+  InStock at logitech.com (special pricing, was $119.99,
+  unchanged), MX Vertical $99.99 sale InStock (unchanged), G
+  Pro X Superlight 2 $159.99 at Logitech (feed, unchanged),
+  Lift $59.99 at Logitech (unchanged). MX Master 4 retailer
+  hunt stays PAUSED (user-nodded 2026-11-18). M6 UPC
+  195951080291 already three-way confirmed (2026-11-07);
+  catalog entry still pending user confirmation. DualSense
+  White: no new evidence.
+- Watch items: ULT Field 7 Crutchfield still carries two rows
+  ($348 tracking-URL + $498) — duplicate-row watch item,
+  standing; PlayStation Portal ShopMyExchange $74.95
+  (login-gated, unverified); Bose Lifestyle Ultra $1,099 Bose
+  row (config unresolved, standing); Switch 2 carrying case
+  (sold out, restock wait); MacBook Neo now has zero offers
+  (its only feed row was the $42.99 spoof); ZenWiFi BT8
+  ASUS-direct rows span $329.99-$849.99 (pack-size conflation,
+  standing); Silarius Buds3 FE $195.99 stale row persists in
+  the site union (identified stream has no expiry).
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
+  changes, no DECISIONS.md changes, no models added, no Amazon
+  touch, no spending, no registrations, no purchases.

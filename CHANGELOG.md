@@ -11,6 +11,18 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Daily refresh 2026-11-21: 65 price moves (after KNOWN_BAD
+  rebuild), 291 new quotes, 265 disappeared; page-confirmed
+  cuts Bose Smart Ultra $999 → $629 (P.C. Richard), JBL
+  PartyBox Club 120 $449 → $279.95 (Best Buy, JBL Store) and
+  Logitech G915 X TKL $209.99 → $139.99 (Staples); promo-ended
+  rises ULT Tower 7 $448 → $548 (Macy's) and Pixel Buds Pro 2
+  $99 → $169 (Best Buy). Ranking unchanged at 151, matched 168.
+  +13 KNOWN_BAD (incl. three marketplace rows at Best Buy and
+  the B&H higher-config Mac rows), −1 CARRIED (HyperX Haste 2
+  Wireless $59.99 was the wired model's price; wireless is
+  $89.99). See BUILD_LOG 141.
+
 - Four verified hand rows (2026-11-21): Dell S2725QC $249.99 (Best
   Buy) + HP 920 $64.99 (HP direct) + Logitech G915 X $159.99
   (Lenovo, eCoupon LOGIDEAL shown alongside price) + Samsung Music
