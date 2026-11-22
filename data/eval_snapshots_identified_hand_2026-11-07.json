@@ -2294,6 +2294,38 @@
           "in_stock": true
         }
       ]
+    },
+    "apple-watch-ultra-3-49mm-black-ocean-band": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 549.0,
+          "title": "Apple Watch Ultra 3 GPS + Cellular 49mm Titanium Case with Black Ocean Band - Black (2025)",
+          "url": "https://www.bestbuy.com/product/apple-watch-ultra-3-gps-cellular-49mm-titanium-case-with-black-ocean-band-black-2025/JJGCQL3V5S/sku/6572972",
+          "collected_at": "2026-11-22T01:01:49Z",
+          "identifier": "195950484311",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:50-17:01 PT; $549.00 Black Friday, Save $250, was $799.00; Add to Cart clickable; free same-day pickup, Orange store pickup in 1 hour; free next-day delivery; Sold by Best Buy; UPC 195950484311 / MPN MF0J4LW/A; refurb/open-box rows excluded; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
+    },
+    "apple-iphone-17-pro-max-256gb-cosmic-orange": {
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 1099.99,
+          "title": "Apple iPhone 17 Pro Max 256GB Unlocked - Cosmic Orange",
+          "url": "https://www.bestbuy.com/product/apple-iphone-17-pro-max-256gb-unlocked-cosmic-orange/JJGCQLQZZX/sku/6473213",
+          "collected_at": "2026-11-22T01:01:49Z",
+          "identifier": "195950638004",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:50-17:01 PT; $1,099.99 Black Friday, Save $100, was $1,199.99, connect-later unlocked price; Add to Cart clickable; free same-day pickup; free next-day delivery; Sold by Best Buy; UPC 195950638004 / MPN MFXH4LL/A; $999.99 carrier-activated price not used; open-box rows excluded; Cosmic Orange only; added on user approval 2026-11-21)",
+          "in_stock": true
+        }
+      ]
     }
   }
 }

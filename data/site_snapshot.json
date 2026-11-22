@@ -1,17 +1,17 @@
 {
   "meta": {
-    "generated_at": "2026-11-22T00:57:03.230858+00:00",
+    "generated_at": "2026-11-22T01:01:51.945985+00:00",
     "snapshot_date": "2026-11-21",
     "source_files": 61,
     "identified_source_files": 19,
     "models": 600,
     "verified_identifiers": 257,
     "pending_identifiers": 343,
-    "total_offers": 2422,
-    "matched_offers": 209,
+    "total_offers": 2424,
+    "matched_offers": 211,
     "suspected_offers": 2213,
-    "verified_ranking_models": 192,
-    "models_with_offers": 491,
+    "verified_ranking_models": 194,
+    "models_with_offers": 493,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
   "models": [
@@ -40302,11 +40302,25 @@
         "UPC": "195950484311",
         "MPN": "MF0J4LW/A"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 549.0,
+          "title": "Apple Watch Ultra 3 GPS + Cellular 49mm Titanium Case with Black Ocean Band - Black (2025)",
+          "url": "https://www.bestbuy.com/product/apple-watch-ultra-3-gps-cellular-49mm-titanium-case-with-black-ocean-band-black-2025/JJGCQL3V5S/sku/6572972",
+          "collected_at": "2026-11-22T01:01:49Z",
+          "identifier": "195950484311",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:50-17:01 PT; $549.00 Black Friday, Save $250, was $799.00; Add to Cart clickable; free same-day pickup, Orange store pickup in 1 hour; free next-day delivery; Sold by Best Buy; UPC 195950484311 / MPN MF0J4LW/A; refurb/open-box rows excluded; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "apple-iphone-17-pro-max-256gb-cosmic-orange",
@@ -40319,11 +40333,25 @@
         "UPC": "195950638004",
         "MPN": "MFXH4LL/A"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 1099.99,
+          "title": "Apple iPhone 17 Pro Max 256GB Unlocked - Cosmic Orange",
+          "url": "https://www.bestbuy.com/product/apple-iphone-17-pro-max-256gb-unlocked-cosmic-orange/JJGCQLQZZX/sku/6473213",
+          "collected_at": "2026-11-22T01:01:49Z",
+          "identifier": "195950638004",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:50-17:01 PT; $1,099.99 Black Friday, Save $100, was $1,199.99, connect-later unlocked price; Add to Cart clickable; free same-day pickup; free next-day delivery; Sold by Best Buy; UPC 195950638004 / MPN MFXH4LL/A; $999.99 carrier-activated price not used; open-box rows excluded; Cosmic Orange only; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "samsung-galaxy-z-flip8-256gb-graphite",

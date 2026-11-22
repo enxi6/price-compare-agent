@@ -11,6 +11,17 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Batch 8 hand rows (supplement): 2 live-browser-verified rows written
+  (2026-11-21 16:50–17:01 PT, read-only re-probe of the buy box):
+  Watch Ultra 3 Best Buy $549.00 and iPhone 17 Pro Max Best Buy
+  $1,099.99 — the two models whose UPCs were verified in DECISIONS
+  090 but whose price rows were held. Ranking 192 → 194, matched
+  209 → 211, total offers 2,422 → 2,424. Not written: G73SH Costco
+  (fresh browser still cannot verify — Costco search data silently
+  withheld, neither confirmed nor falsified); QD7 Costco (stock
+  confirmed in stock, model still pending — no row). See DECISIONS
+  091, BUILD_LOG 146.
+
 - Batch 8 hand rows: 23 live-browser-verified rows written
   (2026-11-21 16:37–16:49 PT, read-only Add to Cart check), all 23
   models confirmed status=verified in the catalog first. Ranking
