@@ -8842,3 +8842,111 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Not written (2): G73SH Costco $699.99 + $100 Shop Card (Costco search data silently withheld — neither confirmed nor falsified, stays held); QD7 Costco $269.99 (stock confirmed in stock, model still pending — no row).
 - Result (re-pulled from the rebuilt data/site_snapshot.json): 600 models, 257 verified / 343 pending, ranking 192 → 194, matched 209 → 211, total offers 2,422 → 2,424, models with offers 491 → 493. Both rows confirmed matched in the snapshot. Site rebuilt (603 pages). Tests 57 passed.
 - Open items carried forward: G73SH Costco re-probe (Costco search wall); QD7 UPC needs a second source before any row can be written; HERO13 re-probe after Dec 07 restock; backfill the 5 blank product URLs on a later re-probe; the other 27 pending batch-8 models get first feed quotes at the 2026-11-22 10:52 PT daily refresh; PS5 Pro UPC decision still awaiting user nod; Kindle Paperwhite note decision still open; Vivosmart 5 UPC conflict still single-source.
+
+## 148 — 2026-11-22: Daily refresh — 77 moves, 4 page-confirmed cuts, ranking unchanged (194)
+
+- Meta sweep: 600/600 calls OK, 0 failed (11,978 raw listings).
+  A runtime restart mid-run killed both background jobs at 173/600
+  models; the sweep resumed from the existing raw files (427 new +
+  173 already present). One transient FAIL (Galaxy Tab S11, privsep
+  worker disconnect) retried OK on the resume. The identified
+  collection was re-run from scratch after the restart (the first
+  resume attempt died instantly on a wrong-cwd ModuleNotFoundError
+  — the `cd` had been backgrounded with the sweep command).
+  Snapshot `data/eval_snapshots_2026-11-22.json`: 2,547 offers,
+  511 models with quotes (prev 2,224 / 436). Corrected diff vs
+  2026-11-21 (after KNOWN_BAD rebuild; raw diff was 83 moves):
+  77 price moves, 539 new quotes (mostly first quotes for the
+  batch-7/8 models added 2026-11-21), 251 disappeared. Eval: 2,547
+  quotes (Meta) / 82 (identified). Identified sweep: 82 offers,
+  71 models, 3 skips (same as yesterday: Silarius Buds3 FE
+  10-pack bundle guard; Heart Rate Monitors USA vivoactive-6
+  404; Datavision Tab S10 FE+ 404). Site rebuilt (603 pages):
+  2,737 offers, 211 matched, 194 verified rankings (unchanged),
+  534 models with offers. Tests 57 pass.
+- Page-confirmed cuts: OMEN 32X HyperX $839.99 → $362.99 (page
+  shows struck-through $839.99, $362.99 InStock, Black variant
+  available), OMEN 27qs G2 HyperX $499.99 → $236.99 (struck-through
+  $499.99, InStock), Anker Prime Docking Station Target $299.99 →
+  $239.99 (reg $299.99, $60 off, In Stock), Fire TV Stick 4K Max
+  Target $84.99 → $44.99 (InStock).
+- Page-confirmed falsifications (feed rows proven wrong, not real
+  moves): Bass Module 700 Macy's $699 → $961.95 (live page $699.00
+  InStock; the $961.95 is a marketplace price — carried at $699);
+  PartyBox Club 120 Best Buy $279.95 → $449 (the $449 buy box is
+  sold & shipped by Wingmoon INC., marketplace; Best Buy's own
+  $279.95 Black Friday row is gone — KNOWN_BAD); ULT Tower Max
+  Macy's $1,498 → $998 (live page shows $0.00 / OutOfStock — the
+  $998 is not confirmed, reported feed-only); ThinkPad T16 Macy's
+  $1,743.20 → $1,409.99 (the $1,409.99 page is the Intel Ultra
+  5-225U config, not the pinned AMD 21QN005XUS — KNOWN_BAD; the
+  remaining Macy's row is $1,979.99 on a different URL, config
+  unverified, so the pair now reads +$236.79 on URL churn).
+- Feed corrections, not real moves (all KNOWN_BAD): Keychron K3 Max
+  Keychron $23.99 is the Folio Case for Slim Keyboard (accessory);
+  Echo Time Empirepro $328.24 is titled "ETC SL-2W" (wrong product);
+  Echo Dot Max Dell $119.99 is the Amethyst colorway (URL slug),
+  not the pinned Graphite; Forerunner 570 Fleet Feet $449.99 is
+  the 42mm variant (URL), not the pinned 47mm Slate Gray
+  (010-02971-00); G16 Nemixram $149.99/$289.99 are RAM modules
+  ("Memory Compatible with Dell G16 7630"), not the laptop; NFM
+  Studio Display $1,529 is stale — the live NFM page (SKU
+  69943215) shows $1,484.01 InStock; Smart Soundbar 600 Best Buy
+  $849 is a bundle with Bass Module 500 + mount, not the
+  standalone 873973-1100; HT-A5000 Walmart $598 / ListenUp $698
+  are SA-RS5 rear speakers, not the soundbar; Nest Hub
+  Superherodiy $8.09 / Mountgenie $21.99 are wall mounts
+  (Mountgenie: "FOR GEN 1 ONLY"); Switch 2 carrying case Jsaux
+  $9.99 is a Jsaux case, not Nintendo's BEEADECAA; HSTN T-Mobile
+  $479.99 is "Clear to Amethyst Transitions" lenses, not the
+  pinned Clear lenses (0OW8002 800207).
+- Not page-confirmed (feed-reported only): INZONE H9 ListenUp $178
+  → $328 (Uniquephoto also $328 — likely a correction of a bad
+  $178, not a rise); INZONE H9 II ListenUp $258 → $348 (Focus
+  Camera $258, Nordstrom/WorldWideStereo $293 — ListenUp is the
+  high outlier); Garmin Fleet Feet cuts (Venu 4 $549.99 → $449.99,
+  Forerunner 970 $749.99 → $649.99, Venu 3S $449.99 → $299.99 on
+  store.fleetfeet.com — broad running-retailer sale pattern, five
+  merchants at $449.99 for Venu 4); Edge 850 Landrys $599.99 →
+  $479.99; BlackWidow V4 Pro Staples $267.93 → $182.49 (matches
+  Razer/B&H $179.99); Skyler Scheels $284.25 → $344.25; Switch
+  OLED Best Buy $394.13 → $388.35; Xbox Series S Macy's $632.99
+  → $626.99 (yesterday's $588.99 → $632.99 was also feed noise).
+  SoundLink Micro 2nd Gen HSN $129 → $79.99 is corroborated by
+  Best Buy / Electronic Express / Abt all at $79. HyperX sale
+  pattern corroborated across streams (see identified moves).
+- Identified-stream matched moves: Haste 2 Pro HyperX $119.99 →
+  $59.99 (-$60, agrees with the Meta feed), QuadCast 2 S HyperX
+  $199.99 → $149.99 (-$50, agrees with the Meta feed), Edge 1050
+  6ave $649.95 → $599.99 (-$49.96), Alloy Rise 75 HyperX $84.99 →
+  $99.99 (+$15, agrees with the Meta feed).
+- Builder: +17 KNOWN_BAD (see above) and +1 CARRIED (Bass Module
+  700 Macy's $699.00 — feed $961.95 overridden). The Dell Echo Hub
+  $179.99 new quote is plausibly Dell's list price (MPN B0BCR7M9KX
+  matches the catalog; the fetched Dell page text shows no price,
+  so it stays feed-reported, not page-confirmed).
+- Rotation: small-brands patrol (Anker) — Prime 100W (A2688) @
+  anker.com $45.99 PreOrder, $24 off (was $69.99 InStock); the
+  Meta feed still shows $69.99, so the feed is stale on this one
+  and the page is the authority. MX Master 4 retailer hunt stays
+  PAUSED (user-nodded 2026-11-18). M6 UPC 195951080291 already
+  three-way confirmed (2026-11-07); catalog entry still pending
+  user confirmation. DualSense White: no new evidence.
+- Watch items: Keychron K2 Max has no rows in either current
+  snapshot (Meta or identified); the $78.74 vs $86.24 disagreement
+  lives only in the site union from older identified files —
+  standing. ULT Field 7 Crutchfield still carries two rows ($348
+  tracking-URL + $498) — duplicate-row watch item, standing;
+  PlayStation Portal ShopMyExchange $74.95 (login-gated,
+  unverified); Bose Lifestyle Ultra $1,099 Bose row (config
+  unresolved, standing); Switch 2 carrying case (sold out,
+  restock wait); MacBook Neo now has zero offers (its only feed
+  row was the $42.99 spoof); ZenWiFi BT8 ASUS-direct rows span
+  $329.99–$849.99 (pack-size conflation, standing); Silarius
+  Buds3 FE $195.99 stale row persists in the site union
+  (identified stream has no expiry); NFM Studio Display carries
+  two SKUs ($1,484.01 live for 69943215 vs $1,839.99 for
+  69943249, config of the latter unverified).
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
+  changes, no DECISIONS.md changes, no models added, no Amazon
+  touch, no spending, no registrations, no purchases.

@@ -87,6 +87,21 @@ releases; breaking changes are called out in the release notes.
   notice recorded on all 11 B&H rows (Add to Cart clickable).
   See DECISIONS 088, BUILD_LOG 143.
 
+- Daily refresh 2026-11-22: 77 price moves (after KNOWN_BAD
+  rebuild), 539 new quotes (mostly first quotes for the batch-7/8
+  models), 251 disappeared; page-confirmed cuts OMEN 32X $839.99 →
+  $362.99 and OMEN 27qs G2 $499.99 → $236.99 (both HyperX, struck-
+  through list prices), Anker Prime Docking Station $299.99 →
+  $239.99 and Fire TV Stick 4K Max $84.99 → $44.99 (both Target).
+  Feed rows proven wrong: Bass Module 700 Macy's $961.95 (live
+  $699, carried), PartyBox Club 120 Best Buy $449 (marketplace
+  Wingmoon; Best Buy's own $279.95 gone), ULT Tower Max Macy's
+  $998 (page OutOfStock), ThinkPad T16 Macy's $1,409.99 (Intel
+  config, not the pinned AMD 21QN005XUS). Ranking unchanged at
+  194, matched 211. +17 KNOWN_BAD, +1 CARRIED (Bass Module 700
+  Macy's $699.00). Anker patrol: Prime 100W $69.99 → $45.99
+  PreOrder on anker.com (feed still $69.99). See BUILD_LOG 148.
+
 - Daily refresh 2026-11-21: 65 price moves (after KNOWN_BAD
   rebuild), 291 new quotes, 265 disappeared; page-confirmed
   cuts Bose Smart Ultra $999 → $629 (P.C. Richard), JBL
