@@ -11,6 +11,25 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Batch 8: 50 models added (550 → 600), user-approved draft
+  (data/candidates_batch8_600.md, commit 8a10051); 1 new category
+  (drones: Mini 5 Pro, Neo 2) and the Forza Horizon 6 Limited
+  Edition controller included per approval. Add-time re-verification
+  downgraded 2 MPNs (Keris II Ace White BMUA10, TUF M3 Gen II
+  BMAA00 — both hit US/APAC suffix conflicts), falsified 1 UPC lead
+  (M3 Gen II 195553909112 belongs to non-US BMUA00), and upgraded
+  2 UPCs (Galaxy Z Flip8, WHOOP 5.0 Peak); UPC verified 24/50 as
+  drafted → 26/50 as added, MPN verified 44/50 → 42/50. Verified
+  identifiers 229 → 255, pending 321 → 345. Price corrections:
+  X6 B&H $699.99 → $629.99; Echo Time Best Buy $199.99 → $99.99;
+  Nothing Headphone (1) Pro $399 list → Best Buy US $319.00;
+  Alienware 16 Aurora AntOnline $2,149.99 → B&H $1,549.00.
+  Held rows: Onyx Studio 9 Newegg $219.50 (marketplace + used),
+  OnePlus 15 $799.00 (oneplus.com US store closed). No hand rows
+  written this round (live-browser Add to Cart check is a separate
+  step); ranking 169, matched 186, total offers 2,399 unchanged.
+  See DECISIONS 089, BUILD_LOG 144.
+
 - Batch 7: 50 models added (500 → 550), user-approved draft
   (data/candidates_batch7_550.md, commit 7398d32); 3 new categories
   (tvs, phones, action-cameras). Add-time re-verification downgraded

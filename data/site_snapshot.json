@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-11-21T22:25:55.289141+00:00",
+    "generated_at": "2026-11-22T00:30:28.786662+00:00",
     "snapshot_date": "2026-11-21",
     "source_files": 61,
     "identified_source_files": 19,
-    "models": 550,
-    "verified_identifiers": 229,
-    "pending_identifiers": 321,
+    "models": 600,
+    "verified_identifiers": 255,
+    "pending_identifiers": 345,
     "total_offers": 2399,
     "matched_offers": 186,
     "suspected_offers": 2213,
@@ -40048,6 +40048,784 @@
       "source_collected_at": null,
       "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
       "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
+    },
+    {
+      "key": "shokz-opendots-2-black",
+      "brand": "Shokz",
+      "model": "OpenDots 2",
+      "variant": "Black",
+      "category": "earbuds",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "810202687523",
+        "MPN": "E320-ST-BK-US"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "beats-solo-4-matte-black",
+      "brand": "Beats",
+      "model": "Solo 4",
+      "variant": "Matte Black",
+      "category": "headphones",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "195949121708",
+        "MPN": "MUW23LL/A"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "skullcandy-crusher-anc-2-black-tan",
+      "brand": "Skullcandy",
+      "model": "Crusher ANC 2",
+      "variant": "Black/Tan",
+      "category": "headphones",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "nothing-headphone-1-pro-black",
+      "brand": "Nothing",
+      "model": "Headphone (1) Pro",
+      "variant": "Black",
+      "category": "headphones",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "amazon-echo-dot-max-graphite",
+      "brand": "Amazon",
+      "model": "Echo Dot Max",
+      "variant": "Graphite",
+      "category": "speakers",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "harman-kardon-soundsticks-5-white",
+      "brand": "Harman Kardon",
+      "model": "SoundSticks 5",
+      "variant": "White",
+      "category": "speakers",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "050036422468",
+        "MPN": "HKSOUNDSTK5WAM2"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "harman-kardon-onyx-studio-9-black",
+      "brand": "Harman Kardon",
+      "model": "Onyx Studio 9",
+      "variant": "Black",
+      "category": "speakers",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "028292291104",
+        "MPN": "HKOS9BLKAM"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "garmin-venu-x1-black",
+      "brand": "Garmin",
+      "model": "Venu X1",
+      "variant": "Black / Slate Titanium",
+      "category": "wearables",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "753759342746",
+        "MPN": "010-02980-00"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "oura-ring-5-size-8-silver",
+      "brand": "Oura",
+      "model": "Ring 5",
+      "variant": "Silver, Size 8",
+      "category": "wearables",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "whoop-5-0-peak-obsidian",
+      "brand": "WHOOP",
+      "model": "5.0 Peak",
+      "variant": "Obsidian",
+      "category": "wearables",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "810114363317",
+        "MPN": "973-004-000"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "amazon-echo-time-graphite",
+      "brand": "Amazon",
+      "model": "Echo Time",
+      "variant": "Graphite",
+      "category": "smart-home",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "apple-watch-ultra-3-49mm-black-ocean-band",
+      "brand": "Apple",
+      "model": "Watch Ultra 3",
+      "variant": "Black Titanium + Black Ocean Band",
+      "category": "wearables",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "apple-iphone-17-pro-max-256gb-cosmic-orange",
+      "brand": "Apple",
+      "model": "iPhone 17 Pro Max 256GB",
+      "variant": "Cosmic Orange",
+      "category": "phones",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "samsung-galaxy-z-flip8-256gb-graphite",
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip8 256GB",
+      "variant": "Graphite",
+      "category": "phones",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "0198957311260",
+        "MPN": "SM-F776UZKAXAA"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "samsung-galaxy-tab-s10-fe-256gb-gray",
+      "brand": "Samsung",
+      "model": "Galaxy Tab S10 FE 256GB",
+      "variant": "Gray",
+      "category": "tablets",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "apple-iphone-air-256gb-space-black",
+      "brand": "Apple",
+      "model": "iPhone Air 256GB",
+      "variant": "Space Black",
+      "category": "phones",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "google-pixel-10-pro-128gb-obsidian",
+      "brand": "Google",
+      "model": "Pixel 10 Pro 128GB",
+      "variant": "Obsidian",
+      "category": "phones",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "oneplus-15-12gb-256gb-infinite-black",
+      "brand": "OnePlus",
+      "model": "OnePlus 15 12GB + 256GB",
+      "variant": "Infinite Black",
+      "category": "phones",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "samsung-s90h-65",
+      "brand": "Samsung",
+      "model": "S90H 65\" OLED",
+      "variant": "65\"",
+      "category": "tvs",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "198957270574",
+        "MPN": "QN65S90HAEXZA"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "lg-oled-evo-c6-65",
+      "brand": "LG",
+      "model": "OLED evo C6 65\"",
+      "variant": "65\"",
+      "category": "tvs",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "195174137666",
+        "MPN": "OLED65C6PUA"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "samsung-hw-q990h-black",
+      "brand": "Samsung",
+      "model": "HW-Q990H",
+      "variant": "Black",
+      "category": "soundbars",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "198957269394",
+        "MPN": "HW-Q990H/ZA"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "jbl-cinema-sb580-black",
+      "brand": "JBL",
+      "model": "Cinema SB580",
+      "variant": "Black",
+      "category": "soundbars",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "050036408530",
+        "MPN": "JBLSB580BLKAM"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "samsung-smart-monitor-m70f-43-black",
+      "brand": "Samsung",
+      "model": "Smart Monitor M7 M70F 43\"",
+      "variant": "Black",
+      "category": "monitors",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "198957005435",
+        "MPN": "LS43FM702UNXZA"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "samsung-odyssey-g73sh-32-black",
+      "brand": "Samsung",
+      "model": "Odyssey OLED G7 G73SH 32\"",
+      "variant": "Black",
+      "category": "monitors",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "198957301674",
+        "MPN": "LS32HG732SNXZA"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "hisense-qd7-55",
+      "brand": "Hisense",
+      "model": "QD7 Series 55\"",
+      "variant": "55\"",
+      "category": "tvs",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "asus-rog-strix-xg27ucgr-black",
+      "brand": "ASUS",
+      "model": "ROG Strix XG27UCG Gen2",
+      "variant": "Black",
+      "category": "monitors",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "lenovo-legion-pro-7-gen-10-83ru0006us",
+      "brand": "Lenovo",
+      "model": "Legion Pro 7 Gen 10",
+      "variant": "Eclipse Black",
+      "category": "laptops",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "199271660232",
+        "MPN": "83RU0006US"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "alienware-16-aurora-lac16250-7469blu-blue",
+      "brand": "Alienware",
+      "model": "16 Aurora",
+      "variant": "Blue",
+      "category": "laptops",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "884116430469",
+        "MPN": "LAC16250-7469BLU-PUS"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "lenovo-loq-essential-15arp11-83va001pus",
+      "brand": "Lenovo",
+      "model": "LOQ Essential 15ARP11",
+      "variant": "Eclipse Black",
+      "category": "laptops",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "asus-rog-zephyrus-g14-ga403um-r9hx4-white",
+      "brand": "ASUS",
+      "model": "ROG Zephyrus G14 (2025)",
+      "variant": "Platinum White",
+      "category": "laptops",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "hp-omen-transcend-14-14-fb1043dx-black",
+      "brand": "HP",
+      "model": "OMEN Transcend 14",
+      "variant": "Shadow Black",
+      "category": "laptops",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "samsung-galaxy-book5-360-15-np750qha-ka1us-gray",
+      "brand": "Samsung",
+      "model": "Galaxy Book5 360 15.6\"",
+      "variant": "Gray",
+      "category": "laptops",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "lenovo-yoga-7i-2-in-1-14-83tc003xus-luna-grey",
+      "brand": "Lenovo",
+      "model": "Yoga 7i 2-in-1 14\" Gen 11",
+      "variant": "Luna Grey",
+      "category": "laptops",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "dell-xps-13-ldx13260-5960sky-sky",
+      "brand": "Dell",
+      "model": "XPS 13 (2026)",
+      "variant": "Sky",
+      "category": "laptops",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "dji-osmo-action-5-pro-standard-combo-black",
+      "brand": "DJI",
+      "model": "Osmo Action 5 Pro Standard Combo",
+      "variant": "Black",
+      "category": "action-cameras",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "190021114616",
+        "MPN": "CP.OS.00000377.01"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "dji-osmo-pocket-3-black",
+      "brand": "DJI",
+      "model": "Osmo Pocket 3",
+      "variant": "Black",
+      "category": "cameras",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "190021094970",
+        "MPN": "CP.OS.00000301.01"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "dji-mini-5-pro-rc-n3-gray",
+      "brand": "DJI",
+      "model": "Mini 5 Pro",
+      "variant": "Gray",
+      "category": "drones",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "190021121126",
+        "MPN": "CP.MA.00000838.03"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "dji-neo-2-drone-only-gray",
+      "brand": "DJI",
+      "model": "Neo 2",
+      "variant": "Gray",
+      "category": "drones",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "190021157224",
+        "MPN": "CP.FP.00000270.01"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "insta360-x5-standard-bundle-black",
+      "brand": "Insta360",
+      "model": "X5 Standard Bundle",
+      "variant": "Black",
+      "category": "action-cameras",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "842126110955",
+        "MPN": "CINSAAHA_X501"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "insta360-x6-standard-bundle-midnight-black",
+      "brand": "Insta360",
+      "model": "X6 Standard Bundle",
+      "variant": "Midnight Black",
+      "category": "action-cameras",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "842126120213",
+        "MPN": "CINSABXA-X601"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "gopro-hero13-black-black",
+      "brand": "GoPro",
+      "model": "HERO13 Black",
+      "variant": "Black",
+      "category": "action-cameras",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "810116381821",
+        "MPN": "CHDHX-131-TH"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "insta360-go-3s-standard-bundle-128gb-midnight-black",
+      "brand": "Insta360",
+      "model": "GO 3S Standard Bundle 128GB",
+      "variant": "Midnight Black",
+      "category": "action-cameras",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "842126106989",
+        "MPN": "CINSAATA_GO3S13"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "asus-rog-delta-ii-white",
+      "brand": "ASUS",
+      "model": "ROG Delta II",
+      "variant": "Moonlight White",
+      "category": "headphones",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "asus-rog-keris-ii-ace-white",
+      "brand": "ASUS",
+      "model": "ROG Keris II Ace",
+      "variant": "Moonlight White",
+      "category": "mice",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "asus-rog-strix-scope-ii-96-wireless-white-nx-storm",
+      "brand": "ASUS",
+      "model": "ROG Strix Scope II 96 Wireless",
+      "variant": "Moonlight White",
+      "category": "keyboards",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "asus-zenwifi-bt8-3-pack-white",
+      "brand": "ASUS",
+      "model": "ZenWiFi BT8 3-pack",
+      "variant": "White",
+      "category": "routers",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "197105532090",
+        "MPN": "BT8(W-3-PK)"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "asus-zenwifi-bt10-1-pack-white",
+      "brand": "ASUS",
+      "model": "ZenWiFi BT10 1-pack",
+      "variant": "White",
+      "category": "routers",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "197105429833",
+        "MPN": "BT10(W-1-PK)"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "asus-tuf-gaming-m3-gen-ii-black",
+      "brand": "ASUS",
+      "model": "TUF Gaming M3 Gen II",
+      "variant": "Black",
+      "category": "mice",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "8bitdo-sn30-pro-hall-effect-g-classic",
+      "brand": "8BitDo",
+      "model": "SN30 Pro",
+      "variant": "G Classic",
+      "category": "controllers",
+      "status": "pending",
+      "identifiers": {},
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
+    },
+    {
+      "key": "microsoft-xbox-wireless-controller-forza-horizon-6-limited-edition",
+      "brand": "Microsoft",
+      "model": "Xbox Wireless Controller Forza Horizon 6 Limited Edition",
+      "variant": "Forza Horizon 6 LE",
+      "category": "controllers",
+      "status": "verified",
+      "identifiers": {
+        "UPC": "196388601059",
+        "MPN": "EP2-42276"
+      },
+      "offers": [],
+      "source_file": null,
+      "source_collected_at": null,
+      "identified_source_file": null,
+      "identified_collected_at": null
     }
   ]
 }
