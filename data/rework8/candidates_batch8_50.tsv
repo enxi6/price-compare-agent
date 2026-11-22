@@ -1,0 +1,51 @@
+key	brand	model	variant	category	mpn	mpn_status	upc	upc_status	price_row	source	track
+shokz-opendots-2-black	Shokz	OpenDots 2 Open-Ear Clip-On Earbuds	Black	earbuds	E320-ST-BK-US	VERIFIED	810202687523	VERIFIED	B&H $139.95 InStock	deal	A
+beats-solo-4-matte-black	Beats	Solo 4 Wireless On-Ear Headphones	Matte Black	headphones	MUW23LL/A	VERIFIED	195949121708	VERIFIED	Best Buy $99.99 InStock	deal	A
+skullcandy-crusher-anc-2-black-tan	Skullcandy	Crusher ANC 2 Over-the-Ear Noise Canceling Wireless Headphones	Black/Tan	headphones	S6CAW-S978	VERIFIED	810145320808	PENDING-lead	Best Buy $119.99 InStock	deal	A
+nothing-headphone-1-pro-black	Nothing	Headphone (1) Pro	Black	headphones	B192	VERIFIED	6974434229471	PENDING-lead	Nothing $399	deal	A
+amazon-echo-dot-max-graphite	Amazon	Echo Dot Max (newest model)	Graphite	speakers	B0D6SX8VLQ	VERIFIED		PENDING-none	Best Buy $49.99 InStock (Black Friday)	deal	A+B
+harman-kardon-soundsticks-5-white	Harman Kardon	SoundSticks 5 2.1-Channel Bluetooth Speaker with HDMI	White	speakers	HKSOUNDSTK5WAM2	VERIFIED	050036422468	VERIFIED	B&H $279.95 InStock	deal	B
+harman-kardon-onyx-studio-9-black	Harman Kardon	Onyx Studio 9 Portable Stereo Bluetooth Home Speaker	Black	speakers	HKOS9BLKAM	VERIFIED	028292291104	VERIFIED	Newegg $219.50 (verify self-operated at add)	deal	B
+garmin-venu-x1-black	Garmin	Venu X1 GPS Smartwatch	Black / Slate Titanium	wearables	010-02980-00	VERIFIED	753759342746	VERIFIED	Best Buy $499.99	deal	B
+oura-ring-5-size-8-silver	Oura	Ring 5 Smart Ring & Fitness Tracker	Silver, Size 8	wearables	JZ90-61403-08	VERIFIED		PENDING-none	Best Buy $299.00 InStock	deal	B
+whoop-5-0-peak-obsidian	WHOOP	5.0 Peak Health and Fitness Tracker, 12-Month Membership	Obsidian	wearables	973-004-000	VERIFIED		PENDING-conflict	Best Buy $199.00 InStock	deal	B
+amazon-echo-time-graphite	Amazon	Echo Time (all-new)	Graphite	smart-home	B0FRPDXJYC	VERIFIED		PENDING-conflict	Best Buy $199.99	deal	B
+apple-watch-ultra-3-49mm-black-ocean-band	Apple	Watch Ultra 3 (GPS + Cellular, 49mm)	Black Titanium + Black Ocean Band	wearables	MF0J4LW/A	VERIFIED	195950484311	PENDING-lead	Best Buy $549.00 InStock	deal	C
+apple-iphone-17-pro-max-256gb-cosmic-orange	Apple	iPhone 17 Pro Max 256GB (Unlocked)	Cosmic Orange	phones	MFXH4LL/A	VERIFIED	195950638004	PENDING-lead	Best Buy $1,099.99 InStock	deal	C
+samsung-galaxy-z-flip8-256gb-graphite	Samsung	Galaxy Z Flip8 256GB (Unlocked)	Graphite	phones	SM-F776UZKAXAA	VERIFIED	0198957311260	PENDING-lead	Best Buy $999.99 InStock	deal	C
+samsung-galaxy-tab-s10-fe-256gb-gray	Samsung	Galaxy Tab S10 FE 10.9" Wi-Fi 256GB (12GB RAM)	Gray	tablets	SM-X520NZAEXAR	VERIFIED	887276992259	PENDING-lead	Best Buy $469.99 InStock (verify new vs open-box at add)	queue	C
+apple-iphone-air-256gb-space-black	Apple	iPhone Air 256GB (Unlocked)	Space Black	phones	MG184LL/A	VERIFIED	195950621303	PENDING-lead	Best Buy $799.99 InStock	deal	C
+google-pixel-10-pro-128gb-obsidian	Google	Pixel 10 Pro 128GB (Unlocked)	Obsidian	phones	GA09887-US	VERIFIED		PENDING-none	Best Buy $999.00 InStock	deal	C
+oneplus-15-12gb-256gb-infinite-black	OnePlus	OnePlus 15 12GB + 256GB (Unlocked)	Infinite Black	phones	CPH2749	VERIFIED	6921815630302	PENDING-lead	oneplus.com $799.00 (code EXTRA100, verify at add)	deal	C
+samsung-s90h-65	Samsung	S90H 65" OLED (2026)	65"	tvs	QN65S90HAEXZA	VERIFIED	198957270574	VERIFIED	Best Buy $1,399.99 InStock	deal	D
+lg-oled-evo-c6-65	LG	OLED evo C6 65" (2026)	65"	tvs	OLED65C6PUA	VERIFIED	195174137666	VERIFIED	Best Buy $1,399.99 InStock	deal	D
+samsung-hw-q990h-black	Samsung	HW-Q990H 11.1.4ch Soundbar	Black	soundbars	HW-Q990H/ZA	VERIFIED	198957269394	VERIFIED	Best Buy $1,497.99	deal	D
+jbl-cinema-sb580-black	JBL	Cinema SB580 3.1ch Soundbar	Black	soundbars	JBLSB580BLKAM	VERIFIED	050036408530	VERIFIED	Walmart $199.00 InStock	deal	D
+samsung-smart-monitor-m70f-43-black	Samsung	Smart Monitor M7 M70F 43" 4K	Black	monitors	LS43FM702UNXZA	VERIFIED	198957005435	VERIFIED	Samsung US $499.99; Abt $499.99	queue	D
+samsung-odyssey-g73sh-32-black	Samsung	Odyssey OLED G7 G73SH 32" 4K 165Hz / 1080p 330Hz	Black	monitors	LS32HG732SNXZA	VERIFIED	198957301674	VERIFIED	Costco $699.99 + $100 Shop Card	deal	D
+hisense-qd7-55	Hisense	QD7 Series 55" Hi-QLED Fire TV (Costco)	55"	tvs	55QD75SFC	VERIFIED	888143028279	PENDING-lead	Costco $269.99 (stock mixed)	deal	D
+asus-rog-strix-xg27ucgr-black	ASUS	ROG Strix XG27UCG Gen2 (XG27UCGR) 27" 4K dual-mode	Black	monitors	XG27UCGR	VERIFIED		PENDING-none	ROG US / ASUS eShop $399 InStock	queue	D
+lenovo-legion-pro-7-gen-10-83ru0006us	Lenovo	Legion Pro 7 Gen 10 AMD 16AFR10H	Eclipse Black	laptops	83RU0006US	VERIFIED	199271660232	VERIFIED	Adorama $4,949.00 InStock	queue	E
+alienware-16-aurora-lac16250-7469blu-blue	Alienware	16 Aurora	Blue	laptops	LAC16250-7469BLU-PUS	VERIFIED	884116430469	VERIFIED	AntOnline $2,149.99 InStock	queue	E
+lenovo-loq-essential-15arp11-83va001pus	Lenovo	LOQ Essential 15ARP11	Eclipse Black	laptops	83VA001PUS	PENDING		PENDING-none	Best Buy $1,049.99 InStock	queue	E
+asus-rog-zephyrus-g14-ga403um-r9hx4-white	ASUS	ROG Zephyrus G14 (2025) GA403UM	Platinum White	laptops	GA403UM-G14.R9HX4	PENDING		PENDING-none	Best Buy $2,299.99 InStock	queue	E
+hp-omen-transcend-14-14-fb1043dx-black	HP	OMEN Transcend 14 (2025)	Shadow Black	laptops	14-fb1043dx	VERIFIED	821844495667	PENDING-lead	Best Buy $2,499.99 InStock	queue	E
+samsung-galaxy-book5-360-15-np750qha-ka1us-gray	Samsung	Galaxy Book5 360 15.6"	Gray	laptops	NP750QHA-KA1US	VERIFIED		PENDING-none	Connection $1,695.95 InStock; Quill $1,702.99	queue	E
+lenovo-yoga-7i-2-in-1-14-83tc003xus-luna-grey	Lenovo	Yoga 7i 2-in-1 14" Gen 11 Aura Edition	Luna Grey	laptops	83TC003XUS	VERIFIED	199275077982	PENDING-lead	Best Buy $999.99 InStock	deal	E
+dell-xps-13-ldx13260-5960sky-sky	Dell	XPS 13 (2026) DX13260	Sky	laptops	LDX13260-5960SKY-PUS	PENDING	884116652960	PENDING-lead	Best Buy $999.99 InStock	deal	E
+dji-osmo-action-5-pro-standard-combo-black	DJI	Osmo Action 5 Pro Standard Combo	Black	action-cameras	CP.OS.00000377.01	VERIFIED	190021114616	VERIFIED	B&H $319.00 InStock	deal	F
+dji-osmo-pocket-3-black	DJI	Osmo Pocket 3 (Standard, single)	Black	cameras	CP.OS.00000301.01	VERIFIED	190021094970	VERIFIED	B&H $373.00 InStock	deal	F
+dji-mini-5-pro-rc-n3-gray	DJI	Mini 5 Pro (RC-N3, single battery)	Gray	drones	CP.MA.00000838.03	VERIFIED	190021121126	VERIFIED	B&H $759.00 InStock	deal	F
+dji-neo-2-drone-only-gray	DJI	Neo 2 (Drone Only)	Gray	drones	CP.FP.00000270.01	VERIFIED	190021157224	VERIFIED	B&H $259.00 InStock	deal	F
+insta360-x5-standard-bundle-black	Insta360	X5 Standard Bundle	Black	action-cameras	CINSAAHA_X501	VERIFIED	842126110955	VERIFIED	B&H $439.99 InStock	deal	F
+insta360-x6-standard-bundle-midnight-black	Insta360	X6 Standard Bundle	Midnight Black	action-cameras	CINSABXA-X601	VERIFIED	842126120213	VERIFIED	B&H $699.99 InStock	deal	F
+gopro-hero13-black-black	GoPro	HERO13 Black (single)	Black	action-cameras	CHDHX-131-TH	VERIFIED	810116381821	VERIFIED	B&H $349.99 (temp OOS, ETA Dec 07)	deal	F
+insta360-go-3s-standard-bundle-128gb-midnight-black	Insta360	GO 3S Standard Bundle 128GB	Midnight Black	action-cameras	CINSAATA_GO3S13	VERIFIED	842126106989	VERIFIED	B&H $299.99 InStock	deal	F
+asus-rog-delta-ii-white	ASUS	ROG Delta II Wireless Gaming Headset	Moonlight White	headphones		PENDING-conflict		PENDING-conflict	Best Buy $149.99 InStock	queue	G
+asus-rog-keris-ii-ace-white	ASUS	ROG Keris II Ace Wireless Gaming Mouse	Moonlight White	mice	90MP03N0-BMUA10	VERIFIED		PENDING-conflict	IPCStore $179.00 InStock	queue	G
+asus-rog-strix-scope-ii-96-wireless-white-nx-storm	ASUS	ROG Strix Scope II 96 Wireless, NX Storm	Moonlight White	keyboards	90MP037B-BKAA30	PENDING	197105487154	PENDING-lead	ASUS eShop $131.99 InStock	queue	G
+asus-zenwifi-bt8-3-pack-white	ASUS	ZenWiFi BT8 BE14000 Tri-Band WiFi 7 Mesh, 3-pack	White	routers	BT8(W-3-PK)	VERIFIED	197105532090	VERIFIED	B&H $699.99 InStock	queue	G
+asus-zenwifi-bt10-1-pack-white	ASUS	ZenWiFi BT10 BE18000 Tri-Band WiFi 7 Mesh, 1-pack	White	routers	BT10(W-1-PK)	VERIFIED	197105429833	VERIFIED	B&H $346.00 InStock	queue	G
+asus-tuf-gaming-m3-gen-ii-black	ASUS	TUF Gaming M3 Gen II Wired Gaming Mouse	Black	mice	90MP0320-BMAA00	VERIFIED	195553909112	PENDING-lead	Adorama $25.99 InStock	queue	G
+8bitdo-sn30-pro-hall-effect-g-classic	8BitDo	SN30 Pro Wireless Controller with Hall Effect Joysticks	G Classic	controllers	80DJ04	PENDING	6922621509547	PENDING-lead	Best Buy $34.99 InStock	deal	G
+microsoft-xbox-wireless-controller-forza-horizon-6-limited-edition	Microsoft	Xbox Wireless Controller, Forza Horizon 6 Limited Edition	Forza Horizon 6 LE	controllers	EP2-42276	VERIFIED	196388601059	VERIFIED	Walmart $49.00 (sold/shipped by Walmart)	deal	G
