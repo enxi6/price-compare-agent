@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-22T01:01:51.945985+00:00",
+    "generated_at": "2026-11-22T05:16:51.803519+00:00",
     "snapshot_date": "2026-11-21",
     "source_files": 61,
     "identified_source_files": 19,
@@ -40169,12 +40169,12 @@
           "merchant": "B&H Photo",
           "price": 279.95,
           "title": "Harman Kardon SoundSticks 5 2.1-Channel Bluetooth Speaker with HDMI - White",
-          "url": "",
+          "url": "https://www.bhphotovideo.com/c/product/1950080-REG/harman_kardon_hksoundstk5wam2_soundsticks_5_2_1_channel_bluetooth.html",
           "collected_at": "2026-11-22T00:56:53Z",
           "identifier": "050036422468",
           "identifier_kind": "UPC",
           "source_tier": 4,
-          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $279.95, was $349.95; Add to Cart clickable; In Stock; B&H direct; UPC 050036422468 / MPN HKSOUNDSTK5WAM2; product URL not recovered - B&H page not surfaced in search index after 4 searches, url left blank (merger-tolerated), to backfill on a later re-probe; added on user approval 2026-11-21)",
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $279.95, was $349.95; Add to Cart clickable; In Stock; B&H direct; UPC 050036422468 / MPN HKSOUNDSTK5WAM2; product URL recovered 2026-11-21 evening PT and re-verified on the live page (price, stock, UPC/MPN match); added on user approval 2026-11-21)",
           "in_stock": true,
           "suspected": false
         }
@@ -40656,12 +40656,12 @@
           "merchant": "Adorama",
           "price": 4949.0,
           "title": "Lenovo Legion Pro 7 Gen 10 16AFR10H Gaming Laptop - Eclipse Black",
-          "url": "",
+          "url": "https://www.adorama.com/lenovo-legion-pro-7-16afr10h-16-gaming-laptop-ryzen-9-9955hx3d-rtx-5080-32gb-2tb/p/le83ru0006us",
           "collected_at": "2026-11-22T00:56:53Z",
           "identifier": "199271660232",
           "identifier_kind": "UPC",
           "source_tier": 4,
-          "source": "adorama.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $4,949.00; ADD TO CART clickable; Adorama direct; 'Limited Quantity Available'; config confirmed 9955HX3D / 32GB / 2TB / RTX 5080 / Win 11 Pro; UPC 199271660232 / MPN 83RU0006US; product URL not recovered - Adorama page not surfaced in search index after 2 searches, url left blank (merger-tolerated), to backfill on a later re-probe; added on user approval 2026-11-21)",
+          "source": "adorama.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $4,949.00; ADD TO CART clickable; Adorama direct; 'Limited Quantity Available'; config confirmed 9955HX3D / 32GB / 2TB / RTX 5080 / Win 11 Pro; UPC 199271660232 / MPN 83RU0006US; product URL recovered 2026-11-21 evening PT and re-verified on the live page (price $4,949, InStock, config/MPN 83RU0006US match); added on user approval 2026-11-21)",
           "in_stock": true,
           "suspected": false
         }
@@ -40895,12 +40895,12 @@
           "merchant": "B&H Photo",
           "price": 259.0,
           "title": "DJI Neo 2 (Drone Only) - Gray",
-          "url": "",
+          "url": "https://www.bhphotovideo.com/c/product/1940932-REG/dji_cp_fp_00000270_01_dji_neo_2_drone.html",
           "collected_at": "2026-11-22T00:56:53Z",
           "identifier": "190021157224",
           "identifier_kind": "UPC",
           "source_tier": 4,
-          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $259.00; Add to Cart clickable; In Stock; B&H direct; UPC 190021157224 / MPN CP.FP.00000270.01; product URL not recovered - B&H page not surfaced in search index after 3 searches (B&H category page confirms BH # DJNEO2 / MFR CP.FP.00000270.01 exists), url left blank (merger-tolerated), to backfill on a later re-probe; added on user approval 2026-11-21)",
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $259.00; Add to Cart clickable; In Stock; B&H direct; UPC 190021157224 / MPN CP.FP.00000270.01; product URL recovered 2026-11-21 evening PT and re-verified on the live page (price, stock, UPC/MPN match); added on user approval 2026-11-21)",
           "in_stock": true,
           "suspected": false
         }
@@ -41078,12 +41078,12 @@
           "merchant": "B&H Photo",
           "price": 699.99,
           "title": "ASUS ZenWiFi BT8 BE14000 Tri-Band WiFi 7 Mesh System (3-Pack) - White",
-          "url": "",
+          "url": "https://www.bhphotovideo.com/c/product/1892166-REG/asus_zenwifi_bt8_3pk_zenwifi_bt8_be14000_wireless.html",
           "collected_at": "2026-11-22T00:56:53Z",
           "identifier": "197105532090",
           "identifier_kind": "UPC",
           "source_tier": 4,
-          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $699.99, was $849.99; Add to Cart clickable; In Stock; B&H direct; UPC 197105532090 / MPN BT8(W-3-PK); product URL not recovered - B&H 3-pack page not surfaced in search index after 4 searches (only the 1-pack and 2-pack pages index), url left blank (merger-tolerated), to backfill on a later re-probe; added on user approval 2026-11-21)",
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $699.99, was $849.99; Add to Cart clickable; In Stock; B&H direct; UPC 197105532090 / MPN BT8(W-3-PK); product URL recovered 2026-11-21 evening PT and re-verified on the live page (price, stock, UPC/MPN match); added on user approval 2026-11-21)",
           "in_stock": true,
           "suspected": false
         }

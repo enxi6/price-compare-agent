@@ -9,6 +9,16 @@ releases; breaking changes are called out in the release notes.
 
 ## [Unreleased]
 
+### Fixed
+
+- Batch 8 URL backfill: 4 of the 5 blank merchant URLs left over from
+  the hand-row writes now recovered on live merchant pages and written
+  in (SoundSticks 5, Neo 2 drone-only, BT8 3-pack on B&H; Legion Pro 7
+  on Adorama). No price, stock or ranking change — catalogue 600,
+  verified 257, ranked 194, matched 211. Only the Forza controller
+  Walmart link is still blank (Walmart's robot check blocks Muse).
+  See BUILD_LOG 147.
+
 ### Added
 
 - Batch 8 hand rows (supplement): 2 live-browser-verified rows written
