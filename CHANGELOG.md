@@ -11,6 +11,21 @@ releases; breaking changes are called out in the release notes.
 
 ### Added
 
+- Batch 8 hand rows: 23 live-browser-verified rows written
+  (2026-11-21 16:37–16:49 PT, read-only Add to Cart check), all 23
+  models confirmed status=verified in the catalog first. Ranking
+  169 → 192, matched 186 → 209, total offers 2,399 → 2,422.
+  Watch Ultra 3 UPC 195950484311 and iPhone 17 Pro Max UPC
+  195950638004 verified on Best Buy spec pages ("See all
+  specifications" > Other) — pending → verified, identifiers only,
+  no price rows yet (buy-box re-probe pending). Price corrections:
+  Alienware 16 Aurora AntOnline $2,149.99 → B&H $1,549.00;
+  X6 B&H $699.99 → $629.99. Held: G73SH Costco (robot wall),
+  Pixel 10 Pro $749 signal falsified (live $999), HERO13 B&H
+  Temporarily OOS (ETA Dec 07). 5 product URLs left blank
+  (merger-tolerated) to backfill later. Verified identifiers
+  255 → 257, pending 345 → 343. See DECISIONS 090, BUILD_LOG 145.
+
 - Batch 8: 50 models added (550 → 600), user-approved draft
   (data/candidates_batch8_600.md, commit 8a10051); 1 new category
   (drones: Mini 5 Pro, Neo 2) and the Forza Horizon 6 Limited

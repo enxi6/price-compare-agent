@@ -12472,13 +12472,16 @@ EVAL_SET: list[EvalProduct] = [
         model="Watch Ultra 3",
         variant="Black Titanium + Black Ocean Band",
         category="wearables",
-        identifiers={},
-        identifier_sources={
-            "UPC": "UPC pending — lead 195950484311 (eBay GTIN + PayMore scans + box photos); no brand/retailer"
-            "spec page; Best Buy text fetch never renders a UPC field — needs live-browser spec-page check"
-            "(batch-8 verification 2026-11-21).",
+        identifiers={
+            "UPC": "195950484311",
+            "MPN": "MF0J4LW/A",
         },
-        status="pending",
+        identifier_sources={
+            "UPC": "Best Buy spec page ('See all specifications' > Other) prints UPC 195950484311, agreeing with"
+            " the draft lead (eBay GTIN + PayMore scans + box photos) (batch-8 verification 2026-11-21).",
+            "MPN": "Best Buy model field, SKU 6572972 (batch-8 verification 2026-11-21).",
+        },
+        status="verified",
         notes="MPN MF0J4LW/A confirmed (Best Buy model field, SKU 6572972). Best Buy $549.00 (was $799.00)"
         "InStock at add time. Refurb/open-box rows excluded; Costco $449.97 is in-store-only, not a row."
         "(batch-8 verification 2026-11-21).",
@@ -12489,13 +12492,17 @@ EVAL_SET: list[EvalProduct] = [
         model="iPhone 17 Pro Max 256GB",
         variant="Cosmic Orange",
         category="phones",
-        identifiers={},
-        identifier_sources={
-            "UPC": "UPC pending — lead 195950638004 (PayMore scans + BarcodesInc GTIN 0195950638004 + eBay +"
-            "tekfeed); no brand/retailer spec page; Best Buy text fetch never renders a UPC field — needs"
-            "live-browser spec-page check (batch-8 verification 2026-11-21).",
+        identifiers={
+            "UPC": "195950638004",
+            "MPN": "MFXH4LL/A",
         },
-        status="pending",
+        identifier_sources={
+            "UPC": "Best Buy spec page ('See all specifications' > Other) prints UPC 195950638004, agreeing with"
+            " the draft lead (PayMore scans + BarcodesInc GTIN 0195950638004 + eBay + tekfeed)"
+            " (batch-8 verification 2026-11-21).",
+            "MPN": "Best Buy model field, SKU 6473213 (batch-8 verification 2026-11-21).",
+        },
+        status="verified",
         notes="MPN MFXH4LL/A confirmed (Best Buy model field, SKU 6473213). Best Buy $1,099.99 (was $1,199.99)"
         "InStock at add time — connect-later unlocked price; $999.99 is the carrier-activated price, not"
         "written. Open-box $1,011.99–$1,044.99 and refurb $972.97+ excluded. Cosmic Orange only."

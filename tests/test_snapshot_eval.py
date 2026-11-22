@@ -42,7 +42,7 @@ def test_snapshot_staleness(tmp_path):
 def test_eval_set_shape():
     assert len(EVAL_SET) == 600
     verified = [p for p in EVAL_SET if p.status == "verified"]
-    assert len(verified) == 255
+    assert len(verified) == 257
     assert all(p.identifiers for p in verified)
     pending = [p for p in EVAL_SET if p.status == "pending"]
     assert all(not p.identifiers for p in pending)
@@ -373,8 +373,6 @@ def test_eval_set_shape():
         "amazon-echo-dot-max-graphite",
         "oura-ring-5-size-8-silver",
         "amazon-echo-time-graphite",
-        "apple-watch-ultra-3-49mm-black-ocean-band",
-        "apple-iphone-17-pro-max-256gb-cosmic-orange",
         "samsung-galaxy-tab-s10-fe-256gb-gray",
         "apple-iphone-air-256gb-space-black",
         "google-pixel-10-pro-128gb-obsidian",

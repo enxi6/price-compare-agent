@@ -1,17 +1,17 @@
 {
   "meta": {
-    "generated_at": "2026-11-22T00:30:28.786662+00:00",
+    "generated_at": "2026-11-22T00:57:03.230858+00:00",
     "snapshot_date": "2026-11-21",
     "source_files": 61,
     "identified_source_files": 19,
     "models": 600,
-    "verified_identifiers": 255,
-    "pending_identifiers": 345,
-    "total_offers": 2399,
-    "matched_offers": 186,
+    "verified_identifiers": 257,
+    "pending_identifiers": 343,
+    "total_offers": 2422,
+    "matched_offers": 209,
     "suspected_offers": 2213,
-    "verified_ranking_models": 169,
-    "models_with_offers": 468,
+    "verified_ranking_models": 192,
+    "models_with_offers": 491,
     "note": "Latest snapshot per model (by collected_at) from the Meta Catalog stream, unioned with identifier-bearing quotes (Shopify public product JSON and browser-verified retailer spec pages). An offer enters the verified ranking only when its identifier matches the catalog's verified identifier for that exact variant; everything else is title-matched (suspected). Prices are as of their snapshot date; anything older than 24h needs re-check."
   },
   "models": [
@@ -40060,11 +40060,25 @@
         "UPC": "810202687523",
         "MPN": "E320-ST-BK-US"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 139.95,
+          "title": "Shokz OpenDots 2 Open-Ear Clip-On Earbuds - Black",
+          "url": "https://www.bhphotovideo.com/c/product/1975297-REG/shokz_e320_st_bk_us_opendots_2_open_ear_clip_on.html",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "810202687523",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $139.95, was $199.95; Add to Cart clickable; In Stock; B&H direct; UPC 810202687523 / MPN E320-ST-BK-US; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "beats-solo-4-matte-black",
@@ -40077,11 +40091,25 @@
         "UPC": "195949121708",
         "MPN": "MUW23LL/A"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 99.99,
+          "title": "Beats Solo 4 Wireless On-Ear Headphones - Matte Black",
+          "url": "https://www.bestbuy.com/product/beats-solo-4-wireless-on-ear-headphones-matte-black/JJGCQXWKWL/sku/6501020?utm_source=meta&utm_medium=feed&fs=tol1u0",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "195949121708",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $99.99, was $199.99; Add to Cart clickable; Sold by Best Buy; 1-hour pickup; UPC 195949121708 / MPN MUW23LL/A; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "skullcandy-crusher-anc-2-black-tan",
@@ -40136,11 +40164,25 @@
         "UPC": "050036422468",
         "MPN": "HKSOUNDSTK5WAM2"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 279.95,
+          "title": "Harman Kardon SoundSticks 5 2.1-Channel Bluetooth Speaker with HDMI - White",
+          "url": "",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "050036422468",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $279.95, was $349.95; Add to Cart clickable; In Stock; B&H direct; UPC 050036422468 / MPN HKSOUNDSTK5WAM2; product URL not recovered - B&H page not surfaced in search index after 4 searches, url left blank (merger-tolerated), to backfill on a later re-probe; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "harman-kardon-onyx-studio-9-black",
@@ -40170,11 +40212,25 @@
         "UPC": "753759342746",
         "MPN": "010-02980-00"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 499.99,
+          "title": "Garmin Venu X1 GPS Smartwatch 51 mm Fiber-Reinforced Polymer - Black with Slate Titanium Caseback (2025)",
+          "url": "https://www.bestbuy.com/product/garmin-venu-x1-gps-smartwatch-51-mm-fiber-reinforced-polymer-black-with-slate-titanium-caseback-2025/JXF9YF5FY4/sku/6635856",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "753759342746",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $499.99; Add to Cart clickable; Sold by Best Buy; Tustin store only 1 left; UPC 753759342746 / MPN 010-02980-00; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "oura-ring-5-size-8-silver",
@@ -40201,11 +40257,25 @@
         "UPC": "810114363317",
         "MPN": "973-004-000"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 199.0,
+          "title": "WHOOP 5.0 Peak Health and Fitness Tracker, 12-Month Membership - Obsidian (2025)",
+          "url": "http://bestbuy.com/product/whoop-5-0-peak-health-and-fitness-tracker-12-month-membership-obsidian-2025/J3GW3TK8GT/sku/6621043",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "810114363317",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $199.00; 12-month Peak membership bundle price; Add to Cart clickable; Sold by Best Buy; in stock; UPC 810114363317 / MPN 973-004-000; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "amazon-echo-time-graphite",
@@ -40227,8 +40297,11 @@
       "model": "Watch Ultra 3",
       "variant": "Black Titanium + Black Ocean Band",
       "category": "wearables",
-      "status": "pending",
-      "identifiers": {},
+      "status": "verified",
+      "identifiers": {
+        "UPC": "195950484311",
+        "MPN": "MF0J4LW/A"
+      },
       "offers": [],
       "source_file": null,
       "source_collected_at": null,
@@ -40241,8 +40314,11 @@
       "model": "iPhone 17 Pro Max 256GB",
       "variant": "Cosmic Orange",
       "category": "phones",
-      "status": "pending",
-      "identifiers": {},
+      "status": "verified",
+      "identifiers": {
+        "UPC": "195950638004",
+        "MPN": "MFXH4LL/A"
+      },
       "offers": [],
       "source_file": null,
       "source_collected_at": null,
@@ -40260,11 +40336,25 @@
         "UPC": "0198957311260",
         "MPN": "SM-F776UZKAXAA"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 999.99,
+          "title": "Samsung Galaxy Z Flip8 256GB Unlocked - Graphite",
+          "url": "https://www.bestbuy.com/product/samsung-galaxy-z-flip8-256gb-unlocked-graphite/JJGRF3TF7P/sku/6681665",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "0198957311260",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $999.99, was $1,199.99, connect-later unlocked price; Add to Cart clickable; Sold by Best Buy; UPC 0198957311260 / MPN SM-F776UZKAXAA; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "samsung-galaxy-tab-s10-fe-256gb-gray",
@@ -40333,11 +40423,25 @@
         "UPC": "198957270574",
         "MPN": "QN65S90HAEXZA"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 1399.99,
+          "title": "Samsung 65\" Class S90H OLED 4K Glare-Free TV with SamsungVisionAI (2026)",
+          "url": "https://www.bestbuy.com/product/samsung-65-class-s90h-oled-4k-glare-free-tv-with-samsungvisionai-2026/JJGRF3QG5V",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "198957270574",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $1,399.99; Add to Cart clickable; Sold by Best Buy; UPC 198957270574 / MPN QN65S90HAEXZA; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "lg-oled-evo-c6-65",
@@ -40350,11 +40454,25 @@
         "UPC": "195174137666",
         "MPN": "OLED65C6PUA"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 1399.99,
+          "title": "LG 65\" Class C6 OLED evo AI 4K Smart webOS TV with Perfect Black, Perfect Color and Brightness Booster (2026)",
+          "url": "https://www.bestbuy.com/product/lg-65-class-c6-oled-evo-ai-4k-smart-webos-tv-with-perfect-black-perfect-color-and-brightness-booster-2026/JJ8VPZKZ8H/sku/6673112?ref=166_625&loc=SOC_1692337_37005862_460234929",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "195174137666",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $1,399.99; Add to Cart clickable; Sold by Best Buy; SKU 6673112; UPC 195174137666 / MPN OLED65C6PUA; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "samsung-hw-q990h-black",
@@ -40367,11 +40485,25 @@
         "UPC": "198957269394",
         "MPN": "HW-Q990H/ZA"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Best Buy",
+          "price": 1497.99,
+          "title": "Samsung Q-Series Soundbar HW Q990H/ZA 11.1.4 ch Subwoofer with Rear Speaker (2026) - Titan Black",
+          "url": "https://www.bestbuy.com/product/samsung-q-series-soundbar-hw-q990h-za-11-1-4-ch-subwoofer-with-rear-speaker-2026-titan-black/JJGRF3Q87K/sku/6670431",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "198957269394",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bestbuy.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $1,497.99; Add to Cart clickable; Sold by Best Buy; Anaheim store only 1 left; UPC 198957269394 / MPN HW-Q990H/ZA; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "jbl-cinema-sb580-black",
@@ -40384,11 +40516,25 @@
         "UPC": "050036408530",
         "MPN": "JBLSB580BLKAM"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Walmart",
+          "price": 199.0,
+          "title": "JBL CINEMA SB580 3.1 Channel Soundbar with Virtual Dolby Atmos and Wireless Subwoofer",
+          "url": "https://goto.walmart.com/c/10621/1167790/9383?sharedid=techbargains.com&subId1=024ayydiFEqMJcjf1kuqeb1&u=https%3A%2F%2Fwww.walmart.com%2Fip%2Fseort%2F8046752632",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "050036408530",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "walmart.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $199.00, was $289.00; Add to Cart clickable; Sold and shipped by Walmart.com; in stock; UPC 050036408530 / MPN JBLSB580BLKAM; URL is the verbatim Walmart redirect link returned by search - it resolves to walmart.com/ip/seort/8046752632; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "samsung-smart-monitor-m70f-43-black",
@@ -40401,11 +40547,25 @@
         "UPC": "198957005435",
         "MPN": "LS43FM702UNXZA"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Samsung",
+          "price": 499.99,
+          "title": "43 Inch Smart Monitor M7 M70F 4K USB-C | Smart TV Apps | Samsung Vision AI",
+          "url": "https://www.samsung.com/us/monitors/smart/43-inch-smart-monitor-m70f-4k-uhd-vision-ai-monitor-sku-ls43fm702unxza/",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "198957005435",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "samsung.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $499.99; Add to Cart clickable; Samsung direct; free delivery Nov 24 - default ZIP first showed unavailable, ZIP popup then confirmed deliverable; UPC 198957005435 / MPN LS43FM702UNXZA; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "samsung-odyssey-g73sh-32-black",
@@ -40463,11 +40623,25 @@
         "UPC": "199271660232",
         "MPN": "83RU0006US"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Adorama",
+          "price": 4949.0,
+          "title": "Lenovo Legion Pro 7 Gen 10 16AFR10H Gaming Laptop - Eclipse Black",
+          "url": "",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "199271660232",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "adorama.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $4,949.00; ADD TO CART clickable; Adorama direct; 'Limited Quantity Available'; config confirmed 9955HX3D / 32GB / 2TB / RTX 5080 / Win 11 Pro; UPC 199271660232 / MPN 83RU0006US; product URL not recovered - Adorama page not surfaced in search index after 2 searches, url left blank (merger-tolerated), to backfill on a later re-probe; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "alienware-16-aurora-lac16250-7469blu-blue",
@@ -40480,11 +40654,25 @@
         "UPC": "884116430469",
         "MPN": "LAC16250-7469BLU-PUS"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 1549.0,
+          "title": "Dell Alienware 16 Aurora 16\" Laptop - Blue",
+          "url": "https://www.bhphotovideo.com/c/product/1994215-REG/dell_lac16250_7469blu_pus_16_alienware_16_aurora.html",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "884116430469",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $1,549.00 live - draft price AntOnline $2,149.99 corrected to live price per the live-price rule; Add to Cart clickable; In Stock; B&H direct; UPC 884116430469 / MPN LAC16250-7469BLU-PUS; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "lenovo-loq-essential-15arp11-83va001pus",
@@ -40581,11 +40769,25 @@
         "UPC": "190021114616",
         "MPN": "CP.OS.00000377.01"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 319.0,
+          "title": "DJI Osmo Action 5 Pro Standard Combo - Black",
+          "url": "https://www.bhphotovideo.com/c/product/1846516-REG/dji_cp_os_00000377_01_osmo_action_5_pro.html",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "190021114616",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $319.00; Add to Cart clickable; In Stock; B&H direct; UPC 190021114616 / MPN CP.OS.00000377.01; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "dji-osmo-pocket-3-black",
@@ -40598,11 +40800,25 @@
         "UPC": "190021094970",
         "MPN": "CP.OS.00000301.01"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 373.0,
+          "title": "DJI Osmo Pocket 3 - Black",
+          "url": "https://www.bhphotovideo.com/c/product/1788803-REG/dji_cp_os_00000301_01_osmo_pocket_3.html",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "190021094970",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $373.00, was $439.00; Add to Cart clickable; In Stock; B&H direct; UPC 190021094970 / MPN CP.OS.00000301.01; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "dji-mini-5-pro-rc-n3-gray",
@@ -40615,11 +40831,25 @@
         "UPC": "190021121126",
         "MPN": "CP.MA.00000838.03"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 759.0,
+          "title": "DJI Mini 5 Pro Drone with RC-N3 Remote Controller - Gray",
+          "url": "https://www.bhphotovideo.com/c/product/1916800-REG/dji_cp_ma_00000838_03_mini_5_pro_done.html",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "190021121126",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $759.00; Add to Cart clickable; In Stock; B&H direct; UPC 190021121126 / MPN CP.MA.00000838.03; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "dji-neo-2-drone-only-gray",
@@ -40632,11 +40862,25 @@
         "UPC": "190021157224",
         "MPN": "CP.FP.00000270.01"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 259.0,
+          "title": "DJI Neo 2 (Drone Only) - Gray",
+          "url": "",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "190021157224",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $259.00; Add to Cart clickable; In Stock; B&H direct; UPC 190021157224 / MPN CP.FP.00000270.01; product URL not recovered - B&H page not surfaced in search index after 3 searches (B&H category page confirms BH # DJNEO2 / MFR CP.FP.00000270.01 exists), url left blank (merger-tolerated), to backfill on a later re-probe; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "insta360-x5-standard-bundle-black",
@@ -40649,11 +40893,25 @@
         "UPC": "842126110955",
         "MPN": "CINSAAHA_X501"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 439.99,
+          "title": "Insta360 X5 360 Camera - Standard Bundle, Black",
+          "url": "https://www.bhphotovideo.com/c/product/1887887-REG/insta360_cinsaaha_x501_x5_360_camera.html",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "842126110955",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $439.99, was $549.99; Add to Cart clickable; In Stock; B&H direct; UPC 842126110955 / MPN CINSAAHA_X501; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "insta360-x6-standard-bundle-midnight-black",
@@ -40666,11 +40924,25 @@
         "UPC": "842126120213",
         "MPN": "CINSABXA-X601"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 629.99,
+          "title": "Insta360 X6 360° 8K Camera - Standard Bundle, Midnight Black",
+          "url": "https://www.bhphotovideo.com/c/product/1984790-REG/insta360_cinsabxa_x601_x6_360_deg_8k_camera.html",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "842126120213",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $629.99 live - draft price $699.99 corrected to live price per the live-price rule; Add to Cart clickable; In Stock; B&H direct; UPC 842126120213 / MPN CINSABXA-X601; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "gopro-hero13-black-black",
@@ -40700,11 +40972,25 @@
         "UPC": "842126106989",
         "MPN": "CINSAATA_GO3S13"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 299.99,
+          "title": "Insta360 GO 3S Standard Edition - Midnight Black, 128GB",
+          "url": "https://www.bhphotovideo.com/c/product/1832561-REG/insta360_cinsaata_go3s13_go_3s_standard_editionmidnight.html",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "842126106989",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $299.99, was $379.99; Add to Cart clickable; In Stock; B&H direct; UPC 842126106989 / MPN CINSAATA_GO3S13; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "asus-rog-delta-ii-white",
@@ -40759,11 +41045,25 @@
         "UPC": "197105532090",
         "MPN": "BT8(W-3-PK)"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 699.99,
+          "title": "ASUS ZenWiFi BT8 BE14000 Tri-Band WiFi 7 Mesh System (3-Pack) - White",
+          "url": "",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "197105532090",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $699.99, was $849.99; Add to Cart clickable; In Stock; B&H direct; UPC 197105532090 / MPN BT8(W-3-PK); product URL not recovered - B&H 3-pack page not surfaced in search index after 4 searches (only the 1-pack and 2-pack pages index), url left blank (merger-tolerated), to backfill on a later re-probe; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "asus-zenwifi-bt10-1-pack-white",
@@ -40776,11 +41076,25 @@
         "UPC": "197105429833",
         "MPN": "BT10(W-1-PK)"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "B&H Photo",
+          "price": 346.0,
+          "title": "ASUS ZenWiFi BT10 BE18000 Tri-Band WiFi 7 Mesh System (1-Pack) - White",
+          "url": "https://www.bhphotovideo.com/c/product/1854648-REG/asus_zenwifi_bt10_1pk_zenwifi_bt10_tri_band_wifi.html/overview",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "197105429833",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "bhphotovideo.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $346.00; Add to Cart clickable; In Stock; B&H direct; UPC 197105429833 / MPN BT10(W-1-PK); added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     },
     {
       "key": "asus-tuf-gaming-m3-gen-ii-black",
@@ -40821,11 +41135,25 @@
         "UPC": "196388601059",
         "MPN": "EP2-42276"
       },
-      "offers": [],
+      "offers": [
+        {
+          "merchant": "Walmart",
+          "price": 49.0,
+          "title": "Microsoft Xbox Wireless Controller (Forza Horizon 6 Limited Edition)",
+          "url": "",
+          "collected_at": "2026-11-22T00:56:53Z",
+          "identifier": "196388601059",
+          "identifier_kind": "UPC",
+          "source_tier": 4,
+          "source": "walmart.com product page (live browser verified 2026-11-21 16:37-16:49 PT; $49.00, was $84.00; Add to Cart clickable; Sold and shipped by Walmart.com; in stock; UPC 196388601059 / MPN EP2-42276; product URL not recovered - Walmart page not surfaced in search index and the Slickdeals outbound link hits a bot check, url left blank (merger-tolerated), to backfill on a later re-probe; added on user approval 2026-11-21)",
+          "in_stock": true,
+          "suspected": false
+        }
+      ],
       "source_file": null,
       "source_collected_at": null,
-      "identified_source_file": null,
-      "identified_collected_at": null
+      "identified_source_file": "eval_snapshots_identified_hand_2026-11-07.json",
+      "identified_collected_at": "2026-11-07T11:32:16.629832+00:00"
     }
   ]
 }
