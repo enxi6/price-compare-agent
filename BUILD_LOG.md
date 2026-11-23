@@ -8956,3 +8956,80 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
   changes, no DECISIONS.md changes, no models added, no Amazon
   touch, no spending, no registrations, no purchases.
+
+## 150 — 2026-11-23: Daily refresh — 125 moves, 11 page-confirmed cuts, ranking unchanged (194)
+
+- Meta sweep: 600/600 calls OK, 0 failed (11,985 raw listings).
+  Two interruptions, both recovered by resume-from-raw-files: the
+  Sonos Era 100 CLI call hit the 180 s subprocess timeout and the
+  uncaught TimeoutExpired crashed sweep.py at 504/600 (0-byte raw
+  file removed); a runtime restart then killed the resumed run at
+  576/600 (1 invalid partial raw file removed). Final pass: 24 new
+  + 576 already present. sweep.py still has no TimeoutExpired
+  handling — a slow CLI call can crash a run the same way again.
+  Identified collection: 82 offers, 71 models, 3 skips (same as
+  yesterday: Silarius Buds3 FE bundle title, Heart Rate Monitors
+  USA 404, Datavision 404). Snapshot: 2,510 offers, 511 models
+  with quotes (prev 2,547 / 511). Corrected diff: 125 moves, 256
+  new quotes, 282 disappeared. Identified: 4 moves, 0 new, 0
+  disappeared. Site rebuilt (603 pages): 2,702 offers, 211
+  matched, 194 ranked, 535 models with offers. Tests 57 pass.
+  Eval CLI still reports identifier matches 0 (same quirk as
+  2026-11-22; real matching is in build_site_snapshot).
+- Page-confirmed (11 valid moves): OMEN 32X HP $839.99 -> $362.99
+  (list, Save $477, In Stock), OMEN 27qs G2 HP $499.99 -> $236.99
+  (list, Save $263, In Stock), Mac Studio M5 Max B&H $2,499 ->
+  $2,299 (Holiday Savings $200, In Stock), Mac mini M6 B&H $779 ->
+  $949 (list $1,099, Holiday Savings $150, In Stock), HyperX
+  Alloy Rise HP $199.99 -> $99.99 (Save $100, In Stock), Samsung
+  Smart Monitor M70F 43" B&H $499.99 -> $399.99 (Black Friday
+  Savings $100, In Stock), Corsair K65 Pro Mini Best Buy $149.99
+  -> $79.99 (Save $70, Add to Cart). Identified-stream matched
+  moves: Alloy Rise 75 HyperX $99.99 -> $84.99 (live list
+  $169.99, not the feed's $99.99 "was"), QC Ultra 2 Beach Camera
+  $399 -> $388 (regular $449, not the feed's $399 "was"), INZONE
+  H5 Datavision $128 -> $118 and Focus Camera $128 -> $118 (list
+  $178). Unverified: Oura Ring 5 Target $299 and Echo Show 8
+  Target $99.99 (Target "Quick verification" bot check, no
+  workaround attempted).
+- Falsified / excluded: ULT Field 7 BuyDig $996 is a "(Pair)"
+  2-pack bundle (page Package Contents: "2x Sony ULT Field 7"),
+  not the single unit; ZenWiFi BT8 ASUS $170 is the price step
+  from the 1-pack ($279.99) to the 2-pack ($449.99), not a pack
+  price — live 2-pack $449.99, Add to Cart disabled; ULT Tower
+  Max Macy's $1,499.99 — page says "This item is unavailable"
+  with no price (the $998 row was already falsified as OOS on
+  2026-11-22).
+- Builder: +3 KNOWN_BAD (ULT Field 7 BuyDig $996 pair; BT8
+  2-pack ASUS $170; ULT Tower Max Macy's $1,499.99), 0 CARRIED.
+- Rotation: Apple patrol — MacBook Pro 14 M6 from $1,999,
+  AirPods Pro 3 $249.00, Mac mini M6 from $899, Mac Studio M5
+  Max from $2,499, all listed at apple.com (configurator
+  available, no out-of-stock notice). iPhone 17 Pro Max 256GB
+  Cosmic Orange and Apple Watch Ultra 3 are NO LONGER LISTED at
+  apple.com — the iPhone 17 Pro URL redirects to Shop iPhone
+  (iPhone 18 Pro / 18 Pro Max from $1,199; iPhone 17 from $899)
+  and the Ultra URL now shows Watch Ultra 4 from $799. List-only
+  finding; no catalog change made. MX Master 4 retailer hunt
+  stays PAUSED (user-nodded 2026-11-18). M6 UPC 195951080291
+  already three-way confirmed (2026-11-07); catalog entry still
+  pending user confirmation. DualSense White: no new evidence.
+- Watch items: Keychron K2 Max still has no rows in the Meta
+  snapshot; the $78.74 vs $86.24 disagreement lives only in the
+  site union from older identified files. ULT Field 7 Crutchfield
+  $348 + BuyDig $498 standing (BuyDig $996 pair now excluded).
+  PlayStation Portal has no rows (ShopMyExchange $74.95 login-
+  gated row gone). Bose Lifestyle Ultra Bose $899 + $1,099 rows
+  standing (config unresolved). Switch 2 carrying case no rows
+  (sold out). MacBook Neo zero offers. ZenWiFi BT8: live ASUS
+  page lists 1-pack $279.99 (Out of stock), 2-pack $449.99,
+  3-pack $699.99 — the feed's ASUS $329.99 row (SKU page
+  90ig0930-ma1b0t) disagrees with the live 2-pack $449.99 and
+  needs a SKU-page check. Silarius Buds3 FE $195.99 stale row
+  persists in the site union (identified stream has no expiry).
+  NFM Studio Display feed now $1,679 (was $1,839.99); Apple /
+  MelroseMac $1,599; the two-SKU confusion ($1,484.01 live for
+  69943215 vs feed rows) stands.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
+  changes, no DECISIONS.md changes, no models added, no Amazon
+  touch, no spending, no registrations, no purchases.

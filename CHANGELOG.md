@@ -11,6 +11,28 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-23: 125 price moves (after KNOWN_BAD
+  rebuild), 256 new quotes, 282 disappeared; page-confirmed cuts
+  OMEN 32X $839.99 → $362.99 and OMEN 27qs G2 $499.99 → $236.99
+  (both HP direct, in stock), Mac Studio M5 Max $2,499 → $2,299
+  and Mac mini M6 $779 → $949 (both B&H, in stock), HyperX Alloy
+  Rise $199.99 → $99.99 (HP), Samsung Smart Monitor M70F 43"
+  $499.99 → $399.99 (B&H), Corsair K65 Pro Mini $149.99 → $79.99
+  (Best Buy). Identified-stream moves confirmed: Alloy Rise 75
+  $99.99 → $84.99 (HyperX), QC Ultra 2 $399 → $388 (Beach
+  Camera), INZONE H5 $128 → $118 (Datavision and Focus Camera).
+  Feed rows proven wrong: ULT Field 7 BuyDig $996 (pair bundle,
+  not single), ZenWiFi BT8 ASUS $170 (1-pack→2-pack price step,
+  not a pack price; live 2-pack $449.99), ULT Tower Max Macy's
+  $1,499.99 (page "This item is unavailable"). Target's Oura Ring
+  5 $299 and Echo Show 8 $99.99 moves unverified (Target bot
+  check). Ranking unchanged at 194, matched 211. +3 KNOWN_BAD.
+  Apple patrol: MacBook Pro 14 M6 from $1,999, AirPods Pro 3
+  $249, Mac mini M6 from $899, Mac Studio from $2,499 all listed
+  at apple.com; iPhone 17 Pro Max and Watch Ultra 3 no longer
+  listed (superseded by iPhone 18 Pro / Watch Ultra 4). See
+  BUILD_LOG 150.
+
 - Catalog hygiene: the 47 EvalProduct entries that relied on the
   dataclass default now carry an explicit status="pending" (47
   insertions, 0 deletions). No count changed — catalogue 600,
