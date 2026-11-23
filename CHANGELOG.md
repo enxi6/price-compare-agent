@@ -11,6 +11,11 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Catalog hygiene: the 47 EvalProduct entries that relied on the
+  dataclass default now carry an explicit status="pending" (47
+  insertions, 0 deletions). No count changed — catalogue 600,
+  verified 257, ranked 194, matched 211. See BUILD_LOG 149.
+
 - Batch 8 URL backfill: 4 of the 5 blank merchant URLs left over from
   the hand-row writes now recovered on live merchant pages and written
   in (SoundSticks 5, Neo 2 drone-only, BT8 3-pack on B&H; Legion Pro 7

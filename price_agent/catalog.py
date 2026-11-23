@@ -244,6 +244,7 @@ EVAL_SET: list[EvalProduct] = [
     EvalProduct(key="sony-dualsense-white", brand="Sony",
                 model="DualSense Wireless Controller", variant="White",
                 category="controllers",
+                status="pending",
                 notes="UPC conflict unresolved: Amazon US 711719574293 vs "
                 "NZ/AU PBTech 711719575856 vs other 711719541080; needs a "
                 "second check against a US manufacturer/retailer page; "
@@ -487,6 +488,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="apple-watch-series-12-42mm-gps-black",
+        status="pending",
         brand="Apple",
         model="Watch Series 12 (GPS, 42mm)",
         variant="GPS, 42mm, Black Aluminum, Black Sport Band S/M (MJEA4LS/A)",
@@ -570,6 +572,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="apple-watch-ultra-4-49mm-gps-cellular-natural",
+        status="pending",
         brand="Apple",
         model="Watch Ultra 4 (GPS + Cellular, 49mm)",
         variant="GPS + Cellular, 49mm, Natural Titanium, Sand Trail Loop M/L (MJAQ4LS/A)",
@@ -1089,6 +1092,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="logitech-g-pro-x-superlight-2-dex-black",
+        status="pending",
         brand="Logitech",
         model="G Pro X Superlight 2 DEX",
         variant="Black (910-007328)",
@@ -1133,6 +1137,7 @@ EVAL_SET: list[EvalProduct] = [
     # --- Expansion batch 7 (2026-11-06, DECISIONS 029) ---
     EvalProduct(
         key="apple-macbook-neo-13-256gb-blush",
+        status="pending",
         brand="Apple",
         model="MacBook Neo 13-inch (A18 Pro, 2026)",
         variant="A18 Pro, 8GB/256GB, Blush (MHFH4LL/A)",
@@ -1314,6 +1319,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="sony-wh1000xm4c-black",
+        status="pending",
         brand="Sony",
         model="WH-1000XM4C (M4 2nd Gen)",
         variant="Black (WH1000XM4C/B)",
@@ -1343,6 +1349,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="sony-pulse-elite-midnight-black",
+        status="pending",
         brand="Sony",
         model="PULSE Elite Wireless Headset",
         variant="Midnight Black (retail MPN 1000044173)",
@@ -1514,6 +1521,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="sony-pulse-explore-midnight-black",
+        status="pending",
         brand="Sony",
         model="PULSE Explore Wireless Earbuds",
         variant="Midnight Black (retail MPN 1000044170, CFI-ZWE1)",
@@ -1545,6 +1553,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="logitech-wave-keys-graphite",
+        status="pending",
         brand="Logitech",
         model="Wave Keys",
         variant="Graphite (920-011898)",
@@ -1581,6 +1590,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="bose-sport-open-earbuds-black",
+        status="pending",
         brand="Bose",
         model="Sport Open Earbuds (2026)",
         variant="Black (901149-0010)",
@@ -1696,6 +1706,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="sony-access-controller-white",
+        status="pending",
         brand="Sony",
         model="Access Controller",
         variant="White (retail MPN 1000037579, CFI-ZAC1)",
@@ -1727,6 +1738,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="logitech-pop-keys-cosmos",
+        status="pending",
         brand="Logitech",
         model="POP Keys",
         variant="Cosmos (920-011233)",
@@ -1762,6 +1774,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="xbox-elite-series-2-core-white",
+        status="pending",
         brand="Microsoft",
         model="Xbox Elite Wireless Controller Series 2 – Core",
         variant="White (4IK-00001)",
@@ -1919,6 +1932,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="xbox-adaptive-controller",
+        status="pending",
         brand="Microsoft",
         model="Xbox Adaptive Controller",
         variant="White (JMU-00003)",
@@ -2021,6 +2035,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="apple-magic-keyboard-touch-id-numeric-keypad-white",
+        status="pending",
         brand="Apple",
         model="Magic Keyboard with Touch ID and Numeric Keypad (USB-C)",
         variant="US English, White Keys (MJM64LL/A)",
@@ -2103,6 +2118,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="logitech-pro-x-tkl-lightspeed-tactile-black",
+        status="pending",
         brand="Logitech",
         model="PRO X TKL LIGHTSPEED",
         variant="GX Brown Tactile, Black (920-012127)",
@@ -2129,6 +2145,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="keychron-q1-knob-navy-blue-red",
+        status="pending",
         brand="Keychron",
         model="Q1 (Version 2)",
         variant="Fully Assembled Knob, Navy Blue - B, Gateron G Pro Red (Q1-O1Z)",
@@ -2156,6 +2173,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="apple-macbook-pro-14-proled-xdr",
+        status="pending",
         brand="Apple",
         model="MacBook Pro 14-inch with PROLED XDR Display",
         variant="M5 Pro 15-core CPU/16-core GPU, 24GB/1TB, Space Black, Standard display (MJ2K4LL/A)",
@@ -2253,6 +2271,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="logitech-pro-x2-superstrike-lunar-eclipse",
+        status="pending",
         brand="Logitech",
         model="PRO X2 SUPERSTRIKE LIGHTSPEED",
         variant="Lunar Eclipse (910-007700)",
@@ -2282,6 +2301,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="keychron-b40-deep-black",
+        status="pending",
         brand="Keychron",
         model="B40",
         variant="75% Alice, Deep Black (B40-K9)",
@@ -2304,6 +2324,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="sony-mdr-7506",
+        status="pending",
         brand="Sony",
         model="MDR-7506",
         variant="Black, standard edition (MDR7506)",
@@ -2312,6 +2333,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="sony-pulse-headset-white",
+        status="pending",
         brand="Sony",
         model="PlayStation Pulse Wireless Headset",
         variant="White (launch colorway; Midnight Black is the other launch colorway)",
@@ -2320,6 +2342,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="sony-linkbuds-clip-black",
+        status="pending",
         brand="Sony",
         model="LinkBuds Clip",
         variant="Black (WF-LC900/B)",
@@ -2328,6 +2351,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="nintendo-n64-controller",
+        status="pending",
         brand="Nintendo",
         model="Nintendo 64 Controller",
         variant="Gray, standard edition (HAC-043; Nintendo SKU 128577)",
@@ -2336,6 +2360,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="apple-studio-display-xdr-standard-tilt-height",
+        status="pending",
         brand="Apple",
         model="Studio Display XDR",
         variant="Standard glass, Tilt- and height-adjustable stand (MFEL4LL/A)",
@@ -2344,6 +2369,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="sony-mdr-m1",
+        status="pending",
         brand="Sony",
         model="MDR-M1",
         variant="Black, standard edition (MDRM1)",
@@ -2352,6 +2378,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="sony-mdr-mv1",
+        status="pending",
         brand="Sony",
         model="MDR-MV1",
         variant="Black, standard edition (MDRMV1)",
@@ -2360,6 +2387,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="keychron-b39-deep-black",
+        status="pending",
         brand="Keychron",
         model="B39",
         variant="96% Alice, Deep Black (B39-K9)",
@@ -2368,6 +2396,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="anker-maggo-2-pro-phantom-gray",
+        status="pending",
         brand="Anker",
         model="MagGo 2 Pro Magnetic Power Bank (10K, Qi2 25W, Active Cooling)",
         variant="Phantom Gray (A110R)",
@@ -2376,6 +2405,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="anker-prime-power-bank-26k-300w-black",
+        status="pending",
         brand="Anker",
         model="Prime Power Bank (26K, 300W)",
         variant="Black (A110A)",
@@ -2384,6 +2414,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="anker-desktop-usb-c-hub-10-in-1",
+        status="pending",
         brand="Anker",
         model="Desktop USB-C Hub",
         variant="10-in-1, Dual 4K (A210C)",
@@ -2392,6 +2423,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="anker-prime-wireless-car-charger",
+        status="pending",
         brand="Anker",
         model="Prime Wireless Car Charger (MagGo, AirCool, Pad)",
         variant="MagGo, AirCool, Pad (A2933)",
@@ -2400,6 +2432,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="anker-nano-charger-70w-3-ports-black-stone",
+        status="pending",
         brand="Anker",
         model="Nano Charger (70W, 3 Ports)",
         variant="Black Stone (B121A)",
@@ -2457,6 +2490,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="jbl-tour-one-m3-smart-tx-black",
+        status="pending",
         brand="JBL",
         model="Tour One M3 Smart Tx",
         variant="Smart Tx, Black (JBLTOM3AVIBLKAM)",
@@ -2502,6 +2536,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="jbl-tour-pro-3-black",
+        status="pending",
         brand="JBL",
         model="Tour Pro 3",
         variant="Black (JBLTOURPRO3BLKAM)",
@@ -2541,6 +2576,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="jbl-bar-1300xmk2-black",
+        status="pending",
         brand="JBL",
         model="Bar 1300XMK2",
         variant="Black (JBLBAR1300XM2BLKAM)",
@@ -2583,6 +2619,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="jbl-partybox-stage-320-black",
+        status="pending",
         brand="JBL",
         model="PartyBox Stage 320",
         variant="Black (JBLPBSTAGE320AM)",
@@ -2624,6 +2661,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="razer-viper-v4-pro-black",
+        status="pending",
         brand="Razer",
         model="Viper V4 Pro",
         variant="Black (RZ01-05630100-R3U1)",
@@ -2664,6 +2702,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="razer-blackwidow-v4-pro-green-black",
+        status="pending",
         brand="Razer",
         model="BlackWidow V4 Pro",
         variant="Green switches, Black (RZ03-04680200-R3U1)",
@@ -2699,6 +2738,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="razer-blackshark-v3-pro-black",
+        status="pending",
         brand="Razer",
         model="BlackShark V3 Pro",
         variant="Black, PC version (RZ04-05400100-R3U1)",
@@ -2736,6 +2776,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="razer-wolverine-v3-pro-black",
+        status="pending",
         brand="Razer",
         model="Wolverine V3 Pro",
         variant="Black (RZ06-05200100-R3U1)",
@@ -2772,6 +2813,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="razer-kraken-v4-pro-black",
+        status="pending",
         brand="Razer",
         model="Kraken V4 Pro",
         variant="Black (RZ04-05160100-R3U1)",
@@ -2803,6 +2845,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="corsair-m65-rgb-ultra-black",
+        status="pending",
         brand="Corsair",
         model="M65 RGB Ultra",
         variant="Black, wired (CH-9309411-NA2)",
@@ -2837,6 +2880,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="corsair-k65-plus-wireless-midnight-grey",
+        status="pending",
         brand="Corsair",
         model="K65 Plus Wireless",
         variant="Midnight Grey, MLX Red linear (CH-91D401L-NA)",
@@ -2875,6 +2919,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="corsair-virtuoso-max-wireless-carbon",
+        status="pending",
         brand="Corsair",
         model="Virtuoso Max Wireless",
         variant="Carbon, Black (CA-9011372-WW)",
@@ -2912,6 +2957,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="corsair-frame-4000d-rs-argb-black",
+        status="pending",
         brand="Corsair",
         model="FRAME 4000D RS ARGB",
         variant="Black (CC-9011296-WW)",
@@ -2946,6 +2992,7 @@ EVAL_SET: list[EvalProduct] = [
     ),
     EvalProduct(
         key="corsair-titan-ii-360-rx-rgb-black",
+        status="pending",
         brand="Corsair",
         model="iCUE LINK Titan II 360 RX RGB",
         variant="Black (CW-9061037-WW)",

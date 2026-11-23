@@ -8843,6 +8843,12 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Result (re-pulled from the rebuilt data/site_snapshot.json): 600 models, 257 verified / 343 pending, ranking 192 → 194, matched 209 → 211, total offers 2,422 → 2,424, models with offers 491 → 493. Both rows confirmed matched in the snapshot. Site rebuilt (603 pages). Tests 57 passed.
 - Open items carried forward: G73SH Costco re-probe (Costco search wall); QD7 UPC needs a second source before any row can be written; HERO13 re-probe after Dec 07 restock; backfill the 5 blank product URLs on a later re-probe; the other 27 pending batch-8 models get first feed quotes at the 2026-11-22 10:52 PT daily refresh; PS5 Pro UPC decision still awaiting user nod; Kindle Paperwhite note decision still open; Vivosmart 5 UPC conflict still single-source.
 
+## 149 — 2026-11-22: Catalog hygiene — explicit status="pending" on 47 entries (no count change)
+
+- catalog.py had 47 EvalProduct entries with no status= field (e.g. DualSense White), relying on the dataclass default; the snapshot builder counted them as pending, so 257 verified / 343 pending was already correct. All 47 have empty identifiers — no verified model was miscounted.
+- Fix (user-nodded 2026-11-22): added status="pending" to all 47 lines (47 insertions, 0 deletions, no identifier/price/note changes). DualSense White needed a separate one-line edit (its kwargs share the opening line).
+- Result (re-pulled from the rebuilt data/site_snapshot.json): 600 models, 257 verified / 343 pending, ranking 194, matched 211, total offers 2,737, models with offers 534 — all unchanged vs the 2026-11-22 morning refresh. Site rebuilt (603 pages). Tests 57 passed.
+
 ## 148 — 2026-11-22: Daily refresh — 77 moves, 4 page-confirmed cuts, ranking unchanged (194)
 
 - Meta sweep: 600/600 calls OK, 0 failed (11,978 raw listings).
