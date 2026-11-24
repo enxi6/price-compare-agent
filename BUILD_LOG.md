@@ -9033,3 +9033,95 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
   changes, no DECISIONS.md changes, no models added, no Amazon
   touch, no spending, no registrations, no purchases.
+
+## 151 — 2026-11-24: Daily refresh — 74 moves, 13 page-confirmed cuts, ranking unchanged (194)
+
+- Meta sweep: 600/600 calls OK, 0 failed (11,997 raw listings).
+  Interrupted once by a runtime restart at 478/600 (1 invalid
+  0-byte raw file removed); resumed from raw files, final pass 122
+  new + 478 already present. Five CLI calls hit the 180 s
+  subprocess timeout (Surface Laptop 13 Ocean, Apple 140W, Apple
+  35W, Fenix 8 Solar Sapphire 47mm, Signature Slim K950) — the new
+  TimeoutExpired handler in sweep.py (added this run) logged them
+  as failures instead of crashing, and all five succeeded on
+  retry. Identified collection: 82 offers, 71 models, 3 skips
+  (same as yesterday: Silarius Buds3 FE bundle title, Heart Rate
+  Monitors USA 404, Datavision 404). Snapshot: 2,599 offers, 514
+  models with quotes (prev 2,510 / 511). Corrected diff: 74 moves,
+  417 new quotes, 343 disappeared. Identified: 1 move, 0 new, 0
+  disappeared. Site rebuilt (603 pages): 2,792 offers, 211
+  matched, 194 ranked, 534 models with offers. Tests 57 pass.
+  Eval CLI still reports identifier matches 0 (same quirk as
+  2026-11-22/23; real matching is in build_site_snapshot: 211
+  matched).
+- Page-confirmed (13 valid moves): ULT Tower MAX Focus Camera
+  $1,498 -> $998 (in stock), Zenbook A14 ASUS $1,599.99 ->
+  $1,199.99 (starting price for the UX3407 family; PS76 not named
+  on the page), Mac mini M6 B&H $949 -> $779 (MHQK4LL/A 16GB/256GB,
+  page was-price $899, not $949), ULT FIELD 7 Focus Camera $498 ->
+  $348 and RC Willey $499.99 -> $348, OMEN 27qs G2 HyperX $236.99
+  -> $167.99 (list $499.99), Beats Solo 4 NFM $199.99 -> $99.95
+  (comp $199.95, Omaha), Wolverine V3 Pro Best Buy $122.99 ->
+  $236.95 (pinned RZ06-05200100-R3U1, not the 8K variant), ULT
+  Tower 5 Focus Camera $448 -> $298, ULT Tower 7 Focus Camera
+  $648 -> $448, ULT Tower 9 Focus Camera $748 -> $648, PULSE
+  Explore Best Buy $159.99 -> $129.99, AW2725Q Cybermoa $1,600 ->
+  $1,200 (list $1,570.14). Identified-stream move: Samsung Buds4
+  Pro Datavision $199 -> $189.99 (merchant JSON re-read: variant
+  42651401519191, SKU SM-R640NZWAXAR, UPC 198957273582, qty 64).
+- Falsified / excluded: NFM ULT Tower 7 $649.99 is the comp value
+  (live $448, carried); Macy's PartyBox 720 $1,099.95 is the
+  was-price and the live $899.95 is marketplace World Wide Stereo;
+  Macy's Xbox Series S $562.99 and $625.99 both wrong vs live
+  $619.99 marketplace Velztorm (same product ID 28848994, two feed
+  prices); Best Buy INZONE H3 $58 is sold & shipped by marketplace
+  Focus Camera; Walmart Technics AZ100 $149.99 is sold & shipped
+  by marketplace Panasonic USA; Uncharted Instinct 3 $399.99 is
+  the 50mm AMOLED Tactical Edition (pinned 45mm AMOLED Black SKU
+  010-02936-00 is $249.99, carried); B&H ThinkPad E16 $1,329
+  matches no B&H config (live $1,319.95 AMD 21ST0004US Special
+  Order, $1,349 Intel 21SSS2LW00 in stock); HyperX Alloy Rise
+  $29.99 is titled "HyperX Badge Packs" (accessory, not the
+  keyboard); Abt Kindle $169.99 is titled "Kindle Colorsoft
+  (2024) 7-Inch 16GB"; ASUS BT8 $279.99/$329.99 are the 1-pack
+  SKU page ma1b0t (live 1-pack $279.99 OOS, 2-pack $449.99 on
+  ma1b2t) — the diff's BT8 $329.99 -> $449.99 is that exclusion,
+  not a rise.
+- Builder: +12 KNOWN_BAD (4 title-proven + 8 page-proven, see
+  build_snapshot.py 2026-11-24 blocks) and +2 CARRIED (NFM ULT
+  Tower 7 $448.00; Uncharted Instinct 3 $249.99). BT8 SKU-page
+  check from 2026-11-23 now resolved: ma1b0t is the 1-pack.
+- Rotation: Sony patrol — all 55 catalog models checked at
+  electronics.sony.com / PlayStation Direct; Black Friday sale
+  live (WH-1000XM5 $198, WH-1000XM6 $348, WF-1000XM6 $248, ULT
+  FIELD 7 $349.99, ULT FIELD 3 $129.99, ULT FIELD 5 $189.99,
+  BRAVIA Bar 9 $1,399.99 sale). PS5 Pro $899, PS5 Slim Digital
+  825GB $599 and PS5 Slim 1TB $649 all Currently Unavailable at
+  PlayStation Direct; PULSE Elite Currently Unavailable;
+  WF-C700N out of stock at Sony direct (Black PDP no Add to
+  Cart); XM6 list prices up (WH $459.99 vs $449.99, WF $329.99
+  vs $299.99). DualSense White $54 sale at PlayStation Direct,
+  in stock — price signal only, no new UPC evidence. MX Master 4
+  retailer hunt stays PAUSED (user-nodded 2026-11-18). M6 UPC
+  195951080291 already three-way confirmed (2026-11-07); catalog
+  entry still pending user confirmation.
+- Watch items: Cybermoa cluster all exactly -25% (AW2524HF
+  $748 -> $561, S3225QS $620 -> $465, S2725QC $580 -> $435,
+  S2725QS $510 -> $382.50, AW2725DM $438 -> $328.50) — sitewide
+  sale pattern, only AW2725Q page-checked. Dell Instinct 3
+  $399.99 (new today, title says pinned 45mm AMOLED Black)
+  vs Uncharted $249.99 for the same variant — $150 spread
+  unresolved, no page check done. ThinkPad E16 B&H $1,199 ->
+  $1,349 is config churn (no pinned MPN; $1,349 is a real
+  in-stock Intel config). Keychron K2 Max still has no rows in
+  the Meta snapshot. ULT Field 7 Crutchfield $348 + BuyDig $498
+  standing. Bose Lifestyle Ultra Bose $899 + $1,099 rows
+  standing (config unresolved). Switch 2 carrying case no rows
+  (sold out). MacBook Neo zero offers. Silarius Buds3 FE $195.99
+  stale row persists in the site union (identified stream has no
+  expiry). NFM Studio Display feed now $1,679 (was $1,839.99);
+  Apple / MelroseMac $1,599; the two-SKU confusion ($1,484.01
+  live for 69943215 vs feed rows) stands.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
+  changes, no DECISIONS.md changes, no models added, no Amazon
+  touch, no spending, no registrations, no purchases.

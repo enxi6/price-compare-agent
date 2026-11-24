@@ -11,6 +11,44 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-24: 74 price moves (after KNOWN_BAD
+  rebuild), 417 new quotes, 343 disappeared; snapshot 2,599
+  offers, 514 models with quotes (prev 2,510 / 511). Page-confirmed
+  cuts: ULT Tower MAX $1,498 → $998 (Focus Camera), Zenbook A14
+  $1,599.99 → $1,199.99 (ASUS), Mac mini M6 $949 → $779 (B&H,
+  MHQK4LL/A), ULT FIELD 7 $498 → $348 (Focus Camera) and $499.99 →
+  $348 (RC Willey), OMEN 27qs G2 $236.99 → $167.99 (HyperX), Beats
+  Solo 4 $199.99 → $99.95 (NFM), Wolverine V3 Pro $122.99 → $236.95
+  (Best Buy, pinned RZ06-05200100-R3U1), ULT Tower 5 $448 → $298,
+  ULT Tower 7 $648 → $448 and ULT Tower 9 $748 → $648 (all Focus
+  Camera), PULSE Explore $159.99 → $129.99 (Best Buy), AW2725Q
+  $1,600 → $1,200 (Cybermoa; other Cybermoa rows also exactly -25%,
+  a sitewide-sale pattern). Identified-stream move: Samsung Buds4
+  Pro $199 → $189.99 (Datavision, merchant JSON verified, UPC
+  198957273582, 64 in stock). Feed rows proven wrong: NFM ULT
+  Tower 7 $649.99 (comp value; live $448, carried), Macy's
+  PartyBox 720 $1,099.95 (was-price; live $899.95 is marketplace
+  World Wide Stereo), Macy's Xbox Series S $562.99 / $625.99 (live
+  $619.99 marketplace Velztorm), Best Buy INZONE H3 $58
+  (marketplace Focus Camera), Walmart Technics AZ100 $149.99
+  (marketplace Panasonic USA), Uncharted Instinct 3 $399.99 (50mm
+  Tactical; pinned 45mm AMOLED Black $249.99, carried), B&H
+  ThinkPad E16 $1,329 (no such config; live $1,349 Intel), HyperX
+  Alloy Rise $29.99 (badge-pack accessory), Abt Kindle $169.99
+  (Colorsoft, not base Kindle), ASUS BT8 $279.99 / $329.99 (1-pack
+  rows; pinned 2-pack $449.99 — the diff's $329.99 → $449.99 is
+  that exclusion, not a rise). Ranking unchanged at 194, matched
+  211. +12 KNOWN_BAD, +2 CARRIED. Sony patrol: all 55 checked;
+  Black Friday sale live at Sony direct (WH-1000XM5 $198,
+  WH-1000XM6 $348, WF-1000XM6 $248, ULT FIELD 7 $349.99); PS5 Pro
+  / PS5 Slim Digital 825GB / PS5 Slim 1TB Currently Unavailable at
+  PlayStation Direct; PULSE Elite unavailable; WF-C700N out of
+  stock at Sony direct; XM6 list prices up ($459.99 / $329.99 vs
+  $449.99 / $299.99). Sweep: a runtime restart interrupted it at
+  478/600; resumed from raw files, 600/600 OK (11,997 raw
+  listings); five CLI calls hit the 180 s timeout and succeeded on
+  retry — the new TimeoutExpired guard kept the run alive.
+
 - Daily refresh 2026-11-23: 125 price moves (after KNOWN_BAD
   rebuild), 256 new quotes, 282 disappeared; page-confirmed cuts
   OMEN 32X $839.99 → $362.99 and OMEN 27qs G2 $499.99 → $236.99
