@@ -9125,3 +9125,109 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
   changes, no DECISIONS.md changes, no models added, no Amazon
   touch, no spending, no registrations, no purchases.
+
+## 152 — 2026-11-25: Daily refresh — 71 moves, 8 page-confirmed cuts, ranking unchanged (194)
+
+- Meta sweep: 600/600 calls OK, 0 failed (11,975 raw listings).
+  Interrupted twice by runtime restarts (first at 69/600, second
+  at 544/600); resumed from raw files each time, final pass 56
+  new + 544 already present. Seventeen CLI calls hit the 180 s
+  subprocess timeout across the passes (ThinkPad E16, ROG Strix
+  XG27UCG, Yoga Slim 7x, ThinkPad T14, Osmo 360, Smart Monitor
+  M70F 32, IdeaPad 5, OpenDots 2, Solo 4, Crusher ANC 2, Headphone
+  1 Pro, Echo Dot Max, SoundSticks 5, Onyx Studio 9, Venu X1,
+  Oura Ring 5, Whoop 5.0) — all succeeded on retry; the
+  TimeoutExpired guard kept the run alive. One raw file came back
+  0 bytes (Echo Time, rc=0 with empty output) — deleted and
+  re-fetched cleanly (42 KB). Identified collection: 82 offers, 71
+  models, 3 skips (same as yesterday: Silarius Buds3 FE bundle
+  title, Heart Rate Monitors USA 404, Datavision 404). Snapshot:
+  2,548 offers, 520 models with quotes (prev 2,599 / 514).
+  Corrected diff: 71 moves, 288 new quotes, 327 disappeared.
+  Identified: 6 moves, 0 new, 0 disappeared. Site rebuilt (603
+  pages): 2,742 offers, 211 matched, 194 ranked, 539 models with
+  offers. Tests 57 pass. Eval CLI still reports identifier
+  matches 0 (same quirk as 2026-11-22/23/24; real matching is in
+  build_site_snapshot: 211 matched).
+- Page-confirmed (8 valid moves): Music Frame P.C. Richard
+  $397.99 -> $297.99 (JSON-LD, InStock), ProArt PA279CRV ASUS $429
+  -> $349 (page price), Access Controller Best Buy $99.99 ->
+  $59.99 (Black Friday Deal, Save $30, comp $89.99, Sold by Best
+  Buy, Add to Cart available), WH-CH720N Focus Camera $178 ->
+  $124.60 (30% OFF, SAVE $53.40), Echo Time NFM $149.99 -> $99.99
+  (JSON-LD InStock), Echo Dot Max NFM $84.99 -> $49.99 (JSON-LD
+  InStock), MDR-MV1 Focus Camera $328 -> $286.20 (31% OFF, SAVE
+  $131.80), K70 Pro TKL Corsair $129.99 -> $79.99 (OG price $79.99
+  InStock; page text also shows a "Sold out" label — stock state
+  ambiguous, price confirmed). Identified-stream moves (all
+  merchant-JSON re-reads, pinned variant_id + UPC): QC Ultra 2
+  Beach Camera $388 -> $369 (UPC 017817859585), SoundLink Flex
+  2nd Gen Beach Camera $159 -> $149 (UPC 017817852470), SoundLink
+  Max Beach Camera $339 -> $319 (UPC 017817848817), Edge 850
+  Incycle $599.99 -> $499.99 (UPC 753759356644; Contender Bicycles
+  also $499.99 same UPC), Tab A11+ Datavision $249.99 -> $209
+  (UPC 198957270390), Tab S10 FE Datavision $429 -> $399 (UPC
+  887276992266).
+- Falsified / excluded: Bose Micro 2nd Gen $19.99 is the
+  Replacement Strap accessory, not the speaker; Kaystore Tab A11+
+  $335 URL pins attribute_storage-memory=256GB/8Ram (catalog pins
+  128GB); Best Buy Wolverine V3 Pro $122.99 URL is SKU 6689395,
+  the 8K PC variant RZ06-05540100-R3U1 (catalog pins
+  RZ06-05200100-R3U1; the pinned row dropped from the feed today);
+  Pelacase Pixel 10a $75 is the "London Fog Apres Ski" phone
+  CASE, not the phone (builder gap: bare "Case" not in the
+  title-exclude list); Altezzagameshop SN30 Pro $49.95 URL is a
+  Nintendo 64 OEM controller page; Sweetwater PartyBox 720 $999.90
+  is the speaker + wireless mics bundle (speaker $899.95
+  separately, mics $99.95 separately — standalone carried at
+  $899.95, so the diff's $1,799.90 -> $899.95 is that exclusion,
+  not a cut); Macy's ULT Tower 7 $548 is wrong vs live page
+  JSON-LD $448.00 InStock; Nordstrom ULT Tower 7 $448 is wrong vs
+  live page $548.00, sold & shipped by marketplace World Wide
+  Stereo; PGA Approach S70 $699.99 is wrong vs live page JSON-LD
+  $599.99 InStock (Style 010-02746-02, carried); Carolinasports-
+  manoutfitters Descent Mk3 $1,499.99 variant is the 51mm
+  (variant table: 43mm variants sit at $1,099.99); T-Mobile
+  iPhone 17 Pro $1,499.99 is the 1TB tier price, not the pinned
+  256GB ($1,099). Unverified: Walmart Series X $1,199.99 (bot
+  wall on browser.open — stopped, not worked around); Dolby Bar
+  1000 MK2 $899.95 (dolby.com feed URL 404s).
+- Builder: +11 KNOWN_BAD (5 title/URL-proven + 6 page-proven, see
+  build_snapshot.py 2026-11-25 blocks) and +2 CARRIED (Sweetwater
+  PartyBox 720 $899.95; PGA Approach S70 $599.99). Builder gap
+  noted: bare "Case" in a title (phone case for a phone model)
+  is not caught by TITLE_EXCLUDE_WORDS.
+- Rotation: Nintendo patrol — Nintendo-direct rows 13 -> 13, all
+  unchanged (Switch 2 $499.99, OLED Neon/White $399.99, Switch
+  Neon $339.99, Pro Controller $79.99, Switch 2 Pro Controller
+  $89.99, Joy-Con 2 pair $99.99, Alarmo $109.99, N64 controller
+  $54.99, Dock Set $124.99, Charging Grip $39.99, Wheel set
+  $24.99, Joy-Con pair $89.99). Switch 2 $499.99 confirmed at
+  nintendo.com; Mario Kart World bundle $499.99 through Dec 5
+  (Black Friday) and Zelda 40th Anniversary Edition $519.99 are
+  separate editions — list-only, nothing added. No new Nintendo
+  model outside the catalog. MX Master 4 retailer hunt stays
+  PAUSED (user-nodded 2026-11-18). M6 UPC 195951080291 already
+  three-way confirmed (2026-11-07); catalog entry still pending
+  user confirmation. DualSense White: no new evidence.
+- Watch items: ThinkPad E16 Best Buy $1,299.99 is an "Upgraded"
+  (third-party upgrader) config, not the pinned one — config
+  churn, no pinned MPN; Legion Pro 7 Lenovo $3,230.13 is a
+  configurator price ("Up to RTX 5080"), not the pinned
+  83RU0006US $2,899.99; HSTN Lensabl $399 / Oakleysi $479 swapped
+  again vs yesterday ($479 / $399) — feed churn, list is $399;
+  HW-Q990H Crutchfield $1,497.99 is back to list (promo ended);
+  Edge 840 Kohl's $449.99 is back to list; PULSE Explore Sam's
+  Club $199 is back to list; Shokz OpenRun $129.95 is back to
+  list (promo ended); Quest 3S 256GB Prosimhq $381.99 is an
+  unverified Shopify storefront — suspected-only; Cybermoa -25%
+  cluster ended (no Cybermoa moves today); Silarius Buds3 FE
+  $195.99 stale row persists in the site union (identified
+  stream has no expiry); NFM Studio Display two-SKU confusion
+  ($1,484.01 live for 69943215 vs feed rows) stands; Bose
+  Lifestyle Ultra $899 / $1,099 rows standing (config unresolved);
+  Switch 2 carrying case no rows (sold out); MacBook Neo zero
+  offers; Keychron K2 Max still no rows in the Meta snapshot.
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
+  changes, no DECISIONS.md changes, no models added, no Amazon
+  touch, no spending, no registrations, no purchases.

@@ -11,6 +11,45 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-25: 71 price moves (after KNOWN_BAD
+  rebuild), 288 new quotes, 327 disappeared; snapshot 2,548
+  offers, 520 models with quotes (prev 2,599 / 514). Page-confirmed
+  cuts: Music Frame $397.99 → $297.99 (P.C. Richard), ProArt
+  PA279CRV $429 → $349 (ASUS), Access Controller $99.99 → $59.99
+  (Best Buy, Black Friday Deal, sold by Best Buy), WH-CH720N $178 →
+  $124.60 (Focus Camera, 30% off), Echo Time $149.99 → $99.99
+  (NFM), Echo Dot Max $84.99 → $49.99 (NFM), MDR-MV1 $328 →
+  $286.20 (Focus Camera, 31% off), K70 Pro TKL $129.99 → $79.99
+  (Corsair; page also shows a "Sold out" label against InStock
+  metadata — stock state ambiguous). Identified-stream moves
+  (all merchant-JSON re-verified): QC Ultra 2 $388 → $369, SoundLink
+  Flex 2 $159 → $149, SoundLink Max $339 → $319 (all Beach Camera),
+  Edge 850 $599.99 → $499.99 (Incycle; Contender Bicycles also
+  $499.99), Tab A11+ $249.99 → $209 and Tab S10 FE $429 → $399
+  (both Datavision). Feed rows proven wrong: Bose Micro 2nd Gen
+  $19.99 (replacement-strap accessory), Kaystore Tab A11+ $335
+  (256GB variant in URL), Best Buy Wolverine V3 Pro $122.99 (8K PC
+  variant SKU 6689395, not pinned RZ06-05200100-R3U1), Pelacase
+  Pixel 10a $75 (a phone case), Altezzagameshop SN30 Pro $49.95
+  (N64 controller page), Sweetwater PartyBox 720 $999.90 (speaker +
+  mics bundle; standalone $899.95, carried), Macy's ULT Tower 7
+  $548 (live $448), Nordstrom ULT Tower 7 $448 (live $548, sold by
+  marketplace World Wide Stereo), PGA Approach S70 $699.99 (live
+  $599.99, carried), Carolinasportsmanoutfitters Descent Mk3
+  $1,499.99 (51mm variant; 43mm Steel is $1,099.99), T-Mobile
+  iPhone 17 Pro $1,499.99 (1TB tier price, not 256GB). Unverified:
+  Walmart Series X $1,199.99 (bot wall), Dolby Bar 1000 MK2
+  $899.95 (dolby.com page 404s). Ranking unchanged at 194, matched
+  211. +11 KNOWN_BAD, +2 CARRIED. Nintendo patrol: Nintendo-direct
+  rows 13 → 13, all unchanged (Switch 2 $499.99, OLED $399.99,
+  Lite $229.99 at retail, Pro Controller $79.99); Mario Kart World
+  bundle $499.99 through Dec 5, Zelda 40th Anniversary Edition
+  $519.99 is a separate edition — list-only, nothing added. Sweep:
+  two runtime restarts interrupted it (69/600, then 544/600);
+  resumed from raw files, 600/600 OK (11,975 raw listings); 17 CLI
+  calls hit the 180 s timeout and succeeded on retry; one 0-byte
+  raw file (Echo Time) re-fetched cleanly.
+
 - Daily refresh 2026-11-24: 74 price moves (after KNOWN_BAD
   rebuild), 417 new quotes, 343 disappeared; snapshot 2,599
   offers, 514 models with quotes (prev 2,510 / 511). Page-confirmed
