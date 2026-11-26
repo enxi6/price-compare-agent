@@ -11,6 +11,42 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
+- Daily refresh 2026-11-26: 58 price moves (after KNOWN_BAD
+  rebuild), 361 new quotes, 341 disappeared; snapshot 2,569
+  offers, 520 models with quotes (prev 2,548 / 520). Page-confirmed
+  cuts: Moto G Stylus $472.60 → $199.99 (Best Buy, Thanksgiving
+  24-hour flash sale, Save $200, comp $399.99), Pixel 10 Pro
+  $749.99 → $699.99 (Best Buy, Verizon activation, Save $300, full
+  price $999.99), OpenRun $129.95 → $77.95 (Shokz, Grey Standard,
+  -40%), Pixel Buds 2a $129 → $99 (B&H, Black Friday $30 off),
+  SoundSticks 5 $349.95 → $279.95 (Sweetwater), Quest 3S 128GB
+  $349.99 → $299.99 (RC Willey), Edge 840 $449.99 → $399.99
+  (Kohl's, promo back on), Technics AZ100 $299.95 → $150
+  (ListenUp, Black and Silver both $150), Music Frame $399.99 →
+  $299.99 (BrandsMart, member deal), MX Mechanical $149.99 →
+  $142.99 (B&H, Black Friday $37 off), Pro X3 $219.99 → $209.99
+  (Abt, manufacturer rebate ends 11/30), PULSE Elite $149.99 →
+  $109.99 (RC Willey), Huntsman V3 Pro $189.99 → $184.99 (Best Buy,
+  Black Friday, Save $65). Identified-stream moves (merchant-JSON
+  re-verified): Tab S10 FE $399 → $429 and Tab A11+ $209 →
+  $234.99 (both Datavision, yesterday's cuts reversing). Feed rows
+  proven wrong: Best Buy Xbox Wireless Headset $174.37 / $202.65
+  (SteelSeries Arctis Nova 5X / 7X Gen 2 pages, not the Xbox
+  headset), Macy's S90H 65 $1,849.99 (live page $0.00 OutOfStock;
+  listing bundles the HW-LS60D speaker), Sonos Arc Ultra $1,207
+  (Arc Ultra + Era 100 pair surround set; standalone is $849),
+  B&H Studio Display $1,799 (MFEW4LL/A tilt-and-height, not pinned
+  MFEX4LL/A; tilt-only option is $1,499), ASUS ROG Azoth $178.99
+  (Moonlight White 90MP031B-BKAA11, not black), Scheels tactix 8
+  $1,149.99 (51mm, not pinned 47mm), B&H ZenWiFi BT8 $599.99
+  (3-pack, not 2-pack), Corsair Scimitar Elite $69.99 (White, not
+  Gun Metal), T-Mobile iPad Pro M5 13 $1,699.99 (business-channel
+  page, not consumer price). Unverified: all Walmart moves (bot
+  wall on Series X $948 — stopped, not worked around), Bose Smart
+  Ultra $629 (no price in page text), MDR-MV1 $298.62 (66-day-old
+  crawl shows $418), Forerunner 965 $449.99 (13-day-old crawl shows
+  $599.99), BJ's Crusher ANC 2 $99.99 (no price in 2-day-old crawl),
+  DualSense Edge $169.99 (no price in page text).
 - Daily refresh 2026-11-25: 71 price moves (after KNOWN_BAD
   rebuild), 288 new quotes, 327 disappeared; snapshot 2,548
   offers, 520 models with quotes (prev 2,599 / 514). Page-confirmed

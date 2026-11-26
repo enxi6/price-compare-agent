@@ -9231,3 +9231,111 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
   changes, no DECISIONS.md changes, no models added, no Amazon
   touch, no spending, no registrations, no purchases.
+
+## 153 — 2026-11-26: Daily refresh — 58 moves, 13 page-confirmed cuts, ranking unchanged (194)
+
+- Meta sweep: 600/600 calls OK, 0 failed (11,897 raw listings).
+  Pass 1 hit 27 CLI 180 s timeouts, then stalled on a run of
+  consecutive timeouts (13 in ~30 min, zero successes) — killed
+  the sweep, probed one CLI call (Samsung U7900H 75, ~3 s, clean)
+  to confirm the service had recovered, then resumed: the resume
+  pass retried all 26 remaining failures plus 77 unattempted
+  models, and was itself cut short by a runtime restart one model
+  short (Forza Horizon 6 controller); a final pass fetched it.
+  Two raw files came back 0 bytes (Samsung S84H 65, 8BitDo SN30
+  Pro) — deleted and re-fetched cleanly. Identified collection:
+  82 offers, 71 models, 3 skips (same as yesterday: Silarius
+  Buds3 FE bundle title, Heart Rate Monitors USA 404, Datavision
+  404). Snapshot: 2,569 offers, 520 models with quotes (prev
+  2,548 / 520). Corrected diff: 58 moves, 361 new quotes, 341
+  disappeared. Identified: 2 moves, 0 new, 0 disappeared. Site
+  rebuilt (603 pages): 2,764 offers, 211 matched, 194 ranked, 536
+  models with offers. Tests 57 pass. Eval CLI still reports
+  identifier matches 0 (same quirk as 2026-11-22/23/24/25; real
+  matching is in build_site_snapshot: 211 matched).
+- Page-confirmed (13 valid moves): Moto G Stylus Best Buy $472.60
+  -> $199.99 (SKU 6617940, Model PB6V0014US, Thanksgiving 24-hour
+  flash sale, Save $200, comp $399.99, JSON-LD InStock), Pixel 10
+  Pro Best Buy $749.99 -> $699.99 (Verizon activation, Save $300,
+  full price $999.99, Sold by Best Buy, JSON-LD InStock), OpenRun
+  Shokz $129.95 -> $77.95 (Grey Standard variant 41378978398408,
+  -40%; other colors $89.95), Pixel Buds 2a B&H $129 -> $99
+  (Black Friday $30 off, UPC 840353930506, JSON-LD InStock),
+  SoundSticks 5 Sweetwater $349.95 -> $279.95 (OG metadata,
+  instock), Quest 3S 128GB RC Willey $349.99 -> $299.99 (JSON-LD
+  InStock), Edge 840 Kohl's $449.99 -> $399.99 (JSON-LD InStock;
+  promo back on after ending yesterday), Technics AZ100 ListenUp
+  $299.95 -> $150 (Black and Silver both $150, in stock), Music
+  Frame BrandsMart $399.99 -> $299.99 (member deal, JSON-LD
+  InStock), MX Mechanical B&H $149.99 -> $142.99 (Black Friday $37
+  off, Tactile Quiet, UPC 097855174659, JSON-LD InStock), Pro X3
+  Abt $219.99 -> $209.99 (manufacturer rebate ends 11/30, JSON-LD
+  InStock), PULSE Elite RC Willey $149.99 -> $109.99 (JSON-LD
+  InStock), Huntsman V3 Pro Best Buy $189.99 -> $184.99 (Model
+  RZ03-05530200-R3U1, Black Friday, Save $65, Sold by Best Buy,
+  JSON-LD InStock). Identified-stream moves (all merchant-JSON
+  re-reads, pinned variant_id + UPC): Tab S10 FE Datavision $399
+  -> $429 (UPC 887276992266; yesterday's cut reversed, back to
+  list), Tab A11+ Datavision $209 -> $234.99 (UPC 198957270390;
+  partial reversal of yesterday's $249.99 -> $209 cut).
+- Falsified / excluded: Best Buy Xbox Wireless Headset $174.37
+  URL is a SteelSeries Arctis Nova 5X page and $202.65 is a
+  SteelSeries Arctis Nova 7X Gen 2 page, not the Xbox headset;
+  Macy's S90H 65 $1,849.99 live page JSON-LD $0.00 OutOfStock and
+  the listing bundles the HW-LS60D picture-frame speaker, not the
+  standalone TV; Sonos Arc Ultra $1,207 is the Arc Ultra + Era 100
+  pair surround set (standalone Arc Ultra $849 on the same page);
+  B&H Studio Display $1,799 is MFEW4LL/A tilt-and-height
+  (UPC 195950528794), not the pinned MFEX4LL/A tilt-only
+  (UPC 195950529173; the tilt-only option on the page is $1,499 —
+  MPN unconfirmed, not carried); ASUS ROG Azoth $178.99 is
+  90MP031B-BKAA11 Moonlight White, not black; Scheels tactix 8
+  $1,149.99 is the 51mm variant, not the pinned 47mm AMOLED;
+  B&H ZenWiFi BT8 $599.99 URL is the 3-pack product, not the
+  2-pack; Corsair Scimitar Elite $69.99 title is the White
+  colorway, not Gun Metal (lowest Corsair row is now the $139.99
+  gun-metal checkout row); T-Mobile iPad Pro M5 13 $1,699.99 is
+  the business-channel page, not the consumer price ($1,899.99).
+  Unverified: all Walmart moves (bot wall on Series X $948 —
+  stopped, not worked around); Bose Smart Ultra $629 (no price in
+  page text; Bose pages do not expose price); MDR-MV1 Crutchfield
+  $298.62 (66-day-old crawl shows $418); Forerunner 965 Fleetfeet
+  $449.99 (13-day-old crawl shows $599.99); BJ's Crusher ANC 2
+  $99.99 (no price in 2-day-old crawl); DualSense Edge RC Willey
+  $169.99 (no price in page text). Stock change: Anker MagGo
+  Power Bank (10K, Slim) $79.99 price confirmed at Anker but the
+  variant is Sold out. Feed staleness: Logitech Lift feed $54.14
+  vs live Logitech price $52.24 (Special Pricing, 34% off $79.99,
+  InStock; pinned MPN 910-006466).
+- Builder: +10 KNOWN_BAD (5 title/URL-proven + 5 page-proven, see
+  build_snapshot.py 2026-11-26 blocks). No CARRIED additions:
+  the B&H Studio Display tilt-only $1,499 option sits on the
+  MFEW4LL/A page and its MPN is unconfirmed, so it is not carried
+  as the pinned MFEX4LL/A price.
+- Rotation: Logitech patrol — Logitech-direct rows 11 -> 11, no
+  price moves (MX Master 4 Graphite $109.99 unchanged at
+  logitech.com; Brio 500 $129.99, G Yeti GX $89.99 and MX Anywhere
+  3S $69.99 rotated out of the feed; Ergo K860 $110.99, G Pro X
+  Superlight 2 $159.99 and Lift $54.14 rotated in). MX Master 4
+  retailer hunt stays PAUSED (user-nodded 2026-11-18). M6 UPC
+  195951080291 already three-way confirmed (2026-11-07); catalog
+  entry still pending user confirmation. DualSense White: no new
+  evidence.
+- Watch items: Alienware 16 Area-51 Dell $34.99 -> $5,049.99 is
+  config churn (no pinned MPN; $5,049.99 is the RTX 5090/32GB/1TB
+  config's estimated value, not the pinned 5070 Ti/2TB config;
+  page also shows Sold Out on the hero config); ThinkPad E16 Best
+  Buy $1,299.99 -> $1,199.99 is config churn (Ryzen 7 250, 16GB,
+  512GB, Win11 Pro — no pinned MPN); HSTN Lensabl $399 -> $479 /
+  Oakleysi $479 -> $449 swapped again — feed churn, list $399;
+  Silarius Buds3 FE $195.99 stale row persists in the site union
+  (identified stream has no expiry); NFM Studio Display two-SKU
+  confusion stands; Bose Lifestyle Ultra $899 / $1,099 rows
+  standing (config unresolved); Switch 2 carrying case no rows
+  (sold out); MacBook Neo zero offers; Keychron K2 Max still no
+  rows in the Meta snapshot; Quest 3S 256GB Prosimhq $381.99 is an
+  unverified Shopify storefront — suspected-only; Cybermoa rows
+  8 -> 9, no price moves (one new row: Anker 555 hub $75).
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
+  changes, no DECISIONS.md changes, no models added, no Amazon
+  touch, no spending, no registrations, no purchases.
