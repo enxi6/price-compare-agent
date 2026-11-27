@@ -9339,3 +9339,124 @@ why, and how it turned out — recorded truthfully, including ugly numbers.
 - Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
   changes, no DECISIONS.md changes, no models added, no Amazon
   touch, no spending, no registrations, no purchases.
+
+## 154 — 2026-11-27: Daily refresh — 61 moves, 16 page-confirmed, ranking unchanged (194)
+
+- Meta sweep: 600/600 calls OK, 0 failed (11,730 raw listings).
+  Pass 1 was cut short by a runtime restart at 412/600 (one CLI
+  call failed rc=1 with a privsep worker transient disconnect on
+  Dell Pro 32 Plus 4K — retried OK in the resume pass); resume
+  pass fetched the remaining 188, 0 failed. Two raw files were
+  never 0 bytes. Identified collection: first attempt crashed on
+  an uncaught http.client.RemoteDisconnected from a merchant —
+  collect_entry catches URLError/TimeoutError/JSONDecodeError but
+  not RemoteDisconnected, so one dropped connection kills the
+  whole run (no snapshot was written; re-ran cleanly). Second
+  attempt: 81 offers, 70 models, 4 skips (HyperX OMEN OLED 27Q
+  HTTP 429 — new; Silarius Buds3 FE bundle title, Heart Rate
+  Monitors USA 404, Datavision Tab S10 FE Plus 404 — same as
+  yesterday). Snapshot: 2,454 offers, 508 models with quotes
+  (prev 2,569 / 520). Corrected diff: 61 moves, 322 new quotes,
+  434 disappeared. Identified: 0 moves, 0 new, 1 disappeared
+  (HyperX OMEN OLED 27Q $399.99, the 429 skip). Site rebuilt
+  (603 pages): 2,649 offers, 211 matched, 194 ranked, 531 models
+  with offers. Tests 57 pass. Eval CLI still reports identifier
+  matches 0 (same quirk as 2026-11-22/23/24/25/26; real matching
+  is in build_site_snapshot: 211 matched).
+- Page-confirmed (11 cuts): ULT Wear P.C. Richard $249.95 ->
+  $148 (JSON-LD InStock), WF-1000XM6 P.C. Richard $329.95 ->
+  $248 (MPN WF1000XM6/B, JSON-LD InStock), Ergo K860 B&H $198.28
+  -> $113.99 (Black Friday $36 off $149.99, UPC 097855151667,
+  InStock), PartyBox 720 Sonicelectronix $1,099.95 -> $899.95
+  (OG LimitedAvailability), PartyBox Club 120 Sonicelectronix
+  $349.95 -> $279.95 (OG InStock), ROG Pelta ASUS $129.99 ->
+  $79.99 (ASUS Store Price, JSON-LD InStock), MX Brio Logitech
+  $169.99 -> $162.89 (Special Pricing $37.10 off $199.99,
+  Graphite InStock), Fire TV Stick 4K Max Home Depot $84.99 ->
+  $44.99 (JSON-LD), MX Keys S Staples $109.99 -> $104.99 (Pale
+  Gray 920-011559, Product Offer $104.99), Elite Series 2 Core
+  Beach Camera $149.99 -> $144.99 (OG InStock), MX Mechanical
+  Ultimate Ears $142.99 -> $136.89 (Special Pricing $136.89–
+  $142.99, was $179.99). Page-confirmed rises (5): Magic
+  Keyboard Touch ID numeric Best Buy $161.99 -> $179.99 (sold by
+  Best Buy, back to list, MJM64LL/A), WH-CH720N Focus Camera
+  $124.60 -> $178 (OG, above $149.99 list), MDR-MV1 Focus Camera
+  $286.20 -> $328 (was $418, 21% off), MDR-M1 Focus Camera
+  $171.20 -> $198 (was $268, 26% off), ZenWiFi BT10 2-pack
+  Silarius $441.99 -> $749.99 (OG InStock, UPC 197105429895 —
+  but ASUS direct has the 2-pack at $449.99, so Silarius is not
+  the deal).
+- Falsified / excluded: B&H Mac Studio $3,499 is the 64GB RAM /
+  40-core GPU config, not the pinned 36GB/512GB 32-core ($2,499
+  list; the 36GB option shows "—" on the configurator today, and
+  the pair-lowest is now $3,699, another higher config); B&H Mac
+  mini $949 is the 24GB config, not the pinned 16GB MHQK4LL/A
+  ($779 — carried, see below); Microsoft $29.99 URL is the Xbox
+  Adaptive Joystick, a $29.99 companion accessory, not the
+  Adaptive Controller; Razer BlackShark V3 $79.99 URL is the V3 X
+  HyperSpeed (RZ04-05420100-R3U1), not the V3; Anker MagGo $67 is
+  the "Customizable" bulk variant (min 100 pieces, sold out), not
+  the standard (10K, Slim) at $79.99; Best Buy G335 $95.69 is sold
+  & shipped by marketplace IPC-STORE and TUF M4 Air $44.99 by
+  marketplace Velztorm, not Best Buy; Macy's Bose Smart Ultra
+  $712.59 vs live JSON-LD $679.00; Macy's Xbox Series S $564.99
+  vs live JSON-LD $619.99 (marketplace Velztorm); QVC GoPro
+  $229.98 is the camera + tripod bundle, not the standalone LIT
+  HERO 4K; ASUS BT10 $359.99 is the 1-pack BT10(W-1-PK), not the
+  pinned 2-pack (ASUS direct 2-pack $449.99; the ASUS pair-lowest
+  is now $689.99, the 3-pack). Unverified: AZ100 Crutchfield
+  $149.99 (21-day-old crawl shows $299.99); NFM Mac Studio
+  $2,298 (no price in page text); Dell Watch8 40/44mm $319.99
+  (Dell URL redirects to a generic accessories page; both rows
+  share the 40mm SM-L320 URL); ShopMyExchange Buds3 FE $299 /
+  BlackShark V3 $299 (pages return no price in text); all Walmart
+  moves (bot wall, not re-attempted today); Target Kindle
+  Colorsoft $289.99 / ULT Wear $149.99 (Target bot-check on prior
+  days, not re-attempted); NFM Z Flip8 $934.99 / OpenDots Air
+  $69.99 (no price in page text); Crutchfield MDR-MV1 $314.34
+  (stale crawl).
+- Builder: +11 KNOWN_BAD (see build_snapshot.py 2026-11-27
+  blocks). +1 CARRIED: Mac mini M6 B&H $779.00 (pinned 16GB/256GB
+  MHQK4LL/A; configurator today still lists 16GB at $949 − $170;
+  browser-verified 2026-11-26, was-price $899).
+- Rotation: small-brands patrol (Keychron) — Keychron-direct rows
+  22 -> 23. K2 Max live $78.74 at keychron.com (was $104.99, SKU
+  K2M-O3Z, InStock): correction to BUILD_LOG 153 — the $78.74 row
+  WAS in the 2026-11-26 Meta snapshot; the $78.74 (Meta, variant
+  42421751742553) vs $86.24 (identified, variant 41767535870041,
+  EAN 4895248880271) "disagreement" is two different K2 Max
+  variants, both in stock. K8 hot-swappable red variant $69.99 ->
+  $76.99; Q6 HE gained a $219.99 variant row; K8 Max Brown and V6
+  Max still no rows anywhere. MX Master 4 retailer hunt stays
+  PAUSED (user-nodded 2026-11-18). M6 UPC 195951080291 already
+  three-way confirmed (2026-11-07); catalog entry still pending
+  user confirmation. DualSense White: no new evidence.
+- Watch items: Alienware 16 Area-51 Dell $34.99 -> $5,049.99 is
+  config churn (no pinned MPN; $5,049.99 is the RTX 5090/32GB/1TB
+  config's estimated value, not the pinned 5070 Ti/2TB config;
+  page also shows Sold Out on the hero config); Alienware 16
+  Aurora Dell $2,649.99 -> $1,749.99 is config churn (two Dell
+  URLs, different configs); ThinkPad E16 Best Buy $1,299.99 ->
+  $1,199.99 -> $1,631.75 is config churn (configurator, no pinned
+  MPN); Legion Pro 7 Lenovo $3,230.13 -> $3,099.99 is config churn
+  (two model numbers: 83ru0002us vs 83ructo1wwus1); Pixel 10 Pro
+  Best Buy $699.99 -> $749.99 is carrier churn (AT&T activation
+  vs yesterday's Verizon; unlocked $869.99); Switch 2 Walmart
+  $499 -> $675 is a bundle listing ("With Super Mario Odyssey")
+  and the standalone $499 row disappeared from the feed; HSTN
+  Lensabl $399 -> $479 / Oakleysi $479 -> $449 swapped again —
+  feed churn, list $399; Silarius Buds3 FE $195.99 stale row
+  persists in the site union (identified stream has no expiry);
+  NFM Studio Display two-SKU confusion stands; Bose Lifestyle
+  Ultra $899 / $1,099 rows standing (config unresolved); Switch 2
+  carrying case no rows (sold out); MacBook Neo zero offers;
+  Quest 3S 256GB Prosimhq $381.99 is an unverified Shopify
+  storefront — suspected-only; Drtechpr rows (Boombox 4 $397.37,
+  Beats Solo 4 $176.12, AirPods 5 $132.74) are unverified
+  Shopify-storefront rows — suspected-only; Logitech Lift feed
+  $54.14 -> $52.24 now matches live Logitech $52.24 (yesterday's
+  staleness resolved); OpenRun Shokz $77.95 -> $89.95 is color
+  rotation (Grey Standard still $77.95).
+- Kindle pin unchanged (B0CFPL6CFY). No catalog identifier
+  changes, no DECISIONS.md changes, no models added, no Amazon
+  touch, no spending, no registrations, no purchases.

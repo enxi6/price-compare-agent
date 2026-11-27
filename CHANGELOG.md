@@ -11,42 +11,69 @@ releases; breaking changes are called out in the release notes.
 
 ### Fixed
 
-- Daily refresh 2026-11-26: 58 price moves (after KNOWN_BAD
-  rebuild), 361 new quotes, 341 disappeared; snapshot 2,569
-  offers, 520 models with quotes (prev 2,548 / 520). Page-confirmed
-  cuts: Moto G Stylus $472.60 → $199.99 (Best Buy, Thanksgiving
-  24-hour flash sale, Save $200, comp $399.99), Pixel 10 Pro
-  $749.99 → $699.99 (Best Buy, Verizon activation, Save $300, full
-  price $999.99), OpenRun $129.95 → $77.95 (Shokz, Grey Standard,
-  -40%), Pixel Buds 2a $129 → $99 (B&H, Black Friday $30 off),
-  SoundSticks 5 $349.95 → $279.95 (Sweetwater), Quest 3S 128GB
-  $349.99 → $299.99 (RC Willey), Edge 840 $449.99 → $399.99
-  (Kohl's, promo back on), Technics AZ100 $299.95 → $150
-  (ListenUp, Black and Silver both $150), Music Frame $399.99 →
-  $299.99 (BrandsMart, member deal), MX Mechanical $149.99 →
-  $142.99 (B&H, Black Friday $37 off), Pro X3 $219.99 → $209.99
-  (Abt, manufacturer rebate ends 11/30), PULSE Elite $149.99 →
-  $109.99 (RC Willey), Huntsman V3 Pro $189.99 → $184.99 (Best Buy,
-  Black Friday, Save $65). Identified-stream moves (merchant-JSON
-  re-verified): Tab S10 FE $399 → $429 and Tab A11+ $209 →
-  $234.99 (both Datavision, yesterday's cuts reversing). Feed rows
-  proven wrong: Best Buy Xbox Wireless Headset $174.37 / $202.65
-  (SteelSeries Arctis Nova 5X / 7X Gen 2 pages, not the Xbox
-  headset), Macy's S90H 65 $1,849.99 (live page $0.00 OutOfStock;
-  listing bundles the HW-LS60D speaker), Sonos Arc Ultra $1,207
-  (Arc Ultra + Era 100 pair surround set; standalone is $849),
-  B&H Studio Display $1,799 (MFEW4LL/A tilt-and-height, not pinned
-  MFEX4LL/A; tilt-only option is $1,499), ASUS ROG Azoth $178.99
-  (Moonlight White 90MP031B-BKAA11, not black), Scheels tactix 8
-  $1,149.99 (51mm, not pinned 47mm), B&H ZenWiFi BT8 $599.99
-  (3-pack, not 2-pack), Corsair Scimitar Elite $69.99 (White, not
-  Gun Metal), T-Mobile iPad Pro M5 13 $1,699.99 (business-channel
-  page, not consumer price). Unverified: all Walmart moves (bot
-  wall on Series X $948 — stopped, not worked around), Bose Smart
-  Ultra $629 (no price in page text), MDR-MV1 $298.62 (66-day-old
-  crawl shows $418), Forerunner 965 $449.99 (13-day-old crawl shows
-  $599.99), BJ's Crusher ANC 2 $99.99 (no price in 2-day-old crawl),
-  DualSense Edge $169.99 (no price in page text).
+- Daily refresh 2026-11-27: 61 price moves (after KNOWN_BAD
+  rebuild), 322 new quotes, 434 disappeared; snapshot 2,454
+  offers, 508 models with quotes (prev 2,569 / 520). Page-confirmed
+  cuts: ULT Wear $249.95 → $148 (P.C. Richard, InStock), WF-1000XM6
+  $329.95 → $248 (P.C. Richard, MPN WF1000XM6/B, InStock), Ergo K860
+  $198.28 → $113.99 (B&H, Black Friday $36 off $149.99, UPC
+  097855151667, InStock), PartyBox 720 $1,099.95 → $899.95
+  (Sonicelectronix, LimitedAvailability), PartyBox Club 120 $349.95
+  → $279.95 (Sonicelectronix, InStock), ROG Pelta $129.99 → $79.99
+  (ASUS direct, InStock), MX Brio $169.99 → $162.89 (Logitech,
+  Special Pricing $37.10 off $199.99, Graphite InStock), Fire TV
+  Stick 4K Max $84.99 → $44.99 (Home Depot, JSON-LD), MX Keys S
+  $109.99 → $104.99 (Staples, Pale Gray 920-011559), Elite Series 2
+  Core $149.99 → $144.99 (Beach Camera, InStock), MX Mechanical
+  $142.99 → $136.89 (Ultimate Ears, Special Pricing $136.89–$142.99,
+  was $179.99). Page-confirmed rises: Magic Keyboard Touch ID
+  numeric $161.99 → $179.99 (Best Buy, sold by Best Buy, back to
+  list), WH-CH720N $124.60 → $178 (Focus Camera, above $149.99
+  list), MDR-MV1 $286.20 → $328 (Focus Camera, was $418, 21% off),
+  MDR-M1 $171.20 → $198 (Focus Camera, was $268, 26% off), ZenWiFi
+  BT10 2-pack $441.99 → $749.99 (Silarius, InStock — but ASUS direct
+  has the 2-pack at $449.99, so Silarius is not the deal).
+  Identified-stream: 0 moves; HyperX OMEN OLED 27Q row gone (HyperX
+  returned HTTP 429 today). Feed rows proven wrong: B&H Mac Studio
+  $3,499 (64GB/40-core config, not pinned 36GB/512GB), B&H Mac mini
+  $949 (24GB config, not pinned 16GB MHQK4LL/A — carried at $779),
+  Microsoft Adaptive $29.99 (Xbox Adaptive Joystick, not the
+  Controller), Razer BlackShark V3 $79.99 (V3 X HyperSpeed
+  RZ04-05420100-R3U1, not V3), Anker MagGo $67 (bulk-custom variant,
+  min 100 pieces, sold out; standard is $79.99), Best Buy G335
+  $95.69 (marketplace IPC-STORE), Best Buy TUF M4 Air $44.99
+  (marketplace Velztorm), Macy's Bose Smart Ultra $712.59 (live
+  $679.00), Macy's Xbox Series S $564.99 (live $619.99, marketplace
+  Velztorm), QVC GoPro $229.98 (camera + tripod bundle, not the
+  standalone LIT HERO 4K), ASUS BT10 $359.99 (1-pack BT10(W-1-PK),
+  not the 2-pack). Unverified: AZ100 Crutchfield $149.99 (21-day-old
+  crawl shows $299.99), NFM Mac Studio $2,298 (no price in page
+  text), Dell Watch8 40/44mm $319.99 (Dell URL redirects to a
+  generic accessories page; both rows share the 40mm SM-L320 URL),
+  ShopMyExchange Buds3 FE $299 / BlackShark V3 $299 (pages return no
+  price in text), all Walmart moves (bot wall, not re-attempted
+  today), Target Kindle Colorsoft $289.99 / ULT Wear $149.99 (Target
+  bot-check on prior days, not re-attempted), NFM Z Flip8 $934.99 /
+  OpenDots Air $69.99 (no price in page text), Crutchfield MDR-MV1
+  $314.34 (stale crawl). Config/carrier churn, not real moves:
+  Alienware 16 Aurora Dell $2,649.99 → $1,749.99 (two Dell URLs,
+  different configs), ThinkPad E16 Best Buy $1,199.99 → $1,631.75
+  (configurator), Legion Pro 7 Lenovo $3,230.13 → $3,099.99 (two
+  model numbers 83ru0002us vs 83ructo1wwus1), Pixel 10 Pro Best Buy
+  $699.99 → $749.99 (AT&T activation vs yesterday's Verizon;
+  unlocked $869.99), Switch 2 Walmart $499 → $675 (bundle title,
+  "With Super Mario Odyssey"), OMENBook 3 B&H/HP $519
+  (configurator), OpenRun Shokz $77.95 → $89.95 (color rotation;
+  Grey Standard still $77.95), Ray-Ban Meta Lensabl $379 (Large
+  Size vs Sunglass variant). Ranking unchanged at 194, matched 211.
+  +11 KNOWN_BAD, +1 CARRIED (Mac mini B&H $779). Keychron patrol
+  (small brands): Keychron-direct rows 22 → 23; K2 Max live $78.74
+  at keychron.com (was $104.99, SKU K2M-O3Z, InStock) — the $78.74
+  Meta row and the $86.24 identified row (EAN 4895248880271) are
+  different variants, both in stock; K8 hot-swappable red variant
+  $69.99 → $76.99; Q6 HE gained a $219.99 variant row; K8 Max Brown
+  and V6 Max still no rows. Logitech Lift feed $54.14 → $52.24 now
+  matches live Logitech $52.24 (yesterday's staleness resolved).
 - Daily refresh 2026-11-25: 71 price moves (after KNOWN_BAD
   rebuild), 288 new quotes, 327 disappeared; snapshot 2,548
   offers, 520 models with quotes (prev 2,599 / 514). Page-confirmed
